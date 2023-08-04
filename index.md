@@ -1,5 +1,7 @@
 ---
 layout: home
+title: Главная
+titleTemplate: ALT Regular Gnome Community
 
 hero:
   name: "ALT Regular Gnome"

@@ -28,7 +28,7 @@ epm play telegram
 
 ## Установка c помощью Flatpak
 
-При наличии пакета Flatpak, можно установить **Telegram** одной командой:
+При наличии пакета [Flatpak](/flatpak), можно установить **Telegram** одной командой:
 
 ```bash
 flatpak install flathub org.telegram.desktop

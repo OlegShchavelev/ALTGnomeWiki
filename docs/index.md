@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: Документация
-      link: /markdown-examples
+      link: /wiki
 
 features:
   - title: Раньше чем у других
@@ -22,5 +22,6 @@ features:
     details: семейство дистрибутивов Linux, производится в России с 2000 года.
   - title: Открытое сообщество
     details: Путеводитель в мир открытого програмного обеспечения.
+    
 ---
 

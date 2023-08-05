@@ -9,7 +9,28 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: 'Поиск',
+                buttonAriaLabel: 'Поиск'
+              },
+              modal: {
+                noResultsText: 'Нет результатов по запросу',
+                resetButtonTitle: 'Сбросить',
+                footer: {
+                  selectText: 'для выбора',
+                  navigateText: 'для навигации',
+                  closeText: 'закрыть'
+                }
+              }
+            }
+          }
+        }
+      }
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [

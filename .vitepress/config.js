@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/ALTRegularGnomeWiki/',
+  srcDir: './docs',
   title: "ALT Community",
   description: "A VitePress Site",
   themeConfig: {

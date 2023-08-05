@@ -44,6 +44,12 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     },
+    returnToTopLabel: 'Наверх',
+    sidebarMenuLabel: 'Меню',
+    docFooter: {
+      prev: 'Предыдущая страница',
+      next: 'Следующая страница',
+    },
     outlineTitle: 'Оглавление',
     footer: {
       copyright: 'Copyright © 2023 ALT Regular Gnome Community'

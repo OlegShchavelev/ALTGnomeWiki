@@ -33,6 +33,20 @@ export default defineConfig({
         ]
       }
     ],
+    editLink: {
+      pattern: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki/edit/main/docs/:path',
+      text: 'Предложить изменения на этой странице'
+    },
+    lastUpdated: {
+      text: 'Последнее обновление',
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'medium'
+      }
+    },
     outlineTitle: 'Оглавление',
+    footer: {
+      copyright: 'Copyright © 2023 ALT Regular Gnome Community'
+    }
   }
 })

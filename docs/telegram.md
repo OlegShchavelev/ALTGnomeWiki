@@ -44,7 +44,7 @@ flatpak install flathub org.telegram.desktop
 
 ![telegram_2](/telegram_2.png)
 
-2. Затем переходим в:* Настройки -> Продвинутые настройки -> Экспериментальные настройки* и включаем пункт **GNotification**
+2. Затем переходим в: *Настройки -> Продвинутые настройки -> Экспериментальные настройки* и включаем пункт **GNotification**
 
 ![telegram_3](/telegram_3.png)
 

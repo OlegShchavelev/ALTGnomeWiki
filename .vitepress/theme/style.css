@@ -3,26 +3,18 @@
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
-
-
 /**
  * Colors
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-brand: #1a5fb4;
-  --vp-c-brand-light: #1c71d8;
-  --vp-c-brand-lighter: #3584e4;
-  --vp-c-brand-lightest: #62a0ea;
-  --vp-c-brand-dark: #1a5fb4;
-  --vp-c-brand-darker: #1c71d8;
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+  --vp-c-brand-lighter: #9499ff;
+  --vp-c-brand-lightest: #bcc0ff;
+  --vp-c-brand-dark: #535bf2;
+  --vp-c-brand-darker: #454ce1;
   --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
-}
-
-:root {
-  /* Typography */
-  --vp-font-family-base: 'Manrope', sans-serif;
 }
 
 /**
@@ -70,7 +62,6 @@
 @media (min-width: 960px) {
   :root {
     --vp-home-hero-image-filter: blur(72px);
-    --vp-nav-logo-height: 36px;
   }
 }
 
@@ -97,3 +88,4 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
+

@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "types": [
+        "vite/client"
+      ]
+    },
+    "include": [
+      ".vitepress/theme/plugins/*",
+      "node_modules/vitepress/dist/client/theme-default/components/**/*.vue"
+    ]
+  }

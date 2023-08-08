@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
+
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+ :root {
+
+  --vp-c-blue: #3584e4;
+  --vp-c-blue-light: #62a0ea;
+  --vp-c-blue-lighter: #99c1f1;
+  --vp-c-blue-dark: #1c71d8;
+  --vp-c-blue-darker: #1a5fb4;
+  --vp-c-blue-dimm-1: rgba(53, 132, 228, 0.05);
+  --vp-c-blue-dimm-2: rgba(53, 132, 228, 0.2);
+  --vp-c-blue-dimm-3: rgba(53, 132, 228, 0.5);
+
+  --vp-c-green: #33d17a;
+  --vp-c-green-light: #57e389;
+  --vp-c-green-lighter: #8ff0a4;
+  --vp-c-green-dark: #2ec27e;
+  --vp-c-green-darker: #26a269;
+  --vp-c-green-dimm-1: rgba(51, 209, 122, 0.05);
+  --vp-c-green-dimm-2: rgba(51, 209, 122, 0.2);
+  --vp-c-green-dimm-3: rgba(51, 209, 122, 0.5);
+
+  --vp-c-yellow: #f6d32d;
+  --vp-c-yellow-light: #f8e45c;
+  --vp-c-yellow-lighter: #f9f06b;
+  --vp-c-yellow-dark: #f5c211;
+  --vp-c-yellow-darker: #e5a50a;
+  --vp-c-yellow-dimm-1: rgba(246, 211, 45, 0.05);
+  --vp-c-yellow-dimm-2: rgba(246, 211, 45, 0.2);
+  --vp-c-yellow-dimm-3: rgba(246, 211, 45, 0.5);
+
+
+  --vp-c-red: #e01b24;
+  --vp-c-red-light: #ed333b;
+  --vp-c-red-lighter: #f66151;
+  --vp-c-red-dark: #c01c28;
+  --vp-c-red-darker: #a51d2d;
+  --vp-c-red-dimm-1: rgba(224, 27, 36, 0.05);
+  --vp-c-red-dimm-2: rgba(224, 27, 36, 0.2);
+  --vp-c-red-dimm-3: rgba(224, 27, 36, 0.5);
+ }
+
+ :root {
+    --vp-c-brand: #1a5fb4;
+    --vp-c-brand-light: #1c71d8;
+    --vp-c-brand-lighter: #3584e4;
+    --vp-c-brand-lightest: #62a0ea;
+    --vp-c-brand-dark: #1a5fb4;
+    --vp-c-brand-darker: #1c71d8;
+    --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+  }
+  
+  :root {
+    /* Typography */
+    --vp-font-family-base: 'Manrope', sans-serif;
+  }
+  
+  /**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+ :root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(
+      120deg,
+      #c061cb 30%,
+      #62a0ea
+    );
+  
+    --vp-home-hero-image-background-image: linear-gradient(
+      -45deg,
+      #c061cb 50%,
+      #62a0ea 50%
+    );
+    --vp-home-hero-image-filter: blur(40px);
+  }  
+ 
+ @media (min-width: 960px) {
+    
+    :root {
+      --vp-home-hero-image-filter: blur(72px);
+      --vp-nav-logo-height: 36px;
+    }
+  }
+
+/**
+ * Custom block
+ * -------------------------------------------------------------------------- */
+
+  .custom-block {
+    border: 4px solid transparent;
+  }
+  
+  :root {
+  --vp-custom-block-info-border: var(--vp-c-blue-dimm-2);
+  --vp-custom-block-info-bg: var(--vp-c-blue-dimm-1);
+  --vp-custom-block-info-text: var(--vp-c-neutral);
+
+  --vp-custom-block-tip-border: var(--vp-c-green-dimm-2);
+  --vp-custom-block-tip-bg: var(--vp-c-green-dimm-1);
+  --vp-custom-block-tip-text: var(--vp-c-neutral);
+
+  --vp-custom-block-warning-border: var(--vp-c-yellow-dimm-2);
+  --vp-custom-block-warning-bg: var(--vp-c-yellow-dimm-1);
+  --vp-custom-block-warning-text: var(--vp-c-neutral);
+
+  --vp-custom-block-danger-border: var(--vp-c-red-dimm-2);
+  --vp-custom-block-danger-bg: var(--vp-c-red-dimm-1);
+  --vp-custom-block-danger-text: var(--vp-c-neutral);
+
+  --vp-custom-block-details-border: var(--vp-c-divider);
+  --vp-custom-block-details-bg: var(--vp-c-bg-soft-up);
+  }

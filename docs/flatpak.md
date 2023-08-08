@@ -61,3 +61,11 @@ $ flatpak install gimp
 ```bash
 flatpak run org.gimp.GIMP
 ```
+
+### Удаление приложений
+
+Для удаления приложения в Flatpak **используйте** команду `uninstall` и идентификатор приложения:
+
+```bash
+flatpak uninstall org.gimp.GIMP
+```

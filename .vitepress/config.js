@@ -2,12 +2,14 @@ import { defineConfig } from 'vitepress'
 import { telegram } from './icons'
 import { addPlugins } from './theme/plugins/markdown'
 
+export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/ALTRegularGnomeWiki/',
   srcDir: './docs',
   title: "ALT Community",
-  description: "A VitePress Site",
+  description: META_DESCRIPTION,
   themeConfig: {
     logo: '/logo.png',
     search: {

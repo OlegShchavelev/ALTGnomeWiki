@@ -57,6 +57,7 @@ export default defineConfig({
       {
         text: 'Популярное',
         items: [
+          { text: 'Быстрый старт', link: '/quick-start' },
           { text: 'Установка и обновление программ', link: '/introduction' },
           { text: 'Запись на DVD и USB Flash', link: '/getting-started' },
         ]

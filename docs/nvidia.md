@@ -24,3 +24,21 @@ make-initrd
 ::: danger
 Не следует запускать фирменный инсталятор драйвера NVIDIA из .run-файла!
 :::
+
+## Cессия Wayland на закрытых драйверах NVIDIA
+
+Активируем **Wayland** сессию в **ALT Regular Gnome** для видеокарт NVIDIA с установленными пропоритарными драйверами.
+
+```bash
+su -
+mcedit /etc/sysconfig/grub2
+```
+Добавляем в параметр `GRUB_CMDLINE_LINUX_DEFAULT` значение `nvidia-drm.modeset=1` и сохраняем.
+
+```bash
+su -
+grub-mkconfig -o /boot/grub/grub.cfg
+ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
+```
+
+Перезагружаем операционную систему, выберите в списке сессию Gnome.

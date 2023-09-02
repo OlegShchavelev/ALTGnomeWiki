@@ -60,6 +60,7 @@ export default defineConfig({
           { text: 'Быстрый старт', link: '/quick-start' },
           { text: 'Установка и обновление программ', link: '/introduction' },
           { text: 'Запись на DVD и USB Flash', link: '/getting-started' },
+          { text: 'Алтай', link: '/altai'}
         ]
       }
     ],

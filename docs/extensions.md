@@ -5,11 +5,11 @@
 
 ## Установка расширений рабочего окружения GNOME с помощью GNOME Shell Extension Manager
 
-Для просмотра, установки и управления вашими расширениями существует приложение GNOME Shell Extension Manager
+Для просмотра, установки и управления вашими расширениями существует приложение **GNOME Shell Extension Manager**
 
 ### Установка из репозитория
 
-Для просмотра, установки и управления вашими расширениями существует специальное приложение под названием **GNOME Shell Extension Manager**
+**GNOME Shell Extension Manager** можно установить любым привычным и удобным способом
 
 **Установка через терминал**
 
@@ -32,3 +32,21 @@ epm -i gnome-shell-extension-manager
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
+## Установка расширений рабочего окружения GNOME из репозитория
+
+Расщирения: Dash to Dock, Blur my Shell, Dash to Panel можно установить отдельными пакетами из репозитория
+
+::: code-group
+```bash[apt-get]
+su -
+apt-get update
+apt-get install gnome-shell-extension-dash-to-dock
+```
+```bash[epm]
+epm -i gnome-shell-extension-dash-to-dock
+```
+:::
+
+::: info
+Для вывода пакета в списке программы **Расширения**, необходимо перезгрузить компьютер, после установки расширения из репозитория.
+:::

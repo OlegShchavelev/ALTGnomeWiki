@@ -20,6 +20,25 @@ epm -i firefox
 ```
 :::
 
+
+## Установка c помощью Flatpak<Badge type="info" text="flatpak" />
+
+При наличии пакета [Flatpak](/flatpak), можно установить **Firefox** одной командой:
+
+```bash
+flatpak install flathub org.mozilla.firefox
+```
+
+## Firefox Gnome theme
+
+Склонируйте скрипт и установите **Firefox Gnome theme**
+
+```bash
+git clone https://github.com/rafaelmardojai/firefox-gnome-theme 
+cd firefox-gnome-theme
+./scripts/auto-install.sh
+```
+
 ## Издания Firefox
 
 **Firefox Extended Support Release** — версия с длительным сроком поддержки для комплексной безопасности и защиты данных.

@@ -32,6 +32,8 @@ epm -i gnome-shell-extension-manager
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
+![extensions_1](/extensions/extensions_1.gif)
+
 ## Установка расширений рабочего окружения GNOME из репозитория
 
 Расщирения: Dash to Dock, Blur my Shell, Dash to Panel можно установить отдельными пакетами из репозитория

@@ -9,11 +9,11 @@
 
 2. Откройте папку где сохранился архив и распакуйте его вручную: "ПКМ" → "Извлечь" и откройте папку `linux-amd64`
 
-![](./public/cryptopro/extract.png)
+![Меню ПКМ на файле, выделен второй пункт - Извлечь](./public/cryptopro/extract.png)
 
 3. Откройте Терминал в текущей папке в пустом месте "ПКМ" → "Открыть терминал"
 
-![](./public/cryptopro/open-terminal.png)
+![Меню ПКМ на файле, предпоследний пункт - Open Blackbox Here](./public/cryptopro/open-terminal.png)
 
 4. Выполните команды
 ```bash[apt-get]
@@ -22,22 +22,22 @@ sudo ./install_gui.sh
 ```
 
 5. Откроется установщик, нажмите на кнопку `<Далее>`. Перещаться между блоками можно с помощью кнопки [Tab], стрелочками внутри блоков на клавиатуре [←], [→], [↑], [↓], для подтверждения используйте [Пробел] или [Enter].
-![](./public/cryptopro/crypto-install-1.png)
+![Установщик, привественный экран](./public/cryptopro/crypto-install-1.png)
 
 6. Выберите все пакеты для установки. Для выбора используйте пробел, для подтверждения [Enter] или `<Далее>`
-![](./public/cryptopro/crypto-install-2.png)
+![Установщик, меню выбора компонентов для установки](./public/cryptopro/crypto-install-2.png)
 
 7. Начните установку выбрав `<Установить>`
-![](./public/cryptopro/crypto-install-3.png)
+![Установщик, подтверждение списка компонентов к установке](./public/cryptopro/crypto-install-3.png)
 
 8. Дождитесь окончания установки и нажмите `<Ok>`
-![](./public/cryptopro/crypto-install-4.png)
+![Установщик, завершение установки пакетов](./public/cryptopro/crypto-install-4.png)
 
 9. Если была приобретена лицензия отдельно, выберите `<Ввести лицензию>` и введите лицензию, указанную в бланке. Если лицензии нет, либо в сертификате есть встроенная лицензия — выберите `<Позже>`
-![](./public/cryptopro/crypto-install-5.png)
+![Установщик, лицензионный ключ](./public/cryptopro/crypto-install-5.png)
 
 10. Выберите `<Выход>` и закройте установщик.
-![](./public/cryptopro/crypto-install-6.png)
+![Установщик, главное меню](./public/cryptopro/crypto-install-6.png)
 
 Источники:
 - https://support.kontur.ru/ca/38813-ustanovka_kriptopro_csp_na_altlinux

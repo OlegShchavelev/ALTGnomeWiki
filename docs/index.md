@@ -50,6 +50,14 @@ const members = [
     links: [
       { icon: 'github', link: 'https://github.com/Armatik' }
     ]
+  },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/2198153?v=4',
+    name: 'Anton Palgunov',
+    title: 'Участник',
+    links: [
+      { icon: 'github', link: 'https://github.com/Toxblh' }
+    ]
   }
 ]
 </script>

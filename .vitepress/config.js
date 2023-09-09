@@ -8,7 +8,7 @@ export const META_DESCRIPTION = 'Свободная WIKI по операцион
 export default defineConfig({
   base: '/ALTRegularGnomeWiki/',
   srcDir: './docs',
-  title: "ALT Community",
+  title: 'ALT Community',
   description: META_DESCRIPTION,
   themeConfig: {
     logo: '/logo.png',
@@ -40,17 +40,20 @@ export default defineConfig({
     nav: [
       { text: 'Главная', link: '/' },
       { text: 'Документация', link: '/wiki' },
-      { text: 'Пролог',
-      items: [
-        { text: 'О проекте', link: '/about' },
-        { text: 'Возможности VitePress', link: '/vitepress' }
-      ]}
+      {
+        text: 'Пролог',
+        items: [
+          { text: 'О проекте', link: '/about' },
+          { text: 'Возможности VitePress', link: '/vitepress' }
+        ]
+      }
     ],
     socialLinks: [
-      { icon:  {
-        svg: telegram
-      }, 
-      link: 'https://t.me/alt_gnome' 
+      {
+        icon: {
+          svg: telegram
+        },
+        link: 'https://t.me/alt_gnome'
       }
     ],
     sidebar: [
@@ -58,9 +61,38 @@ export default defineConfig({
         text: 'Популярное',
         items: [
           { text: 'Быстрый старт', link: '/quick-start' },
-          { text: 'Установка и обновление программ', link: '/introduction' },
+          {
+            text: 'Установка и обновление программ',
+            items: [
+              { text: 'Blender', link: '/blender' },
+              { text: 'Chromium', link: '/chromium' },
+              { text: 'Codium', link: '/codium' },
+              { text: 'Console', link: '/console' },
+              { text: 'Eog', link: '/eog' },
+              { text: 'Epm', link: '/epm' },
+              { text: 'Evince', link: '/evince' },
+              { text: 'Extensions', link: '/extensions' },
+              { text: 'Figma', link: '/figma' },
+              { text: 'Firefox', link: '/firefox' },
+              { text: 'Flatpak', link: '/flatpak' },
+              { text: 'Git', link: '/git' },
+              { text: 'GnomeSoftware', link: '/gnome-software' },
+              { text: 'Libreoffice', link: '/libreoffice' },
+              { text: 'Loupe', link: '/loupe' },
+              { text: 'Neofetch', link: '/neofetch' },
+              { text: 'Nodejs', link: '/nodejs' },
+              { text: 'Nvidia', link: '/nvidia' },
+              { text: 'Opera', link: '/opera' },
+              { text: 'Steam', link: '/steam' },
+              { text: 'Telegram', link: '/telegram' },
+              { text: 'Viber', link: '/viber' },
+              { text: 'YandexBrowser', link: '/yandex-browser' }
+            ],
+            collapsed: true
+          },
           { text: 'Запись на DVD и USB Flash', link: '/getting-started' },
-          { text: 'Алтай', link: '/altai'}
+
+          { text: 'Алтай', link: '/altai' }
         ]
       }
     ],
@@ -78,12 +110,13 @@ export default defineConfig({
     returnToTopLabel: 'Наверх',
     sidebarMenuLabel: 'Меню',
     sponsor: {
-      message: 'Данный сервис является Open-Source проектом и его поддержка и развитие зависит от пожертвований.',
-      linkText: 'Поддержать проект!',
+      message:
+        'Данный сервис является Open-Source проектом и его поддержка и развитие зависит от пожертвований.',
+      linkText: 'Поддержать проект!'
     },
     docFooter: {
       prev: 'Предыдущая страница',
-      next: 'Следующая страница',
+      next: 'Следующая страница'
     },
     outlineTitle: 'Оглавление',
     footer: {
@@ -93,6 +126,6 @@ export default defineConfig({
   markdown: {
     config(md) {
       addPlugins(md)
-    },
+    }
   }
 })

@@ -1,8 +1,8 @@
-# КриптоПро установка в Alt Linux Regular Gnome (Sisyphus)
+# КриптоПро установка в ALT Linux Regular Gnome (Sisyphus)
 
 ## Установка КриптоПРО
 
-Чтобы установить КриптоПро CSP на Alt Linux, выполните следующее:
+Чтобы установить КриптоПро CSP на ALT Linux, выполните следующее:
 
 1. Загрузите архив ПО КриптоПро CSP 5.0 для Linux (x64, rpm) - ALT, RED OS, ROSA по ссылке: https://www.cryptopro.ru/products/csp/downloads **Предварительно требуется регистрация на сайте**
 ![Изображение с сайта криптопро, как выглядит раздел с скачиванием файла](./public/cryptopro/load.png)

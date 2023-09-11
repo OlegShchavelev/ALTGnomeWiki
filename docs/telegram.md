@@ -26,7 +26,7 @@ epm -i telegram-desktop
 epm play telegram
 ```
 
-## Установка c помощью Flatpak<Badge type="info" text="flatpak" />
+## Установка c помощью Flatpak <Badge type="tip" text="flatpak" />
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Telegram** одной командой:
 

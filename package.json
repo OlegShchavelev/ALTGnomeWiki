@@ -4,7 +4,7 @@
     "@types/markdown-it-container": "^2.0.6",
     "markdown-it": "^13.0.0",
     "markdown-it-container": "^3.0.0",
-    "vitepress": "^1.0.0-rc.4"
+    "vitepress": "^1.0.0-rc.13"
   },
   "type": "module",
   "scripts": {

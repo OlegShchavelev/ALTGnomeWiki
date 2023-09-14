@@ -75,6 +75,7 @@ export default defineConfig({
               { text: 'Figma', link: '/figma' },
               { text: 'Firefox', link: '/firefox' },
               { text: 'Flatpak', link: '/flatpak' },
+              { text: 'Fragments', link: '/fragments' },
               { text: 'Git', link: '/git' },
               { text: 'GnomeSoftware', link: '/gnome-software' },
               { text: 'JetBrains', link: '/jetbrains'},

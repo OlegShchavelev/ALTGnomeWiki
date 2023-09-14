@@ -77,6 +77,7 @@ export default defineConfig({
               { text: 'Flatpak', link: '/flatpak' },
               { text: 'Git', link: '/git' },
               { text: 'GnomeSoftware', link: '/gnome-software' },
+              { text: 'JetBrains', link: '/jetbrains'},
               { text: 'Libreoffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
               { text: 'Neofetch', link: '/neofetch' },

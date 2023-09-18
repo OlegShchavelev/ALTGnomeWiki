@@ -87,6 +87,7 @@ export default defineConfig({
               { text: 'Opera', link: '/opera' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
+              { text: 'Thunderbird', link: 'thunderbird'},
               { text: 'Transmission', link: '/transmission' },
               { text: 'Viber', link: '/viber' },
               { text: 'YandexBrowser', link: '/yandex-browser' }

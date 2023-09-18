@@ -1,10 +1,10 @@
 {
   "devDependencies": {
-    "@types/markdown-it": "^13.0.0",
+    "@types/markdown-it": "13.0.1",
     "@types/markdown-it-container": "^2.0.6",
-    "markdown-it": "^13.0.0",
+    "markdown-it": "^13.0.1",
     "markdown-it-container": "^3.0.0",
-    "vitepress": "^1.0.0-rc.13"
+    "vitepress": "1.0.0-rc.14"
   },
   "type": "module",
   "scripts": {

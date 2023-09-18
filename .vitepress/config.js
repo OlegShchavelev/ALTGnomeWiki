@@ -72,6 +72,7 @@ export default defineConfig({
               { text: 'Epm', link: '/epm' },
               { text: 'Evince', link: '/evince' },
               { text: 'Extensions', link: '/extensions' },
+              { text: 'Open Weather', link: '/openweather' },
               { text: 'Figma', link: '/figma' },
               { text: 'Firefox', link: '/firefox' },
               { text: 'Flatpak', link: '/flatpak' },
@@ -102,6 +103,7 @@ export default defineConfig({
                 items: [
                   { text: 'Запуск приложений', link: '/launching-applications' },
                   { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks.md' },
+                  { text: 'Открытие окон по центру экрана', link: '/windows-in-the-center'},
                 ],
                 collapsed: true
               }

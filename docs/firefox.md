@@ -31,7 +31,7 @@ flatpak install flathub org.mozilla.firefox
 
 ## Firefox Gnome theme
 
-Склонируйте скрипт и установите **Firefox Gnome theme**
+Склонируйте скрипт и установите **Firefox GNOME theme**
 
 ```bash
 git clone https://github.com/rafaelmardojai/firefox-gnome-theme 

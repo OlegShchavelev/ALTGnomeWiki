@@ -4,7 +4,7 @@
 ## Установка из репозитория
 **EPM** можно установить используя терминал:
 
-```bash
+```shell
 su -
 apt-get update
 apt-get install eepm
@@ -34,12 +34,12 @@ apt-get install eepm
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install appinstall
 ```
-```bash[epm]
+```shell[epm]
 epm -i appinstall
 ```
 :::

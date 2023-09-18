@@ -11,12 +11,12 @@ Evince поддерживает документы в следующих фор�
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install evince
 ```
-```bash[epm]
+```shell[epm]
 epm -i evince
 ```
 
@@ -26,6 +26,6 @@ epm -i evince
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Просмотр документов** одной командой:
 
-```bash
+```shell
 flatpak install flathub org.gnome.Evince
 ```

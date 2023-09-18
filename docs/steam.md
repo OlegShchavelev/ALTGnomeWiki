@@ -9,12 +9,12 @@
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install steam
 ```
-```bash[epm]
+```shell[epm]
 epm -i steam
 ```
 :::

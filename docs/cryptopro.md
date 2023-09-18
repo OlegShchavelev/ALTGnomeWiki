@@ -16,7 +16,7 @@
 ![Меню ПКМ на файле, предпоследний пункт - Open Blackbox Here](./public/cryptopro/open-terminal.png)
 
 4. Выполните команды
-```bash[apt-get]
+```shell[apt-get]
 sudo apt-get update
 sudo ./install_gui.sh
 ```
@@ -56,7 +56,7 @@ sudo ./install_gui.sh
 4. Загрузить файл конфигурации [ifcx64.cfg](https://www.cryptopro.ru/sites/default/files/public/faq/ifcx64.cfg) ([Источник: п.3 установки, x64](https://support.cryptopro.ru/index.php?/Knowledgebase/Article/View/275))
 
 5. Откройте папку где сохранился `ifcx64.cfg`, откройте терминал "ПКМ" → "Открыть терминал" и выполните команду
-```bash
+```shell
 sudo cp ~/ifcx86.cfg /etc/ifc.cfg
 ```
 
@@ -69,7 +69,7 @@ sudo cp ~/ifcx86.cfg /etc/ifc.cfg
 
 
 7. При возникновении проблем для Chromium/Спутник/Яндекс.Браузер также может быть необходимо выполнить в терминале команду:
-```bash
+```shell
 sudo cp /etc/opt/chrome/native-messaging-hosts/ru.rtlabs.ifcplugin.json /etc/chromium/native-messaging-hosts
 ```
 

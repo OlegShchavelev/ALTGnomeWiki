@@ -6,7 +6,7 @@
 
 Для перехода с nouveau на NVIDIA рекомендуется сначала обновить ядро:
 
-```bash
+```shell
 su -l root
 update-kernel
 ```
@@ -14,7 +14,7 @@ update-kernel
 
 Установим пропоритарный драйвера NVIDIA:
 
-```bash
+```shell
 su -l root
 rpm -e $(rpm -qf `modinfo -F filename nouveau`)
 apt-get install nvidia_glx_common && nvidia-install-driver
@@ -29,13 +29,13 @@ make-initrd
 
 Активируем **Wayland** сессию в **ALT Regular Gnome** для видеокарт NVIDIA с установленными пропоритарными драйверами.
 
-```bash
+```shell
 su -
 mcedit /etc/sysconfig/grub2
 ```
 Добавляем в параметр `GRUB_CMDLINE_LINUX_DEFAULT` значение `nvidia-drm.modeset=1` и сохраняем.
 
-```bash
+```shell
 su -
 grub-mkconfig -o /boot/grub/grub.cfg
 ln -s /dev/null /etc/udev/rules.d/61-gdm.rules

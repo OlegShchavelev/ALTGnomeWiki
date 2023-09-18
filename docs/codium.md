@@ -10,12 +10,12 @@
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install codium
 ```
-```bash[epm]
+```shell[epm]
 epm -i codium
 ```
 :::
@@ -24,6 +24,6 @@ epm -i codium
 
 При наличии пакета [eepm](/epm), можно установить **VSCodium** одной командой:
 
-```bash
+```shell
 epm play codium
 ```

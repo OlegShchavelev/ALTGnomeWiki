@@ -1,17 +1,17 @@
 # Telegram
 Кроссплатформенная система мгновенного обмена сообщениями (мессенджер) с функциями обмена текстовыми, голосовыми и видеосообщениями, а также стикерами, фотографиями и файлами многих форматов.
-## Установка из репозитория <Badge type="warning" text="sysphus" />
+## Установка из репозитория <Badge type="warning" text="sisyphus" />
 **Telegram** можно установить любым привычным и удобным способом
 
 **Установка через терминал**
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install telegram-desktop
 ```
-```bash[epm]
+```shell[epm]
 epm -i telegram-desktop
 ```
 :::
@@ -22,7 +22,7 @@ epm -i telegram-desktop
 
 **Установка через терминал**
 
-```bash
+```shell
 epm play telegram
 ```
 
@@ -30,7 +30,7 @@ epm play telegram
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Telegram** одной командой:
 
-```bash
+```shell
 flatpak install flathub org.telegram.desktop
 ```
 

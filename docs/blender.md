@@ -10,12 +10,12 @@ Blender — это бесплатный пакет для создания 3D с
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install blender
 ```
-```bash[epm]
+```shell[epm]
 epm -i blender
 ```
 

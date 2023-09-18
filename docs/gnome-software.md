@@ -10,12 +10,12 @@
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install gnome-software
 ```
-```bash[epm]
+```shell[epm]
 epm -i gnome-software
 ```
 :::

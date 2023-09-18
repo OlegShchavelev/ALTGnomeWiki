@@ -14,12 +14,13 @@
 ## Установка Open Weather из репозитория <Badge type="warning" text="sisyphus" />
 
 Данный способ установки расширений крайне не рекомендуется, но имеет право на жзинь.
-
-```bash[apt-get]
+::: code-group
+```shell[apt-get]
 su -
 apt-get update
 apt-get install gnome-shell-extension-openweather
 ```
-```bash[epm]
+```shell[epm]
 epm -i gnome-shell-extension-openweather
 ```
+:::

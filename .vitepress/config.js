@@ -94,6 +94,19 @@ export default defineConfig({
             ],
             collapsed: true
           },
+          {
+            text: 'Использование рабочего окружения Gnome',
+            items: [
+              {
+                text: 'Рабочий стол',
+                items: [
+                  { text: 'Запуск приложений', link: '/launching-applications' },
+                ],
+                collapsed: true
+              }
+            ],
+            collapsed: true
+          },
           { text: 'Запись на DVD и USB Flash', link: '/getting-started' },
 
           { text: 'Алтай', link: '/altai' }

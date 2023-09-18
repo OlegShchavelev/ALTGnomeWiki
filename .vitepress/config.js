@@ -101,6 +101,7 @@ export default defineConfig({
                 text: 'Рабочий стол',
                 items: [
                   { text: 'Запуск приложений', link: '/launching-applications' },
+                  { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks.md' },
                 ],
                 collapsed: true
               }

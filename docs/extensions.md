@@ -14,12 +14,12 @@
 **Установка через терминал**
 
 ::: code-group
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install gnome-shell-extension-manager
 ```
-```bash[epm]
+```shell[epm]
 epm -i gnome-shell-extension-manager
 ```
 :::
@@ -28,7 +28,7 @@ epm -i gnome-shell-extension-manager
 
 При наличии пакета [Flatpak](/flatpak), можно установить **GNOME Shell Extension Manager** одной командой:
 
-```bash
+```shell
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
@@ -39,12 +39,12 @@ flatpak install flathub com.mattjakeman.ExtensionManager
 Расщирения: Dash to Dock, Blur my Shell, Dash to Panel можно установить отдельными пакетами из репозитория
 
 ::: code-group
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install gnome-shell-extension-dash-to-dock
 ```
-```bash[epm]
+```shell[epm]
 epm -i gnome-shell-extension-dash-to-dock
 ```
 :::

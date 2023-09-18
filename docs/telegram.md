@@ -6,12 +6,12 @@
 **Установка через терминал**
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install telegram-desktop
 ```
-```bash[epm]
+```shell[epm]
 epm -i telegram-desktop
 ```
 :::
@@ -22,7 +22,7 @@ epm -i telegram-desktop
 
 **Установка через терминал**
 
-```bash
+```shell
 epm play telegram
 ```
 
@@ -30,7 +30,7 @@ epm play telegram
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Telegram** одной командой:
 
-```bash
+```shell
 flatpak install flathub org.telegram.desktop
 ```
 

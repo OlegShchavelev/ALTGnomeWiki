@@ -10,12 +10,12 @@ Git является бесплатной и открытой системой �
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install git
 ```
-```bash[epm]
+```shell[epm]
 epm -i git
 ```
 :::

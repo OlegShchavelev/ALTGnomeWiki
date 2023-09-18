@@ -10,12 +10,12 @@
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install yandex-browser-stable
 ```
-```bash[epm]
+```shell[epm]
 epm -i yandex-browser-stable
 ```
 
@@ -32,7 +32,7 @@ C версии `23.5.1.753`, устанавляется **Яндекс Брау�
 
 **Установка через терминал**
 
-```bash
+```shell
 epm play yandex-browser
 ```
 
@@ -42,35 +42,35 @@ epm play yandex-browser
 
 ::: code-group
 
-```bash[sysphus]
+```shell[sysphus]
 yandex-browser-stable
 ```
-```bash[epm play]
+```shell[epm play]
 yandex-browser
 ```
 :::
 
 Ответ в терминале при установленных кодеках следующий:
 ::: code-group
-```bash[Успешно]
+```shell[Успешно]
 Found ffmpeg: /usr/lib64/yandex/browser/libffmpeg.so
   avcodec: 3882340
   avformat: 3876196
   avutil: 3746916
 Ffmpeg version is OK! Let's use it.
 ```
-```bash[Ошибка]
+```shell[Ошибка]
 find_ffmpeg failed, using integrated library
 ```
 :::
 
 Обновите кодеки с помощью утилиты **update-ffmpeg**:
 ::: code-group
-```bash[sysphus]
+```shell[sysphus]
 su -
 /usr/lib64/yandex/browser/update-ffmpeg
 ```
-```bash[epm play]
+```shell[epm play]
 su -
 /opt/yandex/browser/update-ffmpeg
 ```

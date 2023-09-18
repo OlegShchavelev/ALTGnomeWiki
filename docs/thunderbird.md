@@ -9,12 +9,12 @@ Thunderbird — это бесплатное приложение для рабо
 **Установка через терминал**
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install thunderbird
 ```
-```bash[epm]
+```shell[epm]
 epm -i thunderbird
 ```
 :::
@@ -23,7 +23,7 @@ epm -i thunderbird
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Thunderbird** одной командой:
 
-```bash
+```shell
 flatpak install flathub org.mozilla.Thunderbird
 ```
 
@@ -31,7 +31,7 @@ flatpak install flathub org.mozilla.Thunderbird
 
 Склонируйте скрипт и установите **Thunderbird GNOME theme**
 
-```bash
+```shell
 git clone https://github.com/rafaelmardojai/thunderbird-gnome-theme && cd thunderbird-gnome-theme
 sudo ./scripts/install.sh -f ~/.var/app/org.mozilla.Thunderbird/.thunderbird
 ```

@@ -12,12 +12,12 @@
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install eog
 ```
-```bash[epm]
+```shell[epm]
 epm -i eog
 ```
 :::
@@ -26,6 +26,6 @@ epm -i eog
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Просмотр документов** одной командой:
 
-```bash
+```shell
 flatpak install flathub org.gnome.eog
 ```

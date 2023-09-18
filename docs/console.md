@@ -10,12 +10,12 @@
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install gnome-console
 ```
-```bash[epm]
+```shell[epm]
 epm -i console
 ```
 :::
@@ -28,11 +28,11 @@ epm -i console
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get remove -D gnome-terminal
 ```
-```bash[epm]
+```shell[epm]
 epm -e gnome-terminal
 ```
 :::

@@ -10,12 +10,12 @@ Node.js - асинхронное событийное JavaScript-окружен�
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install nodejs npm
 ```
-```bash[epm]
+```shell[epm]
 epm -i nodejs npm
 ```
 :::

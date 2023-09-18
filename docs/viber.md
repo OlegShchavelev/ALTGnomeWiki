@@ -8,7 +8,7 @@
 
 **Установка через терминал**
 
-```bash
+```shell
 epm play viber
 ```
 
@@ -16,6 +16,6 @@ epm play viber
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Viber** одной командой:
 
-```bash
+```shell
 flatpak install flathub com.viber.Viber
 ```

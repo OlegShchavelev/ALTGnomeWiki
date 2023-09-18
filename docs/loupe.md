@@ -8,12 +8,12 @@ Loupe — приложение для просмотра изображений,
 **Установка через терминал**
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install loupe
 ```
-```bash[epm]
+```shell[epm]
 epm -i loupe
 ```
 :::

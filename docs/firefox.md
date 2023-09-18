@@ -10,12 +10,12 @@ Firefox — популярный графический веб-браузер с
 
 ::: code-group
 
-```bash[apt-get]
+```shell[apt-get]
 su -
 apt-get update
 apt-get install firefox
 ```
-```bash[epm]
+```shell[epm]
 epm -i firefox
 ```
 :::
@@ -25,7 +25,7 @@ epm -i firefox
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Firefox** одной командой:
 
-```bash
+```shell
 flatpak install flathub org.mozilla.firefox
 ```
 
@@ -33,7 +33,7 @@ flatpak install flathub org.mozilla.firefox
 
 Склонируйте скрипт и установите **Firefox GNOME theme**
 
-```bash
+```shell
 git clone https://github.com/rafaelmardojai/firefox-gnome-theme 
 cd firefox-gnome-theme
 ./scripts/auto-install.sh

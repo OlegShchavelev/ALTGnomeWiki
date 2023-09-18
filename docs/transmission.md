@@ -6,6 +6,6 @@ Transmission — это быстрый, простой и бесплатный �
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Transmission** одной командой:
 
-```bash
+```shell
 flatpak flatpak install flathub com.transmissionbt.Transmission
 ```

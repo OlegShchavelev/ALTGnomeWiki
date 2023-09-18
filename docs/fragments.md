@@ -6,6 +6,6 @@ Fragments — это простой в использовании BitTorrent-к�
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Fragments** одной командой:
 
-```bash
+```shell
 flatpak install flathub de.haeckerfelix.Fragments
 ```

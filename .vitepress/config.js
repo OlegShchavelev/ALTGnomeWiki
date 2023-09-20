@@ -72,7 +72,6 @@ export default defineConfig({
               { text: 'Epm', link: '/epm' },
               { text: 'Evince', link: '/evince' },
               { text: 'Extensions', link: '/extensions' },
-              { text: 'Open Weather', link: '/openweather' },
               { text: 'Figma', link: '/figma' },
               { text: 'Firefox', link: '/firefox' },
               { text: 'Flatpak', link: '/flatpak' },
@@ -109,6 +108,12 @@ export default defineConfig({
               }
             ],
             collapsed: true
+          },
+          {
+            text: 'Расширения рабочего окружения GNOME',
+            items: [
+              { text: 'Open Weather', link: '/openweather' },
+            ]
           },
           { text: 'Запись на DVD и USB Flash', link: '/getting-started' },
 

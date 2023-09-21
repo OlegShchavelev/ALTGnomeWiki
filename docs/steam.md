@@ -42,3 +42,18 @@ Proton — инструмент, выпущенный Valve Software, котор
 ## Проверить совместимость игр в Steam Play
 
 [ProtonDB](https://www.protondb.com/) — база отчётов от игроков с пользовательскими оценками. Растущий выбор предложений позволяет настраивать игры, пока Proton продолжает улучшаться. В дополнении к этому, вы можете изучить каталог игр.
+
+## Запуск клиента Steam для графических устройств от AMD
+
+Для запуска клиента Steam требуется установить дополнительные пакеты:
+
+::: code-group
+
+```shell[apt-get]
+su -
+sudo apt-get install vulkan-amdgpu xorg-drv-amdgpu i586-xorg-drv-amdgpu
+```
+```shell[epm]
+epm -i vulkan-amdgpu xorg-drv-amdgpu i586-xorg-drv-amdgpu
+```
+:::

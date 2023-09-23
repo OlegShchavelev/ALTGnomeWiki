@@ -65,6 +65,7 @@ export default defineConfig({
             text: 'Установка и обновление программ',
             items: [
               { text: 'Blender', link: '/blender' },
+              { text: 'Boxes', link: '/boxes'},
               { text: 'Chromium', link: '/chromium' },
               { text: 'Codium', link: '/codium' },
               { text: 'Console', link: '/console' },

@@ -104,6 +104,7 @@ export default defineConfig({
                   { text: 'Запуск приложений', link: '/launching-applications' },
                   { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks.md' },
                   { text: 'Открытие окон по центру экрана', link: '/windows-in-the-center'},
+                  { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'}
                 ],
                 collapsed: true
               }

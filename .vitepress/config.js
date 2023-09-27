@@ -72,6 +72,7 @@ export default defineConfig({
               { text: 'Epm', link: '/epm' },
               { text: 'Evince', link: '/evince' },
               { text: 'Extensions', link: '/extensions' },
+              { text: 'FFMPEG', link: '/ffmpeg' },
               { text: 'Figma', link: '/figma' },
               { text: 'Firefox', link: '/firefox' },
               { text: 'Flatpak', link: '/flatpak' },

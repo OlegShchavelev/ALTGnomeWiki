@@ -9,6 +9,12 @@ export default defineConfig({
   srcDir: './docs',
   title: 'ALT Gnome Wiki',
   description: META_DESCRIPTION,
+  head: [
+    [
+      'meta', 
+      { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }
+    ]
+  ],
   themeConfig: {
     logo: '/logo.png',
     search: {

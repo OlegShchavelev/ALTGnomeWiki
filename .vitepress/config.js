@@ -31,6 +31,9 @@ export default defineConfig({
       });`,
     ],
   ],
+  sitemap: {
+    hostname: 'https://alt-gnome.wiki'
+  },
   themeConfig: {
     logo: '/logo.png',
     search: {

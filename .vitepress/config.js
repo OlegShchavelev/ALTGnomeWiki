@@ -114,7 +114,8 @@ export default defineConfig({
               { text: 'Transmission', link: '/transmission' },
               { text: 'Viber', link: '/viber' },
               { text: 'XLSCLIENTS', link: 'xlsclients' },
-              { text: 'YandexBrowser', link: '/yandex-browser' }
+              { text: 'YandexBrowser', link: '/yandex-browser' },
+              { text: 'Zsh', link: 'zsh' }
             ],
             collapsed: true
           },

@@ -113,6 +113,7 @@ export default defineConfig({
               { text: 'Thunderbird', link: 'thunderbird'},
               { text: 'Transmission', link: '/transmission' },
               { text: 'Viber', link: '/viber' },
+              { text: 'XLSCLIENTS', link: 'xlsclients' },
               { text: 'YandexBrowser', link: '/yandex-browser' }
             ],
             collapsed: true

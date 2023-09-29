@@ -6,7 +6,7 @@ titleTemplate: ALT Regular Gnome Community
 hero:
   name: "ALT Regular Gnome"
   text: "Community"
-  tagline: открытого сообщества пользователей операционной системы ALT Linux
+  tagline: открытое сообщество пользователей операционной системы ALT Regular Gnome
   image:
     src: /laptop.png
     alt: Gnome

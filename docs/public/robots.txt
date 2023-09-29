@@ -1,2 +1,3 @@
 User-agent: *
 Host: https://alt-gnome.wiki
+Sitemap: https://alt-gnome.wiki/sitemap.xml

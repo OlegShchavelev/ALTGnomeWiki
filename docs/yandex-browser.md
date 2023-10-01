@@ -123,13 +123,7 @@ yandex-browser-stable --ozone-platform-hint=wayland
 1. Удалите пользовательскую конфигуарцию у пользователя
 
 ```shell
-sudo rm -Rfv .config/VSCodium
-```
-2. Переустановите Яндекс Браузер
-
-```shell
-su -
-apt-get instal -reinstall yandex-browser-stable
+sudo rm -Rfv .config/yandex-browser/
 ```
 
 ## Издания Яндекс Браузера

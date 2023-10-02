@@ -45,7 +45,7 @@ const members = [
   },
   {
     avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
-    name: 'Armatik',
+    name: 'Семен Фомченков',
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/Armatik' }

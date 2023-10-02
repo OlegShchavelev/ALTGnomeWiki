@@ -28,15 +28,14 @@ epm -i codium
 epm play codium
 ```
 
-## Запуск Codium в оконном интерфейсе Wayland
+## Запуск VSCodium в оконном интерфейсе Wayland
 
-Запустить Codium через терминал указав дополнительные опции запуска:
+Запустить **VSCodium** через терминал указав дополнительные опции запуска:
 
 ```shell
 codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland
 
 ```
-
 
 ## Установка расширений
 

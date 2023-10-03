@@ -116,6 +116,7 @@ export default defineConfig({
               { text: 'Thunderbird', link: 'thunderbird'},
               { text: 'Transmission', link: '/transmission' },
               { text: 'Viber', link: '/viber' },
+              { text: 'VLC', link: '/vlc' },
               { text: 'XLSCLIENTS', link: 'xlsclients' },
               { text: 'Яндекс Браузер', link: '/yandex-browser' },
               { text: 'Zsh', link: 'zsh' }

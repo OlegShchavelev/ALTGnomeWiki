@@ -120,7 +120,8 @@ export default defineConfig({
               { text: 'VLC', link: '/vlc' },
               { text: 'XLSCLIENTS', link: 'xlsclients' },
               { text: 'Яндекс Браузер', link: '/yandex-browser' },
-              { text: 'Zsh', link: 'zsh' }
+              { text: 'Zsh', link: 'zsh' },
+              { text: 'Стрим', link: '/hello' }
             ],
             collapsed: true
           },

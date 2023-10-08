@@ -11,7 +11,7 @@
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install gnone-boxes
+apt-get install gnome-boxes
 ```
 ```shell[epm]
 epm -i gnome-boxes

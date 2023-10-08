@@ -115,3 +115,15 @@
   --vp-custom-block-details-border: var(--vp-c-divider);
   --vp-custom-block-details-bg: var(--vp-c-bg-soft-up);
   }
+
+  kbd {
+  border: 1px solid var(--vp-c-border);
+  box-shadow: var(--vp-c-gray-soft) 0px 1px 1px 0px, var(--vp-c-neutral-inverse) 0px 1px 0px 0px inset;
+  background-color: var(--vp-c-gray-soft);
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 .2em;
+  overflow-wrap: break-word;
+  padding: .1em .6em;
+  text-shadow: 0 1px 0 var(--vp-c-white);
+}

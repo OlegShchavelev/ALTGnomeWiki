@@ -5,7 +5,8 @@
     "markdown-it": "^13.0.1",
     "markdown-it-container": "^3.0.0",
     "vitepress": "^1.0.0-rc.20",
-    "vitepress-plugin-image-viewer": "^1.1.2"
+    "vitepress-plugin-image-viewer": "^1.1.2",
+    "markdown-it-kbd": "^2.2.2"
   },
   "type": "module",
   "scripts": {

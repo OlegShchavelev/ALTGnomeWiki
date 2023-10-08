@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { telegram } from './icons'
 import { addPlugins } from './theme/plugins/markdown'
+import kbd from 'markdown-it-kbd'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -182,7 +183,8 @@ export default defineConfig({
   },
   markdown: {
     config(md) {
-      addPlugins(md)
+      addPlugins(md);
+      md.use(kbd);
     }
   }
 })

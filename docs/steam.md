@@ -51,7 +51,7 @@ Proton — инструмент, выпущенный Valve Software, котор
 
 ```shell[apt-get]
 su -
-sudo apt-get install vulkan-amdgpu xorg-drv-amdgpu i586-xorg-drv-amdgpu
+apt-get install vulkan-amdgpu xorg-drv-amdgpu i586-xorg-drv-amdgpu
 ```
 ```shell[epm]
 epm -i vulkan-amdgpu xorg-drv-amdgpu i586-xorg-drv-amdgpu

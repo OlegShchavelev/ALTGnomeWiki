@@ -134,6 +134,7 @@ export default defineConfig({
                   { text: 'Запуск приложений', link: '/launching-applications' },
                   { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks.md' },
                   { text: 'Открытие окон по центру экрана', link: '/windows-in-the-center'},
+                  { text: 'Автоматический запуск приложений', link: '/startup-applications'},
                   { text: 'Уведомления и список уведомлений', link: '/notifications'},
                   { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
                   { text: 'Экран блокировки', link: '/lock-screen'}

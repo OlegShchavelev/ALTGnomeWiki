@@ -115,6 +115,7 @@ export default defineConfig({
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
               { text: 'Thunderbird', link: 'thunderbird'},
+              { text: 'Totem', link: '/totem' },
               { text: 'Transmission', link: '/transmission' },
               { text: 'Viber', link: '/viber' },
               { text: 'VLC', link: '/vlc' },

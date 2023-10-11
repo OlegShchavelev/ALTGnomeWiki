@@ -11,13 +11,12 @@ export default defineConfig({
   title: 'ALT Gnome Wiki',
   description: META_DESCRIPTION,
   head: [
-    [
-      'link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }
-    ],
-    [
-      'meta', 
-      { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }
-    ],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['meta', { name: 'theme-color', content: '#62a0ea' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'ru_RU' }],
+    ['meta', { name: 'og:site_name', content: 'ALT Gnome Wiki' }],
+    ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }],
     [
       'script',
       {},

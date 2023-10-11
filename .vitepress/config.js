@@ -36,7 +36,7 @@ export default defineConfig({
     hostname: 'https://alt-gnome.wiki'
   },
   themeConfig: {
-    logo: '/logo.png',
+    logo: { src: '/logo.png', width: 36, height: 36, alt:"ALT Gnome Wiki"},
     search: {
       provider: 'local',
       options: {

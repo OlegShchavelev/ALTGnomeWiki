@@ -122,9 +122,9 @@ export default defineConfig({
               { text: 'Transmission', link: '/transmission' },
               { text: 'Viber', link: '/viber' },
               { text: 'VLC', link: '/vlc' },
-              { text: 'XLSCLIENTS', link: 'xlsclients' },
+              { text: 'XLSCLIENTS', link: '/xlsclients' },
               { text: 'Яндекс Браузер', link: '/yandex-browser' },
-              { text: 'Zsh', link: 'zsh' },
+              { text: 'Zsh', link: '/zsh' },
               { text: 'Стрим', link: '/hello' }
             ],
             collapsed: true
@@ -139,6 +139,7 @@ export default defineConfig({
                   { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks.md' },
                   { text: 'Открытие окон по центру экрана', link: '/windows-in-the-center'},
                   { text: 'Автоматический запуск приложений', link: '/startup-applications'},
+                  { text: 'Быстрое переключение между окнами', link: '/switching-apps'},
                   { text: 'Уведомления и список уведомлений', link: '/notifications'},
                   { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
                   { text: 'Экран блокировки', link: '/lock-screen'}

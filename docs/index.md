@@ -34,13 +34,23 @@ import {
   VPTeamMembers
 } from 'vitepress/theme'
 
+import {
+  gitflic
+} from '../.vitepress/icons.js'
+
 const members = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/20732384?v=4',
     name: 'Олег Щавелев',
     title: 'Разработчик',
     links: [
-      { icon: 'github', link: 'https://github.com/OlegShchavelev' }
+      { icon: 'github', link: 'https://github.com/OlegShchavelev' },
+      {
+        icon: {
+          svg: gitflic
+        },
+        link: 'https://gitflic.ru/user/olegshchavelev'
+      },
     ]
   },
   {
@@ -48,7 +58,13 @@ const members = [
     name: 'Семен Фомченков',
     title: 'Участник',
     links: [
-      { icon: 'github', link: 'https://github.com/Armatik' }
+      { icon: 'github', link: 'https://github.com/Armatik' },
+      {
+        icon: {
+          svg: gitflic
+        },
+        link: 'https://gitflic.ru/user/armatik'
+      },
     ]
   },
   {
@@ -56,7 +72,13 @@ const members = [
     name: 'Anton Palgunov',
     title: 'Участник',
     links: [
-      { icon: 'github', link: 'https://github.com/Toxblh' }
+      { icon: 'github', link: 'https://github.com/Toxblh' },
+      {
+        icon: {
+          svg: gitflic
+        },
+        link: 'https://gitflic.ru/user/toxblh'
+      },
     ]
   }
 ]

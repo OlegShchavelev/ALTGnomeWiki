@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { telegram } from './icons'
+import { telegram, gitflic } from './icons'
 import { addPlugins } from './theme/plugins/markdown'
 import kbd from 'markdown-it-kbd'
 
@@ -79,7 +79,8 @@ export default defineConfig({
           svg: telegram
         },
         link: 'https://t.me/alt_gnome'
-      }
+      },
+      { icon: 'github', link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki' }
     ],
     sidebar: [
       {

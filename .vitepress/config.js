@@ -12,6 +12,9 @@ export default defineConfig({
   description: META_DESCRIPTION,
   head: [
     [
+      'link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+    ],
+    [
       'meta', 
       { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }
     ],

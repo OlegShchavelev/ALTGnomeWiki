@@ -149,6 +149,13 @@ export default defineConfig({
                 text: 'Сети, Интернет и электронная почта',
                 items: [
                   {
+                    text: 'Безопасность',
+                    items: [
+                      { text: 'Нужна ли мне антивирусная программа', link: '/net-antivirus' }
+                    ],
+                    collapsed: true
+                  },
+                  {
                     text: "Веб-браузеры",
                     items: [
                       { text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }

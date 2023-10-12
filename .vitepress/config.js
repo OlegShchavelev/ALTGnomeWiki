@@ -151,7 +151,8 @@ export default defineConfig({
                   {
                     text: 'Безопасность',
                     items: [
-                      { text: 'Нужна ли мне антивирусная программа', link: '/net-antivirus' }
+                      { text: 'Нужна ли мне антивирусная программа', link: '/net-antivirus' },
+                      { text: 'Нужно ли сканировать свою электронную почту на наличие вирусов', link: '/net-email-virus' }
                     ],
                     collapsed: true
                   },

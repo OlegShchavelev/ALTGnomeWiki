@@ -145,6 +145,18 @@ export default defineConfig({
                   { text: 'Экран блокировки', link: '/lock-screen'}
                 ],
                 collapsed: true
+              }, {
+                text: 'Сети, Интернет и электронная почта',
+                items: [
+                  {
+                    text: "Веб-браузеры",
+                    items: [
+                      { text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }
+                    ],
+                    collapsed: true
+                  }
+                ],
+                collapsed: true
               }
             ],
             collapsed: true

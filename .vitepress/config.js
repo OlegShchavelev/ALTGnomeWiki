@@ -165,6 +165,19 @@ export default defineConfig({
                   }
                 ],
                 collapsed: true
+              }, {
+                text: 'Настройки пользователя и системы',
+                items: [
+                  {
+                  text: 'Клавиатура',
+                  items: [
+                    { text: 'Использование других раскладок клавиатуры', link: '/keyboard-layouts' },
+                    { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
+                  ],  
+                  collapsed: true
+                  }
+                ],
+                collapsed: true
               }
             ],
             collapsed: true

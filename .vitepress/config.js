@@ -16,6 +16,7 @@ export default defineConfig({
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'ru_RU' }],
     ['meta', { name: 'og:site_name', content: 'ALT Gnome Wiki' }],
+    ['meta', { name: 'og:image', content: '/public/og-alt-wiki.jpg' }],
     ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }],
     [
       'script',

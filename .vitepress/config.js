@@ -112,6 +112,7 @@ export default defineConfig({
               { text: 'Libreoffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
               { text: 'Neofetch', link: '/neofetch' },
+              { text: 'Neovim', link: '/neovim' },
               { text: 'Nodejs', link: '/nodejs' },
               { text: 'Nvidia', link: '/nvidia' },
               { text: 'Opera', link: '/opera' },

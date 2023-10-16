@@ -125,6 +125,7 @@ export default defineConfig({
               { text: 'Viber', link: '/viber' },
               { text: 'VLC', link: '/vlc' },
               { text: 'XLSCLIENTS', link: '/xlsclients' },
+              { text: 'Xmind', link: '/xmind'},
               { text: 'Яндекс Браузер', link: '/yandex-browser' },
               { text: 'Zsh', link: '/zsh' },
               { text: 'Стрим', link: '/hello' }

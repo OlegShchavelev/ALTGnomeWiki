@@ -99,6 +99,7 @@ export default defineConfig({
               { text: 'Chromium', link: '/chromium' },
               { text: 'Codium', link: '/codium' },
               { text: 'Console', link: '/console' },
+              { text: 'Drawing', link: '/drawing' },
               { text: 'Eog', link: '/eog' },
               { text: 'Epm', link: '/epm' },
               { text: 'Evince', link: '/evince' },

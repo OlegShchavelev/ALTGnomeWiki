@@ -11,7 +11,7 @@ export default defineConfig({
   title: 'ALT Gnome Wiki',
   description: META_DESCRIPTION,
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico?v=2', sizes: 'any' }],
+    ['link', { rel: 'icon', href: '/favicon.ico', sizes: 'any' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'theme-color', content: '#62a0ea' }],
     ['meta', { name: 'og:type', content: 'website' }],

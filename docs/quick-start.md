@@ -4,7 +4,7 @@
 
 ### Где скачать ALT Regular Gnome?
 
-Загрузить ISO образ дистрибутива можно по ссылкам: [x86_64](http://nightly.altlinux.org/sisyphus/tested/regular-gnome-latest-x86_64.iso), [aarch64](http://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso) 
+Загрузить ISO образ дистрибутива можно по ссылкам: [x86_64](https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso), [aarch64](http://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso) 
 
 ### Какие DE поддерживаются?
 

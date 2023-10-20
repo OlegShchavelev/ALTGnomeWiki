@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text:  Cкачать ALT Regular Gnome
-      link:  http://nightly.altlinux.org/sisyphus/tested/regular-gnome-latest-x86_64.iso
+      link:  https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso
     - theme: alt
       text: Документация
       link: /wiki

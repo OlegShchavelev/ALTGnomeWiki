@@ -18,3 +18,7 @@ cd ALTRegularGnomeWiki
 npm i
 npm run docs:dev
 ```
+
+## Зеркало
+
+Вся документация из этого репозитория размещается на сайте [alt-gnome.wiki](https://alt-gnome.wiki/) автоматически.

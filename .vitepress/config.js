@@ -120,6 +120,7 @@ export default defineConfig({
               { text: 'Neovim', link: '/neovim' },
               { text: 'Nodejs', link: '/nodejs' },
               { text: 'Nvidia', link: '/nvidia' },
+              { text: 'OBS Studio', link: '/obs-studio' },
               { text: 'Opera', link: '/opera' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },

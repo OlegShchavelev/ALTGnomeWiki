@@ -23,5 +23,5 @@ epm -i obs-studio
 При наличии пакета [Flatpak](/flatpak), можно установить **OBS Studio** одной командой:
 
 ```shell
-flatpak install flathub org.telegram.desktop
+flatpak install flathub com.obsproject.Studio
 ```

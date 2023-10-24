@@ -60,6 +60,69 @@ powertop
 
 Так мы уже разительно снизили потребление 
 
-#ToDo Facetime Camera
-#ToDo tune kernel - стабильно дойти до PC7
-#ToDo tune планировщиков для улучшениея жизни от батареи
+# Facetime Camera
+
+Запуск камеры в пару простых действий
+
+1. Создадим bash скрипт, который сделает всё по красоте за нас. Например пусть будет facetimehd.sh
+```bash
+#!/bin/bash
+set -e
+
+export CONFIG_MODULE_SIG=n
+export CONFIG_MODULE_SIG_ALL=n
+# For current kernel
+export KERNELRELEASE=$(cat /proc/version | awk '{print $3}')
+
+temp_dir=$(mktemp -d)
+echo "Installing FacetimeHD camera for $KERNELRELEASE"
+cd $temp_dir
+git clone https://github.com/patjak/facetimehd-firmware.git
+git clone https://github.com/patjak/bcwc_pcie.git
+
+cd $temp_dir/facetimehd-firmware
+pwd
+make
+make install
+cd $temp_dir/bcwc_pcie
+pwd
+make
+make install
+rm -rf $temp_dir
+
+if [ ! -d "/etc/modules-load.d" ]; then
+  mkdir -p "/etc/modules-load.d"
+fi
+
+cat > "/etc/modules-load.d/facetimehd.conf" << EOL
+videobuf2-core
+videobuf2_v4l2
+videobuf2-dma-sg
+facetimehd
+EOL
+
+
+# Workaround for depmod being skipped above with error:
+# Warning: modules_install: missing 'System.map' file. Skipping depmod
+echo "Generate modules.dep and map files"
+sudo depmod
+
+echo "Adding kernel modules"
+sudo modprobe -r bdc_pci
+sudo modprobe facetimehd
+
+echo "Install complete"
+```
+2. Делаем его исполняемым `chmod +x facetimehd.sh`
+3. Собираем и устанавливаем `sudo ./facetimehd.sh`
+4. Если будет ошибка `modprobe: FATAL: Module bdc_pci not found.` не паримся и делаем так `sudo modprobe facetimehd`
+
+Ну всё, вот камера и работает :)
+
+Источник: https://gist.github.com/ukn/a2f85e3420ae7d0f64db2274a9bc106b 
+
+Можно попробовать с калибровкой цветов отсюда: https://gist.github.com/xyb/879f3bdf93cb5e8fc3d9d9675ae272cb
+
+
+- [ ] #ToDo tune kernel - стабильно дойти до PC7
+- [ ] #ToDo tune планировщиков для улучшениея жизни от батареи

@@ -53,7 +53,7 @@ epm play telegram = beta
 Для удаления приложения используйте `epm play --remove <app>`
 
 ```shell
-epm play telegram
+epm play --remove telegram
 ```
 
 Возможно удалить приложение используя пакетный менеджер: 

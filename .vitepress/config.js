@@ -7,6 +7,7 @@ export const META_DESCRIPTION = 'Свободная WIKI по операцион
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'ru-RU',
   srcDir: './docs',
   title: 'ALT Gnome Wiki',
   description: META_DESCRIPTION,

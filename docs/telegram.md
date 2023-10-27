@@ -44,7 +44,7 @@ flatpak install flathub org.telegram.desktop
 
 ## Проблема отрисовки шрифтов в Telegram <Badge type="warning" text="sisyphus" />
 
- После установки месендера Telegram по вашему мнению шрифты отображается не корректно, необходимо установить пакет `fonts-ttf-open-sans`
+ После установки месенжера Telegram при условии: некорректного отображения части шрифтов в интнрфейсе браузера, необходимо установить пакет `fonts-ttf-open-sans`
 
 ::: code-group
 
@@ -58,4 +58,6 @@ epm -i fonts-ttf-open-sans
 ```
 :::
 
+:::info
 После установки пакета fonts-ttf-open-sans рекомедуем перезагрузить компьютер.
+:::

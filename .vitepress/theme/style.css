@@ -89,3 +89,12 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
+/**
+ * Brands
+ * -------------------------------------------------------------------------- */
+
+.vp-sponsor-grid.big .vp-sponsor-grid-image {
+  max-width: 170px;
+  max-height: 120px;
+}
+

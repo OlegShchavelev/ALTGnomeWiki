@@ -32,8 +32,11 @@ import {
   VPTeamPage,
   VPTeamPageTitle,
   VPTeamMembers,
+  VPHomeSponsors,
+  VPSponsors
 } from 'vitepress/theme'
-import { members } from '../_data/team.js'
+import { members } from '../_data/team'
+import { sponsors } from '../_data/sponsors'
 </script>
 
 <VPTeamPage>
@@ -46,3 +49,6 @@ import { members } from '../_data/team.js'
     :members="members"
   />
 </VPTeamPage>
+
+
+<VPSponsors :data="sponsors" />

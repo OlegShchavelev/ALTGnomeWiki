@@ -98,10 +98,10 @@
   max-height: 120px;
 }
 
-.message[data-v-4e7967a5] {
+.VPHomeSponsors .message {
   max-width: 800px;
 }
 
-.VPHome[data-v-d8beba3b] .VPHomeSponsors {
+.VPHome .VPHomeSponsors {
   margin-top: 0;
 }

@@ -50,5 +50,8 @@ import { sponsors } from '../_data/sponsors'
   />
 </VPTeamPage>
 
-
-<VPSponsors :data="sponsors" />
+<VPHomeSponsors
+    v-if="sponsors"
+    message="Данный сервис является Open-Source проектом и его поддержка и развитие зависит только он нашей совместной активности."
+    :data="sponsors"
+  />

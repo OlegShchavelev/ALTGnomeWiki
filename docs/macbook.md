@@ -17,17 +17,22 @@
 ## Настройка
 
 Настраивать нам нужно многое, но всё не так страшно. Для начала нам нужна сеть
+Для начала перед всеми манипуляциями обновите систему
+```bash
+su -
+epm full-upgrade
+```
 
 ### WiFi
 Прошли те времена, когда это вызывало боль, на сегодня Broadcom даёт свои драйвера под распространение, нам нужно их только установить:
 
 ```shell
-$ su -
-# apt-get install kernel-modules-bcmwl-un-def
-# apt-get insall bcmwl-kernel-conf
-# reboot
+su -
+apt-get install kernel-modules-bcmwl-un-def
+apt-get install bcmwl-kernel-conf
+reboot
 ```
-> Источник: https://www.altlinux.org/Wi-fi_Broadcom (данные по поддержке устарели) 
+> Источник: https://www.altlinux.org/Wi-fi_Broadcom (данные по поддержке в таблице устарели, не смотрите туда) 
 
 После перезагрузки появиться возможность подключиться и использовать wifi.
 
@@ -52,7 +57,7 @@ mcedit /etc/default/grub
 
 2. Powertop нам друг
 ```shell
-su -l
+su -
 powertop
 ```
 Табом дойти до tunable вкладки, заодно можете полюбоваться Idle State в левом столбце Pkg(HW) должны быть проценты не нулевые у C6/C7
@@ -63,6 +68,12 @@ powertop
 # Facetime Camera
 
 Запуск камеры в пару простых действий
+
+0. Установка всего необходимого 
+```bash
+su -
+apt-get install git kernel-headers-un-def kernel-headers-modules-un-def
+```
 
 1. Создадим bash скрипт, который сделает всё по красоте за нас. Например пусть будет facetimehd.sh
 ```bash
@@ -123,6 +134,140 @@ echo "Install complete"
 
 Можно попробовать с калибровкой цветов отсюда: https://gist.github.com/xyb/879f3bdf93cb5e8fc3d9d9675ae272cb
 
+# Включаем двойную графику и собираем GPU-Switch
+### Предисловие
+В Macbook Pro 11,3 по умолчанию для Linux разрешена только дискретаная карта Nvidia M750GT, однако для обычной работы ее слишком много, как много и потребления питания при ее работе.
 
+Что-бы исправить это положение дел предлагается следующее решение:
+
+### GPU switcher
+Для переключения режима достаточно скачать приложение gpu-switch с репозитория 
+
+https://github.com/0xbb/gpu-switch.git
+
+Эта программа позволяет переключить видеокарту на требуемую.
+
+::: info
+Переключение происходит непосредственно после перезагрузки
+:::
+
+```bash
+su -
+
+git clone https://github.com/0xbb/gpu-switch.git
+cd gpu-switch
+
+# для интегрированной карты (Intel)
+./gpu-switch -i 
+
+# или для дискретной карты (NVidia)
+./gpu-switch -d 
+```
+
+### Включаем Intel
+
+Однако на этом ноутбуке требуется дополнительные действия 
+для включения видеокарты Intel. Cамое простое это собрать EFI модуль 
+для обхода ограничения Apple. Модуль можно собрать следующим образом:
+
+```bash
+su -
+
+apt-get install gcc gnu-efi
+git clone https://github.com/0xbb/apple_set_os.efi apple-set-os
+cd apple-set-os
+git apply ./alt-linux-lib64.patch
+make
+```
+
+Сохраните патч ниже, как `alt-linux-lib64.patch` для команды выше в папку apple-set-os
+```patch
+commit 7f29a978c13de7cacc6d4d1c00bb160bf3bc51ae
+Author: iTux <itux@idev.pro>
+Date:   Sun Oct 29 17:13:43 2023 +0300
+
+    Fix libdir
+
+diff --git a/Makefile b/Makefile
+index 31e1982..77b4d5d 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,4 +1,5 @@
+ ARCH	= x86_64
++LIBDIR	= /usr/lib64
+ 
+ TARGET	= apple_set_os.efi
+ FORMAT 	= efi-app-$(ARCH)
+@@ -9,8 +10,8 @@ CFLAGS	= -I$(INC) -I$(INC)/$(ARCH) \
+ 		 -fno-stack-protector -maccumulate-outgoing-args \
+ 		 -Wall -D$(ARCH) -Werror -m64 -mno-red-zone
+ 
+-LDFLAGS	= -T /usr/lib/elf_$(ARCH)_efi.lds -Bsymbolic -shared -nostdlib -znocombreloc \
+-		  /usr/lib/crt0-efi-$(ARCH).o
++LDFLAGS	= -T $(LIBDIR)/elf_$(ARCH)_efi.lds -Bsymbolic -shared -nostdlib -znocombreloc \
++		  $(LIBDIR)/crt0-efi-$(ARCH).o
+ 
+ %.efi: %.so
+ 	objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym -j .rel \
+@@ -18,7 +19,7 @@ LDFLAGS	= -T /usr/lib/elf_$(ARCH)_efi.lds -Bsymbolic -shared -nostdlib -znocombr
+ 
+ %.so: %.o
+ 	$(LD) $(LDFLAGS) -o $@ $^ $(shell $(CC) $(CFLAGS) -print-libgcc-file-name) \
+-	/usr/lib/libgnuefi.a
++	$(LIBDIR)/libgnuefi.a
+ 
+ all: $(TARGET)
+```
+
+
+Далее надо подключить этот модуль
+
+- Копируем
+```bash
+mkdir /boot/efi/EFI/custom
+cp apple_set_os.efi /boot/efi/EFI/custom
+```
+
+- Включаем модуль
+``` bash
+nano -w /etc/grub.d/40_custom
+# в конец файла добавляем
+ search --no-floppy --set=root --label EFI
+ chainloader (${root})/EFI/custom/apple_set_os.efi
+ boot
+# сохраняем и выходим из редактора
+```
+
+- Обновляем конфигурацию
+```bash
+grub-mkconfig -o /boot/grub/grub.cfg
+update-grub
+```
+
+И перезагружаемся...
+
+### Проверка
+
+Что-бы проверить работает или нет, достаточно взглянуть 
+на результат комманды `inxi -G`
+
+```bash
+inxi -G
+
+#Graphics:
+#  Device-1: Intel Crystal Well Integrated Graphics driver: i915
+#  Device-2: NVIDIA GK107M [GeForce GT 750M Mac Edition] driver: nouveau
+```
+
+
+# Полезные ссылки:
+- https://github.com/Dunedan/mbp-2016-linux большой репозиторий для макбуков 2016 год+
+- https://wiki.archlinux.org/title/Mac/Troubleshooting# - решение проблем с маком
+- https://github.com/0xbb/gpu-switch GPU переключатель на маках
+- https://nixaid.com/linux-on-macbookpro-old/ не плохая статья можно подчерпнуть что-то полезное
+- http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1 кастомизации для бука 2013 16" 11.3 
+
+# ToDo
+- [ ] Табличку поддержки может добавить, что работает, а что нет
 - [ ] #ToDo tune kernel - стабильно дойти до PC7
 - [ ] #ToDo tune планировщиков для улучшениея жизни от батареи

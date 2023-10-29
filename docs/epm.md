@@ -48,7 +48,7 @@ epm play telegram
 epm play telegram = beta
 ```
 
-### Удаленить приложение
+### Удалить приложение
 
 Для удаления приложения используйте `epm play --remove <app>`
 

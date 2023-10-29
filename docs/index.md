@@ -52,6 +52,6 @@ import { sponsors } from '../_data/sponsors'
 
 <VPHomeSponsors
     v-if="sponsors"
-    message="Данный сервис является Open-Source проектом и его поддержка и развитие зависит только он нашей совместной активности."
+    message="Данный сервис является Open-Source проектом и его поддержка и развитие зависит только от нашей совместной активности."
     :data="sponsors"
   />

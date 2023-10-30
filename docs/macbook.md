@@ -20,7 +20,7 @@
 Для начала перед всеми манипуляциями обновите систему
 ```bash
 su -
-epm full-upgrade
+apt-get update && apt-get dist-upgrade
 ```
 
 ### WiFi
@@ -32,7 +32,11 @@ apt-get install kernel-modules-bcmwl-un-def
 apt-get install bcmwl-kernel-conf
 reboot
 ```
-> Источник: https://www.altlinux.org/Wi-fi_Broadcom (данные по поддержке в таблице устарели, не смотрите туда) 
+
+::: warning
+Источник: https://www.altlinux.org/Wi-fi_Broadcom
+Данные по поддержке в таблице устарели, не смотрите туда
+:::
 
 После перезагрузки появиться возможность подключиться и использовать wifi.
 
@@ -136,7 +140,7 @@ echo "Install complete"
 
 # Включаем двойную графику и собираем GPU-Switch
 ### Предисловие
-В Macbook Pro 11,3 по умолчанию для Linux разрешена только дискретаная карта Nvidia M750GT, однако для обычной работы ее слишком много, как много и потребления питания при ее работе.
+В Macbook Pro 11,3 по умолчанию для Linux разрешена только дискретаная карта Nvidia GT 750M, однако для обычной работы ее слишком много, как много и потребления питания при ее работе.
 
 Что-бы исправить это положение дел предлагается следующее решение:
 
@@ -180,7 +184,7 @@ git apply ./alt-linux-lib64.patch
 make
 ```
 
-Сохраните патч ниже, как `alt-linux-lib64.patch` для команды выше в папку apple-set-os
+Сохраните патч ниже, как `alt-linux-lib64.patch` для команды выше в папку `apple-set-os`
 ```patch
 commit 7f29a978c13de7cacc6d4d1c00bb160bf3bc51ae
 Author: iTux <itux@idev.pro>

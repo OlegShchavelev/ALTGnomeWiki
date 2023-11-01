@@ -100,6 +100,7 @@ export default defineConfig({
               { text: 'Blender', link: '/blender' },
               { text: 'Boxes', link: '/boxes'},
               { text: 'Chromium', link: '/chromium' },
+              { text: 'Сartridges', link: '/cartridges' },
               { text: 'Codium', link: '/codium' },
               { text: 'Console', link: '/console' },
               { text: 'Drawing', link: '/drawing' },

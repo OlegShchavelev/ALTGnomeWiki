@@ -9,3 +9,11 @@
 ```shell
 epm play opera
 ```
+
+## Установка c помощью Flatpak
+
+При наличии пакета [Flatpak](/flatpak), можно установить **Opera** одной командой:
+
+```shell
+flatpak install flathub com.opera.Opera
+```

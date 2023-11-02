@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text:  Cкачать ALT Regular Gnome
-      link:  http://nightly.altlinux.org/sisyphus/tested/regular-gnome-latest-x86_64.iso
+      link:  https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso
     - theme: alt
       text: Документация
       link: /wiki
@@ -31,35 +31,12 @@ features:
 import {
   VPTeamPage,
   VPTeamPageTitle,
-  VPTeamMembers
+  VPTeamMembers,
+  VPHomeSponsors,
+  VPSponsors
 } from 'vitepress/theme'
-
-const members = [
-  {
-    avatar: 'https://avatars.githubusercontent.com/u/20732384?v=4',
-    name: 'Олег Щавелев',
-    title: 'Разработчик',
-    links: [
-      { icon: 'github', link: 'https://github.com/OlegShchavelev' }
-    ]
-  },
-  {
-    avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
-    name: 'Семен Фомченков',
-    title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/Armatik' }
-    ]
-  },
-  {
-    avatar: 'https://avatars.githubusercontent.com/u/2198153?v=4',
-    name: 'Anton Palgunov',
-    title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/Toxblh' }
-    ]
-  }
-]
+import { members } from '../_data/team'
+import { sponsors } from '../_data/sponsors'
 </script>
 
 <VPTeamPage>
@@ -72,3 +49,9 @@ const members = [
     :members="members"
   />
 </VPTeamPage>
+
+<VPHomeSponsors
+    v-if="sponsors"
+    message="Данный сервис является Open-Source проектом и его поддержка и развитие зависит только от нашей совместной активности."
+    :data="sponsors"
+  />

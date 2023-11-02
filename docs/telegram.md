@@ -42,3 +42,22 @@ flatpak install flathub org.telegram.desktop
 2. Затем переходим в: *Настройки -> Продвинутые настройки -> Экспериментальные настройки* включите опцию **GNotification**
 3. Перезагружаем клиент Telegram, проверяем результат. 
 
+## Проблема отрисовки шрифтов в Telegram <Badge type="warning" text="sisyphus" />
+
+ После установки месенжера Telegram при условии: некорректного отображения части шрифтов в интнрфейсе, необходимо установить пакет `fonts-ttf-open-sans`
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install fonts-ttf-open-sans
+```
+```shell[epm]
+epm -i fonts-ttf-open-sans
+```
+:::
+
+:::info
+После установки пакета fonts-ttf-open-sans рекомедуем перезагрузить компьютер.
+:::

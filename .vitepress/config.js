@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { telegram } from './icons'
+import { telegram, gitflic } from './icons'
 import { addPlugins } from './theme/plugins/markdown'
 import kbd from 'markdown-it-kbd'
 
@@ -7,14 +7,21 @@ export const META_DESCRIPTION = 'Свободная WIKI по операцион
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'ru-RU',
   srcDir: './docs',
   title: 'ALT Gnome Wiki',
   description: META_DESCRIPTION,
   head: [
-    [
-      'meta', 
-      { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }
-    ],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['meta', { name: 'theme-color', content: '#62a0ea' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'ru_RU' }],
+    ['meta', { name: 'og:site_name', content: 'ALT Gnome Wiki' }],
+    ['meta', { name: 'og:image', content: 'https://alt-gnome.wiki/og-alt-wiki.jpg' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: 'https://alt-gnome.wiki/og-alt-wiki.jpg' }],
+    ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }],
     [
       'script',
       {},
@@ -36,7 +43,7 @@ export default defineConfig({
     hostname: 'https://alt-gnome.wiki'
   },
   themeConfig: {
-    logo: '/logo.png',
+    logo: { src: '/logo.png', width: 36, height: 36, alt:"ALT Gnome Wiki"},
     search: {
       provider: 'local',
       options: {
@@ -79,7 +86,8 @@ export default defineConfig({
           svg: telegram
         },
         link: 'https://t.me/alt_gnome'
-      }
+      },
+      { icon: 'github', link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki' }
     ],
     sidebar: [
       {
@@ -92,8 +100,10 @@ export default defineConfig({
               { text: 'Blender', link: '/blender' },
               { text: 'Boxes', link: '/boxes'},
               { text: 'Chromium', link: '/chromium' },
+              { text: 'Сartridges', link: '/cartridges' },
               { text: 'Codium', link: '/codium' },
               { text: 'Console', link: '/console' },
+              { text: 'Drawing', link: '/drawing' },
               { text: 'Eog', link: '/eog' },
               { text: 'Epm', link: '/epm' },
               { text: 'Evince', link: '/evince' },
@@ -109,18 +119,22 @@ export default defineConfig({
               { text: 'Libreoffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
               { text: 'Neofetch', link: '/neofetch' },
+              { text: 'Neovim', link: '/neovim' },
               { text: 'Nodejs', link: '/nodejs' },
               { text: 'Nvidia', link: '/nvidia' },
+              { text: 'OBS Studio', link: '/obs-studio' },
               { text: 'Opera', link: '/opera' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
               { text: 'Thunderbird', link: 'thunderbird'},
+              { text: 'Totem', link: '/totem' },
               { text: 'Transmission', link: '/transmission' },
               { text: 'Viber', link: '/viber' },
               { text: 'VLC', link: '/vlc' },
-              { text: 'XLSCLIENTS', link: 'xlsclients' },
+              { text: 'XLSCLIENTS', link: '/xlsclients' },
+              { text: 'Xmind', link: '/xmind'},
               { text: 'Яндекс Браузер', link: '/yandex-browser' },
-              { text: 'Zsh', link: 'zsh' },
+              { text: 'Zsh', link: '/zsh' },
               { text: 'Стрим', link: '/hello' }
             ],
             collapsed: true
@@ -134,9 +148,44 @@ export default defineConfig({
                   { text: 'Запуск приложений', link: '/launching-applications' },
                   { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks.md' },
                   { text: 'Открытие окон по центру экрана', link: '/windows-in-the-center'},
+                  { text: 'Автоматический запуск приложений', link: '/startup-applications'},
+                  { text: 'Быстрое переключение между окнами', link: '/switching-apps'},
                   { text: 'Уведомления и список уведомлений', link: '/notifications'},
                   { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
                   { text: 'Экран блокировки', link: '/lock-screen'}
+                ],
+                collapsed: true
+              }, {
+                text: 'Сети, Интернет и электронная почта',
+                items: [
+                  {
+                    text: 'Безопасность',
+                    items: [
+                      { text: 'Нужна ли мне антивирусная программа', link: '/net-antivirus' },
+                      { text: 'Нужно ли сканировать свою электронную почту на наличие вирусов', link: '/net-email-virus' }
+                    ],
+                    collapsed: true
+                  },
+                  {
+                    text: "Веб-браузеры",
+                    items: [
+                      { text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }
+                    ],
+                    collapsed: true
+                  }
+                ],
+                collapsed: true
+              }, {
+                text: 'Настройки пользователя и системы',
+                items: [
+                  {
+                  text: 'Клавиатура',
+                  items: [
+                    { text: 'Использование других раскладок клавиатуры', link: '/keyboard-layouts' },
+                    { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
+                  ],  
+                  collapsed: true
+                  }
                 ],
                 collapsed: true
               }

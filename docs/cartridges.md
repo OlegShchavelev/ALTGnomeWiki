@@ -11,10 +11,10 @@
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install cartridge
+apt-get install cartridges
 ```
 ```shell[epm]
-epm -i cartridge
+epm -i cartridges
 ```
 :::
 

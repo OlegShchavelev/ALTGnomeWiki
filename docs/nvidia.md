@@ -42,3 +42,19 @@ ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 ```
 
 Перезагружаем операционную систему, выберите в списке сессию Gnome.
+
+## Неизвестный монитор в настройках дисплеев в сессии Wayland
+
+Внесем изменение в настройку в конфигурацию **GRUB**:
+
+```shell
+su -
+mcedit /etc/sysconfig/grub2
+```
+
+Добавляем в параметр `GRUB_CMDLINE_LINUX_DEFAULT` значение `initcall_blacklist=simpledrm_platform_driver_init` и сохраняем.
+
+```shell
+su -
+grub-mkconfig -o /boot/grub/grub.cfg
+```

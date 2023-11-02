@@ -15,14 +15,14 @@ apt-get install gnome-remote-desktop
 #### Из графической оболочки
 - Открыть приложение настройки
 - Открыть группу настроек "Общий доступ"
-![flatpak_1](/gnome-remote-desktop/open-settings.gif)
+![gnome-remote-desktop-1](/gnome-remote-desktop/open-settings.gif)
 
 - Изменить состояние переключателя "Удаленный рабочий стол" на - включено
 - Переключатель "Удаленное управление" управляет режимами "просмотр" / "управление"
-![flatpak_1](/gnome-remote-desktop/enable-service.gif)
+![gnome-remote-desktop-2](/gnome-remote-desktop/enable-service.gif)
 
 - Задать пароль пользователя (установить новый)
-![flatpak_1](/gnome-remote-desktop/set-user-password.gif)
+![gnome-remote-desktop-3](/gnome-remote-desktop/set-user-password.gif)
 
 #### Из коммандной строки
 ::: code-group

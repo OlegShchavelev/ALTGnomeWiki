@@ -46,20 +46,6 @@ export const members = [
       ]
     },
     {
-      avatar: 'https://avatars.githubusercontent.com/u/2198153?v=4',
-      name: 'Anton Palgunov',
-      title: 'Участник',
-      links: [
-        { icon: 'github', link: 'https://github.com/Toxblh' },
-        {
-          icon: {
-            svg: gitflic
-          },
-          link: 'https://gitflic.ru/user/toxblh'
-        },
-      ]
-    },
-    {
       avatar: 'https://avatars.githubusercontent.com/u/1888230?v=4',
       name: 'iQQator',
       title: 'Участник',

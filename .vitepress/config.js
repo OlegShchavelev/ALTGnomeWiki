@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 import { telegram, gitflic } from './icons'
-import { addPlugins } from './theme/plugins/markdown'
 import kbd from 'markdown-it-kbd'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
@@ -233,8 +232,14 @@ export default defineConfig({
     }
   },
   markdown: {
+    container: {
+      tipLabel: 'Подсказка',
+      warningLabel: 'Внимание',
+      dangerLabel: 'Осторожно',
+      infoLabel: 'Информация',
+      detailsLabel: 'Подробнее',
+    },
     config(md) {
-      addPlugins(md);
       md.use(kbd);
     }
   }

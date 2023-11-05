@@ -233,7 +233,7 @@ export default defineConfig({
     outlineTitle: 'Оглавление',
     footer: {
       message: 'Содержание доступно по лицензии MIT',
-      copyright: '2023 ALT Regular Gnome Community, разработано на платформе VitePress 1.0.0-rc.24'
+      copyright: '2023 ALT Regular Gnome Community, разработано на платформе VitePress 1.0.0-rc.25'
     }
   },
   markdown: {

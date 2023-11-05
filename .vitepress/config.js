@@ -199,7 +199,7 @@ export default defineConfig({
         ]
       }, 
       {
-        text: 'Быстрые сслыки',
+        text: 'Быстрые ссылки',
         items: [
           { text: 'APT', link: '/apt-get' },
           { text: 'Сизиф', link: '/sisyphus' },

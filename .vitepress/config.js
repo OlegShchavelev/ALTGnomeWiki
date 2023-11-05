@@ -87,7 +87,6 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: 'Популярное',
         items: [
           { text: 'Быстрый старт', link: '/quick-start' },
           {
@@ -198,6 +197,15 @@ export default defineConfig({
 
           { text: 'Алтай', link: '/altai' }
         ]
+      }, 
+      {
+        text: 'Быстрые сслыки',
+        items: [
+          { text: 'APT', link: '/apt-get' },
+          { text: 'Сизиф', link: '/sisyphus' },
+          { text: 'EPM', link: '/epm' },
+          { text: 'Flatpak', link: '/flatpak' }
+        ]
       }
     ],
     editLink: {
@@ -265,7 +273,5 @@ export default defineConfig({
         )
         pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
       } 
-
-    console.log(pageData);
   }
 })

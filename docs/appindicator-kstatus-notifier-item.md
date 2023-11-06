@@ -12,4 +12,4 @@
 
 Мы рекомендуем установку расширения описанной на странице [Расширения рабочего окружения GNOME](extensions):
 
-![appindicator-kstatus-notifier-item](appindicator-kstatus-notifier-item/appindicator-kstatus-notifier-item.gif)
+![appindicator-kstatus-notifier-item](appindicator-kstatus-notifier-item/appindicator-kstatus-notifier-item-1.gif)

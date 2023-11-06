@@ -135,7 +135,7 @@ epm play --installed telegram
 epm play --product-alternatives telegram
 ```
 
-# Утилита EPM Repack 
+## Утилита EPM Repack 
 
 EPM Repack — инструмент позваляющий конвертировать (переупоковать) пакеты от сторонних производителей в стандарт RPM семейства операционных систем АЛЬТ
 

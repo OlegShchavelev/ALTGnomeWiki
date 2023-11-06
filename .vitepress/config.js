@@ -191,6 +191,7 @@ export default defineConfig({
             text: 'Расширения рабочего окружения GNOME',
             items: [
               { text: 'Open Weather', link: '/openweather' },
+              { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'}
             ]
           },
           { text: 'Запись на DVD и USB Flash', link: '/getting-started' },

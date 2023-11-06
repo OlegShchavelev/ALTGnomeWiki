@@ -135,6 +135,40 @@ epm play --installed telegram
 epm play --product-alternatives telegram
 ```
 
+# Утилита EPM Repack 
+
+EPM Repack — инструмент позваляющий конвертировать (переупоковать) пакеты от сторонних производителей в стандарт RPM семейства операционных систем АЛЬТ
+
+| Менеджер пакетов |      Дистрибутив     |
+| -----------------| -------------------  |
+| rpm | asplinux suse mandriva rosa mandrake pclinux sled sles fedora redhat scientific centos rhel | 
+| deb | debian ubuntu mint runtu mcst |
+| tgz | slackware mopslinux |
+| tbz | freebsd |
+| tbz2 | gentoo |
+| apk | alpine |
+| pkg.gz | sunos |
+
+Установим deb приложение используя утилиту epm repack:
+
+```shell
+epm repack tonfotos.deb
+```
+
+Альтернативном вводом является:
+
+```shell
+epm -i tonfotos.deb
+```
+
+:::info
+ Предворительно скачайте deb-пакет [на официальном сайте производителя](https://tonfotos.com). Перейдите в папку со скаченной программой Tonfotos, в моем случае:
+
+```shell
+cd Загрузки
+```
+:::
+
 ## Установка приложений с помощью appinstall
 
 Для установки и удаления приложений из каталога `epm play` используя графический интерфейс, рекомендуем использовать appinstall

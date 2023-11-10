@@ -233,6 +233,9 @@ export default defineConfig({
       next: 'Следующая страница'
     },
     outlineTitle: 'Оглавление',
+    outline: {
+      level: [2, 3],
+    },
     footer: {
       message: 'Содержание доступно по лицензии MIT',
       copyright: '2023 ALT Regular Gnome Community, разработано на платформе VitePress 1.0.0-rc.25'

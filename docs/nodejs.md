@@ -13,9 +13,9 @@ Node.js - асинхронное событийное JavaScript-окружен�
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install nodejs npm
+apt-get install node npm
 ```
 ```shell[epm]
-epm -i nodejs npm
+epm -i node npm
 ```
 :::

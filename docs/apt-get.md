@@ -40,7 +40,28 @@ apt-get update
 ```
 :::
 
-## Установка приложений.
+## Обновить систему
+
+Обновить систему до актуального состояния, используйте следующую команду:
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get dist-upgrade
+```
+```shell[epm]
+epm upgrade
+```
+
+:::
+
+:::info
+В операционная системах семейства Альт пакетный менеджер (APT) автоматически не обновляет ядра вместе с обновлением системы, поскольку обновление такого критичного компонента системы может привести к нежелательным последствиям. 
+:::
+
+## Установка приложений
 
 Установка пакета производится следующей командой:
 
@@ -138,18 +159,97 @@ apt-get remove -D пакет
 ::: code-group
 
 ```shell[apt-get]
-apt-cache search 0ag
+apt-cache search telegram
 ```
 ```shell[epm]
-epm search 0ag
+epm search telegram
 ```
 :::
+
+::: details Нажмите для отображения кода
+::: code-group
+
+```shell [apt-get]
+cutegram - Cutegram is a telegram client by Aseman Land
+libqtelegram-ae - Most powerfull telegram library that created using C++ and Qt.
+libqtelegram-ae-devel - Development files for libqtelegram-ae
+libtgvoip - VoIP library for Telegram clients
+matterbridge - A simple chat bridge
+nheko - Desktop client (QT) for the Matrix protocol
+purple-telegram - Libpurple protocol plugin for Telegram support
+tdlib - Cross-platform library for building Telegram clients
+telegram-bot-api - The Telegram Bot API provides an HTTP API for creating Telegram Bots.
+telegram-desktop - Telegram Desktop messaging app
+libtelegram-qt5 - Qt library for Telegram network
+libtelegram-qt5-devel - Development headers and pkg-config for TelegramQt library
+telegramqml - Telegram API tools for QtQml and Qml
+telepathy-morse - Morse is a Qt-based Telegram connection manager for the Telepathy framework.
+tgsend - Simple Telegram bot sender
+i586-libqtelegram-ae - Most powerfull telegram library that created using C++ and Qt.
+i586-libqtelegram-ae-devel - Development files for libqtelegram-ae
+i586-libtelegram-qt5 - Qt library for Telegram network
+i586-libtelegram-qt5-devel - Development headers and pkg-config for TelegramQt library
+i586-libtgvoip - VoIP library for Telegram clients
+i586-purple-telegram - Libpurple protocol plugin for Telegram support
+i586-telegramqml - Telegram API tools for QtQml and Qml
+ansible - SSH-based configuration management, deployment, and task execution system
+buildbot - Python-based continuous integration testing framework
+hass-core - Home automation platform
+python3-module-hass - Home automation platform
+python3-module-Telethon - Pure Python 3 Telegram client library
+python3-module-pyrogram - Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots
+python3-module-social-core - Python Social Auth - Core
+python3-module-telebot - Python Telegram bot api
+python3-module-telegram-bot - Python interface for the Telegram Bot API
+python3-module-tqdm - A fast, extensible progress bar for Python and CLI
+python3-module-salt - Management component for salt, a parallel remote execution system
+python3-module-yt_dlp - Python 3 module for yt-dlp
+zabbix-in-telegram - Zabbix Notifications with graphs in Telegram
+```
+```shell [epm]
+cutegram - Cutegram is a telegram client by Aseman Land
+libqtelegram-ae - Most powerfull telegram library that created using C++ and Qt.
+libqtelegram-ae-devel - Development files for libqtelegram-ae
+libtgvoip - VoIP library for Telegram clients
+purple-telegram - Libpurple protocol plugin for Telegram support
+tdlib - Cross-platform library for building Telegram clients
+telegram-bot-api - The Telegram Bot API provides an HTTP API for creating Telegram Bots.
+telegram-desktop - Telegram Desktop messaging app
+libtelegram-qt5 - Qt library for Telegram network
+libtelegram-qt5-devel - Development headers and pkg-config for TelegramQt library
+telegramqml - Telegram API tools for QtQml and Qml
+telepathy-morse - Morse is a Qt-based Telegram connection manager for the Telepathy framework.
+tgsend - Simple Telegram bot sender
+i586-libqtelegram-ae - Most powerfull telegram library that created using C++ and Qt.
+i586-libqtelegram-ae-devel - Development files for libqtelegram-ae
+i586-libtelegram-qt5 - Qt library for Telegram network
+i586-libtelegram-qt5-devel - Development headers and pkg-config for TelegramQt library
+i586-libtgvoip - VoIP library for Telegram clients
+i586-purple-telegram - Libpurple protocol plugin for Telegram support
+i586-telegramqml - Telegram API tools for QtQml and Qml
+python3-module-Telethon - Pure Python 3 Telegram client library
+python3-module-pyrogram - Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots
+python3-module-telebot - Python Telegram bot api
+python3-module-telegram-bot - Python interface for the Telegram Bot API
+zabbix-in-telegram - Zabbix Notifications with graphs in Telegram
+64gram - 64Gram (unofficial Telegram Desktop) (use 'epm play' to install it)
+telegram - Telegram client from the official site (use 'epm play' to install it)
+```
+::: 
 
 Для поиска только по названию пакета:
 
 ```shell
-apt-cache search --names-only ^bash
+apt-cache search --names-only ^telegram
 ```
+
+::: details Нажмите для отображения кода
+```shell
+telegram-bot-api - The Telegram Bot API provides an HTTP API for creating Telegram Bots.
+telegram-desktop - Telegram Desktop messaging app
+telegramqml - Telegram API tools for QtQml and Qml
+```
+:::
 
 ## Работа с репозиторием
 
@@ -160,6 +260,14 @@ apt-repo — утилита для управления списком репо�
 ```shell
 apt-repo
 ```
+
+::: details Нажмите для отображения кода
+```shell
+rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/x86_64 classic
+rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/x86_64-i586 classic
+rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/noarch classic
+```
+:::
 
 Чтобы добавить репозитории конкретной pflfxb, выполните следующую команду:
 

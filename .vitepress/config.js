@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { telegram, gitflic } from './icons'
-import { addPlugins } from './theme/plugins/markdown'
+import * as seo from './../_data/seo'
+import { normalize } from 'vitepress/dist/client/shared'
 import kbd from 'markdown-it-kbd'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
@@ -9,18 +10,13 @@ export const META_DESCRIPTION = 'Свободная WIKI по операцион
 export default defineConfig({
   lang: 'ru-RU',
   srcDir: './docs',
-  title: 'ALT Gnome Wiki',
+  title: seo.SITE_TITLE,
+  titleTemplate: ':title' + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE,
   description: META_DESCRIPTION,
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'theme-color', content: '#62a0ea' }],
-    ['meta', { name: 'og:type', content: 'website' }],
-    ['meta', { name: 'og:locale', content: 'ru_RU' }],
-    ['meta', { name: 'og:site_name', content: 'ALT Gnome Wiki' }],
-    ['meta', { name: 'og:image', content: 'https://alt-gnome.wiki/og-alt-wiki.jpg' }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:image', content: 'https://alt-gnome.wiki/og-alt-wiki.jpg' }],
     ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }],
     [
       'script',
@@ -91,7 +87,6 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: 'Популярное',
         items: [
           { text: 'Быстрый старт', link: '/quick-start' },
           {
@@ -118,6 +113,7 @@ export default defineConfig({
               { text: 'JetBrains', link: '/jetbrains'},
               { text: 'Libreoffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
+              { text: 'Мой офис', link: '/my-office' },
               { text: 'Neofetch', link: '/neofetch' },
               { text: 'Neovim', link: '/neovim' },
               { text: 'Nodejs', link: '/nodejs' },
@@ -196,11 +192,21 @@ export default defineConfig({
             text: 'Расширения рабочего окружения GNOME',
             items: [
               { text: 'Open Weather', link: '/openweather' },
+              { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'}
             ]
           },
           { text: 'Запись на DVD и USB Flash', link: '/getting-started' },
 
           { text: 'Алтай', link: '/altai' }
+        ]
+      }, 
+      {
+        text: 'Быстрые ссылки',
+        items: [
+          { text: 'APT', link: '/apt-get' },
+          { text: 'Сизиф', link: '/sisyphus' },
+          { text: 'EPM', link: '/epm' },
+          { text: 'Flatpak', link: '/flatpak' }
         ]
       }
     ],
@@ -227,14 +233,55 @@ export default defineConfig({
       next: 'Следующая страница'
     },
     outlineTitle: 'Оглавление',
+    outline: {
+      level: [2, 3],
+    },
+    notFound: {
+      title: 'Страница не найдена',
+      quote: 'Похоже, что вы перешли по неверной или устаревшей ссылке. Вы можете воспользоваться поиском.',
+      linkText: 'Вернуться на главную'
+    },
     footer: {
-      copyright: 'Copyright © 2023 ALT Regular Gnome Community'
+      message: 'Содержание доступно по лицензии MIT',
+      copyright: '2023 ALT Regular Gnome Community, разработано на платформе VitePress 1.0.0-rc.25'
     }
   },
   markdown: {
+    container: {
+      tipLabel: 'Подсказка',
+      warningLabel: 'Внимание',
+      dangerLabel: 'Осторожно',
+      infoLabel: 'Информация',
+      detailsLabel: 'Подробнее',
+    },
     config(md) {
-      addPlugins(md);
       md.use(kbd);
     }
+  },
+  transformPageData(pageData) {
+    const title = pageData.title + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE
+    const type = 'website'
+    const locale = 'ru_RU'
+    const url = seo.SITE_HOST + normalize(pageData.relativePath)
+    const image = 'og-alt-wiki.jpg'
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push(
+      ['meta', { name: 'og:title', content: title }],
+      ['meta', { name: 'og:type', content: type }],
+      ['meta', { name: 'og:locale', content: locale }],
+      ['meta', { name: 'og:url', content: `${url}.html` }],
+      ['meta', { name: 'og:site_name', content: seo.SITE_TITLE }],
+      ['meta', { name: 'og:image', content: seo.SITE_HOST + image }],
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:image', content: seo.SITE_HOST + image  }],
+      )
+
+      if (pageData.frontmatter.layout !== 'home') {
+        pageData.frontmatter.head.push(
+          ['link', { rel: 'canonical', href: `${url}.html` }],
+        )
+        pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
+      } 
   }
 })

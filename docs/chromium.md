@@ -21,4 +21,19 @@ epm -i chromium
 
 :::
 
+## Отображение шрифта Emoji при просмотре веб-страниц в браузере Chromium
 
+Необходимо установить дополнительные шрифты:
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
+```
+```shell[epm]
+epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
+```
+
+:::

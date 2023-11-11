@@ -29,6 +29,10 @@ make-initrd
 
 Активируем **Wayland** сессию в **ALT Regular Gnome** для видеокарт NVIDIA с установленными пропоритарными драйверами.
 
+:::info
+Закрытый драйвер Nvidia поддерживает GBM, Wayland и аппаратное ускорение с помощью XWayland, начиная с драйвера серии 470.x
+:::
+
 ```shell
 su -
 mcedit /etc/sysconfig/grub2
@@ -47,7 +51,6 @@ ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 Wayland не работает без `nvidia_drm.modeset=1`, а modeset не работает на драйверах младше 400-ой серии
 
 Несовместимые карты:
-
 - GT750M Mac edition (устанавливается драйвер 390-ой серии, при 417-ой максимально доступной)
 :::
 
@@ -66,3 +69,7 @@ mcedit /etc/sysconfig/grub2
 su -
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+:::info 
+Данная проблема может привести к некорретной работе устройств ввода: мышка, тачпад. Особенно часто данные проблемы проявляются в играх. 
+:::

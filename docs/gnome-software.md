@@ -19,3 +19,22 @@ apt-get install gnome-software
 epm -i gnome-software
 ```
 :::
+
+## Как отключить запрос аутентификация администратора (root пользователя), при удалении приложений.
+
+Необходимо удалить пакет polkit-rule-admin-root через терминал:
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get remove polkit-rule-admin-root 
+```
+```shell[epm]
+epm -e polkit-rule-admin-root
+```
+:::
+
+:::info 
+polkit-rule-admin-root — правило для набора polkit аутентификации по паролю root
+:::

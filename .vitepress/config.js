@@ -236,6 +236,11 @@ export default defineConfig({
     outline: {
       level: [2, 3],
     },
+    notFound: {
+      title: 'Страница не найдена',
+      quote: 'Похоже, что вы перешли по неверной или устаревшей ссылке. Вы можете воспользоваться поиском.',
+      linkText: 'Вернуться на главную'
+    },
     footer: {
       message: 'Содержание доступно по лицензии MIT',
       copyright: '2023 ALT Regular Gnome Community, разработано на платформе VitePress 1.0.0-rc.25'

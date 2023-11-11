@@ -29,6 +29,10 @@ make-initrd
 
 Активируем **Wayland** сессию в **ALT Regular Gnome** для видеокарт NVIDIA с установленными пропоритарными драйверами.
 
+:::info
+Закрытый драйвер Nvidia поддерживает GBM, Wayland и аппаратное ускорение с помощью XWayland, начиная с драйвера серии 470.x
+:::
+
 ```shell
 su -
 mcedit /etc/sysconfig/grub2

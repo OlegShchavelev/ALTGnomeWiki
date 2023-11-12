@@ -17,10 +17,10 @@
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install gnome-shell-extension-manager
+apt-get install gnome-extension-manager
 ```
 ```shell[epm]
-epm -i gnome-shell-extension-manager
+epm -i gnome-extension-manager
 ```
 :::
 

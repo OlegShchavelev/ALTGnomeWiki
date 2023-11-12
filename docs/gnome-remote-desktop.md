@@ -4,10 +4,14 @@
 
 ## Установка из репозитория
 ::: code-group
-```shell
+```shell[apt-get]
 su -
 apt-get update
 apt-get install gnome-remote-desktop
+```
+```shell[apt-get]
+su -
+epm -i gnome-remote-desktop
 ```
 :::
 

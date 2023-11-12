@@ -99,6 +99,7 @@ export default defineConfig({
               { text: 'Codium', link: '/codium' },
               { text: 'Console', link: '/console' },
               { text: 'Drawing', link: '/drawing' },
+              { text: 'Docker', link: '/docker' },
               { text: 'Eog', link: '/eog' },
               { text: 'Epm', link: '/epm' },
               { text: 'Evince', link: '/evince' },
@@ -131,7 +132,7 @@ export default defineConfig({
               { text: 'Xmind', link: '/xmind'},
               { text: 'Яндекс Браузер', link: '/yandex-browser' },
               { text: 'Zsh', link: '/zsh' },
-              { text: 'Стрим', link: '/hello' }
+    
             ],
             collapsed: true
           },

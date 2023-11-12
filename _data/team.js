@@ -52,5 +52,13 @@ export const members = [
       links: [
         { icon: 'github', link: 'https://github.com/iDevPro' }
       ]
+    },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/1893474?v=4',
+      name: 'Keleth',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Keleth' }
+      ]
     }
   ]

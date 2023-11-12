@@ -49,5 +49,10 @@ LANG=C sh ~/AuroraSDK*.sh
 
 ## Источники и ссылки
 
-- <https://https://developer.auroraos.ru/doc/software_development>
-- <https://docs.sailfishos.org/Develop/Apps/Tutorials/QML_Live_Coding_With_Qt_QmlLive/>
+- <https://developer.auroraos.ru/doc/software_development> - официальная документация по разработке под AuroraOS
+- <https://docs.sailfishos.org/Develop/Apps/Tutorials/QML_Live_Coding_With_Qt_QmlLive/> - настройка QmlLive
+  
+## Примеры программ
+
+- <https://gitlab.com/omprussia> - официальный репозиторий с примерами программ от ОМП Россия
+- <https://github.com/croc-code/aurora-rust-helloworld> - пример приложения на языке Rust

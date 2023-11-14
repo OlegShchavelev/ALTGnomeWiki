@@ -243,7 +243,7 @@ export default defineConfig({
       linkText: 'Вернуться на главную'
     },
     footer: {
-      message: 'Содержание доступно по лицензии MIT',
+      message: 'Содержание доступно <a href="/licence.html>">по лицензии MIT</a?',
       copyright: '2023 ALT Regular Gnome Community, разработано на платформе VitePress 1.0.0-rc.25'
     }
   },

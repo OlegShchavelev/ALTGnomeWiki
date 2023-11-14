@@ -3,6 +3,7 @@ import { telegram, gitflic } from './icons'
 import * as seo from './../_data/seo'
 import { normalize } from 'vitepress/dist/client/shared'
 import kbd from 'markdown-it-kbd'
+import taskLists from 'markdown-it-task-lists'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -257,6 +258,7 @@ export default defineConfig({
     },
     config(md) {
       md.use(kbd);
+      md.use(taskLists);
     }
   },
   transformPageData(pageData) {

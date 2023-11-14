@@ -116,6 +116,10 @@
   --vp-custom-block-details-bg: var(--vp-c-bg-soft-up);
   }
 
+  /**
+ * kdb
+ * -------------------------------------------------------------------------- */
+
   kbd {
   border: 1px solid var(--vp-c-border);
   box-shadow: var(--vp-c-gray-soft) 0px 1px 1px 0px, var(--vp-c-neutral-inverse) 0px 1px 0px 0px inset;
@@ -131,3 +135,12 @@
   :root {
     --vp-nav-logo-height: 36px
   }
+
+ /**
+ * task-lists
+ * -------------------------------------------------------------------------- */
+
+ .vp-doc .contains-task-list {
+  list-style: none;
+  padding-left: 0;
+ }

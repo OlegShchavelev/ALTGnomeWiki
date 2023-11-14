@@ -25,5 +25,5 @@ npm run docs:dev
 
 ## Лицензия
 
-[MIT](https://github.com/OlegShchavelev/ALTRegularGnomeWiki/blob/main/LICENCE)
+[MIT](https://github.com/OlegShchavelev/ALTRegularGnomeWiki/blob/main/LICENSE)
 Copyright © 2023-present OLEG SHCHAVELEV

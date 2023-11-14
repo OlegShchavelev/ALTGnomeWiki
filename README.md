@@ -22,3 +22,8 @@ npm run docs:dev
 ## Зеркало
 
 Вся документация из этого репозитория размещается на сайте [alt-gnome.wiki](https://alt-gnome.wiki/) автоматически.
+
+## Лицензия
+
+[MIT](https://github.com/OlegShchavelev/ALTRegularGnomeWiki/blob/main/LICENCE)
+Copyright © 2023-present OLEG SHCHAVELEV

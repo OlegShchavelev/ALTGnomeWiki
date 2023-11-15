@@ -274,7 +274,7 @@ rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/noarch cla
 ::: code-group
 
 ```shell[apt-get]
-su
+su - 
 apt-repo add task 329850
 ```
 ```shell[epm]

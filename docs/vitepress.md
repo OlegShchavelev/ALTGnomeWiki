@@ -4,7 +4,7 @@ lastUpdated: false
 # Возможности VitePress
 
 ::: info
-VitePress использует [markdown-it](https://github.com/markdown-it/markdown-it) в качестве парсера который расширает возможности markdown.
+VitePress использует [markdown-it](https://github.com/markdown-it/markdown-it) в качестве парсера который расширяет возможности markdown.
 Мы можем добавить существенно больше красоты и удобства.
 :::
 
@@ -124,7 +124,7 @@ This is a dangerous warning.
 This is a details block.
 :::
 
-## Уведомдения с произвольными заголовками
+## Уведомления с произвольными заголовками
 
 **Пример:**
 

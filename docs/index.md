@@ -19,11 +19,20 @@ hero:
       link: /wiki
 
 features:
-  - title: Раньше чем у других
+  - icon:
+      dark: /bolt-dark.svg
+      light: /bolt-light.svg 
+    title: Раньше чем у других
     details: Eжедневно обновляемый репозиторий пакетов свободных программ Sisyphus
-  - title: Цифровая НЕзависмость
+  - icon:
+      dark: /shield-dark.svg
+      light: /shield-light.svg
+    title: Цифровая НЕзависмость
     details: семейство дистрибутивов Linux, производится в России с 2000 года.
-  - title: Открытое сообщество
+  - icon:
+      dark: /users-dark.svg
+      light: /users-light.svg
+    title: Открытое сообщество
     details: Путеводитель в мир открытого программного обеспечения.
 ---
 

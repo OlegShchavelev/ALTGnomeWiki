@@ -34,7 +34,7 @@ epm -i gnome-remote-desktop
 - Задать пароль пользователя (установить новый)\
 ![gnome-remote-desktop-3](/gnome-remote-desktop/set-user-password.gif)
 
-### Из коммандной строки
+### Из командной строки
 
 ```shell
 # Включить сервис RDP  (который так-же доступен для управления в GUI)

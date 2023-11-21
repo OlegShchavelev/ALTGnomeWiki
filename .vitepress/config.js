@@ -183,7 +183,15 @@ export default defineConfig({
                     { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
                   ],  
                   collapsed: true
-                  }
+                  },
+                  {
+                    text: 'Монитор и экран',
+                    items: [
+                      { text: 'Подключение дополнительного монитора', link: '/display-dual-monitors' },
+                      { text: 'Масштабирование экрана', link: '/scaling-the-screen' },
+                    ],  
+                    collapsed: true
+                    }
                 ],
                 collapsed: true
               }

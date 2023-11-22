@@ -52,7 +52,13 @@ export const members = [
       name: 'iQQator',
       title: 'Участник',
       links: [
-        { icon: 'github', link: 'https://github.com/iDevPro' }
+        { icon: 'github', link: 'https://github.com/iDevPro' },
+        {
+          icon: {
+            svg: gitflic
+          },
+          link: 'https://gitflic.ru/user/powertux'
+        },
       ],
       sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/subach.pavel2/I4eLp8903'
     },

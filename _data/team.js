@@ -15,7 +15,8 @@ export const members = [
           },
           link: 'https://gitflic.ru/user/olegshchavelev'
         },
-      ]
+      ],
+      sponsor: 'https://www.tinkoff.ru/cf/1uEC4uodPuV'
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',

@@ -53,7 +53,8 @@ export const members = [
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/iDevPro' }
-      ]
+      ],
+      sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/subach.pavel2/I4eLp8903'
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/1893474?v=4',

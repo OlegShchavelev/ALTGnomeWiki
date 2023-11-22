@@ -30,7 +30,8 @@ export const members = [
           },
           link: 'https://gitflic.ru/user/armatik'
         },
-      ]
+      ],
+      sponsor: 'https://www.tinkoff.ru/cf/2MA0Bm6ax63'
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/2198153?v=4',

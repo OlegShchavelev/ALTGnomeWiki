@@ -187,6 +187,7 @@ export default defineConfig({
                   {
                     text: 'Монитор и экран',
                     items: [
+                      { text: 'Измнение разрешения или орентация экрана', link: '/look-resolution' },
                       { text: 'Подключение дополнительного монитора', link: '/display-dual-monitors' },
                       { text: 'Масштабирование экрана', link: '/scaling-the-screen' },
                     ],  

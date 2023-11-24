@@ -14,5 +14,16 @@ export const sponsors = [
                 url: 'https://www.basealt.ru'
             }
         ]
+    },
+    {
+        tier: 'Технические партнеры',
+        size: 'big',
+        items: [
+            {
+                name: 'Beget',
+                img: './beget.png',
+                url: 'https://beget.com'
+            },
+        ]
     }
 ]

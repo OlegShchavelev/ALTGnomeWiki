@@ -243,6 +243,7 @@ export default defineConfig({
       prev: 'Предыдущая страница',
       next: 'Следующая страница'
     },
+    darkModeSwitchLabel: 'Тема',
     outlineTitle: 'Оглавление',
     outline: {
       level: [2, 3],

@@ -93,6 +93,7 @@ export default defineConfig({
           {
             text: 'Установка и обновление программ',
             items: [
+              { text: 'asusctl', link: '/asusctl' },
               { text: 'Blender', link: '/blender' },
               { text: 'Boxes', link: '/boxes'},
               { text: 'Chromium', link: '/chromium' },

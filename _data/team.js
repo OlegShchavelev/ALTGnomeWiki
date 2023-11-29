@@ -34,21 +34,6 @@ export const members = [
       sponsor: 'https://www.tinkoff.ru/cf/2MA0Bm6ax63'
     },
     {
-      avatar: 'https://avatars.githubusercontent.com/u/72319244?v=4',
-      name: 'Дмитрий Бондаврев',
-      title: 'Участник',
-      links: [
-        { icon: 'github', link: 'https://github.com/pokedim13' },
-        {
-          icon: {
-            svg: gitflic
-          },
-          link: 'https://gitflic.ru/user/h3try'
-        },
-      ],
-      sponsor: 'https://www.tinkoff.ru/cf/7L7liSQncEt'
-    },
-    {
       avatar: 'https://avatars.githubusercontent.com/u/2198153?v=4',
       name: 'Anton Palgunov',
       title: 'Участник',
@@ -85,4 +70,19 @@ export const members = [
         { icon: 'github', link: 'https://github.com/Keleth' }
       ]
     },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/72319244?v=4',
+      name: 'Дмитрий Бондаврев',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/pokedim13' },
+        {
+          icon: {
+            svg: gitflic
+          },
+          link: 'https://gitflic.ru/user/h3try'
+        },
+      ],
+      sponsor: 'https://www.tinkoff.ru/cf/7L7liSQncEt'
+    }
   ]

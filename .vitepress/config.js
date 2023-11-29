@@ -4,6 +4,8 @@ import * as seo from './../_data/seo'
 import { normalize } from 'vitepress/dist/client/shared'
 import kbd from 'markdown-it-kbd'
 import taskLists from 'markdown-it-task-lists'
+import { rewrites } from './paths'
+import * as config_data from './config_data'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -14,28 +16,7 @@ export default defineConfig({
   title: seo.SITE_TITLE,
   titleTemplate: ':title' + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE,
   description: META_DESCRIPTION,
-  head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
-    ['meta', { name: 'theme-color', content: '#62a0ea' }],
-    ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }],
-    [
-      'script',
-      {},
-      `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-   
-      ym(95081395, "init", {
-           clickmap:true,
-           trackLinks:true,
-           accurateTrackBounce:true,
-           webvisor:true
-      });`,
-    ],
-  ],
+  head: config_data.HEAD,
   sitemap: {
     hostname: 'https://alt-gnome.wiki'
   },
@@ -68,12 +49,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'Документация', link: '/wiki' },
+      { text: 'Документация', link: 'wiki' },
       {
         text: 'Пролог',
         items: [
-          { text: 'О проекте', link: '/about' },
-          { text: 'Возможности VitePress', link: '/vitepress' }
+          { text: 'О проекте', link: 'about' },
+          { text: 'Возможности VitePress', link: 'vitepress' }
         ]
       }
     ],
@@ -145,7 +126,7 @@ export default defineConfig({
                 text: 'Рабочий стол',
                 items: [
                   { text: 'Запуск приложений', link: '/launching-applications' },
-                  { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks.md' },
+                  { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks' },
                   { text: 'Открытие окон по центру экрана', link: '/windows-in-the-center'},
                   { text: 'Автоматический запуск приложений', link: '/startup-applications'},
                   { text: 'Быстрое переключение между окнами', link: '/switching-apps'},
@@ -215,10 +196,10 @@ export default defineConfig({
       {
         text: 'Быстрые ссылки',
         items: [
-          { text: 'APT', link: '/apt-get' },
-          { text: 'Сизиф', link: '/sisyphus' },
-          { text: 'EPM', link: '/epm' },
-          { text: 'Flatpak', link: '/flatpak' }
+          { text: 'APT', link: '/system/apt-get' },
+          { text: 'Сизиф', link: '/system/sisyphus' },
+          { text: 'EPM', link: '/system/epm' },
+          { text: 'Flatpak', link: '/apps/flatpak' }
         ]
       }
     ],
@@ -259,6 +240,7 @@ export default defineConfig({
       copyright: '2023 ALT Regular Gnome Community, разработано на платформе VitePress 1.0.0-rc.31'
     }
   },
+  rewrites: rewrites,
   markdown: {
     container: {
       tipLabel: 'Подсказка',

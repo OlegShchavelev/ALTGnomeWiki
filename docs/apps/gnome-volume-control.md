@@ -7,7 +7,7 @@
 - Через GUI в меню (уточнить как называется) в ползунке поменять выбранную позицию
   
 - Через GUI в приложении "Настройки" > "Звук"
-![settings_volume_control](./public/gnome-volume-control/gnome-settings-volume-control.png)
+![settings_volume_control](/gnome-volume-control/gnome-settings-volume-control.png)
 
 - Через TUI в приложении `alsamixer`
 
@@ -35,13 +35,13 @@ pwctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
 Для включения этой опции достаточно:
 
 - Открыть приложение `Редактор dConf` кликнув по иконке:\
-![dConf_editor](./public/gnome-volume-control/dconf-editor.png)
+![dConf_editor](/gnome-volume-control/dconf-editor.png)
   
 - Воспользоваться строкой поиска и набрать в ней фразу `volume`\
-![found_volume_settings](./public/gnome-volume-control/found-volume-settings.png)
+![found_volume_settings](/gnome-volume-control/found-volume-settings.png)
 
 - В появившихся настройках включить галку у `org.gnome.desktop.sound` в положение включено.
 - Закрыть редактор
 
 - Если все сделано правильно, то в приложении "Настройки" можно наблюдать следующую картину\
-![after_apply_volume_settings](./public/gnome-volume-control/after-volume-settings-apply.png)
+![after_apply_volume_settings](/gnome-volume-control/after-volume-settings-apply.png)

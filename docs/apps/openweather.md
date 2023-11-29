@@ -5,7 +5,7 @@
 Расширение Open Weather не совместимо с GNOME 45 
 :::
 
-![Демонстрация интерфейса open weather](./public/openweather/openweather.png)
+![Демонстрация интерфейса open weather](/openweather/openweather.png)
 
 ## Установка Open Weather из GNOME Shell Extensions <Badge type="info" text="GNOME Shell Extensions" />
 

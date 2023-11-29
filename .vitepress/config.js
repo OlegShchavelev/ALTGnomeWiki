@@ -11,6 +11,13 @@ export const META_DESCRIPTION = 'Свободная WIKI по операцион
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: { 
+    ssr: { 
+      noExternal: [ 
+        '@nolebase/vitepress-plugin-enhanced-readabilities', 
+      ], 
+    }, 
+  }, 
   lang: 'ru-RU',
   srcDir: './docs',
   title: seo.SITE_TITLE,

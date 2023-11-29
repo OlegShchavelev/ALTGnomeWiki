@@ -82,7 +82,7 @@ epm -i i586-libGL i586-libGLU i586-xorg-dri-intel
 -input_button_code_is_scan_code
 ```
 
-![Параметр запуска](./public/steam/steam_3.png)
+![Параметр запуска](/steam/steam_3.png)
 
 ## Залипают клавиши (stuck down) в играх Steam Play (Proton)
 

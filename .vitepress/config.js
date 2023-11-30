@@ -203,10 +203,10 @@ export default defineConfig({
       {
         text: 'Быстрые ссылки',
         items: [
-          { text: 'APT', link: '/system/apt-get' },
-          { text: 'Сизиф', link: '/system/sisyphus' },
-          { text: 'EPM', link: '/system/epm' },
-          { text: 'Flatpak', link: '/apps/flatpak' }
+          { text: 'APT', link: '/apt-get' },
+          { text: 'Сизиф', link: '/sisyphus' },
+          { text: 'EPM', link: '/epm' },
+          { text: 'Flatpak', link: '/flatpak' }
         ]
       }
     ],

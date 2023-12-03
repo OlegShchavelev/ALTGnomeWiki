@@ -144,3 +144,40 @@
   list-style: none;
   padding-left: 0;
  }
+
+ :root {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand) !important;
+}
+
+/**
+ * VPHomeSponsors
+ * -------------------------------------------------------------------------- */
+
+.vp-sponsor-grid.big .vp-sponsor-grid-image {
+  max-width: 170px;
+  max-height: 120px;
+}
+
+.VPHomeSponsors .message {
+  max-width: 800px;
+}
+
+.VPHome .VPHomeSponsors {
+  margin-top: 0 !important;
+}

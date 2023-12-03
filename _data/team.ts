@@ -1,5 +1,8 @@
 import {
-    gitflic
+    telegram,
+    gitflic,
+    gitlab,
+    vk
   } from '../.vitepress/icons.js'
 
 export const members = [

@@ -98,6 +98,7 @@ export default defineConfig({
               { text: 'Сartridges', link: '/cartridges' },
               { text: 'Codium', link: '/codium' },
               { text: 'Console', link: '/console' },
+              { text: 'Discord', link: '/discord' },
               { text: 'Drawing', link: '/drawing' },
               { text: 'Docker', link: '/docker' },
               { text: 'Eog', link: '/eog' },
@@ -121,6 +122,7 @@ export default defineConfig({
               { text: 'Nvidia', link: '/nvidia' },
               { text: 'OBS Studio', link: '/obs-studio' },
               { text: 'Opera', link: '/opera' },
+              { text: 'Skype', link: '/skype' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
               { text: 'Thunderbird', link: 'thunderbird'},
@@ -131,8 +133,8 @@ export default defineConfig({
               { text: 'XLSCLIENTS', link: '/xlsclients' },
               { text: 'Xmind', link: '/xmind'},
               { text: 'Яндекс Браузер', link: '/yandex-browser' },
+              { text: 'Zoom', link: '/zoom' },
               { text: 'Zsh', link: '/zsh' },
-    
             ],
             collapsed: true
           },

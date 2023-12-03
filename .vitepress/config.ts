@@ -116,6 +116,7 @@ export default defineConfig({
               { text: 'Libreoffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
               { text: 'Мой офис', link: '/my-office' },
+              { text: 'Мpich', link: '/mpich' },
               { text: 'Neofetch', link: '/neofetch' },
               { text: 'Neovim', link: '/neovim' },
               { text: 'Nodejs', link: '/nodejs' },

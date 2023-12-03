@@ -16,4 +16,4 @@ function getFilesWithMdExtension(paths) {
     return filesWithMdExtension
 }
 
-export const rewrites = getFilesWithMdExtension(paths);
+export const rewrites: Record<string, string> = getFilesWithMdExtension(paths);

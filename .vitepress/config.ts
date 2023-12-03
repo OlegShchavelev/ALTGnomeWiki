@@ -2,28 +2,16 @@ import { defineConfig } from 'vitepress'
 import { telegram, gitflic } from './icons'
 import * as seo from './../_data/seo'
 import { normalize } from 'vitepress/dist/client/shared'
+import type MarkdownIt from 'markdown-it'
 import kbd from 'markdown-it-kbd'
 import taskLists from 'markdown-it-task-lists'
 import { rewrites } from './paths'
-import * as config_data from './config_data'
 
-export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
-
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  vite: { 
-    ssr: { 
-      noExternal: [ 
-        '@nolebase/vitepress-plugin-enhanced-readabilities', 
-      ], 
-    }, 
-  }, 
+  title: "ALT Regular Gnome",
+  description: "открытое сообщество пользователей операционной системы ALT Regular Gnome",
   lang: 'ru-RU',
   srcDir: './docs',
-  title: seo.SITE_TITLE,
-  titleTemplate: ':title' + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE,
-  description: META_DESCRIPTION,
-  head: config_data.HEAD,
   sitemap: {
     hostname: 'https://alt-gnome.wiki'
   },
@@ -53,7 +41,6 @@ export default defineConfig({
         }
       }
     },
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Главная', link: '/' },
       { text: 'Документация', link: 'wiki' },
@@ -64,15 +51,6 @@ export default defineConfig({
           { text: 'Возможности VitePress', link: 'vitepress' }
         ]
       }
-    ],
-    socialLinks: [
-      {
-        icon: {
-          svg: telegram
-        },
-        link: 'https://t.me/alt_gnome'
-      },
-      { icon: 'github', link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki' }
     ],
     sidebar: [
       {
@@ -210,6 +188,15 @@ export default defineConfig({
         ]
       }
     ],
+    socialLinks: [
+      {
+        icon: {
+          svg: telegram
+        },
+        link: 'https://t.me/alt_gnome'
+      },
+      { icon: 'github', link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki' }
+    ],
     editLink: {
       pattern: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki/edit/main/docs/:path',
       text: 'Предложить изменения на этой странице'
@@ -223,11 +210,6 @@ export default defineConfig({
     },
     returnToTopLabel: 'Наверх',
     sidebarMenuLabel: 'Меню',
-    sponsor: {
-      message:
-        'Данный сервис является Open-Source проектом и его поддержка и развитие зависит от пожертвований.',
-      linkText: 'Поддержать проект!'
-    },
     docFooter: {
       prev: 'Предыдущая страница',
       next: 'Следующая страница'
@@ -256,12 +238,12 @@ export default defineConfig({
       infoLabel: 'Информация',
       detailsLabel: 'Подробнее',
     },
-    config(md) {
+    config: (md) => {
       md.use(kbd);
       md.use(taskLists);
     }
   },
-  transformPageData(pageData) {
+  transformPageData: (pageData: normalize) => {
     const title = pageData.title + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE
     const type = 'website'
     const locale = 'ru_RU'

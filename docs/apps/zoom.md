@@ -12,6 +12,7 @@ epm play zoom
 
 ## Установка c помощью Flatpak
 
+При наличии пакета [Flatpak](/flatpak), можно установить **Zoom** одной командой:
 
 ```shell
 flatpak install flathub us.zoom.Zoom

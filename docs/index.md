@@ -40,12 +40,15 @@ features:
 import {
   VPTeamPage,
   VPTeamPageTitle,
-  VPTeamMembers,
   VPHomeSponsors,
   VPSponsors
 } from 'vitepress/theme'
+import VPTeamMembers from '../.vitepress/theme/components/VPTeamMembers.vue'
 import { members } from '../_data/team'
 import { sponsors } from '../_data/sponsors'
+
+console.log(VPTeamPage);
+
 </script>
 
 <VPTeamPage>

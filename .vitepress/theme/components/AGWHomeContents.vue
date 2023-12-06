@@ -5,7 +5,11 @@ import {
 } from 'vitepress/theme'
 
 import VPTeamMembers from './VPTeamMembers.vue'
+import { VPHomeSponsors } from 'vitepress/theme'
+
 import { members } from '../../../_data/team'
+import { sponsors } from '../../../_data/sponsors'
+
 </script>
 
 <template #home-team-after>
@@ -19,6 +23,13 @@ import { members } from '../../../_data/team'
     :members="members"
   />
 </VPTeamPage>
+
+<VPHomeSponsors
+    v-if="sponsors"
+    message="Данный сервис является Open-Source проектом и его поддержка и развитие зависит только от нашей совместной активности."
+    :data="sponsors"
+/>
+
 </template>
 
 <style scoped>

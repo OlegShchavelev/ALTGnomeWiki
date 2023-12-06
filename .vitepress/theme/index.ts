@@ -10,8 +10,7 @@ import {
 } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import AGWHomeSponsors from './components/AGWHomeSponsors.vue'
-import AGWHomeTeam from './components/AGWHomeTeam.vue'
+import AGWHomeContents from './components/AGWHomeContents.vue'
 
 
 import './style.css'
@@ -23,8 +22,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'home-features-after': () => h(AGWHomeTeam),
-      'page-bottom': () => h(AGWHomeSponsors),
+      'home-features-after': () => h(AGWHomeContents),
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu), 
     })

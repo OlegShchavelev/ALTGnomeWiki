@@ -3,13 +3,16 @@ import { h } from 'vue'
 import { useRoute } from 'vitepress';
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import imageViewer from 'vitepress-plugin-image-viewer';
+import imageViewer from 'vitepress-plugin-image-viewer'
 import { 
   NolebaseEnhancedReadabilitiesMenu, 
   NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
+import AGWHomeSponsors from './components/AGWHomeSponsors.vue'
+import AGWHomeTeam from './components/AGWHomeTeam.vue'
+
 
 import './style.css'
 import './custom.css'
@@ -20,6 +23,8 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
+      'home-features-after': () => h(AGWHomeTeam),
+      'page-bottom': () => h(AGWHomeSponsors),
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu), 
     })

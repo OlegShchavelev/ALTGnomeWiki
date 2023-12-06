@@ -7,21 +7,19 @@ import {
 import VPTeamMembers from './VPTeamMembers.vue'
 import { VPHomeSponsors } from 'vitepress/theme'
 
-import { members } from '../../../_data/team'
+import { contributions } from '../../../_data/team'
 import { sponsors } from '../../../_data/sponsors'
 
 </script>
 
-<template #home-team-after>
+<template>
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
       Участники
     </template>
   </VPTeamPageTitle>
-  <VPTeamMembers
-    :members="members"
-  />
+  <VPTeamMembers :members="contributions" />
 </VPTeamPage>
 
 <VPHomeSponsors

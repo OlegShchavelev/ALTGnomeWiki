@@ -5,7 +5,7 @@ import {
     vk
   } from '../.vitepress/icons.js'
 
-export const members = [
+export const contributions = [
     {
       avatar: 'https://avatars.githubusercontent.com/u/20732384?v=4',
       name: 'Олег Щавелев',

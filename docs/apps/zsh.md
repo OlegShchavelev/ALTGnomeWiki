@@ -40,16 +40,30 @@ echo "ZSH_DISABLE_COMPFIX='true'" | cat - .zshrc > temp && mv temp .zshrc
 ## Установка темы для oh-my-zsh.
 В качестве примера возьмём тему [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
-1. Скачиваем необходимые шрифты с github страницы темы и устанавливаем их: [MesloLGS NF Regular.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf) | [MesloLGS NF Bold.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf) | [MesloLGS NF Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf) | [MesloLGS NF Bold Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
+Скачиваем необходимые шрифты с github страницы темы и устанавливаем их: [MesloLGS NF Regular.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf) | [MesloLGS NF Bold.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf) | [MesloLGS NF Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf) | [MesloLGS NF Bold Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
 
-2. Устанавливаем тему и проходим первоначальную настройку.
+Для корректный работы плагина необходимо устоновить шрифт «Noto Emoji»:
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install fonts-ttf-google-noto-emoji
+```
+```shell[epm]
+epm -i fonts-ttf-google-noto-emoji
+```
+:::
+
+Устанавливаем тему и проходим первоначальную настройку.
 ```shell
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 zsh
 ```
 
-3. Если вы хотите добавить Zsh с темой в root пользователя, то к выше описанным процедурам из пункта "Настройка Zsh для root пользователя" необходимо выполнить это:
+Если вы хотите добавить Zsh с темой в root пользователя, то к выше описанным процедурам из пункта "Настройка Zsh для root пользователя" необходимо выполнить это:
 ```shell
 sudo ln -s /home/<user>/.p10k.zsh /root/.p10k.zsh
 sudo ln -s /home/<user>/powerlevel10k /root/powerlevel10k

@@ -99,6 +99,7 @@ export default defineConfig({
               { text: 'Сartridges', link: '/cartridges' },
               { text: 'Codium', link: '/codium' },
               { text: 'Console', link: '/console' },
+              { text: 'Dialect', link: '/dialect' },
               { text: 'Discord', link: '/discord' },
               { text: 'Drawing', link: '/drawing' },
               { text: 'Docker', link: '/docker' },

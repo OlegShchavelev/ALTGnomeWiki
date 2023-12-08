@@ -194,6 +194,7 @@ export default defineConfig({
                       { text: 'Измнение разрешения или орентация экрана', link: '/look-resolution' },
                       { text: 'Подключение дополнительного монитора', link: '/display-dual-monitors' },
                       { text: 'Масштабирование экрана', link: '/scaling-the-screen' },
+                      { text: 'Изменение внешнего вида рабочего стола', link: '/look-background'}
                     ],  
                     collapsed: true
                     }

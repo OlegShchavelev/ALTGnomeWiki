@@ -94,6 +94,7 @@ export default defineConfig({
               { text: 'AnyDesk', link: '/anydesk' },
               { text: 'AsusCtl', link: '/asusctl' },
               { text: 'Blender', link: '/blender' },
+              { text: 'Bottle', link: '/bottle'},
               { text: 'Boxes', link: '/boxes'},
               { text: 'Chromium', link: '/chromium' },
               { text: 'Сartridges', link: '/cartridges' },

@@ -212,9 +212,7 @@ export default defineConfig({
               { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'}
             ]
           },
-          { text: 'Запись на DVD и USB Flash', link: '/getting-started' },
-
-          { text: 'Алтай', link: '/altai' }
+          { text: 'Запись на DVD и USB Flash', link: '/getting-started' }
         ]
       }, 
       {

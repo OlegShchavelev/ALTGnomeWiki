@@ -14,7 +14,7 @@ apt-get install vk-messenger.rpm
 ```
 ```shell[epm]
 сd Загрузки
-epm -i vk-messenger*.rpm
+epm -i vk-messenger.rpm
 ```
 :::
 

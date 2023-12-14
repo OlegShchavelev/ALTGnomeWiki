@@ -135,6 +135,7 @@ export default defineConfig({
               { text: 'Transmission', link: '/transmission' },
               { text: 'Viber', link: '/viber' },
               { text: 'VLC', link: '/vlc' },
+              { text: 'VK Мессенджер', link: '/vk-messenger' },
               { text: 'XLSCLIENTS', link: '/xlsclients' },
               { text: 'Xmind', link: '/xmind'},
               { text: 'Яндекс Браузер', link: '/yandex-browser' },

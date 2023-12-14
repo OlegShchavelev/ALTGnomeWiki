@@ -15,7 +15,6 @@
 ```shell[apt-get]
 su -
 cd ../home/USER/Загрузки
-apt-get update
 apt-get install myoffice-standard-home-edition-*.rpm
 
 ```
@@ -25,7 +24,7 @@ epm -i myoffice-standard-home-edition-*.rpm
 ```
 :::
 
-USER — имя не непривилегированного пользователя, укажите имя учетной записи. 
+USER — имя непривилегированного пользователя, укажите имя учетной записи. 
 
 ## Установка c помощью единой комманды управления пакетами
 

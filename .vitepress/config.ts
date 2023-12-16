@@ -119,6 +119,7 @@ export default defineConfig({
               { text: 'JetBrains', link: '/jetbrains'},
               { text: 'Libreoffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
+              { text: 'Mission Center', link: '/mission-center' },
               { text: 'Мой офис', link: '/my-office' },
               { text: 'Мpich', link: '/mpich' },
               { text: 'Neofetch', link: '/neofetch' },

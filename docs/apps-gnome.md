@@ -24,7 +24,7 @@
 |Погода                              |[gnome-weather](https://packages.altlinux.org/ru/sisyphus/srpms/gnome-weather/)|[Weather](https://flathub.org/apps/org.gnome.Weather)|[Подробнее](https://apps.gnome.org/ru/Weather/)|
 |Подключения                         |[gnome-connections](https://packages.altlinux.org/ru/sisyphus/srpms/gnome-connections/)|[Connections](https://flathub.org/apps/org.gnome.Connections)|[Подробнее](https://apps.gnome.org/ru/Connections/)|
 |Просмотр документов                 |[evince](https://packages.altlinux.org/ru/sisyphus/srpms/evince/)|[Evince](https://flathub.org/apps/org.gnome.Evince)|[Подробнее](https://apps.gnome.org/ru/Evince/)|
-|Просмотрщик изображений             |[loope](https://packages.altlinux.org/ru/sisyphus/srpms/loupe/)|[Loupe](https://flathub.org/apps/org.gnome.Loupe)|[Подробнее](https://apps.gnome.org/ru/Loupe/)|
+|Просмотрщик изображений             |[loupe](https://packages.altlinux.org/ru/sisyphus/srpms/loupe/)|[Loupe](https://flathub.org/apps/org.gnome.Loupe)|[Подробнее](https://apps.gnome.org/ru/Loupe/)|
 |Расширения                          |[gnome-shell-extensions](https://packages.altlinux.org/ru/sisyphus/srpms/gnome-shell-extensions/)|[Extensions](https://flathub.org/apps/org.gnome.Extensions)|[Подробнее](https://apps.gnome.org/ru/Extensions/)|
 |Символы                             |[gnome-characters](https://packages.altlinux.org/ru/sisyphus/srpms/gnome-characters/)|[Characters](https://apps.gnome.org/ru/Characters/)|[Подробнее](https://apps.gnome.org/ru/Characters/)|
 |Системный монитор                   |[gnome-system-monitor](https://packages.altlinux.org/ru/sisyphus/srpms/gnome-system-monitor/)|-|[Подробнее](https://apps.gnome.org/ru/GnomeSystemMonitor/)|

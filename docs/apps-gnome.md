@@ -73,7 +73,7 @@ GNOME Circle содержит приложения, расширяющие эк�
 |Forge Sparks                        |-|[ForgeSparks](https://flathub.org/apps/com.mardojai.ForgeSparks)|[Подробнее](https://apps.gnome.org/ru/ForgeSparks/)|
 |Fragments                           |[fragments](https://apps.gnome.org/ru/Fragments/)|[Fragments](https://flathub.org/apps/de.haeckerfelix.Fragments)|[Подробнее](https://apps.gnome.org/ru/Fragments/)|
 |Gaphor                              |-|[Gaphor](https://flathub.org/apps/org.gaphor.Gaphor)|[Подробнее](https://apps.gnome.org/ru/Gaphor/)|
-|Impression                          |[impression](https://packages.altlinux.org/ru/sisyphus/srpms/impression/)|[Gaphor](https://flathub.org/apps/org.gaphor.Gaphor)|[Подробнее](https://apps.gnome.org/ru/Gaphor/)|
+|Impression                          |[impression](https://packages.altlinux.org/ru/sisyphus/srpms/impression/)|[Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression)|[Подробнее](https://apps.gnome.org/ru/Impression/)|
 |Junction                            |[junction](https://packages.altlinux.org/ru/sisyphus/srpms/junction/)|[Junction](https://flathub.org/apps/re.sonny.Junction)|[Подробнее](https://apps.gnome.org/ru/Junction/)|
 |Khronos                             |[khronos](https://packages.altlinux.org/ru/sisyphus/srpms/khronos/)|[Khronos](https://flathub.org/apps/io.github.lainsce.Khronos)|[Подробнее](https://apps.gnome.org/ru/Khronos/)|
 |Komikku                             |-|[Komikku](https://flathub.org/apps/info.febvre.Komikku)|[Подробнее](https://apps.gnome.org/ru/Komikku/)|

@@ -14,7 +14,7 @@ apt-get update
 apt-get install bottles cabextract
 ```
 ```shell[epm]
-epm -i bottles cabextract 
+epm -i bottles cabextract python3-module-yaml
 ```
 
 :::

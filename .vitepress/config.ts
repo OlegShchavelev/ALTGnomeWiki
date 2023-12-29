@@ -224,7 +224,8 @@ export default defineConfig({
           { text: 'APT', link: '/apt-get' },
           { text: 'Сизиф', link: '/sisyphus' },
           { text: 'EPM', link: '/epm' },
-          { text: 'Flatpak', link: '/flatpak' }
+          { text: 'Flatpak', link: '/flatpak' },
+          { text: "Приложения для GNOME", link: '/apps-gnome'}
         ]
       }
     ],

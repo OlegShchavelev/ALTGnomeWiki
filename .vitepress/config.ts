@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { telegram, gitflic } from './icons'
+import { telegram, gitflic, vk } from './icons'
 import * as seo from './../_data/seo'
 import { normalize } from 'vitepress/dist/client/shared'
 import type MarkdownIt from 'markdown-it'
@@ -235,6 +235,12 @@ export default defineConfig({
           svg: telegram
         },
         link: 'https://t.me/alt_gnome'
+      },
+      {
+        icon: {
+          svg: vk
+        },
+        link: 'https://vk.com/alt_gnome'
       },
       { icon: 'github', link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki' }
     ],

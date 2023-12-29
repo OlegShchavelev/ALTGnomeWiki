@@ -11,7 +11,7 @@ Bottles — это приложение, которое позволяет ва�
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install bottles cabextract
+apt-get install bottles cabextract python3-module-yaml
 ```
 ```shell[epm]
 epm -i bottles cabextract python3-module-yaml

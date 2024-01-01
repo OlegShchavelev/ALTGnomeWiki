@@ -31,11 +31,15 @@ export default {
     app.provide(InjectionKey, {
       locales: {
         'ru-RU': {
+          title: {
+            title: 'Повышенная читаемость'
+          },
           layoutSwitch: {
             title: 'Измените внешний вид страницы',
             titleHelpMessage: 'Измените стиль оформления ALT Gnome Wiki, выбирите максимально удобный вариант зависмости от размера вашего экрана и типа устройства.',
             optionFullWidth: 'Полноэкранный',
             optionFullWidthAriaLabel: 'Полноэкранный',
+            titleScreenNavWarningMessage: 'Изменить внешний вид страницы недоступен на экране мобильного устройства',
             optionFullWidthHelpMessage: 'Боковая панель и область содержимого занимают всю ширину экрана.',
             optionSidebarWidthAdjustableOnly: 'Боковая панель с пользовательской настройкой',
             optionSidebarWidthAdjustableOnlyAriaLabel: 'Боковая панель с пользовательской настройкой',
@@ -76,6 +80,16 @@ export default {
             optionOff: 'Выключить',
             optionOffAriaLabel: 'Выключить',
             optionOffHelpMessage: 'Выключите фокус.',
+            styles: {
+              title: 'Вид фокуса',
+              titleHelpMessage: 'Измените стиль фокуса(подсветки)',
+              optionUnder: 'Under',
+              optionUnderAriaLabel: 'Under',
+              optionUnderHelpMessage: 'Добавьте сплошной цвет фона под зависающим элементом, чтобы выделить место, где в данный момент находится курсор',
+              optionAside: 'Aside',
+              optionAsideAriaLabel: 'Aside',
+              optionAsideHelpMessage: 'Добавьте фиксированную линию сплошным цветом в сторону элемента наведения курсора, чтобы выделить место, где в данный момент находится курсор'
+            }
           }
         } 
       } 

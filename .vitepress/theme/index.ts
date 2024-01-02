@@ -81,7 +81,7 @@ export default {
             optionOffAriaLabel: 'Выключить',
             optionOffHelpMessage: 'Выключите фокус.',
             styles: {
-              title: 'Вид фокуса',
+              title: 'Стиль фокуса',
               titleHelpMessage: 'Измените стиль фокуса(подсветки)',
               optionUnder: 'Under',
               optionUnderAriaLabel: 'Under',

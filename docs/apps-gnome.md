@@ -98,6 +98,7 @@ GNOME Circle содержит приложения, расширяющие эк�
 |Wike                                |-|[Wike](https://flathub.org/apps/com.github.hugolabe.Wike)|[Подробнее](https://apps.gnome.org/ru/Wike/)|
 |Workbench                           |-|[Workbench](https://flathub.org/apps/re.sonny.Workbench)|[Подробнее](https://apps.gnome.org/ru/Workbench/)|
 |Zap                                 |-|[zap](https://flathub.org/apps/fr.romainvigier.zap)|[Подробнее](https://apps.gnome.org/ru/Zap/)|
+|Fretboard                           |-|[Fretboard](https://flathub.org/apps/dev.bragefuglseth.Fretboard)|[Подробнее](https://apps.gnome.org/ru/Fretboard/)|
 
 ## Инструменты для разработки
 Инструменты для разработки в среде GNOME помогают разрабатывать и проектировать новые приложения и упрощают внесение вклада в существующие.

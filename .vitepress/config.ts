@@ -6,6 +6,7 @@ import type MarkdownIt from 'markdown-it'
 import kbd from 'markdown-it-kbd'
 import taskLists from 'markdown-it-task-lists'
 import { rewrites } from './paths'
+import timeline from "vitepress-markdown-timeline";
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -288,6 +289,7 @@ export default defineConfig({
     config: (md) => {
       md.use(kbd);
       md.use(taskLists);
+      md.use(timeline);
     }
   },
   transformPageData: (pageData: normalize) => {

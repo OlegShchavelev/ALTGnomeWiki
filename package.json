@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^1.7.1",
     "@types/markdown-it": "^13.0.5",
     "@types/markdown-it-container": "^2.0.8",
     "@types/node": "^20.10.2",
@@ -8,8 +9,8 @@
     "markdown-it-kbd": "^2.2.2",
     "markdown-it-task-lists": "^2.1.1",
     "vitepress": "1.0.0-rc.32",
-    "vitepress-plugin-image-viewer": "^1.1.2",
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "^1.7.1"
+    "vitepress-markdown-timeline": "^1.2.1",
+    "vitepress-plugin-image-viewer": "^1.1.2"
   },
   "type": "module",
   "scripts": {

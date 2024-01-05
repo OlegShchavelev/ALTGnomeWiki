@@ -17,6 +17,7 @@ import './style.css'
 import './custom.css'
 import 'viewerjs/dist/viewer.min.css';
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+import "vitepress-markdown-timeline/dist/theme/index.css";
 
 export default {
   extends: DefaultTheme,

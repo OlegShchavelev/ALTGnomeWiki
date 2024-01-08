@@ -42,22 +42,28 @@ flatpak install flathub org.telegram.desktop
 2. Затем переходим в: *Настройки -> Продвинутые настройки -> Экспериментальные настройки* включите опцию **GNotification**
 3. Перезагружаем клиент Telegram, проверяем результат. 
 
-## Проблема отрисовки шрифтов в Telegram <Badge type="warning" text="sisyphus" />
+## Использовать системную рамку в Telegram
 
- После установки мессенджера Telegram при условии: некорректного отображения части шрифтов в интерфейсе, необходимо установить пакет `fonts-ttf-open-sans`
+Включите системную рамку следующим образом:
 
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install fonts-ttf-open-sans
-```
-```shell[epm]
-epm -i fonts-ttf-open-sans
-```
-:::
+- Откройте Telegram Desktop
+- Настройки -> Продвинутые настройки
+- Cнимите флажок "Рамка окна QT"
 
 :::info
-После установки пакета fonts-ttf-open-sans рекомендуем перезагрузить компьютер.
+Оформление системной рамки зависит от оконного интерфейса приложения X11 или Wayland. 
 :::
+
+## Как сбросить настройки
+
+Telegram Desktop <Badge type="warning" text="Sisyphus" />
+
+```shell
+rm -rfv .local/share/TelegramDesktop
+```
+
+Telegram Desktop <Badge type="tip" text="Flatpak" />
+
+```shell
+rm -rfv .var/app/org.telegram.desktop/config
+```

@@ -10,13 +10,13 @@ import { rewrites } from './paths'
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
 export default defineConfig({
-  vite: { 
-    ssr: { 
-      noExternal: [ 
-        '@nolebase/vitepress-plugin-enhanced-readabilities', 
-      ], 
-    }, 
-  }, 
+  vite: {
+    ssr: {
+      noExternal: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities',
+      ],
+    },
+  },
   title: seo.SITE_TITLE,
   titleTemplate: ':title' + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE,
   description: META_DESCRIPTION,
@@ -33,7 +33,7 @@ export default defineConfig({
       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-   
+
       ym(95081395, "init", {
            clickmap:true,
            trackLinks:true,
@@ -189,17 +189,17 @@ export default defineConfig({
                   items: [
                     { text: 'Использование других раскладок клавиатуры', link: '/keyboard-layouts' },
                     { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
-                  ],  
+                  ],
                   collapsed: true
                   },
                   {
                     text: 'Монитор и экран',
                     items: [
-                      { text: 'Измнение разрешения или орентация экрана', link: '/look-resolution' },
+                      { text: 'Изменение разрешения или ориентация экрана', link: '/look-resolution' },
                       { text: 'Подключение дополнительного монитора', link: '/display-dual-monitors' },
                       { text: 'Масштабирование экрана', link: '/scaling-the-screen' },
                       { text: 'Изменение внешнего вида рабочего стола', link: '/look-background'}
-                    ],  
+                    ],
                     collapsed: true
                     }
                 ],
@@ -215,9 +215,15 @@ export default defineConfig({
               { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'}
             ]
           },
+          { text: 'Решение проблем',
+            items: [
+              { text: 'Подключение USB устройств', link: '/usb-devices'}
+            ],
+            collapsed: true
+          },
           { text: 'Запись на DVD и USB Flash', link: '/getting-started' }
         ]
-      }, 
+      },
       {
         text: 'Быстрые ссылки',
         items: [
@@ -314,6 +320,6 @@ export default defineConfig({
           ['link', { rel: 'canonical', href: `${url}.html` }],
         )
         pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
-      } 
+      }
   }
 })

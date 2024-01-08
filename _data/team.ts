@@ -101,5 +101,13 @@ export const contributions = [
           link: 'https://gitflic.ru/user/ilyazheprog'
         },
       ]
+    },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/21331080?v=4',
+      name: 'Дмитрий Орлов',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Luckenty' },
+      ]
     }
   ]

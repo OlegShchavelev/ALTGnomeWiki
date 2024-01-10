@@ -107,6 +107,16 @@ $ flatpak install gimp
 flatpak run org.gimp.GIMP
 ```
 
+::: warning
+Если при запуске приложения вы получаете ошибку, то в данном случае может помочь выполнение следующих команд: 
+
+```shell
+su -
+chmod 775 /usr/bin/bwrap
+sysctl kernel.unprivileged_userns_clone=1
+```
+:::
+
 ### Удаление приложений
 
 Для удаления приложения в Flatpak **используйте** команду `uninstall` и идентификатор приложения:

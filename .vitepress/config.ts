@@ -219,8 +219,7 @@ export default defineConfig({
           },
           { text: 'Решение проблем',
             items: [
-              { text: 'Подключение USB устройств', link: '/usb-devices'},
-              { text: 'Не запускаются Flatpak-и', link: '/flatpack-start-error'}
+              { text: 'Подключение USB устройств', link: '/usb-devices'}
             ],
             collapsed: true
           },

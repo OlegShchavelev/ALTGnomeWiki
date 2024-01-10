@@ -116,6 +116,7 @@ export default defineConfig({
               { text: 'Flatpak', link: '/flatpak' },
               { text: 'Fragments', link: '/fragments' },
               { text: 'Git', link: '/git' },
+              { text: 'GitHub Desktop', link: '/github-desktop' },
               { text: 'GnomeSoftware', link: '/gnome-software' },
               { text: 'JetBrains', link: '/jetbrains'},
               { text: 'Libreoffice', link: '/libreoffice' },

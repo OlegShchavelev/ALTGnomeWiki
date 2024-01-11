@@ -117,7 +117,7 @@ export const contributions = [
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/131641124?v=4',
-      name: 'Fiersik Kouji',
+      name: 'Кирилл Уницаев',
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/fiersik' }

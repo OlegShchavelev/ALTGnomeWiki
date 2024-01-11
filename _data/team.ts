@@ -86,7 +86,6 @@ export const contributions = [
           link: 'https://gitflic.ru/user/h3try'
         },
       ],
-      sponsor: 'https://www.tinkoff.ru/cf/7L7liSQncEt'
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/54739833?v=4',
@@ -108,6 +107,20 @@ export const contributions = [
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/Luckenty' },
+        {
+          icon: {
+            svg: gitflic
+          },
+          link: 'https://gitflic.ru/user/luckenty' 
+        },
       ]
-    }
+    },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/131641124?v=4',
+      name: 'Fiersik Kouji',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/fiersik' }
+      ]
+    },
   ]

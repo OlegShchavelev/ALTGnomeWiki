@@ -3,8 +3,13 @@
 Если при подключении через USB устройства не видны в системе или работают некорректно, то в данном случае может помочь
 установка пакета gvfs-backends:
 
-```shell
+::: code-group
+
+```shell[apt-get]
 su -
 apt-get update
 apt-get install gvfs-backends
+```
+```shell[epm]
+epm -i gvfs-backends
 ```

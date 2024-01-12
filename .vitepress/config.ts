@@ -219,7 +219,9 @@ export default defineConfig({
           },
           { text: 'Решение проблем',
             items: [
-              { text: 'Подключение USB устройств', link: '/usb-devices'}
+              { text: 'Подключение USB устройств', link: '/usb-devices'},
+              { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround.md'},
+              { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround.md'}
             ],
             collapsed: true
           },

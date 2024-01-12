@@ -76,7 +76,7 @@ export const contributions = [
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/72319244?v=4',
-      name: 'Дмитрий Бондаврев',
+      name: 'Дмитрий Бондарев',
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/pokedim13' },

@@ -48,7 +48,8 @@ export const contributions = [
           },
           link: 'https://gitflic.ru/user/toxblh'
         },
-      ]
+      ],
+      sponsor: 'https://www.donationalerts.com/r/toxblh'
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/1888230?v=4',
@@ -121,6 +122,7 @@ export const contributions = [
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/fiersik' }
-      ]
+      ],
+      sponsor: 'https://www.tinkoff.ru/cf/4p7xYDHEH2y'
     },
   ]

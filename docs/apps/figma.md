@@ -1,6 +1,6 @@
 # Figma
 
-Figma — неофициальная версия Figma для Linux построенная на Electron.
+Figma — это неофициальная версия Figma для Linux построенная на Electron.
 
 ## Установка из репозитория GitHub
 

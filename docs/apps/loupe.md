@@ -17,3 +17,11 @@ apt-get install loupe
 epm -i loupe
 ```
 :::
+
+## Установка c помощью Flatpak
+
+При наличии пакета [Flatpak](/flatpak), можно установить **Loupe** одной командой:
+
+```shell
+flatpak install flathub org.gnome.Loupe
+```

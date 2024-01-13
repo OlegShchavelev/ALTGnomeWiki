@@ -22,7 +22,7 @@ epm -i drawing
 ```
 :::
 
-## Установка c помощью Flatpak<Badge type="info" text="flatpak" />
+## Установка c помощью Flatpak
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Drawing** одной командой:
 

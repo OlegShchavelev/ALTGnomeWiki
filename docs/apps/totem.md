@@ -9,6 +9,7 @@
 **Totem** можно установить любым привычным и удобным способом
 
 **Установка через терминал**
+
 ::: code-group
 
 ```shell[apt-get]
@@ -20,3 +21,11 @@ apt-get install totem
 epm -i totem
 ```
 :::
+
+## Установка c помощью Flatpak
+
+При наличии пакета [Flatpak](/flatpak), можно установить **Видео** одной командой:
+
+```shell
+flatpak install flathub org.gnome.Totem
+```

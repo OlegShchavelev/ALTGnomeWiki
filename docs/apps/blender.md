@@ -21,5 +21,13 @@ epm -i blender
 
 :::
 
+## Установка c помощью Flatpak
+
+При наличии пакета [Flatpak](/flatpak), можно установить **Blender** одной командой:
+
+```shell
+flatpak install flathub org.blender.Blender
+```
+
 
 

@@ -1,10 +1,12 @@
-# Boxes 
+# Boxes
 
 Boxes — это официальная утилита для рабочего стола GNOME, которая позволяет вам создавать виртуальные машины из образов операционной системы несколькими щелчками мыши.
 
 ## Установка из репозитория
 
 **Boxes** можно установить любым привычным и удобным способом:
+
+**Установка через терминал**
 
 ::: code-group
 
@@ -18,6 +20,14 @@ epm -i gnome-boxes
 ```
 
 :::
+
+## Установка c помощью Flatpak
+
+При наличии пакета [Flatpak](/flatpak), можно установить **Boxes** одной командой:
+
+```shell
+flatpak install flathub org.gnome.Boxes
+```
 
 ## Подготовка к использованию Boxes
 
@@ -38,12 +48,12 @@ epm -i libvirt libvirt-kvm
 
 ```shell
 su -
-gpasswd -a xxxx vmusers
+gpasswd -a USER vmusers
 systemctl enable libvirtd
 systemctl start libvirtd
 ```
 
-`xxxx` — имя вашего пользователя.
+`USER` — имя вашего пользователя.
 
 ## Комбинация клавиш
 

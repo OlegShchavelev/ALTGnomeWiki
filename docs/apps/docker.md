@@ -6,6 +6,8 @@ Docker — это платформа для разработки, доставк
 
 **Docker** можно установить любым привычным и удобным способом:
 
+**Установка через терминал**
+
 ::: code-group
 
 ```shell[apt-get]
@@ -26,9 +28,9 @@ epm -i docker-engine
 
 ```shell
 su -
-gpasswd -a xxxx docker
+gpasswd -a USER docker
 systemctl enable docker
 reboot
 ```
 
-`xxxx` — имя вашего пользователя.
+`USER` — имя вашего пользователя.

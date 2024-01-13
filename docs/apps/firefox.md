@@ -21,7 +21,7 @@ epm -i firefox
 :::
 
 
-## Установка c помощью Flatpak<Badge type="info" text="flatpak" />
+## Установка c помощью Flatpak
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Firefox** одной командой:
 

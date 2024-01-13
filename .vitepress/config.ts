@@ -107,13 +107,11 @@ export default defineConfig({
               { text: 'Drawing', link: '/drawing' },
               { text: 'Docker', link: '/docker' },
               { text: 'Eog', link: '/eog' },
-              { text: 'Epm', link: '/epm' },
               { text: 'Evince', link: '/evince' },
               { text: 'Extensions', link: '/extensions' },
               { text: 'FFMPEG', link: '/ffmpeg' },
               { text: 'Figma', link: '/figma' },
               { text: 'Firefox', link: '/firefox' },
-              { text: 'Flatpak', link: '/flatpak' },
               { text: 'Fragments', link: '/fragments' },
               { text: 'Git', link: '/git' },
               { text: 'GitHub Desktop', link: '/github-desktop' },
@@ -127,9 +125,9 @@ export default defineConfig({
               { text: 'Neofetch', link: '/neofetch' },
               { text: 'Neovim', link: '/neovim' },
               { text: 'Nodejs', link: '/nodejs' },
-              { text: 'Nvidia', link: '/nvidia' },
               { text: 'OBS Studio', link: '/obs-studio' },
               { text: 'Opera', link: '/opera' },
+              { text: 'Сканер документов', link: '/simple-scan' },
               { text: 'Skype', link: '/skype' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
@@ -215,17 +213,24 @@ export default defineConfig({
             items: [
               { text: 'Open Weather', link: '/openweather' },
               { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'}
-            ]
+            ],
+            collapsed: true
           },
           { text: 'Решение проблем',
             items: [
-              { text: 'Подключение USB устройств', link: '/usb-devices'},
               { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround.md'},
               { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround.md'}
             ],
             collapsed: true
           },
-          { text: 'Запись на DVD и USB Flash', link: '/getting-started' }
+          { text: 'Периферия и оборудование',
+            items: [
+              { text: 'Драйверы Nvidia', link: '/nvidia' },
+              { text: 'Подключение USB устройств', link: '/usb-devices'},
+              { text: 'Подключение сканера', link: '/drivers-for-scanner'}
+            ],
+            collapsed: true
+          }
         ]
       },
       {

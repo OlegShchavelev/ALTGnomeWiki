@@ -123,7 +123,6 @@ export default defineConfig({
               { text: 'Мpich', link: '/mpich' },
               { text: 'Neofetch', link: '/neofetch' },
               { text: 'Neovim', link: '/neovim' },
-              { text: 'Nodejs', link: '/nodejs' },
               { text: 'OBS Studio', link: '/obs-studio' },
               { text: 'Opera', link: '/opera' },
               { text: 'Сканер документов', link: '/simple-scan' },
@@ -228,6 +227,12 @@ export default defineConfig({
               { text: 'Драйверы Nvidia', link: '/nvidia' },
               { text: 'Подключение USB устройств', link: '/usb-devices'},
               { text: 'Подключение сканера', link: '/drivers-for-scanner'}
+            ],
+            collapsed: true
+          },
+          { text: 'Разработка',
+            items: [
+              { text: 'Nodejs', link: '/nodejs' }
             ],
             collapsed: true
           }

@@ -108,7 +108,6 @@ export default defineConfig({
               { text: 'Docker', link: '/docker' },
               { text: 'Eog', link: '/eog' },
               { text: 'Evince', link: '/evince' },
-              { text: 'Extensions', link: '/extensions' },
               { text: 'FFMPEG', link: '/ffmpeg' },
               { text: 'Figma', link: '/figma' },
               { text: 'Firefox', link: '/firefox' },
@@ -210,6 +209,7 @@ export default defineConfig({
           },
           {
             text: 'Расширения рабочего окружения GNOME',
+            link: '/extensions',
             items: [
               { text: 'Open Weather', link: '/openweather' },
               { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'}

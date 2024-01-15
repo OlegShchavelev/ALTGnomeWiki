@@ -35,6 +35,7 @@ tar -xvzf uld_V1.00.39_01.17.tar.gz
 ::: code-group
 
 ```shell
+su -
 ./install-scanner.sh
 ```
 

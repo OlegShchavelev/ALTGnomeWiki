@@ -1,15 +1,11 @@
 # Open Weather
 Расширение GNOME Shell добавляющее пункт прогноза погоды в верхнем док меню.
 
-:::warning
-Расширение Open Weather не совместимо с GNOME 45 
-:::
-
 ![Демонстрация интерфейса open weather](/openweather/openweather.png)
 
 ## Установка Open Weather из GNOME Shell Extensions <Badge type="info" text="GNOME Shell Extensions" />
 
-1. Переходим на [страницу Open Weather](https://extensions.gnome.org/extension/750/openweather/) в GNOME Extensions.
+1. Переходим на [страницу Open Weather](https://extensions.gnome.org/extension/6655/openweather/) в GNOME Extensions.
 
 2. Включаем расширение и подтверждаем его установку.
 

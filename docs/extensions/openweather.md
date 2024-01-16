@@ -3,7 +3,7 @@
 
 ![Демонстрация интерфейса open weather](/openweather/openweather.png)
 
-## Установка Open Weather из GNOME Shell Extensions <Badge type="info" text="GNOME Shell Extensions" />
+## Установка Open Weather из GNOME Shell Extensions
 
 1. Переходим на [страницу Open Weather](https://extensions.gnome.org/extension/6655/openweather/) в GNOME Extensions.
 
@@ -11,7 +11,7 @@
 
 3. Расширение установлено!
 
-## Установка Open Weather из репозитория <Badge type="warning" text="sisyphus" />
+## Установка Open Weather из репозитория
 
 Данный способ установки расширений крайне не рекомендуется, но имеет право на жизнь.
 ::: code-group

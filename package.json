@@ -1,12 +1,15 @@
 {
   "devDependencies": {
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^1.10.0",
     "@types/markdown-it": "^13.0.5",
     "@types/markdown-it-container": "^2.0.8",
+    "@types/node": "^20.10.2",
     "markdown-it": "^13.0.2",
     "markdown-it-container": "^3.0.0",
     "markdown-it-kbd": "^2.2.2",
     "markdown-it-task-lists": "^2.1.1",
-    "vitepress": "^1.0.0-rc.30",
+    "vitepress": "1.0.0-rc.36",
+    "vitepress-markdown-timeline": "^1.2.1",
     "vitepress-plugin-image-viewer": "^1.1.2"
   },
   "type": "module",
@@ -14,8 +17,5 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
-  },
-  "dependencies": {
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "^1.7.1"
   }
 }

@@ -144,3 +144,28 @@
   list-style: none;
   padding-left: 0;
  }
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand) !important;
+}
+
+/**
+ * VPHomeSponsors
+ * -------------------------------------------------------------------------- */
+
+.vp-sponsor-grid.big .vp-sponsor-grid-image {
+  max-width: 170px;
+  max-height: 120px;
+}
+
+.VPHomeSponsors .message {
+  max-width: 800px;
+}
+
+.VPHome .VPHomeSponsors {
+  margin-top: 0 !important;
+}

@@ -89,6 +89,15 @@ export default defineConfig({
       {
         items: [
           { text: 'Быстрый старт', link: '/quick-start' },
+          { 
+            text: 'Установка',
+            link: '/download',
+            items: [
+              { text: 'Установка на Mac', link: '/macbook'},
+              { text: 'Установка рядом с Nac OS', link: '/install-on-macbook-with-opencore-parallel' }
+            ],
+            collapsed: true
+          },
           {
             text: 'Установка и обновление программ',
             items: [
@@ -155,11 +164,12 @@ export default defineConfig({
                   { text: 'Автоматический запуск приложений', link: '/startup-applications'},
                   { text: 'Быстрое переключение между окнами', link: '/switching-apps'},
                   { text: 'Уведомления и список уведомлений', link: '/notifications'},
-                  { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
+                  { text: 'Удаленный рабочий стол', link: '/gnome-remote-desktop'},
                   { text: 'Экран блокировки', link: '/lock-screen'}
                 ],
                 collapsed: true
-              }, {
+              },
+              {
                 text: 'Сети, Интернет и электронная почта',
                 items: [
                   {
@@ -179,15 +189,23 @@ export default defineConfig({
                   }
                 ],
                 collapsed: true
-              }, {
+              },
+              {
                 text: 'Настройки пользователя и системы',
                 items: [
+                  { 
+                    text: 'Звук',
+                    items: [
+                      { text: 'Управление громкостью', link: '/gnome-volume-control'}
+                    ],
+                    collapsed: true
+                  },
                   {
-                  text: 'Клавиатура',
-                  items: [
-                    { text: 'Использование других раскладок клавиатуры', link: '/keyboard-layouts' },
-                    { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
-                  ],
+                    text: 'Клавиатура',
+                    items: [
+                      { text: 'Использование других раскладок клавиатуры', link: '/keyboard-layouts' },
+                      { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
+                    ],
                   collapsed: true
                   },
                   {
@@ -232,6 +250,14 @@ export default defineConfig({
           },
           { text: 'Разработка',
             items: [
+              {
+                text: 'Rust',
+                items: [
+                  { text: 'приложение на gtk4', link: 'rust-gtk4-applications'}
+                ],
+                collapsed: true
+              },
+              { text: 'aurora sdk', link: '/aurora-sdk'},
               { text: 'Nodejs', link: '/nodejs' }
             ],
             collapsed: true

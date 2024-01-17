@@ -1,13 +1,16 @@
-# Управление громкостью в Gnome
+# Управление громкостью
 
 ## Установка уровня громкости
 
 Уровень громкости в системе возможно изменить несколькими способами:
 
-- Через GUI в меню (уточнить как называется) в ползунке поменять выбранную позицию
+- Через GUI в пункте управления поменять выбранную позицию ползунка
   
+![gnome-control-center](/gnome-volume-control/gnome-control-center.png)
+
 - Через GUI в приложении "Настройки" > "Звук"
 ![settings_volume_control](/gnome-volume-control/gnome-settings-volume-control.png)
+
 
 - Через TUI в приложении `alsamixer`
 
@@ -17,7 +20,7 @@
 
 ```shell[wireplumber]
 # Установить уровень громкости в 70%
-pwctl set-volume @DEFAULT_AUDIO_SINK@ 0.7
+AULT_AUDIO_SINK@ 0.7
 # или 
 # Увеличить на 5%, с установкой ограничения в 150%
 pwctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+

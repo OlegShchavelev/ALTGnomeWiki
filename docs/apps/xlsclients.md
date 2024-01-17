@@ -12,7 +12,7 @@ xlsclients — это утилита Linux для составления спи�
 ```shell[apt-get]
 su -
 apt-get update
-apt-get xlsclients
+apt-get install xlsclients
 ```
 ```shell[epm]
 epm -i xlsclients

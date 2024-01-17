@@ -107,6 +107,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 |            Видеокарта                |      Драйвер NVIDIA    | Статус видеокарты NVIDIA |    GNOME Xorg | GNOME Wayland | Примечание
 |:-------------------------------------|:-------------:|:--------------:|:--------------:|:--------------:|:--------------|
-| GeForce RTX 3060 Mobile / Max-Q      | 535.146.02    |    Работает   |    AMD Cezanne [Radeon Vega Series / Radeon Mobile Series]          | AMD Cezanne [Radeon Vega Series / Radeon Mobile Series] | При запуске игр периодически не происходит переключение на дискретную графику. Данное поведение воспроводится в следующих играх: Hearthstone, Overwatch, Deep Rock Galactic
+| GeForce RTX 3060 Mobile / Max-Q      | 535.146.02    |    Работает   |    AMD Cezanne [Radeon Vega Series / Radeon Mobile Series]          | AMD Cezanne [Radeon Vega Series / Radeon Mobile Series] | При запуске игр периодически не происходит переключение на дискретную графику. Данное поведение воспроизводится в следующих играх: Hearthstone, Overwatch, Deep Rock Galactic
 | NVIDIA GM108M [GeForce 840M]       |  535.129.03    |    Определяется в системе    |    Mesa Intel HD Graphics 4400 (HSW GT2)          |  Mesa Intel HD Graphics 4400 (HSW GT2) |
-| NVIDIA GM204M [GeForce GTX 980]       | 535.146.02    |    Работает    |    NVIDIA GM204M [GeForce GTX 980]          |  NVIDIA GM204M [GeForce GTX 980] | Артифакты в приложениях c интерфейсом X11(XWayland). К примеру Я.Браузер, Figma
+| NVIDIA GM204M [GeForce GTX 980]       | 535.146.02    |    Работает    |    NVIDIA GM204M [GeForce GTX 980]          |  NVIDIA GM204M [GeForce GTX 980] | Артефакты в приложениях c интерфейсом X11(XWayland). К примеру Я.Браузер, Figma

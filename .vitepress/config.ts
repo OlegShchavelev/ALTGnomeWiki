@@ -120,6 +120,7 @@ export default defineConfig({
               { text: 'FFMPEG', link: '/ffmpeg' },
               { text: 'Figma', link: '/figma' },
               { text: 'Firefox', link: '/firefox' },
+              { text: 'Flatseal', link: '/flatseal' },
               { text: 'Fragments', link: '/fragments' },
               { text: 'Git', link: '/git' },
               { text: 'GitHub Desktop', link: '/github-desktop' },

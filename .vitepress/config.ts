@@ -243,7 +243,7 @@ export default defineConfig({
           },
           { text: 'Периферия и оборудование',
             items: [
-              { text: 'Драйверы Nvidia', link: '/nvidia' },
+              { text: 'Драйверы NVIDIA', link: '/nvidia' },
               { text: 'Подключение USB устройств', link: '/usb-devices'},
               { text: 'Подключение сканера', link: '/drivers-for-scanner'}
             ],

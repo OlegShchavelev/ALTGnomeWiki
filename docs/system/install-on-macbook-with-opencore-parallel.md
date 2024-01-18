@@ -1,4 +1,4 @@
-# Установка Alt Linux Gnome на Mac (OpenCore way, Swap in file)
+# Установка ALT Regular Gnome на Mac (OpenCore way, Swap in file)
 
 Данное руководство написано с целью рассказать о возможности установки Alt Linux
 параллельно установленной системе macOS

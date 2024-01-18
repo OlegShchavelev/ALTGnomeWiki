@@ -94,7 +94,7 @@ export default defineConfig({
             link: '/download',
             items: [
               { text: 'Установка на Mac', link: '/macbook'},
-              { text: 'Установка рядом с Nac OS', link: '/install-on-macbook-with-opencore-parallel' }
+              { text: 'Установка рядом с MacOS', link: '/install-on-macbook-with-opencore-parallel' }
             ],
             collapsed: true
           },

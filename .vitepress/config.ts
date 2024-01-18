@@ -251,6 +251,12 @@ export default defineConfig({
           },
           { text: 'Разработка',
             items: [
+              { 
+                text: 'Python',
+                link: '/python',
+                items: [],
+                collapsed: true
+              },
               {
                 text: 'Rust',
                 items: [
@@ -259,7 +265,7 @@ export default defineConfig({
                 collapsed: true
               },
               { text: 'Aurora SDK', link: '/aurora-sdk'},
-              { text: 'Nodejs', link: '/nodejs' }
+              { text: 'Nodejs', link: '/nodejs'}
             ],
             collapsed: true
           }

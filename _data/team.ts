@@ -125,4 +125,12 @@ export const contributions = [
       ],
       sponsor: 'https://www.tinkoff.ru/cf/4p7xYDHEH2y'
     },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/156944896?v=4',
+      name: 'konoos56',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/konoos56' }
+      ],
+    },
   ]

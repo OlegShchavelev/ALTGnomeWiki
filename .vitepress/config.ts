@@ -254,7 +254,9 @@ export default defineConfig({
               { 
                 text: 'Python',
                 link: '/python',
-                items: [],
+                items: [
+                  { text: 'Использование Poetry', link: 'python-use-poetry' }
+                ],
                 collapsed: true
               },
               {

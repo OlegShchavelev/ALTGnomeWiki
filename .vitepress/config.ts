@@ -254,11 +254,11 @@ export default defineConfig({
               {
                 text: 'Rust',
                 items: [
-                  { text: 'приложение на gtk4', link: 'rust-gtk4-applications'}
+                  { text: 'приложение на GTK4', link: 'rust-gtk4-applications'}
                 ],
                 collapsed: true
               },
-              { text: 'aurora sdk', link: '/aurora-sdk'},
+              { text: 'Aurora SDK', link: '/aurora-sdk'},
               { text: 'Nodejs', link: '/nodejs' }
             ],
             collapsed: true

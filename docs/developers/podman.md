@@ -232,18 +232,10 @@ Podman-Desktop — это удобный пользовательский инт
 а также для управления их конфигурацией и настройками. Оно также интегрируется со средой разработки, чтобы
 облегчить процесс разработки и тестирования приложений в контейнерах.
 
-### Установка
+### Установка c помощью Flatpak
 
-::: code-group
+При наличии пакета [Flatpak](/flatpak), можно установить **Podman-Desktop** одной командой:
 
-```shell[apt-get]
-su -
-apt-get update
-apt-get install podman-desktop
+```shell
+flatpak install io.podman_desktop.PodmanDesktop
 ```
-
-```shell[epm]
-epm -i podman-desktop
-```
-
-:::

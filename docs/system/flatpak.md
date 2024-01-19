@@ -112,8 +112,16 @@ flatpak run org.gimp.GIMP
 
 ```shell
 su -
+echo kernel.unprivileged_userns_clone=1 > /etc/sysctl.d/50-bubblewrap.conf
+sysctl -w kernel.unprivileged_userns_clone=1
 chmod 775 /usr/bin/bwrap
-sysctl kernel.unprivileged_userns_clone=1
+exit
+```
+
+Перезагрузите операционную систему или от введите команду в терминале:
+
+```shell
+systemctl --user restart flatpak-portal.service
 ```
 
 :::danger

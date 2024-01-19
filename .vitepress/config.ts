@@ -89,7 +89,7 @@ export default defineConfig({
       {
         items: [
           { text: 'Быстрый старт', link: '/quick-start' },
-          { 
+          {
             text: 'Установка',
             link: '/download',
             items: [
@@ -194,7 +194,7 @@ export default defineConfig({
               {
                 text: 'Настройки пользователя и системы',
                 items: [
-                  { 
+                  {
                     text: 'Звук',
                     items: [
                       { text: 'Управление громкостью', link: '/gnome-volume-control'}
@@ -251,7 +251,7 @@ export default defineConfig({
           },
           { text: 'Разработка',
             items: [
-              { 
+              {
                 text: 'Python',
                 link: '/python',
                 items: [
@@ -267,7 +267,8 @@ export default defineConfig({
                 collapsed: true
               },
               { text: 'Aurora SDK', link: '/aurora-sdk'},
-              { text: 'Nodejs', link: '/nodejs'}
+              { text: 'Nodejs', link: '/nodejs'},
+              { text: 'Podman', link: '/podman' },
             ],
             collapsed: true
           }

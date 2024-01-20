@@ -136,6 +136,7 @@ export default defineConfig({
               { text: 'Neovim', link: '/neovim' },
               { text: 'OBS Studio', link: '/obs-studio' },
               { text: 'Opera', link: '/opera' },
+              { text: 'Penpot Desktop', link: '/penpot-desktop' },
               { text: 'Сканер документов', link: '/simple-scan' },
               { text: 'Skype', link: '/skype' },
               { text: 'Steam', link: '/steam' },

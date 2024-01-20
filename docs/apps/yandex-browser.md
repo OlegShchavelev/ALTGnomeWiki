@@ -144,7 +144,7 @@ rm -rfv .config/yandex-browser/
 rm -rfv .config/yandex-browser/Default/GPUCache
 ```
 
-![Графический сбой в Яндекс Браузере](/yandex-browser/yandex-browser-1.jpg)
+![Графический сбой в Яндекс Браузере](/yandex-browser/yandex-browser-1.jpg 'Графический сбой в Яндекс Браузере')
 
 
 ## Издания Яндекс Браузера

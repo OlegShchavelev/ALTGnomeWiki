@@ -169,3 +169,12 @@
 .VPHome .VPHomeSponsors {
   margin-top: 0 !important;
 }
+
+/**
+ * implicitFigures
+ * -------------------------------------------------------------------------- */
+ figure > figcaption {
+  text-align: center;
+  color: var(--vp-c-brand-lightest);
+  font-size: 14px;
+ } 

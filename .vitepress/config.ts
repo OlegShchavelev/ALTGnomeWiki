@@ -7,6 +7,7 @@ import kbd from 'markdown-it-kbd'
 import taskLists from 'markdown-it-task-lists'
 import { rewrites } from './paths'
 import timeline from "vitepress-markdown-timeline";
+import implicitFigures from 'markdown-it-implicit-figures'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -346,6 +347,10 @@ export default defineConfig({
       md.use(kbd);
       md.use(taskLists);
       md.use(timeline);
+      md.use(implicitFigures, {
+        figcaption: 'title',
+        copyAttrs: '^class$'
+      })
     }
   },
   transformPageData: (pageData: normalize) => {

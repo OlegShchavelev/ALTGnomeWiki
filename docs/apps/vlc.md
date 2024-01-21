@@ -33,5 +33,5 @@ epm -i vlc
 При наличии пакета [Flatpak](/flatpak), можно установить **VLC** одной командой:
 
 ```shell
-flatpak install flathub org.videolan.VLC5
+flatpak install flathub org.videolan.VLC
 ```

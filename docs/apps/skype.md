@@ -10,7 +10,7 @@ Skype — это платформа для бесплатных видеозво
 flatpak install flathub com.skype.Client
 ```
 
-## Установка c помощью epm play
+## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 
 При наличии пакета [eepm](/epm), можно установить **Skype** одной командой:
 

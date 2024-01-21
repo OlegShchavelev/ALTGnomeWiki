@@ -10,7 +10,7 @@ Discord — это платформа для голосового общения
 flatpak install flathub com.discordapp.Discord
 ```
 
-## Установка c помощью epm play
+## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 
 При наличии пакета [eepm](/epm), можно установить **Discord** одной командой:
 

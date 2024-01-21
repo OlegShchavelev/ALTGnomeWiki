@@ -20,7 +20,7 @@ epm -i codium
 ```
 :::
 
-## Установка c помощью Flatpak
+## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Codium** одной командой:
 
@@ -28,7 +28,7 @@ epm -i codium
 flatpak install flathub com.vscodium.codium
 ```
 
-## Установка c помощью epm play
+## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 
 При наличии пакета [eepm](/epm), можно установить **VSCodium** одной командой:
 

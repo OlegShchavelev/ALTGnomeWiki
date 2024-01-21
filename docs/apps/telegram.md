@@ -27,7 +27,7 @@ epm -i telegram-desktop
 flatpak install flathub org.telegram.desktop
 ```
 
-## Установка c помощью epm play
+## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 
 При наличии пакета [eepm](/epm), можно установить **Telegram** одной командой:
 

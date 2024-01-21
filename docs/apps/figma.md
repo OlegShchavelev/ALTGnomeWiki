@@ -2,7 +2,7 @@
 
 Figma — это неофициальная версия Figma для Linux построенная на Electron.
 
-## Установка c помощью Flatpak
+## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Figma** одной командой:
 

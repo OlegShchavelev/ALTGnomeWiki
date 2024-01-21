@@ -20,7 +20,7 @@ epm -i codium
 ```
 :::
 
-## Установка c помощью Flatpak
+## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Codium** одной командой:
 

@@ -34,3 +34,13 @@ reboot
 ```
 
 `USER` — имя вашего пользователя.
+
+## Установка docker-compose
+
+**Установка через терминал**
+
+```shell
+su -
+apt-get update
+apt-get install docker-compose-v2
+```

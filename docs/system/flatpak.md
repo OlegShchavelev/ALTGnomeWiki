@@ -63,6 +63,21 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 В данном случае, `flathub` указано локальное имя, которое присваивается удаленному устройству. URL указывает на файл удаленного устройства `.flatpakrepo` . Опция `--if-not-exists` останавливает команду от выдачи ошибки, если удаленное устройство уже существует.
 
+:::info Наиболее популярные репозитории
+
+Репозиторий GNOME Nightly
+
+```shell
+flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+```
+
+Репозиторий Flatpak Beta
+
+```shell
+flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+```
+:::
+
 Удалить репозиторий, выполните:
 
 ```shell

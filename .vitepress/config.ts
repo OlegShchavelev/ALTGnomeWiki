@@ -233,7 +233,8 @@ export default defineConfig({
             link: '/extensions',
             items: [
               { text: 'Open Weather', link: '/openweather' },
-              { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'}
+              { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'},
+              { text: 'Extension List', link: '/extensions/extension-list.md'}
             ],
             collapsed: true
           },

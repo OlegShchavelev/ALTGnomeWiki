@@ -26,13 +26,32 @@ apt-get install eepm
 | Вывести информацию о пакете |  epm -ql (package)   |  apt-cache show (package) |
 | Обновить дистрибутив |  epm upgrade   |  apt-get dist-upgrade |
 
-### Информация о системы
+### Информация о системе
 
 Для ввывода информации о системе, введите в терминале:
 
 ```shell
 epm print info
 ```
+
+::: details Пример вывода информация о системе
+```shell
+distro_info v20230406 (EPM version 3.60.5-alt1) : Copyright © 2007-2023 Etersoft
+
+                       Pretty name (--pretty): ALT Regular (20240112) (Sisyphus)
+           (--distro-name / --distro-version): Sisyphus / 20240112 (orig. Sisyphus 20230819)
+         Base distro name (-d) / version (-v): ALTLinux/Sisyphus
+     Vendor distro name (-s) / Repo name (-r): alt / Sisyphus
+                 Package manager/type (-g/-p): apt-rpm / rpm
+            Base OS name (-o) / CPU arch (-a): linux x86_64
+                 CPU norm register size  (-b): 64 bit
+                          Virtualization (-i): (host system)
+                        CPU Cores/MHz (-c/-z): 16 / 1393 MHz
+                      System memory size (-m): 15412 MiB
+                 Running service manager (-y): systemd
+            Bug report URL (--bug-report-url): https://bugs.altlinux.org/
+```
+:::
 
 ## Утилита EPM Play
 

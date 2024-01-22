@@ -26,7 +26,7 @@ apt-get install eepm
 | Вывести информацию о пакете |  epm -ql (package)   |  apt-cache show (package) |
 | Обновить дистрибутив |  epm upgrade   |  apt-get dist-upgrade |
 
-### Инофрмация о системы
+### Информация о системы
 
 Для ввывода информации о системе, введите в терминале:
 

@@ -105,6 +105,28 @@ systemctl enable --now switcheroo-control.service
 
 ![Запустить с помощью выделенной видеокарты](/nvidia/nvidia-1.jpg)
 
+## Проверка версии и возможностей платформы Vulcan
+
+Программа vulkaninfo отображает информацию о поддерживаемых возможностях Vulkan для пользователей графических устройст NVIDIA. Необходимо установить пакет `vulkan-tools`
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install vulkan-tools
+```
+```shell[epm]
+epm -i vulkan-tools
+```
+:::
+
+Для вывода информации `vulkaninfo` в терминале введите:
+
+```shell
+vulkaninfo --summary
+```
+
 ## «Неизвестный монитор» в настройках дисплеев в сессии Wayland
 
 Внесем изменение в конфигурацию **GRUB**:
@@ -128,7 +150,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 :::info 
 Данное решение приводит к невозможности входа в tty.
 :::
-
 
 ## Данные об оборудовании и ПО пользователей за 2024 год.
 

@@ -44,3 +44,8 @@ su -
 apt-get update
 apt-get install docker-compose-v2
 ```
+
+Проверить, что docker-compose установился можно выполнив команду, которая покажет справку:
+```shell
+docker compose --help
+```

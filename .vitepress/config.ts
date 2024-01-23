@@ -234,7 +234,7 @@ export default defineConfig({
             items: [
               { text: 'Open Weather', link: '/openweather' },
               { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'},
-              { text: 'Extension List', link: '/extensions/extension-list.md'}
+              { text: 'Extension List', link: '/extensions/extension-list'}
             ],
             collapsed: true
           },
@@ -242,7 +242,7 @@ export default defineConfig({
             items: [
               { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround'},
               { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround'},
-              { text: 'Обновить названия стандартных папок в соответствутвии с локалью', link: '/change-the-language-of-the-home-user-folders-automatically.md'}
+              { text: 'Обновить названия стандартных папок в соответствутвии с локалью', link: '/change-the-language-of-the-home-user-folders-automatically'}
             ],
             collapsed: true
           },

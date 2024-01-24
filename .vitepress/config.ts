@@ -266,6 +266,7 @@ export default defineConfig({
               },
               {
                 text: 'Rust',
+                link: '/rust',
                 items: [
                   { text: 'приложение на GTK4', link: 'rust-gtk4-applications'}
                 ],

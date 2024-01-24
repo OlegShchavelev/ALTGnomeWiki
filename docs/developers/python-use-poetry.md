@@ -10,7 +10,7 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 ## Использование poetry
 
-Создание нового проекта:
+### Создание нового проекта:
 
 ```shell
 poetry new NAME
@@ -18,8 +18,7 @@ poetry new NAME
 
 `NAME` — название проекта.
 
-Будет создан проект с примерно такой архитектурой
-
+::: details Пример архитектуры 
 ```shell
 new_project
 ├── new_project
@@ -29,27 +28,28 @@ new_project
 └── tests
     └── __init__.py
 ```
+:::
 
-Инициализация существующего проекта:
+### Инициализация существующего проекта:
 
 ```shell
 cd /path/to/project/
 poetry init
 ```
 
-Указание зависимостей:
+### Указание зависимостей:
 
 ```shell
 poetry add pylint
 ```
 
-Сборка пакета:
+### Сборка пакета:
 
 ```shell
 poetry build
 ```
 
-Публикация в PyPI:
+### Публикация в PyPI:
 
 ```shell
 poetry publish
@@ -57,25 +57,25 @@ poetry publish
 
 ## Использование виртуального окружения
 
-Создание/Активация окружения:
+### Создание/Активация окружения:
 
 ```shell
 poetry shell
 ```
 
-Смена версии Python внутри проекта:
+### Смена версии Python внутри проекта:
 
 ```shell
 poetry env use python3.10
 ```
 
-Установка всех зависимостей:
+### Установка всех зависимостей:
 
 ```shell
 poetry install
 ```
 
-Обновление зависимостей:
+### Обновление зависимостей:
 
 ```shell
 poetry update
@@ -83,13 +83,13 @@ poetry update
 
 ## Конфигурация Poetry
 
-Вывод всех настроек:
+### Вывод всех настроек:
 
 ```shell
 poetry config --list
 ```
 
-Смена параметра:
+### Смена параметра:
 
 ```shell
 poetry config OPTION VALUE
@@ -98,20 +98,20 @@ poetry config OPTION VALUE
 `OPTION` — параметр. \
 `VALUE` — значение.
 
-|  Параметр                               |  Описание                                                                   |
-| :--------------------------------------:|:--------------------------------------------------------------------------: |
-|cache-dir                                | Путь к каталогу кэша, используемому Poetry                                  |
-|experimental.system-git-client           | Использовать серверную часть системного клиента git                         |
-|installer.max-workers                    | Максимальное количество рабочих при использовании параллельного установщика |
-|installer.modern-installation            | Более современный и быстрый метод установки пакета                          |
-|installer.no-binary                      | Не устанавливать бинарные зависимости                                       |
-|installer.parallel                       | Параллельное выполнение при использовании нового установщика                |
-|virtualenvs.create                       | Создание venv при его отсутствие                                            |
-|virtualenvs.in-project                   | Создавать venv в каталоге проекта                                           |
-|virtualenvs.options.always-copy          | Создавать файлы окружения вместо ссылок                                     |
-|virtualenvs.options.no-pip               | Не устанавливать pip                                                        |
-|virtualenvs.options.no-setuptools        | Не устанавливать setuptools                                                 |
-|virtualenvs.options.system-site-packages | Использовать системные зависимости                                          |
-|virtualenvs.path                         | Каталог для хранения venv                                                   |
-|virtualenvs.prefer-active-python         | Использовать текущий активированный Python для venv                         |
-|virtualenvs.prompt                       | Строка, которая будет отображаться при активации venv                       |
+| Параметр                                 | Тип     | Описание                                                                    |
+| :----------------------------------------|:--------|:--------------------------------------------------------------------------- |
+| cache-dir                                | string  | Путь к каталогу кэша, используемому Poetry                                  |
+| experimental.system-git-client           | boolean | Использовать серверную часть системного клиента git                         |
+| installer.max-workers                    | int     | Максимальное количество рабочих при использовании параллельного установщика |
+| installer.modern-installation            | boolean | Более современный и быстрый метод установки пакета                          |
+| installer.no-binary                      | boolean | Не устанавливать бинарные зависимости                                       |
+| installer.parallel                       | boolean | Параллельное выполнение при использовании нового установщика                |
+| virtualenvs.create                       | boolean | Создание venv при его отсутствие                                            |
+| virtualenvs.in-project                   | boolean | Создавать venv в каталоге проекта                                           |
+| virtualenvs.options.always-copy          | boolean | Создавать файлы окружения вместо ссылок                                     |
+| virtualenvs.options.no-pip               | boolean | Не устанавливать pip                                                        |
+| virtualenvs.options.no-setuptools        | boolean | Не устанавливать setuptools                                                 |
+| virtualenvs.options.system-site-packages | boolean | Использовать системные зависимости                                          |
+| virtualenvs.path                         | string  | Каталог для хранения venv                                                   |
+| virtualenvs.prefer-active-python         | boolean | Использовать текущий активированный Python для venv                         |
+| virtualenvs.prompt                       | string  | Строка, которая будет отображаться при активации venv                       |

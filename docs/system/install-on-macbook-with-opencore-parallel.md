@@ -1,9 +1,11 @@
-# Установка ALT Regular Gnome на Mac (OpenCore way, Swap in file)
+# Установка ALT Regular Gnome на Mac [OpenCore Bootloader, Swap через файл]
 
 Данное руководство написано с целью рассказать о возможности установки Alt Linux
 параллельно установленной системе macOS
 
-В руководстве используется OpenCore загрузчик из пакета OpenCore Legacy Patcher
+::: warning
+В руководстве используется OpenCore загрузчик из пакета [OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher/)
+:::
 
 ## Подготовка
 

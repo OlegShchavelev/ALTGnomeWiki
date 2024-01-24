@@ -72,7 +72,9 @@ GNOME Circle содержит приложения, расширяющие эк�
 |Eyedropper                          |[eyedropper](https://packages.altlinux.org/ru/sisyphus/srpms/eyedropper/)|[eyedropper](https://flathub.org/apps/com.github.finefindus.eyedropper)|[Подробнее]()|
 |Forge Sparks                        |-|[ForgeSparks](https://flathub.org/apps/com.mardojai.ForgeSparks)|[Подробнее](https://apps.gnome.org/ru/ForgeSparks/)|
 |Fragments                           |[fragments](https://apps.gnome.org/ru/Fragments/)|[Fragments](https://flathub.org/apps/de.haeckerfelix.Fragments)|[Подробнее](https://apps.gnome.org/ru/Fragments/)|
+|Fretboard                           |-|[Fretboard](https://flathub.org/apps/dev.bragefuglseth.Fretboard)|[Подробнее](https://apps.gnome.org/ru/Fretboard/)|
 |Gaphor                              |-|[Gaphor](https://flathub.org/apps/org.gaphor.Gaphor)|[Подробнее](https://apps.gnome.org/ru/Gaphor/)|
+|Graphs                              |-|[Graphs](https://flathub.org/apps/se.sjoerd.Graphs)|[Подробнее](https://apps.gnome.org/ru/Graphs/)|
 |Impression                          |[impression](https://packages.altlinux.org/ru/sisyphus/srpms/impression/)|[Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression)|[Подробнее](https://apps.gnome.org/ru/Impression/)|
 |Junction                            |[junction](https://packages.altlinux.org/ru/sisyphus/srpms/junction/)|[Junction](https://flathub.org/apps/re.sonny.Junction)|[Подробнее](https://apps.gnome.org/ru/Junction/)|
 |Khronos                             |[khronos](https://packages.altlinux.org/ru/sisyphus/srpms/khronos/)|[Khronos](https://flathub.org/apps/io.github.lainsce.Khronos)|[Подробнее](https://apps.gnome.org/ru/Khronos/)|
@@ -98,7 +100,6 @@ GNOME Circle содержит приложения, расширяющие эк�
 |Wike                                |-|[Wike](https://flathub.org/apps/com.github.hugolabe.Wike)|[Подробнее](https://apps.gnome.org/ru/Wike/)|
 |Workbench                           |-|[Workbench](https://flathub.org/apps/re.sonny.Workbench)|[Подробнее](https://apps.gnome.org/ru/Workbench/)|
 |Zap                                 |-|[zap](https://flathub.org/apps/fr.romainvigier.zap)|[Подробнее](https://apps.gnome.org/ru/Zap/)|
-|Fretboard                           |-|[Fretboard](https://flathub.org/apps/dev.bragefuglseth.Fretboard)|[Подробнее](https://apps.gnome.org/ru/Fretboard/)|
 
 ## Инструменты для разработки
 Инструменты для разработки в среде GNOME помогают разрабатывать и проектировать новые приложения и упрощают внесение вклада в существующие.

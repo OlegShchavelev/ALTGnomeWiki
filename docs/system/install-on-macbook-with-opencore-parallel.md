@@ -41,7 +41,7 @@
 
 ```shell
 su -
-dd if=/dev/zero of=/swapfile bs=1m count=`free -m | awk 'NR==2 {print $2}'` # создаст своп размером с оперативную память :)
+dd if=/dev/zero of=/swapfile bs=1M count=`free -m | awk 'NR==2 {print $2}'` # создаст своп размером с оперативную память :)
 chmod 600 /swapfile
 mkswap /swapfile
 echo "/swapfile nonw swap defaults 0 0" >> /etc/fstab # важно >> 

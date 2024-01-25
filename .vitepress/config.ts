@@ -82,7 +82,8 @@ export default defineConfig({
         text: 'Пролог',
         items: [
           { text: 'О проекте', link: 'about' },
-          { text: 'Возможности VitePress', link: 'vitepress' }
+          { text: 'Возможности VitePress', link: 'vitepress' },
+          { text: 'Внесение изменений', link: 'alteration'}
         ]
       }
     ],

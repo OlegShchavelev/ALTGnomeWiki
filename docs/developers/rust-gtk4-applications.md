@@ -2,14 +2,16 @@
 
 ## Установка зависимостей
 
-```zsh
+```shell
 su - 
-apt-get install libadwaita-devel libgtk4-devel libgdk-pixbuf-devel libpango-devel libcairo-gobject-devel libgio-devel libcairo-devel rust rust-cargo
+apt-get install libadwaita-devel libgtk4-devel libgdk-pixbuf-devel libpango-devel libcairo-gobject-devel libgio-devel libcairo-devel
 ```
 
 ## Пример приложения Adwaita
 
-```zsh
+### Создаём проект Rust и открываем его:
+
+```shell
 cd ~/projects
 cargo new hello_adwaita --bin
 
@@ -17,6 +19,8 @@ cd hello_adwaita
 cargo add libadwaita --rename adw --features gtk_v4_10
 vscodium .
 ```
+
+### Вставляем следующий код в файл main.rc:
 
 ```rust
 use adw::prelude::*;
@@ -68,6 +72,14 @@ fn build_ui(app: &Application) {
     window.present();
 }
 ```
+
+### Собираем и запускаем приложение:
+
+```shell
+cargo run
+```
+
+![app](/rust/gtk4-applications/app.png)
 
 ### Материалы
 

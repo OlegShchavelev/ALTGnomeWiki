@@ -112,9 +112,10 @@ export const contributions = [
           icon: {
             svg: gitflic
           },
-          link: 'https://gitflic.ru/user/luckenty' 
+          link: 'https://gitflic.ru/user/luckenty'
         },
-      ]
+      ],
+      sponsor: 'https://www.tinkoff.ru/cf/9o0c3eIAJ2D'
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/131641124?v=4',

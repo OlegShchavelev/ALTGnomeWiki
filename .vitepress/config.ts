@@ -8,6 +8,7 @@ import taskLists from 'markdown-it-task-lists'
 import { rewrites } from './paths'
 import timeline from "vitepress-markdown-timeline";
 import implicitFigures from 'markdown-it-implicit-figures'
+import embed from 'markdown-it-html5-embed'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -360,7 +361,11 @@ export default defineConfig({
       md.use(implicitFigures, {
         figcaption: 'title',
         copyAttrs: '^class$'
-      })
+      });
+      md.use(embed, {
+        html5embed: {
+          useImageSyntax: true, // Enables video/audio embed with ![]() syntax (default)
+      }});
     }
   },
   transformPageData: (pageData: normalize) => {

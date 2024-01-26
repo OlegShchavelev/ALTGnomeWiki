@@ -58,3 +58,7 @@ username:$6$.n.:17736:0:99999:7:::
 
 - Появится возможность использовать функцию автологина (не проверяли, но переключатель доступен)
 - Сменить имя пользователя (влияет на отображение на экране логина)
+
+<video controls muted>
+  <source src="/hidden-user-in-userlist-workaround/hidden-user-in-userlist-workaround.mp4">
+</video>

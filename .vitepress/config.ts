@@ -127,6 +127,7 @@ export default defineConfig({
               { text: 'Git', link: '/git' },
               { text: 'GitHub Desktop', link: '/github-desktop' },
               { text: 'GnomeSoftware', link: '/gnome-software' },
+              { text: 'Kooha', link: '/kooha' },
               { text: 'Libreoffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
               { text: 'Lunacy', link: '/lunacy' },

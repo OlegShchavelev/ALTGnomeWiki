@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text:  Cкачать ALT Regular Gnome
-      link:  /download
+      link:  /download/
     - theme: alt
       text: Документация
       link: /wiki

@@ -1,3 +1,9 @@
+---
+title: Cassette
+appstreamRepo: io.github.Rirusha.Cassette
+appstreamFlatpak: io.github.Rirusha.Cassette
+---
+
 # Cassette
 
 Cassette — это неофициальный клиент сервиса Яндекс Музыки.
@@ -5,6 +11,8 @@ Cassette — это неофициальный клиент сервиса Ян�
 ## Установка из репозитория
 
 **Cassette** можно установить любым привычным и удобным способом:
+
+<!--@include: ../parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -28,6 +36,8 @@ epm -i сassette
 ```shell
 flatpak install flathub io.github.Rirusha.Cassette
 ```
+
+<!--@include: ../parts/install/software-flatpak.md-->
 
 ## Авторизация
 

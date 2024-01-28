@@ -1,6 +1,6 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
-import { useRoute } from 'vitepress';
+import { useRoute, useData } from 'vitepress';
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import imageViewer from 'vitepress-plugin-image-viewer'
@@ -11,7 +11,6 @@ import {
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import AGWHomeContents from './components/AGWHomeContents.vue'
-
 
 import './style.css'
 import './custom.css'

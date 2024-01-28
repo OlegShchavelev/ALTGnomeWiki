@@ -12,7 +12,7 @@ Boxes — это официальная утилита для рабочего �
 
 **Boxes** можно установить любым привычным и удобным способом:
 
-<!--@include: ../parts/install/software-repo.md-->
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка c помощью терминала**
 
@@ -36,7 +36,7 @@ epm -i gnome-boxes
 flatpak install flathub org.gnome.Boxes
 ```
 
-<!--@include: ../parts/install/software-flatpak.md-->
+<!--@include: ./parts/install/software-flatpak.md-->
 
 ## Подготовка к использованию Boxes
 

@@ -12,7 +12,7 @@ Cassette — это неофициальный клиент сервиса Ян�
 
 **Cassette** можно установить любым привычным и удобным способом:
 
-<!--@include: ../parts/install/software-repo.md-->
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -36,8 +36,6 @@ epm -i сassette
 ```shell
 flatpak install flathub io.github.Rirusha.Cassette
 ```
-
-<!--@include: ../parts/install/software-flatpak.md-->
 
 ## Авторизация
 

@@ -260,7 +260,8 @@ export default defineConfig({
             items: [
               { text: 'Драйверы NVIDIA', link: '/nvidia' },
               { text: 'Подключение USB устройств', link: '/usb-devices'},
-              { text: 'Подключение сканера', link: '/drivers-for-scanner'}
+              { text: 'Подключение сканера', link: '/drivers-for-scanner'},
+              { text: 'Подключение DualShock 4', link: '/dualshock4'}
             ],
             collapsed: true
           },

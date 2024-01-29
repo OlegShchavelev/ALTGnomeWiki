@@ -7,9 +7,14 @@ Samba — это реализация сетевого протокола SMB. �
 
 **Установка через терминал**
 
-```shell
+::: code-group
+
+```shell[apt-get]
 su -
 apt-get update
 apt-get install samba samba-client
 ```
-
+```shell[epm]
+epm -i samba samba-client
+```
+:::

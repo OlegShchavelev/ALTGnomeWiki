@@ -9,25 +9,24 @@ PortProton основан на версии WINE от Valve (Proton) и ее м�
 
 **Установка через терминал**
 
-::: code-group
-
-```shell[apt-get]
+```shell
 su -
 apt-get update && apt-get dist-upgrade && apt-get install portproton i586-{libvulkan1,libd3d,libGL,libgio,libnm,libnsl1,libnss,glibc-nss,glibc-pthread,libunwind,xorg-dri-swrast}
 ```
-```shell[epm]
-epm play portproton
-```
-:::
 
 ## Ручная установка с указанием зависимостей
 
 Для начала установим все необходимые зависимости
-```shell[Зависимости]
+```shell
 su -
 apt-get update && sudo apt-get dist-upgrade && apt-get install bubblewrap cabextract wget zstd gawk tar xz pciutils bc coreutils file curl icoutils wmctrl zenity xdg-utils desktop-file-utils libvulkan1 vulkan-tools libd3d libGL gamemode fontconfig xrdb libcurl libgio libnm libnsl1 libnss glibc-nss glibc-pthread /usr/bin/convert i586-{libvulkan1,libd3d,libGL,libcurl,libgio,libnm,libnsl1,libnss,glibc-nss,glibc-pthread,libunwind,xorg-dri-swrast}
 ```
 Затем произведём установку самой программы
 ```shell
 wget -c "https://github.com/Castro-Fidel/PortWINE/raw/master/portwine_install_script/PortProton_1.0" && sh PortProton_1.0
+```
+
+## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
+```shell
+epm play portproton
 ```

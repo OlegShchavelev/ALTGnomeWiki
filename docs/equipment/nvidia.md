@@ -154,3 +154,62 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ## Данные об оборудовании и ПО пользователей за 2024 год.
 
 Ознакомиться с таблецей вы можете перейдя [по ссылке](https://cloud.alt-gnome.ru/index.php/s/JSCj9gxB7j5boPg)
+
+## Откат на NOUVEAU
+
+Что-бы откатиться на NOUVEAU требуется выполнить следующее:
+
+::: code-group
+```shell[apt-get]
+su -
+apt-get remove nvidia_glx_common
+mcedit /etc/sysconfig/grub2 # тут может быть и nano, и vi, и другой редактор
+# удаляем initcall_blacklist и nvidia-drm.modeset
+# сохраняем и выходим
+grub-mkconfig -o /boot/grub/grub.cfg
+# удаляем так-же ссылку на 61-gdm.rules
+rm /etc/udev/rules.d/61-gdm.rules
+# ставим драйвер (в нашем случае для ядра un-def)
+apt-get install kernel-modules-drm-nouveau-un-def
+# (опционально) переустановить xorg обвязку
+apt-get install --reinstall xorg-dri-nouveau xorg-drv-noveau
+# перезагрузиться
+reboot
+```
+Как только все загрузилось и мы убедились что NOUVEAU заработало
+```
+su -
+make-initrd
+# подождать пока собется initrd
+# посмотреть что в выводе сборки присутствует nouveau
+reboot
+```
+
+```shell[epm]
+su -
+apt-get remove nvidia_glx_common
+mcedit /etc/sysconfig/grub2 # тут может быть и nano, и vi, и другой редактор
+# удаляем initcall_blacklist и nvidia-drm.modeset
+# сохраняем и выходим
+grub-mkconfig -o /boot/grub/grub.cfg
+# удаляем так-же ссылку на 61-gdm.rules
+rm /etc/udev/rules.d/61-gdm.rules
+# ставим драйвер (в нашем случае для ядра un-def)
+epm install kernel-modules-drm-nouveau-un-def
+# (опционально) переустановить xorg обвязку
+epm reinstall xorg-dri-nouveau xorg-drv-noveau
+# перезагрузиться
+reboot
+```
+Как только все загрузилось и мы убедились что NOUVEAU заработало
+```
+su -
+make-initrd
+# подождать пока собется initrd
+# посмотреть что в выводе сборки присутствует nouveau
+reboot
+```
+:::
+
+
+

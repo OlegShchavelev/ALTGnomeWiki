@@ -239,9 +239,12 @@ export default defineConfig({
             link: '/extensions',
             items: [
               { text: 'Open Weather', link: '/openweather' },
-              { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'},
+              { text: 'AppIndicator/KStatusNotifierItem', link: '/appindicator-kstatus-notifier-item'},
               { text: 'Extension List', link: '/extension-list'},
-              { text: 'U Power', link: '/u-power'}
+              { text: 'U Power', link: '/u-power'},
+              { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktopicons.md'},
+              { text: 'App menu is back', link: '/appmenuisback'},
+              { text: 'Add to desktop', link: '/addtodesktop'}
             ],
             collapsed: true
           },

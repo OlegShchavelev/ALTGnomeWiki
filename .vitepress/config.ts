@@ -10,7 +10,7 @@ import timeline from "vitepress-markdown-timeline";
 import implicitFigures from 'markdown-it-implicit-figures'
 import embed from 'markdown-it-html5-embed'
 
-export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
+export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular GNOME'
 
 export default defineConfig({
   vite: {
@@ -51,7 +51,7 @@ export default defineConfig({
     hostname: 'https://alt-gnome.wiki'
   },
   themeConfig: {
-    logo: { src: '/logo.png', width: 36, height: 36, alt:"ALT Gnome Wiki"},
+    logo: { src: '/logo.png', width: 36, height: 36, alt:"ALT GNOME Wiki"},
     search: {
       provider: 'local',
       options: {
@@ -164,7 +164,7 @@ export default defineConfig({
             collapsed: true
           },
           {
-            text: 'Использование рабочего окружения Gnome',
+            text: 'Использование рабочего окружения GNOME',
             items: [
               {
                 text: 'Рабочий стол',
@@ -240,9 +240,12 @@ export default defineConfig({
             link: '/extensions',
             items: [
               { text: 'Open Weather', link: '/openweather' },
-              { text: 'AppIndicator/KStatusNotifierItem', link: 'appindicator-kstatus-notifier-item'},
+              { text: 'AppIndicator/KStatusNotifierItem', link: '/appindicator-kstatus-notifier-item'},
               { text: 'Extension List', link: '/extension-list'},
-              { text: 'U Power', link: '/u-power'}
+              { text: 'U Power', link: '/u-power'},
+              { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktopicons.md'},
+              { text: 'App menu is back', link: '/appmenuisback'},
+              { text: 'Add to desktop', link: '/addtodesktop'}
             ],
             collapsed: true
           },
@@ -258,7 +261,8 @@ export default defineConfig({
             items: [
               { text: 'Драйверы NVIDIA', link: '/nvidia' },
               { text: 'Подключение USB устройств', link: '/usb-devices'},
-              { text: 'Подключение сканера', link: '/drivers-for-scanner'}
+              { text: 'Подключение сканера', link: '/drivers-for-scanner'},
+              { text: 'Подключение DualShock 4', link: '/dualshock4'}
             ],
             collapsed: true
           },
@@ -393,7 +397,7 @@ export default defineConfig({
         pageData.frontmatter.head.push(
           ['link', { rel: 'canonical', href: `${url}.html` }],
         )
-        pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
+        pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular GNOME. Последнее обновление ALT GNOME Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
       }
   }
 })

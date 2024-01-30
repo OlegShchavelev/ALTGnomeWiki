@@ -134,4 +134,12 @@ export const contributions = [
         { icon: 'github', link: 'https://github.com/konoos56' }
       ],
     },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/36149587?v=4',
+      name: 'Арсений Засыпкин',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/ImCatCatcher' }
+      ],
+    },
   ]

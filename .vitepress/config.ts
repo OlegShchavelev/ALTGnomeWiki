@@ -247,7 +247,8 @@ export default defineConfig({
               { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktopicons.md'},
               { text: 'App menu is back', link: '/appmenuisback'},
               { text: 'Add to desktop', link: '/addtodesktop'},
-              { text: 'Fullscreen Avoider', link: '/fullscreen-avoider'}
+              { text: 'Fullscreen Avoider', link: '/fullscreen-avoider'},
+              { text: 'Just Perfection', link: '/just-perfection'}
             ],
             collapsed: true
           },

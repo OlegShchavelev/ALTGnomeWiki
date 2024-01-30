@@ -218,14 +218,6 @@ apt-get install --reinstall xorg-dri-nouveau xorg-drv-noveau
 # перезагрузиться
 reboot
 ```
-Как только все загрузилось и мы убедились что NOUVEAU заработало
-```
-su -
-make-initrd
-# подождать пока собется initrd
-# посмотреть что в выводе сборки присутствует nouveau
-reboot
-```
 
 ```shell[epm]
 su -
@@ -243,7 +235,10 @@ epm reinstall xorg-dri-nouveau xorg-drv-noveau
 # перезагрузиться
 reboot
 ```
+:::
+
 Как только все загрузилось и мы убедились что NOUVEAU заработало
+
 ```
 su -
 make-initrd
@@ -251,7 +246,4 @@ make-initrd
 # посмотреть что в выводе сборки присутствует nouveau
 reboot
 ```
-:::
-
-
 

@@ -1,18 +1,18 @@
 ---
 layout: home
 title: Главная
-titleTemplate: ALT Regular GNOME Community
+titleTemplate: ALT Regular Gnome Community
 
 hero:
-  name: "ALT Regular GNOME"
+  name: "ALT Regular Gnome"
   text: "Community"
-  tagline: открытое сообщество пользователей операционной системы ALT Regular GNOME
+  tagline: открытое сообщество пользователей операционной системы ALT Regular Gnome
   image:
     src: /laptop.png
     alt: GNOME
   actions:
     - theme: brand
-      text:  Cкачать ALT Regular GNOME
+      text:  Cкачать ALT Regular Gnome
       link:  /download
     - theme: alt
       text: Документация

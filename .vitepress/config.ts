@@ -10,7 +10,7 @@ import timeline from "vitepress-markdown-timeline";
 import implicitFigures from 'markdown-it-implicit-figures'
 import embed from 'markdown-it-html5-embed'
 
-export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular GNOME'
+export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
 export default defineConfig({
   vite: {
@@ -51,7 +51,7 @@ export default defineConfig({
     hostname: 'https://alt-gnome.wiki'
   },
   themeConfig: {
-    logo: { src: '/logo.png', width: 36, height: 36, alt:"ALT GNOME Wiki"},
+    logo: { src: '/logo.png', width: 36, height: 36, alt:"ALT Gnome Wiki"},
     search: {
       provider: 'local',
       options: {
@@ -397,7 +397,7 @@ export default defineConfig({
         pageData.frontmatter.head.push(
           ['link', { rel: 'canonical', href: `${url}.html` }],
         )
-        pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular GNOME. Последнее обновление ALT GNOME Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
+        pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
       }
   }
 })

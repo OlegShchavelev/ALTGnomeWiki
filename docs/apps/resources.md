@@ -21,7 +21,7 @@ epm -i resources
 
 ## Установка c помощью Flatpak
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Loupe** одной командой:
+При наличии пакета [Flatpak](/flatpak), можно установить **Resources** одной командой:
 
 ```shell
 flatpak flatpak install flathub net.nokyan.Resources
@@ -33,10 +33,18 @@ flatpak flatpak install flathub net.nokyan.Resources
 
 Решение:
 
-```shell
+::: code-group
+
+```shell[apt-get]
 su -
+apt-get update
 apt-get install libnvidia-ml
 ln -s libnvidia-ml.so.1 /usr/lib64/libnvidia-ml.so
 ```
+```shell[epm]
+epm -i libnvidia-ml
+ln -s libnvidia-ml.so.1 /usr/lib64/libnvidia-ml.so
+```
+:::
 
 Перезагружаем приложение и наслаждаемся!

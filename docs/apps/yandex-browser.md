@@ -134,7 +134,7 @@ yandex-browser-stable --ozone-platform-hint=wayland
 
 1. В поисковой строке запустить: `browser://flags/`
 2. Введите в строку поиска флаг `#enable-vulkan`, включите опцию Enabled 
-3. Введите в строку поиска флаг `#enable-flutter-suggest => Disabled`, включите опцию Disabled
+3. Введите в строку поиска флаг `#enable-flutter-suggest`, включите опцию Disabled
 4. Перезапустите Яндекс Браузер и проверьте результат
 
 ## Сбой графики при открытии Яндекс Браузера.

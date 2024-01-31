@@ -26,3 +26,17 @@ epm -i resources
 ```shell
 flatpak flatpak install flathub net.nokyan.Resources
 ```
+
+## Решение проблемы с неработающим мониторингом карт NVIDIA
+
+При использовании графических карт NVIDIA мониторинг ГП в приложении, установленном из репозитория, может не работать.
+
+Решение:
+
+```shell
+su -
+apt-get install libnvidia-ml
+ln -s libnvidia-ml.so.1 /usr/lib64/libnvidia-ml.so
+```
+
+Перезагружаем приложение и наслаждаемся!

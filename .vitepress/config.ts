@@ -104,6 +104,7 @@ export default defineConfig({
           {
             text: 'Установка и обновление программ',
             items: [
+              { text: 'Alacarte', link: '/alacarte' },
               { text: 'AnyDesk', link: '/anydesk' },
               { text: 'AsusCtl', link: '/asusctl' },
               { text: 'Blender', link: '/blender' },

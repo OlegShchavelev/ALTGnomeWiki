@@ -28,7 +28,7 @@ features:
       dark: /shield-dark.svg
       light: /shield-light.svg
     title: Цифровая НЕзависмость
-    details: семейство дистрибутивов Linux, производится в России с 2000 года.
+    details: Семейство дистрибутивов Linux, производится в России с 2000 года.
   - icon:
       dark: /users-dark.svg
       light: /users-light.svg

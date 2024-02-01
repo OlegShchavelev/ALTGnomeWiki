@@ -119,6 +119,7 @@ export default defineConfig({
               { text: 'Discord', link: '/discord' },
               { text: 'Drawing', link: '/drawing' },
               { text: 'Docker', link: '/docker' },
+              { text: 'EasyEffects', link: '/easyeffects'},
               { text: 'Eog', link: '/eog' },
               { text: 'Evince', link: '/evince' },
               { text: 'FFMPEG', link: '/ffmpeg' },
@@ -252,7 +253,9 @@ export default defineConfig({
               { text: 'Add to desktop', link: '/addtodesktop'},
               { text: 'Fullscreen Avoider', link: '/fullscreen-avoider'},
               { text: 'Just Perfection', link: '/just-perfection'},
-              { text: 'OSD Volume Number', link: '/osd-volume-number'}
+              { text: 'OSD Volume Number', link: '/osd-volume-number'},
+              { text: 'Dash to Dock', link: '/dash-to-dock'},
+              { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector'}
             ],
             collapsed: true
           },
@@ -307,7 +310,8 @@ export default defineConfig({
           { text: 'Ядро', link: '/kernel' },
           { text: 'EPM', link: '/epm' },
           { text: 'Flatpak', link: '/flatpak' },
-          { text: "Приложения для GNOME", link: '/apps-gnome'}
+          { text: "Приложения для GNOME", link: '/apps-gnome'},
+          { text: "Samba", link: "/Samba"}
         ]
       }
     ],

@@ -53,7 +53,7 @@ wget -c "https://github.com/Castro-Fidel/PortWINE/raw/master/portwine_install_sc
 Мы рекомендуем перед установкой PortProton обновить операционную систему и ядро до актуального состоятия.
 :::
 
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
+## Установка c помощью EPM
 
 При наличии пакета [eepm](/epm), можно установить **PortProton** одной командой:
 

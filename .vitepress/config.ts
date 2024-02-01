@@ -142,7 +142,7 @@ export default defineConfig({
               { text: 'OnlyOffice', link: '/onlyoffice' },
               { text: 'Opera', link: '/opera' },
               { text: 'Penpot Desktop', link: '/penpot-desktop' },
-              { text: 'Port Proton', link: '/port-proton' },
+              { text: 'PortProton', link: '/port-proton' },
               { text: 'qBittorrent', link: '/q-bittorrent' },
               { text: 'Р7-Офис', link: '/r7-office' },
               { text: 'Ресурсы', link: '/resources' },

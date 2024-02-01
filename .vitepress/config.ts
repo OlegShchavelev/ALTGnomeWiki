@@ -251,7 +251,8 @@ export default defineConfig({
               { text: 'Add to desktop', link: '/addtodesktop'},
               { text: 'Fullscreen Avoider', link: '/fullscreen-avoider'},
               { text: 'Just Perfection', link: '/just-perfection'},
-              { text: 'OSD Volume Number', link: '/osd-volume-number'}
+              { text: 'OSD Volume Number', link: '/osd-volume-number'},
+              { text: 'Dash to Dock', link: '/dash-to-dock'}
             ],
             collapsed: true
           },

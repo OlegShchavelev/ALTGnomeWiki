@@ -306,7 +306,8 @@ export default defineConfig({
           { text: 'Ядро', link: '/kernel' },
           { text: 'EPM', link: '/epm' },
           { text: 'Flatpak', link: '/flatpak' },
-          { text: "Приложения для GNOME", link: '/apps-gnome'}
+          { text: "Приложения для GNOME", link: '/apps-gnome'},
+          { text: "Samba", link: "/Samba"}
         ]
       }
     ],

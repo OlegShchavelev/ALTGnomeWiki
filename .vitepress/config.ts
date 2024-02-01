@@ -253,7 +253,8 @@ export default defineConfig({
               { text: 'Fullscreen Avoider', link: '/fullscreen-avoider'},
               { text: 'Just Perfection', link: '/just-perfection'},
               { text: 'OSD Volume Number', link: '/osd-volume-number'},
-              { text: 'Dash to Dock', link: '/dash-to-dock'}
+              { text: 'Dash to Dock', link: '/dash-to-dock'},
+              { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector'}
             ],
             collapsed: true
           },

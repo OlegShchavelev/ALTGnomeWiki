@@ -139,6 +139,7 @@ export default defineConfig({
               { text: 'Neofetch', link: '/neofetch' },
               { text: 'Neovim', link: '/neovim' },
               { text: 'OBS Studio', link: '/obs-studio' },
+              { text: 'Obsidion', link: '/obsidian' },
               { text: 'OnlyOffice', link: '/onlyoffice' },
               { text: 'Opera', link: '/opera' },
               { text: 'Penpot Desktop', link: '/penpot-desktop' },

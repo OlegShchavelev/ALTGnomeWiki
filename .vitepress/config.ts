@@ -119,6 +119,7 @@ export default defineConfig({
               { text: 'Discord', link: '/discord' },
               { text: 'Drawing', link: '/drawing' },
               { text: 'Docker', link: '/docker' },
+              { text: 'EasyEffects', link: '/easyeffects'},
               { text: 'Eog', link: '/eog' },
               { text: 'Evince', link: '/evince' },
               { text: 'FFMPEG', link: '/ffmpeg' },

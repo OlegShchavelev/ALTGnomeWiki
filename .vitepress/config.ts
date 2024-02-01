@@ -149,6 +149,7 @@ export default defineConfig({
               { text: 'Ресурсы', link: '/resources' },
               { text: 'Сканер документов', link: '/simple-scan' },
               { text: 'Skype', link: '/skype' },
+              { text: 'Speedtest CLI', link: '/speedtest-cli' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
               { text: 'Thunderbird', link: 'thunderbird'},

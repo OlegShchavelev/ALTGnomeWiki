@@ -36,6 +36,8 @@ epm -i gnome-boxes
 flatpak install flathub org.gnome.Boxes
 ```
 
+<!--@include: ./parts/install/software-flatpak.md-->
+
 ## Подготовка к использованию Boxes
 
 Для запуска необходим установить и запустить набор виртуализации

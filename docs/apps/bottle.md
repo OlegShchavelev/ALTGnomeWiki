@@ -1,3 +1,9 @@
+---
+title: Bottles
+appstreamRepo: com.usebottles.bottles
+appstreamFlatpak: com.usebottles.bottles
+---
+
 # Bottles
 
 Bottles — это приложение, которое позволяет вам легко управлять и использовать Windows приложения игры.
@@ -5,6 +11,8 @@ Bottles — это приложение, которое позволяет ва�
 ## Установка из репозитория
 
 **Bottles** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -28,3 +36,5 @@ epm -i bottles
 ```shell
 flatpak install flathub com.usebottles.bottles
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

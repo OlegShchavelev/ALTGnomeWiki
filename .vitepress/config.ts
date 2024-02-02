@@ -117,8 +117,11 @@ export default defineConfig({
               { text: 'Console', link: '/console' },
               { text: 'Dialect', link: '/dialect' },
               { text: 'Discord', link: '/discord' },
-              { text: 'Drawing', link: '/drawing' },
               { text: 'Docker', link: '/docker' },
+              { text: 'Drawing', link: '/drawing' },
+              { text: 'Eclipse IDE', link: '/eclipse-ide' },
+              { text: 'Docker', link: '/docker' },
+              { text: 'EasyEffects', link: '/easyeffects'},
               { text: 'Eog', link: '/eog' },
               { text: 'Evince', link: '/evince' },
               { text: 'FFMPEG', link: '/ffmpeg' },
@@ -139,15 +142,17 @@ export default defineConfig({
               { text: 'Neofetch', link: '/neofetch' },
               { text: 'Neovim', link: '/neovim' },
               { text: 'OBS Studio', link: '/obs-studio' },
+              { text: 'Obsidian', link: '/obsidian' },
               { text: 'OnlyOffice', link: '/onlyoffice' },
               { text: 'Opera', link: '/opera' },
               { text: 'Penpot Desktop', link: '/penpot-desktop' },
-              { text: 'Port Proton', link: '/port-proton' },
+              { text: 'PortProton', link: '/port-proton' },
               { text: 'qBittorrent', link: '/q-bittorrent' },
               { text: 'Р7-Офис', link: '/r7-office' },
               { text: 'Ресурсы', link: '/resources' },
               { text: 'Сканер документов', link: '/simple-scan' },
               { text: 'Skype', link: '/skype' },
+              { text: 'Speedtest CLI', link: '/speedtest-cli' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
               { text: 'Thunderbird', link: 'thunderbird'},
@@ -250,7 +255,9 @@ export default defineConfig({
               { text: 'Add to desktop', link: '/addtodesktop'},
               { text: 'Fullscreen Avoider', link: '/fullscreen-avoider'},
               { text: 'Just Perfection', link: '/just-perfection'},
-              { text: 'OSD Volume Number', link: '/osd-volume-number'}
+              { text: 'OSD Volume Number', link: '/osd-volume-number'},
+              { text: 'Dash to Dock', link: '/dash-to-dock'},
+              { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector'}
             ],
             collapsed: true
           },
@@ -305,7 +312,8 @@ export default defineConfig({
           { text: 'Ядро', link: '/kernel' },
           { text: 'EPM', link: '/epm' },
           { text: 'Flatpak', link: '/flatpak' },
-          { text: "Приложения для GNOME", link: '/apps-gnome'}
+          { text: "Приложения для GNOME", link: '/apps-gnome'},
+          { text: "Samba", link: "/Samba"}
         ]
       }
     ],

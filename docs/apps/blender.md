@@ -1,3 +1,9 @@
+---
+title: Blender
+appstreamRepo: org.blender.Blender
+appstreamFlatpak: org.blender.Blender
+---
+
 # Blender
 
 Blender — это бесплатный пакет для создания 3D с открытым исходным кодом. Он поддерживает весь 3D-конвейер - моделирование, такелаж, анимацию, симуляцию, рендеринг, композитинг, отслеживание движения и редактирование видео.
@@ -5,6 +11,8 @@ Blender — это бесплатный пакет для создания 3D с
 ## Установка из репозитория
 
 **Blender** можно установить любым привычным и удобным способом
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -28,6 +36,8 @@ epm -i blender
 ```shell
 flatpak install flathub org.blender.Blender
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->
 
 
 

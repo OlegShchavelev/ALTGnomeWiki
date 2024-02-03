@@ -72,7 +72,7 @@ GNOME Circle содержит приложения, расширяющие эк�
 |Eyedropper                          |[eyedropper](https://packages.altlinux.org/ru/sisyphus/srpms/eyedropper/)|[eyedropper](https://flathub.org/apps/com.github.finefindus.eyedropper)|[Подробнее]()|
 |Forge Sparks                        |-|[ForgeSparks](https://flathub.org/apps/com.mardojai.ForgeSparks)|[Подробнее](https://apps.gnome.org/ru/ForgeSparks/)|
 |Fragments                           |[fragments](https://apps.gnome.org/ru/Fragments/)|[Fragments](https://flathub.org/apps/de.haeckerfelix.Fragments)|[Подробнее](https://apps.gnome.org/ru/Fragments/)|
-|Fretboard                           |-|[Fretboard](https://flathub.org/apps/dev.bragefuglseth.Fretboard)|[Подробнее](https://apps.gnome.org/ru/Fretboard/)|
+|Fretboard                           |[fretboard](https://packages.altlinux.org/ru/sisyphus/srpms/fretboard/)|[Fretboard](https://flathub.org/apps/dev.bragefuglseth.Fretboard)|[Подробнее](https://apps.gnome.org/ru/Fretboard/)|
 |Gaphor                              |-|[Gaphor](https://flathub.org/apps/org.gaphor.Gaphor)|[Подробнее](https://apps.gnome.org/ru/Gaphor/)|
 |Graphs                              |-|[Graphs](https://flathub.org/apps/se.sjoerd.Graphs)|[Подробнее](https://apps.gnome.org/ru/Graphs/)|
 |Impression                          |[impression](https://packages.altlinux.org/ru/sisyphus/srpms/impression/)|[Impression](https://flathub.org/apps/io.gitlab.adhami3310.Impression)|[Подробнее](https://apps.gnome.org/ru/Impression/)|

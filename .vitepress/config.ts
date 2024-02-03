@@ -129,6 +129,7 @@ export default defineConfig({
               { text: 'Firefox', link: '/firefox' },
               { text: 'Flatseal', link: '/flatseal' },
               { text: 'Fragments', link: '/fragments' },
+              { text: 'Fretboard', link: '/fretboard' },
               { text: 'Git', link: '/git' },
               { text: 'GitHub Desktop', link: '/github-desktop' },
               { text: 'Центр Приложений', link: '/gnome-software' },

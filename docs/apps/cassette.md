@@ -37,6 +37,8 @@ epm -i сassette
 flatpak install flathub io.github.Rirusha.Cassette
 ```
 
+<!--@include: ./parts/install/software-flatpak.md-->
+
 ## Авторизация
 
 Доступна авторизация по:
@@ -64,6 +66,13 @@ flatpak install flathub io.github.Rirusha.Cassette
 :::
 
 Все запланированные фичи можете [посмотреть в бэклоге](https://github.com/users/Rirusha/projects/2)
+
+## Как помочь Кассете
+
+- Создать [ISSUE](https://github.com/Rirusha/Cassette/issues) с проблемой или предложением по улучшению;
+- Сделать [Pull Request](https://github.com/Rirusha/Cassette/pulls) с фиксом или добавлением функционала;
+- [Поддержать рублём](https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460), просьба указывать в "Сообщении получателю" свой никнейм, иначе автор проекта не сможет добавить вас в соответствующий блок окна About. Система Тинькофф к сожелению не указывает имя отправителя;
+- Написать отзыв в Центре Приложений о Кассете
 
 ## Не отображается интерфейс авторизации
 

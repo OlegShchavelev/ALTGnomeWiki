@@ -36,10 +36,10 @@ epm -i portproton i586-{libvulkan1,libd3d,libGL,libgio,libnm,libnsl1,libnss,glib
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install bubblewrap cabextract wget zstd gawk tar xz pciutils bc coreutils file curl icoutils wmctrl zenity xdg-utils desktop-file-utils libvulkan1 vulkan-tools libd3d libGL gamemode fontconfig xrdb libcurl libgio libnm libnsl1 libnss glibc-nss glibc-pthread /usr/bin/convert i586-{libvulkan1,libd3d,libGL,libcurl,libgio,libnm,libnsl1,libnss,glibc-nss,glibc-pthread,libunwind,xorg-dri-swrast
+apt-get install bubblewrap cabextract wget zstd gawk tar xz pciutils bc coreutils file curl icoutils wmctrl zenity xdg-utils desktop-file-utils libvulkan1 vulkan-tools libd3d libGL gamemode fontconfig xrdb libcurl libgio libnm libnsl1 libnss glibc-nss glibc-pthread /usr/bin/convert i586-{libvulkan1,libd3d,libGL,libcurl,libgio,libnm,libnsl1,libnss,glibc-nss,glibc-pthread,libunwind,xorg-dri-swrast}
 ```
 ```shell[epm]
-epm -i portproton bubblewrap cabextract wget zstd gawk tar xz pciutils bc coreutils file curl icoutils wmctrl zenity xdg-utils desktop-file-utils libvulkan1 vulkan-tools libd3d libGL gamemode fontconfig xrdb libcurl libgio libnm libnsl1 libnss glibc-nss glibc-pthread /usr/bin/convert i586-{libvulkan1,libd3d,libGL,libcurl,libgio,libnm,libnsl1,libnss,glibc-nss,glibc-pthread,libunwind,xorg-dri-swrast
+epm -i portproton bubblewrap cabextract wget zstd gawk tar xz pciutils bc coreutils file curl icoutils wmctrl zenity xdg-utils desktop-file-utils libvulkan1 vulkan-tools libd3d libGL gamemode fontconfig xrdb libcurl libgio libnm libnsl1 libnss glibc-nss glibc-pthread /usr/bin/convert i586-{libvulkan1,libd3d,libGL,libcurl,libgio,libnm,libnsl1,libnss,glibc-nss,glibc-pthread,libunwind,xorg-dri-swrast}
 ```
 :::
 

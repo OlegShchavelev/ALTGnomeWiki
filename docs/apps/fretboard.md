@@ -27,7 +27,7 @@ epm -i fretboard
 
 ## Установка c помощью Flatpak
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Fragments** одной командой:
+При наличии пакета [Flatpak](/flatpak), можно установить **Fretboard** одной командой:
 
 ```shell
 flatpak install dev.bragefuglseth.Fretboard

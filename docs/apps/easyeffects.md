@@ -36,3 +36,5 @@ epm -i easyeffects
 ```shell
 flatpak install flathub com.github.wwmm.easyeffects
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

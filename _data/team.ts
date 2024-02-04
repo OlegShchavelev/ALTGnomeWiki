@@ -142,4 +142,12 @@ export const contributions = [
         { icon: 'github', link: 'https://github.com/ImCatCatcher' }
       ],
     },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/57502877?v=4',
+      name: 'otetswoo',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/otetswoo' }
+      ],
+    },
   ]

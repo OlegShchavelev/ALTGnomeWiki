@@ -25,5 +25,15 @@ export const sponsors = [
                 url: 'https://beget.com'
             },
         ]
+    }, {
+        tier: 'Товарищи по цеху VitePress',
+        size: 'medium',
+        items: [
+            {
+                name: 'MODX Pro',
+                img: './modx.svg',
+                url: 'https://docs.modx.pro/'
+            },
+        ]
     }
 ]

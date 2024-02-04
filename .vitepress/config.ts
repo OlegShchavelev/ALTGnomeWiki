@@ -169,6 +169,7 @@ export default defineConfig({
               { text: 'Viber', link: '/viber' },
               { text: 'VLC', link: '/vlc' },
               { text: 'VK Мессенджер', link: '/vk-messenger' },
+              { text: 'WPS Office', link: '/wps-office' },
               { text: 'XLSCLIENTS', link: '/xlsclients' },
               { text: 'Xmind', link: '/xmind' },
               { text: 'Яндекс Браузер', link: '/yandex-browser' },

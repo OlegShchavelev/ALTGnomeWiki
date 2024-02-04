@@ -130,6 +130,7 @@ export default defineConfig({
               { text: 'Flatseal', link: '/flatseal' },
               { text: 'Fragments', link: '/fragments' },
               { text: 'Fretboard', link: '/fretboard' },
+              { text: 'GDM Настройки', link: '/gdm-settings' },
               { text: 'Git', link: '/git' },
               { text: 'GitHub Desktop', link: '/github-desktop' },
               { text: 'Центр Приложений', link: '/gnome-software' },

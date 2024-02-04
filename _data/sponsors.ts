@@ -34,6 +34,11 @@ export const sponsors = [
                 img: './modx.svg',
                 url: 'https://docs.modx.pro/'
             },
+            {
+                name: 'IT WIKI',
+                img: './logo_for_friends_horizontal.svg',
+                url: 'https://it-wiki.com.ru/'
+            },
         ]
-    }
+    },
 ]

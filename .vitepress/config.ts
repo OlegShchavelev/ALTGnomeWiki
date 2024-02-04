@@ -24,7 +24,7 @@ export default defineConfig({
   titleTemplate: ':title' + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE,
   description: META_DESCRIPTION,
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'theme-color', content: '#62a0ea' }],
     ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }],
@@ -51,7 +51,7 @@ export default defineConfig({
     hostname: 'https://alt-gnome.wiki'
   },
   themeConfig: {
-    logo: { src: '/logo.png', width: 36, height: 36, alt:"ALT Gnome Wiki"},
+    logo: { src: '/logo.png', width: 36, height: 36, alt: "ALT Gnome Wiki" },
     search: {
       provider: 'local',
       options: {
@@ -84,7 +84,12 @@ export default defineConfig({
         items: [
           { text: 'О проекте', link: 'about' },
           { text: 'Возможности VitePress', link: 'vitepress' },
-          { text: 'Внесение изменений', link: 'alteration'}
+          {
+            text: 'Для авторов',
+            items: [
+              { text: 'Внесение изменений', link: 'alteration' }
+            ]
+          }
         ]
       }
     ],
@@ -96,7 +101,7 @@ export default defineConfig({
             text: 'Установка',
             link: '/download',
             items: [
-              { text: 'Установка на Mac', link: '/macbook'},
+              { text: 'Установка на Mac', link: '/macbook' },
               { text: 'Установка рядом с MacOS', link: '/install-on-macbook-with-opencore-parallel' }
             ],
             collapsed: true
@@ -108,8 +113,8 @@ export default defineConfig({
               { text: 'AnyDesk', link: '/anydesk' },
               { text: 'AsusCtl', link: '/asusctl' },
               { text: 'Blender', link: '/blender' },
-              { text: 'Bottle', link: '/bottle'},
-              { text: 'Boxes', link: '/boxes'},
+              { text: 'Bottle', link: '/bottle' },
+              { text: 'Boxes', link: '/boxes' },
               { text: 'Сartridges', link: '/cartridges' },
               { text: 'Cassette (Яндекс Музыка)', link: '/cassette' },
               { text: 'Chromium', link: '/chromium' },
@@ -121,7 +126,7 @@ export default defineConfig({
               { text: 'Drawing', link: '/drawing' },
               { text: 'Eclipse IDE', link: '/eclipse-ide' },
               { text: 'Docker', link: '/docker' },
-              { text: 'EasyEffects', link: '/easyeffects'},
+              { text: 'EasyEffects', link: '/easyeffects' },
               { text: 'Eog', link: '/eog' },
               { text: 'Evince', link: '/evince' },
               { text: 'FFMPEG', link: '/ffmpeg' },
@@ -157,7 +162,7 @@ export default defineConfig({
               { text: 'Speedtest CLI', link: '/speedtest-cli' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
-              { text: 'Thunderbird', link: 'thunderbird'},
+              { text: 'Thunderbird', link: 'thunderbird' },
               { text: 'Toolbox', link: '/toolbox' },
               { text: 'Totem', link: '/totem' },
               { text: 'Transmission', link: '/transmission' },
@@ -165,7 +170,7 @@ export default defineConfig({
               { text: 'VLC', link: '/vlc' },
               { text: 'VK Мессенджер', link: '/vk-messenger' },
               { text: 'XLSCLIENTS', link: '/xlsclients' },
-              { text: 'Xmind', link: '/xmind'},
+              { text: 'Xmind', link: '/xmind' },
               { text: 'Яндекс Браузер', link: '/yandex-browser' },
               { text: 'Zoom', link: '/zoom' },
               { text: 'Zsh', link: '/zsh' },
@@ -180,12 +185,12 @@ export default defineConfig({
                 items: [
                   { text: 'Запуск приложений', link: '/launching-applications' },
                   { text: 'Закрепить приложение в панели приложений', link: '/add-apps-panel-tasks' },
-                  { text: 'Открытие окон по центру экрана', link: '/windows-in-the-center'},
-                  { text: 'Автоматический запуск приложений', link: '/startup-applications'},
-                  { text: 'Быстрое переключение между окнами', link: '/switching-apps'},
-                  { text: 'Уведомления и список уведомлений', link: '/notifications'},
-                  { text: 'Удаленный рабочий стол', link: '/gnome-remote-desktop'},
-                  { text: 'Экран блокировки', link: '/lock-screen'}
+                  { text: 'Открытие окон по центру экрана', link: '/windows-in-the-center' },
+                  { text: 'Автоматический запуск приложений', link: '/startup-applications' },
+                  { text: 'Быстрое переключение между окнами', link: '/switching-apps' },
+                  { text: 'Уведомления и список уведомлений', link: '/notifications' },
+                  { text: 'Удаленный рабочий стол', link: '/gnome-remote-desktop' },
+                  { text: 'Экран блокировки', link: '/lock-screen' }
                 ],
                 collapsed: true
               },
@@ -216,7 +221,7 @@ export default defineConfig({
                   {
                     text: 'Звук',
                     items: [
-                      { text: 'Управление громкостью', link: '/gnome-volume-control'}
+                      { text: 'Управление громкостью', link: '/gnome-volume-control' }
                     ],
                     collapsed: true
                   },
@@ -224,9 +229,9 @@ export default defineConfig({
                     text: 'Клавиатура',
                     items: [
                       { text: 'Использование других раскладок клавиатуры', link: '/keyboard-layouts' },
-                      { text: 'Сочетание клавиш', link: '/keyboard-shortcuts'},
+                      { text: 'Сочетание клавиш', link: '/keyboard-shortcuts' },
                     ],
-                  collapsed: true
+                    collapsed: true
                   },
                   {
                     text: 'Монитор и экран',
@@ -234,10 +239,10 @@ export default defineConfig({
                       { text: 'Изменение разрешения или ориентация экрана', link: '/look-resolution' },
                       { text: 'Подключение дополнительного монитора', link: '/display-dual-monitors' },
                       { text: 'Масштабирование экрана', link: '/scaling-the-screen' },
-                      { text: 'Изменение внешнего вида рабочего стола', link: '/look-background'}
+                      { text: 'Изменение внешнего вида рабочего стола', link: '/look-background' }
                     ],
                     collapsed: true
-                    }
+                  }
                 ],
                 collapsed: true
               }
@@ -249,38 +254,41 @@ export default defineConfig({
             link: '/extensions',
             items: [
               { text: 'Open Weather', link: '/openweather' },
-              { text: 'AppIndicator/KStatusNotifierItem', link: '/appindicator-kstatus-notifier-item'},
-              { text: 'Extension List', link: '/extension-list'},
-              { text: 'U Power', link: '/u-power'},
-              { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktopicons.md'},
-              { text: 'App menu is back', link: '/appmenuisback'},
-              { text: 'Add to desktop', link: '/addtodesktop'},
-              { text: 'Fullscreen Avoider', link: '/fullscreen-avoider'},
-              { text: 'Just Perfection', link: '/just-perfection'},
-              { text: 'OSD Volume Number', link: '/osd-volume-number'},
-              { text: 'Dash to Dock', link: '/dash-to-dock'},
-              { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector'}
+              { text: 'AppIndicator/KStatusNotifierItem', link: '/appindicator-kstatus-notifier-item' },
+              { text: 'Extension List', link: '/extension-list' },
+              { text: 'U Power', link: '/u-power' },
+              { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktopicons.md' },
+              { text: 'App menu is back', link: '/appmenuisback' },
+              { text: 'Add to desktop', link: '/addtodesktop' },
+              { text: 'Fullscreen Avoider', link: '/fullscreen-avoider' },
+              { text: 'Just Perfection', link: '/just-perfection' },
+              { text: 'OSD Volume Number', link: '/osd-volume-number' },
+              { text: 'Dash to Dock', link: '/dash-to-dock' },
+              { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' }
             ],
             collapsed: true
           },
-          { text: 'Решение проблем',
+          {
+            text: 'Решение проблем',
             items: [
-              { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround'},
-              { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround'},
-              { text: 'Обновить названия стандартных папок в соответствутвии с локалью', link: '/change-the-language-of-the-home-user-folders-automatically'}
+              { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround' },
+              { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround' },
+              { text: 'Обновить названия стандартных папок в соответствутвии с локалью', link: '/change-the-language-of-the-home-user-folders-automatically' }
             ],
             collapsed: true
           },
-          { text: 'Периферия и оборудование',
+          {
+            text: 'Периферия и оборудование',
             items: [
               { text: 'Драйверы NVIDIA', link: '/nvidia' },
-              { text: 'Подключение USB устройств', link: '/usb-devices'},
-              { text: 'Подключение сканера', link: '/drivers-for-scanner'},
-              { text: 'Подключение DualShock 4', link: '/dualshock4'}
+              { text: 'Подключение USB устройств', link: '/usb-devices' },
+              { text: 'Подключение сканера', link: '/drivers-for-scanner' },
+              { text: 'Подключение DualShock 4', link: '/dualshock4' }
             ],
             collapsed: true
           },
-          { text: 'Разработка',
+          {
+            text: 'Разработка',
             items: [
               {
                 text: 'Python',
@@ -294,12 +302,12 @@ export default defineConfig({
                 text: 'Rust',
                 link: '/rust',
                 items: [
-                  { text: 'приложение на GTK4', link: 'rust-gtk4-applications'}
+                  { text: 'приложение на GTK4', link: 'rust-gtk4-applications' }
                 ],
                 collapsed: true
               },
-              { text: 'Aurora SDK', link: '/aurora-sdk'},
-              { text: 'Nodejs', link: '/nodejs'},
+              { text: 'Aurora SDK', link: '/aurora-sdk' },
+              { text: 'Nodejs', link: '/nodejs' },
               { text: 'Podman', link: '/podman' },
             ],
             collapsed: true
@@ -314,8 +322,8 @@ export default defineConfig({
           { text: 'Ядро', link: '/kernel' },
           { text: 'EPM', link: '/epm' },
           { text: 'Flatpak', link: '/flatpak' },
-          { text: "Приложения для GNOME", link: '/apps-gnome'},
-          { text: "Samba", link: "/samba"}
+          { text: "Приложения для GNOME", link: '/apps-gnome' },
+          { text: "Samba", link: "/samba" }
         ]
       }
     ],
@@ -386,7 +394,8 @@ export default defineConfig({
       md.use(embed, {
         html5embed: {
           useImageSyntax: true, // Enables video/audio embed with ![]() syntax (default)
-      }});
+        }
+      });
     }
   },
   transformPageData: (pageData: normalize) => {
@@ -405,14 +414,14 @@ export default defineConfig({
       ['meta', { name: 'og:site_name', content: seo.SITE_TITLE }],
       ['meta', { name: 'og:image', content: seo.SITE_HOST + image }],
       ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-      ['meta', { name: 'twitter:image', content: seo.SITE_HOST + image  }],
-      )
+      ['meta', { name: 'twitter:image', content: seo.SITE_HOST + image }],
+    )
 
-      if (pageData.frontmatter.layout !== 'home') {
-        pageData.frontmatter.head.push(
-          ['link', { rel: 'canonical', href: `${url}.html` }],
-        )
-        pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
-      }
+    if (pageData.frontmatter.layout !== 'home') {
+      pageData.frontmatter.head.push(
+        ['link', { rel: 'canonical', href: `${url}.html` }],
+      )
+      pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
+    }
   }
 })

@@ -127,7 +127,7 @@ export default defineConfig({
               { text: 'Eclipse IDE', link: '/eclipse-ide' },
               { text: 'Docker', link: '/docker' },
               { text: 'EasyEffects', link: '/easyeffects' },
-              { text: 'Eog', link: '/eog' },
+              { text: 'eog', link: '/eog' },
               { text: 'Evince', link: '/evince' },
               { text: 'FFMPEG', link: '/ffmpeg' },
               { text: 'Figma', link: '/figma' },

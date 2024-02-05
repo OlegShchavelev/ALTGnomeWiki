@@ -1,3 +1,31 @@
+---
+title: Discord
+appstreamFlatpak: com.discordapp.Discord
+appsMetaWidgets:
+    active: true
+    thumb:
+        src: /discord/com.discordapp.Discord.png
+        title: Картриджи
+    introtext: Клиент для обмена сообщениями, аудио и видеосвязи
+    site:
+        url: https://discord.com/
+        anchor: discord.com
+    licence:
+        url: https://choosealicense.com/licenses/cc0-1.0/
+        anchor: CC0-1.0
+    translate:
+        url: 
+        anchor: hosted.weblate.org
+    issue: 
+        url: 
+        anchor: 
+    proprietary: true
+    adaptive: false
+    gnomeCircle: false
+    sisyphus:
+        url: 
+---
+
 # Discord
 
 Discord — это платформа для голосового общения и обмена текстовыми сообщениями в реальном времени, предназначенная для геймеров и сообществ. Она позволяет общаться с друзьями и координировать действия во время игр, а также создавать сообщества и обмениваться контентом.
@@ -9,6 +37,8 @@ Discord — это платформа для голосового общения
 ```shell
 flatpak install flathub com.discordapp.Discord
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->
 
 ## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 

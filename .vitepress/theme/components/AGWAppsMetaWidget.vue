@@ -4,27 +4,27 @@ import { DefaultTheme, useData } from 'vitepress'
 
 
 const {theme, frontmatter} = useData();
-const dataAppsMetaWidgets = frontmatter.value.appsMetaWidgets ?? theme.value.appsMetaWidgets ?? [];
+const appsMetaWidgets = computed(() => frontmatter.value.appsMetaWidgets ?? theme.value.appsMetaWidgets ?? []);
 
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
 
-const appsMetaWidgets = computed(() => dataAppsMetaWidgets);
 </script>
 
 <template>
     <article v-if="appsMetaWidgets.active" class="AppsWidget">
+        <Badge v-if="appsMetaWidgets.adaptive" type="tip">Адаптивный</Badge>
+        <Badge v-if="appsMetaWidgets.proprietary" type="danger">Пропоритарный</Badge>
         <figure class="figure" v-if="appsMetaWidgets.thumb.src">
             <VPImage
             :image="appsMetaWidgets.thumb.src"
             :alt="appsMetaWidgets.thumb.title"
-            class="image"
+            class="card-image"
             />
             <img src="">
         </figure>
         <div class="card-body">
             <div class="card-title">{{ appsMetaWidgets.introtext }}</div>
-            <Badge v-if="appsMetaWidgets.adaptive" type="info">Адаптивный</Badge>
         </div>
         <dl>
             <dt>Лицензия</dt>
@@ -35,19 +35,19 @@ const appsMetaWidgets = computed(() => dataAppsMetaWidgets);
             </dd>
             <dt v-if="appsMetaWidgets.site.url">Сайт проекта</dt>
             <dd v-if="appsMetaWidgets.site.url">
-                <VPLink :href="appsMetaWidgets.site.url" class="title">
+                <VPLink :href="appsMetaWidgets.site.url" target="_blank" class="title">
                     {{ appsMetaWidgets.site.anchor }}
                 </VPLink>
             </dd>
             <dt v-if="appsMetaWidgets.translate.url">Помочь с переводами</dt>
             <dd v-if="appsMetaWidgets.translate.url">
-                <VPLink :href="appsMetaWidgets.translate.url" class="title">
+                <VPLink :href="appsMetaWidgets.translate.url" target="_blank" class="title">
                     {{ appsMetaWidgets.translate.anchor }}
                 </VPLink>
             </dd>
-            <dt>Сообщить о проблеме</dt>
-            <dd>
-                <VPLink :href="appsMetaWidgets.issue.url" class="title">
+            <dt v-if="appsMetaWidgets.issue.url">Сообщить о проблеме</dt>
+            <dd v-if="appsMetaWidgets.issue.url">
+                <VPLink :href="appsMetaWidgets.issue.url" target="_blank" class="title">
                     {{ appsMetaWidgets.issue.anchor }}
                 </VPLink>
             </dd>
@@ -73,6 +73,10 @@ const appsMetaWidgets = computed(() => dataAppsMetaWidgets);
     margin-bottom: 8px;
 }
 
+.card-title:last-child, .card-title:only-child {
+    margin-bottom: 0;
+}
+
 .card-body {
     padding: 16px;
 }
@@ -85,10 +89,11 @@ const appsMetaWidgets = computed(() => dataAppsMetaWidgets);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 24px;
 }
 
-.image {
-  width: 100%;
+.VPBadge {
+    border-radius: 0;
 }
 
 dl {

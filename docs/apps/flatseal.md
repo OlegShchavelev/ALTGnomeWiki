@@ -1,3 +1,31 @@
+---
+title: Flatseal
+appstreamRepo: com.github.tchx84.Flatseal
+appstreamFlatpak: com.github.tchx84.Flatseal
+appsMetaWidgets:
+    active: true
+    thumb:
+        src: /flatseal/com.github.tchx84.Flatseal.png
+        title: Кассета
+    introtext: Управление разрешениями Flatpak
+    site:
+        url: https://github.com/tchx84/flatseal
+        anchor: github.com
+    licence:
+        url: https://choosealicense.com/licenses/gpl-3.0/
+        anchor: GNU GPLv3
+    translate:
+        url: 
+        anchor: hosted.weblate.org
+    issue: 
+        url: https://github.com/tchx84/flatseal/issues
+        anchor: github.com
+    adaptive: false
+    gnomeCircle: false
+    sisyphus:
+        url: https://packages.altlinux.org/ru/sisyphus/srpms/flatseal/
+---
+
 # Flatseal
 
 Flatseal — это графическая утилита для просмотра и управления вашими приложениями Flatpak.
@@ -20,6 +48,8 @@ epm -i flatseal
 ```
 :::
 
+<!--@include: ./parts/install/software-repo.md-->
+
 ## Установка c помощью Flatpak
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Flatseal** одной командой:
@@ -27,6 +57,8 @@ epm -i flatseal
 ```shell
 flatpak install flathub com.github.tchx84.Flatseal
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->
 
 ## Настройки
 

@@ -5,6 +5,7 @@ appsMetaWidgets:
     thumb:
         src: /cartridges/hu.kramo.Cartridges.png
         title: Картриджи
+    introtext: Запускайте все свои игры
     site:
         url: https://github.com/kra-mo/cartridges/
         anchor: github.com

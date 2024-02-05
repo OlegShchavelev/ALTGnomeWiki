@@ -178,3 +178,12 @@
   color: var(--vp-c-brand-lightest);
   font-size: 14px;
  } 
+
+ .card-image {
+  filter: grayscale(1);
+  transition: filter 0.25s;
+ }
+
+ .AppsWidget:hover .card-image {
+  filter: grayscale(0) invert(0);
+ }

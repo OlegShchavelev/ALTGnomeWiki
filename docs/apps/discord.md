@@ -19,9 +19,10 @@ appsMetaWidgets:
     issue: 
         url: 
         anchor: 
-    proprietary: true
     adaptive: false
+    gnomeCore: false
     gnomeCircle: false
+    proprietary: true
     sponsor: 
         url:
     sisyphus:

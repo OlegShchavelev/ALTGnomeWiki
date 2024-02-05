@@ -54,6 +54,7 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
         </dl>
         <div class="footet">
             <a v-if="appsMetaWidgets.gnomeCircle" :href="'https://circle.gnome.org'" class="link-gnome-circle">GNOME Circle</a>
+            <a v-if="appsMetaWidgets.sponsor.src" :href="appsMetaWidgets.sponsor.src" class="link-gnome-sponsor">Поддержать автора</a>
             <a v-if="appsMetaWidgets.sisyphus.url" :href="appsMetaWidgets.sisyphus.url" class="link-gnome-sisyphus">Сизиф</a>
         </div>
     </article>
@@ -135,6 +136,17 @@ dd {
     font-weight: bold;
 }
 
+
+.link-gnome-sponsor {
+    padding: 8px 24px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    display: grid;
+    color: var(--vp-c-purple-3);
+    background-color: var(--vp-c-purple-soft);
+    font-weight: bold;
+}
+
 .link-gnome-sisyphus {
     padding: 8px 24px;
     text-align: center;
@@ -148,6 +160,11 @@ dd {
 .link-gnome-circle:hover {
     background-color: var(--vp-c-green-darker);
     color: #edfdf0;
+}
+
+.link-gnome-sponsor:hover {
+    background-color: var(--vp-c-purple-3);
+    color: #fff;
 }
 
 .link-gnome-sisyphus:hover {

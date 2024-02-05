@@ -29,4 +29,8 @@ epm -i gdm-settings
 
 При наличии пакета [Flatpak](/flatpak), можно установить **GDM Settings** одной командой:
 
+```shell
+flatpak install flathub io.github.realmazharhussain.GdmSettings
+```
+
 <!--@include: ./parts/install/software-flatpak.md-->

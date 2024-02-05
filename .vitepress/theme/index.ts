@@ -11,6 +11,7 @@ import {
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import AGWHomeContents from './components/AGWHomeContents.vue'
+import AGWMetaBars from './components/AGWAppsMetaWidget.vue'
 
 import './style.css'
 import './custom.css'
@@ -25,6 +26,7 @@ export default {
       'home-features-after': () => h(AGWHomeContents),
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu), 
+      'aside-outline-after': () => h(AGWMetaBars)
     })
   },
   enhanceApp({ app, router, siteData }) {

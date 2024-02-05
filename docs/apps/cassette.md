@@ -2,6 +2,28 @@
 title: Cassette
 appstreamRepo: io.github.Rirusha.Cassette
 appstreamFlatpak: io.github.Rirusha.Cassette
+appsMetaWidgets:
+    active: true
+    thumb:
+        src: /casseta/io.github.Rirusha.Cassette.png
+        title: Кассета
+    introtext: Неофициальный клиент Яндекс Музыки
+    site:
+        url: https://github.com/Rirusha/Cassette
+        anchor: github.com
+    licence:
+        url: https://choosealicense.com/licenses/gpl-3.0/
+        anchor: GNU GPLv3
+    translate:
+        url: 
+        anchor: hosted.weblate.org
+    issue: 
+        url: https://github.com/Rirusha/Cassette/issues
+        anchor: github.com
+    adaptive: false
+    gnomeCircle: false
+    sisyphus:
+        url: https://packages.altlinux.org/ru/sisyphus/srpms/cassette/
 ---
 
 # Cassette

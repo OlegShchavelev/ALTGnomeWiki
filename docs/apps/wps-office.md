@@ -22,6 +22,7 @@ appsMetaWidgets:
         url: https://help.wps.com/
         anchor: help.wps.com
     adaptive: false
+    gnomeCore: false
     gnomeCircle: false
     proprietary: true
     sponsor: 

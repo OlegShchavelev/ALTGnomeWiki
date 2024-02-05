@@ -20,10 +20,13 @@ appsMetaWidgets:
         anchor: github.com
     adaptive: true
     gnomeCircle: true
+    proprietary: false
     sponsor: 
         url:
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/cartridges/
+    flathub:
+        url: https://flathub.org/ru/apps/hu.kramo.Cartridges
 ---
 
 # Картриджи

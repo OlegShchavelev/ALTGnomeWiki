@@ -19,6 +19,7 @@ appsMetaWidgets:
         url: https://github.com/kra-mo/cartridges/issues
         anchor: github.com
     adaptive: true
+    gnomeCore: false
     gnomeCircle: true
     proprietary: false
     sponsor: 

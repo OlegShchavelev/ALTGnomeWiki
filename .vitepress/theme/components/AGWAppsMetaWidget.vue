@@ -53,6 +53,7 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
             </dd>
         </dl>
         <div class="footet">
+            <a target="_blank" v-if="appsMetaWidgets.gnomeCore" :href="'https://apps.gnome.org'" class="link-gnome-core">GNOME Core</a>
             <a target="_blank" v-if="appsMetaWidgets.gnomeCircle" :href="'https://circle.gnome.org'" class="link-gnome-circle">GNOME Circle</a>
             <a target="_blank" v-if="appsMetaWidgets.sponsor.url" :href="appsMetaWidgets.sponsor.url" class="link-gnome-sponsor">Поддержать автора</a>
             <a target="_blank" v-if="appsMetaWidgets.sisyphus.url" :href="appsMetaWidgets.sisyphus.url" class="link-gnome-sisyphus">Сизиф</a>
@@ -127,6 +128,16 @@ dd {
     padding-right: 16px;
 }
 
+.link-gnome-core {
+    padding: 8px 24px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    display: grid;
+    color: var(--vp-c-blue-dark);
+    background-color: var(--vp-c-blue-dimm-1);
+    font-weight: bold;
+}
+
 .link-gnome-circle {
     padding: 8px 24px;
     text-align: center;
@@ -166,6 +177,11 @@ dd {
     color: var(--vp-c-blue-darker);
     background-color: var(--vp-c-blue-dimm-1);
     font-weight: bold;
+}
+
+.link-gnome-core:hover {
+    background-color: var(--vp-c-blue-dark);
+    color: #edfdf0;
 }
 
 .link-gnome-circle:hover {

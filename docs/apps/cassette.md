@@ -23,7 +23,7 @@ appsMetaWidgets:
     adaptive: false
     gnomeCircle: false
     sponsor: 
-        src: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
+        url: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/cassette/
 ---

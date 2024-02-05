@@ -21,7 +21,9 @@ appsMetaWidgets:
         anchor: 
     proprietary: true
     adaptive: false
-    gnomeCircle: false
+    gnomeCircle: false,
+    sponsor: 
+        url:
     sisyphus:
         url: 
 ---

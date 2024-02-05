@@ -54,7 +54,7 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
         </dl>
         <div class="footet">
             <a v-if="appsMetaWidgets.gnomeCircle" :href="'https://circle.gnome.org'" class="link-gnome-circle">GNOME Circle</a>
-            <a v-if="appsMetaWidgets.sponsor.src" :href="appsMetaWidgets.sponsor.src" class="link-gnome-sponsor">Поддержать автора</a>
+            <a v-if="appsMetaWidgets.sponsor.url" :href="appsMetaWidgets.sponsor.src" class="link-gnome-sponsor">Поддержать автора</a>
             <a v-if="appsMetaWidgets.sisyphus.url" :href="appsMetaWidgets.sisyphus.url" class="link-gnome-sisyphus">Сизиф</a>
         </div>
     </article>

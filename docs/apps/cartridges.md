@@ -20,6 +20,8 @@ appsMetaWidgets:
         anchor: github.com
     adaptive: true
     gnomeCircle: true
+    sponsor: 
+        url:
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/cartridges/
 ---

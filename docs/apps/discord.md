@@ -5,7 +5,7 @@ appsMetaWidgets:
     active: true
     thumb:
         src: /discord/com.discordapp.Discord.png
-        title: Картриджи
+        title: Discord
     introtext: Клиент для обмена сообщениями, аудио и видеосвязи
     site:
         url: https://discord.com/
@@ -21,11 +21,13 @@ appsMetaWidgets:
         anchor: 
     proprietary: true
     adaptive: false
-    gnomeCircle: false,
+    gnomeCircle: false
     sponsor: 
         url:
     sisyphus:
         url: 
+    flathub:
+        url: https://flathub.org/ru/apps/com.discordapp.Discord
 ---
 
 # Discord

@@ -22,8 +22,6 @@ appsMetaWidgets:
     gnomeCore: false
     gnomeCircle: true
     proprietary: false
-    sponsor: 
-        url:
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/cartridges/
     flathub:

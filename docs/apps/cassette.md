@@ -14,9 +14,6 @@ appsMetaWidgets:
     licence:
         url: https://choosealicense.com/licenses/gpl-3.0/
         anchor: GNU GPLv3
-    translate:
-        url: 
-        anchor: hosted.weblate.org
     issue: 
         url: https://github.com/Rirusha/Cassette/issues
         anchor: github.com

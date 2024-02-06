@@ -2,6 +2,35 @@
 title: WPS Office
 appstreamRepo: com.wps.Office
 appstreamFlatpak: com.wps.Office
+
+appsMetaWidgets:
+    active: true
+    thumb:
+        src: /wps-office/wps-office-free-all-in-one-office-suite.d880717.png
+        title: WPS Office
+    introtext: Универсальный пакет Office приложений
+    site:
+        url: https://www.wps.com/ru-RU/
+        anchor: wps.com
+    licence:
+        url:
+        anchor:
+    translate:
+        url:
+        anchor:
+    issue: 
+        url: https://help.wps.com/
+        anchor: help.wps.com
+    adaptive: false
+    gnomeCore: false
+    gnomeCircle: false
+    proprietary: true
+    sponsor: 
+        url:
+    sisyphus:
+        url:
+    flathub:
+        url: https://flathub.org/ru/apps/com.wps.Office
 ---
 
 # WPS Office

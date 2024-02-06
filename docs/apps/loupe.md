@@ -1,3 +1,35 @@
+---
+title: Loupe
+appsMetaWidgets:
+    active: true
+    thumb:
+        src: /loupe/loupe-1.png
+        title: Loupe
+    introtext: Просмотр изображений
+    site:
+        url: https://gitlab.gnome.org/GNOME/loupe/
+        anchor: gitlab.gnome.org
+    licence:
+        url: https://choosealicense.com/licenses/gpl-3.0/
+        anchor: GNU GPLv3
+    translate:
+        url: https://l10n.gnome.org/module/loupe/
+        anchor: l10n.gnome.org
+    issue: 
+        url: https://gitlab.gnome.org/GNOME/loupe/issues
+        anchor: gitlab.gnome.org
+    adaptive: true
+    gnomeCore: true
+    gnomeCircle: false
+    proprietary: false
+    sponsor: 
+        url:
+    sisyphus:
+        url: https://packages.altlinux.org/ru/sisyphus/srpms/loupe/
+    flathub:
+        url: https://flathub.org/ru/apps/org.gnome.Loupe
+---
+
 # Loupe
 
 Loupe — это приложение для просмотра изображений, написанное на GTK 4, Libadwaita и Rust.

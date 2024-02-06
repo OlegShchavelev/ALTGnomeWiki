@@ -21,11 +21,15 @@ appsMetaWidgets:
         url: https://github.com/Rirusha/Cassette/issues
         anchor: github.com
     adaptive: false
+    gnomeCore: false
     gnomeCircle: false
+    proprietary: false
     sponsor: 
         url: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/cassette/
+    flathub:
+        url: https://flathub.org/ru/apps/hu.kramo.Cartridges
 ---
 
 # Cassette

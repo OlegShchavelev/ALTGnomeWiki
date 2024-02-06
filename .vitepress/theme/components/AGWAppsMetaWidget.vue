@@ -14,7 +14,7 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 <template>
     <article v-if="appsMetaWidgets.active" class="AppsWidget">
         <Badge v-if="appsMetaWidgets.adaptive" type="tip">Адаптивный</Badge>
-        <Badge v-if="appsMetaWidgets.proprietary" type="danger">Пропоритарный</Badge>
+        <Badge v-if="appsMetaWidgets.proprietary" type="danger">Проприетарный</Badge>
         <figure class="figure" v-if="appsMetaWidgets.thumb.src">
             <VPImage
             :image="appsMetaWidgets.thumb.src"
@@ -27,8 +27,8 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
             <div class="card-title">{{ appsMetaWidgets.introtext }}</div>
         </div>
         <dl>
-            <dt>Лицензия</dt>
-            <dd>
+            <dt v-if="appsMetaWidgets.licence.url">Лицензия</dt>
+            <dd v-if="appsMetaWidgets.licence.url">
                 <VPLink :href="appsMetaWidgets.licence.url" class="title">
                     {{ appsMetaWidgets.licence.anchor }}
                 </VPLink>
@@ -53,9 +53,11 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
             </dd>
         </dl>
         <div class="footet">
-            <a v-if="appsMetaWidgets.gnomeCircle" :href="'https://circle.gnome.org'" class="link-gnome-circle">GNOME Circle</a>
-            <a v-if="appsMetaWidgets.sponsor.url" :href="appsMetaWidgets.sponsor.url" class="link-gnome-sponsor">Поддержать автора</a>
-            <a v-if="appsMetaWidgets.sisyphus.url" :href="appsMetaWidgets.sisyphus.url" class="link-gnome-sisyphus">Сизиф</a>
+            <a target="_blank" v-if="appsMetaWidgets.gnomeCore" :href="'https://apps.gnome.org'" class="link-gnome-core">GNOME Core</a>
+            <a target="_blank" v-if="appsMetaWidgets.gnomeCircle" :href="'https://circle.gnome.org'" class="link-gnome-circle">GNOME Circle</a>
+            <a target="_blank" v-if="appsMetaWidgets.sponsor.url" :href="appsMetaWidgets.sponsor.url" class="link-gnome-sponsor">Поддержать автора</a>
+            <a target="_blank" v-if="appsMetaWidgets.sisyphus.url" :href="appsMetaWidgets.sisyphus.url" class="link-gnome-sisyphus">Сизиф</a>
+            <a target="_blank" v-if="appsMetaWidgets.flathub.url" :href="appsMetaWidgets.flathub.url" class="link-gnome-flathub">Flathub</a>
         </div>
     </article>
 </template>
@@ -126,6 +128,16 @@ dd {
     padding-right: 16px;
 }
 
+.link-gnome-core {
+    padding: 8px 24px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    display: grid;
+    color: var(--vp-c-blue-dark);
+    background-color: var(--vp-c-blue-dimm-1);
+    font-weight: bold;
+}
+
 .link-gnome-circle {
     padding: 8px 24px;
     text-align: center;
@@ -157,6 +169,21 @@ dd {
     font-weight: bold;
 }
 
+.link-gnome-flathub {
+    padding: 8px 24px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    display: grid;
+    color: var(--vp-c-blue-darker);
+    background-color: var(--vp-c-blue-dimm-1);
+    font-weight: bold;
+}
+
+.link-gnome-core:hover {
+    background-color: var(--vp-c-blue-dark);
+    color: #edfdf0;
+}
+
 .link-gnome-circle:hover {
     background-color: var(--vp-c-green-darker);
     color: #edfdf0;
@@ -169,5 +196,10 @@ dd {
 
 .link-gnome-sisyphus:hover {
     background-color: var(--vp-c-yellow-darker);
+    color: #fff;
+}
+
+.link-gnome-flathub:hover {
+    background-color: var(--vp-c-blue-darker);
     color: #fff;
 }</style>

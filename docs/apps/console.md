@@ -1,12 +1,15 @@
+---
+title: Console
+appstreamRepo: TODO
+---
+
 # Console 
 
 Console — это Простой и удобный эмулятор терминала для рабочего стола GNOME.
 
 ## Установка из репозитория 
 
-**Console** можно установить любым привычным и удобным способом:
-
-**Установка через терминал**
+**Console** можно установить через терминал:
 
 ::: code-group
 
@@ -20,17 +23,15 @@ epm -i console
 ```
 :::
 
-## Удаление gnome-terminal
+## Удаление gnome-console
 
-**Gnome Terminal** можно удалить привычным и удобным способом:
-
-**Удаление через терминал**
+**Console** можно удалить через терминал:
 
 ::: code-group
 
 ```shell[apt-get]
 su -
-apt-get remove -D gnome-terminal
+apt-get remove -D gnome-Console
 ```
 ```shell[epm]
 epm -e gnome-terminal

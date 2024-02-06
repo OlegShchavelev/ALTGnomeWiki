@@ -1,5 +1,8 @@
 ---
 title: Картриджи
+appstreamRepo: hu.kramo.Cartridges
+appstreamFlatpak: hu.kramo.Cartridges
+
 appsMetaWidgets:
     active: true
     thumb:
@@ -38,6 +41,8 @@ appsMetaWidgets:
 
 **Картриджи** можно установить любым привычным и удобным способом:
 
+<!--@include: ./parts/install/software-repo.md-->
+
 **Установка через терминал**
 
 ::: code-group
@@ -60,3 +65,5 @@ epm -i cartridges
 ```shell
 flatpak install flathub hu.kramo.Cartridges
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

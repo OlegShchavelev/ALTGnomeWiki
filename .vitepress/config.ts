@@ -126,7 +126,7 @@ export default defineConfig({
               { text: 'Drawing', link: '/drawing' },
               { text: 'Eclipse IDE', link: '/eclipse-ide' },
               { text: 'EasyEffects', link: '/easyeffects' },
-              { text: 'eog', link: '/eog' },
+              { text: 'Глаз GNOME', link: '/eog' },
               { text: 'Evince', link: '/evince' },
               { text: 'FFMPEG', link: '/ffmpeg' },
               { text: 'Figma', link: '/figma' },

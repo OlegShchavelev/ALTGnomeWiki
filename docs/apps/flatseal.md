@@ -24,6 +24,8 @@ appsMetaWidgets:
     gnomeCircle: false
     sponsor: 
         url:
+    flathub:
+        url:
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/flatseal/
 ---

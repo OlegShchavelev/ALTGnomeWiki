@@ -1,3 +1,9 @@
+---
+title: Chromium
+appstreamRepo: TODO
+appstreamFlatpak: org.chromium.Chromium
+---
+
 # Chromium
 
 Chromium — это проект браузера с открытым исходным кодом, целью которого является создание более безопасного, быстрого и стабильного способа работы в Интернете для всех пользователей.
@@ -29,6 +35,8 @@ epm -i chromium
 flatpak install flathub org.chromium.Chromium
 ```
 
+<!--@include: ./parts/install/software-flatpak.md-->
+
 ## Отображение шрифта Emoji при просмотре веб-страниц в браузере Chromium
 
 Необходимо установить дополнительные шрифты:
@@ -50,7 +58,7 @@ epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 
 После обновления операционной системы Chromium происходит сбой графики
 
-Удалите пользовательскую конфигурацию у пользователя
+Удалите пользовательскую конфигурацию у пользователя:
 
 ```shell
 rm -rfv .config/chromium/

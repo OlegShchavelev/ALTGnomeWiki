@@ -108,8 +108,24 @@ mcedit /etc/sysconfig/grub2
 ```shell
 su -
 grub-mkconfig -o /boot/grub/grub.cfg
-ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 ```
+Активируем интерфейсы управления питания nvidia. Помимо предотвращения проблем с сохранением видеопамяти при входе в спящий режим и гибернизации ![(см. источник)](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/powermanagement.html), активация этих интерфейсов необходима для ![правил](https://gitlab.gnome.org/GNOME/gdm/-/blob/main/data/61-gdm.rules.in#L51) разрешения протокола wayland на GDM.(Чтобы wayland режим был доступен при выборе сессии)
+
+```shell
+su -
+systemctl enable nvidia-suspend.service nvidia-resume.service nvidia-hibernate.service
+```
+В опциях драйверов nvidia указываем о смене способа сохранения видеопамяти.
+
+```shell
+su -
+cat << _EOF_ > /etc/modprobe.d/nvidia_videomemory_allocation.conf
+options nvidia NVreg_PreserveVideoMemoryAllocations=1
+options nvidia NVreg_TemporaryFilePath=/run
+_EOF_
+```
+::: tip
+Для сохранения видеопамяти важно, чтобы файловая система имела поддержку безымянный временных файлов и имела достаточный объём для сохранения видеопамяти. Объём, равный сумме всей видеопамяти + 5% от неё, будет вполне достаточно для её сохранения. 
 
 Перезагружаем операционную систему, выберите в списке сессию Gnome.
 

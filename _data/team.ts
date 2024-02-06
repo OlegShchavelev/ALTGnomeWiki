@@ -150,4 +150,19 @@ export const contributions = [
         { icon: 'github', link: 'https://github.com/otetswoo' }
       ],
     },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/158994205?v=4',
+      name: 'AnameVi',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/AnameVi' }
+      ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/153871261?v=4',
+      name: 'Александр Шамараев',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/AlexanderShad' }
+      ],
+    },
   ]

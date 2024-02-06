@@ -1,10 +1,15 @@
+---
+title: Thunderbird
+appstreamFlatpak: org.mozilla.Thunderbird
+---
+
 # Thunderbird
 
 Thunderbird — это бесплатное приложение для работы с электронной почтой, которое легко установить и настроить с отличными характеристиками.
 
 ## Установка из репозитория
 
-**Thunderbird** можно установить любым привычным и удобным способом
+**Thunderbird** можно установить любым привычным и удобным способом:
 
 **Установка через терминал**
 
@@ -28,9 +33,11 @@ epm -i thunderbird
 flatpak install flathub org.mozilla.Thunderbird
 ```
 
+<!--@include: ./parts/install/software-flatpak.md-->
+
 ## Thunderbird GNOME theme
 
-Склонируйте скрипт и установите **Thunderbird GNOME theme**
+Склонируйте скрипт и установите **Thunderbird GNOME theme**:
 
 ```shell
 git clone https://github.com/rafaelmardojai/thunderbird-gnome-theme && cd thunderbird-gnome-theme

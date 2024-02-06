@@ -1,3 +1,9 @@
+---
+title: Fragments
+appstreamRepo: de.haeckerfelix.Fragments
+appstreamFlatpak: de.haeckerfelix.Fragments
+---
+
 # Fragments
 
 Fragments — это простой в использовании BitTorrent-клиент. Он может использоваться для передачи файлов по протоколу BitTorrent, таких как видео, музыка или установочные образы для дистрибутивов Linux.
@@ -5,6 +11,8 @@ Fragments — это простой в использовании BitTorrent-к�
 ## Установка из репозитория 
 
 **Fragments** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -27,3 +35,5 @@ epm -i fragments
 ```shell
 flatpak install flathub de.haeckerfelix.Fragments
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

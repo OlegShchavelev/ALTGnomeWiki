@@ -1,5 +1,6 @@
 ---
 title: Fretboard
+appstreamRepo: TODO
 appstreamFlatpak: dev.bragefuglseth.Fretboard
 ---
 

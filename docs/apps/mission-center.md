@@ -1,3 +1,9 @@
+---
+title: Mission Center
+appstreamRepo: io.missioncenter.MissionCenter
+appstreamFlatpak: io.missioncenter.MissionCenter
+---
+
 # Mission Center
 
 Mission Center — это приложение для мониторинга использования системных ресурсов. Контролируйте использование вашего процессора, памяти, диска, сети и графического процессора.
@@ -5,6 +11,8 @@ Mission Center — это приложение для мониторинга и�
 ## Установка из репозитория 
 
 **Mission Center** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -27,3 +35,5 @@ epm -i missioncenter
 ```shell
 flatpak install flathub io.missioncenter.MissionCenter
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

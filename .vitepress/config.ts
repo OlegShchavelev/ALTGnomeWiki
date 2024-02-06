@@ -309,6 +309,7 @@ export default defineConfig({
               { text: 'Aurora SDK', link: '/aurora-sdk' },
               { text: 'Nodejs', link: '/nodejs' },
               { text: 'Podman', link: '/podman' },
+              { text: 'Lazarus', link: '/lazarus' },
             ],
             collapsed: true
           }

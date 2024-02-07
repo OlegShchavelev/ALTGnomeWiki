@@ -23,8 +23,6 @@ appsMetaWidgets:
     gnomeCore: false
     gnomeCircle: false
     proprietary: true
-    sponsor: 
-        url:
     sisyphus:
         url: 
     flathub:

@@ -4,7 +4,7 @@ import { DefaultTheme, useData } from 'vitepress'
 
 
 const {theme, frontmatter} = useData();
-const appsMetaWidgets = computed(() => frontmatter.value.appsMetaWidgets ?? theme.value.appsMetaWidgets ?? []);
+const props = computed(() => frontmatter.value.appsMetaWidgets ?? theme.value.appsMetaWidgets ?? []);
 
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
@@ -12,52 +12,54 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 </script>
 
 <template>
-    <article v-if="appsMetaWidgets.active" class="AppsWidget">
-        <Badge v-if="appsMetaWidgets.adaptive" type="tip">Адаптивный</Badge>
-        <Badge v-if="appsMetaWidgets.proprietary" type="danger">Проприетарный</Badge>
-        <figure class="figure" v-if="appsMetaWidgets.thumb.src">
+    <article v-if="props.active" class="AppsWidget">
+        <figure class="figure" v-if="props.thumb && props.thumb.src">
             <VPImage
-            :image="appsMetaWidgets.thumb.src"
-            :alt="appsMetaWidgets.thumb.title"
+            :image="props.thumb.src"
+            :alt="props.thumb.title"
             class="card-image"
             />
             <img src="">
         </figure>
         <div class="card-body">
-            <div class="card-title">{{ appsMetaWidgets.introtext }}</div>
+            <div class="card-title">{{ props.introtext }}</div>
+            <div v-if="props.adaptive || props.proprietary || props.gnomeCircle || props.gnomeCore" class="badges">
+            <Badge v-if="props.adaptive" type="tip">Адаптивный</Badge>
+            <Badge v-if="props.proprietary" type="danger">Проприетарный</Badge>
+            <Badge v-if="props.gnomeCircle" type="danger">GNOME Circle</Badge>
+            <Badge v-if="props.gnomeCore" type="info">GNOME Core</Badge>
+        </div>
         </div>
         <dl>
-            <dt v-if="appsMetaWidgets.licence.url">Лицензия</dt>
-            <dd v-if="appsMetaWidgets.licence.url">
-                <VPLink :href="appsMetaWidgets.licence.url" class="title">
-                    {{ appsMetaWidgets.licence.anchor }}
+            <dt v-if="props.licence && props.licence.url">Лицензия</dt>
+            <dd v-if="props.licence && props.licence.url">
+                <VPLink :href="props.licence && props.licence.url" class="title">
+                    {{ props.licence.anchor }}
                 </VPLink>
             </dd>
-            <dt v-if="appsMetaWidgets.site.url">Сайт проекта</dt>
-            <dd v-if="appsMetaWidgets.site.url">
-                <VPLink :href="appsMetaWidgets.site.url" target="_blank" class="title">
-                    {{ appsMetaWidgets.site.anchor }}
+            <dt v-if="props.site && props.site.url">Сайт проекта</dt>
+            <dd v-if="props.site && props.site.url">
+                <VPLink :href="props.site.url" target="_blank" class="title">
+                    {{ props.site.anchor }}
                 </VPLink>
             </dd>
-            <dt v-if="appsMetaWidgets.translate.url">Помочь с переводами</dt>
-            <dd v-if="appsMetaWidgets.translate.url">
-                <VPLink :href="appsMetaWidgets.translate.url" target="_blank" class="title">
-                    {{ appsMetaWidgets.translate.anchor }}
+            <dt v-if="props.translate && props.translate.url">Помочь с переводами</dt>
+            <dd v-if="props.translate && props.translate.url">
+                <VPLink :href="props.translate.url" target="_blank" class="title">
+                    {{ props.translate.anchor }}
                 </VPLink>
             </dd>
-            <dt v-if="appsMetaWidgets.issue.url">Сообщить о проблеме</dt>
-            <dd v-if="appsMetaWidgets.issue.url">
-                <VPLink :href="appsMetaWidgets.issue.url" target="_blank" class="title">
-                    {{ appsMetaWidgets.issue.anchor }}
+            <dt v-if="props.issue && props.issue.url">Сообщить о проблеме</dt>
+            <dd v-if="props.issue && props.issue.url">
+                <VPLink :href="props.issue.url" target="_blank" class="title">
+                    {{ props.issue.anchor }}
                 </VPLink>
             </dd>
         </dl>
         <div class="footet">
-            <a target="_blank" v-if="appsMetaWidgets.gnomeCore" :href="'https://apps.gnome.org'" class="link-gnome-core">GNOME Core</a>
-            <a target="_blank" v-if="appsMetaWidgets.gnomeCircle" :href="'https://circle.gnome.org'" class="link-gnome-circle">GNOME Circle</a>
-            <a target="_blank" v-if="appsMetaWidgets.sponsor.url" :href="appsMetaWidgets.sponsor.url" class="link-gnome-sponsor">Поддержать автора</a>
-            <a target="_blank" v-if="appsMetaWidgets.sisyphus.url" :href="appsMetaWidgets.sisyphus.url" class="link-gnome-sisyphus">Сизиф</a>
-            <a target="_blank" v-if="appsMetaWidgets.flathub.url" :href="appsMetaWidgets.flathub.url" class="link-gnome-flathub">Flathub</a>
+            <a target="_blank" v-if="props.sponsor && props.sponsor.url" :href="props.sponsor.url" class="link-gnome-sponsor">Поддержать автора</a>
+            <a target="_blank" v-if="props.sisyphus && props.sisyphus.url" :href="props.sisyphus.url" class="link-gnome-sisyphus">Сизиф</a>
+            <a target="_blank" v-if="props.flathub && props.flathub.url" :href="props.flathub.url" class="link-gnome-flathub">Flathub</a>
         </div>
     </article>
 </template>
@@ -95,8 +97,15 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
   padding-top: 24px;
 }
 
+.badges {
+    display: inline-flex;
+    gap: 2px
+}
+
 .VPBadge {
-    border-radius: 0;
+    border-radius: .5rem;
+    padding: 0 8px;
+    margin-left: 0;
 }
 
 dl {

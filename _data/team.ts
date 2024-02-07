@@ -164,5 +164,12 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/AlexanderShad' }
       ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/65094576?v=4',
+      name: 'vlad196',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/vlad196' }
+      ],
     },
   ]

@@ -1,3 +1,24 @@
+---
+appsMetaWidgets:
+    active: true
+    introtext: оболочка для любого менеджера пакетов
+    site:
+        url: https://github.com/Etersoft/eepm
+        anchor: github.com
+    issue: 
+        url: https://github.com/Etersoft/eepm/issues
+        anchor: github.com
+    licence: 
+        url: https://choosealicense.com/licenses/agpl-3.0/
+        anchor: GNU AGPLv3
+    adaptive: false
+    gnomeCore: false
+    gnomeCircle: false
+    proprietary: false
+    sisyphus:
+        url: https://packages.altlinux.org/ru/sisyphus/srpms/eepm/ 
+---
+
 # Единая команда управления пакетами (epm)
 
 **EPM** — имеющая одинаковый интерфейс на всех системах команда управления пакетами. При интерфейсе, похожем на rpm, apt и urpm, выполняет необходимые операции **на любой платформе**.

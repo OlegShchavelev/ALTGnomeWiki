@@ -6,5 +6,7 @@ Spotify — стриминговый сервис, позволяющий лег
 Установить можно командой:
 
 '''shell
+
 flatpak install flathub com.spotify.Client
+
 '''

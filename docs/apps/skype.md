@@ -1,6 +1,5 @@
 ---
 title: Skype
-appstreamRepo: com.skype.Client
 appstreamFlatpak: com.skype.Client
 ---
 

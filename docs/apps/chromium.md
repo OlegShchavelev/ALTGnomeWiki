@@ -1,6 +1,5 @@
 ---
 title: Chromium
-appstreamRepo: TODO
 appstreamFlatpak: org.chromium.Chromium
 ---
 
@@ -10,9 +9,7 @@ Chromium — это проект браузера с открытым исход
 
 ## Установка из репозитория
 
-**Chromium** можно установить любым привычным и удобным способом:
-
-**Установка через терминал**
+**Chromium** можно установить через терминал:
 
 ::: code-group
 

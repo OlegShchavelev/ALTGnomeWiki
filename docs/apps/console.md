@@ -1,8 +1,3 @@
----
-title: Console
-appstreamRepo: TODO
----
-
 # Console 
 
 Console — это Простой и удобный эмулятор терминала для рабочего стола GNOME.

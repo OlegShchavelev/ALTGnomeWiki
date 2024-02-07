@@ -12,6 +12,8 @@ appstreamFlatpak: ru.yandex.Browser
 
 **Яндекс Браузер** можно установить любым привычным и удобным способом:
 
+<!--@include: ./parts/install/software-repo.md-->
+
 **Установка через терминал**
 
 ::: code-group
@@ -25,8 +27,6 @@ apt-get install yandex-browser-stable
 epm -i yandex-browser-stable
 ```
 :::
-
-<!--@include: ./parts/install/software-repo.md-->
 
 ::: info
 C версии `23.5.1.753`, устанавливается **Яндекс Браузер для организаций** — специальная сборка, поддерживающая корпоративные функции, например, управление при помощи групповых политик. Однако ее можно использовать и на домашних компьютерах.

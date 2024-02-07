@@ -1,9 +1,9 @@
 # Flatpak
 Flatpak — это система для создания, распространения и запуска изолированных настольных приложений в Linux.
-## Установка из репозитория <Badge type="warning" text="sysphus" />
-**Flatpak** можно установить любым привычным и удобным способом
 
-**Установка через терминал**
+## Установка из репозитория <Badge type="warning" text="sysphus" />
+**Flatpak** можно установить через терминал:
+
 ::: code-group
 
 ```shell[apt-get]
@@ -22,6 +22,7 @@ epm -i flatpak
 su -
 gpasswd -a USER fuse
 ```
+
 USER — имя не непривилегированного пользователя, укажите имя учетной записи. 
 
 ## Альтернативный вариант установки Flatpak
@@ -55,6 +56,7 @@ epm -i flatpak-repo-flathub
 ```shell
 flatpak remotes
 ```
+
 Добавить репозиторий, выполните:
 
 ```shell
@@ -96,7 +98,8 @@ flatpak search krita
 
 ### Установка приложений
 
-Для установки приложения, запустите
+Для установки приложения, запустите:
+
 ```shell
 flatpak install flathub org.gimp.GIMP
 ```
@@ -110,7 +113,9 @@ flatpak install flathub org.gimp.GIMP
 ```shell
 flatpak https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
 ```
+
 Начиная с Flatpak 1.2, команда `install` может выполнять предварительный поиск перед установкой приложения:
+
 ```shell
 $ flatpak install gimp
 ```
@@ -123,6 +128,7 @@ $ flatpak install gimp
 ### Запуск приложений
 
 Для запуска приложения в Flatpak используйте команду `run` и идентификатор приложения:
+
 ```shell
 flatpak run org.gimp.GIMP
 ```
@@ -163,7 +169,7 @@ flatpak uninstall org.gimp.GIMP
 
 ### Устранение неполадок
 
-В **Flatpak** существует набор команд для управление пакетным менеджером
+В **Flatpak** существует набор команд для управление пакетным менеджером.
 
 Для удаления сред выполнения и расширений, которые не используются установленными приложениями, используйте:
 

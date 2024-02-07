@@ -165,6 +165,55 @@ rm -rfv .config/yandex-browser/Default/GPUCache
 
 ![Графический сбой в Яндекс Браузере](/yandex-browser/yandex-browser-1.jpg 'Графический сбой в Яндекс Браузере')
 
+## Video DownloadHelper
+Как известно, **Яндекс Браузер** , как и другие браузеры, обладает множеством расширений. **Video DownloadHelper** не исключение.
+Однако не так давно, приложение компаньон обновилось до версии 2.0.11 и поменяло свое название на VdhCoApp.
+В настоящее время в EPM появилась возможность установки нового приложения компаньона, но сам установщик пакета, как с официального сайта так и через EPM, не поддерживает установку приложения компаньона в Яндекс Браузер.
+
+Если Вы используете **Video DownloadHelper** и столкнулись с проблемой обновления на версию 2.0.11 приложения компаньона, но после его установки в Яндекс Браузере не заработало, необходимо выполнить следующие действия.
+
+1. Устанавливаем само приложение компаньон
+
+```shell
+epmp vdhcoapp
+```
+
+2. Заходим в каталог 
+
+```shell
+cd $HOME/.config/yandex-browser/NativeMessagingHosts/
+```
+
+3. Создаем файл net.downloadhelper.coapp.json
+
+```shell
+nano net.downloadhelper.coapp.json
+```
+
+Либо можно это сделать через Nautilus
+
+
+4. Записываем в этот файл следующее содержимое и сохраняем его
+
+```shell
+{
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://lmjnegcaeklhafolokijcfjliaokphfk/",
+    "chrome-extension://pfoiagbblcbmognbkekfpodpidedkmcc/",
+    "chrome-extension://jmkaglaafmhbcpleggkmaliipiilhldn/",
+    "chrome-extension://fojefjolbhfidomcaelhceoldmmpcaga/"
+  ],
+  "name": "net.downloadhelper.coapp",
+  "description": "Video DownloadHelper companion app",
+  "path": "/opt/vdhcoapp/vdhcoapp"
+}
+```
+
+5. После заходим в настройки расширения **Video DownloadHelper** и смотрим выпадающую вкладку ***Приложение-компаньон*** либо просто закрываем и открываем браузер.
+
+
+
 ## Издания Яндекс Браузера
 **Яндекс Браузер** — Быстрый и безопасный браузер со встроенной технологией активной защиты Protect. Она проверяет скачиваемые файлы на вирусы, предупреждает об опасных сайтах, защищает подключение к общественным сетям и ваши пароли.
 

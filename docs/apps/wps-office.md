@@ -42,6 +42,37 @@ WPS Office — это офисный пакет, разрабатываемый 
 - Excel
 - Presentation
 
+## Установка с помощью Flatpak <Badge type="danger" text="Неофициальная сборка" /> <Badge type="warning" text="Устаревшая версия" />
+
+При наличии пакета [Flatpak](/flatpak), можно установить **WPS Office** одной командой:
+
+```shell
+flatpak install flathub com.wps.Office
+```
+
+<!--@include: ./parts/install/software-flatpak.md-->
+
+## Установка с помощью epm play <Badge type="danger" text="Неофициальная сборка" /> <Badge type="warning" text="Временно сломано" />
+
+При наличии пакета [eepm](/epm), можно установить **WPS Office** одной командой:
+
+```shell
+epm play wpsoffice
+```
+
+:::warning 
+На 06.02.2024 года, установка WPS Office инструментами epm play временно не доступен
+
+```shell
+ # alien --generate --to-rpm ../wps-office-11.1.0.11711.XA-1.x86_64.rpm
+Warning: Skipping conversion of scripts in package wps-office: postinst postrm preinst prerm
+Warning: Use the --scripts parameter to include the scripts.
+Unpacking of '../wps-office-11.1.0.11711.XA-1.x86_64.rpm' failed at /usr/share/perl5/Alien/Package/Rpm.pm line 168.
+ERROR:   (you can discuss the epm 3.60.5-alt1 problem in Telegram: https://t.me/useepm)
+ERROR: There was some error during install the application.  (you can discuss the epm 3.60.5-alt1 problem in Telegram: https://t.me/useepm)
+```
+:::
+
 ## Установка с официального сайта
 Зайдите на [официальный сайт производителя](https://www.wps.com/).
 
@@ -69,21 +100,3 @@ file /etc/logrotate.d from install of wps-office-11.1.0.9719.XA-1.x86_64 conflic
 su -
 rpm -Uvh --nodeps --force имяпакета.rpm
 ```
-
-## Установка с помощью epm play <Badge type="danger" text="Неофициальная сборка" /> <Badge type="warning" text="Временно сломано" />
-
-Установка происходит одной командой:
-
-```shell
-epm play wpsoffice
-```
-
-## Установка с помощью Flatpak <Badge type="danger" text="Неофициальная сборка" /> <Badge type="warning" text="Устаревшая версия" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **WPS Office** одной командой:
-
-```shell
-flatpak install flathub com.wps.Office
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->

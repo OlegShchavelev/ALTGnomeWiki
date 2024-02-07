@@ -138,6 +138,7 @@ export default defineConfig({
               { text: 'Git', link: '/git' },
               { text: 'GitHub Desktop', link: '/github-desktop' },
               { text: 'Центр Приложений', link: '/gnome-software' },
+              { text: 'Google Chrome', link: '/google-chrome' },
               { text: 'Kooha', link: '/kooha' },
               { text: 'Libreoffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },

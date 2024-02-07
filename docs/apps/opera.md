@@ -1,3 +1,8 @@
+---
+title: Opera
+appstreamFlatpak: com.opera.Opera
+---
+
 # Opera
 
 Opera — это быстрый, безопасный и удобный браузер, в котором есть всё необходимое для конфиденциальной и безопасной работы в интернете.
@@ -9,6 +14,8 @@ Opera — это быстрый, безопасный и удобный брау
 ```shell
 flatpak install flathub com.opera.Opera
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->
 
 ## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 

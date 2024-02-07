@@ -1,3 +1,9 @@
+---
+title: Totem
+appstreamRepo: org.gnome.Totem
+appstreamFlatpak: org.gnome.Totem
+---
+
 # Видео
 
 Видео (Totem) — это официальная утилита для рабочего стола GNOME. Видеопроигрыватель поддерживает список локальных видеофайлов и DVD с возможностью поиска, доступ к видео по сети (с помощью UPnP/DLNA), а также видео с веб-сайтов.
@@ -6,7 +12,9 @@
 
 ## Установка из репозитория
 
-**Totem** можно установить любым привычным и удобным способом
+**Totem** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -29,3 +37,5 @@ epm -i totem
 ```shell
 flatpak install flathub org.gnome.Totem
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

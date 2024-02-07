@@ -1,3 +1,10 @@
+---
+title: Firefox
+appstreamRepo: org.mozilla.firefox
+appstreamFlatpak: org.mozilla.firefox
+---
+
+
 # Firefox
 
 Firefox — это популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
@@ -5,6 +12,8 @@ Firefox — это популярный графический веб-брауз
 ## Установка из репозитория 
 
 **Firefox** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -29,9 +38,11 @@ epm -i firefox
 flatpak install flathub org.mozilla.firefox
 ```
 
+<!--@include: ./parts/install/software-flatpak.md-->
+
 ## Firefox Gnome theme
 
-Склонируйте скрипт и установите **Firefox GNOME theme**
+Склонируйте скрипт и установите **Firefox GNOME theme**:
 
 ```shell
 git clone https://github.com/rafaelmardojai/firefox-gnome-theme 

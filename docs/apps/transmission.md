@@ -1,3 +1,9 @@
+---
+title: Transmission
+appstreamRepo: com.transmissionbt.Transmission
+appstreamFlatpak: com.transmissionbt.Transmission
+---
+
 # Transmission
 
 Transmission — это быстрый, простой и бесплатный клиент BitTorrent. 
@@ -5,6 +11,8 @@ Transmission — это быстрый, простой и бесплатный �
 ## Установка из репозитория 
 
 **Transmission** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -27,3 +35,5 @@ epm -i transmission-gtk
 ```shell
 flatpak flatpak install flathub com.transmissionbt.Transmission
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

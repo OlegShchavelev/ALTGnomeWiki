@@ -1,3 +1,9 @@
+---
+title: OBS Studio
+appstreamRepo: com.obsproject.Studio
+appstreamFlatpak: com.obsproject.Studio
+---
+
 # OBS Studio
 
 OBS Studio — это Бесплатная программа с открытым исходным кодом для записи видео и потокового вещания.
@@ -5,6 +11,8 @@ OBS Studio — это Бесплатная программа с открыты�
 ## Установка из репозитория 
 
 **OBS Studio** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -27,3 +35,5 @@ epm -i obs-studio
 ```shell
 flatpak install flathub com.obsproject.Studio
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

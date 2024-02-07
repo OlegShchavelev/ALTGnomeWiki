@@ -11,7 +11,6 @@
 - Через GUI в приложении "Настройки" > "Звук"
 ![settings_volume_control](/gnome-volume-control/gnome-settings-volume-control.png)
 
-
 - Через TUI в приложении `alsamixer`
 
 - Через CLI в терминале:

@@ -1,3 +1,9 @@
+---
+title: Dialect
+appstreamRepo: app.drey.Dialect
+appstreamFlatpak: app.drey.Dialect
+---
+
 # Dialect
 
 Dialect — это простое приложение для перевода, для полноты перевода используются веб-сервисы, предоставляя вам некоторые дополнительные возможности: выбор провайдера переводчика, прослушать перевод.
@@ -5,6 +11,8 @@ Dialect — это простое приложение для перевода, 
 ## Установка из репозитория 
 
 **Dialect** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -27,6 +35,8 @@ epm -i dialect
 ```shell
 flatpak install flathub app.drey.Dialect
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->
 
 ## Перевод в поиске GNOME на экране обзора
 

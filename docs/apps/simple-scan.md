@@ -1,3 +1,9 @@
+---
+title: Сканер документов
+appstreamRepo: org.gnome.SimpleScan
+appstreamFlatpak: org.gnome.SimpleScan
+---
+
 # Сканер документов
 
 Сканер документов — это официальная утилита для рабочего стола GNOME, которая позволяет вам захватывать изображения с
@@ -6,6 +12,8 @@
 ## Установка из репозитория
 
 **Сканер документов** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -28,3 +36,5 @@ epm -i simple-scan
 ```shell
 flatpak install flathub org.gnome.SimpleScan
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

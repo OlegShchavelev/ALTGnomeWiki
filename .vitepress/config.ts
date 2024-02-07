@@ -161,6 +161,7 @@ export default defineConfig({
               { text: 'Speedtest CLI', link: '/speedtest-cli' },
               { text: 'Steam', link: '/steam' },
               { text: 'Telegram', link: '/telegram' },
+              { text: 'Timeshift', link: '/timeshift' },
               { text: 'Thunderbird', link: 'thunderbird' },
               { text: 'Toolbox', link: '/toolbox' },
               { text: 'Totem', link: '/totem' },

@@ -1,3 +1,8 @@
+---
+title: Podman Desktop
+appstreamFlatpak: io.podman_desktop.PodmanDesktop
+---
+
 # Podman
 
 ![podman-sektop](/podman/from-docker-to-podman.png)
@@ -11,6 +16,8 @@ Podman — это инструмент командной строки для у
 ![podman-sektop](/podman/podman-vs-docker.png)
 
 ### Установка
+
+**Podman** можно установить через терминал:
 
 ::: code-group
 
@@ -160,6 +167,8 @@ Podman-compose обеспечивает простой и удобный спо�
 
 ### Установка
 
+**Podman-compose** можно установить через терминал:
+
 ::: code-group
 
 ```shell[apt-get]
@@ -239,3 +248,5 @@ Podman-Desktop — это удобный пользовательский инт
 ```shell
 flatpak install io.podman_desktop.PodmanDesktop
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

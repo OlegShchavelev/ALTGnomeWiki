@@ -1,12 +1,15 @@
-# Codium
+---
+title: VSCodium
+appstreamFlatpak: com.vscodium.codium
+---
 
-Codium — это управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VS Code.
+# VSCodium
 
-## Установка из репозитория 
+VSCodium — это управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VS Code.
 
-**Codium** можно установить любым привычным и удобным способом:
+## Установка из репозитория
 
-**Установка через терминал**
+**VSCodium** можно установить через терминал:
 
 ::: code-group
 
@@ -22,11 +25,13 @@ epm -i codium
 
 ## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Codium** одной командой:
+При наличии пакета [Flatpak](/flatpak), можно установить **VSCodium** одной командой:
 
 ```shell
 flatpak install flathub com.vscodium.codium
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->
 
 ## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 
@@ -45,7 +50,7 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 
 ```
 
-## Codium не запускается или запускается с ошибками.
+## VSCodium не запускается или запускается с ошибками.
 
 После обновления операционной системы Сodium, не запускается или запускается не корректно:
 

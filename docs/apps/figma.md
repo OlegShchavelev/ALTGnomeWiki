@@ -1,3 +1,8 @@
+---
+title: Figma
+appstreamFlatpak: io.github.Figma_Linux.figma_linux
+---
+
 # Figma
 
 Figma — это неофициальная версия Figma для Linux построенная на Electron.
@@ -9,6 +14,8 @@ Figma — это неофициальная версия Figma для Linux по
 ```shell
 flatpak install flathub io.github.Figma_Linux.figma_linux
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->
 
 :::warning
 Для запуска приложения требуется возможность создания непривилегированных пользовательских пространств, что является потенциально не безопасно. Вы можете [изменить настройку ядра](flatpak.md#запуск-приложении)

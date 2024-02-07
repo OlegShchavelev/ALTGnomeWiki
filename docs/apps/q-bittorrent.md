@@ -1,3 +1,9 @@
+---
+title: qBittorrent
+appstreamRepo: org.qbittorrent.qBittorrent
+appstreamFlatpak: org.qbittorrent.qBittorrent
+---
+
 # qBittorrent
 
 qBittorrent — свободный кроссплатформенный клиент файлообменной сети BitTorrent. Клиент написан на языке C++, основан на библиотеке libtorrent-rasterbar, графический интерфейс написан на Qt.
@@ -5,6 +11,8 @@ qBittorrent — свободный кроссплатформенный клие
 ## Установка из репозитория
 
 **qBittorrent** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -27,6 +35,8 @@ epm -i qBittorrent
 ```shell
 flatpak install flathub org.qbittorrent.qBittorrent
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->
 
 ::: tip
 Можно изменить параметр "Период сохранения данных возобновления" Он находится в qBittorrent по пути Сервис-Настройки-Расширенные-Период сохранения данных возобновления

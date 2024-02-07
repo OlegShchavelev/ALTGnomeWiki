@@ -1,5 +1,8 @@
 ---
 title: Loupe
+appstreamRepo: org.gnome.Loupe
+appstreamFlatpak: org.gnome.Loupe
+
 appsMetaWidgets:
     active: true
     thumb:
@@ -35,7 +38,9 @@ appsMetaWidgets:
 Loupe — это приложение для просмотра изображений, написанное на GTK 4, Libadwaita и Rust.
 
 ## Установка из репозитория
-**Loupe** можно установить любым привычным и удобным способом
+**Loupe** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 ::: code-group
@@ -57,3 +62,5 @@ epm -i loupe
 ```shell
 flatpak install flathub org.gnome.Loupe
 ```
+
+<!--@include: ./parts/install/software-flatpak.md-->

@@ -1,16 +1,16 @@
 # Внесение изменений
 
 :::info
-Для внесения изменений необходимо иметь профиль на GitHub
+Для внесения изменений необходимо иметь профиль на GitHub.
 :::
 
-## Создаём fork репозитория
+## 1. Создаём fork репозитория
 
-### Заходим на [GitHub проекта](https://github.com/OlegShchavelev/ALTRegularGnomeWiki):
+### 1.1. Заходим на [GitHub проекта](https://github.com/OlegShchavelev/ALTRegularGnomeWiki):
 
 ![github_main](/alteration/github_main.png)
 
-### Переходим на вкладку Fork и нажимаем `Create fork`:
+### 1.2. Переходим на вкладку Fork и нажимаем `Create fork`:
 
 ![github_fork_create](/alteration/github_fork_create.png)
 
@@ -18,7 +18,7 @@
 После небольшого ожидания репозиторий появится в вашем профиле GitHub.
 :::
 
-## Клонируем созданный fork на локальный компьютер
+## 1.3. Клонируем созданный fork на локальный компьютер:
 
 ::: code-group
 
@@ -32,17 +32,17 @@ git clone git@github.com:USER/ALTRegularGnomeWiki.git
 
 `USER` — имя вашего пользователя GitHub.
 
-## Добавляем необходимую информацию и создаём commit
+## 2. Добавляем необходимую информацию и создаём commit.
 
-После того как вы добавили какую либо информация выполняем следующие команды.
+После того как вы добавили какую либо информация выполняем следующие команды:
 
-### Добавляем изменения в индекс git:
+### 2.1. Добавляем изменения в индекс git:
 
 ```shell
 git add *
 ```
 
-### Создаём commit:
+### 2.2. Создаём commit:
 
 ```shell
 git commit -m "commit message"
@@ -58,25 +58,25 @@ git commit -m "commit message"
 Удалено:
 :::
 
-### Отправляем изменения на GitHub:
+### 2.3. Отправляем изменения на GitHub:
 
 ```shell
 git push
 ```
 
-## Создаём pull request
+## 3. Создаём pull request
 
-### Возвращаемся в ваш fork на GitHub:
+### 3.1. Возвращаемся в ваш fork на GitHub:
 
 ![github_fork](/alteration/github_fork.png)
 
-### Выбираем `Contribute` и нажимаем `Open pull request`:
+### 3.2. Выбираем `Contribute` и нажимаем `Open pull request`:
 
 смотрим что нет никаких проблем и нажимаем `Create pull request`
 
 ![pr_no_error](/alteration/pr_no_error.png)
 
-### Заполняем необходимые поля и нажимаем `Create pull request`:
+### 3.3. Заполняем необходимые поля и нажимаем `Create pull request`:
 
 ![pr_create](/alteration/pr_create.png)
 

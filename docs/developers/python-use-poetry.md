@@ -4,6 +4,8 @@ Poetry — это инструмент управления зависимост
 
 ## Установка с официального сайта
 
+**Poetry** можно установить через терминал:
+
 ```shell
 curl -sSL https://install.python-poetry.org | python3 -
 ```

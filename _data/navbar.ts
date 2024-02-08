@@ -45,6 +45,7 @@ export const docs = [
             { text: 'Центр Приложений', link: '/gnome-software' },
             { text: 'Google Chrome', link: '/google-chrome' },
             { text: 'Kooha', link: '/kooha' },
+            { text: 'Lazarus', link: '/lazarus' },
             { text: 'Libreoffice', link: '/libreoffice' },
             { text: 'Loupe', link: '/loupe' },
             { text: 'Lunacy', link: '/lunacy' },
@@ -217,7 +218,6 @@ export const docs = [
             { text: 'Aurora SDK', link: '/aurora-sdk' },
             { text: 'Nodejs', link: '/nodejs' },
             { text: 'Podman', link: '/podman' },
-            { text: 'Lazarus', link: '/lazarus' },
           ],
           collapsed: true
         }

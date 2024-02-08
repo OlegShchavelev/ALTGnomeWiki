@@ -79,6 +79,7 @@ export default defineConfig({
     nav: [
       { text: 'Главная', link: '/' },
       { text: 'Документация', link: 'wiki' },
+      { text: 'Для авторов', link: '/reference/' },
       {
         text: 'Пролог',
         items: [

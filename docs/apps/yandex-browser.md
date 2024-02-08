@@ -200,31 +200,16 @@ epm play vdhcoapp=2.0.10
 
 Если вышел конфликт версий при установке с помощью ЕПМ, возможна такая ситуация, то делаем все **без ЕПМ** по шагам.
 
-```info
+:::info
 Ниже вариант предпочтительный
-```
+:::
 
 ```shell
 cd ~
-```
-
-```shell
 wget https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.10/vdhcoapp-2.0.10-linux-x86_64.tar.bz2
-```
-
-```shell
 tar xf vdhcoapp-2.0.10-linux-x86_64.tar.bz2 -C $HOME/.local/share/
-```
-
-```shell
 $HOME/.local/share/vdhcoapp-2.0.10/vdhcoapp install
-```
-
-```shell
 rm $HOME/.config/yandex-browser/NativeMessagingHosts/net.downloadhelper.coapp.json
-```
-
-```shell
 echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegcaeklhafolokijcfjliaokphfk/",\n"chrome-extension://pfoiagbblcbmognbkekfpodpidedkmcc/",\n"chrome-extension://jmkaglaafmhbcpleggkmaliipiilhldn/",\n"chrome-extension://fojefjolbhfidomcaelhceoldmmpcaga/"\n],\n  "name": "net.downloadhelper.coapp",\n"description": "Video DownloadHelper companion app",\n"path": "'$HOME'/.local/share/vdhcoapp-2.0.10/vdhcoapp"\n}' >> $HOME/.config/yandex-browser/NativeMessagingHosts/net.downloadhelper.coapp.json
 ```
 

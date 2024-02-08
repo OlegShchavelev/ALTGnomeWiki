@@ -1,12 +1,12 @@
 ---
 title: Google Chrome
 appstreamFlatpak: com.google.Chrome
-appsMetaWidgets:
+metainfo:
     active: true
     thumb:
         src: /google-chrome/com.google.Chrome.png
         title: Кассета
-    introtext: Веб-браузер от Google
+    summary: Веб-браузер от Google
     site:
         url: https://www.google.com/chrome/
         anchor: google.com

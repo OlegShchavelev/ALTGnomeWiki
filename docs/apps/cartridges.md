@@ -3,12 +3,15 @@ title: Картриджи
 appstreamRepo: hu.kramo.Cartridges
 appstreamFlatpak: hu.kramo.Cartridges
 
-appsMetaWidgets:
+metainfo:
     active: true
     thumb:
         src: /cartridges/hu.kramo.Cartridges.png
         title: Картриджи
-    introtext: Запускайте все свои игры
+    summary: Запускайте все свои игры
+    developer: 
+        name: kramo
+        avatar: https://avatars.githubusercontent.com/u/93832451?v=4
     site:
         url: https://github.com/kra-mo/cartridges/
         anchor: github.com
@@ -24,6 +27,7 @@ appsMetaWidgets:
     adaptive: true
     gnomeCore: false
     gnomeCircle: true
+    createTheme: true
     proprietary: false
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/cartridges/

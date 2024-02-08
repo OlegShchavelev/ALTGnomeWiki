@@ -16,7 +16,7 @@ apt-get update
 apt-get install timeshift
 ```
 ```shell[epm]
-epmi timeshift
+epm -i timeshift
 ```
 :::
 
@@ -33,6 +33,6 @@ apt-get update
 apt-get install grub-btrfs
 ```
 ```shell[epm]
-epmi grub-btrfs
+epm -i grub-btrfs
 ```
 :::

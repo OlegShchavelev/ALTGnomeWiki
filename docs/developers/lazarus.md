@@ -17,5 +17,5 @@ apt-get install lazarus fpc
 ```
 
 ```shell[epm]
-epmi lazarus fpc
+epm -i lazarus fpc
 ```

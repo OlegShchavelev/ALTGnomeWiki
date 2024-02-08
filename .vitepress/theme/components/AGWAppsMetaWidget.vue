@@ -3,8 +3,8 @@ import { type Ref, computed } from 'vue'
 import { DefaultTheme, useData } from 'vitepress'
 
 
-const {theme, frontmatter} = useData();
-const props = computed(() => frontmatter.value.appsMetaWidgets ?? theme.value.appsMetaWidgets ?? []);
+const { theme, frontmatter } = useData();
+const props = computed(() => frontmatter.value.metainfo ?? theme.value.metainfo ?? []);
 
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
@@ -14,21 +14,27 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 <template>
     <article v-if="props.active" class="AppsWidget">
         <figure class="figure" v-if="props.thumb && props.thumb.src">
-            <VPImage
-            :image="props.thumb.src"
-            :alt="props.thumb.title"
-            class="card-image"
-            />
+            <VPImage :image="props.thumb.src" :alt="props.thumb.title" class="card-image" />
             <img src="">
         </figure>
-        <div class="card-body">
-            <div class="card-title">{{ props.introtext }}</div>
-            <div v-if="props.adaptive || props.proprietary || props.gnomeCircle || props.gnomeCore" class="badges">
-            <Badge v-if="props.adaptive" type="tip">Адаптивный</Badge>
-            <Badge v-if="props.proprietary" type="danger">Проприетарный</Badge>
-            <Badge v-if="props.gnomeCircle" type="danger">GNOME Circle</Badge>
-            <Badge v-if="props.gnomeCore" type="info">GNOME Core</Badge>
-        </div>
+        <div class="body">
+            <div class="summary">{{ props.summary }}</div>
+            <div v-if="props.adaptive || props.proprietary || props.gnomeCircle || props.gnomeCore || props.createTheme" class="badges">
+                <Badge v-if="props.adaptive" type="tip">Адаптивный</Badge>
+                <Badge v-if="props.proprietary" type="danger">Проприетарный</Badge>
+                <Badge v-if="props.gnomeCircle" type="success">GNOME Circle</Badge>
+                <Badge v-if="props.gnomeCore" type="info">GNOME Core</Badge>
+                <Badge v-if="props.createTheme" type="success-1">Please don’t theme</Badge>
+            </div>
+            <div v-if="props.developer && props.developer.name" class="developers">
+                <figure v-if="props.developer && props.developer.avatar" class="avatar">
+                    <VPImage :image="props.developer.avatar" :alt="props.developer.name" class="avatar-developer" />
+                </figure>
+                <div>
+                    <div class="caption">Разработчик</div>
+                    <div class="name">{{ props.developer.name }}<span class="nickname">{{ props.developer.nickname }}</span></div>
+                </div>
+            </div>
         </div>
         <dl>
             <dt v-if="props.licence && props.licence.url">Лицензия</dt>
@@ -57,9 +63,12 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
             </dd>
         </dl>
         <div class="footet">
-            <a target="_blank" v-if="props.sponsor && props.sponsor.url" :href="props.sponsor.url" class="link-gnome-sponsor">Поддержать автора</a>
-            <a target="_blank" v-if="props.sisyphus && props.sisyphus.url" :href="props.sisyphus.url" class="link-gnome-sisyphus">Сизиф</a>
-            <a target="_blank" v-if="props.flathub && props.flathub.url" :href="props.flathub.url" class="link-gnome-flathub">Flathub</a>
+            <a target="_blank" v-if="props.sponsor && props.sponsor.url" :href="props.sponsor.url"
+                class="link-gnome-sponsor">Поддержать автора</a>
+            <a target="_blank" v-if="props.flathub && props.flathub.url" :href="props.flathub.url"
+                class="link-gnome-flathub">Flathub</a>
+            <a target="_blank" v-if="props.sisyphus && props.sisyphus.url" :href="props.sisyphus.url"
+                class="link-gnome-sisyphus">Сизиф</a>
         </div>
     </article>
 </template>
@@ -72,17 +81,18 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
     margin-top: 24px;
 }
 
-.card-title {
+.summary {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.card-title:last-child, .card-title:only-child {
+.summary:last-child,
+.summary:only-child {
     margin-bottom: 0;
 }
 
-.card-body {
+.body {
     padding: 16px;
 }
 
@@ -91,15 +101,16 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 }
 
 .figure {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
 }
 
 .badges {
-    display: inline-flex;
-    gap: 2px
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
 }
 
 .VPBadge {
@@ -108,23 +119,58 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
     margin-left: 0;
 }
 
+
+
+.developers {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+}
+
+.developers .avatar {
+    width: 48px;
+    height: 48px;
+}
+
+.avatar {
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 50%;
+    box-shadow: var(--vp-shadow-3);
+}
+
+.nickname {
+    display: block;
+    font-size: 11px;
+    color: var(--vp-c-text-3);
+    font-weight: 500;
+}
+
+.name {
+    line-height: 1.5;
+}
+
 dl {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-dt {
+dt, .developers .caption {
     font-size: 12px;
     color: var(--vp-c-text-2);
     font-weight: 500;
 }
 
-dd {
+dd, .developers .name {
     margin-left: 0;
     font-size: 14px;
     padding-bottom: 8px;
     margin-bottom: 8px;
 
+}
+.developers .name:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 dd:not(:last-child) {
@@ -211,4 +257,5 @@ dd {
 .link-gnome-flathub:hover {
     background-color: var(--vp-c-blue-darker);
     color: #fff;
-}</style>
+}
+</style>

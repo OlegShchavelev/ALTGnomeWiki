@@ -187,3 +187,25 @@
  .AppsWidget:hover .card-image {
   filter: grayscale(0) invert(0);
  }
+
+ .avatar-developer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+ .VPBadge.success {
+  border-color: transparent;
+  color: var(--vp-c-success-1);
+  background-color: var(--vp-c-success-soft);
+}
+
+.VPBadge.success-1 {
+  border-color: transparent;
+  color: var(--vp-c-white);
+  background-color: var(--vp-c-success-2);
+}

@@ -171,5 +171,12 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/vlad196' }
       ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/48821354?v=4',
+      name: 'Жора Змейкин',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Katze-942' }
+      ],
     },
   ]

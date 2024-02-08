@@ -2,12 +2,16 @@
 title: Cassette
 appstreamRepo: io.github.Rirusha.Cassette
 appstreamFlatpak: io.github.Rirusha.Cassette
-appsMetaWidgets:
+metainfo:
     active: true
     thumb:
         src: /casseta/io.github.Rirusha.Cassette.png
         title: Кассета
-    introtext: Неофициальный клиент Яндекс Музыки
+    summary: Неофициальный клиент Яндекс Музыки
+    developer: 
+        name: Владимир Васьков
+        nickname: Rirusha
+        avatar: https://avatars.githubusercontent.com/u/95986183?v=4
     site:
         url: https://github.com/Rirusha/Cassette
         anchor: github.com
@@ -20,6 +24,7 @@ appsMetaWidgets:
     adaptive: false
     gnomeCore: false
     gnomeCircle: false
+    createTheme: true
     proprietary: false
     sponsor: 
         url: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/

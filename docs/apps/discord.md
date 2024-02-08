@@ -1,12 +1,12 @@
 ---
 title: Discord
 appstreamFlatpak: com.discordapp.Discord
-appsMetaWidgets:
+metainfo:
     active: true
     thumb:
         src: /discord/com.discordapp.Discord.png
         title: Discord
-    introtext: Клиент для обмена сообщениями, аудио и видеосвязи
+    summary: Клиент для обмена сообщениями, аудио и видеосвязи
     site:
         url: https://discord.com/
         anchor: discord.com

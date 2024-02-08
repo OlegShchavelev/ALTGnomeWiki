@@ -2,12 +2,16 @@
 title: Flatseal
 appstreamRepo: com.github.tchx84.Flatseal
 appstreamFlatpak: com.github.tchx84.Flatseal
-appsMetaWidgets:
+metainfo:
     active: true
     thumb:
         src: /flatseal/com.github.tchx84.Flatseal.png
         title: Кассета
-    introtext: Управление разрешениями Flatpak
+    summary: Управление разрешениями Flatpak
+    developer: 
+        name: Martin Abente Lahaye
+        avatar: https://avatars.githubusercontent.com/u/481418?v=4
+        nickname: tchx84
     site:
         url: https://github.com/tchx84/flatseal
         anchor: github.com
@@ -22,10 +26,8 @@ appsMetaWidgets:
         anchor: github.com
     adaptive: false
     gnomeCircle: false
-    sponsor: 
-        url:
-    flathub:
-        url:
+    flathub: 
+        url: https://flathub.org/apps/com.github.tchx84.Flatseal
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/flatseal/
 ---

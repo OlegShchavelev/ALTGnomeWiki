@@ -6,7 +6,7 @@ metainfo:
     thumb:
         src: /spotify/com.spotify.Client
         title: Spotify
-    summary: Музыкальный стриминговый сервис
+    summary: Музыкальный стриминговый сервис.
     developer: 
         name: Spotify Technology S.A.
         avatar: https://avatars.githubusercontent.com/u/251374?s=200&v=4
@@ -36,9 +36,9 @@ metainfo:
 
 Spotify — стриминговый сервис, позволяющий легально прослушивать музыкальные композиции, аудиокниги и подкасты, не скачивая их на устройство.
 
-## Установка из репозитрия
+## Установка с помощью Flatpak
 
-**Устаночка Spotify с помощью [Flatpak](/flatpak):**
+При наличии пакета [Flatpak](/flatpak) **Spotify** можно установить комадой:
 
 ```shell[flatpak]
 flatpak install flathub com.spotify.Client

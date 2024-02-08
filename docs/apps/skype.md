@@ -19,7 +19,7 @@ flatpak install flathub com.skype.Client
 
 ## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 
-При наличии пакета [epm](/epm), можно установить **Skype** одной командой:
+При наличии пакета [eepm](/epm), можно установить **Skype** одной командой:
 
 ```shell
 epm play skype

@@ -178,5 +178,13 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/Katze-942' }
       ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/55319144?v=4',
+      name: 'Khachatur Tonikyan',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/feyte11' }
+      ],
     },
+
   ]

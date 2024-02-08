@@ -20,7 +20,7 @@ cargo add libadwaita --rename adw --features gtk_v4_10
 vscodium .
 ```
 
-### Вставляем следующий код в файл main.rc:
+### Вставляем следующий код в файл main.rs:
 
 ```rust
 use adw::prelude::*;

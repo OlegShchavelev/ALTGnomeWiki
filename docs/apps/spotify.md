@@ -1,11 +1,38 @@
 ---
 title: Spotify
 appstreamFlatpak: org.spotify.Client
+metainfo:
+    active: true
+    thumb:
+        src: /spotify/com.spotify.Client
+        title: Spotify
+    summary: Музыкальный стриминговый сервис
+    developer: 
+        name: Spotify Technology S.A.
+        avatar: https://avatars.githubusercontent.com/u/251374?s=200&v=4
+    site:
+        url: https://www.spotify.com/
+        anchor: spotify.com
+    licence:
+        url: https://choosealicense.com/licenses/cc0-1.0/
+        anchor: CC0-1.0
+    translate:
+        url: 
+        anchor: hosted.weblate.org
+    issue: 
+        url: https://community.spotify.com/t5/Desktop-Linux/bd-p/desktop_linux
+        anchor: community.spotify.com
+    restrictions: true
+    proprietary: true
+    sisyphus:
+        url: 
+    flathub:
+        url: https://flathub.org/ru/apps/org.spotify.Client
 ---
 
 
 
-# Spotify <Badge type="warning" text="Недоступно в РФ"/>
+# Spotify
 
 Spotify — стриминговый сервис, позволяющий легально прослушивать музыкальные композиции, аудиокниги и подкасты, не скачивая их на устройство.
 

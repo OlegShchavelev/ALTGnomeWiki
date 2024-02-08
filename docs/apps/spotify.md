@@ -1,15 +1,19 @@
-# Spotify
+---
+title: Spotify
+appstreamFlatpak: org.spotify.Client
+---
+
+
+
+# Spotify <Badge type="warning" text="Недоступно в РФ"/>
 
 Spotify — стриминговый сервис, позволяющий легально прослушивать музыкальные композиции, аудиокниги и подкасты, не скачивая их на устройство.
 
-# Установка
-Установить **Spotify** можно с помощью [Flatpak](/flatpak):
+## Установка из репозитрия
 
-```shell
+**Устаночка Spotify с помощью [Flatpak](/flatpak):**
+
+```shell[flatpak]
 flatpak install flathub com.spotify.Client
 ```
-
-# Использование
-Для того, чтобы использовать Spotify в России, вы должны:
-- Иметь аккаунт с любым другим регионом, кроме Российского или создать аккаунт с любым регионом, кроме Российского
-- Использовать любой VPN или прокси
+<!--@include: ./parts/install/software-flatpak.md-->

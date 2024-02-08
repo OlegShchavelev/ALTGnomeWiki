@@ -2,8 +2,7 @@ import { defineConfig } from 'vitepress'
 import { telegram, gitflic, vk } from './icons'
 import * as seo from './../_data/seo'
 import * as navbar from './../_data/navbar'
-import { normalize } from 'vitepress/dist/client/shared'
-import type MarkdownIt from 'markdown-it'
+import { normalize } from './utils'
 import kbd from 'markdown-it-kbd'
 import taskLists from 'markdown-it-task-lists'
 import { rewrites } from './paths'
@@ -134,7 +133,7 @@ export default defineConfig({
     },
     footer: {
       message: 'Содержание доступно <a href="/licence.html">по лицензии MIT</a>',
-      copyright: '2024 ALT Gnome Wiki, разработано на платформе <a href="//vitepress.dev/">VitePress 1.0.0-rc.41</a>'
+      copyright: '2024 ALT Gnome Wiki, разработано на платформе <a href="//vitepress.dev/">VitePress 1.0.0-rc.42</a>'
     }
   },
   rewrites: rewrites,

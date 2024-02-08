@@ -65,6 +65,7 @@ export const docs = [
             { text: 'Сканер документов', link: '/simple-scan' },
             { text: 'Skype', link: '/skype' },
             { text: 'Speedtest CLI', link: '/speedtest-cli' },
+            { text: 'Spotify', link:'/spotify' },
             { text: 'Steam', link: '/steam' },
             { text: 'Telegram', link: '/telegram' },
             { text: 'Timeshift', link: '/timeshift' },

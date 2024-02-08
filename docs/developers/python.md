@@ -12,6 +12,7 @@ Python — интерпретируемый высокоуровневый яз�
 su -
 apt-get update
 apt-get install gcc-c++ zlib-devel libssl-devel libsqlite3-devel libffi-devel
+exit
 ```
 ```shell[epm]
 epm -i gcc-c++ zlib-devel libssl-devel libsqlite3-devel libffi-devel
@@ -32,8 +33,8 @@ tar zxvf Python-VERSION.tgz
 
 | Стабильные версии |
 | :---------------: |
-|      3.12.1       |
-|      3.11.7       |
+|      3.12.2       |
+|      3.11.8       |
 |      3.10.13      |
 |      3.9.18       |
 
@@ -47,6 +48,7 @@ make
 make install
 make clean
 rm -rf /home/USER/Загрузки/Python-VERSION
+exit
 ```
 
 `USER` — имя вашего пользователя. \
@@ -67,6 +69,7 @@ rm -rf /home/USER/Загрузки/Python-VERSION
 su -
 apt-get update
 apt-get install pip
+exit
 ```
 ```shell[epm]
 epm -i pip

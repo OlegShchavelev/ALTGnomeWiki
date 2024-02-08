@@ -2,7 +2,6 @@
 title: Картриджи
 appstreamRepo: hu.kramo.Cartridges
 appstreamFlatpak: hu.kramo.Cartridges
-
 metainfo:
     active: true
     thumb:
@@ -25,10 +24,7 @@ metainfo:
         url: https://github.com/kra-mo/cartridges/issues
         anchor: github.com
     adaptive: true
-    gnomeCore: false
     gnomeCircle: true
-    createTheme: true
-    proprietary: false
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/cartridges/
     flathub:

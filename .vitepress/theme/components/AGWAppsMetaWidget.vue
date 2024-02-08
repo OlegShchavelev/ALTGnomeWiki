@@ -19,12 +19,13 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
         </figure>
         <div class="body">
             <div class="summary">{{ props.summary }}</div>
-            <div v-if="props.adaptive || props.proprietary || props.gnomeCircle || props.gnomeCore || props.createTheme" class="badges">
+            <div v-if="props.adaptive || props.proprietary || props.gnomeCircle || props.gnomeCore || props.createTheme || props.restrictions" class="badges">
                 <Badge v-if="props.adaptive" type="tip">Адаптивный</Badge>
                 <Badge v-if="props.proprietary" type="danger">Проприетарный</Badge>
                 <Badge v-if="props.gnomeCircle" type="success">GNOME Circle</Badge>
                 <Badge v-if="props.gnomeCore" type="info">GNOME Core</Badge>
                 <Badge v-if="props.createTheme" type="success-1">Please don’t theme</Badge>
+                <Badge v-if="props.restrictions" type="danger">Региональные ограничения</Badge>
             </div>
             <div v-if="props.developer && props.developer.name" class="developers">
                 <figure v-if="props.developer && props.developer.avatar" class="avatar">

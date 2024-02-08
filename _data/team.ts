@@ -180,7 +180,7 @@ export const contributions = [
       ],
     }, {
       avatar: 'https://avatars.githubusercontent.com/u/55319144?v=4',
-      name: 'Khachatur Tonikyan',
+      name: 'Хачатур Тоникян',
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/feyte11' }

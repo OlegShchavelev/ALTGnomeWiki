@@ -40,7 +40,15 @@ Spotify — стриминговый сервис, позволяющий лег
 
 При наличии пакета [Flatpak](/flatpak) **Spotify** можно установить комадой:
 
-```shell[flatpak]
+```shell
 flatpak install flathub com.spotify.Client
 ```
 <!--@include: ./parts/install/software-flatpak.md-->
+
+## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
+
+При наличии пакета [eepm](/epm), можно установить **Spotify** одной командой:
+
+```shell
+epm play spotify
+```

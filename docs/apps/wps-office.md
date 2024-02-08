@@ -3,12 +3,12 @@ title: WPS Office
 appstreamRepo: com.wps.Office
 appstreamFlatpak: com.wps.Office
 
-appsMetaWidgets:
+metainfo:
     active: true
     thumb:
         src: /wps-office/wps-office-free-all-in-one-office-suite.d880717.png
         title: WPS Office
-    introtext: Универсальный пакет Office приложений
+    summary: Универсальный пакет Office приложений
     site:
         url: https://www.wps.com/ru-RU/
         anchor: wps.com

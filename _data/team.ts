@@ -171,5 +171,21 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/vlad196' }
       ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/48821354?v=4',
+      name: 'Жора Змейкин',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Katze-942' }
+      ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/55319144?v=4',
+      name: 'Хачатур Тоникян',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/feyte11' }
+      ],
+      sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/tonikyan.khachatur1/4ijqV39898/?short_link=93LEZqrEeY7&httpMethod=GET'
     },
+
   ]

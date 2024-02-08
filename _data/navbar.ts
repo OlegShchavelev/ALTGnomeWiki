@@ -240,7 +240,9 @@ export const docs = [
 export const reference = [
     {
       text: 'Для авторов',
+      link: '/reference/',
       items: [
+        { text: 'Возможности VitePress', link: '/reference/vitepress' },
         { text: 'Внесение изменений', link: '/reference/alteration' }
       ]
     }

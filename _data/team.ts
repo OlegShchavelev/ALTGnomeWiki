@@ -185,6 +185,7 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/feyte11' }
       ],
+      sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/tonikyan.khachatur1/4ijqV39898/?short_link=93LEZqrEeY7&httpMethod=GET'
     },
 
   ]

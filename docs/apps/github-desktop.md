@@ -5,7 +5,7 @@ appstreamFlatpak: io.github.shiftey.Desktop
 
 # GitHub Desktop
 
-GitHub Desktop — это приложение предоставляющее графический интерфейс для управления репозиториями Git.
+GitHub Desktop — приложение предоставляющее графический интерфейс для управления репозиториями Git.
 
 ## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
 

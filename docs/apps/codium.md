@@ -5,7 +5,7 @@ appstreamFlatpak: com.vscodium.codium
 
 # VSCodium
 
-VSCodium — это управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VS Code.
+VSCodium — управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VS Code.
 
 ## Установка из репозитория
 

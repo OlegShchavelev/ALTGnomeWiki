@@ -1,6 +1,6 @@
 # Alacarte
 
-Alacarte — это редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+Alacarte — редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
 
 ## Установка из репозитория
 

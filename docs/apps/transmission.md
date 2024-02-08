@@ -6,7 +6,7 @@ appstreamFlatpak: com.transmissionbt.Transmission
 
 # Transmission
 
-Transmission — это быстрый, простой и бесплатный клиент BitTorrent. 
+Transmission — быстрый, простой и бесплатный клиент BitTorrent. 
 
 ## Установка из репозитория 
 

@@ -1,10 +1,10 @@
 ---
 title: Spotify
-appstreamFlatpak: org.spotify.Client
+appstreamFlatpak: com.spotify.Client
 metainfo:
     active: true
     thumb:
-        src: /spotify/com.spotify.Client
+        src: /spotify/com.spotify.Client.png
         title: Spotify
     summary: Музыкальный стриминговый сервис.
     developer: 
@@ -27,7 +27,7 @@ metainfo:
     sisyphus:
         url: 
     flathub:
-        url: https://flathub.org/ru/apps/org.spotify.Client
+        url: https://flathub.org/ru/apps/com.spotify.Client
 ---
 
 

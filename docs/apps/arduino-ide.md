@@ -10,7 +10,6 @@ metainfo:
     summary: Платформа для прототипирования электроники с открытым исходным кодом.
     developer: 
         name: Arduino LLC
-        avatar: https://avatars.githubusercontent.com/u/379109?s=200&v=4
     site:
         url: https://arduino.cc
         anchor: arduino.cc
@@ -22,11 +21,11 @@ metainfo:
         anchor: hosted.weblate.org
     issue: 
         url: https://github.com/arduino/Arduino/issues
-        anchor: github.com/arduino/Arduino/issues
+        anchor: github.com/arduino
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/arduino/
     flathub:
-        url: https://flathub.org/ru/apps/com.spotify.Client
+        url: https://flathub.org/ru/apps/cc.arduino.arduinoide
 ---
 
 # Arduino IDE
@@ -35,7 +34,11 @@ Arduino IDE — интегрированная среда разработки �
 
 ## Установка из репозитория
 
-**Arduino IDE** можно установить через терминал:
+**Arduino IDE** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
+
+**Установка через терминал**
 
 ::: code-group
 
@@ -49,7 +52,6 @@ apt-get install arduino
 epm -i arduino
 ```
 :::
-<!--@include: ./parts/install/software-repo.md-->
 
 ## Установка с помощью Flatpak
 
@@ -59,7 +61,6 @@ epm -i arduino
 flatpak install flathub cc.arduino.arduinoide
 ```
 
-<!--@include: ./parts/install/software-flatpak.md-->
 
 ## Издания Arduino IDE
 

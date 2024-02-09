@@ -10,7 +10,6 @@ metainfo:
     summary: Запускайте все свои игры
     developer: 
         name: kramo
-        avatar: https://avatars.githubusercontent.com/u/93832451?v=4
     site:
         url: https://github.com/kra-mo/cartridges/
         anchor: github.com
@@ -40,6 +39,7 @@ metainfo:
 **Картриджи** можно установить любым привычным и удобным способом:
 
 <!--@include: ./parts/install/software-repo.md-->
+
 
 **Установка через терминал**
 

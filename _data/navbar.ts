@@ -172,7 +172,8 @@ export const docs = [
             { text: 'Just Perfection', link: '/just-perfection' },
             { text: 'OSD Volume Number', link: '/osd-volume-number' },
             { text: 'Dash to Dock', link: '/dash-to-dock' },
-            { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' }
+            { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' },
+            { text: 'GSConnect', link: '/gsconnect' }
           ],
           collapsed: true
         },

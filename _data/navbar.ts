@@ -202,6 +202,10 @@ export const docs = [
       {
         text: 'Разработка',
         items: [
+          { text: 'Aurora SDK', link: '/aurora-sdk' },
+          { text: 'Nodejs', link: '/nodejs' },
+          { text: 'PHP', link: '/php' },
+          { text: 'Podman', link: '/podman' },
           {
             text: 'Python',
             link: '/python',
@@ -217,10 +221,7 @@ export const docs = [
               { text: 'приложение на GTK4', link: 'rust-gtk4-applications' }
             ],
             collapsed: true
-          },
-          { text: 'Aurora SDK', link: '/aurora-sdk' },
-          { text: 'Nodejs', link: '/nodejs' },
-          { text: 'Podman', link: '/podman' },
+          }
         ],
         collapsed: true
       }

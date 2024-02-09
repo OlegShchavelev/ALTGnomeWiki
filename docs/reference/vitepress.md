@@ -92,7 +92,7 @@ VitePress использует [markdown-it](https://github.com/markdown-it/mark
 
 [[toc]]
 
-## медиа контент
+## Медиа-контент
 
 **Пример:** 
 

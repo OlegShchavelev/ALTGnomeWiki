@@ -1,6 +1,6 @@
 # Citrix Workspace
 
-Приложение Citrix Workspace — это клиентский компонент XenDesktop и XenApp, разработанный Citrix Systems.
+Приложение Citrix Workspace — клиентский компонент XenDesktop и XenApp, разработанный Citrix Systems.
 
 ## Получение дистрибутива
 

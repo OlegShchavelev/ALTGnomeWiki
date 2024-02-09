@@ -55,7 +55,7 @@ apt-get install sane-airscan
 ```
 
 ```shell[epm]
-epmi sane-airscan
+epm -i sane-airscan
 ```
 
 

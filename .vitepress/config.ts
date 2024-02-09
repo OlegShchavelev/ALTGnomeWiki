@@ -79,14 +79,8 @@ export default defineConfig({
     nav: [
       { text: 'Главная', link: '/' },
       { text: 'Документация', link: 'wiki' },
-      {
-        text: 'Пролог',
-        items: [
-          { text: 'О проекте', link: 'about' },
-          { text: 'Возможности VitePress', link: 'vitepress' },
-          { text: 'Внесение изменений', link: '/reference/alteration' }
-        ]
-      }
+      { text: 'Для авторов', link: '/reference/' },
+      { text: 'О проекте', link: 'about' },
     ],
     sidebar: {'/': navbar.docs , '/reference/' : navbar.reference},
     socialLinks: [

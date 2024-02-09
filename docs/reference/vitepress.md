@@ -26,6 +26,22 @@ VitePress использует [markdown-it](https://github.com/markdown-it/mark
 ### Произвольный анкор {#my-anchor}
 ```
 
+## Ссылки
+
+**Пример:**
+
+```markdown
+[ссылка на внутреннюю страницу](/flatpak)
+
+[ссылка на внешнюю страницу](https://alt-gnome.wiki)
+```
+
+**Вывод:**
+
+[ссылка на внутреннюю страницу](/flatpak)
+
+[ссылка на внешнюю страницу](https://alt-gnome.wiki)
+
 ## Таблицы
 
 Генерируйте таблицы в стиле GitHub.
@@ -68,13 +84,25 @@ VitePress использует [markdown-it](https://github.com/markdown-it/mark
 
 **Пример:**
 
-```
+```markdown
 [[toc]]
 ```
 
 **Вывод:**
 
 [[toc]]
+
+## медиа контент
+
+**Пример:** 
+
+```markdown
+![логотип](/logo.png)
+```
+
+**Вывод:**
+
+![логотип](/logo.png)
 
 ## Красивые уведомления
 
@@ -82,46 +110,46 @@ VitePress использует [markdown-it](https://github.com/markdown-it/mark
 
 ```markdown
 ::: info
-This is an info box.
+Это информационный блок.
 :::
 
 ::: tip
-This is a tip.
+Это совет.
 :::
 
 ::: warning
-This is a warning.
+это предупреждение об ошибке.
 :::
 
 ::: danger
-This is a dangerous warning.
+Это предупреждение об опасности
 :::
 
 ::: details
-This is a details block.
+Это блок сведений.
 :::
 ```
 
 **Вывод:**
 
 ::: info
-This is an info box.
+Это информационный блок.
 :::
 
 ::: tip
-This is a tip.
+Это совет.
 :::
 
 ::: warning
-This is a warning.
+это предупреждение об ошибке.
 :::
 
 ::: danger
-This is a dangerous warning.
+Это предупреждение об опасности.
 :::
 
 ::: details
-This is a details block.
+Это блок сведений.
 :::
 
 ## Уведомления с произвольными заголовками
@@ -130,11 +158,11 @@ This is a details block.
 
 ````markdown
 ::: info Произвольный заголовок
-This is an info box.
+Это информационный блок с произвольным заголовков.
 :::
 
 ::: danger Опасно
-This is a dangerous warning.
+Это предупреждение об опасности.
 :::
 
 ::: details Нажмите для отображения кода
@@ -147,15 +175,15 @@ console.log('Привет, VitePress!');
 **Вывод:**
 
 ::: info Произвольный заголовок
-This is an info box.
+Это информационный блок с произвольным заголовков.
 :::
 
 ::: danger Опасно
-This is a dangerous warning.
+Это предупреждение об опасности.
 :::
 
 ::: details Нажмите для отображения кода
-
 ```js
 console.log('Привет, VitePress!');
 ```
+:::

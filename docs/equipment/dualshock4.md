@@ -16,7 +16,7 @@ apt-get install ds4drv
 ```
 
 ```shell[epm]
-epmi ds4drv
+epm -i ds4drv
 ```
 
 :::

@@ -25,7 +25,7 @@ metainfo:
 
 # WPS Office
 
-WPS Office — это офисный пакет, разрабатываемый Kingsoft Office Software. Продукт предоставляет, пожалуй, лучшую совместимость с файлами Microsoft Office.
+WPS Office — офисный пакет, разрабатываемый Kingsoft Office Software. Продукт предоставляет, пожалуй, лучшую совместимость с файлами Microsoft Office.
 
 Имеет 3 модуля:
 - Document

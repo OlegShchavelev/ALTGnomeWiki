@@ -141,6 +141,7 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/ImCatCatcher' }
       ],
+      sponsor: 'https://www.tinkoff.ru/cf/53rijgvIPem'
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/57502877?v=4',
@@ -166,7 +167,7 @@ export const contributions = [
       ],
     }, {
       avatar: 'https://avatars.githubusercontent.com/u/65094576?v=4',
-      name: 'vlad196',
+      name: 'Владислав Бабенко',
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/vlad196' }

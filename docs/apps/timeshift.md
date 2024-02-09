@@ -36,3 +36,32 @@ apt-get install grub-btrfs
 epm -i grub-btrfs
 ```
 :::
+
+Чтобы автоматически обновлять меню grub при создании или удалении снимка grub-btrfs предоставляет демон, наблюдающий за каталогом снимков, и автоматически обновляющий меню grub.
+Для его конфигурации необходимо выполнить команду
+
+::: code-group
+
+```shell[apt-get]
+su -
+systemctl edit --full grub-btrfsd
+```
+:::
+
+В открывшемся конфигурационном файле нужно изменить строку
+
+ExecStart=/usr/bin/grub-btrfsd --syslog /.snapshots
+на
+ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
+и сохранить изменения.
+
+Настройка закончина. Теперь можно запустить демон.
+
+::: code-group
+
+```shell[apt-get]
+su -
+systemctl start grub-btrfsd
+systemctl enable grub-btrfsd
+```
+:::

@@ -23,7 +23,7 @@ epm -i timeshift
 ## Восстановление из Grub
 
 Если Вы используете файловую систему BTRFS, то рекомендуется установить пакет поддержки "отката" из Grub.
-В процессах обновления системы в Grub появится строчка **ALT snapshots**, либо **Sisyphus snapshots** в случае Gnome Regular
+В процессах обновления системы в Grub появится строчка **ALT snapshots**, либо **Sisyphus snapshots** в случае ALT Regular Gnome
 
 ::: code-group
 
@@ -38,30 +38,20 @@ epm -i grub-btrfs
 :::
 
 Чтобы автоматически обновлять меню grub при создании или удалении снимка grub-btrfs предоставляет демон, наблюдающий за каталогом снимков, и автоматически обновляющий меню grub.
-Для его конфигурации необходимо выполнить команду
+Для его конфигурации необходимо выполнить команду:
 
-::: code-group
-
-```shell[apt-get]
+```shell
 su -
 systemctl edit --full grub-btrfsd
 ```
-:::
 
-В открывшемся конфигурационном файле нужно изменить строку
-
-ExecStart=/usr/bin/grub-btrfsd --syslog /.snapshots
-на
-ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
-и сохранить изменения.
+В открывшемся конфигурационном файле нужно изменить строку `ExecStart=/usr/bin/grub-btrfsd --syslog /.snapshots` на `ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto`
+и сохранить изменения
 
 Настройка закончина. Теперь можно запустить демон.
 
-::: code-group
-
-```shell[apt-get]
+```shell
 su -
 systemctl start grub-btrfsd
 systemctl enable grub-btrfsd
 ```
-:::

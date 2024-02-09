@@ -7,7 +7,7 @@ metainfo:
     thumb:
         src: /audacity/org.audacityteam.Audacity.png
         title: Audacity
-    summary: Записывайте и редактируйте аудиофайлы.
+    summary: Записывайте и редактируйте аудиофайлы с Audacity
     developer: 
         name: Muse Group
         avatar: 

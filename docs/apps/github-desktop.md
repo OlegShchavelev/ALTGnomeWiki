@@ -1,6 +1,22 @@
 ---
 title: GitHub Desktop
 appstreamFlatpak: io.github.shiftey.Desktop
+metainfo:
+    active: true
+    thumb:
+        src: /github-desktop/io.github.shiftey.Desktop.png
+        title: Github Desktop
+    summary: Приложение для удобной работы с GitHub
+    developer: 
+        name: GitHub
+    site:
+        url: https://github.com/shiftkey/desktop#readme
+        anchor: github.com
+    licence:
+        url: https://mit-license.org/
+        anchor: MIT
+    flathub:
+        url: https://flathub.org/apps/io.github.shiftey.Desktop
 ---
 
 # GitHub Desktop

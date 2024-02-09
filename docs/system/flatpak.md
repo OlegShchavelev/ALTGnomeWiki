@@ -1,5 +1,5 @@
 # Flatpak
-Flatpak — это система для создания, распространения и запуска изолированных настольных приложений в Linux.
+Flatpak — система для создания, распространения и запуска изолированных настольных приложений в Linux.
 
 ## Установка из репозитория <Badge type="warning" text="sysphus" />
 **Flatpak** можно установить через терминал:
@@ -86,7 +86,7 @@ flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatp
 flatpak remote-delete flathub
 ```
 
-В данном случае, `flathub` — это локальное имя удаленного репозитория.
+В данном случае, `flathub` — локальное имя удаленного репозитория.
 
 ### Поиск приложений
 

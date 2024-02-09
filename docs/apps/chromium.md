@@ -1,6 +1,28 @@
 ---
 title: Chromium
 appstreamFlatpak: org.chromium.Chromium
+appstreamRepo: org.chromium.Chromium
+metainfo:
+    active: true
+    thumb:
+        src: /chromium/org.chromium.Chromium.png
+        title: Chromium
+    summary: Веб-браузер от Chromium Project
+    developer: 
+        name: The Chromium Authors
+    site:
+        url: https://www.chromium.org/Home
+        anchor: chromium.org
+    licence: 
+        url: https://github.com/chromium/chromium/blob/main/LICENSE
+        anchor: BSD 3-Clause
+    translate:
+        url: 
+        anchor: hosted.weblate.org
+    flathub:
+        url: https://flathub.org/apps/org.chromium.Chromium
+    sisyphus:
+        url: https://packages.altlinux.org/ru/sisyphus/srpms/chromium/
 ---
 
 # Chromium
@@ -9,7 +31,9 @@ Chromium — проект браузера с открытым исходным 
 
 ## Установка из репозитория
 
-**Chromium** можно установить через терминал:
+<!--@include: ./parts/install/software-repo.md-->
+
+**Установка через терминал**
 
 ::: code-group
 

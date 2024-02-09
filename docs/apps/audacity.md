@@ -15,14 +15,14 @@ metainfo:
         url: http://www.audacityteam.org/
         anchor: audacityteam.org
     licence:
-        url: https://choosealicense.com/licenses/GPL-3-0/
+        url: https://choosealicense.com/licenses/gpl-3.0/
         anchor: GPL-3.0
     translate:
         url: 
         anchor: hosted.weblate.org
     issue: 
         url: https://github.com/audacity/audacity/issues
-        anchor: github.com/audacity/audacity/issues
+        anchor: github.com
     sisyphus:
         url: https://packages.altlinux.org/ru/sisyphus/srpms/audacity/
     flathub:
@@ -37,6 +37,10 @@ Audacity — свободный многоплатформенный аудио�
 
 **Audacity** можно установить любым привычным и удобным способом:
 
+<!--@include: ./parts/install/software-repo.md-->
+
+**Установка через терминал**
+
 ::: code-group
 
 ```shell[apt-get]
@@ -49,7 +53,6 @@ apt-get install audacity
 epm -i audacity
 ```
 :::
-<!--@include: ./parts/install/software-repo.md-->
 
 ## Установка с помощью Flatpak
 

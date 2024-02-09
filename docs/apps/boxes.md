@@ -2,6 +2,30 @@
 title: Boxes
 appstreamRepo: org.gnome.Boxes
 appstreamFlatpak: org.gnome.Boxes
+metainfo:
+    active: true
+    thumb:
+        src: /boxes/org.gnome.Boxes.png
+        title: Boxes
+    summary: Виртуализация стала проще
+    developer: 
+        name: The GNOME Project
+    site:
+        url: https://gnomeboxes.org/
+        anchor: gnomeboxes.org
+    licence:
+        url: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ru.html#SEC1
+        anchor: LGPL-2.1
+    translate:
+        url: 
+        anchor: hosted.weblate.org
+    issue: 
+        url: https://gitlab.gnome.org/GNOME/gnome-boxes/issues
+        anchor: gitlab.gnome.org
+    flathub:
+        url: https://flathub.org/apps/org.gnome.Boxes
+    sisyphus:
+        url: https://packages.altlinux.org/ru/sisyphus/srpms/gnome-boxes/
 ---
 
 # Boxes
@@ -14,7 +38,8 @@ Boxes — официальная утилита для рабочего стол
 
 <!--@include: ./parts/install/software-repo.md-->
 
-**Установка c помощью терминала**
+
+**Установка через терминал**
 
 ::: code-group
 
@@ -27,6 +52,7 @@ apt-get install gnome-boxes
 epm -i gnome-boxes
 ```
 :::
+
 
 ## Установка c помощью Flatpak
 

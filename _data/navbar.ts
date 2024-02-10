@@ -247,9 +247,16 @@ export const reference = [
     link: '/',
     base: '/reference/',
     items: [
-      { text: 'Возможности VitePress', link: '/vitepress' },
-      { text: 'Внесение изменений', link: '/alteration' },
-      { text: 'Общие правила', link: '/general-rules'}
+      {
+        text: 'Создание страниц',
+        base: '/reference/pages/',
+        items: [
+          { text: 'Внесение изменений', link: '/alteration' },
+          { text: 'Возможности VitePress', link: '/vitepress' },
+          { text: 'Общие правила', link: '/general-rules'}
+        ],
+        collapsed: false
+      }
     ]
   }
 ]

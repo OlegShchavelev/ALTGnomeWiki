@@ -8,18 +8,20 @@
 
 Для перехода с nouveau на NVIDIA рекомендуется сначала обновить ядро:
 
+
 ```shell
 su -l root
 update-kernel
 ```
-Для вступление в силу необходимо перезагрузить операционную систему
+Для дальнейшей корректной установки проприетарных драйверов nvidia, **необходимо перезагрузить операционную систему**
 
 Установим проприетарный драйвера NVIDIA:
 
 ```shell
 su -l root
 rpm -e $(rpm -qf `modinfo -F filename nouveau`)
-apt-get install nvidia_glx_common && nvidia-install-driver
+apt-get install nvidia_glx_common
+nvidia-install-driver
 make-initrd
 ```
 
@@ -99,24 +101,13 @@ epm -i nvidia-settings
 
 Для каждого графического устройства NVIDIA существует свой диапазон поддерживаемых драйверов, конкретную информацию вы можете узнать на сайте производителя [Загрузка драйверов NVIDIA](https://www.nvidia.com/Download/Index.Aspx?lang=ru)
 
-```shell
-su -
-mcedit /etc/sysconfig/grub2
-```
-Добавляем в параметр `GRUB_CMDLINE_LINUX_DEFAULT` значение `nvidia-drm.modeset=1` и сохраняем:
-
-```shell
-su -
-grub-mkconfig -o /boot/grub/grub.cfg
-ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
-```
-Активируем интерфейсы управления питания nvidia. Помимо предотвращения проблем с сохранением видеопамяти при входе в спящий режим и гибернизации [(см. источник)](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/powermanagement.html), активация этих интерфейсов необходима для [правил](https://gitlab.gnome.org/GNOME/gdm/-/blob/main/data/61-gdm.rules.in#L51) разрешения протокола wayland на GDM.(Чтобы wayland режим был доступен при выборе сессии)
+Активируем интерфейсы управления питания nvidia. Эти интерфейсы необходимы для предотвращения проблем с сохранением видеопамяти при входе в спящий режим и гибернизации. [(см. источник)](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/powermanagement.html)
 
 ```shell
 su -
 systemctl enable nvidia-suspend.service nvidia-resume.service nvidia-hibernate.service
 ```
-В опциях драйверов nvidia указываем о смене способа сохранения видеопамяти.
+В опциях драйверов nvidia указываем о смене способа сохранения видеопамяти:
 
 ```shell
 su -
@@ -126,10 +117,28 @@ options nvidia NVreg_TemporaryFilePath=/run
 _EOF_
 ```
 ::: tip
-Для сохранения видеопамяти важно, чтобы файловая система имела поддержку безымянный временных файлов и имела достаточный объём для сохранения видеопамяти. Объём, равный сумме всей видеопамяти + 5% от неё, будет вполне достаточно для её сохранения. 
+Для сохранения видеопамяти важно, чтобы файловая система имела поддержку безымянных временных файлов и имела достаточный объём для сохранения видеопамяти. Объём, равный сумме всей видеопамяти + 5% от неё, будет вполне достаточно для её сохранения. 
 :::
 
 Перезагружаем операционную систему, в интерфейсе выбора сессий появится дополнительные пункты для входа в Xorg, выберите в списке сессию GNOME.
+
+**Решение проблем с протоколом wayland**
+
+Если, по каким-то причинам сессия с wayland протоколом не появляется(нет явных пунктов с Xorg), его можно принудительно включить в GDM через маскирование [правил](https://gitlab.gnome.org/GNOME/gdm/-/blob/main/data/61-gdm.rules.in#L51).
+
+```
+su -
+ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
+```
+
+Для драйверов версии 545 и выше, нет необходимости указывать modeset в параметрах ядра. Эта настройка будет правильно установлена вместе с установкой самих драйверов.(Настройка будет установлена в/etc/modprobe.d/nvidia_common.conf)
+Если у вас версия драйвера ниже 545, или же вы решили откатить до более ранней версии, добавляем в параметр `GRUB_CMDLINE_LINUX_DEFAULT` значение `nvidia-drm.modeset=1` и сохраняем:
+
+```shell
+su -
+mcedit /etc/sysconfig/grub2
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 ::: warning Для пользователей Macbook
 Wayland не работает без `nvidia-drm.modeset=1`, а modeset не работает на драйверах младше 400-ой серии

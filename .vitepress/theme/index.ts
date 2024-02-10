@@ -12,6 +12,7 @@ import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import AGWHomeContents from './components/AGWHomeContents.vue'
 import AGWMetaBars from './components/AGWAppsMetaWidget.vue'
+import AGWDOCSCategories from './components/AGWDocsCategories.vue'
 
 import './style.css'
 import './custom.css'
@@ -26,7 +27,8 @@ export default {
       'home-features-after': () => h(AGWHomeContents),
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu), 
-      'aside-outline-after': () => h(AGWMetaBars)
+      'aside-outline-after': () => h(AGWMetaBars),
+      'doc-footer-before': () => h(AGWDOCSCategories)
     })
   },
   enhanceApp({ app, router, siteData }) {

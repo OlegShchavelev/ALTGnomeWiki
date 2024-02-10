@@ -50,7 +50,7 @@ exit
 oleg alt-gnome=(ALL) ALL
 ```
 
-Разрешить определенные комманды (apt-get, rpm, fdisk) для пользователя `oleg` на устройстве `localhost`
+Разрешить определенные комманды (apt-get, rpm, fdisk) для пользователя `oleg` на устройстве `alt-gnome`
 
 ```shell
 oleg alt-gnome=(ALL) /usr/bin/apt-get,/usr/bin/rpm,/sbin/fdisk
@@ -62,13 +62,17 @@ oleg alt-gnome=(ALL) /usr/bin/apt-get,/usr/bin/rpm,/sbin/fdisk
 WHEEL_USERS ALL=(ALL) ALL
 ```
 
-Создадим правило в файле `10-oleg` размещенный в директории `/etc/sudoers.d/`:
+Создадим правило в файле `10-oleg` и сохраним в директории `/etc/sudoers.d/`:
 
 ```shell
 su -
 echo "oleg alt-gnome=(ALL) ALL" >> /etc/sudoers.d/10-oleg
 exit
 ```
+
+:::info
+Мы рекомендуем называть файл, к примеру правило для конкретного пользователя или конкретной группы, то название файла: `10-artem`, `20-luba`, `30-developers`. Обратите внимание, что в мануале используется имя пользователя и имя устройства автора статьи, **незабудьте поменять на свои значения** 
+:::
 
 Проверим, результат, наберем `sudo -l`, необходимо вывести пароль для подтверждение операции: 
 

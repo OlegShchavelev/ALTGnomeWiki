@@ -42,6 +42,19 @@ VitePress использует [markdown-it](https://github.com/markdown-it/mark
 
 [ссылка на внешнюю страницу](https://alt-gnome.wiki)
 
+## Frontmatter
+
+[YAML frontmatter](https://jekyllrb.com/docs/front-matter/) доступен из коробки.
+
+```yaml
+---
+title: YAML frontmatter
+platform: VitePress
+---
+```
+
+Эти переменные доступны в остальной часть страницы.
+
 ## Таблицы
 
 Генерируйте таблицы в стиле GitHub.

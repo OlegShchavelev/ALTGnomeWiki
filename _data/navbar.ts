@@ -256,6 +256,14 @@ export const reference = [
           { text: 'Общие правила', link: '/general-rules'}
         ],
         collapsed: false
+      },
+      {
+        text: 'Структура',
+        base: '/reference/structure/',
+        items: [
+          { text: 'Страница приложения', link: '/app'}
+        ],
+        collapsed: false
       }
     ]
   }

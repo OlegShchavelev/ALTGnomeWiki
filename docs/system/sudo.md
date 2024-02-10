@@ -50,7 +50,7 @@ exit
 oleg alt-gnome=(ALL) ALL
 ```
 
-Разрешить определенные комманды (apt-get, rpm, fdisk) для пользователя `user` на устройстве `localhost`
+Разрешить определенные комманды (apt-get, rpm, fdisk) для пользователя `oleg` на устройстве `localhost`
 
 ```shell
 oleg alt-gnome=(ALL) /usr/bin/apt-get,/usr/bin/rpm,/sbin/fdisk

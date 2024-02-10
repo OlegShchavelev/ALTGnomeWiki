@@ -236,6 +236,7 @@ export const docs = [
     items: [
       { text: 'APT', link: '/apt-get' },
       { text: 'Сизиф', link: '/sisyphus' },
+      { text: 'Sudo', link: '/sudo' },
       { text: 'Ядро', link: '/kernel' },
       { text: 'EPM', link: '/epm' },
       { text: 'Flatpak', link: '/flatpak' },

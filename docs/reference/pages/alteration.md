@@ -10,7 +10,7 @@
 
 ![github_main](/alteration/github_main.png)
 
-### 1.2. Переходим на вкладку Fork и нажимаем `Create fork`:
+### 1.2. Переходим на вкладку Fork и нажимаем [[Create fork]]:
 
 ![github_fork_create](/alteration/github_fork_create.png)
 
@@ -34,24 +34,41 @@ git clone git@github.com:USER/ALTRegularGnomeWiki.git
 
 ## 2. Добавляем необходимую информацию и создаём commit.
 
-После того как вы добавили какую либо информация выполняем следующие команды:
+После того как добавили желаемую информацию выполняем следующие команды:
 
 ### 2.1. Добавляем изменения в индекс git:
+
+Через терминал:
 
 ```shell
 git add *
 ```
 
+Через VSCodium:
+
+Нажимаем [[+]] около имени файла
+
+![indexing_via_vscodium](/alteration/indexing_via_vscodium.png)
+
 ### 2.2. Создаём commit:
+
+Через терминал:
 
 ```shell
 git commit -m "commit message"
 ```
-
 Замените `commit message` на описание ваших изменений.
 
+Через VSCodium:
+
+Добавляем описание и нажимаем [[Фиксация]]
+
+![indexing_via_vscodium](/alteration/indexing_via_vscodium.png)
+
 :::info
-Мы рекомендуем следующие приставки к описанию:
+Описание необходимо писать на русском языке.
+
+Также мы рекомендуем следующие приставки:
 
 Добавлено: \
 Обновлено: \
@@ -60,9 +77,17 @@ git commit -m "commit message"
 
 ### 2.3. Отправляем изменения на GitHub:
 
+Через терминал:
+
 ```shell
 git push
 ```
+
+Через VSCodium:
+
+Нажимаем [[Синхронизировать изменения]]
+
+![indexing_via_vscodium](/alteration/sync_changes_via_vscodium.png)
 
 ## 3. Создаём pull request
 
@@ -70,13 +95,13 @@ git push
 
 ![github_fork](/alteration/github_fork.png)
 
-### 3.2. Выбираем `Contribute` и нажимаем `Open pull request`:
+### 3.2. Выбираем `Contribute` и нажимаем [[Open pull request]]:
 
-смотрим что нет никаких проблем и нажимаем `Create pull request`
+смотрим что нет никаких проблем и нажимаем [[Create pull request]]
 
 ![pr_no_error](/alteration/pr_no_error.png)
 
-### 3.3. Заполняем необходимые поля и нажимаем `Create pull request`:
+### 3.3. Заполняем и нажимаем [[Create pull request]]:
 
 ![pr_create](/alteration/pr_create.png)
 

@@ -8,7 +8,7 @@ metainfo:
         title: Github Desktop
     summary: Приложение для удобной работы с GitHub
     developer: 
-        name: GitHub
+        name: shiftkey
     site:
         url: https://github.com/shiftkey/desktop#readme
         anchor: github.com

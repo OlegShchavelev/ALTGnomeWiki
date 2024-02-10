@@ -57,6 +57,7 @@ flatpak install flathub org.chromium.Chromium
 ```
 
 <!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: ./parts/warns/unpriveleged-spases.md -->
 
 ## Отображение шрифта Emoji при просмотре веб-страниц в браузере Chromium
 

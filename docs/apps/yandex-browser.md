@@ -42,9 +42,7 @@ flatpak install flathub ru.yandex.Browser
 
 <!--@include: ./parts/install/software-flatpak.md-->
 
-:::warning
-Для запуска приложения требуется возможность создания непривилегированных пользовательских пространств, что является потенциально не безопасно. Вы можете [изменить настройку ядра](flatpak.md#запуск-приложении)
-:::
+<!--@include: ./parts/warns/unpriveleged-spases.md -->
 
 ## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 

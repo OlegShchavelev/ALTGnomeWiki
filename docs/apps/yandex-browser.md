@@ -41,7 +41,6 @@ flatpak install flathub ru.yandex.Browser
 ```
 
 <!--@include: ./parts/install/software-flatpak.md-->
-
 <!--@include: ./parts/warns/unpriveleged-spases.md -->
 
 ## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />

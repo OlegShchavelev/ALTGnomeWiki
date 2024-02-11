@@ -39,6 +39,15 @@ flatpak install flathub org.mozilla.firefox
 ```
 
 <!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: ./parts/warns/unpriveleged-spases.md -->
+
+## Установка с помощью Snaps
+
+При наличии пакета [snapd](/snap), можно установить **Firefox** одной командой:
+
+```shell
+snap install firefox
+```
 
 ## Firefox Gnome theme
 

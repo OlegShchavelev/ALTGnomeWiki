@@ -194,5 +194,19 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/Belovmv' }
       ],
-    },
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/95986183?v=4',
+      name: 'Владимир Васьков',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Rirusha' }
+      ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/36843745?v=4',
+      name: 'Boria138',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Boria138' }
+      ],
+    }
   ]

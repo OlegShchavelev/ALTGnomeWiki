@@ -251,6 +251,7 @@ export const docs = [
       { text: 'Ядро', link: '/kernel' },
       { text: 'EPM', link: '/epm' },
       { text: 'Flatpak', link: '/flatpak' },
+      { text: 'Snaps', link: '/snap' },
       { text: "Приложения для GNOME", link: '/apps-gnome' },
       { text: "Samba", link: "/samba" }
     ]

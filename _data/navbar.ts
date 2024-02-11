@@ -57,6 +57,7 @@ export const docs = [
           { text: 'Mission Center', link: '/mission-center' },
           { text: 'Мой офис', link: '/my-office' },
           { text: 'Мpich', link: '/mpich' },
+          { text: 'Мpv', link: '/mpv' },
           { text: 'Neofetch', link: '/neofetch' },
           { text: 'Neovim', link: '/neovim' },
           { text: 'OBS Studio', link: '/obs-studio' },

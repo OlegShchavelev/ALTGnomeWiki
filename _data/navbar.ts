@@ -105,6 +105,7 @@ export const docs = [
               { text: 'Быстрое переключение между окнами', link: '/switching-apps' },
               { text: 'Уведомления и список уведомлений', link: '/notifications' },
               { text: 'Удаленный рабочий стол', link: '/gnome-remote-desktop' },
+              { text: 'Создание пустого файла в файловом менеджере', link: '/add-empty-file-to-nautilus' },
               { text: 'Экран блокировки', link: '/lock-screen' }
             ],
             collapsed: true

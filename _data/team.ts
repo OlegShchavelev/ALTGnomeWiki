@@ -19,6 +19,7 @@ export const contributions = [
           link: 'https://gitflic.ru/user/olegshchavelev'
         },
       ],
+      actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/cf/1uEC4uodPuV'
     },
     {
@@ -34,6 +35,7 @@ export const contributions = [
           link: 'https://gitflic.ru/user/armatik'
         },
       ],
+      actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/cf/2MA0Bm6ax63'
     },
     {
@@ -49,6 +51,7 @@ export const contributions = [
           link: 'https://gitflic.ru/user/toxblh'
         },
       ],
+      actionText: 'Поддержать',
       sponsor: 'https://www.donationalerts.com/r/toxblh'
     },
     {
@@ -64,6 +67,7 @@ export const contributions = [
           link: 'https://gitflic.ru/user/powertux'
         },
       ],
+      actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/subach.pavel2/I4eLp8903'
     },
     {
@@ -115,6 +119,7 @@ export const contributions = [
           link: 'https://gitflic.ru/user/luckenty'
         },
       ],
+      actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/cf/9o0c3eIAJ2D'
     },
     {
@@ -124,6 +129,7 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/fiersik' }
       ],
+      actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/cf/4p7xYDHEH2y'
     },
     {
@@ -141,6 +147,7 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/ImCatCatcher' }
       ],
+      actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/cf/53rijgvIPem'
     },
     {
@@ -186,6 +193,7 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/feyte11' }
       ],
+      actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/tonikyan.khachatur1/4ijqV39898/?short_link=93LEZqrEeY7&httpMethod=GET'
     }, {
       avatar: 'https://avatars.githubusercontent.com/u/118264544?v=4',

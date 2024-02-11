@@ -17,6 +17,7 @@ export default defineConfig({
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
+        '@nolebase/vitepress-plugin-page-properties',
       ],
     },
   },
@@ -80,9 +81,14 @@ export default defineConfig({
       { text: 'Главная', link: '/' },
       { text: 'Документация', link: 'wiki' },
       { text: 'Для авторов', link: '/reference/' },
-      { text: 'О проекте', link: 'about' },
+      {
+        text: 'О проекте', items: [
+          { text: 'О проекте', link: '/about' },
+          { text: 'Участники', link: '/contributions'}
+        ]
+      },
     ],
-    sidebar: {'/': navbar.docs , '/reference/' : navbar.reference},
+    sidebar: { '/': navbar.docs, '/reference/': navbar.reference },
     socialLinks: [
       {
         icon: {

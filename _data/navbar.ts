@@ -106,6 +106,7 @@ export const docs = [
               { text: 'Быстрое переключение между окнами', link: '/switching-apps' },
               { text: 'Уведомления и список уведомлений', link: '/notifications' },
               { text: 'Удаленный рабочий стол', link: '/gnome-remote-desktop' },
+              { text: 'Создание пустого файла в файловом менеджере', link: '/add-empty-file-to-nautilus' },
               { text: 'Экран блокировки', link: '/lock-screen' }
             ],
             collapsed: true
@@ -150,6 +151,13 @@ export const docs = [
                 collapsed: true
               },
               {
+                text: 'Тема',
+                items: [
+                  { text: 'Общая тема для всех приложений', link: '/uniform-look' },
+                ],
+                collapsed: true
+              },
+              {
                 text: 'Монитор и экран',
                 items: [
                   { text: 'Изменение разрешения или ориентация экрана', link: '/look-resolution' },
@@ -181,7 +189,9 @@ export const docs = [
           { text: 'OSD Volume Number', link: '/osd-volume-number' },
           { text: 'Dash to Dock', link: '/dash-to-dock' },
           { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' },
-          { text: 'GSConnect', link: '/gsconnect' }
+          { text: 'GSConnect', link: '/gsconnect' },
+          { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' },
+          { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' }S
         ],
         collapsed: true
       },

@@ -66,6 +66,7 @@ export const docs = [
           { text: 'Opera', link: '/opera' },
           { text: 'Penpot Desktop', link: '/penpot-desktop' },
           { text: 'PortProton', link: '/port-proton' },
+          { text: 'Postman', link: '/postman' },
           { text: 'qBittorrent', link: '/q-bittorrent' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
@@ -270,7 +271,7 @@ export const reference = [
         items: [
           { text: 'Внесение изменений', link: '/alteration' },
           { text: 'Возможности VitePress', link: '/vitepress' },
-          { text: 'Общие правила', link: '/general-rules'}
+          { text: 'Общие правила', link: '/general-rules' }
         ],
         collapsed: false
       },
@@ -278,7 +279,7 @@ export const reference = [
         text: 'Структура',
         base: '/reference/structure/',
         items: [
-          { text: 'Страница приложения', link: '/app'}
+          { text: 'Страница приложения', link: '/app' }
         ],
         collapsed: false
       }

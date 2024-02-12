@@ -209,3 +209,7 @@
   color: var(--vp-c-white);
   background-color: var(--vp-c-success-2);
 }
+
+:root {
+  --swiper-theme-color: var(--vp-c-brand-1);
+}

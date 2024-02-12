@@ -2,6 +2,16 @@
 import type { DefaultTheme } from 'vitepress/theme'
 import { computed } from 'vue'
 import VPTeamMembersItem from './VPTeamMembersItem.vue'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination } from 'swiper/modules';
+
+const modules = [Pagination];
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+const onSwiper = (swiper) => console.log(swiper);
+const onSlideChange = () => console.log('slide change');
 
 interface Props {
   size?: 'small' | 'medium'
@@ -18,49 +28,34 @@ const classes = computed(() => [props.size, `count-${props.members.length}`])
 <template>
   <div class="VPTeamMembers" :class="classes">
     <div class="container">
-      <div v-for="member in members" :key="member.name" class="item">
-        <VPTeamMembersItem :size="size" :member="member" />
-      </div>
+      <swiper :slides-per-view="1" :breakpoints="{ 767: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }" :modules="modules"
+        :pagination="{ clickable: true, dynamicBullets: true }" :space-between="20" @swiper="onSwiper"
+        @slideChange="onSlideChange">
+        <swiper-slide v-for="member in members" :key="member.name" class="item">
+          <VPTeamMembersItem :size="size" :member="member" />
+        </swiper-slide>
+      </swiper>
     </div>
   </div>
 </template>
 
 <style scoped>
-.VPTeamMembers.small .container {
-  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
-}
-
-.VPTeamMembers.small.count-1 .container {
-  max-width: 276px;
-}
-.VPTeamMembers.small.count-2 .container {
-  max-width: calc(276px * 2 + 24px);
-}
-.VPTeamMembers.small.count-3 .container {
-  max-width: calc(276px * 3 + 24px * 2);
-}
-
-.VPTeamMembers.medium .container {
-  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-}
-
-@media (min-width: 375px) {
-  .VPTeamMembers.medium .container {
-    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
-  }
-}
-
-.VPTeamMembers.medium.count-1 .container {
-  max-width: 368px;
-}
-.VPTeamMembers.medium.count-2 .container {
-  max-width: calc(368px * 2 + 24px);
-}
-
 .container {
-  display: grid;
-  gap: 24px;
+  display: flex;
+  flex-direction: row;
   margin: 0 auto;
   max-width: 1152px;
+}
+
+.swiper {
+    padding-bottom: 60px;
+    margin-bottom: -60px;
+  }
+
+@media (min-width: 768px) {
+  .swiper {
+    padding-bottom: 80px;
+    margin-bottom: -80px;
+  }
 }
 </style>

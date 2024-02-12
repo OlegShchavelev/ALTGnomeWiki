@@ -27,10 +27,11 @@ metainfo:
 
 WPS Office — офисный пакет, разрабатываемый Kingsoft Office Software. Продукт предоставляет, пожалуй, лучшую совместимость с файлами Microsoft Office.
 
-Имеет 3 модуля:
+WPS Office включает следующие приложения:
 - Document
 - Excel
 - Presentation
+- PDF
 
 ## Установка с помощью Flatpak <Badge type="danger" text="Неофициальная сборка" /> <Badge type="warning" text="Устаревшая версия" />
 
@@ -49,19 +50,6 @@ flatpak install flathub com.wps.Office
 ```shell
 epm play wpsoffice
 ```
-
-:::warning 
-На 06.02.2024 года, установка WPS Office инструментами epm play временно не доступен
-
-```shell
- # alien --generate --to-rpm ../wps-office-11.1.0.11711.XA-1.x86_64.rpm
-Warning: Skipping conversion of scripts in package wps-office: postinst postrm preinst prerm
-Warning: Use the --scripts parameter to include the scripts.
-Unpacking of '../wps-office-11.1.0.11711.XA-1.x86_64.rpm' failed at /usr/share/perl5/Alien/Package/Rpm.pm line 168.
-ERROR:   (you can discuss the epm 3.60.5-alt1 problem in Telegram: https://t.me/useepm)
-ERROR: There was some error during install the application.  (you can discuss the epm 3.60.5-alt1 problem in Telegram: https://t.me/useepm)
-```
-:::
 
 ## Установка с официального сайта
 Зайдите на [официальный сайт производителя](https://www.wps.com/).

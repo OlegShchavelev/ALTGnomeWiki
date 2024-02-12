@@ -1,3 +1,8 @@
+---
+title: UPower Battery
+pluginID: 5165
+---
+
 # UPower Battery
 
 Расширение позволяет следить за уровнем заряда батареи периферии.
@@ -11,10 +16,4 @@
 
 ![u-power](/extensions/u-power/u-power-2.png)
 
-## Установка UPower Battery из GNOME Shell Extensions
-
-1. Переходим на [страницу UPower Battery](https://extensions.gnome.org/extension/5165/upower-battery/) в GNOME Extensions.
-
-2. Включаем расширение и подтверждаем его установку.
-
-3. Расширение установлено!
+<!--@include: ./parts/show-install-steps.md-->

@@ -1,6 +1,6 @@
-# Подключение DualShock 4
+# Подключение геймпада Play Station DualShock 4
 
-Для подключения геймпада-контроллера DualShock 4 нам потребуется установить драйвер (для китайских реплик необходимо будет собрать модуль ядра https://github.com/ozz-is-here/hid-sony-fix-dkms/blob/main/README.md).
+Для подключения геймпада-контроллера DualShock 4 нам потребуется установить драйвер в операционную систему ALT Regular Gnome
 
 ## Установка драйвера
 
@@ -21,8 +21,24 @@ epm -i ds4drv
 
 :::
 
-### Установка модуля ядра hid-sony-fix-dkms
-Для установки необходим – dkms, kernel-headers и git.
+### Установка модуля ядра `hid-sony-fix-dkms`
+
+Для установки необходимы следующие пакеты: `dkms`, `kernel-headers` и [git](/git).
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get install dkms kernel-headers git
+```
+
+```shell[epm]
+epm -i dkms kernel-headers git
+```
+
+:::
+
+Для китайских реплик **DualShock 4**, необходимо будет собрать модуль ядра:
 
 ```shell
 sudo git clone https://github.com/ozz-is-here/hid-sony-fix-dkms.git /usr/src/hid-sony-fix-dkms-0.1
@@ -30,6 +46,12 @@ sudo dkms install -m hid-sony-fix-dkms -v 0.1
 ```
 
 ## Запуск и использование
-После установки нужно будет прописать blacklist hid_sony в etc/modprobe.d/blacklist-hid_sony.conf
-файл создаём вводя в консоль название текстового редактора и /etc/modprobe.d/blacklist-hid_sony.conf
-например, kate /etc/modprobe.d/blacklist-hid_sony.conf и вставляем данную строчку
+
+После установки драйверов, необходимо: 
+
+```shell
+su - 
+echo 'blacklist hid_sony' >> etc/modprobe.d/blacklist-hid_sony.conf
+```
+
+После создания конфигурации, необходимо перезапустить операционную систему

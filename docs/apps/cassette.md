@@ -21,9 +21,6 @@ metainfo:
     issue: 
         url: https://github.com/Rirusha/Cassette/issues
         anchor: github.com
-    adaptive: false
-    gnomeCore: false
-    gnomeCircle: false
     createTheme: true
     proprietary: false
     sponsor: 
@@ -114,7 +111,7 @@ flatpak override --env=WEBKIT_DISABLE_COMPOSITING_MODE=1 io.github.Rirusha.Casse
 ```
 
 Или создайте строчку в блоке переменных окружения в приложении [Flatseal](/flatseal)
-После перезапустите приложение.
+После настройки параметра запуска приложения перезапустите приложение.
 
 При наличии версии из репозитория выполните:
 
@@ -123,13 +120,13 @@ su -
 echo WEBKIT_DISABLE_COMPOSITING_MODE=1 >> /etc/environment
 ```
 
- После нужно перезагрузить операционную систему.
+ После настройки, перезагрузите операционную систему.
 
  ![Пример проблемы с отображением интерфейса при авторизации](/casseta/casseta-1.png)
 
- ## Бесконечная загрузка при авторизации во flatpack версии приложения
+ ## Бесконечная загрузка при авторизации во Flatpak-версии приложения
 
-Если при авторизации появляется значок загрузки и далее ничего не происходит, а терминал выводит следующее:
+Если при авторизации появляется значок загрузки и далее ничего не происходит, а при запуске приложения через терминал, выводит следующее:
 
 ```shell
 (cassette:2): Gtk-WARNING **: 20:29:26.210: Locale not supported by C library.
@@ -140,11 +137,11 @@ flatpak-spawn: Invalid byte sequence in conversion input
 Try "flatpak-spawn --help" for more information.
 ```
 
-То добавте переменную окружения LC_ALL. Сделать это можно через терминал:
+Добавте переменную окружения `LC_ALL`. Сделать это можно через терминал:
 
 ```shell
 flatpak override --env=LC_ALL="en_US.UTF-8" io.github.Rirusha.Cassette
 ```
 
 Или создав строчку в блоке переменных окружения в приложении [Flatseal](/flatseal)
-После перезапустите приложение.
+После настройки параметра запуска приложения перезапустите приложение.

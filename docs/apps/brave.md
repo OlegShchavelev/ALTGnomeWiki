@@ -36,3 +36,11 @@ flatpak install flathub com.brave.Browser
 <!--@include: ./parts/install/software-flatpak.md-->
 
 <!--@include: ./parts/warns/unpriveleged-spases.md -->
+
+## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
+
+При наличии пакета [eepm](/epm), можно установить **Brawe Browser** одной командой:
+
+```shell
+epm play brave
+```

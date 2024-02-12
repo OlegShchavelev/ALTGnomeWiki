@@ -1,27 +1,41 @@
-# Возращение на прежнюю папку с помощью backspace в Nautilus
+# Nautilus Backspace Back
 
-Если вы привыкли возращаться к папкам через backspace, как в windows, то первым делом вам нужно установить nautilus-python
+Если вы привыкли возращаться к папкам через клавишу Backspace, как в Windows проводнике, то этот плагин может вернуть такое поведение.
 
-## Установка Nautilus python
+## Установка
+
+### Установка зависимостей
+Зависимости можно установить через терминал:
 
 ::: code-group
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install nautilus-python
+apt-get install nautilus-python libnautilus-gir
 ```
 ```shell[epm]
-epm -i nautilus-python
+epm -i nautilus-python libnautilus-gir
 ```
 :::
 
-Далее нам нужен сам плагин, скачать его можно по прямой ссылке здесь
-
-https://gist.githubusercontent.com/molaeiali/3f99f9c8b8b845b803bbdbb1fcbb4cbf/raw/2d7e84213898933df48657931c63e5b41306e044/BackspaceBack.py
-
-## Установка плагина BackspaceBack
+### Загрузка плагина
+Далее нам нужно скачать сам плагин:
 
 ```shell
 mkdir -p ~/.local/share/nautilus-python/extensions/
-mv BackspaceBack.py ~/.local/share/nautilus-python/extensions/
+wget -P ~/.local/share/nautilus-python/extensions/ https://raw.githubusercontent.com/fiersik/nautilus_backspace/main/Back.py
+```
+
+### Готово!
+Осталось перезапустить Nautilus:
+
+```shell
+nautilus -q
+```
+
+И всё готово.
+
+## Удаление плагина
+```shell
+rm ~/.local/share/nautilus-python/extensions/Back.py
 ```

@@ -191,7 +191,8 @@ export const docs = [
           { text: 'Dash to Dock', link: '/dash-to-dock' },
           { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' },
           { text: 'GSConnect', link: '/gsconnect' },
-          { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' }
+          { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' },
+          { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' } 
         ],
         collapsed: true
       },

@@ -15,6 +15,7 @@ export interface Items {
 }
 
 const props = defineProps<{
+    title?: string;
     items: Items[]
 }>()
 
@@ -22,7 +23,7 @@ const props = defineProps<{
 
 <template>
     <div v-if="items" class="AGWCatigories">
-        <h2>Быстрый старт</h2>
+        <h2 v-if="title">{{ title }}</h2>
         <div class="items">
             <div v-for="item in items" :key="item.title" class="item grid-4">
                 <AGWCategory :title="item.title" :icon="item.icon" :apps="item.apps" />

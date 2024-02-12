@@ -1,3 +1,9 @@
+---
+title: GSConnect
+pluginID: 1319
+packageName: gnome-shell-extension-gsconnect
+---
+
 # GSConnect
 
 GSConnect — расширение, которое включает в себя все функции KDE Connect и интегрируется с Nautilus, Chrome и Firefox. С помощью GSConnect можно безопасно обмениваться контентом между различными устройствами, такими как уведомления и файлы.
@@ -6,10 +12,22 @@ GSConnect — расширение, которое включает в себя 
 
 Для подключения устройства необходимо приложение, которое доступно для Android, iOS, Windows, macOS и других платформ.
 
-## Установка GSConnect из GNOME Shell Extensions
+<!--@include: ./parts/show-install-steps.md-->
 
-1. Переходим на [страницу GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) в GNOME Extensions.
+## Установка {{ $frontmatter.title }} из репозитория
 
-2. Включаем расширение и подтверждаем его установку.
+Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
 
-3. Расширение установлено!
+::: code-group
+```shell[apt-get]
+su -
+apt-get update
+apt-get install gnome-shell-extension-gsconnect
+```
+
+```shell[epm]
+epm -i gnome-shell-extension-gsconnect
+```
+:::
+
+<!--@include: ./parts/install-from-repository.md-->

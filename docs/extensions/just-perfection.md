@@ -1,3 +1,8 @@
+---
+title: Just Perfection
+pluginID: 3843
+---
+
 # Just Perfection
 
 Невероятно мощное расширение, позволяющее изменить очень многие детали в GNOME Shell.
@@ -8,10 +13,5 @@
 
 ![just-perfection-2](/extensions/just-perfection/just-perfection-2.png)
 
-## Установка Just Perfection из GNOME Shell Extensions
+<!--@include: ./parts/show-install-steps.md-->
 
-1. Переходим на [страницу Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/) в GNOME Extensions.
-
-2. Включаем расширение и подтверждаем его установку.
-
-3. Расширение установлено!

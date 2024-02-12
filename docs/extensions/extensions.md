@@ -9,7 +9,7 @@
 
 ### Установка из репозитория
 
-**GNOME Shell Extension Manager** можно установить любым привычным и удобным способом
+**GNOME Shell Extension Manager** можно установить любым привычным и удобным способом:
 
 **Установка через терминал**
 
@@ -34,28 +34,11 @@ flatpak install flathub com.mattjakeman.ExtensionManager
 
 ![extensions_1](/extensions/extensions_1.gif)
 
-## Установка расширений рабочего окружения GNOME из репозитория
-
-Расширения: Dash to Dock, Blur my Shell, Dash to Panel можно установить отдельными пакетами из репозитория
-
-::: code-group
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-shell-extension-dash-to-dock
-```
-```shell[epm]
-epm -i gnome-shell-extension-dash-to-dock
-```
-:::
-
-::: info
-Для вывода пакета в списке программы **Расширения**, необходимо перезагрузить компьютер, после установки расширения из репозитория.
-:::
-
 ## Управление расширениями рабочего окружения GNOME из командной строки
 
 ### Список установленных расширений
+
+Просмотрим список всех установленных расширений:
 
 ```shell
 gnome-extensions list
@@ -63,16 +46,15 @@ gnome-extensions list
 
 ### Просмотр информации о расширении
 
-Посмотрим данные о расширении foo-bar
+Посмотрим данные о расширении foo-bar:
 
 ```shell
 gnome-extensions show foo-bar
 ```
 
-
 ### Включить расширение
 
-Включим расширение foo-bar
+Включим расширение foo-bar:
 
 ```shell
 gnome-extensions enable foo-bar
@@ -80,7 +62,7 @@ gnome-extensions enable foo-bar
 
 ### Выключить расширение
 
-Выключим расширение foo-bar
+Выключим расширение foo-bar:
 
 ```shell
 gnome-extensions disable foo-bar
@@ -88,7 +70,7 @@ gnome-extensions disable foo-bar
 
 ### Открыть параметры расширения
 
-Откроем параметры расширения foo-bar
+Откроем параметры расширения foo-bar:
 
 ```shell
 gnome-extensions prefs foo-bar
@@ -96,7 +78,7 @@ gnome-extensions prefs foo-bar
 
 ### Удалить расширение
 
-Удалим расширение foo-bar
+Удалим расширение foo-bar:
 
 ```shell
 gnome-extensions uninstall foo-bar

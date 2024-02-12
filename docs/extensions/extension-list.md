@@ -1,3 +1,9 @@
+---
+title: Extension List
+pluginID: 3088
+packageName: gnome-shell-extension-extension-list
+---
+
 # Extension List
 
 Расширение позволяет удобно управлять расширениями для Gnome: быстро перейти к настройкам расширения, включить/выключить
@@ -7,10 +13,22 @@
 
 ![extension-list](/extensions/extension-list/extension-list-2.png)
 
-## Установка Extension List из GNOME Shell Extensions
+<!--@include: ./parts/show-install-steps.md-->
 
-1. Переходим на [страницу Extension List](https://extensions.gnome.org/extension/3088/extension-list/) в GNOME Extensions.
+## Установка {{ $frontmatter.title }} из репозитория
 
-2. Включаем расширение и подтверждаем его установку.
+Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
 
-3. Расширение установлено!
+::: code-group
+```shell[apt-get]
+su -
+apt-get update
+apt-get install gnome-shell-extension-extension-list
+```
+
+```shell[epm]
+epm -i gnome-shell-extension-extension-list
+```
+:::
+
+<!--@include: ./parts/install-from-repository.md-->

@@ -1,3 +1,9 @@
+---
+title: Dash to Dock
+pluginID: 307
+packageName: gnome-shell-extension-dash-to-dock
+---
+
 # Dash to Dock
 
 Расширение помогает превратить приборную панель в док-станцию, чтобы обеспечить быстрый доступ к приложениям и более быстрое переключение между приложениями и рабочими пространствами.
@@ -8,10 +14,23 @@
 
 ![dash-to-dock-2](/extensions/dash-to-dock/dash-to-dock-2.png)
 
-## Установка Dash to Dock из GNOME Shell Extensions
+<!--@include: ./parts/show-install-steps.md-->
 
-1. Переходим на [страницу Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) в GNOME Extensions.
+## Установка {{ $frontmatter.title }} из репозитория
 
-2. Включаем расширение и подтверждаем его установку.
+Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
 
-3. Расширение установлено!
+::: code-group
+```shell[apt-get]
+su -
+apt-get update
+apt-get install gnome-shell-extension-dash-to-dock
+```
+
+```shell[epm]
+epm -i gnome-shell-extension-dash-to-dock
+```
+:::
+
+
+<!--@include: ./parts/install-from-repository.md-->

@@ -47,3 +47,24 @@ pwctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
 
 - Если все сделано правильно, то в приложении "Настройки" можно наблюдать следующую картину\
 ![after_apply_volume_settings](/gnome-volume-control/after-volume-settings-apply.png)
+
+## Установка регулятора громкости PulseAudio
+
+Также громкость можно регулировать с помощью регулятора громкости **PulseAudio**
+  
+![pavucontrol](/gnome-volume-control/pavucontrol.png)
+
+Для этого достаточно установить его через терминал
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install pavucontrol
+```
+
+```shell[epm]
+epm -i pavucontrol
+```
+::: 

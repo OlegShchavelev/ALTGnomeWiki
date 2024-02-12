@@ -28,7 +28,9 @@ defineProps<{
             <div class="title">{{ title }}</div>
             <ul v-if="apps">
                 <li v-for="app in apps" :key="app.name">
-                    <VPLink :href="app.link">{{ app.name }}</VPLink>
+                    <VPLink class="AGWCategoryNavLink" :href="app.link" tabindex="0">
+                        {{ app.name }}
+                    </VPLink>
                 </li>
             </ul>
         </div>
@@ -48,21 +50,21 @@ defineProps<{
     padding: 24px;
 }
 
-.body > :deep(.VPImage) {
-  margin-bottom: 20px;
+.body> :deep(.VPImage) {
+    margin-bottom: 20px;
 }
 
 .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  background-color: var(--vp-c-default-soft);
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
-  transition: background-color 0.25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: var(--vp-c-default-soft);
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    transition: background-color 0.25s;
 }
 
 
@@ -72,4 +74,21 @@ defineProps<{
     font-weight: 600;
     margin-bottom: 12px;
 }
+
+.AGWCategoryNavLink {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vp-c-text-2);
+    transition: color 0.25s;
+}
+
+.AGWCategoryNavLink.active {
+  color: var(--vp-c-brand-1);
+}
+
+.AGWCategoryNavLink:hover {
+  color: var(--vp-c-brand-1);
+}
+
 </style>

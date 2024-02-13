@@ -23,7 +23,7 @@ epm -i nautilus-python libnautilus-gir
 
 ```shell
 mkdir -p ~/.local/share/nautilus-python/extensions/
-wget -P ~/.local/share/nautilus-python/extensions/ https://raw.githubusercontent.com/fiersik/nautilus_backspace/main/Back.py
+wget -P ~/.local/share/nautilus-python/extensions/ https://raw.githubusercontent.com/alt-gnome-team/nautilus_backspace/main/Back.py
 ```
 
 ### Готово!

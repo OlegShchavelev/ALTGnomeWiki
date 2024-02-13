@@ -9,7 +9,7 @@ pluginID: 3240
 
 Особенно полезно при использовании расширения [Gtk4 Desktop Icons NG](/gtk4-desktopicons).
 
-![addtodesktop-1](/extensions/addtodesktop/addtodesktop-1.png)
+![add-to-desktop-1](/extensions/add-to-desktop/add-to-desktop-1.png)
 
 Расширение не имеет настроек.
 

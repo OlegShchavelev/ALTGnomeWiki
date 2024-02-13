@@ -7,11 +7,11 @@ pluginID: 6433
 
 Простое расширение, позволяющее вернуть в верхнюю панель старое меню приложения, которое было удалено вместе с обновлением GNOME 45.
 
-![appmenuisback](/extensions/appmenuisback/appmenuisback-1.png)
+![app-menu-is-back](/extensions/app-menu-is-back/app-menu-is-back-1.png)
 
 <br>
 
-![appmenuisback](/extensions/appmenuisback/appmenuisback-2.png)
+![app-menu-is-back](/extensions/app-menu-is-back/app-menu-is-back-2.png)
 
 Расширение не имеет настроек.
 

@@ -19,6 +19,8 @@ docs:
                   link: opera
                 - name: Google Chrome
                   link: google-chrome
+                - name: Brave
+                  link: brave
             - title: Месенджеры
               icon:
                 dark: /message-light.svg
@@ -28,6 +30,8 @@ docs:
                   link: telegram
                 - name: Viber
                   link: viber
+                - name: WhatsApp Desktop 
+                  link: whatsapp-desktop
                 - name: VK Мессенджер
                   link: vk-messenger
             - title: Игры
@@ -39,6 +43,8 @@ docs:
                   link: steam
                 - name: PortProton
                   link: port-proton
+                - name: Lutris
+                  link: lutris
             - title: Офис
               icon:
                 dark: /document-light.svg

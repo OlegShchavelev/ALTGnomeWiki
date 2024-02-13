@@ -15,6 +15,7 @@ export const docs = [
         text: 'Установка и обновление программ',
         items: [
           { text: 'Alacarte', link: '/alacarte' },
+          { text: 'Amberol', link: '/amberol' },
           { text: 'AnyDesk', link: '/anydesk' },
           { text: 'Arduino IDE', link: '/arduino-ide' },
           { text: 'AsusCtl', link: '/asusctl' },

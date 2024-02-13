@@ -38,23 +38,22 @@ flatpak install flathub com.mattjakeman.ExtensionManager
 
 ### Список установленных расширений
 
-Просмотрим список всех установленных расширений:
-
 ```shell
 gnome-extensions list
 ```
 
 ### Просмотр информации о расширении
 
-Посмотрим данные о расширении foo-bar:
+Посмотрим данные о расширении foo-bar
 
 ```shell
 gnome-extensions show foo-bar
 ```
 
+
 ### Включить расширение
 
-Включим расширение foo-bar:
+Включим расширение foo-bar
 
 ```shell
 gnome-extensions enable foo-bar
@@ -62,7 +61,7 @@ gnome-extensions enable foo-bar
 
 ### Выключить расширение
 
-Выключим расширение foo-bar:
+Выключим расширение foo-bar
 
 ```shell
 gnome-extensions disable foo-bar
@@ -70,7 +69,7 @@ gnome-extensions disable foo-bar
 
 ### Открыть параметры расширения
 
-Откроем параметры расширения foo-bar:
+Откроем параметры расширения foo-bar
 
 ```shell
 gnome-extensions prefs foo-bar
@@ -78,8 +77,22 @@ gnome-extensions prefs foo-bar
 
 ### Удалить расширение
 
-Удалим расширение foo-bar:
+Удалим расширение foo-bar
 
 ```shell
 gnome-extensions uninstall foo-bar
 ```
+
+## Системные расширения
+
+**Applications Menu**
+
+Дополнительная навигация с помощью меню в стиле gnome `2.x` на панели
+
+**Auto Move Windows**
+
+Позволяет вам проще управлять вашими рабочими пространствами, назначая определенное рабочее пространство каждому приложению, как только запускается в рабочем окружении, настраиваемым с помощью ключа `GSettings`
+
+**Launch new interface**
+
+Показывает меню состояния для быстрого размонтирования и отключения питания внешних запоминающих устройств (флешки, внешние диски)

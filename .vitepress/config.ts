@@ -3,12 +3,13 @@ import { telegram, gitflic, vk } from './icons'
 import * as seo from './../_data/seo'
 import * as navbar from './../_data/navbar'
 import { normalize } from './utils'
-import kbd from 'markdown-it-kbd'
-import taskLists from 'markdown-it-task-lists'
 import { rewrites } from './paths'
-import timeline from "vitepress-markdown-timeline";
-import implicitFigures from 'markdown-it-implicit-figures'
-import embed from 'markdown-it-html5-embed'
+import VitepressMarkdownTimeline from "vitepress-markdown-timeline";
+import markdownItKbd from 'markdown-it-kbd'
+import markdownItTaskLists from 'markdown-it-task-lists'
+import markdownItImplicitFigures from 'markdown-it-implicit-figures'
+import markdownItEmbed from 'markdown-it-html5-embed'
+import markdownItConditionalRender from 'markdown-it-conditional-render'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -68,7 +69,7 @@ export default defineConfig({
       {
         text: 'О проекте', items: [
           { text: 'О проекте', link: '/about' },
-          { text: 'Участники', link: '/contributions'}
+          { text: 'Участники', link: '/contributions' }
         ]
       },
     ],
@@ -130,18 +131,19 @@ export default defineConfig({
       detailsLabel: 'Подробнее',
     },
     config: (md) => {
-      md.use(kbd);
-      md.use(taskLists);
-      md.use(timeline);
-      md.use(implicitFigures, {
+      md.use(markdownItKbd);
+      md.use(markdownItTaskLists);
+      md.use(VitepressMarkdownTimeline);
+      md.use(markdownItImplicitFigures, {
         figcaption: 'title',
         copyAttrs: '^class$'
       });
-      md.use(embed, {
+      md.use(markdownItEmbed, {
         html5embed: {
           useImageSyntax: true, // Enables video/audio embed with ![]() syntax (default)
         }
       });
+      md.use(markdownItConditionalRender);
     }
   },
   transformPageData: (pageData: normalize) => {

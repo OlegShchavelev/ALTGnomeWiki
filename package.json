@@ -7,6 +7,7 @@
     "@types/markdown-it-container": "^2.0.8",
     "@types/node": "^20.10.2",
     "markdown-it": "^13.0.2",
+    "markdown-it-conditional-render": "^0.1.0",
     "markdown-it-container": "^3.0.0",
     "markdown-it-html5-embed": "^1.0.0",
     "markdown-it-implicit-figures": "^0.12.0",

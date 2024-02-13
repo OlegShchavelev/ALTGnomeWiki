@@ -1,5 +1,7 @@
 ---
 title: Amberol
+nameRepo: amberol
+nameSnap: amberol
 appstreamRepo: io.bassi.Amberol
 appstreamFlatpak: io.bassi.Amberol
 metainfo:
@@ -39,41 +41,4 @@ Amberol — простой музыкальный проигрыватель. Р
 
 Amberol воспроизводит музыку, и ничего больше.
 
-## Установка из репозитория
-
-**Amberol** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install amberol
-```
-```shell[epm]
-epm -i amberol
-```
-
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Amberol** одной командой:
-
-```shell
-flatpak install flathub io.bassi.Amberol
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-## Установка с помощью Snaps
-
-При наличии пакета [snapd](/snap), можно установить **Amberol** одной командой:
-
-```shell
-snap install amberol
-```
+<!--@include: ./parts/install/software-install.md-->

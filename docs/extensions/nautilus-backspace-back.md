@@ -1,6 +1,6 @@
 # Nautilus Backspace Back
 
-Если вы привыкли возращаться к папкам через клавишу Backspace, как в Windows проводнике, то этот плагин может вернуть такое поведение.
+Если вы привыкли возвращаться к папкам через клавишу Backspace, как в Windows проводнике, то этот плагин может вернуть такое поведение.
 
 ## Установка
 
@@ -23,7 +23,7 @@ epm -i nautilus-python libnautilus-gir
 
 ```shell
 mkdir -p ~/.local/share/nautilus-python/extensions/
-wget -P ~/.local/share/nautilus-python/extensions/ https://raw.githubusercontent.com/fiersik/nautilus_backspace/main/Back.py
+wget -P ~/.local/share/nautilus-python/extensions/ https://raw.githubusercontent.com/alt-gnome-team/nautilus_backspace/main/Back.py
 ```
 
 ### Готово!

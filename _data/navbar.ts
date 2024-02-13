@@ -184,8 +184,8 @@ export const docs = [
           { text: 'Extension List', link: '/extension-list' },
           { text: 'U Power', link: '/u-power' },
           { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktopicons.md' },
-          { text: 'App menu is back', link: '/appmenuisback' },
-          { text: 'Add to desktop', link: '/addtodesktop' },
+          { text: 'App menu is back', link: '/app-menu-is-back' },
+          { text: 'Add to desktop', link: '/add-to-desktop' },
           { text: 'Fullscreen Avoider', link: '/fullscreen-avoider' },
           { text: 'Just Perfection', link: '/just-perfection' },
           { text: 'OSD Volume Number', link: '/osd-volume-number' },
@@ -193,7 +193,8 @@ export const docs = [
           { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' },
           { text: 'GSConnect', link: '/gsconnect' },
           { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' },
-          { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' } 
+          { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
+          { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' }
         ],
         collapsed: true
       },

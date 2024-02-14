@@ -4,13 +4,16 @@
 
 ## 1. Переменные
 
-Используются такие подблоки [Frontmatter](../pages/vitepress) переменных:
+Используются такие подблоки [Frontmatter](../pages/vitepress#frontmatter) переменных:
 
 ### 1.1. Установка
 
 ```markdown
 ---
 title:  # Название приложения
+nameRepo:  # Название приложения в репозитории sisyphus
+nameSnap:  # Название приложения на Snapcraft
+nameEpmPlay:  # Название приложения для epm play
 appstreamRepo:  # appstream id приложения для sisyphus
 appstreamFlatpak:  # appstream id приложения для flatpak
 ---
@@ -21,6 +24,7 @@ appstreamFlatpak:  # appstream id приложения для flatpak
 ```markdown
 ---
 metainfo:
+    active:  # Показывать ли бар
     thumb:
         src:  # Путь до иконки приложения
         title:   # Название приложения
@@ -52,92 +56,28 @@ metainfo:
         url:  # Ссылка на пакет на packages.altlinux.org
     flathub:
         url:  # Ссылка на flathub
+    snap:
+        url:  # Ссылка на snapcraft
 ---
 ```
 
-## 2. Установка из репозитория 
+## 2. Название и описание
 
-::: info 
-Данный блок добавляется если приложение есть в репозитории Sisyphus
-:::
-
-
-### 2.1. 
-
-Если можно установить только через терминал:
+Замените `NAME` на название приложения и допишите описание.
 
 ```markdown
-**NAME** можно установить через терминал:
+# NAME
+
+NAME — ...
 ```
 
-Если можно установить и через терминал и через центр приложений:
+## 3. Установка
+
+Построение блоков установки автоматизировано, необходимо лишь заполнить Frontmatter переменные и подключить шаблон.
 
 ```markdown
-**NAME** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
+<!--@include: ./parts/install/software-install.md-->
 ```
-
-### 2.2.
-
-````markdown
-
-::: code-group
-```shell[apt-get]
-su -
-apt-get update
-apt-get install NAME
-```
-```shell[epm]
-epm -i NAME
-```
-:::
-
-````
-
-## 3. Установка c помощью Flatpak
-
-::: info 
-Данный блок добавляется если приложение есть в репозитории Flathub
-
-Если приложение собрано не разработчиком, добавляется бейдж <Badge type="danger" text="Неофициальная сборка" />
-
-```markdown
-<Badge type="danger" text="Неофициальная сборка" />
-```
-
-:::
-
-
-````markdown
-При наличии пакета [Flatpak](/flatpak), можно установить **NAME** одной командой:
-
-```shell
-flatpak install flathub < appstream id flatpak приложения >
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-````
-
-## 4. Установка c помощью epm play
-
-::: info 
-Данный блок добавляется если для приложения есть скрипт установки epm play
-
-Если скрипт добавлен не разработчиком приложения, добавляется бейдж <Badge type="danger" text="Неофициальная сборка" />
-
-```markdown
-<Badge type="danger" text="Неофициальная сборка" />
-:::
-
-
-````markdown
-При наличии пакета [eepm](/epm), можно установить **NAME** одной командой:
-
-```shell
-epm play NAME
-```
-````
 
 ## Дополнительные блоки 
 

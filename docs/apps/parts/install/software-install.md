@@ -44,8 +44,10 @@ flatpak install {{ $frontmatter.appstreamFlatpak }}
 При наличии пакета [snapd](/snap), можно установить **{{ $frontmatter.title }}** одной командой:
 
 ```shell-vue
-snap install amberol
+snap install {{ $frontmatter.nameSnap }}
 ```
+
+<!--@include: ./software-snap.md-->
 
 ::endif
 

@@ -89,7 +89,7 @@ platform: VitePress
 
 :tada: :100:
 
-[Список всех доступных эмоджи здесь](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json).
+[Список всех доступных эмоджи здесь](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs).
 
 ## Вывод оглавления в любом месте
 

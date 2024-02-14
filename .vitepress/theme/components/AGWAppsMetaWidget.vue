@@ -12,7 +12,7 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 </script>
 
 <template>
-    <article v-if="props.active" class="AppsWidget">
+    <article class="AppsWidget">
         <figure class="figure" v-if="props.thumb && props.thumb.src">
             <VPImage :image="props.thumb.src" :alt="props.thumb.title" class="card-image" />
             <img src="">
@@ -68,6 +68,8 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
                 class="link-gnome-sponsor">Поддержать автора</a>
             <a target="_blank" v-if="props.flathub && props.flathub.url" :href="props.flathub.url"
                 class="link-gnome-flathub">Flathub</a>
+            <a target="_blank" v-if="props.snap && props.snap.url" :href="props.snap.url"
+                class="link-gnome-snap">Snapcraft</a>
             <a target="_blank" v-if="props.sisyphus && props.sisyphus.url" :href="props.sisyphus.url"
                 class="link-gnome-sisyphus">Сизиф</a>
         </div>
@@ -225,6 +227,16 @@ dd {
     font-weight: bold;
 }
 
+.link-gnome-snap {
+    padding: 8px 24px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    display: grid;
+    color: var(--vp-c-orange-darker);
+    background-color: var(--vp-c-orange-dimm-1);
+    font-weight: bold;
+}
+
 .link-gnome-flathub {
     padding: 8px 24px;
     text-align: center;
@@ -252,6 +264,11 @@ dd {
 
 .link-gnome-sisyphus:hover {
     background-color: var(--vp-c-yellow-darker);
+    color: #fff;
+}
+
+.link-gnome-snap:hover {
+    background-color: var(--vp-c-orange-darker);
     color: #fff;
 }
 

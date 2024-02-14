@@ -262,29 +262,23 @@ export const docs = [
 ]
 
 export const reference = [
+  { text: 'Для авторов', link: '/reference/', },
   {
-    text: 'Для авторов',
-    link: '/',
-    base: '/reference/',
+    text: 'Создание страниц',
+    base: '/reference/pages/',
     items: [
-      {
-        text: 'Создание страниц',
-        base: '/reference/pages/',
-        items: [
-          { text: 'Внесение изменений', link: '/alteration' },
-          { text: 'Возможности VitePress', link: '/vitepress' },
-          { text: 'Общие правила', link: '/general-rules' }
-        ],
-        collapsed: false
-      },
-      {
-        text: 'Структура',
-        base: '/reference/structure/',
-        items: [
-          { text: 'Страница приложения', link: '/app' }
-        ],
-        collapsed: false
-      }
-    ]
+      { text: 'Внесение изменений', link: '/alteration' },
+      { text: 'Возможности VitePress', link: '/vitepress' },
+      { text: 'Общие правила', link: '/general-rules' }
+    ],
+    collapsed: false
+  },
+  {
+    text: 'Структура',
+    base: '/reference/structure/',
+    items: [
+      { text: 'Страница приложения', link: '/app' }
+    ],
+    collapsed: false
   }
 ]

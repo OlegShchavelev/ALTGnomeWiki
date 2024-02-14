@@ -21,10 +21,10 @@ Mission Center — приложение для мониторинга испол
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install missioncenter
+apt-get install mission-center
 ```
 ```shell[epm]
-epm -i missioncenter
+epm -i mission-center
 ```
 :::
 

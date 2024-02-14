@@ -47,6 +47,8 @@ flatpak install {{ $frontmatter.appstreamFlatpak }}
 snap install {{ $frontmatter.nameSnap }}
 ```
 
+<!--@include: ./software-snap.md-->
+
 ::endif
 
 ::if frontmatter.nameEpmPlay

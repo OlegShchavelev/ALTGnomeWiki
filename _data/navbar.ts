@@ -277,7 +277,8 @@ export const reference = [
     text: 'Структура',
     base: '/reference/structure/',
     items: [
-      { text: 'Страница приложения', link: '/app' }
+      { text: 'Страница приложения', link: '/app' },
+      { text: 'Страница Wiki', link: '/wiki' }
     ],
     collapsed: false
   }

@@ -12,7 +12,7 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 </script>
 
 <template>
-    <article class="AppsWidget">
+    <article v-if="props.active" class="AppsWidget">
         <figure class="figure" v-if="props.thumb && props.thumb.src">
             <VPImage :image="props.thumb.src" :alt="props.thumb.title" class="card-image" />
             <img src="">

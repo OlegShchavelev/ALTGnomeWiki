@@ -89,6 +89,7 @@ export const docs = [
           { text: 'WPS Office', link: '/wps-office' },
           { text: 'XLSCLIENTS', link: '/xlsclients' },
           { text: 'Xmind', link: '/xmind' },
+          { text: 'Центр мониторинга системы', link: '/system-monitoring-center' },
           { text: 'Яндекс Браузер', link: '/yandex-browser' },
           { text: 'Zoom', link: '/zoom' },
           { text: 'Zsh', link: '/zsh' },

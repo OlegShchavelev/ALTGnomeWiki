@@ -83,6 +83,7 @@ export const docs = [
           { text: 'Toolbox', link: '/toolbox' },
           { text: 'Totem', link: '/totem' },
           { text: 'Transmission', link: '/transmission' },
+          { text: 'Tube', link: '/tube' },
           { text: 'Viber', link: '/viber' },
           { text: 'VLC', link: '/vlc' },
           { text: 'VK Мессенджер', link: '/vk-messenger' },

@@ -19,7 +19,8 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
         </figure>
         <div class="body">
             <div class="summary">{{ props.summary }}</div>
-            <div v-if="props.adaptive || props.proprietary || props.gnomeCircle || props.gnomeCore || props.createTheme || props.restrictions" class="badges">
+            <div v-if="props.adaptive || props.proprietary || props.gnomeCircle || props.gnomeCore || props.createTheme || props.restrictions"
+                class="badges">
                 <Badge v-if="props.adaptive" type="tip">Адаптивное</Badge>
                 <Badge v-if="props.proprietary" type="danger">Проприетарное</Badge>
                 <Badge v-if="props.gnomeCircle" type="success">GNOME Circle</Badge>
@@ -33,7 +34,8 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
                 </figure>
                 <div>
                     <div class="caption">Разработчик</div>
-                    <div class="name">{{ props.developer.name }}<span class="nickname">{{ props.developer.nickname }}</span></div>
+                    <div class="name">{{ props.developer.name }}<span class="nickname">{{ props.developer.nickname }}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,10 +68,10 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
         <div class="footet">
             <a target="_blank" v-if="props.sponsor && props.sponsor.url" :href="props.sponsor.url"
                 class="link-gnome-sponsor">Поддержать автора</a>
+            <a target="_blank" v-if="props.snapcraft && props.snapcraft.url" :href="props.snapcraft.url"
+                class="link-gnome-snap">Snapcraft</a>
             <a target="_blank" v-if="props.flathub && props.flathub.url" :href="props.flathub.url"
                 class="link-gnome-flathub">Flathub</a>
-            <a target="_blank" v-if="props.snap && props.snap.url" :href="props.snap.url"
-                class="link-gnome-snap">Snapcraft</a>
             <a target="_blank" v-if="props.sisyphus && props.sisyphus.url" :href="props.sisyphus.url"
                 class="link-gnome-sisyphus">Сизиф</a>
         </div>
@@ -158,19 +160,22 @@ dl {
     margin-bottom: 0;
 }
 
-dt, .developers .caption {
+dt,
+.developers .caption {
     font-size: 12px;
     color: var(--vp-c-text-2);
     font-weight: 500;
 }
 
-dd, .developers .name {
+dd,
+.developers .name {
     margin-left: 0;
     font-size: 14px;
     padding-bottom: 8px;
     margin-bottom: 8px;
 
 }
+
 .developers .name:last-child {
     margin-bottom: 0;
     padding-bottom: 0;

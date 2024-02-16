@@ -10,7 +10,7 @@ const modules = [Pagination];
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const onSwiper = (swiper) => console.log(swiper);
+const onSwiper = (swiper: any) => console.log(swiper);
 const onSlideChange = () => console.log('slide change');
 
 interface Props {

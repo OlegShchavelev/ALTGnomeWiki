@@ -5,7 +5,6 @@ nameSnap: amberol
 appstreamRepo: io.bassi.Amberol
 appstreamFlatpak: io.bassi.Amberol
 metainfo:
-    active: true
     thumb:
         src: /amberol/io.bassi.Amberol.png
         title: Boxes

@@ -4,15 +4,16 @@ import { DefaultTheme, useData } from 'vitepress'
 
 
 const { theme, frontmatter } = useData();
-const props = computed(() => frontmatter.value.metainfo ?? theme.value.metainfo ?? []);
+const props = computed(() => frontmatter.value.metainfo ?? theme.value.metainfo ?? false);
 
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
 
+
 </script>
 
 <template>
-    <article v-if="props.active" class="AppsWidget">
+    <article v-if="props" class="AppsWidget">
         <figure class="figure" v-if="props.thumb && props.thumb.src">
             <VPImage :image="props.thumb.src" :alt="props.thumb.title" class="card-image" />
             <img src="">

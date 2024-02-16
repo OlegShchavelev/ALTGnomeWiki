@@ -68,6 +68,7 @@ export const docs = [
           { text: 'Penpot Desktop', link: '/penpot-desktop' },
           { text: 'PortProton', link: '/port-proton' },
           { text: 'Postman', link: '/postman' },
+          { text: 'PinApp', link: '/pin-app' },
           { text: 'qBittorrent', link: '/q-bittorrent' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },

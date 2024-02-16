@@ -33,11 +33,22 @@ flatpak install flathub org.mozilla.Thunderbird
 
 <!--@include: ./parts/install/software-flatpak.md-->
 
-## Thunderbird GNOME theme
+## Thunderbird Gnome Theme
 
-Склонируйте скрипт и установите **Thunderbird GNOME theme**:
+Склонируйте скрипт и установите:
 
 ```shell
-git clone https://github.com/rafaelmardojai/thunderbird-gnome-theme && cd thunderbird-gnome-theme
-sudo ./scripts/install.sh -f ~/.var/app/org.mozilla.Thunderbird/.thunderbird
+https://github.com/rafaelmardojai/thunderbird-gnome-theme .thunderbird/thunderbird-gnome-theme
+cd .thunderbird/thunderbird-gnome-theme
+```
+**Thunderbird Gnome Theme <Badge type="warning" text="Sisyphus" />**
+
+```shell
+./scripts/install.sh -f ~/.thunderbird
+```
+
+**Thunderbird Gnome Theme <Badge type="tip" text="Flatpak" />**
+
+```shell
+./scripts/install.sh -f ~/.var/app/org.mozilla.Thunderbird/.thunderbird
 ```

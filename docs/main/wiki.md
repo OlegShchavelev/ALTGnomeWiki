@@ -21,6 +21,8 @@ docs:
                   link: google-chrome
                 - name: Brave
                   link: brave
+                - name: Vivaldi
+                  link: vivaldi
             - title: Месенджеры
               icon:
                 dark: /message-light.svg

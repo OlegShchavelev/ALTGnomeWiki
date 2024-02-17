@@ -85,6 +85,7 @@ export const docs = [
           { text: 'Totem', link: '/totem' },
           { text: 'Transmission', link: '/transmission' },
           { text: 'Viber', link: '/viber' },
+          { text: 'Vivaldi', link: '/vivaldi' },
           { text: 'VLC', link: '/vlc' },
           { text: 'VK Мессенджер', link: '/vk-messenger' },
           { text: 'WhatsApp Desktop', link: '/whatsapp-desktop' },

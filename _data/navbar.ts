@@ -198,7 +198,8 @@ export const docs = [
           { text: 'GSConnect', link: '/gsconnect' },
           { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' },
           { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
-          { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' }
+          { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' },
+          { text: 'Blur my Shell', link: '/blur-my-shell' }
         ],
         collapsed: true
       },

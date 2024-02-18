@@ -48,7 +48,7 @@ epm plat codium
 ::: code-group
 
 ```shell[Сизиф]
-codium -enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
+codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
 ```
 
 ```shell[Flatpak]
@@ -56,7 +56,7 @@ flatpak run com.vscodium.codium --enable-features=UseOzonePlatform,WaylandWindow
 ```
 :::
 
-Для простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCodium**, сделайте Pin и в него внесите следующие параметры:
+Для простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ```shell
 --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto

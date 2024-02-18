@@ -23,7 +23,7 @@ docs:
                   link: brave
                 - name: Vivaldi
                   link: vivaldi
-            - title: Месенджеры
+            - title: Мессенджеры
               icon:
                 dark: /message-light.svg
                 light: /message-dark.svg 

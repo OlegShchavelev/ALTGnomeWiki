@@ -11,9 +11,7 @@
 ```markdown
 ---
 title:  # Название приложения
-nameRepo:  # Название приложения в репозитории sisyphus
 nameSnap:  # Название приложения на Snapcraft
-nameEpmPlay:  # Название приложения для epm play
 appstreamRepo:  # appstream id приложения для sisyphus
 appstreamFlatpak:  # appstream id приложения для flatpak
 ---
@@ -24,7 +22,6 @@ appstreamFlatpak:  # appstream id приложения для flatpak
 ```markdown
 ---
 metainfo:
-    active:  # Показывать ли бар
     thumb:
         src:  # Путь до иконки приложения
         title:   # Название приложения
@@ -71,13 +68,109 @@ metainfo:
 NAME — ...
 ```
 
-## 3. Установка
+## 3. Установка из репозитория 
 
-Построение блоков установки автоматизировано, необходимо лишь заполнить Frontmatter переменные и подключить шаблон.
+::: info 
+Данный блок добавляется если приложение есть в репозитории Sisyphus.
+:::
+
+### 3.1. 
+
+Если можно установить только через терминал:
 
 ```markdown
-<!--@include: ./parts/install/software-install.md-->
+**NAME** можно установить через терминал:
 ```
+
+Если можно установить и через терминал и через центр приложений:
+
+```markdown
+**NAME** можно установить любым привычным и удобным способом:
+
+<!--@include: ./parts/install/software-repo.md-->
+```
+
+### 3.2.
+
+````markdown
+
+::: code-group
+```shell[apt-get]
+su -
+apt-get update
+apt-get install NAME
+```
+```shell[epm]
+epm -i NAME
+```
+:::
+
+````
+
+## 4. Установка c помощью Flatpak
+
+::: info 
+Данный блок добавляется если приложение есть в репозитории Flathub.
+
+Если приложение собрано не разработчиком, добавляется бейдж <Badge type="danger" text="Неофициальная сборка" />
+
+```markdown
+<Badge type="danger" text="Неофициальная сборка" />
+```
+:::
+
+````markdown
+При наличии пакета [Flatpak](/flatpak), можно установить **NAME** одной командой:
+
+```shell
+flatpak install flathub < appstream id flatpak приложения >
+```
+
+<!--@include: ./parts/install/software-flatpak.md-->
+````
+
+## 5. Установка с помощью Snaps
+
+::: info 
+Данный блок добавляется если приложение есть в репозитории Snapcraft.
+
+Если приложение собрано не разработчиком, добавляется бейдж <Badge type="danger" text="Неофициальная сборка" />
+
+```markdown
+<Badge type="danger" text="Неофициальная сборка" />
+```
+:::
+
+````markdown
+При наличии пакета [snapd](/snap), можно установить **NAME** одной командой:
+
+```shell-vue
+snap install NAME
+```
+
+<!--@include: ./software-snap.md-->
+````
+
+## 6. Установка c помощью epm play
+
+::: info 
+Данный блок добавляется если для приложения есть скрипт установки epm play
+
+Если скрипт добавлен не разработчиком приложения, добавляется бейдж <Badge type="danger" text="Неофициальная сборка" />
+
+```markdown
+<Badge type="danger" text="Неофициальная сборка" />
+```
+:::
+
+
+````markdown
+При наличии пакета [eepm](/epm), можно установить **NAME** одной командой:
+
+```shell
+epm play NAME
+```
+````
 
 ## Дополнительные блоки 
 

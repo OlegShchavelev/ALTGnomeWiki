@@ -36,6 +36,10 @@ docs:
                   link: whatsapp-desktop
                 - name: VK Мессенджер
                   link: vk-messenger
+                - name: Discord
+                  link: discord
+                - name: Skype
+                  link: skype
             - title: Игры
               icon:
                 dark: /gamepad-light.svg
@@ -47,6 +51,10 @@ docs:
                   link: port-proton
                 - name: Lutris
                   link: lutris
+                - name: Bottles
+                  link: bottles
+                - name: Сartridges
+                  link: cartridges
             - title: Офис
               icon:
                 dark: /document-light.svg
@@ -73,6 +81,10 @@ docs:
                   link: penpot-desktop
                 - name: Blender
                   link: blender
+                - name: Drawing
+                  link: drawing
+                - name: Krita
+                  link: krita
             - title: Стриминговые сервисы
               icon:
                 dark: /streaming-light.svg

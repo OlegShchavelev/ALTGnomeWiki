@@ -13,6 +13,7 @@ import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import AGWHomeContents from './components/AGWHomeContents.vue'
 import AGWMetaBars from './components/AGWAppsMetaWidget.vue'
 import AGWDOCSCategories from './components/AGWDocsCategories.vue'
+import AGWGallery from './components/AGWGallery.vue'
 
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
 
@@ -109,7 +110,8 @@ export default {
           webvisor: true
         }
       },
-    })
+    }),
+    ctx.app.component('AGWGallery', AGWGallery);
   },
   setup() {
     // Get route

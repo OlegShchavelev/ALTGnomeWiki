@@ -4,6 +4,12 @@ nameRepo: amberol
 nameSnap: amberol
 appstreamRepo: io.bassi.Amberol
 appstreamFlatpak: io.bassi.Amberol
+gallery: 
+    title: Галлерея
+    items: 
+        - src: /amberol/amberol-1.png
+        - src: /amberol/amberol-2.png
+        - src: /amberol/amberol-3.png
 metainfo:
     thumb:
         src: /amberol/io.bassi.Amberol.png
@@ -41,5 +47,7 @@ Amberol — простой музыкальный проигрыватель. Р
 - не позволяет вам редактировать метаданные для ваших песен
 
 Amberol воспроизводит музыку, и ничего больше.
+
+<AGWGallery />
 
 <!--@include: ./parts/install/software-install.md-->

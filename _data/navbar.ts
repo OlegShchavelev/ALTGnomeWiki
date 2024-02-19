@@ -200,7 +200,8 @@ export const docs = [
           { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' },
           { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
           { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' },
-          { text: 'Blur my Shell', link: '/blur-my-shell' }
+          { text: 'Blur my Shell', link: '/blur-my-shell' },
+          { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' }
         ],
         collapsed: true
       },

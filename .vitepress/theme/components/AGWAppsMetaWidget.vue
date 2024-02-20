@@ -113,6 +113,15 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
     padding-top: 24px;
 }
 
+.figure > :deep(.VPImage) {
+  filter: grayscale(1);
+  transition: filter 0.25s;
+ }
+
+ .AppsWidget:hover .figure > :deep(.VPImage) {
+  filter: grayscale(0) invert(0);
+ }
+
 .badges {
     display: flex;
     gap: 2px;
@@ -124,8 +133,6 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
     padding: 0 8px;
     margin-left: 0;
 }
-
-
 
 .developers {
     margin-top: 12px;

@@ -219,6 +219,7 @@ export const docs = [
         items: [
           { text: 'Драйверы NVIDIA', link: '/nvidia' },
           { text: 'Подключение USB устройств', link: '/usb-devices' },
+          { text: 'Подключение принтера', link: '/drivers-for-printer' },
           { text: 'Подключение сканера', link: '/drivers-for-scanner' },
           { text: 'Подключение DualShock 4', link: '/dualshock4' }
         ],

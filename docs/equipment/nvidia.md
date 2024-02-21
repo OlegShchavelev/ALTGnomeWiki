@@ -123,7 +123,7 @@ mcedit /etc/initrd.mk
 su -
 sed -i 's/BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset/#BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset/' /usr/share/make-initrd/features/nvidia/config.mk
 ```
-::: details
+::: details Почему существует файл с BLACKLIST_MODULES
 Файл '/usr/share/make-initrd/features/nvidia/config.mk' идёт вместе с пакетом nvidia_glx_common. Изначально, make-initrd самостоятельно добавлял эти модули без явного указания от пользователя. Такое поведение посчитали нежелательным и добавили в исключения (См. подробности в ["Ошибка 39108 - guess-drm добавляет лишние модули"](https://bugzilla.altlinux.org/39108)).
 
 По этой же причине, с модулями NVIDIA в initramfs не будет работать [замена драйверов nouveau/NVIDIA "на лету"](https://www.altlinux.org/Nvidia#%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0_%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%BE%D0%B2_nouveau/nvidia_%22%D0%BD%D0%B0_%D0%BB%D0%B5%D1%82%D1%83%22).
@@ -314,11 +314,20 @@ vulkaninfo --summary
 ## Дополнительные настройки
 
 ### Управление питанием PCI-Express Runtime D3 (RTD3)
-TODO
-1. Что это такое
-2. Где оно само активируется, а где нет
-3. ограничения
-4. проверить расположение папки rules и узнать, нужны ли эти правила для Turing, Amphere и выше
+Драйвер NVIDIA Linux имеют поддержку динамического управления питанием графического процессора NVIDIA ([PCI-Express Runtime D3 (RTD3) Power Management]().
+В это управление входит регулирование тактовой частоты и напряжение на разных участках микросхемы, а также в некоторых случаях полное отключение тактовой частоты или питания частей чипа, и всё это не влияя на функциональность, продолжая функционировать, просто на меньшей скорости. Эта функция позволяет более гибко потреблять энергию и экононмить аккумулятор ноутбука.
+
+Для работы RTD3 необоходимо следующее:
+- Ноутбук
+- Процессор из cерия чипсетов Coffeelake или новее
+- Видеокарта архитектуры Turing или новее
+- Linux ядро версии 4.18 и новее
+- Ядро Linux собрано с CONFIG_PM (CONFIG_PM=y). Как правило, если система поддерживает S3 (suspend-to-RAM), то и CONFIG_PM будет определён
+
+::: info
+Для Ampere или более поздних версий видеокарт, **RTD3 включено по умолчанию. Настройка не нужна.**
+Для видеокарт Turing настройка должна быть включена вручную:
+:::
 
 Для автоматизации управления надо добавить правила в '/lib/udev/rules.d':
 ```shell
@@ -334,6 +343,7 @@ ACTION=="unbind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0302
 _EOF_
 make-initrd
 ```
+
 В /etc/modprobe.d добавляем конфигурационный файл с параметром:
 ```shell
 su -
@@ -344,7 +354,7 @@ _EOF_
 make-initrd
 ```
 ::: info
-Более подробное описание, а также решение возможных проблем смотрите в [документации NVIDIA](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/dynamicpowermanagement.html)
+Более подробное описание работы, а также решение возможных проблем смотрите в [документации NVIDIA](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/dynamicpowermanagement.html).
 :::
 
 ### PAT

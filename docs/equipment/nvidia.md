@@ -357,6 +357,7 @@ options nvidia "NVreg_DynamicPowerManagement=0x02"
 _EOF_
 make-initrd
 ```
+
 ::: info
 Более подробное описание работы, а также решение возможных проблем смотрите в [документации NVIDIA](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/dynamicpowermanagement.html).
 :::
@@ -382,10 +383,10 @@ make-initrd
 
 Проверка поддержки PAT:
 
-::: shell
+```shell
 su -
 cat /proc/cpuinfo | grep pat
-:::
+```
 
 ### GSP прошивка
 

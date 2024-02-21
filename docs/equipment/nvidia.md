@@ -200,7 +200,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 Драйвера до версии 495 имеют поддержку только [EGLStreams](https://www.phoronix.com/news/GNOME-Mutter-Mainline-EGLStream). 
 
 Начиная с 495 NVIDIA представила поддержку [GBM](https://en.wikipedia.org/wiki/Generic_Buffer_Management). 
-Обычно GBM считается лучшим и с более широкой поддержкой, в отличии от EGLStreams, которую продвигала только одна NVIDIA. 
+GBM считается более лучшим и более широко поддерживаемым buffer API, в отличии от EGLStreams, которую продвигала только одна NVIDIA. 
 Gnome, один из немногих, кто ещё поддерживает EGLStreams, но на сегодняшний день эта поддержка постепенно уходит на второй план.
 :::
 

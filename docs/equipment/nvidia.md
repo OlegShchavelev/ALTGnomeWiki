@@ -104,7 +104,7 @@ inxi -G
 :::
 
 ::: tip
-Чтобы проверить, работает ли KMS, напишите в консоли 'cat /sys/module/nvidia_drm/parameters/modeset ' от имени root (Администратора).
+Чтобы проверить, работает ли KMS, напишите в консоли 'cat /sys/module/nvidia_drm/parameters/modeset' от имени root (Администратора).
 Если консоль выводит "Y" значит работает
 :::
 
@@ -113,7 +113,7 @@ inxi -G
 Для этого в `/etc/initrd.mk` добавляем строку `MODULES_LOAD += nvidia nvidia-modeset nviida-drm nvidia-uvm`
 ```shell
 su -
-mcedit /etc/inird.mk
+mcedit /etc/initrd.mk
 ```
 Далее необходимо закомментировать `BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset` в `/usr/share/make-initrd/features/nvidia/config.mk`
 ```shell
@@ -311,7 +311,9 @@ vulkaninfo --summary
 ### GSP прошивка
 
 Некоторые видеокарты имеют GSP процессор, который может использоваться для разгрузки задач и управления графическим процессором. По умолчанию, он включён для ограниченного числа видеокарт.
-Тем не менее, начиная с архитектуры Turing, этот процессор присутствует во всех видеокартах и его можно принудительно включить(Подробнее см. [GSP firmware](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/gsp.html)):
+Тем не менее, начиная с архитектуры Turing, этот процессор присутствует во всех видеокартах и его можно принудительно включить(Подробнее см. [GSP firmware](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/gsp.html))
+
+В /etc/modprobe.d добавляем конфигурационный файл с параметром:
 
 ```shell
 su -
@@ -326,12 +328,19 @@ _EOF_
 Начиная с драйверов версии 545.29, можно включить фреймбуффер предусмотренный nvidia-drm. Он заменяет стандартные фреймбуферы, такие как efifb или vesafb. 
 Для работы, необходимо, чтобы работал [KMS](./nvidia.md#kms)
 
+В /etc/modprobe.d добавляем конфигурационный файл с параметром:
+
 ```shell
+su -
 cat << _EOF_ > /etc/modprobe.d/nvidia-framebuffer.conf
 # This options unlock experimental nvidia framebuffer
 options nvidia_drm fbdev=1
 _EOF_
 ```
+
+::: danger
+Это экспериментальная функция и работает нестабильно.
+:::
 
 ## Решение проблем
 

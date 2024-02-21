@@ -313,6 +313,55 @@ vulkaninfo --summary
 
 ## Дополнительные настройки
 
+### Управление питанием PCI-Express Runtime D3 (RTD3)
+TODO
+1. Что это такое
+2. Где оно само активируется, а где нет
+3. ограничения
+4. проверить расположение папки rules и узнать, нужны ли эти правила для Turing, Amphere и выше
+Для автоматизации управления надо добавить правила:
+```shell
+su -
+cat << _EOF_ > /rules/lib/udev/rules.d/80-nvidia-pm
+# Enable runtime PM for NVIDIA VGA/3D controller devices on driver bind
+ACTION=="bind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030000", TEST=="power/control", ATTR{power/control}="auto"
+ACTION=="bind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030200", TEST=="power/control", ATTR{power/control}="auto"
+
+# Disable runtime PM for NVIDIA VGA/3D controller devices on driver unbind
+ACTION=="unbind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030000", TEST=="power/control", ATTR{power/control}="on"
+ACTION=="unbind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030200", TEST=="power/control", ATTR{power/control}="on" 
+_EOF_
+make-initrd
+```
+Активировать необходимый режим:
+```shell
+su -
+cat << _EOF_ > /etc/modprobe.d/nvidia_RTD3.conf
+# This options activate RTD3
+options nvidia "NVreg_DynamicPowerManagement=0x02"
+_EOF_
+make-initrd
+```
+::: info
+Более подробное описание, а также решение возможных проблем смотрите в [документации NVIDIA](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/dynamicpowermanagement.html)
+:::
+
+### PAT
+
+TODO
+1. Что такое PAT
+2. Проверка, работает ли.
+3. Предупреждение, что если не поддерживает и включить, могут быть проблемы
+
+```shell
+su -
+cat << _EOF_ > /etc/modprobe.d/nvidia_PAT.conf
+# This options activate PAT
+options nvidia NVreg_UsePageAttributeTable=1
+_EOF_
+make-initrd
+```
+
 ### GSP прошивка
 
 Некоторые видеокарты имеют GSP процессор, который может использоваться для разгрузки задач и управления графическим процессором. По умолчанию, он включён для ограниченного числа видеокарт.
@@ -349,6 +398,8 @@ make-initrd
 Это экспериментальная функция и работает нестабильно.
 :::
 
+N
+
 ## Решение известных проблем
 
 ### «Неизвестный монитор» в настройках дисплеев в сессии Wayland
@@ -383,6 +434,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 su -
 ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 ```
+## Известные проблемы
+TODO
 
 ## Данные об оборудовании и ПО пользователей за 2024 год.
 
@@ -441,6 +494,7 @@ reboot
 ### Источники:
 https://www.altlinux.org/Nvidia
 https://www.kernel.org/doc/html/latest/gpu/drm-kms.html
+https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers/ru
 https://bugzilla.altlinux.org/39108
 https://git.altlinux.org/gears/n/nvidia_glx_common.git?p=nvidia_glx_common.git;a=blob;f=nvidia_glx_common.spec;h=19e084eae0006604525bc0a134492875cecb91da;hb=909a94c100c9491380789de8897a6b85b1921b36#l270
 https://git.altlinux.org/srpms/g/gdm.git?p=gdm.git;a=blob;f=gdm/data/61-gdm.rules.in;h=a4f841bdfe02138f2a4ef00979a8700caeeadcac;hb=45.0.1-alt3.1#l51

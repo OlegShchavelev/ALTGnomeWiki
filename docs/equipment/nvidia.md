@@ -385,7 +385,7 @@ make-initrd
 ::: shell
 su -
 cat /proc/cpuinfo | grep pat
-::
+:::
 
 ### GSP прошивка
 

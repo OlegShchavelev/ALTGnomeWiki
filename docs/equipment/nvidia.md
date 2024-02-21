@@ -2,11 +2,11 @@
 
 Данная статья описывает процесс установки и настройки проприетарного драйвера графических карт NVIDIA. 
 
-Данные драйвера разрабатываются самой компанией [NVIDIA](https://www.nvidia.com/) и являются проприетарной разработкой, в следствии чего поставляются отдельно от ядра Linux и требуют отдельной установки (В отличии от Nouveau, которые уже есть в системе).
+Данные драйвера разрабатываются самой компанией [NVIDIA](https://www.nvidia.com/) и являются проприетарной разработкой, в следствии чего поставляются отдельно от ядра Linux и требуют отдельной установки (В отличии от открытых драйверов Nouveau, которые уже есть в системе).
 
 Также, из-за постоянного развития и изменения драйверов NVIDIA, разные версии драйверов имеют свои нюансы и ограничения, именно поэтому [важно знать версию своих драйверов и информацию, связанную с ними](nvidia.md#настроика-драиверов).
 
-Необходимая версия драйверов ставится автоматически, при установке основного пакета nvidia_glx_common и не требует дополнительных мероприятий.
+Необходимая версия драйверов ставится автоматически, при установке основного пакета [nvidia_glx_common](https://packages.altlinux.org/ru/sisyphus/srpms/nvidia_glx_common/) и не требует дополнительных мероприятий.
 
 ## Установка (Смена Nouveau драйверов на проприетарные)
 
@@ -19,7 +19,7 @@
 su -
 update-kernel
 ```
-Для дальнейшей корректной установки проприетарных драйверов NVIDIA, **необходимо перезагрузить операционную систему**
+Для дальнейшей корректной установки проприетарных драйверов NVIDIA, **необходимо перезагрузить операционную систему**.
 
 Установим проприетарный драйвера NVIDIA:
 
@@ -85,7 +85,7 @@ epm play switch-to-nvidia
 ::: info
 Настройки описаны, в первую очередь, для актуальных драйверов.
 
-Поэтому перед началом настройки, сначала узнайте версию драйверов и ознакомьтесь с информацией, связанной с ними (См. блоки "Для драйверов XXX", где XXX это версия установленных у вас драйверов).
+Перед началом настройки, сначала узнайте версию драйверов и ознакомьтесь с информацией, связанной с ними (См. блоки "Для драйверов XXX", где XXX это версия установленных у вас драйверов).
 :::
 
 Чтобы узнать версию драйверов, необходимо ввести:
@@ -96,7 +96,7 @@ inxi -G
 ## Актуальные драйвера (545.29 и новее)
 
 ### [KMS](https://www.kernel.org/doc/html/latest/gpu/drm-kms.html)
-Для драйверов версии 545 и выше, нет необходимости указывать modeset в параметрах ядра. Эта настройка будет правильно установлена вместе с установкой самих драйверов. (Настройка будет установлена в/etc/modprobe.d/nvidia_common.conf)
+Для драйверов версии 545 и выше, нет необходимости указывать modeset в параметрах ядра. Эта настройка будет правильно установлена вместе с установкой самих драйверов. (Настройка будет установлена в /etc/modprobe.d/nvidia_common.conf)
 
 ::: info
 Для работы в сессии X11 настройка KMS необязательна. 
@@ -104,7 +104,10 @@ inxi -G
 :::
 
 ::: tip
-Чтобы проверить, работает ли KMS, напишите в консоли 'cat /sys/module/nvidia_drm/parameters/modeset' от имени root (Администратора).
+Чтобы проверить, работает ли KMS, напишите в консоли от имени root (Администратора):
+
+'cat /sys/module/nvidia_drm/parameters/modeset' 
+
 Если консоль выводит "Y" значит работает
 :::
 
@@ -120,8 +123,8 @@ mcedit /etc/initrd.mk
 su -
 sed -i 's/BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset/#BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset/' /usr/share/make-initrd/features/nvidia/config.mk
 ```
-::: details
-Этот файл с BLACKLIST_MODULES идёт вместе с пакетом nvidia_glx_common. Изначально, make-initrd самостоятельно добавлял эти модули без явного указания от пользователя. Такое поведение посчитали нежелательным и добавили в исключения (См. подробности в ["Ошибка 39108 - guess-drm добавляет лишние модули"](https://bugzilla.altlinux.org/39108)).
+::: details Почему существует файл с BLACKLIST_MODULES
+Файл '/usr/share/make-initrd/features/nvidia/config.mk' идёт вместе с пакетом nvidia_glx_common. Изначально, make-initrd самостоятельно добавлял эти модули без явного указания от пользователя. Такое поведение посчитали нежелательным и добавили в исключения (См. подробности в ["Ошибка 39108 - guess-drm добавляет лишние модули"](https://bugzilla.altlinux.org/39108)).
 
 По этой же причине, с модулями NVIDIA в initramfs не будет работать [замена драйверов nouveau/NVIDIA "на лету"](https://www.altlinux.org/Nvidia#%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0_%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%BE%D0%B2_nouveau/nvidia_%22%D0%BD%D0%B0_%D0%BB%D0%B5%D1%82%D1%83%22).
 :::
@@ -134,7 +137,8 @@ make-initrd
 
 Активируем **Wayland** сессию в **ALT Regular Gnome** для видеокарт NVIDIA с установленными проприетарными драйверами.
 
-#### Прежде всего должны работать [KMS](./nvidia.md#kms)
+#### Прежде всего должна работать [KMS](./nvidia.md#kms)
+
 
 #### Настраиваем поддержку управления питания видеокарты
 Активируем интерфейсы управления питания NVIDIA. Эти интерфейсы необходимы для предотвращения проблем с сохранением видеопамяти при входе в спящий режим и гибернизации. [(см. источник)](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/powermanagement.html)
@@ -151,6 +155,7 @@ cat << _EOF_ > /etc/modprobe.d/nvidia_videomemory_allocation.conf
 options nvidia NVreg_PreserveVideoMemoryAllocations=1
 options nvidia NVreg_TemporaryFilePath=/run
 _EOF_
+make-initrd
 ```
 
 ::: tip
@@ -195,7 +200,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 Драйвера до версии 495 имеют поддержку только [EGLStreams](https://www.phoronix.com/news/GNOME-Mutter-Mainline-EGLStream). 
 
 Начиная с 495 NVIDIA представила поддержку [GBM](https://en.wikipedia.org/wiki/Generic_Buffer_Management). 
-Обычно GBM считается лучшим и с более широкой поддержкой, в отличии от EGLStreams, которую продвигала только одна NVIDIA. 
+GBM считается более лучшим и более широко поддерживаемым buffer API, в отличии от EGLStreams, которую продвигала только одна NVIDIA. 
 Gnome, один из немногих, кто ещё поддерживает EGLStreams, но на сегодняшний день эта поддержка постепенно уходит на второй план.
 :::
 
@@ -308,6 +313,80 @@ vulkaninfo --summary
 
 ## Дополнительные настройки
 
+### Управление питанием PCI-Express Runtime D3 (RTD3)
+Драйвер NVIDIA Linux имеют поддержку динамического управления питанием графического процессора NVIDIA ([PCI-Express Runtime D3 (RTD3) Power Management]().
+
+В это управление входит регулирование тактовой частоты, напряжение на разных участках микросхемы, а также, в некоторых случаях, полное отключение тактовой частоты или питания элементов чипа. 
+
+И всё это не влияя на функциональность, позволяя работать графическому процессору с меньшей производительностью, но с более низким потреблением энергии.
+
+Для работы RTD3 необходимо следующее:
+- Ноутбук
+- Процессор из cерия чипсетов Coffeelake или новее
+- Видеокарта архитектуры Turing или новее
+- Linux ядро версии 4.18 и новее
+- Ядро Linux собрано с CONFIG_PM (CONFIG_PM=y). Как правило, если система поддерживает S3 (suspend-to-RAM), то и CONFIG_PM будет определён как надо
+
+::: info
+Для Ampere или более поздних версий видеокарт, **RTD3 включено по умолчанию. Настройка не нужна.**
+
+Для видеокарт Turing настройка должна быть включена вручную:
+:::
+
+Для автоматизации управления надо добавить правила в '/lib/udev/rules.d':
+```shell
+su -
+cat << _EOF_ > /lib/udev/rules.d/80-nvidia-pm
+# Enable runtime PM for NVIDIA VGA/3D controller devices on driver bind
+ACTION=="bind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030000", TEST=="power/control", ATTR{power/control}="auto"
+ACTION=="bind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030200", TEST=="power/control", ATTR{power/control}="auto"
+
+# Disable runtime PM for NVIDIA VGA/3D controller devices on driver unbind
+ACTION=="unbind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030000", TEST=="power/control", ATTR{power/control}="on"
+ACTION=="unbind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030200", TEST=="power/control", ATTR{power/control}="on" 
+_EOF_
+make-initrd
+```
+
+В /etc/modprobe.d добавляем конфигурационный файл с параметром:
+```shell
+su -
+cat << _EOF_ > /etc/modprobe.d/nvidia_RTD3.conf
+# This options activate RTD3
+options nvidia "NVreg_DynamicPowerManagement=0x02"
+_EOF_
+make-initrd
+```
+::: info
+Более подробное описание работы, а также решение возможных проблем смотрите в [документации NVIDIA](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/dynamicpowermanagement.html).
+:::
+
+### PAT
+
+Драйвера NVIDIA позволяют сменить старый атрибут страничной организации памяти [MTRR на PAT](https://wiki.gentoo.org/wiki/MTRR_and_PAT).
+
+[PAT](https://docs.kernel.org/arch/x86/pat.html) более современная технология и является более гибким атрибутом, добавляя новые возможности для организации памяти.
+
+Чтобы её включить, в /etc/modprobe.d добавляем конфигурационный файл с параметром:
+```shell
+su -
+cat << _EOF_ > /etc/modprobe.d/nvidia_PAT.conf
+# This options activate PAT
+options nvidia NVreg_UsePageAttributeTable=1
+_EOF_
+make-initrd
+```
+::: warning
+Удостоверьтесть, что ваша система поддерживает PAT, а в противном случае, у вас могут быть проблемы с системой.
+::
+
+Проверка поддержки PAT:
+
+::: shell
+su -
+cat /proc/cpuinfo | grep pat
+:::
+
 ### GSP прошивка
 
 Некоторые видеокарты имеют GSP процессор, который может использоваться для разгрузки задач и управления графическим процессором. По умолчанию, он включён для ограниченного числа видеокарт.
@@ -321,6 +400,7 @@ cat << _EOF_ > /etc/modprobe.d/nvidia_GSP_firmware.conf
 # This options force unlock GPU firmware
 options nvidia NVreg_EnableGpuFirmware=1
 _EOF_
+make-initrd
 ```
 
 ### Фреймбуфер от NVIDIA (Экспериментальная функция)
@@ -336,13 +416,14 @@ cat << _EOF_ > /etc/modprobe.d/nvidia-framebuffer.conf
 # This options unlock experimental nvidia framebuffer
 options nvidia_drm fbdev=1
 _EOF_
+make-initrd
 ```
 
 ::: danger
 Это экспериментальная функция и работает нестабильно.
 :::
 
-## Решение проблем
+## Решение известных проблем
 
 ### «Неизвестный монитор» в настройках дисплеев в сессии Wayland
 
@@ -376,6 +457,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 su -
 ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 ```
+## Известные проблемы
+TODO
 
 ## Данные об оборудовании и ПО пользователей за 2024 год.
 
@@ -434,6 +517,7 @@ reboot
 ### Источники:
 https://www.altlinux.org/Nvidia
 https://www.kernel.org/doc/html/latest/gpu/drm-kms.html
+https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers/ru
 https://bugzilla.altlinux.org/39108
 https://git.altlinux.org/gears/n/nvidia_glx_common.git?p=nvidia_glx_common.git;a=blob;f=nvidia_glx_common.spec;h=19e084eae0006604525bc0a134492875cecb91da;hb=909a94c100c9491380789de8897a6b85b1921b36#l270
 https://git.altlinux.org/srpms/g/gdm.git?p=gdm.git;a=blob;f=gdm/data/61-gdm.rules.in;h=a4f841bdfe02138f2a4ef00979a8700caeeadcac;hb=45.0.1-alt3.1#l51

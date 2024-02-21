@@ -319,10 +319,11 @@ TODO
 2. Где оно само активируется, а где нет
 3. ограничения
 4. проверить расположение папки rules и узнать, нужны ли эти правила для Turing, Amphere и выше
-Для автоматизации управления надо добавить правила:
+
+Для автоматизации управления надо добавить правила в '/lib/udev/rules.d':
 ```shell
 su -
-cat << _EOF_ > /rules/lib/udev/rules.d/80-nvidia-pm
+cat << _EOF_ > /lib/udev/rules.d/80-nvidia-pm
 # Enable runtime PM for NVIDIA VGA/3D controller devices on driver bind
 ACTION=="bind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030000", TEST=="power/control", ATTR{power/control}="auto"
 ACTION=="bind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x030200", TEST=="power/control", ATTR{power/control}="auto"
@@ -333,7 +334,7 @@ ACTION=="unbind", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0302
 _EOF_
 make-initrd
 ```
-Активировать необходимый режим:
+В /etc/modprobe.d добавляем конфигурационный файл с параметром:
 ```shell
 su -
 cat << _EOF_ > /etc/modprobe.d/nvidia_RTD3.conf
@@ -353,6 +354,7 @@ TODO
 2. Проверка, работает ли.
 3. Предупреждение, что если не поддерживает и включить, могут быть проблемы
 
+В /etc/modprobe.d добавляем конфигурационный файл с параметром:
 ```shell
 su -
 cat << _EOF_ > /etc/modprobe.d/nvidia_PAT.conf

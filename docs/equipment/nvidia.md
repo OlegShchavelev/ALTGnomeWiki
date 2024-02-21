@@ -6,7 +6,7 @@
 
 Также, из-за постоянного развития и изменения драйверов NVIDIA, разные версии драйверов имеют свои нюансы и ограничения, именно поэтому [важно знать версию своих драйверов и информацию, связанную с ними](nvidia.md#настроика-драиверов).
 
-Необходимая версия драйверов ставится автоматически, при установке основного пакета nvidia_glx_common и не требует дополнительных мероприятий.
+Необходимая версия драйверов ставится автоматически, при установке основного пакета [nvidia_glx_common](https://packages.altlinux.org/ru/sisyphus/srpms/nvidia_glx_common/) и не требует дополнительных мероприятий.
 
 ## Установка (Смена Nouveau драйверов на проприетарные)
 
@@ -19,7 +19,7 @@
 su -
 update-kernel
 ```
-Для дальнейшей корректной установки проприетарных драйверов NVIDIA, **необходимо перезагрузить операционную систему**
+Для дальнейшей корректной установки проприетарных драйверов NVIDIA, **необходимо перезагрузить операционную систему**.
 
 Установим проприетарный драйвера NVIDIA:
 
@@ -96,7 +96,7 @@ inxi -G
 ## Актуальные драйвера (545.29 и новее)
 
 ### [KMS](https://www.kernel.org/doc/html/latest/gpu/drm-kms.html)
-Для драйверов версии 545 и выше, нет необходимости указывать modeset в параметрах ядра. Эта настройка будет правильно установлена вместе с установкой самих драйверов. (Настройка будет установлена в/etc/modprobe.d/nvidia_common.conf)
+Для драйверов версии 545 и выше, нет необходимости указывать modeset в параметрах ядра. Эта настройка будет правильно установлена вместе с установкой самих драйверов. (Настройка будет установлена в /etc/modprobe.d/nvidia_common.conf)
 
 ::: info
 Для работы в сессии X11 настройка KMS необязательна. 
@@ -104,7 +104,10 @@ inxi -G
 :::
 
 ::: tip
-Чтобы проверить, работает ли KMS, напишите в консоли 'cat /sys/module/nvidia_drm/parameters/modeset' от имени root (Администратора).
+Чтобы проверить, работает ли KMS, напишите в консоли от имени root (Администратора):
+
+'cat /sys/module/nvidia_drm/parameters/modeset' 
+
 Если консоль выводит "Y" значит работает
 :::
 
@@ -121,7 +124,7 @@ su -
 sed -i 's/BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset/#BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset/' /usr/share/make-initrd/features/nvidia/config.mk
 ```
 ::: details
-Этот файл с BLACKLIST_MODULES идёт вместе с пакетом nvidia_glx_common. Изначально, make-initrd самостоятельно добавлял эти модули без явного указания от пользователя. Такое поведение посчитали нежелательным и добавили в исключения (См. подробности в ["Ошибка 39108 - guess-drm добавляет лишние модули"](https://bugzilla.altlinux.org/39108)).
+Файл '/usr/share/make-initrd/features/nvidia/config.mk' идёт вместе с пакетом nvidia_glx_common. Изначально, make-initrd самостоятельно добавлял эти модули без явного указания от пользователя. Такое поведение посчитали нежелательным и добавили в исключения (См. подробности в ["Ошибка 39108 - guess-drm добавляет лишние модули"](https://bugzilla.altlinux.org/39108)).
 
 По этой же причине, с модулями NVIDIA в initramfs не будет работать [замена драйверов nouveau/NVIDIA "на лету"](https://www.altlinux.org/Nvidia#%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0_%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%BE%D0%B2_nouveau/nvidia_%22%D0%BD%D0%B0_%D0%BB%D0%B5%D1%82%D1%83%22).
 :::
@@ -134,7 +137,8 @@ make-initrd
 
 Активируем **Wayland** сессию в **ALT Regular Gnome** для видеокарт NVIDIA с установленными проприетарными драйверами.
 
-#### Прежде всего должны работать [KMS](./nvidia.md#kms)
+#### Прежде всего должна работать [KMS](./nvidia.md#kms)
+
 
 #### Настраиваем поддержку управления питания видеокарты
 Активируем интерфейсы управления питания NVIDIA. Эти интерфейсы необходимы для предотвращения проблем с сохранением видеопамяти при входе в спящий режим и гибернизации. [(см. источник)](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/powermanagement.html)
@@ -151,6 +155,7 @@ cat << _EOF_ > /etc/modprobe.d/nvidia_videomemory_allocation.conf
 options nvidia NVreg_PreserveVideoMemoryAllocations=1
 options nvidia NVreg_TemporaryFilePath=/run
 _EOF_
+make-initrd
 ```
 
 ::: tip
@@ -321,6 +326,7 @@ cat << _EOF_ > /etc/modprobe.d/nvidia_GSP_firmware.conf
 # This options force unlock GPU firmware
 options nvidia NVreg_EnableGpuFirmware=1
 _EOF_
+make-initrd
 ```
 
 ### Фреймбуфер от NVIDIA (Экспериментальная функция)
@@ -336,13 +342,14 @@ cat << _EOF_ > /etc/modprobe.d/nvidia-framebuffer.conf
 # This options unlock experimental nvidia framebuffer
 options nvidia_drm fbdev=1
 _EOF_
+make-initrd
 ```
 
 ::: danger
 Это экспериментальная функция и работает нестабильно.
 :::
 
-## Решение проблем
+## Решение известных проблем
 
 ### «Неизвестный монитор» в настройках дисплеев в сессии Wayland
 

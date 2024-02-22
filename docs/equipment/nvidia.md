@@ -365,7 +365,7 @@ make-initrd
 ```
 ::: warning
 Удостоверьтесть, что ваша система поддерживает PAT, а в противном случае, у вас могут быть проблемы с системой.
-::
+:::
 
 Проверка поддержки PAT:
 
@@ -389,26 +389,6 @@ options nvidia NVreg_EnableGpuFirmware=1
 _EOF_
 make-initrd
 ```
-
-### Фреймбуфер от NVIDIA (Экспериментальная функция)
-
-Начиная с драйверов версии 545.29, можно включить фреймбуффер предусмотренный nvidia-drm. Он заменяет стандартные фреймбуферы, такие как efifb или vesafb. 
-Для работы, необходимо, чтобы работал [KMS](./nvidia.md#kms)
-
-В /etc/modprobe.d добавляем конфигурационный файл с параметром:
-
-```shell
-su -
-cat << _EOF_ > /etc/modprobe.d/nvidia-framebuffer.conf
-# This options unlock experimental nvidia framebuffer
-options nvidia_drm fbdev=1
-_EOF_
-make-initrd
-```
-
-::: danger
-Это экспериментальная функция и работает нестабильно.
-:::
 
 ## Решение известных проблем
 

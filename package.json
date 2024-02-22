@@ -13,7 +13,7 @@
     "markdown-it-implicit-figures": "^0.12.0",
     "markdown-it-kbd": "^2.2.2",
     "markdown-it-task-lists": "^2.1.1",
-    "vitepress": "^1.0.0-rc.36",
+    "vitepress": "^1.0.0-rc.44",
     "vitepress-markdown-timeline": "^1.2.1",
     "vitepress-plugin-image-viewer": "^1.1.2"
   },

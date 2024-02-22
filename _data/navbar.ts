@@ -209,6 +209,7 @@ export const docs = [
         text: 'Решение проблем',
         items: [
           { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround' },
+          { text: 'Проблема со звуком в передней панели', link: '/fix-front-panel-audio' },
           { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround' },
           { text: 'Обновить названия стандартных папок в соответствутвии с локалью', link: '/change-the-language-of-the-home-user-folders-automatically' }
         ],

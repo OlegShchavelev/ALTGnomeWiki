@@ -55,6 +55,8 @@ docs:
                   link: bottles
                 - name: Сartridges
                   link: cartridges
+                - name: Grapejuice
+                  link: grapejuice
             - title: Офис
               icon:
                 dark: /document-light.svg

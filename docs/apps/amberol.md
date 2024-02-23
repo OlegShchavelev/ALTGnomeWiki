@@ -28,12 +28,6 @@ metainfo:
         anchor: gitlab.gnome.org
     adaptive: true,
     gnomeCircle: true
-    snapcraft:
-        url: https://snapcraft.io/amberol
-    flathub:
-        url: https://flathub.org/apps/io.bassi.Amberol
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/amberol/
 ---
 
 # Amberol

@@ -2,20 +2,19 @@
 import { type Ref, computed } from 'vue'
 import { DefaultTheme, useData } from 'vitepress'
 
-
 const { theme, frontmatter } = useData();
-const metainfo = computed(() => frontmatter.value.metainfo ?? theme.value.metainfo ?? false);
 
-const props = {
-    sisyphusId: frontmatter.value.sisyphus,
-    flatpakId: frontmatter.value.appstreamFlatpak,
-    snapcraftId: frontmatter.value.nameSnap
-}
+const metainfo = computed(() => frontmatter.value.metainfo ?? theme.value.metainfo ?? null);
+const props = computed(() => {
+    return {
+        sisyphusId: frontmatter.value.nameRepo,
+        flatpakId: frontmatter.value.appstreamFlatpak,
+        snapcraftId: frontmatter.value.nameSnap
+    }
+})
 
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
-
-
 </script>
 
 <template>
@@ -73,16 +72,20 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
                 </VPLink>
             </dd>
         </dl>
-        <div class="footet">
+        <div class="footer">
             <a target="_blank" v-if="metainfo.sponsor && metainfo.sponsor.url" :href="metainfo.sponsor.url"
                 class="link-gnome-sponsor">Поддержать автора</a>
-            <a target="_blank" v-if="(metainfo.snapcraft && metainfo.snapcraft.url) || (metainfo.snapcraft !== false && props.snapcraftId)"
+            <a target="_blank"
+                v-if="(metainfo.snapcraft && metainfo.snapcraft.url) || (metainfo.snapcraft !== false && props.snapcraftId)"
                 :href="(metainfo.snapcraft && metainfo.snapcraft.url) ? metainfo.snapcraft.url : 'https://snapcraft.io/' + props.snapcraftId"
                 class="link-gnome-snap">Snapcraft</a>
-            <a target="_blank" v-if="(metainfo.flathub && metainfo.flathub.url) || (metainfo.flathub !== false && props.flatpakId)"
+            <a target="_blank"
+                v-if="(metainfo.flathub && metainfo.flathub.url) || (metainfo.flathub !== false && props.flatpakId)"
                 :href="(metainfo.flathub && metainfo.flathub.url) ? metainfo.flathub.url : 'https://flathub.org/apps/' + props.flatpakId"
                 class="link-gnome-flathub">Flathub</a>
-            <a target="_blank" v-if="(metainfo.sisyphus && metainfo.sisyphus.url) || (metainfo.sisyphus !== false && props.sisyphusId)" :href="(metainfo.sisyphus && metainfo.sisyphus.url) ? metainfo.sisyphus.url : 'https://packages.altlinux.org/ru/sisyphus/srpms/' + props.sisyphusId"
+            <a target="_blank"
+                v-if="(metainfo.sisyphus && metainfo.sisyphus.url) || (metainfo.sisyphus !== false && props.sisyphusId)"
+                :href="(metainfo.sisyphus && metainfo.sisyphus.url) ? metainfo.sisyphus.url : 'https://packages.altlinux.org/ru/sisyphus/srpms/' + props.sisyphusId"
                 class="link-gnome-sisyphus">Сизиф</a>
         </div>
     </article>

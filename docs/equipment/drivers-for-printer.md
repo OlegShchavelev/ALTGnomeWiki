@@ -36,6 +36,7 @@ systemctl reboot
 
 :::info
 Наблюдается неккоретная работа программного обеспечения под сессией Wayland, если Вам необходимы только драйвера, установите пакет **hplip**
+Либо смотрите обходное решение проблемы ниже
 :::
 
 ::: code-group
@@ -52,6 +53,52 @@ epm -i hplip-gui hplip-gui-autostart hplip-sane hplip
 epm play hplip-plugin
 ```
 :::
+
+## HP-GUI - запуск под Wayland
+
+Для начала нужно удалить пакет **hplip-gui-autostart** 
+
+```shell
+su -
+apt-get remove hplip-gui-autostart
+```
+
+Далее редактируем строчку **Exec** в файле **hplip.desktop**
+
+```shell
+su -
+mcedit /usr/share/applications/hplip.desktop
+```
+
+Пишем как ниже и сохраняем.
+
+```shell
+Exec=env XDG_SESSION_TYPE=xwayland dbus-run-session hp-toolbox
+```
+
+Далее делаем автозапуск если нужен, если нет, перезагружаем компьютер.
+
+Создаем файл к примеру
+
+```shell
+~/.config/autostart/hp.desktop
+```
+
+со следующим содержимым
+
+```shell
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=HP Device Manager
+NoDisplay=true
+Comment=hp-toolbox in sys trey
+Exec=env XDG_SESSION_TYPE=xwayland dbus-run-session hp-toolbox
+Terminal=false
+```
+
+Перезагружаем компьютер
 
 ## Canon - установка пакета драйверов
 

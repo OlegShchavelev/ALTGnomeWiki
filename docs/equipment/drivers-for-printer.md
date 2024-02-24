@@ -98,6 +98,12 @@ Exec=env XDG_SESSION_TYPE=xwayland dbus-run-session hp-toolbox
 Terminal=false
 ```
 
+Далее делаем его выполняемым
+
+```shell
+chmod +x hp.desktop 
+```
+
 Перезагружаем компьютер
 
 ## Canon - установка пакета драйверов

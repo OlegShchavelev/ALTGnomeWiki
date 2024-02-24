@@ -22,15 +22,27 @@ import 'swiper/css/pagination';
 
 <template>
     <div class="galleries">
-        <h3 v-html="'Галерея ' + frontmatter.title"></h3>
-        <swiper :slides-per-view="1.1" :breakpoints="{ 767: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }"
-            :space-between="20" @swiper="onSwiper" @slideChange="onSlideChange">
-            <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
-                <figure class="figure">
-                    <VPImage :image="file.src" :alt="frontmatter.title" class="gallery"/>
-                </figure>
-            </swiper-slide>
-        </swiper>
+        <h3 v-if="galleries.title" v-html="galleries.title"></h3> 
+        <div v-if="galleries.type == 'carousel'">
+            <swiper :slides-per-view="1.1" :breakpoints="{ 767: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }"
+                :space-between="20" @swiper="onSwiper" @slideChange="onSlideChange">
+                <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
+                    <figure class="figure ratio ratio-1x1">
+                        <VPImage :image="file.src" :alt="frontmatter.title" class="gallery"/>
+                    </figure>
+                </swiper-slide>
+            </swiper>
+        </div>
+        <div v-if="galleries.type == 'slider'">
+            <swiper :slides-per-view="1.05"
+                :space-between="20" @swiper="onSwiper" @slideChange="onSlideChange">
+                <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
+                    <figure class="figure ratio ratio-16x9">
+                        <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
+                    </figure>
+                </swiper-slide>
+            </swiper>
+        </div>
     </div>
 </template>
 
@@ -44,19 +56,30 @@ import 'swiper/css/pagination';
     width: 100%;
 }
 
-.figure::before {
+.ratio::before {
     content: "";
     display: block;
+    
+}
+
+.ratio.ratio-1x1::before {
     padding-top: 100%;
 }
 
-.figure>* {
+.ratio.ratio-16x9::before {
+    padding-top: 56.25%;
+}
+
+.figure > * {
+    object-fit: cover;
+}
+
+.ratio > * {
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    object-fit: cover;
 }
 
 .figure> :deep(.VPImage) {

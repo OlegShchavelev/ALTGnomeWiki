@@ -55,6 +55,8 @@ docs:
                   link: bottles
                 - name: Сartridges
                   link: cartridges
+                - name: Grapejuice
+                  link: grapejuice
             - title: Офис
               icon:
                 dark: /document-light.svg
@@ -99,4 +101,6 @@ docs:
 # ALT REGULAR GNOME WIKI
 
 ALT Regular Gnome — прогрессивная операционная система, разработанная таким образом, чтобы получать ежедневные обновления из репозитория Сизиф. Сизиф — нестабильный репозиторий, который развивается постоянно, то есть не обладает ограничениями на размещение в него пакетов.
+
+<AGWCategories />
 

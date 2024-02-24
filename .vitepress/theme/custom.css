@@ -4,7 +4,7 @@
  * Colors
  * -------------------------------------------------------------------------- */
 
- :root {
+:root {
 
   --vp-c-blue: #3584e4;
   --vp-c-blue-light: #62a0ea;
@@ -50,60 +50,56 @@
   --vp-c-red-dimm-1: rgba(224, 27, 36, 0.05);
   --vp-c-red-dimm-2: rgba(224, 27, 36, 0.2);
   --vp-c-red-dimm-3: rgba(224, 27, 36, 0.5);
- }
+}
 
- :root {
-    --vp-c-brand: #1a5fb4;
-    --vp-c-brand-light: #1c71d8;
-    --vp-c-brand-lighter: #3584e4;
-    --vp-c-brand-lightest: #62a0ea;
-    --vp-c-brand-dark: #1a5fb4;
-    --vp-c-brand-darker: #1c71d8;
-    --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
-  }
-  
-  :root {
-    /* Typography */
-    --vp-font-family-base: 'Manrope', sans-serif;
-  }
-  
-  /**
+:root {
+  --vp-c-brand: #1a5fb4;
+  --vp-c-brand-light: #1c71d8;
+  --vp-c-brand-lighter: #3584e4;
+  --vp-c-brand-lightest: #62a0ea;
+  --vp-c-brand-dark: #1a5fb4;
+  --vp-c-brand-darker: #1c71d8;
+  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+}
+
+:root {
+  /* Typography */
+  --vp-font-family-base: 'Manrope', sans-serif;
+}
+
+/**
  * Component: Home
  * -------------------------------------------------------------------------- */
 
- :root {
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(
-      120deg,
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
       #c061cb 30%,
-      #62a0ea
-    );
-  
-    --vp-home-hero-image-background-image: linear-gradient(
-      -45deg,
+      #62a0ea);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg,
       #c061cb 50%,
-      #62a0ea 50%
-    );
-    --vp-home-hero-image-filter: blur(40px);
-  }  
- 
- @media (min-width: 960px) {
-    
-    :root {
-      --vp-home-hero-image-filter: blur(72px);
-      --vp-nav-logo-height: 36px;
-    }
+      #62a0ea 50%);
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+@media (min-width: 960px) {
+
+  :root {
+    --vp-home-hero-image-filter: blur(72px);
+    --vp-nav-logo-height: 36px;
   }
+}
 
 /**
  * Custom block
  * -------------------------------------------------------------------------- */
 
-  .custom-block {
-    border: 4px solid transparent;
-  }
-  
-  :root {
+.custom-block {
+  border: 4px solid transparent;
+}
+
+:root {
   --vp-custom-block-info-border: var(--vp-c-blue-dimm-2);
   --vp-custom-block-info-bg: var(--vp-c-blue-dimm-1);
   --vp-custom-block-info-text: var(--vp-c-neutral);
@@ -122,13 +118,13 @@
 
   --vp-custom-block-details-border: var(--vp-c-divider);
   --vp-custom-block-details-bg: var(--vp-c-bg-soft-up);
-  }
+}
 
-  /**
+/**
  * kdb
  * -------------------------------------------------------------------------- */
 
-  kbd {
+kbd {
   border: 1px solid var(--vp-c-border);
   box-shadow: var(--vp-c-gray-soft) 0px 1px 1px 0px, var(--vp-c-neutral-inverse) 0px 1px 0px 0px inset;
   background-color: var(--vp-c-gray-soft);
@@ -138,20 +134,20 @@
   overflow-wrap: break-word;
   padding: .1em .6em;
   text-shadow: 0 1px 0 var(--vp-c-white);
-  }
+}
 
-  :root {
-    --vp-nav-logo-height: 36px
-  }
+:root {
+  --vp-nav-logo-height: 36px
+}
 
- /**
+/**
  * task-lists
  * -------------------------------------------------------------------------- */
 
- .vp-doc .contains-task-list {
+.vp-doc .contains-task-list {
   list-style: none;
   padding-left: 0;
- }
+}
 
 /**
  * Component: Algolia
@@ -181,22 +177,13 @@
 /**
  * implicitFigures
  * -------------------------------------------------------------------------- */
- figure > figcaption {
+figure>figcaption {
   text-align: center;
   color: var(--vp-c-brand-lightest);
   font-size: 14px;
- } 
+}
 
- .card-image {
-  filter: grayscale(1);
-  transition: filter 0.25s;
- }
-
- .AppsWidget:hover .card-image {
-  filter: grayscale(0) invert(0);
- }
-
- .avatar-developer {
+.avatar-developer {
   position: absolute;
   top: 0;
   right: 0;
@@ -206,7 +193,7 @@
   object-fit: cover;
 }
 
- .VPBadge.success {
+.VPBadge.success {
   border-color: transparent;
   color: var(--vp-c-success-1);
   background-color: var(--vp-c-success-soft);
@@ -218,6 +205,42 @@
   background-color: var(--vp-c-success-2);
 }
 
+/**
+ * Swiper
+ * -------------------------------------------------------------------------- */
+
 :root {
   --swiper-theme-color: var(--vp-c-brand-1);
+}
+
+/**
+ * ViewerJS
+ * -------------------------------------------------------------------------- */
+.viewer-canvas {
+  backdrop-filter: blur(20px);
+}
+
+html:not(.dark) .viewer-canvas {
+  background: rgba(0, 0, 0, .25);
+  backdrop-filter: blur(15px);
+}
+
+.viewer-toolbar {
+  text-align: right;
+}
+
+.viewer-toolbar>ul>li {
+  padding: 8px;
+  border-radius: 0px !important;
+  height: unset !important;
+  width: unset !important;
+}
+
+.viewer-button {
+  border-radius: 0px !important;
+}
+
+.viewer-button:before {
+  bottom: 10px !important;
+  left: 12px !important;
 }

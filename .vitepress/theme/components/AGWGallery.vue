@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { type Ref, computed } from 'vue'
-import { DefaultTheme, useData } from 'vitepress'
+import { type Ref, computed, onMounted } from 'vue'
+import { DefaultTheme, useData, useRoute } from 'vitepress'
 
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from 'swiper/modules';
+import setViewer from 'vitepress-plugin-image-viewer/lib/viewer';
 
 const { theme, frontmatter } = useData();
 const galleries = frontmatter.value.gallery ?? theme.value.gallery ?? [];
-
 
 const onSwiper = (swiper: any) => console.log(swiper);
 const onSlideChange = () => console.log('slide change');
@@ -23,18 +23,16 @@ import 'swiper/css/pagination';
 <template>
     <div class="galleries">
         <h3 v-html="'Галерея ' + frontmatter.title"></h3>
-        <swiper :slides-per-view="1" :breakpoints="{ 767: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }"
-            :space-between="20"
-            @swiper="onSwiper" @slideChange="onSlideChange">
+        <swiper :slides-per-view="1.1" :breakpoints="{ 767: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }"
+            :space-between="20" @swiper="onSwiper" @slideChange="onSlideChange">
             <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
                 <figure class="figure">
-                    <VPImage :image="file.src" :alt="frontmatter.title" />
+                    <VPImage :image="file.src" :alt="frontmatter.title" class="gallery"/>
                 </figure>
             </swiper-slide>
         </swiper>
     </div>
 </template>
-
 
 <style scoped>
 .swiper {
@@ -61,13 +59,14 @@ import 'swiper/css/pagination';
     object-fit: cover;
 }
 
-.figure > :deep(.VPImage) {
+.figure> :deep(.VPImage) {
     border-radius: 8px;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     object-fit: cover;
+    cursor: zoom-in;
 }
 
 </style> 

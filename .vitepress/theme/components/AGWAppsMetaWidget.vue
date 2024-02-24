@@ -125,7 +125,7 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
     padding-top: 24px;
 }
 
-.figure> :deep(.VPImage) {
+.figure > :deep(.VPImage) {
     filter: grayscale(1);
     transition: filter 0.25s;
 }

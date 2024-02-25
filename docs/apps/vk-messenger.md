@@ -19,7 +19,7 @@ epm play vk
 
 ```shell[apt-get]
 su -
-cd ../home/USER/Загрузки
+cd /home/USER/Загрузки
 apt-get install vk-messenger.rpm
 
 ```

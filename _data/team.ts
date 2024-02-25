@@ -179,6 +179,8 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/vlad196' }
       ],
+      actionText: 'Поддержать',
+      sponsor: 'https://www.tinkoff.ru/cf/9cI2R0kzzxM'
     }, {
       avatar: 'https://avatars.githubusercontent.com/u/48821354?v=4',
       name: 'Жора Змейкин',

@@ -8,7 +8,7 @@
 # Создаем папку для монтирования
 mkdir regular-gnome
 
-# Подключаем наш образ в режиме "не монтировать"
+# Подключаем наш образ в режиме «не монтировать»
 hdiutil attach -nomount regular-gnome-latest-x86_64.iso
 # вывод примерно такой:
 #   /dev/disk5          GUID_partition_scheme

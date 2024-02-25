@@ -35,7 +35,7 @@ epm play figma
 
 ```shell[apt-get]
 su -
-cd ../home/`USER`/Загрузки
+cd /home/USER/Загрузки
 apt-get update
 apt-get install figma-linux-*.x86_64.rpm
 ```

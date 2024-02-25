@@ -12,8 +12,8 @@ Eclipse IDE — интегрированная среда разработки (
 flatpak install flathub org.eclipse.Java
 ```
 
-:::warning или :thinking:
-с помощью Центра приложения <a :href="'appstream://org.eclipse.Java'">установить Eclipse IDE for Java Developers</a> и подтвердите в браузере операцию «открыть приложение»
+:::tip Или с помощью Центра приложений :thinking:
+Перейдите по ссылке для <a :href="'appstream://org.eclipse.Java'">установки Eclipse IDE for Java Developers</a>, затем в браузере подтвердите операцию «открыть приложение». После этого откроется Центр приложений, выберите в нём источник **«Flathub»** и нажмите кнопку «скачать»
 :::
 
 **Eclipse IDE for Web and JavaScript Developers**
@@ -22,9 +22,9 @@ flatpak install flathub org.eclipse.Java
 flatpak install flathub org.eclipse.Javascript
 ```
 
-:::warning или :thinking:
-с помощью Центра приложения <a :href="'appstream://org.eclipse.Javascript'">установить Eclipse IDE for Web and JavaScript Developers</a> и подтвердите в браузере операцию «открыть приложение»
-:::
+:::tip Или с помощью Центра приложений :thinking:
+Перейдите по ссылке для <a :href="'appstream://org.eclipse.Javascript'">установки Eclipse IDE for Web and JavaScript Developers</a>, затем в браузере подтвердите операцию «открыть приложение». После этого откроется Центр приложений, выберите в нём источник **«Flathub»** и нажмите кнопку «скачать»
+::: 
 
 ## Издания Eclipse IDE
 

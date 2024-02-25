@@ -52,6 +52,5 @@ systemctl edit --full grub-btrfsd
 
 ```shell
 su -
-systemctl start grub-btrfsd
-systemctl enable grub-btrfsd
+systemctl enable --now grub-btrfsd
 ```

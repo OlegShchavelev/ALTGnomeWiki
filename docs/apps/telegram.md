@@ -2,6 +2,12 @@
 title: Telegram
 appstreamRepo: org.telegram.desktop
 appstreamFlatpak: org.telegram.desktop
+gallery: 
+    type: slider
+    items: 
+        - src: /telegram/telegram-6.png
+        - src: /telegram/telegram-7.png
+        - src: /telegram/telegram-8.png
 ---
 
 # Telegram
@@ -70,9 +76,10 @@ epm play telegram
 - Настройки -> Продвинутые настройки
 - Cнимите флажок "Рамка окна QT"
 
-:::info
-Оформление системной рамки зависит от оконного интерфейса приложения X11 или Wayland. 
-:::
+<AGWGallery />
+
+Оформление системной рамки зависит от оконного интерфейса приложения `X11` или `Wayland`. 
+
 
 ## Как сбросить настройки
 

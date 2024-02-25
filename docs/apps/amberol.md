@@ -5,7 +5,8 @@ nameSnap: amberol
 appstreamRepo: io.bassi.Amberol
 appstreamFlatpak: io.bassi.Amberol
 gallery: 
-    title: Галлерея
+    title: Галерея
+    type: carousel
     items: 
         - src: /amberol/amberol-1.png
         - src: /amberol/amberol-2.png

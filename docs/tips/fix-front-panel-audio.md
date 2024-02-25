@@ -28,7 +28,7 @@ epm -i pavucontrol
 
 ![alsamixer](/gnome-volume-fix/alsamixer.png)
 
-Потом заходите в pavucontrol и ищите вкладку "Конфигурация"
+Потом заходите в pavucontrol и ищите вкладку «Конфигурация»
 
 ![pavucontrol-1](/gnome-volume-fix/pavucontrol-1.png)
 

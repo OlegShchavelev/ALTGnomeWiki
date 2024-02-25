@@ -2,7 +2,7 @@
 
 1. Переходим на <a target=_blank :href="'https://extensions.gnome.org/extension/' + $frontmatter.pluginID"> страницу {{ $frontmatter.title }}</a> в GNOME Extensions.
 
-2. Нажимаем "Install" и подтверждаем установку расширения.
+2. Нажимаем «Install» и подтверждаем установку расширения.
 
 3. Расширение установлено!
 

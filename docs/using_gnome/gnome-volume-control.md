@@ -8,7 +8,7 @@
   
 ![gnome-control-center](/gnome-volume-control/gnome-control-center.png)
 
-- Через GUI в приложении "Настройки" > "Звук"
+- Через GUI в приложении «Настройки» > «Звук»
 ![settings_volume_control](/gnome-volume-control/gnome-settings-volume-control.png)
 
 - Через TUI в приложении `alsamixer`
@@ -45,7 +45,7 @@ pwctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
 - В появившихся настройках включить галку у `org.gnome.desktop.sound` в положение включено.
 - Закрыть редактор
 
-- Если все сделано правильно, то в приложении "Настройки" можно наблюдать следующую картину\
+- Если все сделано правильно, то в приложении «Настройки» можно наблюдать следующую картину\
 ![after_apply_volume_settings](/gnome-volume-control/after-volume-settings-apply.png)
 
 ## Установка регулятора громкости PulseAudio

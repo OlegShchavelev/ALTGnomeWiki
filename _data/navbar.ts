@@ -27,7 +27,6 @@ export const docs = [
           { text: 'Сartridges', link: '/cartridges' },
           { text: 'Cassette (Яндекс Музыка)', link: '/cassette' },
           { text: 'Chromium', link: '/chromium' },
-          { text: 'Codium', link: '/codium' },
           { text: 'Console', link: '/console' },
           { text: 'Dialect', link: '/dialect' },
           { text: 'Discord', link: '/discord' },
@@ -68,6 +67,7 @@ export const docs = [
           { text: 'Penpot Desktop', link: '/penpot-desktop' },
           { text: 'PortProton', link: '/port-proton' },
           { text: 'Postman', link: '/postman' },
+          { text: 'PinApp', link: '/pin-app' },
           { text: 'qBittorrent', link: '/q-bittorrent' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
@@ -85,7 +85,10 @@ export const docs = [
           { text: 'Transmission', link: '/transmission' },
           { text: 'Tube', link: '/tube' },
           { text: 'Viber', link: '/viber' },
+          { text: 'Vivaldi', link: '/vivaldi' },
           { text: 'VLC', link: '/vlc' },
+          { text: 'VSCode', link: '/vscode' },
+          { text: 'VSCodium', link: '/vscodium' },
           { text: 'VK Мессенджер', link: '/vk-messenger' },
           { text: 'WhatsApp Desktop', link: '/whatsapp-desktop' },
           { text: 'WPS Office', link: '/wps-office' },
@@ -167,7 +170,8 @@ export const docs = [
                   { text: 'Изменение разрешения или ориентация экрана', link: '/look-resolution' },
                   { text: 'Подключение дополнительного монитора', link: '/display-dual-monitors' },
                   { text: 'Масштабирование экрана', link: '/scaling-the-screen' },
-                  { text: 'Изменение внешнего вида рабочего стола', link: '/look-background' }
+                  { text: 'Изменение внешнего вида рабочего стола', link: '/look-background' },
+                  { text: 'Настройка яркости экрана', link: '/display-brightness'}
                 ],
                 collapsed: true
               }
@@ -196,7 +200,9 @@ export const docs = [
           { text: 'GSConnect', link: '/gsconnect' },
           { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' },
           { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
-          { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' }
+          { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' },
+          { text: 'Blur my Shell', link: '/blur-my-shell' },
+          { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' }
         ],
         collapsed: true
       },
@@ -204,6 +210,7 @@ export const docs = [
         text: 'Решение проблем',
         items: [
           { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround' },
+          { text: 'Проблема со звуком в передней панели', link: '/fix-front-panel-audio' },
           { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround' },
           { text: 'Обновить названия стандартных папок в соответствутвии с локалью', link: '/change-the-language-of-the-home-user-folders-automatically' }
         ],
@@ -214,6 +221,7 @@ export const docs = [
         items: [
           { text: 'Драйверы NVIDIA', link: '/nvidia' },
           { text: 'Подключение USB устройств', link: '/usb-devices' },
+          { text: 'Подключение принтера', link: '/drivers-for-printer' },
           { text: 'Подключение сканера', link: '/drivers-for-scanner' },
           { text: 'Подключение DualShock 4', link: '/dualshock4' }
         ],

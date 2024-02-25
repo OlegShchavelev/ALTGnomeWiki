@@ -6,7 +6,7 @@ appstreamFlatpak: org.gnome.Evince
 
 # Просмотр документов
 
-Просмотр документов (Evince) — официальная утилита для рабочего стола GNOME, которая поддерживает документы в следующих форматах: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (с SyncTeX) и Comic Book Archive (CBR, CBT, CBZ, CB7).
+Просмотр документов (Evince) — официальная утилита для рабочего окружения GNOME, которая поддерживает документы в следующих форматах: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (с SyncTeX) и Comic Book Archive (CBR, CBT, CBZ, CB7).
 
 ## Установка из репозитория
 

@@ -27,7 +27,7 @@ epm -i docker-engine
 ```shell
 su -
 gpasswd -a USER docker
-systemctl enable docker
+systemctl enable --now docker
 reboot
 ```
 

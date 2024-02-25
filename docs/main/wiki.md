@@ -21,7 +21,9 @@ docs:
                   link: google-chrome
                 - name: Brave
                   link: brave
-            - title: Месенджеры
+                - name: Vivaldi
+                  link: vivaldi
+            - title: Мессенджеры
               icon:
                 dark: /message-light.svg
                 light: /message-dark.svg 
@@ -34,6 +36,10 @@ docs:
                   link: whatsapp-desktop
                 - name: VK Мессенджер
                   link: vk-messenger
+                - name: Discord
+                  link: discord
+                - name: Skype
+                  link: skype
             - title: Игры
               icon:
                 dark: /gamepad-light.svg
@@ -45,6 +51,12 @@ docs:
                   link: port-proton
                 - name: Lutris
                   link: lutris
+                - name: Bottles
+                  link: bottles
+                - name: Сartridges
+                  link: cartridges
+                - name: Grapejuice
+                  link: grapejuice
             - title: Офис
               icon:
                 dark: /document-light.svg
@@ -71,6 +83,10 @@ docs:
                   link: penpot-desktop
                 - name: Blender
                   link: blender
+                - name: Drawing
+                  link: drawing
+                - name: Krita
+                  link: krita
             - title: Стриминговые сервисы
               icon:
                 dark: /streaming-light.svg
@@ -85,4 +101,6 @@ docs:
 # ALT REGULAR GNOME WIKI
 
 ALT Regular Gnome — прогрессивная операционная система, разработанная таким образом, чтобы получать ежедневные обновления из репозитория Сизиф. Сизиф — нестабильный репозиторий, который развивается постоянно, то есть не обладает ограничениями на размещение в него пакетов.
+
+<AGWCategories />
 

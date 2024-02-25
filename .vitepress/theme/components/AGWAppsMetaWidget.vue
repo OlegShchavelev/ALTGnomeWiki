@@ -2,75 +2,90 @@
 import { type Ref, computed } from 'vue'
 import { DefaultTheme, useData } from 'vitepress'
 
-
 const { theme, frontmatter } = useData();
-const props = computed(() => frontmatter.value.metainfo ?? theme.value.metainfo ?? []);
+
+const metainfo = computed(() => frontmatter.value.metainfo ?? theme.value.metainfo ?? null);
+const props = computed(() => {
+    return {
+        sisyphusId: frontmatter.value.nameRepo,
+        flatpakId: frontmatter.value.appstreamFlatpak,
+        snapcraftId: frontmatter.value.nameSnap
+    }
+})
 
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
-
 </script>
 
 <template>
-    <article v-if="props.active" class="AppsWidget">
-        <figure class="figure" v-if="props.thumb && props.thumb.src">
-            <VPImage :image="props.thumb.src" :alt="props.thumb.title" class="card-image" />
+    <article v-if="metainfo" class="AppsWidget">
+        <figure class="figure" v-if="metainfo.thumb && metainfo.thumb.src">
+            <VPImage :image="metainfo.thumb.src" :alt="metainfo.thumb.title" class="card-image" />
             <img src="">
         </figure>
         <div class="body">
-            <div class="summary">{{ props.summary }}</div>
-            <div v-if="props.adaptive || props.proprietary || props.gnomeCircle || props.gnomeCore || props.createTheme || props.restrictions" class="badges">
-                <Badge v-if="props.adaptive" type="tip">Адаптивное</Badge>
-                <Badge v-if="props.proprietary" type="danger">Проприетарное</Badge>
-                <Badge v-if="props.gnomeCircle" type="success">GNOME Circle</Badge>
-                <Badge v-if="props.gnomeCore" type="info">GNOME Core</Badge>
-                <Badge v-if="props.createTheme" type="success-1">Please don’t theme</Badge>
-                <Badge v-if="props.restrictions" type="danger">Региональные ограничения</Badge>
+            <div class="summary">{{ metainfo.summary }}</div>
+            <div v-if="metainfo.adaptive || metainfo.proprietary || metainfo.gnomeCircle || metainfo.gnomeCore || metainfo.createTheme || metainfo.restrictions"
+                class="badges">
+                <Badge v-if="metainfo.adaptive" type="tip">Адаптивное</Badge>
+                <Badge v-if="metainfo.proprietary" type="danger">Проприетарное</Badge>
+                <Badge v-if="metainfo.gnomeCircle" type="success">GNOME Circle</Badge>
+                <Badge v-if="metainfo.gnomeCore" type="info">GNOME Core</Badge>
+                <Badge v-if="metainfo.createTheme" type="success-1">Please don’t theme</Badge>
+                <Badge v-if="metainfo.restrictions" type="danger">Региональные ограничения</Badge>
             </div>
-            <div v-if="props.developer && props.developer.name" class="developers">
-                <figure v-if="props.developer && props.developer.avatar" class="avatar">
-                    <VPImage :image="props.developer.avatar" :alt="props.developer.name" class="avatar-developer" />
+            <div v-if="metainfo.developer && metainfo.developer.name" class="developers">
+                <figure v-if="metainfo.developer && metainfo.developer.avatar" class="avatar">
+                    <VPImage :image="metainfo.developer.avatar" :alt="metainfo.developer.name" class="avatar-developer" />
                 </figure>
                 <div>
                     <div class="caption">Разработчик</div>
-                    <div class="name">{{ props.developer.name }}<span class="nickname">{{ props.developer.nickname }}</span></div>
+                    <div class="name">{{ metainfo.developer.name }}<span class="nickname">{{ metainfo.developer.nickname
+                    }}</span>
+                    </div>
                 </div>
             </div>
         </div>
         <dl>
-            <dt v-if="props.licence && props.licence.url">Лицензия</dt>
-            <dd v-if="props.licence && props.licence.url">
-                <VPLink :href="props.licence && props.licence.url" class="title">
-                    {{ props.licence.anchor }}
+            <dt v-if="metainfo.licence && metainfo.licence.url">Лицензия</dt>
+            <dd v-if="metainfo.licence && metainfo.licence.url">
+                <VPLink :href="metainfo.licence && metainfo.licence.url" class="title">
+                    {{ metainfo.licence.anchor }}
                 </VPLink>
             </dd>
-            <dt v-if="props.site && props.site.url">Сайт проекта</dt>
-            <dd v-if="props.site && props.site.url">
-                <VPLink :href="props.site.url" target="_blank" class="title">
-                    {{ props.site.anchor }}
+            <dt v-if="metainfo.site && metainfo.site.url">Сайт проекта</dt>
+            <dd v-if="metainfo.site && metainfo.site.url">
+                <VPLink :href="metainfo.site.url" target="_blank" class="title">
+                    {{ metainfo.site.anchor }}
                 </VPLink>
             </dd>
-            <dt v-if="props.translate && props.translate.url">Помочь с переводами</dt>
-            <dd v-if="props.translate && props.translate.url">
-                <VPLink :href="props.translate.url" target="_blank" class="title">
-                    {{ props.translate.anchor }}
+            <dt v-if="metainfo.translate && metainfo.translate.url">Помочь с переводами</dt>
+            <dd v-if="metainfo.translate && metainfo.translate.url">
+                <VPLink :href="metainfo.translate.url" target="_blank" class="title">
+                    {{ metainfo.translate.anchor }}
                 </VPLink>
             </dd>
-            <dt v-if="props.issue && props.issue.url">Сообщить о проблеме</dt>
-            <dd v-if="props.issue && props.issue.url">
-                <VPLink :href="props.issue.url" target="_blank" class="title">
-                    {{ props.issue.anchor }}
+            <dt v-if="metainfo.issue && metainfo.issue.url">Сообщить о проблеме</dt>
+            <dd v-if="metainfo.issue && metainfo.issue.url">
+                <VPLink :href="metainfo.issue.url" target="_blank" class="title">
+                    {{ metainfo.issue.anchor }}
                 </VPLink>
             </dd>
         </dl>
-        <div class="footet">
-            <a target="_blank" v-if="props.sponsor && props.sponsor.url" :href="props.sponsor.url"
+        <div class="footer">
+            <a target="_blank" v-if="metainfo.sponsor && metainfo.sponsor.url" :href="metainfo.sponsor.url"
                 class="link-gnome-sponsor">Поддержать автора</a>
-            <a target="_blank" v-if="props.flathub && props.flathub.url" :href="props.flathub.url"
-                class="link-gnome-flathub">Flathub</a>
-            <a target="_blank" v-if="props.snap && props.snap.url" :href="props.snap.url"
+            <a target="_blank"
+                v-if="(metainfo.snapcraft && metainfo.snapcraft.url) || (metainfo.snapcraft !== false && props.snapcraftId)"
+                :href="(metainfo.snapcraft && metainfo.snapcraft.url) ? metainfo.snapcraft.url : 'https://snapcraft.io/' + props.snapcraftId"
                 class="link-gnome-snap">Snapcraft</a>
-            <a target="_blank" v-if="props.sisyphus && props.sisyphus.url" :href="props.sisyphus.url"
+            <a target="_blank"
+                v-if="(metainfo.flathub && metainfo.flathub.url) || (metainfo.flathub !== false && props.flatpakId)"
+                :href="(metainfo.flathub && metainfo.flathub.url) ? metainfo.flathub.url : 'https://flathub.org/apps/' + props.flatpakId"
+                class="link-gnome-flathub">Flathub</a>
+            <a target="_blank"
+                v-if="(metainfo.sisyphus && metainfo.sisyphus.url) || (metainfo.sisyphus !== false && props.sisyphusId)"
+                :href="(metainfo.sisyphus && metainfo.sisyphus.url) ? metainfo.sisyphus.url : 'https://packages.altlinux.org/ru/sisyphus/srpms/' + props.sisyphusId"
                 class="link-gnome-sisyphus">Сизиф</a>
         </div>
     </article>
@@ -110,6 +125,15 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
     padding-top: 24px;
 }
 
+.figure > :deep(.VPImage) {
+    filter: grayscale(1);
+    transition: filter 0.25s;
+}
+
+.AppsWidget:hover .figure> :deep(.VPImage) {
+    filter: grayscale(0) invert(0);
+}
+
 .badges {
     display: flex;
     gap: 2px;
@@ -121,8 +145,6 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
     padding: 0 8px;
     margin-left: 0;
 }
-
-
 
 .developers {
     margin-top: 12px;
@@ -158,19 +180,22 @@ dl {
     margin-bottom: 0;
 }
 
-dt, .developers .caption {
+dt,
+.developers .caption {
     font-size: 12px;
     color: var(--vp-c-text-2);
     font-weight: 500;
 }
 
-dd, .developers .name {
+dd,
+.developers .name {
     margin-left: 0;
     font-size: 14px;
     padding-bottom: 8px;
     margin-bottom: 8px;
 
 }
+
 .developers .name:last-child {
     margin-bottom: 0;
     padding-bottom: 0;

@@ -4,8 +4,14 @@ nameRepo: amberol
 nameSnap: amberol
 appstreamRepo: io.bassi.Amberol
 appstreamFlatpak: io.bassi.Amberol
+gallery: 
+    title: Галерея
+    type: carousel
+    items: 
+        - src: /amberol/amberol-1.png
+        - src: /amberol/amberol-2.png
+        - src: /amberol/amberol-3.png
 metainfo:
-    active: true
     thumb:
         src: /amberol/io.bassi.Amberol.png
         title: Boxes
@@ -23,10 +29,6 @@ metainfo:
         anchor: gitlab.gnome.org
     adaptive: true,
     gnomeCircle: true
-    flathub:
-        url: https://flathub.org/apps/io.bassi.Amberol
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/amberol/
 ---
 
 # Amberol
@@ -40,5 +42,7 @@ Amberol — простой музыкальный проигрыватель. Р
 - не позволяет вам редактировать метаданные для ваших песен
 
 Amberol воспроизводит музыку, и ничего больше.
+
+<AGWGallery />
 
 <!--@include: ./parts/install/software-install.md-->

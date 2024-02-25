@@ -26,7 +26,7 @@ defineProps<{
                 :width="icon.width || 48" />
             <div v-else-if="icon" class="icon" v-html="icon"></div>
             <div class="title">{{ title }}</div>
-            <ul v-if="apps">
+            <ul v-if="apps" class="AGWCategoryNav">
                 <li v-for="app in apps" :key="app.name">
                     <VPLink class="AGWCategoryNavLink" :href="app.link" tabindex="0">
                         {{ app.name }}
@@ -75,12 +75,18 @@ defineProps<{
     margin-bottom: 12px;
 }
 
+.AGWCategoryNav {
+    padding-left: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
 .AGWCategoryNavLink {
-    line-height: 24px;
     font-size: 14px;
     font-weight: 500;
     color: var(--vp-c-text-2);
     transition: color 0.25s;
+    text-decoration: none;
 }
 
 .AGWCategoryNavLink.active {

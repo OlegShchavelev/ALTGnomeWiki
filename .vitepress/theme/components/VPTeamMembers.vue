@@ -3,14 +3,15 @@ import type { DefaultTheme } from 'vitepress/theme'
 import { computed } from 'vue'
 import VPTeamMembersItem from './VPTeamMembersItem.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation, Keyboard } from 'swiper/modules';
 
-const modules = [Pagination];
+const modules = [Pagination, Navigation, Keyboard];
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-const onSwiper = (swiper) => console.log(swiper);
+const onSwiper = (swiper: any) => console.log(swiper);
 const onSlideChange = () => console.log('slide change');
 
 interface Props {
@@ -28,8 +29,22 @@ const classes = computed(() => [props.size, `count-${props.members.length}`])
 <template>
   <div class="VPTeamMembers" :class="classes">
     <div class="container">
-      <swiper :slides-per-view="1" :breakpoints="{ 767: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }" :modules="modules"
-        :pagination="{ clickable: true, dynamicBullets: true }" :space-between="20" @swiper="onSwiper"
+      <swiper 
+        :slides-per-view="1.2" 
+        :breakpoints="{ 
+          767: { slidesPerView: 2.2 }, 
+          1024: { slidesPerView: 4.2 } 
+        }" 
+        :modules="modules"
+        :freeMode="true"
+        :keyboard="{ enabled: true }"
+        :pagination="{ 
+          clickable: true, 
+          dynamicBullets: true 
+        }"
+        :navigation="true"
+        :space-between="20"
+        @swiper="onSwiper"
         @slideChange="onSlideChange">
         <swiper-slide v-for="member in members" :key="member.name" class="item">
           <VPTeamMembersItem :size="size" :member="member" />
@@ -48,14 +63,21 @@ const classes = computed(() => [props.size, `count-${props.members.length}`])
 }
 
 .swiper {
-    padding-bottom: 60px;
-    margin-bottom: -60px;
-  }
+  padding-bottom: 60px;
+  margin-bottom: -60px;
+}
 
 @media (min-width: 768px) {
   .swiper {
     padding-bottom: 80px;
     margin-bottom: -80px;
   }
+}
+</style>
+
+<style>
+.VPTeamMembers * .swiper-button-prev, 
+.VPTeamMembers * .swiper-button-next {
+  top: var(--swiper-navigation-top-offset, 95%) !important;
 }
 </style>

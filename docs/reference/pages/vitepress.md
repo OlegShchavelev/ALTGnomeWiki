@@ -1,5 +1,6 @@
 ---
 lastUpdated: false
+ExampleVar: Hello World!
 ---
 # Возможности VitePress
 
@@ -116,6 +117,68 @@ platform: VitePress
 **Вывод:**
 
 ![логотип](/logo.png)
+
+## Блоки кода
+
+**Пример:**
+
+````markdown
+```js
+console.log('Hello World!');
+```
+````
+
+**Вывод:**
+
+```js
+console.log('Hello World!');
+```
+
+## Блоки кода c парсингом Vue JS
+
+**Пример:**
+
+````markdown
+```js-vue
+console.log('{{ $frontmatter.ExampleVar }}');
+```
+````
+
+**Вывод:**
+
+```js-vue
+console.log('{{ $frontmatter.ExampleVar }}');
+```
+
+## Блоки кода с табами
+
+**Пример:**
+
+````markdown
+::: code-group
+```python[python]
+print("Hello World!")
+```
+```rust[rust]
+fn main() {
+    println!("Hello World!");
+}
+```
+:::
+````
+
+**Вывод:**
+
+::: code-group
+```python[python]
+print("Hello World!")
+```
+```rust[rust]
+fn main() {
+    println!("Hello World!");
+}
+```
+:::
 
 ## Красивые уведомления
 

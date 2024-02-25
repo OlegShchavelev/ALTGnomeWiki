@@ -18,7 +18,8 @@
     "vitepress-plugin-image-viewer": "^1.1.2"
   },
   "dependencies": {
-    "swiper": "^11.0.6"
+    "swiper": "^11.0.6",
+    "vue-silentbox": "^3.0.4"
   },
   "type": "module",
   "scripts": {

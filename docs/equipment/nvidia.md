@@ -115,7 +115,8 @@ inxi -G
 
 ### Ранняя загрузка KMS
 Для корректного отображения Plymouth ( отображения лого загрузки от загрузчика до окна приглашения к входу), добавляем модули NVIDIA в initramfs. 
-Для этого в `/etc/initrd.mk` добавляем строку `MODULES_LOAD += nvidia nvidia-modeset nviida-drm nvidia-uvm`
+
+Для этого в `/etc/initrd.mk`, в параметр `MODULES_TRY_ADD` добавляем модули `nvidia nvidia-modeset nviida-drm nvidia-uvm`. (Если такого параметра нет, то создаём. Оператор между параметром и модулями `+=`)
 ```shell
 su -
 mcedit /etc/initrd.mk

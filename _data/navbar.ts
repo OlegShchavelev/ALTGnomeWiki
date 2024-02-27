@@ -94,6 +94,7 @@ export const docs = [
           { text: 'XLSCLIENTS', link: '/xlsclients' },
           { text: 'Xmind', link: '/xmind' },
           { text: 'Яндекс Браузер', link: '/yandex-browser' },
+          { text: 'Яндекс Диск', link: '/yandex-disk' },
           { text: 'Zoom', link: '/zoom' },
           { text: 'Zsh', link: '/zsh' },
         ],

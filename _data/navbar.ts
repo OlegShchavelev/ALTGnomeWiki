@@ -26,6 +26,7 @@ export const docs = [
           { text: 'Brave Browser', link: '/brave' },
           { text: 'Сartridges', link: '/cartridges' },
           { text: 'Cassette (Яндекс Музыка)', link: '/cassette' },
+          { text: 'Celluloid', link: '/celluloid' },
           { text: 'Chromium', link: '/chromium' },
           { text: 'Console', link: '/console' },
           { text: 'Dialect', link: '/dialect' },

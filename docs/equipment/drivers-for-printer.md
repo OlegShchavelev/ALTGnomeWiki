@@ -99,6 +99,23 @@ Terminal=false
 
 Перезагружаем компьютер.
 
+## Brother - установка пакета драйверов
+
+Для установки пакета драйверов для принтеров Brother воспользуйтесь терминалом:
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install printer-driver-brlaser
+```
+
+```shell[epm]
+epm -i printer-driver-brlaser
+```
+:::
+
 ## Canon - установка пакета драйверов
 
 Для установки пакета драйверов с официального сайта для принтеров Canon воспользуйтесь терминалом:

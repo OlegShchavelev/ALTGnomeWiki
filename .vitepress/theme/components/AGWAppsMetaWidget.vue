@@ -128,6 +128,8 @@ import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 .figure > :deep(.VPImage) {
     filter: grayscale(1);
     transition: filter 0.25s;
+    width: 128px;
+    height: 128px;
 }
 
 .AppsWidget:hover .figure> :deep(.VPImage) {

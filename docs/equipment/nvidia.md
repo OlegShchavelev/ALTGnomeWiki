@@ -453,8 +453,11 @@ mcedit /etc/sysconfig/grub2
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## Известные проблемы
+## Известные нерешённые проблемы
+### В сессии Wayland не отображаются Х11-окна приложений на картах Nvidia:
+Подробности [тут](https://bugzilla.altlinux.org/49553)
 
+### Прочие известных нерещённые проблемы
 В [главе 9 документации NVIDIA](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/knownissues.html) можно ознакомиться с известными нерешёнными проблемами у драйверов NVIDIA
 
 ### Проблемы c Wayland протоколом

@@ -176,7 +176,9 @@ export const docs = [
                   { text: 'Настройка яркости экрана', link: '/display-brightness'}
                 ],
                 collapsed: true
-              }
+              },
+              { text: 'Установка шрифтов', link: '/add-fonts'}
+
             ],
             collapsed: true
           }

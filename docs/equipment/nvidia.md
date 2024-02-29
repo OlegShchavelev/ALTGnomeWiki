@@ -98,11 +98,6 @@ inxi -G
 ### [KMS](https://www.kernel.org/doc/html/latest/gpu/drm-kms.html)
 Для драйверов [с октября 2023](https://git.altlinux.org/tasks/archive/done/_324/332535/gears/100/git?p=git;a=commit;h=3bb30586e8c78e167a59f680370bad04fe50fadc), нет необходимости указывать modeset в параметрах ядра. Эта настройка будет правильно установлена вместе с установкой самих драйверов. (Настройка будет установлена в /etc/modprobe.d/nvidia_common.conf)
 
-::: info
-Для работы в сессии X11 настройка KMS необязательна.
-Единственная причина, это Plymouth (см. [Ранняя загрузка KMS](./nvidia.md#ранняя-загрузка-kms))
-:::
-
 ::: tip
 Чтобы проверить, работает ли KMS, напишите в консоли от имени root (Администратора):
 
@@ -113,35 +108,6 @@ inxi -G
 Если не работает( показывает «N»), можете попробовать включить его через [параметры ядра](./nvidia.md#не-работает-kms)
 :::
 
-### Ранняя загрузка KMS
-Для корректного отображения Plymouth ( отображения лого загрузки от загрузчика до окна приглашения к входу), можно добавить модули NVIDIA в initramfs.
-
-Для этого в `/etc/initrd.mk`, в параметр `MODULES_TRY_ADD` добавляем модули `nvidia nvidia-modeset nvidia-drm nvidia-uvm`. (Если такого параметра нет, то создаём. Оператор между параметром и модулями `+=`)
-```shell
-su -
-mcedit /etc/initrd.mk
-```
-Далее необходимо закомментировать `BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset` в `/usr/share/make-initrd/features/nvidia/config.mk`
-```shell
-su -
-sed -i 's/BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset/#BLACKLIST_MODULES += nvidia nvidia-drm nvidia-modeset/' /usr/share/make-initrd/features/nvidia/config.mk
-```
-:::warning
-Мы меняем файл самого пакета `nvidia_glx_common`, поэтому после его обновления, он вернётся в изначальному виду, и при следующем создании initramfs модули NVIDIA будут опять в списке `BLACKLIST_MODULES`. Данная ситуация **не критична**, `make-initrd` выполнить создание initramfs без ошибок, и запуск системы произойдёт без проблём. Не будет только ранней загрузки модулей NVIDIA, которую можно вернуть повторным комментированием.
-
-Тем не менее, **способ с изменением файлов пакета не является корректным решением и требует другого подхода**.
-:::
-
-::: details Почему существует файл с BLACKLIST_MODULES
-Файл '/usr/share/make-initrd/features/nvidia/config.mk' идёт вместе с пакетом nvidia_glx_common. Изначально, make-initrd самостоятельно добавлял эти модули без явного указания от пользователя. Такое поведение посчитали нежелательным и добавили в исключения (См. подробности в [«Ошибка 39108 - guess-drm добавляет лишние модули»](https://bugzilla.altlinux.org/39108)).
-
-По этой же причине, с модулями NVIDIA в initramfs не будет работать [замена драйверов nouveau/NVIDIA «на лету»](https://www.altlinux.org/Nvidia#%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0_%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%BE%D0%B2_nouveau/nvidia_%22%D0%BD%D0%B0_%D0%BB%D0%B5%D1%82%D1%83%22).
-:::
-
-Генерируем initramfs
-```shell
-make-initrd
-```
 ### Сессия Wayland
 
 Активируем **Wayland** сессию в **ALT Regular Gnome** для видеокарт NVIDIA с установленными проприетарными драйверами.

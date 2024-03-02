@@ -10,6 +10,7 @@ import markdownItTaskLists from 'markdown-it-task-lists'
 import markdownItImplicitFigures from 'markdown-it-implicit-figures'
 import markdownItEmbed from 'markdown-it-html5-embed'
 import markdownItConditionalRender from 'markdown-it-conditional-render'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs' 
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -144,6 +145,7 @@ export default defineConfig({
         }
       });
       md.use(markdownItConditionalRender);
+      md.use(tabsMarkdownPlugin);
     }
   },
   transformPageData: (pageData: normalize) => {

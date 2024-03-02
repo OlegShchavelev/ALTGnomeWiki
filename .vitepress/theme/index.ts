@@ -18,6 +18,7 @@ import AGWGallery from './components/AGWGallery.vue'
 import { locales } from '../../_data/enhanced-readabilities'
 
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 import './style.css'
 import './custom.css'
@@ -51,6 +52,7 @@ export default {
     }),
     ctx.app.component('AGWGallery', AGWGallery);
     ctx.app.component('AGWCategories', AGWCategories)
+    enhanceAppWithTabs(ctx.app)
   },
   setup() {
     // Get route

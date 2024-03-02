@@ -1,7 +1,24 @@
 ---
 title: LibreOffice
+nameRepo: LibreOffice
 appstreamRepo: org.libreoffice.LibreOffice
 appstreamFlatpak: org.libreoffice.LibreOffice
+metainfo:
+    thumb:
+        src: /libreoffice/org.libreoffice.LibreOffice.desktop.png
+        title: Boxes
+    summary: Мощный офисный пакет LibreOffice
+    developer: 
+        name: LibreOffice
+    site:
+        url: https://www.libreoffice.org/discover/libreoffice/
+        anchor: libreoffice.org
+    licence:
+        url: https://choosealicense.com/licenses/gpl-3.0/
+        anchor: GNU GPLv3
+    issue: 
+        url: https://bugs.documentfoundation.org/
+        anchor: documentfoundation.org
 ---
 
 # LibreOffice
@@ -16,6 +33,19 @@ LibreOffice — мощный офисный пакет, полностью со�
 
 **Установка через терминал**
 
+:::tabs
+== Still
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install LibreOffice-still LibreOffice-still-gtk3
+```
+```shell[epm]
+epm -i LibreOffice-still LibreOffice-still-gtk3
+```
+== Fresh 
 ::: code-group
 
 ```shell[apt-get]
@@ -28,6 +58,7 @@ epm -i LibreOffice LibreOffice-gtk3
 ```
 :::
 
+
 ## Установка c помощью Flatpak
 
 При наличии пакета [Flatpak](/flatpak), можно установить **LibreOffice** одной командой:
@@ -37,3 +68,20 @@ flatpak install flathub org.libreoffice.LibreOffice
 ```
 
 <!--@include: ./parts/install/software-flatpak.md-->
+
+## Шрифты в OnlyOffice
+
+В документации OnlyOffice [перечисленные шрифты](https://wiki.documentfoundation.org/Fonts), идущие в комплекте с LibreOffice. В ALT Regular Gnome вам может понадобиться установить дополнительные пакеты, к примеру для использования «Times New Roman» от Microsoft, установите в терминале следующий пакеты:
+
+::: code-group
+```shell[apt-get]
+su -
+apt-get update
+apt-get install fonts-ttf-ms
+```
+```shell[epm]
+epm -i fonts-ttf-ms
+```
+:::
+
+В офисном пакете LibreOffice отсутствует шрифт, который вы используйте, [установите дополнительный шрифт](/add-fonts) и он появится в LibreOffice в списке шрифтов.

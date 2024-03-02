@@ -42,10 +42,32 @@ flatpak run --socket=wayland md.obsidian.Obsidian
 Для указания значений переменных в flatpak, вы можете использовать [Flatseal](./flatseal.md)
 :::
 
+Для **epm** версии Obsidian, можно включить поддержку wayland глобально, затрагивая другие приложения на основе Electron. Для этого необходимо в переменные окружения добавить переменную `ELECTRON_OZONE_PLATFORM_HINT=wayland`.
+
+Например, её можно добавить через ./bashrc:
+
+```shell
+cat << _EOF_ >> ~/.bashrc
+# Add wayland support for electron
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+_EOF_
+```
+
 ## Аппаратное ускорение:
 Чтобы избежать графических ошибок при запуске, [аппаратное ускорение нужно отключить](https://github.com/flathub/md.obsidian.Obsidian?tab=readme-ov-file#gpu-acceleration).
 
 Для **Flatpak** версии добавляется переменная со значением --env=OBSIDIAN_DISABLE_GPU=1:
 ```shell
 flatpak override --user --env=OBSIDIAN_DISABLE_GPU=1 md.obsidian.Obsidian
+```
+
+Для **epm** версии Obsidian добавляется переменная со значением `OBSIDIAN_DISABLE_GPU=1`.
+
+Например, её можно добавить через ./bashrc:
+
+```shell
+cat << _EOF_ >> ~/.bashrc
+# Disable GPU for obsidian
+export OBSIDIAN_DISABLE_GPU=1
+_EOF_
 ```

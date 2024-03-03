@@ -22,20 +22,24 @@ epm -i nautilus-python libnautilus-gir
 Далее нам нужно скачать сам плагин:
 
 ```shell
-mkdir -p ~/.local/share/nautilus-python/extensions/
-wget -P ~/.local/share/nautilus-python/extensions/ https://raw.githubusercontent.com/alt-gnome-team/nautilus_backspace/main/Back.py
+curl -sSL https://raw.githubusercontent.com/alt-gnome-team/nautilus_backspace/main/install | sh
 ```
 
-### Готово!
-Осталось перезапустить Nautilus:
+## Настройка
 
+Открываем config:
 ```shell
-nautilus -q
+nano ~/.config/nautilus_backspace/config
 ```
 
-И всё готово.
+Вставляем необходимое сочетание:
+```ini
+[DEFAULT]
+shortcut = <Alt>Down
+```
 
 ## Удаление плагина
 ```shell
 rm ~/.local/share/nautilus-python/extensions/Back.py
+rm -rf ~/.config/nautilus_backspace
 ```

@@ -93,6 +93,7 @@ export const docs = [
           { text: 'VK Мессенджер', link: '/vk-messenger' },
           { text: 'WhatsApp Desktop', link: '/whatsapp-desktop' },
           { text: 'WPS Office', link: '/wps-office' },
+          { text: 'Xeyes', link: '/xeyes' },
           { text: 'XLSCLIENTS', link: '/xlsclients' },
           { text: 'Xmind', link: '/xmind' },
           { text: 'Яндекс Браузер', link: '/yandex-browser' },

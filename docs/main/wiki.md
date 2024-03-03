@@ -68,8 +68,8 @@ docs:
                   link: r7-office
                 - name: LibreOffice
                   link: libreoffice
-                - name: WPS
-                  link: wps
+                - name: WPS Office
+                  link: wps-office
             - title: Работа с графикой
               icon:
                 dark: /designer-light.svg

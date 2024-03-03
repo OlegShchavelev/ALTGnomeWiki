@@ -25,38 +25,57 @@ flatpak install flathub md.obsidian.Obsidian
 epm play obsidian
 ```
 
-## Запуск в Wayland режиме:
-Для **Flatpak** версии, чтобы включить поддержку wayland нужно указать [переменную со значение --socket=wayland](https://github.com/flathub/md.obsidian.Obsidian?tab=readme-ov-file#wayland-support):
-```shell
-flatpak override --user --socket=wayland md.obsidian.Obsidian
+## Запуск Obsidian в оконном интерфейсе Wayland
+
+Для запуска **Obsidian** через терминал, укажите следующие опции запуска:
+
+::: code-group
+
+```shell[flatpak]
+flatpak run md.obsidian.Obsidian --ozone-platform-hint=auto
 ```
-Для временного включения поддержки wayland, запускаем **Flatpak** версию Obsidian c этой же переменной:
-```shell
-flatpak run --socket=wayland md.obsidian.Obsidian
+
+```shell[epm play]
+obsidian --ozone-platform-hint=auto
 ```
-:::info
-Для большей информации о Flatpak версии **Obsidian**, и её дополнительных настройках, смотрите [официальную Github страницу проекта](https://github.com/flathub/md.obsidian.Obsidian)
 :::
 
-:::note
-Для указания значений переменных в flatpak, вы можете использовать [Flatseal](./flatseal.md)
-:::
+:::warning
+При запуске приложения `md.obsidian.Obsidian` Flatpak-версии убедитесь в возможности запуска в оконном интерфейсе Wayland. Один из самых удобных варинтов проверки, [программа Flatseal](/flatseal)
 
-Для **epm** версии Obsidian, можно включить поддержку wayland глобально, затрагивая другие приложения на основе Electron. Для этого необходимо в переменные окружения добавить переменную `ELECTRON_OZONE_PLATFORM_HINT=wayland`.
+![Включите оконный интерфейс Wayland](/obsidian/obsidian-1.png)
 
-Например, её можно добавить через ./bashrc:
+По умолчанию запуск в оконном интерфейсе Wayland запрещен, разрещите:
+
+- Оконная система Wayland
+- Возрат к оконной системе X11
+
+Альтернативной настройкой окружения является терминал введите:
 
 ```shell
-cat << _EOF_ >> ~/.bashrc
-# Add wayland support for electron
-export ELECTRON_OZONE_PLATFORM_HINT=wayland
-_EOF_
+flatpak override --user md.obsidian.Obsidian --socket=wayland --socket=fallback-x11
 ```
+:::
+
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **Obsidian**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+
+::: code-group
+
+```shell[flatpak]
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=obsidian.sh --file-forwarding md.obsidian.Obsidian @@u %U @@ // [!code --]
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=obsidian.sh --file-forwarding md.obsidian.Obsidian --ozone-platform-hint=auto @@u %U @@ // [!code ++]
+```
+
+```shell[epm play]
+obsidian %U // [!code --]
+obsidian --ozone-platform-hint=auto %U // [!code ++]
+```
+:::
 
 ## Аппаратное ускорение:
 Чтобы избежать графических ошибок при запуске, [аппаратное ускорение нужно отключить](https://github.com/flathub/md.obsidian.Obsidian?tab=readme-ov-file#gpu-acceleration).
 
-Для **Flatpak** версии добавляется переменная со значением --env=OBSIDIAN_DISABLE_GPU=1:
+Для **Flatpak** версии добавляется переменная со значением `--env=OBSIDIAN_DISABLE_GPU=1:`
 ```shell
 flatpak override --user --env=OBSIDIAN_DISABLE_GPU=1 md.obsidian.Obsidian
 ```

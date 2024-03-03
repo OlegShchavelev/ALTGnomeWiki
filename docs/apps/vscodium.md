@@ -43,7 +43,7 @@ epm plat codium
 
 ## Запуск VSCodium в оконном интерфейсе Wayland
 
-Запустить **VSCodium** через терминал указав дополнительные опции запуска:
+Для запуска **VSCodium** через терминал, укажите следующие опции запуска:
 
 ::: code-group
 
@@ -51,16 +51,29 @@ epm plat codium
 codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
 ```
 
-```shell[Flatpak]
-flatpak run com.vscodium.codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
+```shell[EPM Play]
+codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
 ```
 :::
 
-Для простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+:::info
+При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/pin-app)  
+:::
 
-```shell
---enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
-``` 
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+
+::: code-group
+
+```shell[Сизиф]
+/usr/bin/codium --unity-launch %F // [!code --]
+/usr/bin/codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [!code ++]
+```
+
+```shell[EPM Play]
+codium --unity-launch %F // [[!code --]]
+codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [[!code ++]]
+```
+:::
 
 ## Использование Node.js в изолированой среде в приложении VSCodium
 

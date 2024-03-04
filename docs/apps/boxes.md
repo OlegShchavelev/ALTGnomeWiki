@@ -52,10 +52,6 @@ epm -i gnome-boxes
 ```
 :::
 
-::: warning Не забудьте!
-Boxes не заработает без [установки набора виртуализации](./boxes#подготовка-к-использованию-boxes).
-:::
-
 ## Установка c помощью Flatpak
 
 При наличии пакета [Flatpak](/flatpak), можно установить **Boxes** одной командой:
@@ -65,36 +61,6 @@ flatpak install flathub org.gnome.Boxes
 ```
 
 <!--@include: ./parts/install/software-flatpak.md-->
-
-## Подготовка к использованию Boxes
-
-Для работы Boxes необходимо установить набор виртуализации:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install libvirt libvirt-kvm
-```
-```shell[epm]
-epm -i libvirt libvirt-kvm
-```
-
-:::
-
-И запустить его:
-```shell
-su -
-gpasswd -a USER vmusers
-systemctl enable --now libvirtd
-```
-
-`USER` — имя вашего пользователя.
-
-::: tip Совет :bulb:
-Делать это не обязательно, если Boxes установлен через Flatpak.
-:::
 
 ## 3D-ускорение
 

@@ -467,7 +467,7 @@ rm /etc/udev/rules.d/61-gdm.rules
 # ставим драйвер (в нашем случае для ядра un-def)
 apt-get install kernel-modules-drm-nouveau-un-def
 # (опционально) переустановить xorg обвязку
-apt-get install --reinstall xorg-dri-nouveau xorg-drv-noveau
+apt-get install --reinstall xorg-dri-nouveau xorg-drv-nouveau
 # перезагрузиться
 reboot
 ```
@@ -484,7 +484,7 @@ rm /etc/udev/rules.d/61-gdm.rules
 # ставим драйвер (в нашем случае для ядра un-def)
 epm install kernel-modules-drm-nouveau-un-def
 # (опционально) переустановить xorg обвязку
-epm reinstall xorg-dri-nouveau xorg-drv-noveau
+epm reinstall xorg-dri-nouveau xorg-drv-nouveau
 # перезагрузиться
 reboot
 ```

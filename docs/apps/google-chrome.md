@@ -5,7 +5,7 @@ metainfo:
     active: true
     thumb:
         src: /google-chrome/com.google.Chrome.png
-        title: Кассета
+        title: Google Chrome
     summary: Веб-браузер от Google
     site:
         url: https://www.google.com/chrome/

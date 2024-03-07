@@ -6,7 +6,7 @@ metainfo:
     active: true
     thumb:
         src: /flatseal/com.github.tchx84.Flatseal.png
-        title: Кассета
+        title: Flatseal
     summary: Управление разрешениями Flatpak
     developer: 
         name: Martin Abente Lahaye

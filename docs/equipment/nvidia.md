@@ -476,8 +476,14 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Известные нерешённые проблемы
-### В сессии Wayland не отображаются Х11-окна приложений на картах Nvidia:
-Подробности [тут](https://bugzilla.altlinux.org/49553)
+### Системы, где есть Nvidia со второй гибридной графикой нет доступа к Wayland сессии:
+На сегодняшний день есть проблемы с запуском Wayland, на системах с гибридной графикой, поэтому [правила](https://git.altlinux.org/srpms/g/gdm.git?p=gdm.git;a=blob;f=gdm/data/61-gdm.rules.in;h=a4f841bdfe02138f2a4ef00979a8700caeeadcac;hb=45.0.1-alt3.1#l85) в GDM запрещает работу Wayland в таких случаях.
+
+ Про проблему написано [тут](https://gitlab.gnome.org/GNOME/mutter/-/issues/1572#note_1308007) и [тут](https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/3304#note_1983279).
+
+::: warning
+Вы можете отключить правила GDM, [замаскировав их](nvidia.md#после-настроек-для-сессии-wayland-wayland-в-gdm-не-появляется), но тогда можете столкнуться с проблемами!
+:::
 
 ### Прочие известных нерещённые проблемы
 В [главе 9 документации NVIDIA](https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/knownissues.html) можно ознакомиться с известными нерешёнными проблемами у драйверов NVIDIA

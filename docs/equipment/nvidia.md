@@ -10,7 +10,7 @@
 
 Необходимая версия драйверов ставится автоматически, при установке основного пакета [nvidia_glx_common](https://packages.altlinux.org/ru/sisyphus/srpms/nvidia_glx_common/) и не требует дополнительных мероприятий.
 
-### 2. Драйвер Nouveau от X.Org Foundation
+### 2. Драйвер Nouveau
 Он был создан независимыми разработчиками, главным способом, с помощью реверс-инжиниринга. На данный момент разрабатываются под крылом [X.Org Foundation](https://x.org/), размещается на freedesktop.org ([тут](https://nouveau.freedesktop.org/)) и являются частью проекта [MESA 3D](https://www.mesa3d.org/). Подробнее смотри [здесь](https://ru.wikipedia.org/wiki/Nouveau).
 
 Из-за особенностей разработки этих драйверов, уровень поддержки разных архитектур ГПУ плавает, поэтому полезно знать уровень поддержки [именно для архитектуры вашей видеокарты](https://nouveau.freedesktop.org/FeatureMatrix.html).

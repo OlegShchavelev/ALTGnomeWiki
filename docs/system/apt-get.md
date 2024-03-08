@@ -303,7 +303,7 @@ apt-get update
 
 ```shell
 su -
-apt-repo add task 329850
+apt-repo rm task 329850
 apt-get update
 ```
 

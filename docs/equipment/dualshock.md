@@ -42,7 +42,7 @@ systemctl restart bluetooth
 #Где `XX:XX:XX:XX:XX:XX` - MAC-адрес нашего геймпада
 ```
 
-3. Выполнить комманды
+3. Выполнить команды
 ```
 trust XX:XX:XX:XX:XX:XX
 pair XX:XX:XX:XX:XX:XX

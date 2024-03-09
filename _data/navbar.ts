@@ -92,6 +92,7 @@ export const docs = [
           { text: 'VSCode', link: '/vscode' },
           { text: 'VSCodium', link: '/vscodium' },
           { text: 'VK Мессенджер', link: '/vk-messenger' },
+          { text: 'Warehouse', link: '/warehouse' },
           { text: 'WhatsApp Desktop', link: '/whatsapp-desktop' },
           { text: 'WPS Office', link: '/wps-office' },
           { text: 'Xeyes', link: '/xeyes' },

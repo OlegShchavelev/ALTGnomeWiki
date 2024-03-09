@@ -23,6 +23,8 @@ docs:
                   link: brave
                 - name: Vivaldi
                   link: vivaldi
+                - name: Microsoft Edge
+                  link: microsoft-edge
             - title: Мессенджеры
               icon:
                 dark: /message-light.svg

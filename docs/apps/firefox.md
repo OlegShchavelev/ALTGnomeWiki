@@ -47,7 +47,9 @@ flatpak install flathub org.mozilla.firefox
 snap install firefox
 ```
 
-## Firefox Gnome theme
+## Firefox GNOME theme
+
+Для установки **Firefox GNOME theme** необходимо [устровить Firefox](/firefox#firefox) и запустить для формирования конфигурационных файлов.   
 
 Склонируйте скрипт и установите:
 
@@ -55,22 +57,26 @@ snap install firefox
 git clone https://github.com/rafaelmardojai/firefox-gnome-theme.git ~/.mozilla/firefox-gnome-theme/
 cd ~/.mozilla/firefox-gnome-theme/
 ```
-**Firefox Gnome theme <Badge type="warning" text="Sisyphus" />**
 
-```shell
+Запустите установочный скрипт `auto-install.sh`:
+
+::: code-group
+
+```shell[Cизиф]
 ./scripts/auto-install.sh -f ~/.mozilla/firefox/
 ```
 
-**Firefox Gnome theme <Badge type="tip" text="Flatpak" />**
-
-```shell
+```shell[Flatpak]
 ./scripts/auto-install.sh -f ~/.var/app/org.mozilla.firefox/.mozilla/firefox
 ```
-**Firefox Gnome theme <Badge type="danger" text="Snap" />**
 
-```shell
+```shell[Snap]
 ./scripts/auto-install.sh -f ~/snap/firefox/common/.mozilla/firefox
 ```
+
+:::
+
+![Firefox GNOME theme](/firefox/firefox-1.png)
 
 ### Включение дополнительных функций
 

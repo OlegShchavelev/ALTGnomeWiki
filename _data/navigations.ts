@@ -93,6 +93,7 @@ export const docs = [
           { text: 'Xmind', link: '/xmind' },
           { text: 'Zoom', link: '/zoom' },
           { text: 'Zsh', link: '/zsh' },
+          { text: 'Анализатор использования дисков', link: '/baobab' },
           { text: 'Глаз GNOME', link: '/eog' },
           { text: 'Мой офис', link: '/my-office' },
           { text: 'Р7-Офис', link: '/r7-office' },

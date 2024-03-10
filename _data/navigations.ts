@@ -87,6 +87,7 @@ export const docs = [
           { text: 'VK Мессенджер', link: '/vk-messenger' },
           { text: 'Warehouse', link: '/warehouse' },
           { text: 'WhatsApp Desktop', link: '/whatsapp-desktop' },
+          { text: 'Wike', link: '/wike' },
           { text: 'WPS Office', link: '/wps-office' },
           { text: 'Xeyes', link: '/xeyes' },
           { text: 'XLSCLIENTS', link: '/xlsclients' },

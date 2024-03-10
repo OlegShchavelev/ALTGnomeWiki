@@ -97,7 +97,7 @@ GNOME Circle содержит приложения, расширяющие эк�
 |Telegraph                           |-|[Telegraph](https://flathub.org/apps/io.github.fkinoshita.Telegraph)|[Подробнее](https://apps.gnome.org/ru/Telegraph/)|
 |Text Pieces                         |-|[textpieces](https://flathub.org/apps/com.github.liferooter.textpieces)|[Подробнее](https://apps.gnome.org/ru/Textpieces/)|
 |Warp                                |[warp](https://packages.altlinux.org/ru/sisyphus/srpms/warp/)|[Warp](https://flathub.org/apps/app.drey.Warp)|[Подробнее](https://apps.gnome.org/ru/Warp/)|
-|Wike                                |[Wike](https://packages.altlinux.org/ru/sisyphus/srpms/wike/)|[Wike](https://flathub.org/apps/com.github.hugolabe.Wike)|[Подробнее](https://apps.gnome.org/ru/Wike/)|
+|Wike                                |[wike](https://packages.altlinux.org/ru/sisyphus/srpms/wike/)|[Wike](https://flathub.org/apps/com.github.hugolabe.Wike)|[Подробнее](https://apps.gnome.org/ru/Wike/)|
 |Workbench                           |-|[Workbench](https://flathub.org/apps/re.sonny.Workbench)|[Подробнее](https://apps.gnome.org/ru/Workbench/)|
 |Zap                                 |-|[zap](https://flathub.org/apps/fr.romainvigier.zap)|[Подробнее](https://apps.gnome.org/ru/Zap/)|
 

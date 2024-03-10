@@ -1,5 +1,6 @@
 ---
-title: wike
+title: Wike
+nameRepo: wike
 appstreamFlatpak: com.github.hugolabe.Wike
 metainfo:
     thumb:

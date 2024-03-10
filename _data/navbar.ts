@@ -48,6 +48,7 @@ export const docs = [
           { text: 'GitHub Desktop', link: '/github-desktop' },
           { text: 'Центр Приложений', link: '/gnome-software' },
           { text: 'Google Chrome', link: '/google-chrome' },
+          { text: 'Helvum', link: '/helvum' },
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },
           { text: 'Lazarus', link: '/lazarus' },

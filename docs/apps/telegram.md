@@ -80,6 +80,14 @@ epm play telegram
 
 Оформление системной рамки зависит от оконного интерфейса приложения `X11` или `Wayland`. 
 
+## Не учитывать отключённые чаты и каналы в счетчике уведомлений
+
+Настроить счетчик уведомлений:
+
+- Перейдите в Настройки -> Уведомления и звуки
+- Отключите настройку «Учитывать чаты без звука»
+
+![Не учитывать отключённые чаты и каналы в счетчике уведомлений](/telegram/telegram-9.png)
 
 ## Как сбросить настройки
 
@@ -93,35 +101,4 @@ Telegram Desktop <Badge type="tip" text="Flatpak" />
 
 ```shell
 rm -rfv .var/app/org.telegram.desktop/config
-```
-
-## Проблема запуска Telegram в свёрнутом виде
-
-:::info
-Исправлено в версии 4.15
-:::
-
-В настоящее время наблюдается проблема с запуском Телеграмм при установленных галочках **Запускать Telegram при запуске системы** и **Запускать в свёрнутом виде**, а именно запуске Телеграмм в свёрнутом виде
-
-![Draw attention to the window](/telegram/telegram_5.png)
-
-Для обхода этой ситуации необходимо выполнить следующие действия
-
-В каталоге 
-
-```shell
-cd $HOME/.config/autostart
-```
-необходимо создать файл, к примеру, **telegram.desktop** со следующим содержанием
-
-```shell
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Telegram
-NoDisplay=true
-Comment=telegram on sys trey
-Exec=telegram -startintray
-Terminal=false
 ```

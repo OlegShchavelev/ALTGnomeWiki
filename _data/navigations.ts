@@ -233,7 +233,7 @@ export const docs = [
           { text: 'Подключение USB устройств', link: '/usb-devices' },
           { text: 'Подключение принтера', link: '/drivers-for-printer' },
           { text: 'Подключение сканера', link: '/drivers-for-scanner' },
-          { text: 'Подключение DualShock 4', link: '/dualshock4' }
+          { text: 'Подключение DualShock', link: '/dualshock' }
         ],
         collapsed: true
       },

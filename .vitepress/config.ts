@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { telegram, gitflic, vk } from './icons'
 import * as seo from './../_data/seo'
-import * as navbar from './../_data/navbar'
+import * as navbar from './../_data/navigations'
 import { normalize } from './utils'
 import { rewrites } from './paths'
 import VitepressMarkdownTimeline from "vitepress-markdown-timeline";

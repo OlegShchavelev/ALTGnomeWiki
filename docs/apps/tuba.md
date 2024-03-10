@@ -9,7 +9,7 @@ appstreamFlatpak: dev.geopjr.Tuba # appstream id приложения для fla
 metainfo:
     active: true  # Показывать ли бар
     thumb:
-        src: /tuba/dev.geojr.Tuba.png # Путь до иконки приложения
+        src: /tuba/dev.geopjr.Tuba.png # Путь до иконки приложения
         title: Tuba  # Название приложения
     summary: Неофициальный клиент Mastodon # Краткое описание
     developer: 

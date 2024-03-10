@@ -1,9 +1,9 @@
 ---
-title: VSCodium
+title: VSCode
 appstreamFlatpak: com.visualstudio.code
 ---
 
-# VSCODE
+# VSCode
 
 Visual Studio Code — инструмент, который сочетает в себе простоту редактора кода с тем, что нужно разработчикам для основного цикла: редактирования, сборки и отладки. Приложение выпускается с настройками, специфичными для Microsoft, выпущенный по традиционной [лицензии Microsoft на продукт](https://code.visualstudio.com/License/).
 
@@ -76,38 +76,26 @@ flatpak install flathub org.freedesktop.Sdk.Extension.node20
 
 ::: code-group
 
-```shell[Сизиф]
-codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
-```
-
 ```shell[Flatpak]
 flatpak run com.visualstudio.code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
 ```
+
+```shell[EPM Play]
+code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
+```
 :::
 
-Для простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCode**, сделайте Pin и в него внесите следующие параметры:
-
-```shell
---enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
-``` 
-
-## Запуск VSCode в оконном интерфейсе Wayland
-
-Запустить **VSCode** через терминал указав дополнительные опции запуска:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCode**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 
-```shell[Сизиф]
-code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
+```shell[Flatpak]
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=code --file-forwarding com.visualstudio.code --reuse-window @@ %F @@ // [!code --]
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=code --file-forwarding com.visualstudio.code --reuse-window --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto @@ %F @@ // [!code ++]
 ```
 
-```shell[Flatpak]
-flatpak run com.visualstudio.code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
+```shell[EPM Play]
+code --unity-launch %F // [!code --]
+code --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [!code ++]
 ```
 :::
-
-Для простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCode**, сделайте Pin и внесите следующие параметры в поле `Exec`:
-
-```shell
---enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
-``` 

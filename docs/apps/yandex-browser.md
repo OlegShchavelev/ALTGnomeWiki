@@ -124,7 +124,7 @@ browser://flags/#external-media
 
 1. Введите в Умную строку адрес `browser://flags`
 2. Введите в строку поиска флаг `#ozone-platform-hint`
-3. Включите опцию `Preferred Ozone platform`
+3. Выберите значение `Auto` для опции `Preferred Ozone platform`
 4. Перезапустите Яндекс Браузер и проверьте результат
 
 ![Запуск Яндекс Браузер в оконном интерфейсе Wayland](/yandex-browser/yandex-browser-2.gif)
@@ -132,8 +132,19 @@ browser://flags/#external-media
 Запустить Яндекс Браузер через терминал указав дополнительные опции запуска:
 
 ```shell
-yandex-browser-stable --ozone-platform-hint=wayland
+yandex-browser-stable --ozone-platform-hint=auto
 ```
+
+:::tip
+Для запуска Яндекс Браузера версии Flatpak, необходимо разрешить список сокетов:
+
+- Оконная система Wayland
+- Возрат к оконной системе X11
+
+:::info
+Удобным способом управления Flatpak-приложений является приложения [Flatseal](flatseal)
+:::
+
 
 ## Как исправить артефакты «моргания» в Яндекс Браузере при использовании закрытых драйверов NVIDIA
 

@@ -96,6 +96,7 @@ export const docs = [
           { text: 'Zsh', link: '/zsh' },
           { text: 'Анализатор использования дисков', link: '/baobab' },
           { text: 'Глаз GNOME', link: '/eog' },
+          { text: 'Дела', link: '/errands' },
           { text: 'Мой офис', link: '/my-office' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },

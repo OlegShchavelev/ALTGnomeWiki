@@ -94,15 +94,16 @@ exit
 gsettings set org.gnome.desktop.privacy usb-protection true
 ```
 
-Теперь во вкладке usb будет дополнительная опция, связанная с usbguard:
+**Теперь во вкладке Конфиденциальность будет дополнительная опция, связанная с usbguard.**
+
 До:
 
-TODO: добавить изображение настроек до. Без тумблера usbguard
+- src: /usbguard/usbguard_gnome-settings_before.jpg
 
 После:
 
-TODO: добавить изображение настроек после. С тумблером usbguard
-
+- src: /usbguard/usbguard_gnome-settings_after.jpg
+---
 ::: note
 Можно и полностью отключить все новые подключения
 :::

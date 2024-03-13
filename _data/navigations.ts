@@ -92,6 +92,7 @@ export const docs = [
           { text: 'Xeyes', link: '/xeyes' },
           { text: 'XLSCLIENTS', link: '/xlsclients' },
           { text: 'Xmind', link: '/xmind' },
+          { text: 'ZeroTierOne', link: '/zerotier' },
           { text: 'Zoom', link: '/zoom' },
           { text: 'Zsh', link: '/zsh' },
           { text: 'Анализатор использования дисков', link: '/baobab' },

@@ -20,8 +20,8 @@ import { locales } from '../../_data/enhanced-readabilities'
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
-import './style.css'
-import './custom.css'
+import './styles/style.css'
+import './styles/custom.css'
 import './viewerjs/dist/viewer.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css";

@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 import { telegram, gitflic, vk } from './icons'
-import * as seo from './../_data/seo'
 import * as navbar from './../_data/navigations'
 import { normalize } from './utils'
 import { rewrites } from './paths'
@@ -11,6 +10,8 @@ import markdownItImplicitFigures from 'markdown-it-implicit-figures'
 import markdownItEmbed from 'markdown-it-html5-embed'
 import markdownItConditionalRender from 'markdown-it-conditional-render'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs' 
+
+import * as config from './config.json'
 
 export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
 
@@ -23,22 +24,22 @@ export default defineConfig({
       ],
     },
   },
-  title: seo.SITE_TITLE,
-  titleTemplate: ':title' + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE,
+  title: config.title,
+  titleTemplate: ':title' + config.head.titleSeponator + config.title,
   description: META_DESCRIPTION,
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
-    ['meta', { name: 'theme-color', content: '#62a0ea' }],
+    ['meta', { name: 'theme-color', content: config.head.themeColor }],
     ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }]
   ],
-  lang: 'ru-RU',
+  lang: config.lang,
   srcDir: './docs',
   sitemap: {
     hostname: 'https://alt-gnome.wiki'
   },
   themeConfig: {
-    logo: { src: '/logo.png', width: 36, height: 36, alt: "ALT Gnome Wiki" },
+    logo: { src: '/logo.png', width: 36, height: 36, alt: config.title },
     search: {
       provider: 'local',
       options: {
@@ -149,11 +150,11 @@ export default defineConfig({
     }
   },
   transformPageData: (pageData: normalize) => {
-    const title = pageData.title + seo.SITE_TITLE_SEPARATOR + seo.SITE_TITLE
-    const type = 'website'
-    const locale = 'ru_RU'
-    const url = seo.SITE_HOST + normalize(pageData.relativePath)
-    const image = 'og-alt-wiki.jpg'
+    const title = pageData.title + config.head.titleSeponator + config.title
+    const type = config.head.type
+    const locale = config.lang
+    const url = config.host + normalize(pageData.relativePath)
+    const image = config.head.ogImage
 
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(
@@ -161,17 +162,17 @@ export default defineConfig({
       ['meta', { name: 'og:type', content: type }],
       ['meta', { name: 'og:locale', content: locale }],
       ['meta', { name: 'og:url', content: `${url}.html` }],
-      ['meta', { name: 'og:site_name', content: seo.SITE_TITLE }],
-      ['meta', { name: 'og:image', content: seo.SITE_HOST + image }],
+      ['meta', { name: 'og:site_name', content: config.title }],
+      ['meta', { name: 'og:image', content: config.host + image }],
       ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-      ['meta', { name: 'twitter:image', content: seo.SITE_HOST + image }],
+      ['meta', { name: 'twitter:image', content: config.host + image }],
     )
 
     if (pageData.frontmatter.layout !== 'home') {
       pageData.frontmatter.head.push(
         ['link', { rel: 'canonical', href: `${url}.html` }],
       )
-      pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString()}`
+      pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString(config.lang)}`
     }
   }
 })

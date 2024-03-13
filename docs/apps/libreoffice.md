@@ -69,9 +69,9 @@ flatpak install flathub org.libreoffice.LibreOffice
 
 <!--@include: ./parts/install/software-flatpak.md-->
 
-## Шрифты в OnlyOffice
+## Шрифты в LibreOffice
 
-В документации OnlyOffice [перечисленные шрифты](https://wiki.documentfoundation.org/Fonts), идущие в комплекте с LibreOffice. В ALT Regular Gnome вам может понадобиться установить дополнительные пакеты, к примеру для использования «Times New Roman» от Microsoft, установите в терминале следующий пакеты:
+В документации LibreOffice [перечисленные шрифты](https://wiki.documentfoundation.org/Fonts), идущие в комплекте с LibreOffice. В ALT Regular Gnome вам может понадобиться установить дополнительные пакеты, к примеру для использования «Times New Roman» от Microsoft, установите в терминале следующий пакет:
 
 ::: code-group
 ```shell[apt-get]

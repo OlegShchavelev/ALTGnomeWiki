@@ -17,7 +17,7 @@ su-
 ```shell
 apt-get install usbguard-dbus
 ```
-::: note
+::: info
 Если хотите использовать только CLI вариант и не использовать интеграцию в gnome, достаточно пакета usbguard
 :::
 
@@ -31,7 +31,7 @@ groupadd usbguard
 ```shell
 usermod -a -G usbguard <пользователь>
 ```
-::: note
+::: info
 Вставьте в <пользователь> своего пользователя.
 :::
 
@@ -43,7 +43,7 @@ sudo visudo -f /etc/sudoers.d/11-usbguard-group
 ```shell
 %usbguard ALL=(ALL) /usr/bin/usbguard *
 ```
-:::note
+:::info
 Главная причина создание новой группы и добавление пользователя, это добавление возможности пользователю выполнять программу от своего имени.
 
 Это можно решить и другим способом, например через использование группы [wheel](https://alt-gnome.wiki/sudo.html#быстрая-настроика-sudo)
@@ -105,7 +105,7 @@ gsettings set org.gnome.desktop.privacy usb-protection true
 
 - src: /usbguard/usbguard_gnome-settings_after.jpg
 ---
-::: note
+::: info
 Можно и полностью отключить все новые подключения
 :::
 

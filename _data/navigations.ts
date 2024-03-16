@@ -99,6 +99,7 @@ export const docs = [
           { text: 'Глаз GNOME', link: '/eog' },
           { text: 'Дела', link: '/errands' },
           { text: 'Мой офис', link: '/my-office' },
+          { text: 'Музыка', link: '/gnome-music' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },

@@ -8,7 +8,7 @@ hero:
   text: "Community"
   tagline: открытое сообщество пользователей операционной системы ALT Regular Gnome
   image:
-    src: /laptop.png
+    src: /alt-gnome.png
     alt: GNOME
   actions:
     - theme: brand

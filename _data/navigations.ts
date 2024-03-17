@@ -42,6 +42,7 @@ export const docs = [
           { text: 'Flatseal', link: '/flatseal' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
+          { text: 'G4Music', link: '/g4music' },
           { text: 'GDM Настройки', link: '/gdm-settings' },
           { text: 'Git', link: '/git' },
           { text: 'GitHub Desktop', link: '/github-desktop' },

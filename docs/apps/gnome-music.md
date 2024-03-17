@@ -17,7 +17,6 @@ metainfo:
     issue:
         url: https://gitlab.gnome.org/GNOME/gnome-music/issues
         anchor: gitlab.gnome.org
-    
 ---
 
 # Музыка

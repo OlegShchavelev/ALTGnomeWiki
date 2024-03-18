@@ -19,7 +19,7 @@ metainfo:
         url: https://github.com/dev47apps/droidcam/issues
         anchor: github.com
     sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/alacarte/
+        url: https://packages.altlinux.org/ru/sisyphus/srpms/droidcam/
 
 ---
 

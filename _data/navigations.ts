@@ -40,6 +40,7 @@ export const docs = [
           { text: 'Figma', link: '/figma' },
           { text: 'Firefox', link: '/firefox' },
           { text: 'Flatseal', link: '/flatseal' },
+          { text: 'Foliate', link: '/foliate' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
           { text: 'G4Music', link: '/g4music' },

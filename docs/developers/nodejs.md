@@ -20,6 +20,10 @@ epm -i node npm
 ```
 :::
 
+:::info
+В репозитории Сизиф размещена и поддерживается Node.js релиз `20.xx`, ветка с долгосрочной поддержкой LTS
+:::
+
 ## Выпуски Node.js
 
 |                          Release                          |     Status      |                             Codename                             | Initial Release | Active LTS Start | Maintenance Start | End-of-life |

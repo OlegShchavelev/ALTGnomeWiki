@@ -49,6 +49,7 @@ export const docs = [
           { text: 'Git', link: '/git' },
           { text: 'GitHub Desktop', link: '/github-desktop' },
           { text: 'Google Chrome', link: '/google-chrome' },
+          { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
           { text: 'Helvum', link: '/helvum' },
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },

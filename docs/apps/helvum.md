@@ -17,7 +17,6 @@ metainfo:
     issue:
         url: https://gitlab.freedesktop.org/pipewire/helvum/-/issues
         anchor: gitlab.freedesktop.org
-    
 ---
 
 # Helvum

@@ -71,7 +71,7 @@ dd if=/dev/zero of=/swapfile bs=1M count=4096
 chmod 600 /swapfile
 mkswap /swapfile
 
-echo "/swapfile nonw swap defaults 0 0" >> /etc/fstab # важно >> 
+echo "/swapfile none swap defaults 0 0" >> /etc/fstab # важно >> 
 cat /etc/fstab # смотрим что строка с /swapfile появилась в конце файла
 
 reboot
@@ -94,7 +94,7 @@ btrfs filesystem mkswapfile --size 4g --uuid clear /swap/swapfile
 
 swapon /swap/swapfile
 
-echo "/swapfile nonw swap defaults 0 0" >> /etc/fstab # важно >>
+echo "/swapfile none swap defaults 0 0" >> /etc/fstab # важно >>
 cat /etc/fstab # смотрим что строка с /swapfile появилась в конце файла
 
 reboot

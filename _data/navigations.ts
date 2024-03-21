@@ -263,7 +263,7 @@ export const docs = [
             text: 'Rust',
             link: '/rust',
             items: [
-              { text: 'приложение на GTK4', link: 'rust-gtk4-applications' }
+              { text: 'Приложение на GTK4', link: 'rust-gtk4-applications' }
             ],
             collapsed: true
           },
@@ -271,7 +271,7 @@ export const docs = [
             text: 'Vala',
             link: '/vala',
             items: [
-              { text: 'приложение на GTK4', link: 'vala-gtk4-applications' }
+              { text: 'Приложение на GTK4', link: 'vala-gtk4-applications' }
             ],
             collapsed: true
           }

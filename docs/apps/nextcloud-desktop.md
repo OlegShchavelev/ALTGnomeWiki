@@ -1,6 +1,7 @@
 ---
 title: Nextcloud Desktop
-
+nameRepo: nextcloud-client
+appstreamFlatpak: com.nextcloud.desktopclient.nextcloud
 metainfo:
     active: true
     thumb:
@@ -14,18 +15,10 @@ metainfo:
         anchor: nextcloud.com
     licence:
         url: 
-        anchor: GPL-2.0
-    translate:
-        url: 
-        anchor: 
+        anchor: GPL-2.0 
     issue: 
         url: https://github.com/nextcloud/desktop/issues
         anchor: github.com
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/nextcloud-client/
-     flathub:
-        url: https://flathub.org/apps/com.nextcloud.desktopclient.nextcloud
-        
 ---
 
 # Nextcloud Desktop

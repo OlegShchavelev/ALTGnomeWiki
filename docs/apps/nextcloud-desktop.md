@@ -5,9 +5,9 @@ appstreamFlatpak: com.nextcloud.desktopclient.nextcloud
 metainfo:
     active: true
     thumb:
-        src: https://avatars.githubusercontent.com/u/19211038?s=200&v=4
+        src: https://avatars.githubusercontent.com/u/19211038?s=48&v=4
         title: Nextcloud Desktop
-    summary: приложение Nextcloud Desktop
+    summary: Официальный клиент Nextcloud Desktop
     developer: 
         name: Nextcloud GmbH
     site:
@@ -19,6 +19,7 @@ metainfo:
     issue: 
         url: https://github.com/nextcloud/desktop/issues
         anchor: github.com
+        
 ---
 
 # Nextcloud Desktop
@@ -27,7 +28,7 @@ Nextcloud Desktop — клиент для клиент-серверного хр
 
 ## Установка из репозитория
 
-**nextcloud Desktop** можно установить любым привычным и удобным способом:
+**Nextcloud Desktop** можно установить любым привычным и удобным способом:
 
 <!--@include: ./parts/install/software-repo.md-->
 
@@ -47,7 +48,7 @@ epm -i nextcloud-client
 
 ## Установка с помощью Flatpak
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Audacity** одной командой:
+При наличии пакета [Flatpak](/flatpak), можно установить **Nextcloud Desktop** одной командой:
 
 ```shell
 flatpak install flathub com.nextcloud.desktopclient.nextcloud

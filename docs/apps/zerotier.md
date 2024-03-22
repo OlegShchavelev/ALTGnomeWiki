@@ -51,17 +51,22 @@ su -
 serv zerotier-one on
 ```
 
-Использование **ZeroTierOne**. 
-Помните, что сети ZeroTier представляют собой 16-значные идентификаторы, которые выглядят как 8056c2e21c000001:
+## Использование **ZeroTierOne**:
+
+::: tip
+Помните, что сети ZeroTier представляют собой 16-значные идентификаторы, которые выглядят как 8056c2e21c000001.
+:::
 
 ```shell
 su -
 zerotier-cli join ################
 ```
+
 ```shell
 su -
 zerotier-cli leave ################
 ```
+
 ```shell
 su -
 zerotier-cli listnetworks

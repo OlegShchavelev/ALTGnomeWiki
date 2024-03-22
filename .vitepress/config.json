@@ -2,10 +2,53 @@
     "host": "https://alt-gnome.wiki/",
     "lang": "ru-RU",
     "title": "ALT Gnome Wiki",
+    "meta_description": "Свободная WIKI по операционной системе ALT Regular Gnome",
     "head": {
         "titleSeponator": " — ",
         "themeColor": "#62a0ea",
         "type": "website",
         "ogImage": "og-alt-wiki.jpg"
+    },
+
+    "yandex_mrtrica": "6ef3a36c3d09e43e",
+    
+    "git_repo": "https://github.com/OlegShchavelev/ALTRegularGnomeWiki",
+    "git_maxlog": 20000,
+    "git_rewrite_path": {
+        "docs/apps/": "",
+        "docs/developers/": "",
+        "docs/equipment/": "",
+        "docs/extensions/": "",
+        "docs/reference/": "",
+        "docs/system/": "",
+        "docs/tips/": "",
+        "docs/using_gnome/":"",
+        "docs/main/": ""
+    },
+    "git_exclude": [
+        "index.md",
+        "wiki.md",
+        "contributions.md",
+        "about.md",
+        "app.md",
+        "alteration.md",
+        "vitepress.md"
+    ],
+    "git_display": {
+        "disableChangelog": false,
+        "disableContributors": false
+    },
+    "git_locale": {
+        "git_lang": "ru",
+        "git_author_title": "Авторы",
+        "git_history_title": "История изменений",
+        "git_dict": {
+            "en": {
+                "noLogs": "Нет изменений",
+                "lastEdited": "Последнее редактирование: {{daysAgo}}",
+                "viewFullHistory": "Показать историю",
+                "commitedOn": " от {{date}}"
+            }
+        }
     }
 }

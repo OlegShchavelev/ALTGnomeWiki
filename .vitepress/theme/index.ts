@@ -1,29 +1,46 @@
 // https://vitepress.dev/guide/custom-theme
+
+/* System */
 import { h } from 'vue'
 import { useRoute, useData } from 'vitepress';
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import imageViewer from 'vitepress-plugin-image-viewer'
-import {
-  NolebaseEnhancedReadabilitiesMenu,
-  NolebaseEnhancedReadabilitiesScreenMenu,
-} from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+
+/* AGW */
 import AGWHomeContents from './components/AGWHomeContents.vue'
 import AGWMetaBars from './components/AGWAppsMetaWidget.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
 
+
+/* Metrics */
+import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
+
+
+/* Nolebase features*/
+import {
+  NolebaseEnhancedReadabilitiesMenu,
+  NolebaseEnhancedReadabilitiesScreenMenu,
+} from '@nolebase/vitepress-plugin-enhanced-readabilities'
+
+import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
+import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { locales } from '../../_data/enhanced-readabilities'
 
-import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
-import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+import { 
+  NolebaseGitChangelog, 
+  NolebaseGitContributors 
+} from '@nolebase/vitepress-plugin-git-changelog/client'
 
+/* Stylesheets */
+import 'uno.css'
 import './styles/style.css'
 import './styles/custom.css'
 import './viewerjs/dist/viewer.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css";
 
 export default {
@@ -50,8 +67,11 @@ export default {
         }
       },
     }),
+    
     ctx.app.component('AGWGallery', AGWGallery);
     ctx.app.component('AGWCategories', AGWCategories)
+    ctx.app.component('NolebaseGitContributors', NolebaseGitContributors)
+    ctx.app.component('NolebaseGitChangelog', NolebaseGitChangelog)
     enhanceAppWithTabs(ctx.app)
   },
   setup() {

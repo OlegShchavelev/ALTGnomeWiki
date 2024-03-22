@@ -1,11 +1,11 @@
 ---
 title: Cassette
+nameRepo: cassette
 appstreamRepo: io.github.Rirusha.Cassette
 appstreamFlatpak: io.github.Rirusha.Cassette
 metainfo:
-    active: true
     thumb:
-        src: /casseta/io.github.Rirusha.Cassette.png
+        src: /cassette/io.github.Rirusha.Cassette.png
         title: Кассета
     summary: Неофициальный клиент Яндекс Музыки
     developer: 
@@ -22,13 +22,8 @@ metainfo:
         url: https://github.com/Rirusha/Cassette/issues
         anchor: github.com
     createTheme: true
-    proprietary: false
     sponsor: 
         url: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/cassette/
-    flathub:
-        url: https://flathub.org/ru/apps/hu.kramo.Cartridges
 ---
 
 # Cassette
@@ -66,6 +61,23 @@ flatpak install flathub io.github.Rirusha.Cassette
 
 <!--@include: ./parts/install/software-flatpak.md-->
 
+## Nightly версия
+
+::: warning
+Данная версия каждую ночь собирается и обновляется из dev ветки приложения, поэтому может оказаться нестабильной 
+:::
+
+Подключаем репозиторий gnome-nightly и устанавливаем GNOME Platform:
+```shell
+flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+flatpak install gnome-nightly org.gnome.Platform//master
+```
+
+Подключаем Nightly репозиторий и устанавливаем приложение:
+```shell
+flatpak remote-add --if-not-exists cassette-nightly https://rirusha.github.io/Cassette/index.flatpakrepo
+flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
+```
 ## Авторизация
 
 Доступна авторизация по:
@@ -107,7 +119,7 @@ flatpak install flathub io.github.Rirusha.Cassette
 Если у вас flatpak версия, то выполните в терминале:
 
 ```shell
-flatpak override --env=WEBKIT_DISABLE_COMPOSITING_MODE=1 io.github.Rirusha.Cassette
+WEBKIT_DISABLE_COMPOSITING_MODE=1 flatpak run io.github.Rirusha.Cassette
 ```
 
 Или создайте строчку в блоке переменных окружения в приложении [Flatseal](/flatseal)
@@ -122,7 +134,7 @@ echo WEBKIT_DISABLE_COMPOSITING_MODE=1 >> /etc/environment
 
  После настройки, перезагрузите операционную систему.
 
- ![Пример проблемы с отображением интерфейса при авторизации](/casseta/casseta-1.png)
+ ![Пример проблемы с отображением интерфейса при авторизации](/cassette/casseta-1.png)
 
  ## Бесконечная загрузка при авторизации во Flatpak-версии приложения
 

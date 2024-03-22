@@ -232,5 +232,13 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/a1ex-ak' }
       ],
+    },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/73014273?v=4',
+      name: 'Alex Kryuchkov',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/alexkdeveloper' }
+      ],
     }
   ]

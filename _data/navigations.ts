@@ -219,7 +219,8 @@ export const docs = [
           { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
           { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' },
           { text: 'Blur my Shell', link: '/blur-my-shell' },
-          { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' }
+          { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' },
+          { text: 'UsbGuard Gnome', link: '/usbguard-gnome.md' }
         ],
         collapsed: true
       },
@@ -263,7 +264,15 @@ export const docs = [
             text: 'Rust',
             link: '/rust',
             items: [
-              { text: 'приложение на GTK4', link: 'rust-gtk4-applications' }
+              { text: 'Приложение на GTK4', link: 'rust-gtk4-applications' }
+            ],
+            collapsed: true
+          },
+          {
+            text: 'Vala',
+            link: '/vala',
+            items: [
+              { text: 'Приложение на GTK4', link: 'vala-gtk4-applications' }
             ],
             collapsed: true
           }

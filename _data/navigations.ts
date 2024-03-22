@@ -33,6 +33,7 @@ export const docs = [
           { text: 'Discord', link: '/discord' },
           { text: 'Docker', link: '/docker' },
           { text: 'Drawing', link: '/drawing' },
+          { text: 'DroidCam', link: '/droidcam' },
           { text: 'Eclipse IDE', link: '/eclipse-ide' },
           { text: 'EasyEffects', link: '/easyeffects' },
           { text: 'Evince', link: '/evince' },
@@ -40,12 +41,15 @@ export const docs = [
           { text: 'Figma', link: '/figma' },
           { text: 'Firefox', link: '/firefox' },
           { text: 'Flatseal', link: '/flatseal' },
+          { text: 'Foliate', link: '/foliate' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
+          { text: 'G4Music', link: '/g4music' },
           { text: 'GDM Настройки', link: '/gdm-settings' },
           { text: 'Git', link: '/git' },
           { text: 'GitHub Desktop', link: '/github-desktop' },
           { text: 'Google Chrome', link: '/google-chrome' },
+          { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
           { text: 'Helvum', link: '/helvum' },
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },
@@ -86,18 +90,20 @@ export const docs = [
           { text: 'VSCodium', link: '/vscodium' },
           { text: 'VK Мессенджер', link: '/vk-messenger' },
           { text: 'Warehouse', link: '/warehouse' },
-          { text: 'WhatsApp Desktop', link: '/whatsapp-desktop' },
+          { text: 'WhatsApp for Linux', link: '/whatsapp-desktop' },
           { text: 'Wike', link: '/wike' },
           { text: 'WPS Office', link: '/wps-office' },
           { text: 'Xeyes', link: '/xeyes' },
           { text: 'XLSCLIENTS', link: '/xlsclients' },
           { text: 'Xmind', link: '/xmind' },
+          { text: 'ZeroTierOne', link: '/zerotier' },
           { text: 'Zoom', link: '/zoom' },
           { text: 'Zsh', link: '/zsh' },
           { text: 'Анализатор использования дисков', link: '/baobab' },
           { text: 'Глаз GNOME', link: '/eog' },
           { text: 'Дела', link: '/errands' },
           { text: 'Мой офис', link: '/my-office' },
+          { text: 'Музыка', link: '/gnome-music' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },
@@ -213,7 +219,8 @@ export const docs = [
           { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
           { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' },
           { text: 'Blur my Shell', link: '/blur-my-shell' },
-          { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' }
+          { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' },
+          { text: 'UsbGuard Gnome', link: '/usbguard-gnome.md' }
         ],
         collapsed: true
       },
@@ -257,7 +264,15 @@ export const docs = [
             text: 'Rust',
             link: '/rust',
             items: [
-              { text: 'приложение на GTK4', link: 'rust-gtk4-applications' }
+              { text: 'Приложение на GTK4', link: 'rust-gtk4-applications' }
+            ],
+            collapsed: true
+          },
+          {
+            text: 'Vala',
+            link: '/vala',
+            items: [
+              { text: 'Приложение на GTK4', link: 'vala-gtk4-applications' }
             ],
             collapsed: true
           }

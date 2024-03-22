@@ -176,41 +176,19 @@ rm -rfv .config/yandex-browser/Default/GPUCache
 ## Video DownloadHelper
 Как известно, **Яндекс Браузер** , как и другие браузеры, обладает множеством расширений. **Video DownloadHelper** не исключение.
 Однако не так давно, приложение компаньон обновилось и поменяло свое название на VdhCoApp.
-В настоящее время в EPM появилась возможность установки нового приложения компаньона, но сам установщик пакета, как с официального сайта так и через EPM, не поддерживает установку приложения компаньона в Яндекс Браузер.
+В настоящее время в EPM существует возможность установки нового приложения компаньона для корректной работы **Video DownloadHelper**.
 
-Если Вы используете **Video DownloadHelper** и столкнулись с проблемой обновления приложения компаньона, но после его установки в Яндекс Браузере не заработало, необходимо выполнить следующие действия.
-
-1. Устанавливаем само приложение компаньон
+Для установки приложения компаньона используем консоль и EPM версии **3.60.9** или выше
 
 ```shell
 epm play vdhcoapp
 ```
 
-2. Удаляем из Яндекс Браузера старый файл, если его вдруг нет, будет написано, что файл не найден  
-
-```shell
-rm $HOME/.config/yandex-browser/NativeMessagingHosts/net.downloadhelper.coapp.json
-```
-
-3. Создаем новый файл net.downloadhelper.coapp.json
-
-```shell
-echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegcaeklhafolokijcfjliaokphfk/",\n"chrome-extension://pfoiagbblcbmognbkekfpodpidedkmcc/",\n"chrome-extension://jmkaglaafmhbcpleggkmaliipiilhldn/",\n"chrome-extension://fojefjolbhfidomcaelhceoldmmpcaga/"\n],\n  "name": "net.downloadhelper.coapp",\n"description": "Video DownloadHelper companion app",\n"path": "/opt/vdhcoapp/vdhcoapp"\n}' >> $HOME/.config/yandex-browser/NativeMessagingHosts/net.downloadhelper.coapp.json
-```
-
-4. Перезапускаем Яндекс Браузер и проверяем, в случае если не заработало, делаем тоже самое, но принудительно ставим версию 2.0.10
-
-```shell
-epm play vdhcoapp=2.0.10
-```
-
-Дальше шаги с **2** по **4**
-
-Если вышел конфликт версий при установке с помощью ЕПМ, возможна такая ситуация, то делаем все **без ЕПМ** по шагам.
-
 :::info
-Ниже вариант предпочтительный
+Далее описан вариант для версии EPM ниже **3.60.9**
 :::
+
+Если Вы используете **Video DownloadHelper** и столкнулись с проблемой обновления приложения компаньона, но после его установки в Яндекс Браузере не заработало, необходимо выполнить следующие действия.
 
 ```shell
 cd ~

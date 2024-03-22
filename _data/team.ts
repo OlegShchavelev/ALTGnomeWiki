@@ -218,5 +218,27 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/Boria138' }
       ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/44705058?v=4',
+      name: 'Ampernic',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Ampernic' }
+      ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/121604147?v=4',
+      name: 'Алексей Камаев',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/a1ex-ak' }
+      ],
+    },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/73014273?v=4',
+      name: 'Alex Kryuchkov',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/alexkdeveloper' }
+      ],
     }
   ]

@@ -1,0 +1,11 @@
+{
+    "host": "https://alt-gnome.wiki/",
+    "lang": "ru-RU",
+    "title": "ALT Gnome Wiki",
+    "head": {
+        "titleSeponator": " — ",
+        "themeColor": "#62a0ea",
+        "type": "website",
+        "ogImage": "og-alt-wiki.jpg"
+    }
+}

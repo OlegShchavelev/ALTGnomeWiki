@@ -64,6 +64,7 @@ export const docs = [
           { text: 'Мpv', link: '/mpv' },
           { text: 'Neofetch', link: '/neofetch' },
           { text: 'Neovim', link: '/neovim' },
+          { text: 'Nextcloud Desktop', link: '/nextcloud-desktop' },
           { text: 'OBS Studio', link: '/obs-studio' },
           { text: 'Obsidian', link: '/obsidian' },
           { text: 'OnlyOffice', link: '/onlyoffice' },

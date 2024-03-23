@@ -1,8 +1,13 @@
+/* System */
 import { defineConfig } from 'vitepress'
 import { telegram, gitflic, vk } from './icons'
 import * as navbar from './../_data/navigations'
 import { normalize } from './utils'
 import { rewrites } from './paths'
+import * as config from './config.json'
+export const META_DESCRIPTION = config.meta_description
+
+/* Markdown */
 import VitepressMarkdownTimeline from "vitepress-markdown-timeline";
 import markdownItKbd from 'markdown-it-kbd'
 import markdownItTaskLists from 'markdown-it-task-lists'
@@ -11,12 +16,42 @@ import markdownItEmbed from 'markdown-it-html5-embed'
 import markdownItConditionalRender from 'markdown-it-conditional-render'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs' 
 
-import * as config from './config.json'
 
-export const META_DESCRIPTION = 'Свободная WIKI по операционной системе ALT Regular Gnome'
+/* GitLog */ 
+import UnoCSS from 'unocss/vite'
+import { 
+  GitChangelog,
+  GitChangelogMarkdownSection 
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
+
 
 export default defineConfig({
   vite: {
+    plugins: [
+      UnoCSS(),
+      GitChangelog({
+        maxGitLogCount: config.git_maxlog,
+        repoURL: () => config.git_repo,
+        rewritePaths: config.git_rewrite_path,
+      }),
+      GitChangelogMarkdownSection({
+        getChangelogTitle: (_, __, { helpers }): string => {
+          return config.git_locale.git_history_title
+        },
+        getContributorsTitle: (_, __, { helpers }): string => {
+          return config.git_locale.git_author_title
+        },
+        excludes: [],
+        exclude: (_, { helpers }): boolean => {
+          for (var page of config.git_exclude){
+            if (helpers.idEndsWith(page))
+              return true
+          }
+          return false
+        },
+        sections: config.git_display,
+      }),
+    ],
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
@@ -31,12 +66,12 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'theme-color', content: config.head.themeColor }],
-    ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }]
+    ['meta', { name: 'yandex-verification', content: config.yandex_mrtrica }]
   ],
   lang: config.lang,
   srcDir: './docs',
   sitemap: {
-    hostname: 'https://alt-gnome.wiki'
+    hostname: config.host
   },
   themeConfig: {
     logo: { src: '/logo.png', width: 36, height: 36, alt: config.title },

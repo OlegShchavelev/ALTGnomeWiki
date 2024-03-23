@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "swiper": "^11.0.6",
+    "unocss": "^0.58.6",
     "vue-silentbox": "^3.0.4"
   },
   "type": "module",

@@ -137,6 +137,9 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Component: GitChangeLog
+ * -------------------------------------------------------------------------- */
 .bg-\$vp-custom-block-details-bg, .bg-vp-custom-block-details-bg{
   background-color: var(--vp-c-gray-3) !important;
 }

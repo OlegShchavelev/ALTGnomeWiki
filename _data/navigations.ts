@@ -315,7 +315,7 @@ export const reference = [
     base: '/reference/structure/',
     items: [
       { text: 'Страница приложения', link: '/app' },
-      { text: 'Страница Wiki', link: '/wiki' }
+      { text: 'Страница Wiki', link: '/wiki_page' }
     ],
     collapsed: false
   }

@@ -19,20 +19,18 @@
         "docs/developers/": "",
         "docs/equipment/": "",
         "docs/extensions/": "",
-        "docs/reference/": "",
         "docs/system/": "",
         "docs/tips/": "",
         "docs/using_gnome/":"",
-        "docs/main/": ""
+        "docs/main/": "",
+        "docs/reference/pages/": "reference/pages/",
+        "docs/reference/structure/": "reference/structure/"
     },
     "git_exclude": [
         "index.md",
         "wiki.md",
         "contributions.md",
-        "about.md",
-        "app.md",
-        "alteration.md",
-        "vitepress.md"
+        "about.md"
     ],
     "git_display": {
         "disableChangelog": false,

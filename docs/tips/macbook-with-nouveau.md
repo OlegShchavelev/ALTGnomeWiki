@@ -16,9 +16,9 @@
 ```shell
 $ su -
 # mkdir -p /tmp/nouveau && cd /tmp/nouveau
-# wget http://us.download.nvidia.com/XFree86/Linux-x86/340.108/NVIDIA-Linux-x86-340.108.run
+# wget http://us.download.nvidia.com/XFree86/Linux-x86_64/340.108/NVIDIA-Linux-x86_64-340.108.run
 # wget https://raw.githubusercontent.com/envytools/firmware/a0b9f9be0efad90cc84b8b2eaf587c3d7d350ea9/extract_firmware.py
-# sh NVIDIA-Linux-x86-340.108.run --extract-only
+# sh NVIDIA-Linux-x86_64-340.108.run --extract-only
 # python3 extract_firmware.py
 ```
 

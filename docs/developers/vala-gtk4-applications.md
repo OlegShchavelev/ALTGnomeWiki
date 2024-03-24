@@ -15,22 +15,22 @@ apt-get install libadwaita-devel libgtk4-devel vala
 
 ```vala
 int main (string[] argv) {
-    // Создаем приложение.
     var app = new Adw.Application ("com.example.GtkApplication", GLib.ApplicationFlags.FLAGS_NONE);
     app.activate.connect (() => {
         var window = new Adw.ApplicationWindow (app);
         var label = new Gtk.Label ("Hello, World!");
-        //Создаем заголовок окна.
+        
         var headerbar = new Adw.HeaderBar ();
-        //Создаем контейнер и упаковываем в него заголовок и метку.
-        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        box.append (headerbar);
-        box.append (label);
-        //Устанавливаем контент для окна и показываем его.
-        window.set_content (box);
+        
+        var toolbar = new Adw.ToolbarView ();
+        toolbar.add_top_bar (headerbar);
+        toolbar.set_content (label);
+        
+        window.set_content (toolbar);
         window.present ();
     });
     return app.run (argv);
+}
 ```
 
 ### Собираем и запускаем приложение:

@@ -41,11 +41,12 @@
         "git_author_title": "Авторы",
         "git_history_title": "История изменений",
         "git_dict": {
-            "en": {
+            "ru-RU": {
                 "noLogs": "Нет изменений",
                 "lastEdited": "Последнее редактирование: {{daysAgo}}",
+                "lastEditedDateFnsLocaleName": "ru",
                 "viewFullHistory": "Показать историю",
-                "commitedOn": " от {{date}}"
+                "committedOn": " от {{date}}"
             }
         }
     }

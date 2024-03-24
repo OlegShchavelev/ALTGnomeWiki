@@ -34,6 +34,11 @@ import {
   NolebaseGitContributors 
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 
+import type { Options as Options$1 } from '@nolebase/vitepress-plugin-git-changelog/client'
+import { InjectionKey as InjectionKey$1 } from '@nolebase/vitepress-plugin-git-changelog/client/'
+
+import * as config from "./../config.json"
+
 /* Stylesheets */
 import 'uno.css'
 import './styles/style.css'
@@ -59,6 +64,10 @@ export default {
     ctx.app.provide(InjectionKey, {
       locales: locales
     } as Options)
+
+    ctx.app.provide(InjectionKey$1, {
+      locales: config.git_locale.git_dict
+    } as Options$1)
 
     yandexMetrika(ctx, {
       counter: {

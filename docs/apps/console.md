@@ -18,15 +18,15 @@ epm -i console
 ```
 :::
 
-## Удаление gnome-console
+## Удаление GNOME Terminal
 
-**Console** можно удалить через терминал:
+**GNOME Terminal** можно удалить через терминал:
 
 ::: code-group
 
 ```shell[apt-get]
 su -
-apt-get remove -D gnome-Console
+apt-get remove gnome-terminal
 ```
 ```shell[epm]
 epm -e gnome-terminal

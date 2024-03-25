@@ -8,7 +8,8 @@ Vala — язык программирования, предназначенны
 Vala можно установить через терминал:
 
 ```shell
-sudo apt-get install vala
+su -
+apt-get install vala
 ```
 ## Примеры программ
 

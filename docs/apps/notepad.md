@@ -5,7 +5,7 @@ metainfo:
     thumb:
         src: /notepad/com.github.alexkdeveloper.notepad.png
         title: Notepad
-    summary: Клиент для обмена сообщениями, аудио и видеосвязи
+    summary: Простая программа для создания текстовых заметок
     developer: 
         name: Alex Kryuchkov
         nickname: alexkdeveloper

@@ -6,6 +6,7 @@ import { telegram, gitflic, vk } from './icons'
 import * as navbar from './../_data/navigations'
 import { normalize } from './utils'
 import { rewrites } from './paths'
+import languages from './theme/syntaxes'
 import * as config from './config.json'
 export const META_DESCRIPTION = config.meta_description
 
@@ -178,6 +179,7 @@ export default defineConfig({
   },
   rewrites: rewrites,
   markdown: {
+    languages,
     container: {
       tipLabel: 'Подсказка',
       warningLabel: 'Внимание',

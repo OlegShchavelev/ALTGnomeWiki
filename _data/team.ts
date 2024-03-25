@@ -127,7 +127,13 @@ export const contributions = [
       name: 'Кирилл Уницаев',
       title: 'Участник',
       links: [
-        { icon: 'github', link: 'https://github.com/fiersik' }
+        { icon: 'github', link: 'https://github.com/fiersik' },
+        {
+          icon: {
+            svg: gitflic
+          },
+          link: 'https://gitflic.ru/user/fiersik'
+        },
       ],
       actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/cf/4p7xYDHEH2y'

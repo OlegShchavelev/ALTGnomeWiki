@@ -29,7 +29,7 @@ Notepad — программа для простого создания текс
 
 ## Установка c помощью Flatpak
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Boxes** одной командой:
+При наличии пакета [Flatpak](/flatpak), можно установить **Notepad** одной командой:
 
 ```shell
 flatpak install flathub com.github.alexkdeveloper.notepad

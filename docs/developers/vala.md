@@ -15,38 +15,38 @@ sudo apt-get install vala
 Простой пример программы без ООП:
 
 ```vala
-void main()
-{
-  print("Hello, World\n");
+void main () {
+    print ("Hello, World\n");
 }
 ```
 А в этом примере уже применяются принципы ООП:
 
 ```vala
-class Sample
-{
-    void run()
-    {
+class Sample {
+
+    void run () {
         stdout.printf("Hello, World\n");
     }
  
-    static int main(string[] args)
-    {
-        var sample = new Sample();
-        sample.run();
+    static int main (string[] args) {
+        var sample = new Sample ();
+        sample.run ();
+
         return 0;
     }
 }
 ```
 ## Запуск программ
 
-Для запуска программы ее нужно сначала скомпилировать:
+Для запуска программы нужно выполнить:
 
 ```shell
-valac sample.vala
+vala sample.vala
 ```
-А для запуска нужно просто скомандовать:
+
+Или можно сначала скомпилировать в исполняемый файл, после чего его запустить:
 
 ```shell
+valac sample.vala -o sample
 ./sample
 ```

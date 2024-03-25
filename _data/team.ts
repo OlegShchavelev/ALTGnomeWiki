@@ -9,7 +9,7 @@ export const contributions = [
     {
       avatar: 'https://avatars.githubusercontent.com/u/20732384?v=4',
       name: 'Олег Щавелев',
-      title: 'Разработчик',
+      title: 'Разработчик, Участник',
       links: [
         { icon: 'github', link: 'https://github.com/OlegShchavelev' },
         {
@@ -21,6 +21,14 @@ export const contributions = [
       ],
       actionText: 'Поддержать',
       sponsor: 'https://www.tinkoff.ru/cf/1uEC4uodPuV'
+    },
+    {
+      avatar: 'https://avatars.githubusercontent.com/u/44705058?v=4',
+      name: 'Антон Политов',
+      title: 'Разработчик, Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Ampernic' }
+      ],
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
@@ -217,13 +225,6 @@ export const contributions = [
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/Boria138' }
-      ],
-    }, {
-      avatar: 'https://avatars.githubusercontent.com/u/44705058?v=4',
-      name: 'Антон Политов',
-      title: 'Участник',
-      links: [
-        { icon: 'github', link: 'https://github.com/Ampernic' }
       ],
     }, {
       avatar: 'https://avatars.githubusercontent.com/u/121604147?v=4',

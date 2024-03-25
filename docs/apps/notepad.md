@@ -5,7 +5,7 @@ metainfo:
     thumb:
         src: /notepad/com.github.alexkdeveloper.notepad.png
         title: Notepad
-    summary: Клиент для обмена сообщениями, аудио и видеосвязи
+    summary: Простая программа для создания текстовых заметок
     developer: 
         name: Alex Kryuchkov
         nickname: alexkdeveloper
@@ -29,7 +29,7 @@ Notepad — программа для простого создания текс
 
 ## Установка c помощью Flatpak
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Boxes** одной командой:
+При наличии пакета [Flatpak](/flatpak), можно установить **Notepad** одной командой:
 
 ```shell
 flatpak install flathub com.github.alexkdeveloper.notepad

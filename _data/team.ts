@@ -220,7 +220,7 @@ export const contributions = [
       ],
     }, {
       avatar: 'https://avatars.githubusercontent.com/u/44705058?v=4',
-      name: 'Ampernic',
+      name: 'Антон Политов',
       title: 'Участник',
       links: [
         { icon: 'github', link: 'https://github.com/Ampernic' }

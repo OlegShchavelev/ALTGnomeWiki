@@ -26,6 +26,15 @@ import {
   GitChangelogMarkdownSection 
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
+import {
+  gitRepository,
+  gitMaxCommits,
+  gitDisplay,
+  gitRewritePath,
+  gitHeadersLocale
+} from '../_data/gitlog'
+
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
@@ -39,26 +48,26 @@ export default defineConfig({
     plugins: [
       UnoCSS(),
       GitChangelog({
-        maxGitLogCount: config.git_maxlog,
-        repoURL: () => config.git_repo,
-        rewritePaths: config.git_rewrite_path,
+        maxGitLogCount: gitMaxCommits,
+        repoURL: () => gitRepository,
+        rewritePaths: gitRewritePath,
       }),
       GitChangelogMarkdownSection({
         getChangelogTitle: (_, __, { helpers }): string => {
-          return config.git_locale.git_history_title
+          return gitHeadersLocale.history_title
         },
         getContributorsTitle: (_, __, { helpers }): string => {
-          return config.git_locale.git_author_title
+          return gitHeadersLocale.author_title
         },
         excludes: [],
         exclude: (_, { helpers }): boolean => {
-          for (var page of config.git_exclude){
+          for (var page of config.nolebase_exclude){
             if (helpers.idEndsWith(page))
               return true
           }
           return false
         },
-        sections: config.git_display,
+        sections: gitDisplay,
       }),
     ],
     ssr: {

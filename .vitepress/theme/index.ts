@@ -34,10 +34,14 @@ import {
   NolebaseGitContributors 
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 
-import type { Options as Options$1 } from '@nolebase/vitepress-plugin-git-changelog/client'
-import { InjectionKey as InjectionKey$1 } from '@nolebase/vitepress-plugin-git-changelog/client/'
+import type { Options as GitOptions } from '@nolebase/vitepress-plugin-git-changelog/client'
+import { InjectionKey as GitInjectionKey } from '@nolebase/vitepress-plugin-git-changelog/client/'
 
-import * as config from "./../config.json"
+import {
+  gitLocales,
+  gitMapContributors
+} from '../../_data/gitlog'
+
 
 /* Stylesheets */
 import 'uno.css'
@@ -65,10 +69,6 @@ export default {
       locales: locales
     } as Options)
 
-    ctx.app.provide(InjectionKey$1, {
-      locales: config.git_locale.git_dict
-    } as Options$1)
-
     yandexMetrika(ctx, {
       counter: {
         id: 95081395, initParams: {
@@ -79,8 +79,15 @@ export default {
     
     ctx.app.component('AGWGallery', AGWGallery);
     ctx.app.component('AGWCategories', AGWCategories)
+
     ctx.app.component('NolebaseGitContributors', NolebaseGitContributors)
-    ctx.app.component('NolebaseGitChangelog', NolebaseGitChangelog)
+    ctx.app.component('NolebaseGitChangelog',NolebaseGitChangelog)
+
+    ctx.app.provide(GitInjectionKey, {
+      locales: gitLocales,
+      mapContributors: gitMapContributors
+    } as GitOptions)
+
     enhanceAppWithTabs(ctx.app)
   },
   setup() {

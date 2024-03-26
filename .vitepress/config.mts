@@ -1,6 +1,4 @@
 /* System */
-import { dirname, join, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { telegram, gitflic, vk } from './icons'
 import * as navbar from './../_data/navigations'
@@ -34,10 +32,6 @@ import {
   gitRewritePath,
   gitHeadersLocale
 } from '../_data/gitlog'
-
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
 
 export default defineConfig({
   vite: {

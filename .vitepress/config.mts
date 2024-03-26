@@ -41,11 +41,6 @@ const __dirname = dirname(__filename)
 
 export default defineConfig({
   vite: {
-    resolve: {
-      alias: {
-        '@nolebase/vitepress-plugin-git-changelog': resolve(__dirname, './../node_modules/@nolebase/vitepress-plugin-git-changelog/dist'),
-      },
-    },
     plugins: [
       UnoCSS(),
       GitChangelog({

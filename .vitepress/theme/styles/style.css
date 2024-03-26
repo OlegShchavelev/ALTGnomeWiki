@@ -143,3 +143,10 @@
 .bg-\$vp-custom-block-details-bg, .bg-vp-custom-block-details-bg{
   background-color: var(--vp-c-gray-3) !important;
 }
+
+/**
+ * Component: Page Properties
+ * -------------------------------------------------------------------------- */
+ .VPDocFooter[data-v-29ec59c0]{
+  margin-top: 10px !important;
+}

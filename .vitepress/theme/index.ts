@@ -30,12 +30,8 @@ import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { locales } from '../../_data/enhanced-readabilities'
 
 import { 
-  NolebaseGitChangelog, 
-  NolebaseGitContributors 
+  NolebaseGitChangelogPlugin 
 } from '@nolebase/vitepress-plugin-git-changelog/client'
-
-import type { Options as GitOptions } from '@nolebase/vitepress-plugin-git-changelog/client'
-import { InjectionKey as GitInjectionKey } from '@nolebase/vitepress-plugin-git-changelog/client/'
 
 import {
   gitLocales,
@@ -49,7 +45,6 @@ import './styles/style.css'
 import './styles/custom.css'
 import './viewerjs/dist/viewer.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
-import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css";
 
 export default {
@@ -80,13 +75,7 @@ export default {
     ctx.app.component('AGWGallery', AGWGallery);
     ctx.app.component('AGWCategories', AGWCategories)
 
-    ctx.app.component('NolebaseGitContributors', NolebaseGitContributors)
-    ctx.app.component('NolebaseGitChangelog',NolebaseGitChangelog)
-
-    ctx.app.provide(GitInjectionKey, {
-      locales: gitLocales,
-      mapContributors: gitMapContributors
-    } as GitOptions)
+    ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitMapContributors})
 
     enhanceAppWithTabs(ctx.app)
   },

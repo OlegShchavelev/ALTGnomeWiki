@@ -1,6 +1,4 @@
 /* System */
-import { dirname, join, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { telegram, gitflic, vk } from './icons'
 import * as navbar from './../_data/navigations'
@@ -35,17 +33,8 @@ import {
   gitHeadersLocale
 } from '../_data/gitlog'
 
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
 export default defineConfig({
   vite: {
-    resolve: {
-      alias: {
-        '@nolebase/vitepress-plugin-git-changelog': resolve(__dirname, './../node_modules/@nolebase/vitepress-plugin-git-changelog/dist'),
-      },
-    },
     plugins: [
       UnoCSS(),
       GitChangelog({

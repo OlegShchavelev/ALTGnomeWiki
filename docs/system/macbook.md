@@ -185,7 +185,7 @@ make
 ```
 
 Сохраните патч ниже, как `alt-linux-lib64.patch` для команды выше в папку `apple-set-os`
-```patch
+```bash
 commit 7f29a978c13de7cacc6d4d1c00bb160bf3bc51ae
 Author: iTux <itux@idev.pro>
 Date:   Sun Oct 29 17:13:43 2023 +0300

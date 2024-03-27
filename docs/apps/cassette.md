@@ -3,6 +3,16 @@ title: Cassette
 nameRepo: cassette
 appstreamRepo: io.github.Rirusha.Cassette
 appstreamFlatpak: io.github.Rirusha.Cassette
+appstream:
+    id: io.github.Rirusha.Cassette
+    name: Cassette
+    icon: /cassette/io.github.Rirusha.Cassette.png
+    summary: Неофициальный клиент Яндекс Музыки
+    url: 
+        homepage: https://github.com/Rirusha/Cassette
+        bugtracker: 
+            name: github.com
+            link: https://github.com/Rirusha/Cassette/issues
 metainfo:
     thumb:
         src: /cassette/io.github.Rirusha.Cassette.png

@@ -10,7 +10,7 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 /* AGW */
 import AGWHomeContents from './components/AGWHomeContents.vue'
-import AGWMetaBars from './components/AGWAppsMetaWidget.vue'
+import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
 
@@ -54,7 +54,7 @@ export default {
       'home-features-after': () => h(AGWHomeContents),
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
-      'aside-outline-after': () => h(AGWMetaBars),
+      'aside-outline-after': () => h(AGWDocsAsideMeta),
     })
   },
 

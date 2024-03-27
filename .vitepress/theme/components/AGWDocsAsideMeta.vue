@@ -3,9 +3,10 @@ import { type Ref, computed } from 'vue'
 import { useData } from 'vitepress'
 
 import AGWAsideMetaList from './AGWAsideMetaList.vue'
+import AGWAsideMetaLink from './AGWAsideMetaLink.vue'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
 
-import { getLists } from '../composables/asidemeta'
+import { getLists, getLinks } from '../composables/asidemeta'
 
 const { frontmatter, theme } = useData();
 
@@ -15,7 +16,10 @@ const thumb = computed(() => frontmatter.value?.appstream?.icon ? {
 } : {})
 const title = computed(() => frontmatter.value?.appstream?.summary)
 const lists = computed(() => getLists(frontmatter.value?.appstream?.url, theme.value?.asideMeta?.lists?.labels))
+const links = computed(() => getLinks(frontmatter.value.aggregation, theme.value?.asideMeta?.links))
 const hasAsideMeta = computed(() => title.value || thumb.value?.src || lists.value)
+
+console.log(theme.value.asideMeta.links);
 
 </script>
 
@@ -28,6 +32,7 @@ const hasAsideMeta = computed(() => title.value || thumb.value?.src || lists.val
             <div v-if="title" class="title">{{ title }}</div>
         </div>
         <AGWAsideMetaList :lists="lists" />
+        <AGWAsideMetaLink :links="links" />
     </article>
 </template>
 

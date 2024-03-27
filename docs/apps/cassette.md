@@ -3,6 +3,9 @@ title: Cassette
 nameRepo: cassette
 appstreamRepo: io.github.Rirusha.Cassette
 appstreamFlatpak: io.github.Rirusha.Cassette
+aggregation: 
+    sisyphus: cassette
+    flatpak: io.github.Rirusha.Cassette
 appstream:
     id: io.github.Rirusha.Cassette
     name: Cassette

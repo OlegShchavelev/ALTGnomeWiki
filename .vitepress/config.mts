@@ -15,14 +15,14 @@ import markdownItTaskLists from 'markdown-it-task-lists'
 import markdownItImplicitFigures from 'markdown-it-implicit-figures'
 import markdownItEmbed from 'markdown-it-html5-embed'
 import markdownItConditionalRender from 'markdown-it-conditional-render'
-import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs' 
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 
-/* GitLog */ 
+/* GitLog */
 import UnoCSS from 'unocss/vite'
-import { 
+import {
   GitChangelog,
-  GitChangelogMarkdownSection 
+  GitChangelogMarkdownSection
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 import {
@@ -51,7 +51,7 @@ export default defineConfig({
         },
         excludes: [],
         exclude: (_, { helpers }): boolean => {
-          for (var page of config.nolebase_exclude){
+          for (var page of config.nolebase_exclude) {
             if (helpers.idEndsWith(page))
               return true
           }
@@ -173,8 +173,22 @@ export default defineConfig({
           help: 'Помощь',
           translate: 'Помощь в переводе',
           bugtracker: 'Сообщить о проблеме'
+        },
+      },
+      links: {
+        sisyphus: {
+          anchor: 'Сизиф',
+          target: '_blank',
+          baseUrl: '//packages.altlinux.org/ru/sisyphus/srpms/',
+          style: '--akw-btn-bg: var(--vp-c-yellow-dimm-1); --akw-btn-color: var(--vp-c-yellow-darker); --akw-btn-hover-bg:var(--vp-c-yellow-dark); --akw-btn-hover-color: var(--vp-c-white);'
+        },
+        flatpak: {
+          anchor: 'Flatpak',
+          target: '_blank',
+          baseUrl: '//flathub.org/apps/',
+          style: '-akw-btn-bg: var(--vp-c-blue-dimm-1); --akw-btn-color: var(--vp-c-blue-darker); --akw-btn-hover-bg:var(--vp-c-blue-dark); --akw-btn-hover-color: var(--vp-c-white);'
         }
-      }
+      } 
     }
   },
   rewrites: rewrites,

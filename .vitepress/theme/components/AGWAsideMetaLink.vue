@@ -1,0 +1,40 @@
+<script setup lang="ts">
+
+export interface Links {
+    id: string;
+    baseUrl: string;
+    anchor: string;
+    blank: string;
+    style: string;
+}
+
+const props = defineProps<{
+    links: Links[]
+}>();
+
+</script>
+
+<template>
+    <div>
+    <template v-for="link in links">
+        <a :href="link.baseUrl + link.id" :target="link.blank" class="btn" :style="link.style">{{ link.anchor }}</a>
+    </template>
+    </div>
+</template>
+
+<style scoped>
+.btn {
+    padding: 8px 24px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    display: grid;
+    background-color: var(--akw-btn-bg);
+    color: var(--akw-btn-color);
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--akw-btn-hover-bg);
+    color: var(--akw-btn-hover-color);
+}
+</style>

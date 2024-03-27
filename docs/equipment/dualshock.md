@@ -1,3 +1,11 @@
+---
+tags:
+- Устройства/Геймпады
+- DualShock
+createdAt: 02-29-2024
+progress: 70
+---
+
 # Подключение геймпадов семейства DualShock
 
 ## DualShock 3

@@ -24,6 +24,12 @@ import {
   GitChangelog,
   GitChangelogMarkdownSection 
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
+ 
+/* PagePropierties */
+import { 
+  PageProperties,
+  PagePropertiesMarkdownSection
+} from '@nolebase/vitepress-plugin-page-properties/vite'
 
 import {
   gitRepository,
@@ -58,6 +64,17 @@ export default defineConfig({
           return false
         },
         sections: gitDisplay,
+      }),
+      PageProperties(),
+      PagePropertiesMarkdownSection({
+        excludes: [],
+        exclude: (_, { helpers }): boolean => {
+          for (var page of config.nolebase_exclude){
+            if (helpers.idEndsWith(page))
+              return null
+          }
+          return false
+        },
       }),
     ],
     ssr: {

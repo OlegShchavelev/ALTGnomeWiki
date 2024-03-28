@@ -19,6 +19,7 @@
     "vitepress-plugin-tabs": "^0.5.0"
   },
   "dependencies": {
+    "@nolebase/vitepress-plugin-page-properties": "^1.25.2",
     "shiki": "^1.2.0",
     "swiper": "^11.0.6",
     "unocss": "^0.58.6",

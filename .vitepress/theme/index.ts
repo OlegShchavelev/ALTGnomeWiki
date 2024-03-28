@@ -38,6 +38,18 @@ import {
   gitMapContributors
 } from '../../_data/gitlog'
 
+import {
+  NolebasePagePropertiesEditor,
+} from '@nolebase/vitepress-plugin-page-properties/client'
+
+import {
+  pagePropertiesLocales,
+  pagePropertiesMD
+} from './../../_data/page-properties'
+
+import type { Options as NolebasePagePropertiesOptions } from '@nolebase/vitepress-plugin-page-properties/client';
+import { InjectionKey as NolebasePagePropertiesInjection } from '@nolebase/vitepress-plugin-page-properties/client';
+
 
 /* Stylesheets */
 import 'uno.css'
@@ -45,6 +57,7 @@ import './styles/style.css'
 import './styles/custom.css'
 import './viewerjs/dist/viewer.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css";
 
 export default {
@@ -74,7 +87,7 @@ export default {
     
     ctx.app.component('AGWGallery', AGWGallery);
     ctx.app.component('AGWCategories', AGWCategories)
-
+    ctx.app.provide(NolebasePagePropertiesInjection, {locales: pagePropertiesLocales, properties:pagePropertiesMD} as NolebasePagePropertiesOptions)
     ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitMapContributors})
 
     enhanceAppWithTabs(ctx.app)

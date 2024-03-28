@@ -26,27 +26,6 @@ appstream:
             name: github.com
             link: https://github.com/Rirusha/Cassette/issues
         donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
-metainfo:
-    thumb:
-        src: /cassette/io.github.Rirusha.Cassette.png
-        title: Кассета
-    summary: Неофициальный клиент Яндекс Музыки
-    developer: 
-        name: Владимир Васьков
-        nickname: Rirusha
-        avatar: https://avatars.githubusercontent.com/u/95986183?v=4
-    site:
-        url: https://github.com/Rirusha/Cassette
-        anchor: github.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue: 
-        url: https://github.com/Rirusha/Cassette/issues
-        anchor: github.com
-    createTheme: true
-    sponsor: 
-        url: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
 ---
 
 # Cassette

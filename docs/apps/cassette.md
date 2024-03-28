@@ -11,11 +11,21 @@ appstream:
     name: Cassette
     icon: /cassette/io.github.Rirusha.Cassette.png
     summary: Неофициальный клиент Яндекс Музыки
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    keywords: 
+        - dontthemes
+    developer: 
+        name: Владимир Васьков
+        nickname: Rirusha
+        avatar: https://avatars.githubusercontent.com/u/95986183?v=4
     url: 
         homepage: https://github.com/Rirusha/Cassette
         bugtracker: 
             name: github.com
             link: https://github.com/Rirusha/Cassette/issues
+        donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
 metainfo:
     thumb:
         src: /cassette/io.github.Rirusha.Cassette.png

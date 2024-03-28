@@ -17,7 +17,7 @@ const props = defineProps<{
 <template>
     <div>
     <template v-for="link in links">
-        <a :href="link.baseUrl + link.id" :target="link.blank" class="btn" :style="link.style">{{ link.anchor }}</a>
+        <a :href="link.baseUrl ?? '' + link.id" :target="link.blank" class="btn" :style="link.style">{{ link.anchor }}</a>
     </template>
     </div>
 </template>

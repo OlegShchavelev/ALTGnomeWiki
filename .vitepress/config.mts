@@ -166,6 +166,32 @@ export default defineConfig({
       copyright: '2024 ALT Gnome Wiki, разработано на платформе <a href="//vitepress.dev/">VitePress 1.0.0-rc.45</a>'
     },
     asideMeta: {
+      keywords: {
+        core: {
+          name: 'GNOME Core',
+          type: 'info'
+        },
+        circle: {
+          name: 'GNOME Circle',
+          type: 'success'
+        },
+        adaptive: {
+          name: 'Адаптивное',
+          type: 'tip'
+        },
+        proprietary: {
+          name: 'Проприетарное',
+          type: 'danger'
+        },
+        restrictions: {
+          name: 'Региональные ограничения',
+          type: 'danger'
+        },
+        dontthemes: {
+          name: 'Please don’t theme',
+          type: 'success-1'
+        }
+      },
       lists: {
         labels: {
           metadata_license: 'Лицензия',
@@ -176,6 +202,11 @@ export default defineConfig({
         },
       },
       links: {
+        donation: {
+          anchor: 'Поддержать автора',
+          target: '_blank',
+          style: '-akw-btn-bg: var(--vp-c-purple-soft); --akw-btn-color: var(--vp-c-purple-3); --akw-btn-hover-bg:var(--vp-c-purple-3); --akw-btn-hover-color: var(--vp-c-white);'
+        },
         sisyphus: {
           anchor: 'Сизиф',
           target: '_blank',
@@ -188,7 +219,7 @@ export default defineConfig({
           baseUrl: '//flathub.org/apps/',
           style: '-akw-btn-bg: var(--vp-c-blue-dimm-1); --akw-btn-color: var(--vp-c-blue-darker); --akw-btn-hover-bg:var(--vp-c-blue-dark); --akw-btn-hover-color: var(--vp-c-white);'
         }
-      } 
+      }
     }
   },
   rewrites: rewrites,

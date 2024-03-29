@@ -639,16 +639,29 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 ### Источники:
 https://www.altlinux.org/Nvidia
+
 https://www.kernel.org/doc/html/latest/gpu/drm-kms.html
+
 https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers/ru
+
 https://en.wikipedia.org/wiki/Nouveau_(software)
+
+https://www.altlinux.org/#Проблемы_с_драйвером_видеокарты
+
 https://x.org/
+
 https://nouveau.freedesktop.org/
+
 https://bugzilla.altlinux.org/39108
-https://git.altlinux.org/gears/n/nvidia_glx_common.git?p=nvidia_glx_common.git;a=blob;f=nvidia_glx_common.spec;h=19e084eae0006604525bc0a134492875cecb91da;hb=909a94c100c9491380789de8897a6b85b1921b36#l270
-https://git.altlinux.org/srpms/g/gdm.git?p=gdm.git;a=blob;f=gdm/data/61-gdm.rules.in;h=a4f841bdfe02138f2a4ef00979a8700caeeadcac;hb=45.0.1-alt3.1#l51
+
+https://packages.altlinux.org/ru/sisyphus/srpms/nvidia_glx_common/
+
 https://download.nvidia.com/XFree86/Linux-x86_64/550.40.07/README/powermanagement.html
+
 https://wiki.archlinux.org/title/NVIDIA
+
 https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks
+
 https://wiki.archlinux.org/title/Kernel_mode_setting
+
 https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers

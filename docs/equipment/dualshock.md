@@ -24,9 +24,10 @@ progress: 70
 sudo nano /etc/bluetooth/input.conf
 ```
 
+
 Далее добавить в него данное содержимое, нажать `ctrl+x` для выхода и `Y` для сохранения изменений
 
-```nano
+```bash
 [General]
 ClassicBondedOnly=false
 ```
@@ -37,6 +38,7 @@ ClassicBondedOnly=false
 systemctl restart bluetooth
 ```
 
+------
 ### Подключение
 
 Далее для первого сопряжения геймпада нам потребуется выполнить следующие действия:

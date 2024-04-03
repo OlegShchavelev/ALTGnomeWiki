@@ -247,5 +247,12 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/alexkdeveloper' }
       ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/147966355?v=4',
+      name: 'alchere',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/alchere' }
+      ],
     }
   ]

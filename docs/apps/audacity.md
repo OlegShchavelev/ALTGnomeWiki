@@ -2,31 +2,24 @@
 title: Audacity
 appstreamFlatpak: org.audacityteam.Audacity
 appstreamRepo: org.audacityteam.Audacity
-metainfo:
-    active: true
-    thumb:
-        src: /audacity/org.audacityteam.Audacity.png
-        title: Audacity
+aggregation:
+    flatpak: org.audacityteam.Audacity
+    sisyphus: gnome-disk-usage
+appstream:
+    id: org.audacityteam.Audacity
+    name: Audacity
+    icon: /audacity/org.audacityteam.Audacity.png
     summary: Записывайте и редактируйте аудиофайлы с Audacity
     developer: 
         name: Muse Group
-        avatar: 
-    site:
-        url: http://www.audacityteam.org/
-        anchor: audacityteam.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GPL-3.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://github.com/audacity/audacity/issues
-        anchor: github.com
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/audacity/
-    flathub:
-        url: https://flathub.org/ru/apps/org.audacityteam.Audacity
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: http://www.audacityteam.org/
+        bugtracker: https://github.com/audacity/audacity/issues/
+        help: https://support.audacityteam.org/
+        translate: https://support.audacityteam.org/community/contributing/translating/
 ---
 
 # Audacity

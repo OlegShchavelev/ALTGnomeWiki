@@ -17,7 +17,7 @@ const props = defineProps<{
 <template>
     <div>
     <template v-for="link in links">
-        <a :href="link.baseUrl ?? '' + link.id" :target="link.blank" class="btn" :style="link.style">{{ link.anchor }}</a>
+        <a :href="(link.baseUrl ?? '') + link.id" :target="link.blank" class="btn" :style="link.style">{{ link.anchor }}</a>
     </template>
     </div>
 </template>
@@ -28,13 +28,13 @@ const props = defineProps<{
     text-align: center;
     transition: all .5s ease-in-out;
     display: grid;
-    background-color: var(--akw-btn-bg);
-    color: var(--akw-btn-color);
+    background-color: var(--agw-btn-bg);
+    color: var(--agw-btn-color);
     font-weight: 700;
 }
 
 .btn:hover {
-    background-color: var(--akw-btn-hover-bg);
-    color: var(--akw-btn-hover-color);
+    background-color: var(--agw-btn-hover-bg);
+    color: var(--agw-btn-hover-color);
 }
 </style>

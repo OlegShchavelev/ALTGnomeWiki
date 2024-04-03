@@ -2,32 +2,26 @@
 title: Картриджи
 appstreamRepo: hu.kramo.Cartridges
 appstreamFlatpak: hu.kramo.Cartridges
-metainfo:
-    active: true
-    thumb:
-        src: /cartridges/hu.kramo.Cartridges.png
-        title: Картриджи
+aggregation: 
+    flatpak: hu.kramo.Cartridges
+    sisyphus: cartridges
+appstream:
+    id: hu.kramo.Cartridges
+    name: Картриджи
+    icon: /cartridges/hu.kramo.Cartridges.png
     summary: Запускайте все свои игры
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    keywords: 
+        - adaptive
+        - circle
     developer: 
         name: kramo
-    site:
-        url: https://github.com/kra-mo/cartridges/
-        anchor: github.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate:
-        url: https://hosted.weblate.org/engage/cartridges/
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://github.com/kra-mo/cartridges/issues
-        anchor: github.com
-    adaptive: true
-    gnomeCircle: true
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/cartridges/
-    flathub:
-        url: https://flathub.org/ru/apps/hu.kramo.Cartridges
+    url: 
+        homepage: https://github.com/kra-mo/cartridges/
+        bugtracker: https://github.com/kra-mo/cartridges/issues
+        translate: https://hosted.weblate.org/engage/cartridges/
 ---
 
 # Картриджи

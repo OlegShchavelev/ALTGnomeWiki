@@ -10,20 +10,26 @@ gallery:
         - src: /baobab/baobab-1.png
         - src: /baobab/baobab-2.png
         - src: /baobab/baobab-3.png
-metainfo:
-    thumb:
-        src: /baobab/org.gnome.baobab.png
-        title: Disk Usage Analyzer
+aggregation:
+    flatpak: org.gnome.baobab
+    sisyphus: gnome-disk-usage
+appstream:
+    id: org.gnome.baobab
+    name: Анализатор использования дисков
+    icon: /baobab/org.gnome.baobab.png
     summary: Проверьте размеры папок и доступное дисковое пространство
-    site:
-        url: https://apps.gnome.org/ru/Baobab/
-        anchor: apps.gnome.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue:
-        url: https://gitlab.gnome.org/GNOME/baobab/-/issues
-        anchor: gitlab.gnome.org
+    keywords:
+        - core
+        - adaptive
+    developer: 
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://apps.gnome.org/ru/Baobab/
+        bugtracker: https://gitlab.gnome.org/GNOME/baobab/-/issues
 ---
 
 # Анализатор использования дисков

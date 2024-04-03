@@ -2,31 +2,22 @@
 title: Blender
 appstreamRepo: org.blender.Blender
 appstreamFlatpak: org.blender.Blender
-metainfo:
-    active: true
-    thumb:
-        src: /blender/org.blender.Blender.png
-        title: Blender
+aggregation:
+    flatpak: org.blender.Blender
+    sisyphus: blender
+appstream:
+    id: org.blender.Blender
+    name: Blender
+    icon: /blender/org.blender.Blender.png
     summary: 3D-моделирование, анимация, рендеринг и компоновка
     developer: 
         name: Blender Foundation
-    site:
-        url: https://www.blender.org/
-        anchor: blender.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GPL-3.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://developer.blender.org/
-        anchor: developer.blender.org
-    flathub:
-        url: https://flathub.org/apps/org.blender.Blender
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/blender/
-
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://www.blender.org/
+        bugtracker: https://developer.blender.org/
 ---
 
 # Blender

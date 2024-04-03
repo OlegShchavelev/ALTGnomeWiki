@@ -2,31 +2,26 @@
 title: Bottles
 appstreamRepo: com.usebottles.bottles
 appstreamFlatpak: com.usebottles.bottles
-metainfo:
-    active: true
-    thumb:
-        src: /bottles/com.usebottles.bottles.png
-        title: Bottles
+aggregation:
+    flatpak: com.usebottles.bottles
+    sisyphus: bottles
+appstream:
+    id: com.usebottles.bottles
+    name: Bottles
+    icon: /bottles/com.usebottles.bottles.png
     summary: Запуск программ Windows
     developer: 
         name: Bottles Contributors
-    site:
-        url: https://usebottles.com/
-        anchor: usebottles.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GPL-3.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://github.com/bottlesdevs/Bottles/issues
-        anchor: github.com/bottlesdevs
-    createTheme: true
-    flathub:
-        url: https://flathub.org/apps/com.usebottles.bottles
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/bottles/
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    keywords: 
+        - dontthemes
+    url: 
+        homepage: https://usebottles.com/
+        bugtracker: https://github.com/bottlesdevs/Bottles/issues
+        translate: https://hosted.weblate.org/engage/bottles/
+        help: https://docs.usebottles.com/
 ---
 
 # Bottles

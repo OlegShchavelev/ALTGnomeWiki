@@ -2,27 +2,21 @@
 title: Chromium
 appstreamFlatpak: org.chromium.Chromium
 appstreamRepo: org.chromium.Chromium
-metainfo:
-    active: true
-    thumb:
-        src: /chromium/org.chromium.Chromium.png
-        title: Chromium
+aggregation: 
+    flatpak: org.chromium.Chromium
+    sisyphus: chromium
+appstream:
+    id: org.chromium.Chromium
+    name: Chromium
+    icon: /chromium/org.chromium.Chromium.png
     summary: Веб-браузер от Chromium Project
+    metadata_license: 
+        name: BSD 3-Clause
+        link: https://github.com/chromium/chromium/blob/main/LICENSE
     developer: 
         name: The Chromium Authors
-    site:
-        url: https://www.chromium.org/Home
-        anchor: chromium.org
-    licence: 
-        url: https://github.com/chromium/chromium/blob/main/LICENSE
-        anchor: BSD 3-Clause
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    flathub:
-        url: https://flathub.org/apps/org.chromium.Chromium
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/chromium/
+    url: 
+        homepage: https://www.chromium.org/Home
 ---
 
 # Chromium

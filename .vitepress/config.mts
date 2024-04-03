@@ -222,19 +222,25 @@ export default defineConfig({
         donation: {
           anchor: 'Поддержать автора',
           target: '_blank',
-          style: '-akw-btn-bg: var(--vp-c-purple-soft); --akw-btn-color: var(--vp-c-purple-3); --akw-btn-hover-bg:var(--vp-c-purple-3); --akw-btn-hover-color: var(--vp-c-white);'
+          style: '--agw-btn-bg: var(--vp-c-purple-soft); --agw-btn-color: var(--vp-c-purple-3); --agw-btn-hover-bg:var(--vp-c-purple-3); --agw-btn-hover-color: var(--vp-c-white);'
         },
         sisyphus: {
           anchor: 'Сизиф',
           target: '_blank',
           baseUrl: '//packages.altlinux.org/ru/sisyphus/srpms/',
-          style: '--akw-btn-bg: var(--vp-c-yellow-dimm-1); --akw-btn-color: var(--vp-c-yellow-darker); --akw-btn-hover-bg:var(--vp-c-yellow-dark); --akw-btn-hover-color: var(--vp-c-white);'
+          style: '--agw-btn-bg: var(--vp-c-yellow-dimm-1); --agw-btn-color: var(--vp-c-yellow-darker); --agw-btn-hover-bg:var(--vp-c-yellow-dark); --agw-btn-hover-color: var(--vp-c-white);'
         },
         flatpak: {
           anchor: 'Flatpak',
           target: '_blank',
           baseUrl: '//flathub.org/apps/',
-          style: '-akw-btn-bg: var(--vp-c-blue-dimm-1); --akw-btn-color: var(--vp-c-blue-darker); --akw-btn-hover-bg:var(--vp-c-blue-dark); --akw-btn-hover-color: var(--vp-c-white);'
+          style: '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
+        },
+        snap: {
+          anchor: 'Snapcraft',
+          target: '_blank',
+          baseUrl: '//snapcraft.io/',
+          style: '--agw-btn-bg: var(--vp-c-orange-dimm-1); --agw-btn-color: var(--vp-c-orange-darker); --agw-btn-hover-bg:var(--vp-c-orange-dark); --agw-btn-hover-color: var(--vp-c-white);'
         }
       }
     }

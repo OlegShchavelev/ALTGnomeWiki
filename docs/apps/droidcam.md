@@ -1,6 +1,21 @@
 ---
 title: DroidCam
 appstreamRepo: droidcam.desktop
+aggregation: 
+    sisyphus: droidcam
+appstream:
+    id: droidcam.desktop
+    name: DroidCam
+    icon: /droidcam/droidcam-desktop.png
+    summary: Приложение позволяющее превратить ваше мобильное устройство в веб-камеру для вашего компьютера.
+    metadata_license: 
+        name: BSD 3-Clause
+        link: https://github.com/chromium/chromium/blob/main/LICENSE
+    developer: 
+        name: dev47apps
+    url: 
+        homepage: https://www.dev47apps.com/
+        bugtracker: https://github.com/dev47apps/droidcam/issues/
 metainfo:
     active: true
     thumb:

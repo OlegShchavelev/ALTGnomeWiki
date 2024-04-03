@@ -1,31 +1,27 @@
 ---
-title: Boxes
+title: Боксы
 appstreamRepo: org.gnome.Boxes
 appstreamFlatpak: org.gnome.Boxes
-metainfo:
-    active: true
-    thumb:
-        src: /boxes/org.gnome.Boxes.png
-        title: Boxes
+aggregation:
+    flatpak: org.gnome.Boxes
+    sisyphus: gnome-boxes
+appstream:
+    id: org.gnome.Boxes
+    name: Boxes
+    icon: /boxes/org.gnome.Boxes.png
     summary: Виртуализация стала проще
     developer: 
-        name: The GNOME Project
-    site:
-        url: https://gnomeboxes.org/
-        anchor: gnomeboxes.org
-    licence:
-        url: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ru.html#SEC1
-        anchor: LGPL-2.1
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://gitlab.gnome.org/GNOME/gnome-boxes/issues
-        anchor: gitlab.gnome.org
-    flathub:
-        url: https://flathub.org/apps/org.gnome.Boxes
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/gnome-boxes/
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: LGPL-2.1
+        link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ru.html#SEC1
+    keywords: 
+        - core
+    url: 
+        homepage: https://gnomeboxes.org/
+        bugtracker: https://gitlab.gnome.org/GNOME/gnome-boxes/issues
+        translate: https://hosted.weblate.org/engage/cartridges/
 ---
 
 # Boxes

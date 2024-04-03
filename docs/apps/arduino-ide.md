@@ -2,30 +2,24 @@
 title: Arduino IDE
 appstreamFlatpak: cc.arduino.arduinoide
 appstreamRepo: cc.arduino.arduinoide
-metainfo:
-    active: true
-    thumb:
-        src: /arduino-ide/cc.arduino.arduinoide.png
-        title: Arduino IDE
-    summary: Платформа для прототипирования электроники с открытым исходным кодом.
+aggregation:
+    flatpak: cc.arduino.arduinoide
+    sisyphus: arduino
+appstream:
+    id: cc.arduino.arduinoide
+    name: Arduino IDE
+    icon: /arduino-ide/cc.arduino.arduinoide.png
+    summary: Удалённое подключение к компьютеру с AnyDesk
     developer: 
         name: Arduino LLC
-    site:
-        url: https://arduino.cc
-        anchor: arduino.cc
-    licence:
-        url: https://choosealicense.com/licenses/lgpl-2.1/
-        anchor: LGPL-2.1
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://github.com/arduino/Arduino/issues
-        anchor: github.com/arduino
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/arduino/
-    flathub:
-        url: https://flathub.org/ru/apps/cc.arduino.arduinoide
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://arduino.cc/
+        bugtracker: https://github.com/arduino/Arduino/issues/
+        translate: https://github.com/arduino/Arduino/tree/master/arduino-core/src/processing/app/i18n/
+        help: https://www.arduino.cc/en/Guide/
 ---
 
 # Arduino IDE

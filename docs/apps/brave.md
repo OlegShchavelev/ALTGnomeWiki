@@ -1,25 +1,22 @@
 ---
 title: Brave Browser
 appstreamFlatpak: com.brave.Browser
-metainfo:
-    active: true
-    thumb:
-        src: /brave/com.brave.Browser.png
-        title: Brave Browser
+aggregation: 
+    flatpak: com.brave.Browser
+appstream:
+    id: com.brave.Browser
+    name: Brave Browser
+    icon: /brave/com.brave.Browser.png
     summary: Веб-браузер от Brave
+    metadata_license: 
+        name: CC0-1.0
+        link: https://choosealicense.com/licenses/cc0-1.0/
+    keywords: 
+        - proprietary
     developer: 
         name: Brave Software
-    site:
-        url: https://brave.com/
-        anchor: brave.com
-    licence:
-        url: https://www.mozilla.org/en-US/MPL/2.0/
-        anchor: MPL-2.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    flathub:
-        url: https://flathub.org/apps/com.brave.Browser
+    url: 
+        homepage: https://brave.com/
 ---
 
 # Brawe Browser

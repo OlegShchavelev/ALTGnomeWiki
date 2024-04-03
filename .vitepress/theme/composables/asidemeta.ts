@@ -28,7 +28,7 @@ export const getKeywords = (data: any, config: {}) => {
 
     const _data = {}
 
-    console.log(data);
+    if(!data) return
 
     Object.values(data).forEach((value: string) => {
         (value && config[value]) ?

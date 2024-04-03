@@ -2,32 +2,22 @@
 title: Discord
 nameEpmPlay: discord
 appstreamFlatpak: com.discordapp.Discord
-metainfo:
-    active: true
-    thumb:
-        src: /discord/com.discordapp.Discord.png
-        title: Discord
+aggregation: 
+    flatpak: com.discordapp.Discord
+appstream:
+    id: com.discordapp.Discord
+    name: Discord
+    icon: /discord/com.discordapp.Discord.png
     summary: Клиент для обмена сообщениями, аудио и видеосвязи
-    site:
-        url: https://discord.com/
-        anchor: discord.com
-    licence:
-        url: https://choosealicense.com/licenses/cc0-1.0/
-        anchor: CC0-1.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: 
-        anchor: 
-    adaptive: false
-    gnomeCore: false
-    gnomeCircle: false
-    proprietary: true
-    sisyphus:
-        url: 
-    flathub:
-        url: https://flathub.org/ru/apps/com.discordapp.Discord
+    metadata_license: 
+        name: CC0-1.0
+        link: https://choosealicense.com/licenses/cc0-1.0/
+    keywords: 
+        - proprietary
+    developer: 
+        name: Discord Inc.
+    url: 
+        homepage: https://discord.com/
 ---
 
 # Discord

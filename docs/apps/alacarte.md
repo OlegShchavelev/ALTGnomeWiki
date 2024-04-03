@@ -1,28 +1,25 @@
 ---
 title: Alacarte
 appstreamRepo: alacarte.desktop
-metainfo:
-    active: true
-    thumb:
-        src: /alacarte/alacarte-desktop.png
-        title: Alacarte
+aggregation:
+    sisyphus: alacarte
+appstream:
+    id: alacarte.desktop
+    name: Alacarte
+    icon: /alacarte/alacarte-desktop.png
     summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+    keywords: 
+        - adaptive
+        - circle
     developer: 
-        name: The GNOME Project
-    site:
-        url: https://www.gnome.org/
-        anchor: gnome.org
-    licence:
-        url: https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html
-        anchor: LGPL v2
-    issue: 
-        url: https://gitlab.gnome.org/GNOME/alacarte/-/issues
-        anchor: gitlab.gnome.org
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/alacarte/
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://github.com/GNOME/alacarte
+        bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
 
 ---
 

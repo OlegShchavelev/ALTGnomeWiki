@@ -161,6 +161,17 @@ systemctl --user restart flatpak-portal.service
 Включение непривилегированных пользовательских пространств может значительно упростить использование серьезных уязвимостей в ядре Linux. Многочисленные уязвимости, которые обнаруживаются регулярно, часто могут быть использованы только непривилегированными пользователями, при условии что непривилегированные пользовательские пространства имен поддерживаются и разрешаются ядром. 
 :::
 
+Отключение непривилегированных пользователей:
+
+```shell
+su -
+echo kernel.unprivileged_userns_clone=0 > /etc/sysctl.d/50-bubblewrap.conf
+sysctl -w kernel.unprivileged_userns_clone=0
+chmod 4511 /usr/bin/bwrap
+systemctl --user restart flatpak-portal.service
+exit
+```
+
 ![Пример ошибки enabling unprivileged user namespaces](/flatpak/flatpak-1.jpg 'Пример ошибки «enabling unprivileged user namespaces», на примере Яндекс Браузера (Flatpak-версия)')
 
 ### Удаление приложений

@@ -280,6 +280,14 @@ export const docs = [
           }
         ],
         collapsed: true
+      },
+      {
+        text: 'Игры',
+        link: '/games',
+        items: [
+          { text: 'Изменение clearcpuid', link: '/clearcpuid' }
+        ],
+        collapsed: true
       }
     ]
   },

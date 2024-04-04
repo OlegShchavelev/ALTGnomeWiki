@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import path from 'path';
 
-const paths = ['apps', 'system', 'main', 'tips', 'extensions', 'developers', 'equipment', 'using_gnome']
+const paths = ['apps', 'system', 'main', 'tips', 'extensions', 'developers', 'equipment', 'using_gnome', 'games']
 const prefix = 'docs/'
 
 function getFilesWithMdExtension(paths) {

@@ -1,0 +1,15 @@
+# Исправление проблем с Flatpak-приложениями
+
+
+Во Flatpak-версии приложения курсор больше, чем системный:
+
+```shell
+sudo flatpak override --env=XCURSOR_SIZE=12
+```
+
+Flatpak-приложение не использует установленную тему для курсора мыши:
+
+```shell
+flatpak --user override --filesystem=/home/$USER/.icons/:ro
+flatpak --user override --filesystem=/usr/share/icons/:ro
+```

@@ -282,8 +282,8 @@ figure>figcaption {
   }
 }
 
-img {
-  border-radius: 15px;
+.vp-doc img {
+  border-radius: 10px;
 }
 
 .vp-doc .custom-block {

@@ -1,8 +1,35 @@
+---
+title: PortProton
+nameRepo: portproton
+appstreamRepo: ru.linux_gaming.PortProton
+appstreamFlatpak: ru.linux_gaming.PortProton
+metainfo:
+    thumb:
+        src: /portproton/ru.linux_gaming.PortProton.png
+        title: PortProton
+    summary: Программа для запуска игр с Windows
+    developer:
+        name: Михаил Тергоев
+        nickname: Castro-Fidel
+        avatar: https://avatars.githubusercontent.com/u/57610802?v=4
+    site:
+        url: https://linux-gaming.ru/
+        anchor: linux-gaming.ru/
+    licence:
+        url: https://choosealicense.com/licenses/mit/
+        anchor: MIT
+    issue:
+        url: https://github.com/Castro-Fidel/PortWINE/issues
+        anchor: github.com
+    sponsor:
+        url: https://linux-gaming.ru/t/podderzhat-proekt/123
+---
+
 # PortProton
 
 PortProton — проект, разработанный командой linux-gaming.ru (бывший проект PortWINE) для того, чтобы сделать легким и удобным запуск Windows игр на Linux как для начинающих, так и для продвинутых пользователей. Проект стремится сделать запуск игр (и другого программного обеспечения) максимально простым, но в то же время предоставляет гибкие настройки для продвинутых пользователей.
 
-PortProton основан на версии WINE от Valve (Proton) и ее модификациях (ProtonGE и ProtonLG). Включает в себя набор скриптов в сочетании с игровым WINE-PROTON, работающий в контейнере Steam Runtime Sniper с добавлением портированных версий MANGOHUD (вывод полезной информации через окно игры: FPS, FrameTime, CPU, GPU и т.д.) и vkBasalt (улучшение графики в играх, очень хорошо в сочетании с FSR, DLSS). Имеется множество уже настроенных оптимизаций для максимальной производительности в играх.
+PortProton основан на версии WINE от Valve (Proton) и ее модификациях (ProtonGE и ProtonLG). Включает в себя набор скриптов в сочетании с игровым WINE-PROTON, работающий в контейнере Steam Runtime Sniper с добавлением портотивных версий MANGOHUD (вывод полезной информации через окно игры: FPS, FrameTime, CPU, GPU и т.д.) и vkBasalt (улучшение графики в играх, очень хорошо в сочетании с FSR, DLSS). Имеется множество уже настроенных оптимизаций для максимальной производительности в играх.
 Также реализовано определение видеокарт серии NVIDIA RTX с автоматическим включением поддержки трассировки лучей в играх.
 
 ## Установка из репозитория
@@ -60,3 +87,13 @@ wget -c "https://github.com/Castro-Fidel/PortWINE/raw/master/portwine_install_sc
 ```shell
 epm play portproton
 ```
+
+## Установка c помощью Flatpak
+
+При наличии пакета [Flatpak](/flatpak), можно установить **PortProton** одной командой:
+
+```shell
+flatpak install flathub ru.linux_gaming.PortProton
+```
+
+<!--@include: ./parts/install/software-flatpak.md-->

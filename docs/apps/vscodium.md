@@ -38,7 +38,7 @@ flatpak install flathub com.vscodium.codium
 При наличии пакета [eepm](/epm), можно установить **VSCodium** одной командой:
 
 ```shell
-epm plat codium
+epm play codium
 ```
 
 ## Запуск VSCodium в оконном интерфейсе Wayland

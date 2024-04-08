@@ -9,23 +9,24 @@ gallery:
     items: 
         - src: /errands/errands-1.png
         - src: /errands/errands-2.png
-metainfo:
-    thumb:
-        src: /errands/io.github.mrvladus.List.png
-        title: Evince
+aggregation:
+    flatpak: io.github.mrvladus.List
+    sisyphus: errands
+appstream:
+    id: io.github.mrvladus.List
+    name: Дела
+    icon: /errands/io.github.mrvladus.List.png
     summary: Управляйте своими задачами
-    site:
-        url: https://apps.gnome.org/ru/List/
-        anchor: apps.gnome.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate:
-        url: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
-        anchor: github.com
-    issue:
-        url: https://github.com/mrvladus/Errands/issues
-        anchor: github.com
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    developer: 
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    url: 
+        homepage: https://apps.gnome.org/ru/List/
+        translate: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
+        bugtracker: https://github.com/mrvladus/Errands/issues
 ---
 
 # Дела

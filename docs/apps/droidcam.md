@@ -16,26 +16,6 @@ appstream:
     url: 
         homepage: https://www.dev47apps.com/
         bugtracker: https://github.com/dev47apps/droidcam/issues/
-metainfo:
-    active: true
-    thumb:
-        src: /droidcam/droidcam-desktop.png
-        title: DroidCam
-    summary: Приложение позволяющее превратить ваше мобильное устройство в веб-камеру для вашего компьютера.
-    developer: 
-        name: dev47apps
-    site:
-        url: https://www.dev47apps.com/
-        anchor: dev47apps.com
-    licence:
-        url: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-        anchor: GPL v2
-    issue: 
-        url: https://github.com/dev47apps/droidcam/issues
-        anchor: github.com
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/droidcam/
-
 ---
 
 

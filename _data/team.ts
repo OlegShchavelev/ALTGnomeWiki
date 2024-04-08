@@ -29,6 +29,8 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/Ampernic' }
       ],
+      actionText: 'Поддержать',
+      sponsor: 'https://www.tinkoff.ru/cf/vg9TWtByVW'
     },
     {
       avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',

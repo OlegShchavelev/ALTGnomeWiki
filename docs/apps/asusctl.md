@@ -1,4 +1,27 @@
-# asusctl
+---
+title: AsusCtl
+appstreamRepo: asusctl.desktop
+aggregation: 
+    sisyphus: asusctl
+appstream:
+    id: asusctl.desktop
+    name: AsusCtl
+    icon: /asusctl/asusctl-logo.png
+    summary: Утилита для управления многими аспектами различных ноутбуков ASUS.
+    metadata_license: 
+        name: MPL-2.0
+        link: https://www.mozilla.org/en-US/MPL/2.0/
+    developer: 
+        name: Asus Linux Community
+    url: 
+        homepage: https://asus-linux.org/
+        bugtracker: https://gitlab.com/asus-linux/asusctl/-/issues
+---
+
+
+
+
+# AsusCtl
 
 AsusCtl — утилита для Linux, для управления ноутбуков ASUS: установку пользовательского предела заряда, изменение системных профилей питания, настройку пользовательских кривых вращения вентилятора, управление подсветкой клавиатуры. Возможно использоваться с ноутбуками других производителей с ограниченными возможностями.
 

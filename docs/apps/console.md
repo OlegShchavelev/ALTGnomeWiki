@@ -1,3 +1,29 @@
+---
+title: Console
+appstreamRepo: console.desktop
+aggregation:
+    sisyphus: gnome-console
+appstream:
+    id: console.desktop
+    name: Console
+    icon: /console/console-logo.svg
+    summary: Простой и удобный эмулятор терминала для рабочего стола GNOME.
+    developer: 
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://apps.gnome.org/Console/
+        bugtracker: https://gitlab.gnome.org/GNOME/console/-/issues
+        translate: https://l10n.gnome.org/module/console/
+        donation: https://www.gnome.org/donate/
+---
+
+
+
+
 # Console 
 
 Console — Простой и удобный эмулятор терминала для рабочего стола GNOME.

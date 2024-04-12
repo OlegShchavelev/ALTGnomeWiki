@@ -18,8 +18,8 @@ appstream:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     url: 
-        homepage: https://github.com/GNOME/alacarte
-        bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
+        homepage: https://gitlab.gnome.org/GNOME/alacarte
+        bugtracker: https://gitlab.gnome.org/GNOME/alacarte
 
 ---
 

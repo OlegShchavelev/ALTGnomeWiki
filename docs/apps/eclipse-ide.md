@@ -1,3 +1,25 @@
+---
+title: Eclipse IDE
+appstreamFlatpak: org.eclipse.Java
+aggregation: 
+    flatpak: org.eclipse.Java
+appstream:
+    id: org.eclipse.Java
+    name: Eclipse IDE
+    icon: /eclipse-ide/eclipse-ide-logo.svg
+    summary: Интегрированная среда разработки (IDE) для Java, используемая в компьютерном программировании.
+    metadata_license: 
+        name: EPL-2.0
+        link: https://www.eclipse.org/legal/epl-2.0/
+    developer: 
+        name:  Eclipse Foundation, Inc. 
+    url: 
+        homepage: https://www.eclipse.org/
+        bugtracker: https://bugs.eclipse.org/bugs/
+---
+
+
+
 # Eclipse IDE
 
 Eclipse IDE — интегрированная среда разработки (IDE), используемая в компьютерном программировании. Она содержит базовое рабочее пространство и расширяемую систему подключаемых модулей для настройки среды. Eclipse написан в основном на Java и в основном используется для разработки приложений на Java, но его также можно использовать для разработки приложений на других языках программирования с помощью подключаемых модулей.

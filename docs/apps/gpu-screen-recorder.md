@@ -3,20 +3,22 @@ title: GPU Screen Recorder
 nameRepo: gpu-screen-recorder
 appstreamRepo: com.dec05eba.gpu_screen_recorder
 appstreamFlatpak: com.dec05eba.gpu_screen_recorder
-metainfo:
-    thumb:
-        src: /gpu-screen-recorder/com.dec05eba.gpu_screen_recorder.png
-        title: GPU Screen Recorder
+aggregation:
+    flatpak: com.dec05eba.gpu_screen_recorder
+    sisyphus: gpu-screen-recorder
+appstream:
+    id: com.dec05eba.gpu_screen_recorder
+    name: GPU Screen Recorder
+    icon: /gpu-screen-recorder/com.dec05eba.gpu_screen_recorder.png
     summary: Самый быстрый экранный рекордер для Linux
-    site:
-        url: https://git.dec05eba.com/gpu-screen-recorder/about/
-        anchor: git.dec05eba.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue:
-        url: https://git.dec05eba.com/?p=about
-        anchor: git.dec05eba.com
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    developer: 
+        name: Google
+    url: 
+        homepage: https://git.dec05eba.com/gpu-screen-recorder/about/
+        bugtracker: https://git.dec05eba.com/?p=about
 ---
 
 # GPU Screen Recorder

@@ -1,24 +1,23 @@
 ---
 title: Google Chrome
 appstreamFlatpak: com.google.Chrome
-metainfo:
-    active: true
-    thumb:
-        src: /google-chrome/com.google.Chrome.png
-        title: Google Chrome
+aggregation:
+    flatpak: com.google.Chrome
+appstream:
+    id: com.google.Chrome
+    name: Google Chrome
+    icon: /google-chrome/com.google.Chrome.png
     summary: Веб-браузер от Google
-    site:
-        url: https://www.google.com/chrome/
-        anchor: google.com
-    licence:
-        url: https://choosealicense.com/licenses/cc0-1.0/
-        anchor: CC0-1.0
-    adaptive: false
-    gnomeCore: false
-    gnomeCircle: false
-    proprietary: true
-    flathub:
-        url: https://flathub.org/ru/apps/com.google.Chrome
+    keywords: 
+        - proprietary
+    metadata_license: 
+        name: CC0-1.0
+        link: https://choosealicense.com/licenses/cc0-1.0/
+    developer: 
+        name: Google
+    url: 
+        homepage: https://www.google.com/chrome/
+        bugtracker: https://gitlab.gnome.org/GNOME/gnome-music/issues
 ---
 
 # Google Chrome

@@ -3,23 +3,24 @@ title: G4Music
 nameRepo: g4music
 appstreamRepo: com.github.neithern.g4music
 appstreamFlatpak: com.github.neithern.g4music
-metainfo:
-    thumb:
-        src: /g4music/com.github.neithern.g4music.png
-        title: G4Music
+aggregation:
+    flatpak: com.github.neithern.g4music
+    sisyphus: g4music
+appstream:
+    id: com.github.neithern.g4music
+    name: G4Music
+    icon: /g4music/com.github.neithern.g4music.png
     summary: Элегантное воспроизведение вашей музыки
-    site:
-        url: https://gitlab.gnome.org/neithern/g4music
-        anchor: gitlab.gnome.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate: 
-        url: https://l10n.gnome.org/module/g4music
-        anchor: l10n.gnome.org
-    issue:
-        url: https://gitlab.gnome.org/neithern/g4music/-/issues
-        anchor: gitlab.gnome.org
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    developer: 
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    url: 
+        homepage: https://gitlab.gnome.org/neithern/g4music
+        translate: https://l10n.gnome.org/module/g4music
+        bugtracker: https://gitlab.gnome.org/neithern/g4music/-/issues
 ---
 
 # G4Music

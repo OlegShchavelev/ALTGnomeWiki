@@ -4,11 +4,11 @@ appstreamRepo: com.github.tchx84.Flatseal
 appstreamFlatpak: com.github.tchx84.Flatseal
 aggregation:
     flatpak: com.github.tchx84.Flatseal
-    sisyphus: errands
+    sisyphus: flatseal
 appstream:
     id: com.github.tchx84.Flatseal
     name: Flatseal
-    icon: /errands/io.github.mrvladus.List.png
+    icon: /flatseal/com.github.tchx84.Flatseal.png
     summary: Управление разрешениями Flatpak
     metadata_license: 
         name: GNU GPLv3
@@ -19,36 +19,7 @@ appstream:
         nickname: tchx84
     url: 
         homepage: https://github.com/tchx84/flatseal
-        translate: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
         bugtracker: https://github.com/tchx84/flatseal/issues
-metainfo:
-    active: true
-    thumb:
-        src: /flatseal/com.github.tchx84.Flatseal.png
-        title: Flatseal
-    summary: Управление разрешениями Flatpak
-    developer: 
-        name: Martin Abente Lahaye
-        avatar: https://avatars.githubusercontent.com/u/481418?v=4
-        nickname: tchx84
-    site:
-        url: https://github.com/tchx84/flatseal
-        anchor: github.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://github.com/tchx84/flatseal/issues
-        anchor: github.com
-    adaptive: false
-    gnomeCircle: false
-    flathub: 
-        url: https://flathub.org/apps/com.github.tchx84.Flatseal
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/flatseal/
 ---
 
 # Flatseal

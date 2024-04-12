@@ -1,29 +1,22 @@
 ---
 title: Foliate
 appstreamFlatpak: com.github.johnfactotum.Foliate
-
-metainfo:
-    active: true
-    thumb:
-        src: https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.Foliate-stable/1248x702/com.github.johnfactotum.Foliate-7ff807e57358053b92037e50c60f32a3.png
-        title: Foliate
+aggregation:
+    flatpak: com.github.johnfactotum.Foliate
+    sisyphus: flatseal
+appstream:
+    id: com.github.johnfactotum.Foliate
+    name: Foliate
+    icon: https://dl.flathub.org/media/com/github/johnfactotum.Foliate/087fe5098abbbeabc4939b629fc3e2be/icons/128x128/com.github.johnfactotum.Foliate.png
     summary: Стильная читалка электронных книг
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
     developer: 
         name: John Factotum
-    site:
-        url: https://github.com/johnfactotum/foliate
-        anchor: github.com
-    licence:
-        url: 
-        anchor: GPL version 3 of the License, or (at your option) any later version.
-    translate:
-        url: 
-        anchor: 
-    issue: 
-        url: https://github.com/johnfactotum/foliate/issues
-        anchor: github.com
-    flathub:
-        url: https://flathub.org/apps/com.github.johnfactotum.Foliate
+    url: 
+        homepage: https://github.com/johnfactotum/foliate/
+        bugtracker: https://github.com/johnfactotum/foliate/issues/
 ---
 
 # Foliate

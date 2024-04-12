@@ -3,20 +3,25 @@ title: GNOME Music
 nameRepo: gnome-music
 appstreamRepo: org.gnome.Music
 appstreamFlatpak: org.gnome.Music
-metainfo:
-    thumb:
-        src: /gnome-music/org.gnome.Music.desktop.png
-        title: Gnome Music
+aggregation:
+    flatpak: org.gnome.Music
+    sisyphus: gnome-music
+appstream:
+    id: org.gnome.Music
+    name: GNOME Music
+    icon: /gnome-music/org.gnome.Music.desktop.png
     summary: Воспроизводите и упорядочивайте свою музыкальную коллекцию
-    site:
-        url: https://apps.gnome.org/ru/Music/
-        anchor: apps.gnome.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue:
-        url: https://gitlab.gnome.org/GNOME/gnome-music/issues
-        anchor: gitlab.gnome.org
+    keywords: 
+        - core
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    developer: 
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    url: 
+        homepage: https://apps.gnome.org/ru/Music/
+        bugtracker: https://gitlab.gnome.org/GNOME/gnome-music/issues
 ---
 
 # Музыка

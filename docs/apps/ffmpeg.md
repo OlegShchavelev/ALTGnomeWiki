@@ -1,3 +1,26 @@
+---
+title: FFMPEG
+appstreamRepo: ffmpeg
+aggregation: 
+    sisyphus: ffmpeg
+appstream:
+    id: ffmpeg
+    name: FFMPEG
+    icon: /ffmpeg/ffmpeg-logo.png
+    summary: Утилита для обработки мультимедийного контента, такого как аудио, видео, субтитры и связанные с ними метаданные.
+    metadata_license: 
+        name: LGPL v2.1+
+        link: https://ffmpeg.org/legal.html
+    developer: 
+        name: FFMPEG Community
+    url: 
+        homepage: https://ffmpeg.org/
+        bugtracker: https://trac.ffmpeg.org/
+        donation: https://ffmpeg.org/donations.html
+---
+
+
+
 # FFMPEG
 
 FFmpeg — утилита для Linux, для обработки мультимедийного контента, такого как аудио, видео, субтитры и связанные с ними метаданные.

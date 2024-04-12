@@ -1,7 +1,24 @@
 ---
 title: Figma
 appstreamFlatpak: io.github.Figma_Linux.figma_linux
+aggregation: 
+    flatpak: io.github.Figma_Linux.figma_linux
+appstream:
+    id: io.github.Figma_Linux.figma_linux
+    name: Figma
+    icon: /figma/figma-logo.svg
+    summary: Неофициальная версия Figma для Linux построенная на Electron.
+    metadata_license: 
+        name: GNU GPLv2
+        link: https://github.com/Figma-Linux/figma-linux/blob/master/LICENSE
+    developer: 
+        name: Figma Linux Community
+    url: 
+        homepage: https://github.com/Figma-Linux/figma-linux/tree/master
+        bugtracker: https://github.com/Figma-Linux/figma-linux/issues
 ---
+
+
 
 # Figma
 

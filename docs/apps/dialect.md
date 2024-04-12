@@ -2,7 +2,33 @@
 title: Dialect
 appstreamRepo: app.drey.Dialect
 appstreamFlatpak: app.drey.Dialect
+aggregation: 
+    sisyphus: dialect
+    flatpak: app.drey.Dialect
+appstream:
+    id: app.drey.Dialect
+    name: Dialect
+    icon: /dialect/dialect-logo.svg
+    summary: Простое приложение для перевода с различными дополнениями для улучшения процесса.
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    keywords: 
+        - dontthemes
+        - adaptive
+        - circle
+    developer: 
+        name: The Dialect Authors
+    url: 
+        homepage: https://github.com/dialect-app/dialect
+        bugtracker: 
+            name: github.com
+            link: https://github.com/dialect-app/dialect/issues
+        translate: https://hosted.weblate.org/engage/dialect/
+        donation: https://opencollective.com/dialect
 ---
+
+
 
 # Dialect
 

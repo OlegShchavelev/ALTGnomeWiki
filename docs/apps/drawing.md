@@ -2,7 +2,28 @@
 title: Drawing
 appstreamRepo: com.github.maoschanz.drawing
 appstreamFlatpak:  com.github.maoschanz.drawing
+aggregation:
+    sisyphus: drawing
+    flatpak: com.github.maoschanz.drawing
+appstream:
+    id: com.github.maoschanz.drawing
+    name: Drawing
+    icon: /drawing/drawing-logo.svg
+    summary: простой редактор изображений, похожий на Microsoft Paint.
+    developer: 
+        name: Romain F. T.
+        nickname: maoschanz
+        avatar: /drawing/drawing-author.png
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://maoschanz.github.io/drawing/
+        bugtracker: https://github.com/maoschanz/drawing/issues
+        donation: https://www.paypal.com/paypalme/maoschannz
 ---
+
+
 
 # Drawing
 

@@ -2,6 +2,24 @@
 title: Telegram
 appstreamRepo: org.telegram.desktop
 appstreamFlatpak: org.telegram.desktop
+aggregation:
+    sisyphus: telegram-desktop
+    flatpak: org.telegram.desktop
+appstream:
+    id: org.telegram.desktop
+    name: Telegram
+    icon: /telegram/telegram-logo.svg
+    summary: Кроссплатформенная система мгновенного обмена сообщениями 
+    developer: 
+        name: John Preston & Community
+        nickname: john-preston
+        avatar: /telegram/telegram-avatar.png
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://desktop.telegram.org/
+        bugtracker: https://github.com/telegramdesktop/tdesktop/issues
 gallery: 
     type: slider
     items: 
@@ -9,6 +27,8 @@ gallery:
         - src: /telegram/telegram-7.png
         - src: /telegram/telegram-8.png
 ---
+
+
 
 # Telegram
 

@@ -2,6 +2,24 @@
 title: OBS Studio
 appstreamRepo: com.obsproject.Studio
 appstreamFlatpak: com.obsproject.Studio
+aggregation: 
+    sisyphus: obs-studio
+    flatpak: com.obsproject.Studio
+appstream:
+    id: com.obsproject.Studio
+    name: OBS Studio
+    icon: /obs-studio/obs-studio-logo.svg
+    summary: Бесплатная программа с открытым исходным кодом для записи видео и потокового вещания.
+    metadata_license: 
+        name: GNU GPLv2
+        link: https://choosealicense.com/licenses/gpl-2.0/
+    developer: 
+        name: OBS Project
+    url: 
+        homepage: https://obsproject.com/
+        bugtracker: https://github.com/Rirusha/Cassette/issues
+        translate: https://crowdin.com/project/obs-studio
+        donation: https://opencollective.com/obsproject
 ---
 
 # OBS Studio

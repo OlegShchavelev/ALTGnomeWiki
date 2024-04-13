@@ -1,3 +1,28 @@
+---
+title: MPV
+nameRepo: mpv
+appstreamRepo: mpv.desktop
+appstreamFlatpak: io.mpv.Mpv
+aggregation: 
+    sisyphus: mpv
+    flatpak: io.mpv.Mpv
+appstream:
+    id: io.mpv.Mpv
+    name: MPV
+    icon: /mpv/mpv-logo.svg
+    summary: Свободный легковесный кроссплатформенный медиаплеер.
+    metadata_license: 
+        name: GNU GPLv2
+        link: https://choosealicense.com/licenses/gpl-2.0/
+    developer: 
+        name: MPV Community
+    url: 
+        homepage: https://mpv.io/
+        bugtracker: https://github.com/mpv-player/mpv/issues
+---
+
+
+
 # MPV
 
 ::: info

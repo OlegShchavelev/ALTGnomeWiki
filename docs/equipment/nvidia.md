@@ -521,12 +521,13 @@ _EOF_
 make-initrd
 ```
 
-### Фреймбуфер от NVIDIA (Экспериментальная функция)
+### Фреймбуфер от NVIDIA
 
 Начиная с драйверов версии 545.29, можно включить фреймбуффер предусмотренный nvidia-drm. Он заменяет стандартные фреймбуферы, такие как efifb или vesafb. 
 Для работы, необходимо, чтобы работал [KMS](./nvidia.md#kms)
 
 ```shell
+su -
 cat << _EOF_ > /etc/modprobe.d/nvidia-framebuffer.conf
 # This options unlock experimental nvidia framebuffer
 options nvidia_drm fbdev=1

@@ -79,6 +79,7 @@ export const docs = [
           { text: 'Speedtest CLI', link: '/speedtest-cli' },
           { text: 'Spotify', link: '/spotify' },
           { text: 'Steam', link: '/steam' },
+          { text: 'Synching', link: '/Synching'},
           { text: 'Telegram', link: '/telegram' },
           { text: 'Thunderbird', link: '/thunderbird' },
           { text: 'Timeshift', link: '/timeshift' },

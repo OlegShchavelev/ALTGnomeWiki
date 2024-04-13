@@ -1,6 +1,24 @@
 ---
 title: Obsidian
 appstreamFlatpak: md.obsidian.Obsidian
+aggregation: 
+    flatpak: md.obsidian.Obsidian
+appstream:
+    id: md.obsidian.Obsidian
+    name: Obsidian
+    icon: /obsidian/obsidian-logo.png
+    summary: Мощная база знаний, работает поверх локальной папки с обычными текстовыми файлами Markdown.
+    keywords: 
+        - proprietary
+    metadata_license:
+        name: Собственная
+        link: https://obsidian.md/license
+    developer: 
+        name: Dynalist Inc.
+    url: 
+        homepage: https://obsidian.md/
+        bugtracker: https://github.com/flathub/md.obsidian.Obsidian/issues
+        translate: https://github.com/obsidianmd/obsidian-translations
 ---
 
 # Obsidian

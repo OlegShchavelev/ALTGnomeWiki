@@ -1,33 +1,24 @@
 ---
 title: Spotify
 appstreamFlatpak: com.spotify.Client
-metainfo:
-    active: true
-    thumb:
-        src: /spotify/com.spotify.Client.png
-        title: Spotify
+aggregation:
+    flatpak: com.spotify.Client
+appstream:
+    id: com.spotify.Client
+    name: Spotify
+    icon: /spotify/spotify-logo.svg
     summary: Музыкальный стриминговый сервис.
+    keywords: 
+        - restrictions
+        - proprietary
     developer: 
         name: Spotify Technology S.A.
-        avatar: https://avatars.githubusercontent.com/u/251374?s=200&v=4
-    site:
-        url: https://www.spotify.com/
-        anchor: spotify.com
-    licence:
-        url: https://choosealicense.com/licenses/cc0-1.0/
-        anchor: CC0-1.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://community.spotify.com/t5/Desktop-Linux/bd-p/desktop_linux
-        anchor: community.spotify.com
-    restrictions: true
-    proprietary: true
-    sisyphus:
-        url: 
-    flathub:
-        url: https://flathub.org/ru/apps/com.spotify.Client
+    metadata_license: 
+        name: Собственная
+        link: https://www.spotify.com/legal
+    url: 
+        homepage: https://www.spotify.com/
+        bugtracker: https://community.spotify.com/t5/Desktop-Linux/bd-p/desktop_linux
 ---
 
 

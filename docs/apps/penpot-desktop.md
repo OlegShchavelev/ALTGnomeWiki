@@ -1,7 +1,24 @@
 ---
 title: Penpot Desktop
 appstreamFlatpak: com.sudovanilla.penpot-desktop
+aggregation: 
+    flatpak: com.sudovanilla.penpot-desktop
+appstream:
+    id: com.sudovanilla.penpot-desktop
+    name: Penpot Desktop
+    icon: /penpot-desktop/penpot-desktop-logo.png
+    summary: Первая платформа для проектирования и прототипирования с открытым исходным кодом, предназначенная для междоменных команд. 
+    metadata_license: 
+        name: MIT License
+        link: https://choosealicense.com/licenses/mit/
+    developer: 
+        name: SudoVanila & Penpot Community
+    url: 
+        homepage: https://penpot.app/
+        bugtracker: https://github.com/penpot/penpot/issues
 ---
+
+
 
 # Penpot Desktop
 

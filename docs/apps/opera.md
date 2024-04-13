@@ -1,7 +1,25 @@
 ---
 title: Opera
 appstreamFlatpak: com.opera.Opera
+aggregation: 
+    flatpak: com.opera.Opera
+appstream:
+    id: com.opera.Opera
+    name: Opera
+    icon: /opera/opera-logo.svg
+    summary: Быстрый, безопасный и удобный браузер, в котором есть всё необходимое для конфиденциальной и безопасной работы в интернете.
+    metadata_license: 
+        name: Собственная
+        link: https://legal.opera.com/eula/computers/eula.html
+    keywords: 
+        - proprietary
+    developer: 
+        name: Opera Software
+    url: 
+        homepage: https://www.opera.com/
 ---
+
+
 
 # Opera
 

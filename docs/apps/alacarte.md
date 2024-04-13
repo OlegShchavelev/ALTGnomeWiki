@@ -20,7 +20,6 @@ appstream:
     url: 
         homepage: https://gitlab.gnome.org/GNOME/alacarte
         bugtracker: https://gitlab.gnome.org/GNOME/alacarte
-
 ---
 
 

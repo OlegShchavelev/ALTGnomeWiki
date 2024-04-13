@@ -1,31 +1,29 @@
 ---
 title: Steam
 appstreamFlatpak: com.valvesoftware.Steam
-metainfo:
-    active: true
-    thumb:
-        src: /steam/com.valvesoftware.Steam.png
-        title: Steam
+aggregation:
+    sisyphus: steam
+    flatpak: com.valvesoftware.Steam
+appstream:
+    id: steam.desktop
+    name: Steam
+    icon: /steam/steam-logo.svg
     summary: Клиент для платформы Steam
+    keywords: 
+        - proprietary
+        - restrictions
     developer: 
         name: Valve Software
         avatar: https://avatars.githubusercontent.com/u/3082775?s=200&v=4
-    site:
-        url: https://store.steampowered.com/
-        anchor: store.steampowered.com
-    licence:
-        url: https://choosealicense.com/licenses/cc0-1.0/
-        anchor: CC0-1.0
-    issue: 
-        url: https://help.steampowered.com/ru/
-        anchor: help.steampowered.com
-    proprietary: true
-    restrictions: true
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/steam/
-    flathub:
-        url: https://flathub.org/ru/apps/com.valvesoftware.Steam
+    metadata_license: 
+        name: Собственная
+        link: https://store.steampowered.com/eula/243950_eula_0
+    url: 
+        homepage: https://store.steampowered.com/
+        bugtracker: https://help.steampowered.com/ru/
 ---
+
+
 
 # Steam
 

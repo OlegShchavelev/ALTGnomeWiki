@@ -1,3 +1,27 @@
+---
+title: Timeshift
+appstreamRepo: timeshift.desktop
+aggregation:
+    sisyphus: timeshift
+appstream:
+    id: timeshift.desktop
+    name: Timeshift
+    icon: /timeshift/timeshift-logo.png
+    summary: Инструмент для автоматического создания копий системы (снимков/snapshots) с определенной периодичностью.
+    developer: 
+        name: Linux Mint Team
+        avatar: /timeshift/timeshift-avatar.svg
+    metadata_license: 
+        name: GNU GPLv2
+        link: https://choosealicense.com/licenses/gpl-2.0/
+    url: 
+        homepage: https://github.com/linuxmint/timeshift
+        bugtracker: https://github.com/linuxmint/timeshift/issues
+---
+
+
+
+
 # Timeshift
 
 Timeshift — инструмент для автоматического создания копий системы (снимков/snapshots) с определенной периодичностью.

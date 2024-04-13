@@ -1,7 +1,29 @@
 ---
 title: GDM Settings
 appstreamFlatpak: io.github.realmazharhussain.GdmSettings
+aggregation: 
+    sisyphus: gdm-settings
+    flatpak: io.github.realmazharhussain.GdmSettings
+appstream:
+    id: io.github.realmazharhussain.GdmSettings
+    name: GDM Settings
+    icon: /gdm-settings/gdm-settings-logo.svg
+    summary: Приложение настроек для рабочего окружения GNOME, экран входа / блокировки экрана.
+    metadata_license: 
+        name: GNU AGPL-3.0
+        link: https://packages.altlinux.org/license/AGPL-3.0-only
+    developer: 
+        name: Mazhar Hussain
+        nickname: realmazharhussain 
+        avatar: /gdm-settings/gdm-settings-avatar.png
+    url: 
+        homepage: https://gdm-settings.github.io/
+        bugtracker: https://github.com/gdm-settings/gdm-settings/issues
+        translate: https://hosted.weblate.org/engage/gdm-settings/
+        donation: https://github.com/sponsors/gdm-settings
 ---
+
+
 
 # GDM Настройки
 

@@ -1,3 +1,28 @@
+---
+title: Gnome Software
+appstreamRepo: gnome-software.desktop
+aggregation:
+    sisyphus: gnome-software
+appstream:
+    id: gnome-software.desktop
+    name: Gnome Software
+    icon: /gnome-software/gnome-software-logo.svg
+    summary: Официальная утилита управления приложениями для рабочего окружения Gnome
+    keywords: 
+        - adaptive
+    developer: 
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv2
+        link: https://choosealicense.com/licenses/gpl-2.0/
+    url: 
+        homepage: https://apps.gnome.org/Software/
+        bugtracker: https://gitlab.gnome.org/GNOME/gnome-software/issues
+---
+
+
+
 # Центр приложений
 
 Центр приложений (Gnome Software) — официальная утилита для рабочего окружения GNOME, позволяющая находить и устанавливать новые приложения и системные расширения, а также удалять уже установленные.

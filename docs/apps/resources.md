@@ -2,6 +2,27 @@
 title: Resources
 appstreamRepo: net.nokyan.Resources
 appstreamFlatpak: net.nokyan.Resources
+aggregation:
+    sisyphus: resources
+    flatpak: net.nokyan.Resources
+appstream:
+    id: net.nokyan.Resources
+    name: Resources
+    icon: /resources/resources-logo.svg
+    summary: Простой, но мощный монитор ваших системных ресурсов и процессов, написанный на Rust и использующий GTK 4 и libadwaita.
+    keywords: 
+        - adaptive
+        - dontthemes
+    developer: 
+        name: nokyan & Community
+        avatar: /resources/resources-avatar.png
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://github.com/nokyan/resources/tree/main
+        bugtracker: https://github.com/nokyan/resources/issues
+
 ---
 
 # Ресурсы

@@ -1,26 +1,22 @@
 ---
 title: Postman
 appstreamFlatpak: com.getpostman.Postman
-metainfo:
-    active: true
-    thumb:
-        src: /postman/com.getpostman.Postman.png
-        title: Postman
+aggregation:
+    flatpak: com.getpostman.Postman
+appstream:
+    id: com.getpostman.Postman
+    name: Postman
+    icon: /postman/postman-logo.png
     summary: Платформа для тестирования ваших собственных API
-    developer: 
+    keywords:
+        - proprietary
+    developer:
         name: Postman Inc.
-    site:
-        url: https://www.postman.com/
-        anchor: postman.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: CC0-1.0
-    proprietary: true
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    flathub:
-        url: https://flathub.org/ru/apps/com.getpostman.Postman
+    metadata_license:
+        name: Собственная
+        link: https://www.postman.com/legal/terms/
+    url:
+        homepage: https://www.postman.com/
 ---
 
 # Postman

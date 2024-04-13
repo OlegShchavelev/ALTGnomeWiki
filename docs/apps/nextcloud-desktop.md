@@ -1,26 +1,28 @@
 ---
 title: Nextcloud Desktop
 nameRepo: nextcloud-client
+appstreamRepo: com.nextcloud.desktopclient.nextcloud
 appstreamFlatpak: com.nextcloud.desktopclient.nextcloud
-metainfo:
-    active: true
-    thumb:
-        src: https://avatars.githubusercontent.com/u/19211038?s=48&v=4
-        title: Nextcloud Desktop
+aggregation:
+    sisyphus: nextcloud-client
+    flatpak: com.nextcloud.desktopclient.nextcloud
+appstream:
+    id: com.nextcloud.desktopclient.nextcloud
+    name: Nextcloud Desktop
+    icon: /nextcloud-client/nextcloud-client-logo.svg
     summary: Официальный клиент Nextcloud Desktop
-    developer: 
+    metadata_license:
+        name: GNU GPLv2
+        link: https://choosealicense.com/licenses/gpl-2.0/
+    developer:
         name: Nextcloud GmbH
-    site:
-        url: https://nextcloud.com
-        anchor: nextcloud.com
-    licence:
-        url: 
-        anchor: GPL-2.0 
-    issue: 
-        url: https://github.com/nextcloud/desktop/issues
-        anchor: github.com
-        
+        avatar: /nextcloud-client/nextcloud-client-avatar.svg
+    url: 
+        homepage: https://nextcloud.com/
+        bugtracker: https://github.com/nextcloud/desktop/issues
 ---
+
+
 
 # Nextcloud Desktop
 

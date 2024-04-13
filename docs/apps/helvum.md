@@ -3,20 +3,24 @@ title: Helvum
 nameRepo: helvum
 appstreamRepo: org.pipewire.Helvum
 appstreamFlatpak: org.pipewire.Helvum
-metainfo:
-    thumb:
-        src: /helvum/org.pipewire.Helvum.png
-        title: Helvum
+aggregation:
+    sisyphus: helvum
+    flatpak: org.pipewire.Helvum
+appstream:
+    id: org.pipewire.Helvum
+    name: Helvum
+    icon: /helvum/helvum-logo.svg
     summary: Патчбай для PipeWire
-    site:
-        url: https://gitlab.freedesktop.org/pipewire/helvum
-        anchor: gitlab.freedesktop.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue:
-        url: https://gitlab.freedesktop.org/pipewire/helvum/-/issues
-        anchor: gitlab.freedesktop.org
+    developer:
+        name: Tom Wagner
+        nickname: ryuukyu
+        avatar: /helvum/helvum-avatar.png
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url:
+        homepage: https://gitlab.freedesktop.org/pipewire/helvum
+        bugtracker: https://gitlab.freedesktop.org/pipewire/helvum/-/issues
 ---
 
 # Helvum

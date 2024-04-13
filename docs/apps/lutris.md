@@ -1,33 +1,24 @@
 ---
 title: Lutris
 appstreamFlatpak: net.lutris.Lutris
-
-metainfo:
-    active: true
-    thumb:
-        src: /lutris/net.lutris.Lutris.png
-        title: Lutris
-    summary: Играй в игры с Lutris
-    developer: 
-        name: Lutris Team
-    site:
-        url: https://lutris.net/
-        anchor: lutris.net
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GPL-3.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://github.com/lutris/lutris/issues
-        anchor: github.com
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/lutris/
-    flathub:
-        url: https://flathub.org/apps/net.lutris.Lutris
-
-        
+aggregation:
+    sisyphus: lutris
+    flatpak: net.lutris.Lutris
+appstream:
+    id: net.lutris.Lutris
+    name: Lutris
+    icon: /lutris/lutris-logo.svg
+    summary: Играй в игры с Lutris.
+    developer:
+        name: Lutris Community
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url:
+        homepage: https://lutris.net/
+        bugtracker: https://github.com/lutris/lutris/issues
+        translate: https://github.com/lutris/lutris/tree/master/po
+        donation: https://lutris.net/donate  
 ---
 
 # Lutris

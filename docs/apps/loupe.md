@@ -2,36 +2,29 @@
 title: Loupe
 appstreamRepo: org.gnome.Loupe
 appstreamFlatpak: org.gnome.Loupe
-
-appsMetaWidgets:
-    active: true
-    thumb:
-        src: /loupe/loupe-1.png
-        title: Loupe
-    introtext: Просмотр изображений
-    site:
-        url: https://gitlab.gnome.org/GNOME/loupe/
-        anchor: gitlab.gnome.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate:
-        url: https://l10n.gnome.org/module/loupe/
-        anchor: l10n.gnome.org
-    issue: 
-        url: https://gitlab.gnome.org/GNOME/loupe/issues
-        anchor: gitlab.gnome.org
-    adaptive: true
-    gnomeCore: true
-    gnomeCircle: false
-    proprietary: false
-    sponsor: 
-        url:
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/loupe/
-    flathub:
-        url: https://flathub.org/ru/apps/org.gnome.Loupe
+aggregation:
+    sisyphus: loupe
+    flatpak: org.gnome.Loupe
+appstream:
+    id: org.gnome.Loupe
+    name: Loupe
+    icon: /loupe/loupe-logo.svg
+    summary: Стандартный просмотр изображений Gnome.
+    keywords:
+        - adaptive
+    developer:
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url:
+        homepage: https://apps.gnome.org/Loupe/
+        bugtracker: https://gitlab.gnome.org/GNOME/loupe/issues
+        translate: https://l10n.gnome.org/module/loupe/
 ---
+
+
 
 # Loupe
 

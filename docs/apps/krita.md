@@ -2,30 +2,22 @@
 title: Krita
 appstreamFlatpak: org.kde.krita
 appstreamRepo: org.kde.krita
-metainfo:
-    active: true
-    thumb:
-        src: /krita/org.kde.krita.png
-        title: Krita
+aggregation:
+    sisyphus: krita
+    flatpak: org.kde.krita
+appstream:
+    id: org.kde.krita
+    name: Krita
+    icon: /krita/krita-logo.svg
     summary: Творческая свобода для художников c Krita
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
     developer: 
         name: Krita Foundation
-    site:
-        url: https://www.krita.org/
-        anchor: krita.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GPL-3.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://docs.krita.org/en/untranslatable_pages/reporting_bugs.html
-        anchor: docs.krita.org
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/krita/
-    flathub:
-        url: https://flathub.org/ru/apps/org.kde.krita
+    url:
+        homepage: https://www.krita.org/
+        bugtracker: https://docs.krita.org/en/untranslatable_pages/reporting_bugs.html
 ---
 
 # Krita

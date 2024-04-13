@@ -1,20 +1,25 @@
 ---
 title: Microsoft Edge
 appstreamFlatpak: com.microsoft.Edge
-metainfo:
-    thumb:
-        src: /microsoft-edge/com.microsoft.Edge.png
-        title: Microsoft Edge
+aggregation:
+    flatpak: com.microsoft.Edge
+appstream:
+    id: com.microsoft.Edge
+    name: Microsoft Edge
+    icon: /microsoft-edge/microsoft-edge-logo.svg
     summary: Веб-браузер от Microsoft
-    developer: 
-        name: Microsoft
-    site:
-        url: https://www.microsoft.com/ru-ru/edge
-        anchor: microsoft.com
-    licence:
-        url: https://choosealicense.com/licenses/cc0-1.0/
-        anchor: CC0-1.0
-    proprietary: true
+    metadata_license: 
+        name: CC0-1.0
+        link: https://choosealicense.com/licenses/cc0-1.0/
+    keywords:
+        - proprietary
+        - restrictions
+    developer:
+        name: Microsoft Corporation
+        avatar: /microsoft-edge/microsoft-edge-avatar.svg
+    url:
+        homepage: https://microsoft.com/edge
+        bugtracker: https://github.com/MicrosoftEdge/Status/issues
 ---
 
 # Microsoft Edge

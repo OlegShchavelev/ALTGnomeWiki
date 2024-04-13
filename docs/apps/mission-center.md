@@ -2,7 +2,26 @@
 title: Mission Center
 appstreamRepo: io.missioncenter.MissionCenter
 appstreamFlatpak: io.missioncenter.MissionCenter
+aggregation:
+    sisyphus: mission-center
+    flatpak: io.missioncenter.MissionCenter
+appstream:
+    id: io.missioncenter.MissionCenter
+    name: Mission Center
+    icon: /mission-center/mission-center-logo.svg
+    summary: Приложение для мониторинга использования системных ресурсов.
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    developer:
+        name: Mission Center Developers
+    url:
+        homepage: https://missioncenter.io/
+        bugtracker: https://gitlab.com/mission-center-devs/mission-center/issues
+        translate: https://hosted.weblate.org/engage/mission-center/
 ---
+
+
 
 # Mission Center
 

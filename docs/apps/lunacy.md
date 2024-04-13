@@ -1,6 +1,25 @@
 ---
 title: Lunacy
 appstreamFlatpak: com.icons8.Lunacy
+aggregation:
+    flatpak: com.icons8.Lunacy
+appstream:
+    id: com.icons8.Lunacy
+    name: Lunacy
+    icon: /lunacy/lunacy-logo.svg
+    summary: Программа для векторной графики нового поколения для пользовательского интерфейса, UX и веб-дизайна.
+    keywords:
+        - proprietary
+    metadata_license: 
+        name: Собственная
+        link: https://lunacy.docs.icons8.com/lunacy%20license/
+    developer: 
+        name: ICONS8
+        avatar: /lunacy/lunacy-avatar.png
+    url:
+        homepage: https://icons8.com/lunacy
+        bugtracker: https://community.icons8.com/c/lunacy/7
+        translate: https://crowdin.com/project/lunacy
 ---
 
 # Lunacy

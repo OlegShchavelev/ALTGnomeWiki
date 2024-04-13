@@ -1,3 +1,20 @@
+---
+title: My Office
+appstream:
+    name: Мой Офис
+    icon: /my-office/my-office-logo.svg
+    summary: Набор бесплатных редакторов текстовых документов и электронных таблиц для решения повседневных задач на домашнем компьютере.
+    keywords:
+        - proprietary
+    metadata_license:
+        name: Собственная
+        link: https://myoffice.ru/eula/
+    developer:
+        name: ООО «Новые Облачные Технологии»
+    url:
+        homepage: https://myoffice.ru/
+---
+
 # Мой офис
 
 Мой офис — набор бесплатных редакторов текстовых документов и электронных таблиц для решения повседневных задач на домашнем компьютере.

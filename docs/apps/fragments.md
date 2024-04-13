@@ -2,6 +2,28 @@
 title: Fragments
 appstreamRepo: de.haeckerfelix.Fragments
 appstreamFlatpak: de.haeckerfelix.Fragments
+aggregation: 
+    sisyphus: fragments
+    flatpak: de.haeckerfelix.Fragments
+appstream:
+    id: de.haeckerfelix.Fragments
+    name: Fragments
+    icon: /fragments/fragments-logo.svg
+    summary: Простой в использовании BitTorrent-клиент.
+    keywords:
+        - adaptive
+        - circle
+        - dontthemes
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    developer: 
+        name: Felix Häcker
+        avatar: /fragments/fragments-avatar.png
+    url: 
+        homepage: https://apps.gnome.org/Fragments/
+        bugtracker: https://gitlab.gnome.org/World/Fragments/-/issues
+        translate: https://l10n.gnome.org/module/Fragments/
 ---
 
 # Fragments

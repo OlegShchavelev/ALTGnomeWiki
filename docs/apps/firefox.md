@@ -1,8 +1,28 @@
 ---
 title: Firefox
 appstreamRepo: org.mozilla.firefox
-appstreamFlatpak: org.mozilla.firefox
+aggregation: 
+    sisyphus: firefox
+    flatpak: org.mozilla.firefox
+appstream:
+    id: org.mozilla.firefox
+    name: Firefox
+    icon: /firefox/firefox-logo.svg
+    summary: Популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
+    metadata_license: 
+        name: MPL-2.0
+        link: https://choosealicense.com/licenses/mpl-2.0/
+    developer: 
+        name: Mozilla Foundation
+        avatar: /firefox/firefox-avatar.png
+    url: 
+        homepage: https://www.mozilla.org/en-US/firefox/
+        bugtracker: https://bugzilla.mozilla.org/home
+        translate: https://pontoon.mozilla.org/
+        donation: https://foundation.mozilla.org/en/?form=donate
 ---
+
+
 
 # Firefox
 

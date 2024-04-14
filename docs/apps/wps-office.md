@@ -2,25 +2,24 @@
 title: WPS Office
 appstreamRepo: com.wps.Office
 appstreamFlatpak: com.wps.Office
-
-metainfo:
-    active: true
-    thumb:
-        src: /wps-office/wps-office-free-all-in-one-office-suite.d880717.png
-        title: WPS Office
+aggregation:
+    flatpak: com.wps.Office
+appstream:
+    id: com.wps.Office
+    name: WPS Office
+    icon: /wps-office/wps-office-logo.svg
     summary: Универсальный пакет Office приложений
-    site:
-        url: https://www.wps.com/ru-RU/
-        anchor: wps.com
-    issue: 
-        url: https://help.wps.com/
-        anchor: help.wps.com
-    adaptive: false
-    gnomeCore: false
-    gnomeCircle: false
-    proprietary: true
-    flathub:
-        url: https://flathub.org/ru/apps/com.wps.Office
+    keywords: 
+        - proprietary
+    developer: 
+        name: Kingsoft Corporation
+        avatar: /wps-office/wps-office-avatar.png
+    metadata_license: 
+        name: Собственная
+        link: https://www.wps.com/eula/
+    url: 
+        homepage: https://www.wps.com/office/linux/
+        bugtracker: https://help.wps.com/
 ---
 
 # WPS Office

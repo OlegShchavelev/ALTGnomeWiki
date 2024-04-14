@@ -1,3 +1,23 @@
+---
+title: VK Мессенджер
+appstream:
+    name: VK Мессенджер
+    icon: /vk-messenger/vk-messenger-logo.svg
+    summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+    keywords: 
+        - proprietary
+    developer: 
+        name: VK Company Limited
+        avatar: /vk-messenger/vk-messenger-avatar.svg
+    metadata_license: 
+        name: Собственная
+        link: https://vk.com/terms
+    url: 
+        homepage: https://vk.me/app
+---
+
+
+
 # VK Мессенджер
 
 VK Мессенджер — бесплатное и быстрое приложение для общения. Будьте на связи с друзьями и знакомыми в чатах и звонка.

@@ -1,6 +1,23 @@
 ---
 title: Zoom
 appstreamFlatpak: us.zoom.Zoom
+aggregation:
+    flatpak: us.zoom.Zoom
+appstream:
+    id: us.zoom.Zoom
+    name: Zoom
+    icon: /zoom/zoom-logo.png
+    summary: Платформа для проведения видеоконференций, вебинаров и других онлайн-мероприятий.
+    keywords: 
+        - proprietary
+        - restictions
+    developer: 
+        name: Zoom Video Communications
+    metadata_license: 
+        name: Собственная
+        link: https://explore.zoom.us/ru/terms/
+    url: 
+        homepage: https://zoom.us/
 ---
 
 # Zoom

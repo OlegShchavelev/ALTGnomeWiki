@@ -1,5 +1,19 @@
 ---
 title: Яндекс Диск
+appstream:
+    name: Яндекс Диск
+    icon: /yandex-disk/yandex-disk-logo.png
+    summary: Облачный сервис компании Яндекс.
+    keywords: 
+        - proprietary
+    developer: 
+        name: Yandex
+        avatar: /yandex-disk/yandex-disk-avatar.png
+    metadata_license: 
+        name: Собственая
+        link: https://yandex.ru/legal/disk_agreement/
+    url: 
+        homepage: https://360.yandex.ru/disk/
 ---
 
 # Яндекс Диск

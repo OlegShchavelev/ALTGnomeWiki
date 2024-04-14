@@ -10,7 +10,7 @@ appstream:
     icon: /firefox/firefox-logo.svg
     summary: Популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
     metadata_license: 
-        name: MPL-2.0
+        name: MPL-2.0 licence
         link: https://choosealicense.com/licenses/mpl-2.0/
     developer: 
         name: Mozilla Foundation

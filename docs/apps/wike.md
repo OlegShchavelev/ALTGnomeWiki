@@ -2,28 +2,28 @@
 title: Wike
 nameRepo: wike
 appstreamFlatpak: com.github.hugolabe.Wike
-metainfo:
-    thumb:
-        src: /wike/com.github.hugolabe.Wike.png
-        title: Wike
-    summary: Воспроизводит музыку и ничего больше
+aggregation:
+    sisyphus: wike
+    flatpak: com.github.hugolabe.Wike
+    snap: wike
+appstream:
+    id: alacarte.desktop
+    name: Wike
+    icon: /wike/wike-logo.svg
+    summary: Программа для чтения Википедии для рабочего окружения GNOME. 
+    keywords: 
+        - adaptive
+        - circle
+        - dontthemes
     developer: 
-        name: GNOME World
-    site:
-        url: https://hugolabe.github.io/Wike/
-        anchor: hugolabe.github.io
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate: 
-        url: https://poeditor.com/join/project?hash=kNgJu4MAum
-        anchor: poeditor.com
-    issue: 
-        url: https://github.com/hugolabe/Wike/issues
-        anchor: github.com
-    adaptive: true,
-    createTheme: true
-    gnomeCircle: true
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://apps.gnome.org/Wike/
+        bugtracker: https://github.com/hugolabe/Wike/issues
 --- 
 
 # Wike

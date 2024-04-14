@@ -1,29 +1,20 @@
 ---
 title: ZeroTierOne
-
-metainfo:
-    active: true
-    thumb:
-        src: https://avatars.githubusercontent.com/u/4173285?s=48&v=4
-        title: ZeroTierOne
-    summary: сервис ZeroTierOne
+aggregation:
+    sisyphus: zerotier-one
+appstream:
+    id: zerotier-one
+    name: ZeroTierOne
+    icon: /zerotier-one/zerotier-one-logo.png
+    summary: Cервис ZeroTierOne
     developer: 
-        name: Franck Nijhof, Weston Blieden
-    site:
-        url: https://zerotier.com
-        anchor: zerotier.com
-    licence:
-        url: 
-        anchor: ZeroTier BSL 1.1
-    translate:
-        url: 
-        anchor: 
-    issue: 
-        url: https://github.com/zerotier/ZeroTierOne/issues
-        anchor: github.com
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/zerotier-one/
-        
+        name: ZeroTier Inc.
+    metadata_license: 
+        name: ZeroTier BSL 1.1
+        link: https://github.com/zerotier/ZeroTierOne/blob/dev/LICENSE.txt
+    url: 
+        homepage: https://zerotier.com/
+        bugtracker: https://github.com/zerotier/ZeroTierOne/issues        
 ---
 
 # ZeroTierOne

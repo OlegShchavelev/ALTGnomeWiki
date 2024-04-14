@@ -1,6 +1,23 @@
 ---
 title: VSCodium
+appstreamRepo: codium.desktop 
 appstreamFlatpak: com.vscodium.codium
+aggregation:
+    sisyphus: codium
+    flatpak: com.vscodium.codium
+appstream:
+    id: com.vscodium.codium
+    name: VSCodium
+    icon: /vscodium/vscodium-logo.svg
+    summary: Управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
+    developer: 
+        name: VSCodium Community
+    metadata_license: 
+        name: MIT License
+        link: https://choosealicense.com/licenses/mit/
+    url: 
+        homepage: https://vscodium.com/
+        bugtracker: https://github.com/VSCodium/vscodium/issues
 ---
 
 # VSCodium
@@ -118,7 +135,7 @@ flatpak install flathub org.freedesktop.Sdk.Extension.node20
 
 Для этого необходимо [установить Flatseal](flatseal), выберите **VSCodium** и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
 
-![codium-1](/codium/codium-1.png)
+![codium-1](/vscodium/codium-1.png)
 
 ## Сбой графики при открытии VSCodium.
 
@@ -134,4 +151,4 @@ rm -rfv .config/VSCodium/GPUCache
 Введите название плагина в строке поиска, выберите дополнение и нажмите установить.
 Каждое расширение в списке включает краткое описание, имя издателя, количество загрузок и пятизвездочный рейтинг.
 
-![codium_1](/codium/codium_1.gif)
+![codium_1](/vscodium/codium_1.gif)

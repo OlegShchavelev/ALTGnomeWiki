@@ -1,23 +1,30 @@
+---
+title: Viber
+appstreamFlatpak: com.viber.Viber
+aggregation:
+    flatpak: com.viber.Viber
+appstream:
+    name: Viber
+    icon: /viber/viber-logo.svg
+    summary: Кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
+    keywords: 
+        - proprietary
+    developer: 
+        name: Viber Media
+    metadata_license: 
+        name: Собсвтенная
+        link: https://www.viber.com/app/uploads/ViberEULA82316.pdf
+    url: 
+        homepage: https://www.viber.com/
+---
+
+
+
 # Viber
 
 Viber — кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
 
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Viber** одной командой:
-
-```shell
-flatpak install flathub com.viber.Viber
-```
-
-:::warning 
-На 31.01.2024 года, установка Viber инструментами Flatpak временно не доступен
-
-```shell
-Error: Неправильный размер дополнительных данных по адресу https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
-ошибка: Failed to install com.viber.Viber: Неправильный размер дополнительных данных по адресу https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
-```
-:::
+<!--@include: ./parts/install/software-install.md-->
 
 ## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 

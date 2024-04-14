@@ -2,6 +2,25 @@
 title: Яндекс Браузер
 appstreamRepo: yandex-browser.desktop
 appstreamFlatpak: ru.yandex.Browser
+aggregation:
+    sisyphus: yandex-browser-stable
+    flatpak: ru.yandex.Browser
+appstream:
+    id: yandex-browser.desktop
+    name: Яндекс Браузер
+    icon: /yandex-browser/yandex-browser-logo.svg
+    summary: Быстрый и безопасный браузер Яндекса для компьютера.
+    keywords: 
+        - proprietary
+    developer: 
+        name: Yandex
+        avatar: /yandex-browser/yandex-browser-avatar.png
+    metadata_license: 
+        name: Собственная
+        link: https://yandex.ru/legal/browser_agreement/
+    url: 
+        homepage: https://browser.yandex.ru/
+        bugtracker: https://browser.yandex.ru/feedback/
 ---
 
 # Яндекс Браузер

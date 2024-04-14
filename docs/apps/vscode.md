@@ -1,6 +1,24 @@
 ---
 title: VSCode
 appstreamFlatpak: com.visualstudio.code
+aggregation:
+    flatpak: com.visualstudio.code
+appstream:
+    id: com.visualstudio.code
+    name: VSCode
+    icon: /vscode/vscode-logo.svg
+    summary: Инструмент, который сочетает в себе простоту редактора кода с тем, что нужно разработчикам для редактирования, сборки и отладки.
+    keywords: 
+        - proprietary
+        - restrictions
+    developer: 
+        name: Microsoft Corporation
+        avatar: /vscode/vscode-avatar.svg
+    metadata_license: 
+        name: Собственная
+        link: https://code.visualstudio.com/License/
+    url: 
+        homepage: https://code.visualstudio.com/
 ---
 
 # VSCode

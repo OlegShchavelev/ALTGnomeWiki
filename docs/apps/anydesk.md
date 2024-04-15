@@ -7,7 +7,7 @@ aggregation:
 appstream:
     id: com.anydesk.Anydesk
     name: AnyDesk
-    icon: /anydesk/com.anydesk.Anydesk.png
+    icon: /anydesk/anydesk-logo.svg
     summary: Удалённое подключение к компьютеру с AnyDesk
     keywords: 
         - proprietary
@@ -26,6 +26,8 @@ appstream:
 # AnyDesk
 
 AnyDesk — программа удалённого доступа, которая позволяет пользователям получать доступ и управлять удалёнными компьютерами и серверами. Она обеспечивает быстрое и стабильное соединение, а также даёт возможность обмена файлами между устройствами. AnyDesk может использоваться для технической поддержки, обучения, доступа к домашним компьютерам и многих других задач, связанных с удалённым управлением и обслуживанием систем.
+
+![AnyDesk](/anydesk/anydesk-1.png)
 
 ## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
 

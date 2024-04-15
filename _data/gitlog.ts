@@ -45,7 +45,7 @@ export const gitMapContributors = [
     {
         name: "Олег Щавелев",
         avatar: "https://github.com/OlegShchavelev.png",
-        nameAliases: ["OlegShchavelev",  "Олег Щавелев"]
+        nameAliases: ["OlegShchavelev", "Oleg Shchavelev", "Олег Щавелев"]
     },
     {
         name: "Семен Фомченков",

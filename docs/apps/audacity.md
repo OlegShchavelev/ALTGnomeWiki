@@ -8,7 +8,7 @@ aggregation:
 appstream:
     id: org.audacityteam.Audacity
     name: Audacity
-    icon: /audacity/org.audacityteam.Audacity.png
+    icon: /audacity/audacity-logo.svg
     summary: Записывайте и редактируйте аудиофайлы с Audacity
     developer: 
         name: Muse Group
@@ -25,6 +25,8 @@ appstream:
 # Audacity
 
 Audacity — свободный многоплатформенный аудиоредактор звуковых файлов, ориентированный на работу с несколькими дорожками.
+
+![Audacity](/audacity/audacity-1.png)
 
 ## Установка из репозитория
 

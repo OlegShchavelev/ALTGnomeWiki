@@ -8,7 +8,7 @@ aggregation:
 appstream:
     id: com.usebottles.bottles
     name: Bottles
-    icon: /bottles/com.usebottles.bottles.png
+    icon: /bottles/bottles-logo.svg
     summary: Запуск программ Windows
     developer: 
         name: Bottles Contributors
@@ -27,6 +27,8 @@ appstream:
 # Bottles
 
 Bottles — приложение, которое позволяет вам легко управлять и использовать Windows приложения игры.
+
+![Bottles](/bottles/bottles-1.png)
 
 ## Установка из репозитория
 

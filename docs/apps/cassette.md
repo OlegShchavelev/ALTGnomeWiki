@@ -9,7 +9,7 @@ aggregation:
 appstream:
     id: io.github.Rirusha.Cassette
     name: Cassette
-    icon: /cassette/io.github.Rirusha.Cassette.png
+    icon: /cassette/cassette-logo.svg
     summary: Неофициальный клиент Яндекс Музыки
     metadata_license: 
         name: GNU GPLv3
@@ -22,15 +22,21 @@ appstream:
         avatar: https://avatars.githubusercontent.com/u/95986183?v=4
     url: 
         homepage: https://github.com/Rirusha/Cassette
-        bugtracker: 
-            name: github.com
-            link: https://github.com/Rirusha/Cassette/issues
+        bugtracker: https://github.com/Rirusha/Cassette/issues
         donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
+gallery: 
+    title: Галерея
+    type: carousel
+    items: 
+        - src: /cassette/cassette-1.png
+        - src: /cassette/cassette-2.png
 ---
 
 # Cassette
 
 Cassette — неофициальный клиент сервиса Яндекс Музыки.
+
+<AGWGallery />
 
 ## Установка из репозитория
 
@@ -130,7 +136,7 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 У пользователей с графическим адаптаром NVIDIA (неизвестный диапозон устройств) и c закрытыми драйверами не отображается интерфейс авторизации Яндекс ID.
 :::
 
-![Пример проблемы с отображением интерфейса при авторизации](/cassette/casseta-1.png)
+![Пример проблемы с отображением интерфейса при авторизации](/cassette/cassette-3.png)
 
 Если у вас flatpak версия, то выполните в терминале:
 ```shell

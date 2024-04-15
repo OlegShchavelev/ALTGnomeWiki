@@ -9,22 +9,25 @@ appstream:
     id: cc.arduino.arduinoide
     name: Arduino IDE
     icon: /arduino-ide/cc.arduino.arduinoide.png
-    summary: Удалённое подключение к компьютеру с AnyDesk
+    summary: IDE для разработки программ для Arduino-совместимых плат
     developer: 
         name: Arduino LLC
     metadata_license: 
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
+        name: GNU LGPLv2.1
+        link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
     url: 
         homepage: https://arduino.cc/
         bugtracker: https://github.com/arduino/Arduino/issues/
         translate: https://github.com/arduino/Arduino/tree/master/arduino-core/src/processing/app/i18n/
         help: https://www.arduino.cc/en/Guide/
+        donation: https://github.com/sponsors/arduino
 ---
 
 # Arduino IDE
 
 Arduino IDE — интегрированная среда разработки для Windows, MacOS и Linux, разработанная на Си и C ++, предназначенная для создания и загрузки программ на Arduino-совместимые платы, а также на платы других производителей.
+
+![Arduino IDE](/arduino-ide/arduino-ide-1.png)
 
 ## Установка из репозитория
 
@@ -59,3 +62,5 @@ flatpak install flathub cc.arduino.arduinoide
 ## Издания Arduino IDE
 
 **Arduino IDE v2** — вторая версия Arduino IDE предоставляет обновленный интерфейс, который облегчает работу с несколькими файлами. Встроенная система вкладок упрощает переключение между файлами и способствует более организованной разработке. Новая функция в Arduino IDE v2 – это встроенная отладка.
+
+![Arduino IDE](/arduino-ide/arduino-ide-2.png)

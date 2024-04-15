@@ -1,5 +1,5 @@
 ---
-title: Боксы
+title: Boxes
 appstreamRepo: org.gnome.Boxes
 appstreamFlatpak: org.gnome.Boxes
 aggregation:
@@ -8,7 +8,7 @@ aggregation:
 appstream:
     id: org.gnome.Boxes
     name: Boxes
-    icon: /boxes/org.gnome.Boxes.png
+    icon: /boxes/boxes-logo.svg
     summary: Виртуализация стала проще
     developer: 
         name: GNOME
@@ -21,12 +21,20 @@ appstream:
     url: 
         homepage: https://gnomeboxes.org/
         bugtracker: https://gitlab.gnome.org/GNOME/gnome-boxes/issues
-        translate: https://hosted.weblate.org/engage/cartridges/
+        translate: https://wiki.gnome.org/TranslationProject
+gallery: 
+    title: Галерея
+    type: carousel
+    items: 
+        - src: /boxes/boxes-1.png
+        - src: /boxes/boxes-2.png
 ---
 
 # Boxes
 
 Boxes — официальная утилита для рабочего окружения GNOME, которая позволяет вам создавать виртуальные машины из образов операционной системы несколькими щелчками мыши.
+
+<AGWGallery />
 
 ## Установка из репозитория
 

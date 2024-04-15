@@ -11,11 +11,12 @@ appstream:
     summary: Удалённое подключение к компьютеру с AnyDesk
     keywords: 
         - proprietary
+        - restrictions
     developer: 
         name: AnyDesk Software GmbH
     metadata_license: 
-        name: CC0-1.0
-        link: https://choosealicense.com/licenses/cc0-1.0/
+        name: Собственная
+        link: https://anydesk.com/ru/terms
     url: 
         homepage: https://anydesk.com/
         bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues

@@ -27,6 +27,8 @@ appstream:
 
 Alacarte — редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
 
+![Alacarte](/alacarte/alacarte-1.png)
+
 ## Установка из репозитория
 
 **Alacarte** можно установить через терминал:

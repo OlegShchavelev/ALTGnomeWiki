@@ -1,9 +1,4 @@
 ---
-title: Amberol
-nameRepo: amberol
-nameSnap: amberol
-appstreamRepo: io.bassi.Amberol
-appstreamFlatpak: io.bassi.Amberol
 gallery: 
     title: Галерея
     type: carousel
@@ -48,4 +43,6 @@ Amberol воспроизводит музыку, и ничего больше.
 
 <AGWGallery />
 
-<!--@include: ./parts/install/software-install.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

@@ -8,7 +8,7 @@ aggregation:
 appstream:
     id: org.chromium.Chromium
     name: Chromium
-    icon: /chromium/org.chromium.Chromium.png
+    icon: /chromium/chromium-logo.svg
     summary: Веб-браузер от Chromium Project
     metadata_license: 
         name: BSD 3-Clause

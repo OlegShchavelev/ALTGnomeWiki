@@ -1,9 +1,8 @@
 ---
-title: Картриджи
-appstreamRepo: hu.kramo.Cartridges
-appstreamFlatpak: hu.kramo.Cartridges
 aggregation: 
-    flatpak: hu.kramo.Cartridges
+    flatpak: 
+        id: hu.kramo.Cartridges
+        build: offical
     sisyphus: cartridges
 appstream:
     id: hu.kramo.Cartridges
@@ -28,7 +27,7 @@ appstream:
 
 gallery: 
     title: Галерея
-    type: carousel
+    type: slider
     items: 
         - src: /cartridges/cartridges-1.png
         - src: /cartridges/cartridges-2.png
@@ -40,34 +39,6 @@ gallery:
 
 <AGWGallery />
 
-## Установка из репозитория
 
-**Картриджи** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install cartridges
-```
-```shell[epm]
-epm -i cartridges
-```
-:::
-
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Картриджи** одной командой:
-
-```shell
-flatpak install flathub hu.kramo.Cartridges
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

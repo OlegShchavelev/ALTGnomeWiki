@@ -1,6 +1,4 @@
 ---
-title: Errands
-appstreamRepo: io.github.mrvladus.List
 appstreamFlatpak: io.github.mrvladus.List
 nameRepo: errands
 gallery: 
@@ -45,33 +43,5 @@ appstream:
 
 <AGWGallery />
 
-## Установка из репозитория
-
-**Errands** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install errands
-```
-```shell[epm]
-epm -i errands
-```
-
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Errands** одной командой:
-
-```shell
-flatpak install flathub io.github.mrvladus.List
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

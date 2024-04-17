@@ -1,6 +1,4 @@
 ---
-title: Docker
-appstreamRepo: docker-engine
 aggregation:
     sisyphus: docker-engine
 appstream:

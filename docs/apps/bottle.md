@@ -1,9 +1,8 @@
 ---
-title: Bottles
-appstreamRepo: com.usebottles.bottles
-appstreamFlatpak: com.usebottles.bottles
 aggregation:
-    flatpak: com.usebottles.bottles
+    flatpak: 
+        id: com.usebottles.bottles
+        build: offical
     sisyphus: bottles
 appstream:
     id: com.usebottles.bottles
@@ -30,36 +29,5 @@ Bottles — приложение, которое позволяет вам ле�
 
 ![Bottles](/bottles/bottles-1.png)
 
-## Установка из репозитория
-
-**Bottles** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install bottles
-```
-```shell[epm]
-epm -i bottles
-```
-
-:::
-
-
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Bottles** одной командой:
-
-```shell
-flatpak install flathub com.usebottles.bottles
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

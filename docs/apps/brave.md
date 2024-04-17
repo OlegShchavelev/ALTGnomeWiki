@@ -1,8 +1,12 @@
 ---
-title: Brave Browser
-appstreamFlatpak: com.brave.Browser
 aggregation: 
-    flatpak: com.brave.Browser
+    flatpak: 
+        id: com.brave.Browser
+        build: offical
+    epm: 
+        play:
+            id: brave 
+            build: unoffical
 appstream:
     id: com.brave.Browser
     name: Brave Browser
@@ -22,23 +26,6 @@ appstream:
 
 Brave Browser — веб-браузер со свободным и открытым исходным кодом на основе веб-браузера Chromium на движке Blink.
 
-![Brave](/brave/brave-1.png)
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Brave Browser** одной командой:
-
-```shell
-flatpak install flathub com.brave.Browser
-```
-<!--@include: ./parts/install/software-flatpak.md-->
-
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: ./parts/warns/unpriveleged-spases.md -->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Brave Browser** одной командой:
-
-```shell
-epm play brave
-```
+<!--@include: @apps/_parts/install/content-epm-play.md-->

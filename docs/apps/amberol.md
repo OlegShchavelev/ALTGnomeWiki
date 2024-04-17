@@ -7,8 +7,12 @@ gallery:
         - src: /amberol/amberol-2.png
         - src: /amberol/amberol-3.png
 aggregation:
-    snap: amberol
-    flatpak: io.bassi.Amberol
+    snap: 
+        id: amberol
+        build: unoffical
+    flatpak: 
+        id: io.bassi.Amberol
+        build: offical
     sisyphus: amberol
 appstream:
     id: io.bassi.Amberol

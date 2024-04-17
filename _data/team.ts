@@ -204,6 +204,8 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/Katze-942' }
       ],
+      actionText: 'Поддержать',
+      sponsor: 'https://www.tinkoff.ru/cf/1qXUImsZFTN'
     }, {
       avatar: 'https://avatars.githubusercontent.com/u/55319144?v=4',
       name: 'Хачатур Тоникян',

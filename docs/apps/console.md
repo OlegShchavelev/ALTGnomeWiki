@@ -1,6 +1,4 @@
 ---
-title: Console
-appstreamRepo: console.desktop
 aggregation:
     sisyphus: gnome-console
 appstream:
@@ -28,21 +26,7 @@ appstream:
 
 Console — Простой и удобный эмулятор терминала для рабочего стола GNOME.
 
-## Установка из репозитория 
-
-**Console** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-console
-```
-```shell[epm]
-epm -i console
-```
-:::
+<!--@include: @apps/_parts/install/content-repo.md-->
 
 ## Удаление GNOME Terminal
 

@@ -1,10 +1,8 @@
 ---
-title: Cassette
-nameRepo: cassette
-appstreamRepo: io.github.Rirusha.Cassette
-appstreamFlatpak: io.github.Rirusha.Cassette
 aggregation: 
-    sisyphus: cassette
+    sisyphus: 
+        id: cassette
+        build: offical
     flatpak: io.github.Rirusha.Cassette
 appstream:
     id: io.github.Rirusha.Cassette
@@ -26,7 +24,7 @@ appstream:
         donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
 gallery: 
     title: Галерея
-    type: carousel
+    type: slider
     items: 
         - src: /cassette/cassette-1.png
         - src: /cassette/cassette-2.png
@@ -38,38 +36,8 @@ Cassette — неофициальный клиент сервиса Яндекс
 
 <AGWGallery />
 
-## Установка из репозитория
-
-**Cassette** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install сassette
-```
-```shell[epm]
-epm -i сassette
-```
-
-:::
-
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Cassette** одной командой:
-
-```shell
-flatpak install flathub io.github.Rirusha.Cassette
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Nightly версия
 

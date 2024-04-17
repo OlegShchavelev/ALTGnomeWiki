@@ -1,6 +1,4 @@
 ---
-title: DroidCam
-appstreamRepo: droidcam.desktop
 aggregation: 
     sisyphus: droidcam
 appstream:
@@ -24,23 +22,7 @@ appstream:
 
 DroidCam — приложение позволяющее превратить ваше мобильное устройство в веб-камеру для вашего компьютера.
 
-## Установка из репозитория
-
-**DroidCam** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install droidcam
-```         
-```shell[epm]
-epm -i droidcam
-```
-:::
-
-<!--@include: ./parts/install/software-repo.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
 
 ## Настройка DroidCam
 

@@ -1,6 +1,4 @@
 ---
-title: AsusCtl
-appstreamRepo: asusctl.desktop
 aggregation: 
     sisyphus: asusctl
 appstream:

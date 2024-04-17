@@ -1,9 +1,8 @@
 ---
-title: Blender
-appstreamRepo: org.blender.Blender
-appstreamFlatpak: org.blender.Blender
 aggregation:
-    flatpak: org.blender.Blender
+    flatpak: 
+        id: org.blender.Blender
+        build: offical
     sisyphus: blender
 appstream:
     id: org.blender.Blender
@@ -26,34 +25,6 @@ Blender — бесплатный пакет для создания 3D с отк
 
 ![Blender](/blender/blender-1.png)
 
-## Установка из репозитория
-
-**Blender** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install blender
-```
-```shell[epm]
-epm -i blender
-```
-
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Blender** одной командой:
-
-```shell
-flatpak install flathub org.blender.Blender
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 

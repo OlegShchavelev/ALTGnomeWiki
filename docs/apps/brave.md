@@ -27,5 +27,5 @@ appstream:
 Brave Browser — веб-браузер со свободным и открытым исходным кодом на основе веб-браузера Chromium на движке Blink.
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
 <!--@include: @apps/_parts/install/content-epm-play.md-->

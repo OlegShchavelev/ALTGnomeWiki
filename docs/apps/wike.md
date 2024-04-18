@@ -1,11 +1,12 @@
 ---
-title: Wike
-nameRepo: wike
-appstreamFlatpak: com.github.hugolabe.Wike
 aggregation:
     sisyphus: wike
-    flatpak: com.github.hugolabe.Wike
-    snap: wike
+    flatpak: 
+        id: com.github.hugolabe.Wike
+        build: offical
+    snap: 
+        id: wike
+        build: unoffical
 appstream:
     id: alacarte.desktop
     name: Wike
@@ -30,34 +31,9 @@ appstream:
 
 Wike - программа для чтения Википедии для рабочего окружения GNOME. Предоставляет доступ ко всему содержимому этой онлайн-энциклопедии в собственном приложении с более простым и не отвлекающим от просмотра статей интерфейса.
 
-## Установка из репозитория
-
-**Wike** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install wike
-```
-```shell[epm]
-epm -i wike
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Wike** одной командой:
-
-```shell
-flatpak install flathub org.pipewire.Helvum
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->
 
 ## Язык поиска статей Википедии
 

@@ -1,8 +1,8 @@
 ---
-title: Warehouse
-appstreamFlatpak: io.github.flattool.Warehouse
 aggregation:
-    flatpak: io.github.flattool.Warehouse
+    flatpak: 
+        id: io.github.flattool.Warehouse
+        build: offical
 appstream:
     id: io.github.flattool.Warehouse
     name: Warehouse
@@ -45,12 +45,4 @@ Warehouse — приложение управляет установленным
 
 <AGWGallery />
 
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Warehouse** одной командой:
-
-```shell
-flatpak install flathub io.github.flattool.Warehouse
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

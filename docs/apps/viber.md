@@ -1,8 +1,13 @@
 ---
-title: Viber
-appstreamFlatpak: com.viber.Viber
 aggregation:
-    flatpak: com.viber.Viber
+    flatpak: 
+        id: com.viber.Viber
+        build: unoffical
+    epm:
+        play:
+            id: viber
+            build: unoffical
+
 appstream:
     name: Viber
     icon: /viber/viber-logo.svg
@@ -24,15 +29,8 @@ appstream:
 
 Viber — кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
 
-<!--@include: ./parts/install/software-install.md-->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Viber** одной командой:
-
-```shell
-epm play viber
-```
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Установка с официального сайта
 
@@ -51,5 +49,5 @@ chmod +x viber.AppImage
 ```
 
 :::info
-После первого запуска приложение Toolbox клонирует себя в директорию `~/.local/share/viber/`, поэтому загруженный файл можно удалить.
+После первого запуска приложение Viber клонирует себя в директорию `~/.local/share/viber/`, поэтому загруженный файл можно удалить.
 :::

@@ -1,8 +1,12 @@
 ---
-title: Microsoft Edge
-appstreamFlatpak: com.microsoft.Edge
 aggregation:
-    flatpak: com.microsoft.Edge
+    flatpak: 
+        id: com.microsoft.Edge
+        build: unoffical
+    epm:
+        play:
+            id: edge
+            build: unoffical
 appstream:
     id: com.microsoft.Edge
     name: Microsoft Edge
@@ -26,21 +30,6 @@ appstream:
 
 Браузер от Microsoft, выпущенный в 2015 году, замена Internet Explorer, основан на Chromium.
 
-## Установка с помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Microsoft Edge** одной командой:
-
-```shell
-flatpak install flathub com.brave.Browser
-```
-<!--@include: ./parts/install/software-flatpak.md-->
-
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Microsoft Edge** одной командой:
-
-```shell
-epm play edge
-```
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/install/content-epm-play.md-->

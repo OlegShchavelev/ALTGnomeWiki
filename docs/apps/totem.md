@@ -1,10 +1,9 @@
 ---
-title: Видео
-appstreamRepo: org.gnome.Totem
-appstreamFlatpak: org.gnome.Totem
 aggregation:
     sisyphus: totem
-    flatpak: org.gnome.Totem
+    flatpak: 
+        id: org.gnome.Totem
+        build: offical
 appstream:
     id: org.gnome.Totem
     name: Видео
@@ -33,32 +32,5 @@ appstream:
 
 Приложение Видео включает в себя дополнительную функциональность: загрузчик субтитров, возможность замедления или ускорения проигрывания, создание галереи снимков экрана и запись DVD.
 
-## Установка из репозитория
-
-**Totem** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install totem
-```
-```shell[epm]
-epm -i totem
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Видео** одной командой:
-
-```shell
-flatpak install flathub org.gnome.Totem
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

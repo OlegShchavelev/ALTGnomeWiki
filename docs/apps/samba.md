@@ -1,8 +1,6 @@
 ---
-title: Samba
-nameRepo: samba
 aggregation: 
-    sisyphus: samba
+    sisyphus: samba-client
 appstream:
     name: Samba
     icon: /samba/samba-logo.svg

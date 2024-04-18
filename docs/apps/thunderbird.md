@@ -1,8 +1,12 @@
 ---
-title: Thunderbird
-appstreamFlatpak: org.mozilla.Thunderbird
 aggregation:
-    flatpak: org.mozilla.Thunderbird
+    sisyphus: thunderbird
+    flatpak: 
+        id: org.mozilla.Thunderbird
+        build: offical
+    snap: 
+        id: thunderbird
+        build: offical
 appstream:
     id: org.mozilla.Thunderbird
     name: Thunderbird
@@ -25,31 +29,9 @@ appstream:
 
 Thunderbird — бесплатное приложение для работы с электронной почтой, которое легко установить и настроить с отличными характеристиками.
 
-## Установка из репозитория
-
-**Thunderbird** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install thunderbird
-```
-```shell[epm]
-epm -i thunderbird
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Thunderbird** одной командой:
-
-```shell
-flatpak install flathub org.mozilla.Thunderbird
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->
 
 ## Thunderbird Gnome Theme
 

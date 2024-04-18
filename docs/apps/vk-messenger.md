@@ -1,5 +1,9 @@
 ---
-title: VK Мессенджер
+aggregation:
+    epm:
+        play:
+            id: vk-messenger
+            build: unoffical
 appstream:
     name: VK Мессенджер
     icon: /vk-messenger/vk-messenger-logo.svg
@@ -22,20 +26,15 @@ appstream:
 
 VK Мессенджер — бесплатное и быстрое приложение для общения. Будьте на связи с друзьями и знакомыми в чатах и звонка.
 
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm) с версии `3.60.8`, можно установить **VK Мессенджер** одной командой:
-
-```shell
-epm play vk-messenger
-```
-
-[eepm](/epm) ниже версии `3.60.8` установите **VK Мессенджер** версии `5.3.2`:
+:::info
+Если ваш [eepm](/epm) ниже версии `3.60.8` установите **VK Мессенджер** версии `5.3.2`:
 
 ```shell
 epm play vk
 ```
+:::
 
 ## Установка с официального сайта 
 

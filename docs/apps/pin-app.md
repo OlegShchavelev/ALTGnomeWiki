@@ -1,9 +1,8 @@
 ---
-title: PinApp
-nameRepo: PinApp
-appstreamFlatpak: io.github.fabrialberio.pinapp
 aggregation:
-    flatpak: io.github.fabrialberio.pinapp
+    flatpak: 
+        id: io.github.fabrialberio.pinapp
+        build: unoffical
 appstream:
     id: io.github.fabrialberio.pinapp
     name: PinApp
@@ -21,7 +20,7 @@ appstream:
         bugtracker: https://github.com/fabrialberio/PinApp/issues
 gallery: 
     title: Галлерея
-    type: carousel
+    type: slider
     items: 
         - src: /pin-app/pin-app-3.png
         - src: /pin-app/pin-app-4.png
@@ -38,15 +37,7 @@ PinApp позволяет закреплять изменёные приложе
 
 <AGWGallery />
 
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **PinApp** одной командой:
-
-```shell
-flatpak install flathub io.github.fabrialberio.pinapp
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Управление классическими прилоложениями из Cизифа
 

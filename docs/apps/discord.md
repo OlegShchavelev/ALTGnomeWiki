@@ -10,7 +10,7 @@ aggregation:
 appstream:
     id: com.discordapp.Discord
     name: Discord
-    icon: /discord/com.discordapp.Discord.png
+    icon: /discord/discord-logo.svg
     summary: Клиент для обмена сообщениями, аудио и видеосвязи
     metadata_license: 
         name: CC0-1.0

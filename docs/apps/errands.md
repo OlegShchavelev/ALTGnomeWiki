@@ -13,7 +13,7 @@ aggregation:
 appstream:
     id: io.github.mrvladus.List
     name: Дела
-    icon: /errands/io.github.mrvladus.List.png
+    icon: /errands/errands-logo.svg
     summary: Управляйте своими задачами
     metadata_license: 
         name: GNU GPLv3

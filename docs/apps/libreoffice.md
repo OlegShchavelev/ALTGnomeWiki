@@ -1,11 +1,9 @@
 ---
-title: LibreOffice
-nameRepo: LibreOffice
-appstreamRepo: org.libreoffice.LibreOffice
-appstreamFlatpak: org.libreoffice.LibreOffice
 aggregation:
     sisyphus: LibreOffice-still
-    flatpak: org.libreoffice.LibreOffice
+    flatpak: 
+        id: org.libreoffice.LibreOffice
+        build: offical
 appstream:
     id: org.libreoffice.LibreOffice
     name: LibreOffice
@@ -35,8 +33,6 @@ LibreOffice — мощный офисный пакет, полностью со�
 
 **LibreOffice** можно установить любым привычным и удобным способом:
 
-<!--@include: ./parts/install/software-repo.md-->
-
 **Установка через терминал**
 
 :::tabs
@@ -65,15 +61,7 @@ epm -i LibreOffice LibreOffice-gtk3
 :::
 
 
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **LibreOffice** одной командой:
-
-```shell
-flatpak install flathub org.libreoffice.LibreOffice
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Шрифты в LibreOffice
 

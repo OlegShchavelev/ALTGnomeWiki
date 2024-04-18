@@ -1,8 +1,8 @@
 ---
-title: Notepad
-appstreamFlatpak: com.github.alexkdeveloper.notepad
 aggregation:
-    flatpak: com.github.alexkdeveloper.notepad
+    flatpak: 
+        id: com.github.alexkdeveloper.notepad
+        build: offical
 appstream:
     id: com.github.alexkdeveloper.notepad
     name: Notepad
@@ -28,12 +28,4 @@ appstream:
 
 Notepad — программа для простого создания текстовых заметок.
 
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Notepad** одной командой:
-
-```shell
-flatpak install flathub com.github.alexkdeveloper.notepad
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

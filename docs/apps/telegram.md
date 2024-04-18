@@ -1,10 +1,11 @@
 ---
-title: Telegram
-appstreamRepo: org.telegram.desktop
-appstreamFlatpak: org.telegram.desktop
 aggregation:
     sisyphus: telegram-desktop
     flatpak: org.telegram.desktop
+    epm:
+        play:
+            id: telegram
+            build: unoffical
 appstream:
     id: org.telegram.desktop
     name: Telegram
@@ -34,42 +35,9 @@ gallery:
 
 Telegram — кроссплатформенная система мгновенного обмена сообщениями (мессенджер) с функциями обмена текстовыми, голосовыми и видеосообщениями, а также стикерами, фотографиями и файлами многих форматов.
 
-## Установка из репозитория
-
-**Telegram** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install telegram-desktop
-```
-```shell[epm]
-epm -i telegram-desktop
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Telegram** одной командой:
-
-```shell
-flatpak install flathub org.telegram.desktop
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Telegram** одной командой:
-
-```shell
-epm play telegram
-```
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Отключить уведомление активное окно (Draw attention to the window)
 

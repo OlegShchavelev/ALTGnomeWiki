@@ -1,8 +1,11 @@
 ---
-title: Figma
-appstreamFlatpak: io.github.Figma_Linux.figma_linux
 aggregation: 
-    flatpak: io.github.Figma_Linux.figma_linux
+    flatpak: 
+        id: io.github.Figma_Linux.figma_linux
+        build: unoffical
+    epm:
+        play:
+            id: figma
 appstream:
     id: io.github.Figma_Linux.figma_linux
     name: Figma
@@ -24,25 +27,9 @@ appstream:
 
 Figma — неофициальная версия Figma для Linux построенная на Electron.
 
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Figma** одной командой:
-
-```shell
-flatpak install flathub io.github.Figma_Linux.figma_linux
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Figma** одной командой:
-
-```shell
-epm play figma
-```
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Установка из репозитория GitHub
 

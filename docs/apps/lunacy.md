@@ -1,8 +1,12 @@
 ---
-title: Lunacy
-appstreamFlatpak: com.icons8.Lunacy
 aggregation:
-    flatpak: com.icons8.Lunacy
+    flatpak: 
+        id: com.icons8.Lunacy
+        build: unoffical
+    epm:
+        play:
+            id: lunacy
+            build: unoffical
 appstream:
     id: com.icons8.Lunacy
     name: Lunacy
@@ -30,20 +34,5 @@ Lunacy — программа для векторной графики ново�
 
 Эта оболочка не проверена, не связана и не поддерживается Icons8 LLC.
 
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Lunacy** одной командой:
-
-```shell
-flatpak install flathub com.icons8.Lunacy
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Lunacy** одной командой:
-
-```shell
-epm play lunacy
-```
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->

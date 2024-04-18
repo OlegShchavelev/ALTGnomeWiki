@@ -1,9 +1,12 @@
 ---
-title: Firefox
-appstreamRepo: org.mozilla.firefox
 aggregation: 
     sisyphus: firefox
-    flatpak: org.mozilla.firefox
+    flatpak: 
+        id: org.mozilla.firefox
+        build: offical
+    snap:
+        id: firefox
+        build: offical
 appstream:
     id: org.mozilla.firefox
     name: Firefox
@@ -28,44 +31,10 @@ appstream:
 
 Firefox — популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
 
-## Установка из репозитория 
-
-**Firefox** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install firefox
-```
-```shell[epm]
-epm -i firefox
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Firefox** одной командой:
-
-```shell
-flatpak install flathub org.mozilla.firefox
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
-
-## Установка с помощью Snaps
-
-При наличии [snap](/snap) пакета, можно установить **Firefox** одной командой:
-
-```shell
-snap install firefox
-```
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/install/content-snap.md-->
 
 ## Firefox GNOME theme
 

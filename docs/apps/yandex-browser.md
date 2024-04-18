@@ -1,10 +1,13 @@
 ---
-title: Яндекс Браузер
-appstreamRepo: yandex-browser.desktop
-appstreamFlatpak: ru.yandex.Browser
 aggregation:
     sisyphus: yandex-browser-stable
-    flatpak: ru.yandex.Browser
+    flatpak: 
+        id: ru.yandex.Browser
+        build: unoffical
+    epm:
+        play:
+            id: yandex-browser
+            build: unoffical
 appstream:
     id: yandex-browser.desktop
     name: Яндекс Браузер
@@ -27,50 +30,99 @@ appstream:
 
 Яндекс Браузер — быстрый и безопасный браузер Яндекса для компьютера, смартфонов и планшетов на Android и iOS (iPhone и iPad). Ускоряет загрузку при медленном соединении, защищает от вирусов и мошенников, делает поиск удобнее.
 
-## Установка из репозитория
+## Издания Яндекс Браузера
+**Яндекс Браузер** — Быстрый и безопасный браузер со встроенной технологией активной защиты Protect. Она проверяет скачиваемые файлы на вирусы, предупреждает об опасных сайтах, защищает подключение к общественным сетям и ваши пароли.
 
-**Яндекс Браузер** можно установить любым привычным и удобным способом:
+**Яндекс Браузер для организаций** — Защита от вредоносных программ, фишинга и кражи паролей. Простая настройка в пару кликов на всю компанию и выделенная техподдержка.
 
-<!--@include: ./parts/install/software-repo.md-->
+**Яндекс Браузер Бета-версия** — Все новые возможности Яндекс Браузера, отзывы о последних версиях и общение с разработчиками в [блоге Яндекс Браузера](https://dzen.ru/yandexbrowser).
 
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install yandex-browser-stable
-```
-```shell[epm]
-epm -i yandex-browser-stable
-```
-:::
+<!--@include: @apps/_parts/install/content-repo.md-->
 
 ::: info
 C версии `23.5.1.753`, устанавливается **Яндекс Браузер для организаций** — специальная сборка, поддерживающая корпоративные функции, например, управление при помощи групповых политик. Однако ее можно использовать и на домашних компьютерах.
 :::
 
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Яндекс Браузер** одной командой:
+## Полезные советы и дополнения
+
+### Запуск Яндекс Браузера в оконном интерфейсе Wayland
+
+По умолчанию Яндекс Браузер запускается в оконном интерфейсе X11, для запуска в оконном интерфейсе Wayland:
+
+1. Введите в Умную строку адрес `browser://flags`
+2. Введите в строку поиска флаг `#ozone-platform-hint`
+3. Выберите значение `Auto` для опции `Preferred Ozone platform`
+4. Перезапустите Яндекс Браузер и проверьте результат
+
+![Запуск Яндекс Браузера в оконном интерфейсе Wayland](/yandex-browser/yandex-browser-2.gif)
+
+Запустить Яндекс Браузер через терминал указав дополнительные опции запуска:
 
 ```shell
-flatpak install flathub ru.yandex.Browser
+yandex-browser-stable --ozone-platform-hint=auto
 ```
 
-<!--@include: ./parts/install/software-flatpak.md-->
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
+:::tip
+Для запуска Яндекс Браузера версии Flatpak, необходимо разрешить список сокетов:
 
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
+- Оконная система Wayland
+- Возрат к оконной системе X11
 
-При наличии пакета [eepm](/epm), можно установить **Яндекс Браузер** одной командой:
+:::info
+Удобным способом управления Flatpak-приложений является приложения [Flatseal](flatseal)
+:::
+
+### Как вернуть стандартный вид окна в рабочем окружении Gnome
+
+По умолчанию Браузер не использует системную рамку окна в Linux и изменяет дизайн элементов управления. Если вы хотите вернуть стандартный вид окна и элементов управления Linux:
+
+1. Введите в Умную строку адрес `browser://flags`
+2. Введите в строку поиска флаг `#enable-system-frame`
+3. Включите опцию `System window controls`
+4. Перезапустите Браузер и проверьте результат.
+
+::: warning
+Данная настройка является экспериментальной, после ее включения возможны неполадки в работе Браузера. В этом случае отключите опцию и напишите нам через форму
+:::
+
+![стандартный вид окна в рабочем окружении Gnome](/yandex-browser/yandex-browser.gif)
+
+### Video DownloadHelper
+Как известно, **Яндекс Браузер** , как и другие браузеры, обладает множеством расширений. **Video DownloadHelper** не исключение.
+Однако не так давно, приложение компаньон обновилось и поменяло свое название на VdhCoApp.
+В настоящее время в EPM существует возможность установки нового приложения компаньона для корректной работы **Video DownloadHelper**.
+
+Для установки приложения компаньона используем консоль и EPM версии **3.60.9** или выше
 
 ```shell
-epm play yandex-browser
+epm play vdhcoapp
 ```
 
-## Не воспроизводится видео в Яндекс Браузере: 
+:::info
+Далее описан вариант для версии EPM ниже **3.60.9**
+:::
+
+Если Вы используете **Video DownloadHelper** и столкнулись с проблемой обновления приложения компаньона, но после его установки в Яндекс Браузере не заработало, необходимо выполнить следующие действия.
+
+```shell
+cd ~
+wget https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.10/vdhcoapp-2.0.10-linux-x86_64.tar.bz2
+tar xf vdhcoapp-2.0.10-linux-x86_64.tar.bz2 -C $HOME/.local/share/
+$HOME/.local/share/vdhcoapp-2.0.10/vdhcoapp install
+rm $HOME/.config/yandex-browser/NativeMessagingHosts/net.downloadhelper.coapp.json
+echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegcaeklhafolokijcfjliaokphfk/",\n"chrome-extension://pfoiagbblcbmognbkekfpodpidedkmcc/",\n"chrome-extension://jmkaglaafmhbcpleggkmaliipiilhldn/",\n"chrome-extension://fojefjolbhfidomcaelhceoldmmpcaga/"\n],\n  "name": "net.downloadhelper.coapp",\n"description": "Video DownloadHelper companion app",\n"path": "'$HOME'/.local/share/vdhcoapp-2.0.10/vdhcoapp"\n}' >> $HOME/.config/yandex-browser/NativeMessagingHosts/net.downloadhelper.coapp.json
+```
+
+Запускаем Яндекс Браузер.
+
+
+## Известные проблемы
+
+### Не воспроизводится видео в Яндекс Браузере: 
 
 Откройте терминал и запустите **Яндекс Браузер**:
 
@@ -122,50 +174,7 @@ browser://flags/#external-media
 
 Отключите опцию, выбрав «Disabled», в появившимся информере, подтверждаем перезагрузку **Яндекс Браузера**.
 
-## Как вернуть стандартный вид окна в рабочем окружении Gnome
-
-По умолчанию Браузер не использует системную рамку окна в Linux и изменяет дизайн элементов управления. Если вы хотите вернуть стандартный вид окна и элементов управления Linux:
-
-1. Введите в Умную строку адрес `browser://flags`
-2. Введите в строку поиска флаг `#enable-system-frame`
-3. Включите опцию `System window controls`
-4. Перезапустите Браузер и проверьте результат.
-
-::: warning
-Данная настройка является экспериментальной, после ее включения возможны неполадки в работе Браузера. В этом случае отключите опцию и напишите нам через форму
-:::
-
-![стандартный вид окна в рабочем окружении Gnome](/yandex-browser/yandex-browser.gif)
-
-## Запуск Яндекс Браузер в оконном интерфейсе Wayland
-
-По умолчанию Яндекс Браузер запускается в оконном интерфейсе X11, для запуска в оконном интерфейсе Wayland:
-
-1. Введите в Умную строку адрес `browser://flags`
-2. Введите в строку поиска флаг `#ozone-platform-hint`
-3. Выберите значение `Auto` для опции `Preferred Ozone platform`
-4. Перезапустите Яндекс Браузер и проверьте результат
-
-![Запуск Яндекс Браузер в оконном интерфейсе Wayland](/yandex-browser/yandex-browser-2.gif)
-
-Запустить Яндекс Браузер через терминал указав дополнительные опции запуска:
-
-```shell
-yandex-browser-stable --ozone-platform-hint=auto
-```
-
-:::tip
-Для запуска Яндекс Браузера версии Flatpak, необходимо разрешить список сокетов:
-
-- Оконная система Wayland
-- Возрат к оконной системе X11
-
-:::info
-Удобным способом управления Flatpak-приложений является приложения [Flatseal](flatseal)
-:::
-
-
-## Как исправить артефакты «моргания» в Яндекс Браузере при использовании закрытых драйверов NVIDIA
+### Как исправить артефакты «моргания» в Яндекс Браузере при использовании закрытых драйверов NVIDIA
 
 Открыть Яндекс Браузер, произвести дополнительную настройку:
 
@@ -174,7 +183,7 @@ yandex-browser-stable --ozone-platform-hint=auto
 3. Введите в строку поиска флаг `#enable-flutter-suggest`, включите опцию Disabled
 4. Перезапустите Яндекс Браузер и проверьте результат
 
-## Сбой графики при открытии Яндекс Браузера.
+### Сбой графики при открытии Яндекс Браузера.
 
 После обновления операционной системы Яндекс Браузер происходит сбой графики:
 
@@ -191,39 +200,3 @@ rm -rfv .config/yandex-browser/Default/GPUCache
 ```
 
 ![Графический сбой в Яндекс Браузере](/yandex-browser/yandex-browser-1.jpg 'Графический сбой в Яндекс Браузере')
-
-## Video DownloadHelper
-Как известно, **Яндекс Браузер** , как и другие браузеры, обладает множеством расширений. **Video DownloadHelper** не исключение.
-Однако не так давно, приложение компаньон обновилось и поменяло свое название на VdhCoApp.
-В настоящее время в EPM существует возможность установки нового приложения компаньона для корректной работы **Video DownloadHelper**.
-
-Для установки приложения компаньона используем консоль и EPM версии **3.60.9** или выше
-
-```shell
-epm play vdhcoapp
-```
-
-:::info
-Далее описан вариант для версии EPM ниже **3.60.9**
-:::
-
-Если Вы используете **Video DownloadHelper** и столкнулись с проблемой обновления приложения компаньона, но после его установки в Яндекс Браузере не заработало, необходимо выполнить следующие действия.
-
-```shell
-cd ~
-wget https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.10/vdhcoapp-2.0.10-linux-x86_64.tar.bz2
-tar xf vdhcoapp-2.0.10-linux-x86_64.tar.bz2 -C $HOME/.local/share/
-$HOME/.local/share/vdhcoapp-2.0.10/vdhcoapp install
-rm $HOME/.config/yandex-browser/NativeMessagingHosts/net.downloadhelper.coapp.json
-echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegcaeklhafolokijcfjliaokphfk/",\n"chrome-extension://pfoiagbblcbmognbkekfpodpidedkmcc/",\n"chrome-extension://jmkaglaafmhbcpleggkmaliipiilhldn/",\n"chrome-extension://fojefjolbhfidomcaelhceoldmmpcaga/"\n],\n  "name": "net.downloadhelper.coapp",\n"description": "Video DownloadHelper companion app",\n"path": "'$HOME'/.local/share/vdhcoapp-2.0.10/vdhcoapp"\n}' >> $HOME/.config/yandex-browser/NativeMessagingHosts/net.downloadhelper.coapp.json
-```
-
-Запускаем Яндекс Браузер.
-
-
-## Издания Яндекс Браузера
-**Яндекс Браузер** — Быстрый и безопасный браузер со встроенной технологией активной защиты Protect. Она проверяет скачиваемые файлы на вирусы, предупреждает об опасных сайтах, защищает подключение к общественным сетям и ваши пароли.
-
-**Яндекс Браузер для организаций** — Защита от вредоносных программ, фишинга и кражи паролей. Простая настройка в пару кликов на всю компанию и выделенная техподдержка.
-
-**Яндекс Браузер Бета-версия** — Все новые возможности Яндекс Браузера, отзывы о последних версиях и общение с разработчиками в [блоге Яндекс Браузера](https://dzen.ru/yandexbrowser).

@@ -1,5 +1,9 @@
 ---
-title: МТС Линк
+aggregation:
+    epm:
+        play:
+            id: mts-link-desktop
+            build: unoffical
 appstream:
     name: МТС Линк
     icon: /mts-link/mts-link-logo.svg
@@ -30,10 +34,9 @@ gallery:
 
 <AGWGallery />
 
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
-## Установка
-
-Увы приложение на данный момент отсутсвует в репозиториях [sisyphus](sisyphus.html), [flatpak](flatpak.html) и [snapcraft](snap.html), но его можно установить самостоятельно при помощи официального пакета appimage и утилиты [epm](/epm.html)
+## Установка с официального сайта
 
 ### Загрузка пакета
 

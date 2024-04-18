@@ -1,6 +1,4 @@
 ---
-title: Speedtest CLI
-appstreamRepo: speedtest-cli.desktop
 aggregation:
     sisyphus: speedtest-cli
 appstream:

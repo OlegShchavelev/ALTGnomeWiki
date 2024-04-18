@@ -1,34 +1,29 @@
 ---
-title: GitHub Desktop
-appstreamFlatpak: io.github.shiftey.Desktop
 aggregation:
-    flatpak: io.github.shiftey.Desktop
+    flatpak: 
+        id: io.github.shiftey.Desktop
+        build: unoffical
 appstream:
     id: io.github.shiftey.Desktop
     name: Github Desktop
-    icon: /github-desktop/io.github.shiftey.Desktop.png
+    icon: /github-desktop/github-desktop-logo.svg
     summary: Приложение для удобной работы с GitHub
     metadata_license: 
         name: MIT
         link: https://mit-license.org/
     developer: 
-        name: shiftkey
+        name: Brendan Forster
+        nickname: shiftkey
+        avatar: /github-desktop/github-desktop-avatar.png
     url: 
         homepage: https://github.com/shiftkey/desktop
+        bugtracker: https://github.com/shiftkey/desktop/issues
 ---
 
 # GitHub Desktop
 
 GitHub Desktop — приложение предоставляющее графический интерфейс для управления репозиториями Git.
 
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
+![github-desktop](/github-desktop/github-desktop-1.png)
 
-При наличии пакета [Flatpak](/flatpak), можно установить **GitHub Desktop** одной командой:
-
-```shell
-flatpak install flathub io.github.shiftey.Desktop
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-![github-desktop](/github-desktop/github-desktop.png)
+<!--@include: @apps/_parts/install/content-flatpak.md-->

@@ -1,17 +1,15 @@
 ---
-title: Disk Usage Analyzer
-nameRepo: gnome-disk-usage
-appstreamRepo: org.gnome.baobab
-appstreamFlatpak: org.gnome.baobab
 gallery: 
     title: Галерея Disk Usage Analyzer
-    type: carousel
+    type: slider
     items: 
         - src: /baobab/baobab-1.png
         - src: /baobab/baobab-2.png
         - src: /baobab/baobab-3.png
 aggregation:
-    flatpak: org.gnome.baobab
+    flatpak: 
+        id: org.gnome.baobab
+        build: offical
     sisyphus: gnome-disk-usage
 appstream:
     id: org.gnome.baobab
@@ -38,32 +36,5 @@ appstream:
 
 <AGWGallery />
 
-## Установка из репозитория
-
-**Disk Usage Analyzer** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-disk-usage
-```         
-```shell[epm]
-epm -i gnome-disk-usage
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Disk Usage Analyzer** одной командой:
-
-```shell
-flatpak install flathub org.gnome.baobab
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

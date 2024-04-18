@@ -1,9 +1,8 @@
 ---
-title: Boxes
-appstreamRepo: org.gnome.Boxes
-appstreamFlatpak: org.gnome.Boxes
 aggregation:
-    flatpak: org.gnome.Boxes
+    flatpak: 
+        id: org.gnome.Boxes
+        build: offical
     sisyphus: gnome-boxes
 appstream:
     id: org.gnome.Boxes
@@ -24,7 +23,7 @@ appstream:
         translate: https://wiki.gnome.org/TranslationProject
 gallery: 
     title: Галерея
-    type: carousel
+    type: slider
     items: 
         - src: /boxes/boxes-1.png
         - src: /boxes/boxes-2.png
@@ -36,35 +35,9 @@ Boxes — официальная утилита для рабочего окру
 
 <AGWGallery />
 
-## Установка из репозитория
 
-**Boxes** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-boxes
-```         
-```shell[epm]
-epm -i gnome-boxes
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Boxes** одной командой:
-
-```shell
-flatpak install flathub org.gnome.Boxes
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## 3D-ускорение
 

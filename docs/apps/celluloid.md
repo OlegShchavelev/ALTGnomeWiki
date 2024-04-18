@@ -1,13 +1,10 @@
 ---
-title: Celluloid
-appstreamRepo: io.github.celluloid_player.Celluloid
-appstreamFlatpak: io.github.celluloid_player.Celluloid
 aggregation: 
     sisyphus: celluloid
     flatpak: io.github.celluloid_player.Celluloid
 appstream:
     id: celluloid.desktop
-    name: 
+    name: Celluloid
     icon: /celluloid/celluloid-logo.svg
     summary: Простой интерфейс GTK для MPV. Он призван быть простым в использовании при сохранении высокого уровня конфигурируемости.
     metadata_license: 
@@ -27,33 +24,5 @@ Celluloid (ранее GNOME MPV) — простой интерфейс GTK дл�
 
 ![celluloid1.png](/celluloid/celluloid1.png)
 
-## Установка из репозитория
-
-**Celluloid** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install celluloid
-```
-```shell[epm]
-epm -i celluloid
-```
-
-:::
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Celluloid** одной командой:
-
-```shell
-flatpak install flathub io.github.celluloid_player.Celluloid
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

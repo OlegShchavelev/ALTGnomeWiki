@@ -1,6 +1,4 @@
 ---
-title: Alacarte
-appstreamRepo: alacarte.desktop
 aggregation:
     sisyphus: alacarte
 appstream:
@@ -29,20 +27,4 @@ Alacarte — редактор меню для GNOME, использующий с
 
 ![Alacarte](/alacarte/alacarte-1.png)
 
-## Установка из репозитория
-
-**Alacarte** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install alacarte
-```         
-```shell[epm]
-epm -i alacarte
-```
-:::
-<!--@include: ./parts/install/software-repo.md-->
-
+<!--@include: @apps/_parts/install/content-repo.md-->

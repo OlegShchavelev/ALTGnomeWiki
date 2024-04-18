@@ -3,7 +3,9 @@ title: Chromium
 appstreamFlatpak: org.chromium.Chromium
 appstreamRepo: org.chromium.Chromium
 aggregation: 
-    flatpak: org.chromium.Chromium
+    flatpak: 
+        id: org.chromium.Chromium
+        build: unoffical
     sisyphus: chromium
 appstream:
     id: org.chromium.Chromium
@@ -23,36 +25,9 @@ appstream:
 
 Chromium — проект браузера с открытым исходным кодом, целью которого является создание более безопасного, быстрого и стабильного способа работы в Интернете для всех пользователей.
 
-## Установка из репозитория
 
-**Flatseal** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install chromium
-```
-```shell[epm]
-epm -i chromium
-```
-
-:::
-
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Chromium** одной командой:
-
-```shell
-flatpak install flathub org.chromium.Chromium
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: ./parts/warns/unpriveleged-spases.md -->
 
 ## Отображение шрифта Emoji при просмотре веб-страниц в браузере Chromium
@@ -72,9 +47,9 @@ epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 
 :::
 
-## Сбой графики при открытии Яндекс Браузера.
+## Сбой графики при открытии Chromium.
 
-После обновления операционной системы Chromium происходит сбой графики
+После обновления операционной системы в Chromium происходит сбой графики
 
 Удалите пользовательскую конфигурацию у пользователя:
 

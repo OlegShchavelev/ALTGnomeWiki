@@ -1,6 +1,4 @@
 ---
-title: Eclipse IDE
-appstreamFlatpak: org.eclipse.Java
 aggregation: 
     flatpak: org.eclipse.Java
 appstream:

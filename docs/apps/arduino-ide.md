@@ -1,12 +1,11 @@
 ---
-title: Arduino IDE
-appstreamFlatpak: cc.arduino.arduinoide
-appstreamRepo: cc.arduino.arduinoide
 aggregation:
-    flatpak: cc.arduino.arduinoide
+    flatpak: 
+        id: cc.arduino.arduinoide
+        build: offical
     sisyphus: arduino
 appstream:
-    id: cc.arduino.arduinoide
+    id: cc.arduino.arduinoide.desktop
     name: Arduino IDE
     icon: /arduino-ide/cc.arduino.arduinoide.png
     summary: IDE для разработки программ для Arduino-совместимых плат
@@ -29,34 +28,10 @@ Arduino IDE — интегрированная среда разработки �
 
 ![Arduino IDE](/arduino-ide/arduino-ide-1.png)
 
-## Установка из репозитория
 
-**Arduino IDE** можно установить любым привычным и удобным способом:
 
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install arduino
-```
-
-```shell[epm]
-epm -i arduino
-```
-:::
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Arduino IDE** одной командой:
-
-```shell
-flatpak install flathub cc.arduino.arduinoide
-```
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 
 ## Издания Arduino IDE

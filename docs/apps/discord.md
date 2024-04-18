@@ -1,9 +1,12 @@
 ---
-title: Discord
-nameEpmPlay: discord
-appstreamFlatpak: com.discordapp.Discord
 aggregation: 
-    flatpak: com.discordapp.Discord
+    flatpak: 
+        id: com.discordapp.Discord
+        build: offical
+    epm:
+        play:
+            id: discord
+            build: unoffical
 appstream:
     id: com.discordapp.Discord
     name: Discord
@@ -24,4 +27,5 @@ appstream:
 
 Discord — платформа для голосового общения и обмена текстовыми сообщениями в реальном времени, предназначенная для геймеров и сообществ. Она позволяет общаться с друзьями и координировать действия во время игр, а также создавать сообщества и обмениваться контентом.
 
-<!--@include: ./parts/install/software-install.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->

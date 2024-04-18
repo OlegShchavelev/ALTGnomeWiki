@@ -1,9 +1,12 @@
 ---
-title: AnyDesk
-appstreamFlatpak: com.anydesk.Anydesk
-appstreamRepo: com.anydesk.Anydesk
 aggregation:
-    flatpak: com.anydesk.Anydesk
+    flatpak: 
+        id: com.anydesk.Anydesk
+        build: unoffical
+    epm:
+        play:
+            id: anydesk
+            build: unoffical
 appstream:
     id: com.anydesk.Anydesk
     name: AnyDesk
@@ -29,23 +32,17 @@ AnyDesk — программа удалённого доступа, котора
 
 ![AnyDesk](/anydesk/anydesk-1.png)
 
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
 
-При наличии пакета [Flatpak](/flatpak), можно установить **AnyDesk** одной командой:
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
-```shell
-flatpak install flathub com.anydesk.Anydesk
-```
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **AnyDesk** одной командой:
+Далее вкючим сервис AnyDesk
 
 ```shell
-epm play anydesk
 serv anydesk on
 ```
+
 Для корректной работы необходимо установить дополнительную библиотеку `libgtkglext`:
 
 ::: code-group

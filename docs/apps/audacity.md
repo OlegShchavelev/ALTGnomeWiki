@@ -1,10 +1,9 @@
 ---
-title: Audacity
-appstreamFlatpak: org.audacityteam.Audacity
-appstreamRepo: org.audacityteam.Audacity
 aggregation:
-    flatpak: org.audacityteam.Audacity
-    sisyphus: gnome-disk-usage
+    flatpak: 
+        id: org.audacityteam.Audacity
+        build: offical
+    sisyphus: audacity
 appstream:
     id: org.audacityteam.Audacity
     name: Audacity
@@ -28,33 +27,6 @@ Audacity — свободный многоплатформенный аудио�
 
 ![Audacity](/audacity/audacity-1.png)
 
-## Установка из репозитория
 
-**Audacity** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install audacity
-```
-
-```shell[epm]
-epm -i audacity
-```
-:::
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Audacity** одной командой:
-
-```shell
-flatpak install flathub org.audacityteam.Audacity
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

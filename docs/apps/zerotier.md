@@ -1,5 +1,4 @@
 ---
-title: ZeroTierOne
 aggregation:
     sisyphus: zerotier-one
 appstream:

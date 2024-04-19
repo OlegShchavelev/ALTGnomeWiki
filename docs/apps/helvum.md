@@ -1,9 +1,9 @@
 ---
 aggregation:
-    sisyphus: 
-        id: helvum
+    sisyphus: helvum
+    flatpak: 
+        id: org.pipewire.Helvum
         build: offical
-    flatpak: org.pipewire.Helvum
 appstream:
     id: org.pipewire.Helvum
     name: Helvum

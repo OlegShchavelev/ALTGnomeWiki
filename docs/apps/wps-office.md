@@ -23,6 +23,14 @@ appstream:
     url: 
         homepage: https://www.wps.com/office/linux/
         bugtracker: https://help.wps.com/
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /wps-office/wps-office-1.png
+        - src: /wps-office/wps-office-2.png
+        - src: /wps-office/wps-office-3.png
+        - src: /wps-office/wps-office-4.png
 ---
 
 # WPS Office
@@ -35,15 +43,10 @@ WPS Office включает следующие приложения:
 - Presentation
 - PDF
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-:::warning
-Устаревшая версия!
-:::
+<AGWGallery />
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-:::danger
-На данный момент сломан!
-:::
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Установка с официального сайта
 Зайдите на [официальный сайт производителя](https://www.wps.com/).

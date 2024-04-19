@@ -6,6 +6,7 @@ aggregation:
     epm:
         play:
             id: figma
+            build: unoffical
 appstream:
     id: io.github.Figma_Linux.figma_linux
     name: Figma

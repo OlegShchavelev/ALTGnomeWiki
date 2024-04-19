@@ -1,7 +1,13 @@
 ---
 aggregation: 
     sisyphus: obs-studio
-    flatpak: com.obsproject.Studio
+    flatpak: 
+        id: com.obsproject.Studio
+        build: offical  
+    snap:
+        id: obs-studio
+        build: unoffical
+
 appstream:
     id: com.obsproject.Studio
     name: OBS Studio
@@ -25,3 +31,4 @@ OBS Studio — Бесплатная программа с открытым ис�
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

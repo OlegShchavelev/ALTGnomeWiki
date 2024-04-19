@@ -17,6 +17,12 @@ appstream:
         bugtracker: https://gitlab.gnome.org/GNOME/console/-/issues
         translate: https://l10n.gnome.org/module/console/
         donation: https://www.gnome.org/donate/
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /console/console-1.png
+        - src: /console/console-2.png
 ---
 
 
@@ -25,6 +31,8 @@ appstream:
 # Console 
 
 Console — Простой и удобный эмулятор терминала для рабочего стола GNOME.
+
+<AGWGallery />
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 

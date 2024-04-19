@@ -19,12 +19,19 @@ appstream:
         name: The Chromium Authors
     url: 
         homepage: https://www.chromium.org/Home
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /chromium/chromium-1.png
+        - src: /chromium/chromium-2.png
 ---
 
 # Chromium
 
 Chromium — проект браузера с открытым исходным кодом, целью которого является создание более безопасного, быстрого и стабильного способа работы в Интернете для всех пользователей.
 
+<AGWGallery />
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

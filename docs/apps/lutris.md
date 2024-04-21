@@ -1,6 +1,4 @@
 ---
-title: Lutris
-appstreamFlatpak: net.lutris.Lutris
 aggregation:
     sisyphus: lutris
     flatpak: net.lutris.Lutris
@@ -25,32 +23,5 @@ appstream:
 
 Lutris — платформа с помощью которой можно запускать и играть в игры на компютерах с операционной системой Linux.
 
-## Установка из репозитория
-
-**Lutris** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install lutris
-```
-```shell[epm]
-epm -i lutris
-```
-:::
-
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Lutris** одной командой:
-
-```shell
-flatpak install flathub net.lutris.Lutris
-```
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

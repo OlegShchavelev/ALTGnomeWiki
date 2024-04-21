@@ -14,7 +14,7 @@ aggregation:
 appstream:
     id: org.gnome.baobab
     name: Анализатор использования дисков
-    icon: /baobab/org.gnome.baobab.png
+    icon: /baobab/baobab-logo.svg
     summary: Проверьте размеры папок и доступное дисковое пространство
     keywords:
         - core

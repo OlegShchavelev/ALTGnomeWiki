@@ -1,11 +1,9 @@
 ---
-title: Nextcloud Desktop
-nameRepo: nextcloud-client
-appstreamRepo: com.nextcloud.desktopclient.nextcloud
-appstreamFlatpak: com.nextcloud.desktopclient.nextcloud
 aggregation:
     sisyphus: nextcloud-client
-    flatpak: com.nextcloud.desktopclient.nextcloud
+    flatpak: 
+        id: com.nextcloud.desktopclient.nextcloud
+        build: offical
 appstream:
     id: com.nextcloud.desktopclient.nextcloud
     name: Nextcloud Desktop
@@ -28,32 +26,5 @@ appstream:
 
 Nextcloud Desktop — клиент для клиент-серверного хранилища данных. Nextcloud можно установить как на коммерческом хостинге, так и на собственном сервере. По доступной функциональности похож на Google Workspace.  
 
-## Установка из репозитория
-
-**Nextcloud Desktop** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install nextcloud-client
-```
-```shell[epm]
-epm -i nextcloud-client
-```
-:::
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Nextcloud Desktop** одной командой:
-
-```shell
-flatpak install flathub com.nextcloud.desktopclient.nextcloud
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

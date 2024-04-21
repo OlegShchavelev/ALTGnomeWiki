@@ -1,50 +1,38 @@
 ---
-title: Google Chrome
-appstreamFlatpak: com.google.Chrome
 aggregation:
-    flatpak: com.google.Chrome
+    flatpak: 
+        id: com.google.Chrome
+        build: unoffical
+    epm:
+        play:
+            id: chrome
+            build: unoffical
 appstream:
     id: com.google.Chrome
     name: Google Chrome
-    icon: /google-chrome/com.google.Chrome.png
+    icon: /google-chrome/google-chrome-logo.svg
     summary: Веб-браузер от Google
     keywords: 
         - proprietary
     metadata_license: 
-        name: CC0-1.0
-        link: https://choosealicense.com/licenses/cc0-1.0/
+        name: Собственная
+        link: https://chromeenterprise.google/terms/chrome-service-license-agreement/in/
     developer: 
         name: Google
+        avatar: /google-chrome/google-chrome-avatar.png
     url: 
         homepage: https://www.google.com/chrome/
-        bugtracker: https://gitlab.gnome.org/GNOME/gnome-music/issues
 ---
 
 # Google Chrome
 
 Google Chrome — Браузер, разрабатываемый компанией Google на основе свободного браузера Chromium и движка Blink. Первая стабильная версия вышла для операционных систем семейства Linux вышла в мае 2010 года.
 
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Google Chrome** одной командой:
-
-```shell
-flatpak install flathub com.google.Chrome
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Google Chrome** одной командой:
-
-```shell
-epm play chrome
-```
-
-## Запуск Яндекс Браузер в оконном интерфейсе Wayland
+## Запуск Google Chrome в оконном интерфейсе Wayland
 
 По умолчанию Google Chrome запускается в оконном интерфейсе X11, для запуска в оконном интерфейсе Wayland:
 

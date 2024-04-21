@@ -1,9 +1,9 @@
 ---
-title: Центр мониторинга системы
-appstreamRepo: system-monitoring-center.desktop
 aggregation:
     sisyphus: system-monitoring-center
-    flatpak: io.github.hakandundar34coding.system-monitoring-center
+    flatpak: 
+        id: io.github.hakandundar34coding.system-monitoring-center
+        build: offical
 appstream:
     id: system-monitoring-center.desktop
     name: Центр мониторинга системы
@@ -30,29 +30,5 @@ appstream:
 ![system-monitoring-center](/system-monitoring-center/system-monitoring-center.png)
 
 
-## Установка из репозитория 
-
-**Центр мониторинга системы** можно установить любым привычным и удобным способом:
-
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install system-monitoring-center
-```
-```shell[epm]
-epm -i system-monitoring-center
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Центр мониторинга системы** одной командой:
-
-```shell
-flatpak install flathub io.github.hakandundar34coding.system-monitoring-center
-```
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

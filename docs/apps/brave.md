@@ -20,12 +20,21 @@ appstream:
     url: 
         homepage: https://brave.com/
         bugtracker: https://github.com/brave/brave-browser/issues
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /brave/brave-1.png
+        - src: /brave/brave-2.png
 ---
 
 # Brave Browser
 
 Brave Browser — веб-браузер со свободным и открытым исходным кодом на основе веб-браузера Chromium на движке Blink.
 
+<AGWGallery />
+
+
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
 <!--@include: @apps/_parts/install/content-epm-play.md-->

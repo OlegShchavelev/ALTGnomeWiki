@@ -107,6 +107,7 @@ export const docs = [
           { text: 'Дела', link: '/errands' },
           { text: 'Мой офис', link: '/my-office' },
           { text: 'Музыка', link: '/gnome-music' },
+          { text: 'МТС Линк', link: '/mts-link' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },

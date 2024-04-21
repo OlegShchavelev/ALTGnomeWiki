@@ -1,8 +1,12 @@
 ---
-title: Postman
-appstreamFlatpak: com.getpostman.Postman
 aggregation:
-    flatpak: com.getpostman.Postman
+    flatpak: 
+        id: com.getpostman.Postman
+        build: offical
+    epm:
+        play:
+            id: postaman
+            build: unoffical
 appstream:
     id: com.getpostman.Postman
     name: Postman
@@ -23,26 +27,13 @@ appstream:
 
 Postman — сервис для создания, тестирования, документирования, публикации и обслуживания API. Он позволяет создавать коллекции запросов к любому API, применять к ним разные окружения, настраивать мок-серверы, писать автотесты на JavaScript, анализировать и визуализировать результаты запросов.
 
-## Установка с помощью EPM
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ::: info
 Актуально с версии **EPM 3.60.11**
 :::
 
-Для установки **Postman** с помощью EPM введите в терминале команду
-
-```shell
-epm play postman
-```
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Postman** одной командой:
-
-```shell
-flatpak install flathub com.getpostman.Postman
-```
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Установка вручную
 

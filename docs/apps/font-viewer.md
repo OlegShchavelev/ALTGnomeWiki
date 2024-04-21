@@ -1,14 +1,11 @@
 ---
-title: Шрифты
-appstreamRepo: org.gnome.font-viewer
-appstreamFlatpak: org.gnome.font-viewer
 aggregation:
     flatpak: org.gnome.font-viewer
     sisyphus: gnome-font-viewer
 appstream:
     id: org.gnome.font-viewer
     name: Шрифты
-    icon: /font-viewer/org.gnome.font-viewer.png
+    icon: /font-viewer/font-viewer-logo.svg
     summary: Просмотр шрифтов, доступных в системе
     metadata_license: 
         name: GNU GPLv3
@@ -29,33 +26,5 @@ appstream:
 
 Приложение «Шрифты» также поддерживает установку новых шрифтов из файлов формата .ttf и прочих форматов. Шрифты можно установить для текущего пользователя или для всех пользователей компьютера.
 
-## Установка из репозитория
-
-**Шрифты** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-font-viewer
-```
-```shell[epm]
-epm -i gnome-font-viewer
-```
-
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Шрифты** одной командой:
-
-```shell
-flatpak install flathub org.gnome.font-viewer
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

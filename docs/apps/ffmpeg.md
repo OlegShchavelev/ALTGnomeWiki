@@ -1,6 +1,4 @@
 ---
-title: FFMPEG
-appstreamRepo: ffmpeg
 aggregation: 
     sisyphus: ffmpeg
 appstream:

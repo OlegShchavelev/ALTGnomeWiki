@@ -1,15 +1,16 @@
 ---
-title: G4Music
-nameRepo: g4music
-appstreamRepo: com.github.neithern.g4music
-appstreamFlatpak: com.github.neithern.g4music
 aggregation:
-    flatpak: com.github.neithern.g4music
+    flatpak: 
+        id: com.github.neithern.g4music
+        build: offical
     sisyphus: g4music
+    snap:
+        id: g4music
+        build: unoffical
 appstream:
     id: com.github.neithern.g4music
     name: G4Music
-    icon: /g4music/com.github.neithern.g4music.png
+    icon: /g4music/g4music-logo.svg
     summary: Элегантное воспроизведение вашей музыки
     metadata_license: 
         name: GNU GPLv3
@@ -27,31 +28,7 @@ appstream:
 
 G4Music — это быстрый и легкий музыкальный проигрыватель, написанный на GTK4, с красивым и адаптивным пользовательским интерфейсом, ориентированный на высокую производительность для большой музыкальной коллекции.
 
-## Установка из репозитория
-
-**G4Music** можно установить через терминал:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install g4music
-```
-```shell[epm]
-epm -i g4music
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **G4Music** одной командой:
-
-```shell
-flatpak install flathub com.github.neithern.g4music
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->
 

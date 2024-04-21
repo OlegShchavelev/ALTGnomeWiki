@@ -1,6 +1,4 @@
 ---
-title: ZSH
-appstreamRepo: zsh
 aggregation:
     sisyphus: zsh
 appstream:

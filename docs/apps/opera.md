@@ -1,8 +1,12 @@
 ---
-title: Opera
-appstreamFlatpak: com.opera.Opera
 aggregation: 
-    flatpak: com.opera.Opera
+    flatpak: 
+        id: com.opera.Opera
+        build: unoffical
+    epm:
+        play:
+            id: opera
+            build: unoffical
 appstream:
     id: com.opera.Opera
     name: Opera
@@ -25,23 +29,8 @@ appstream:
 
 Opera — быстрый, безопасный и удобный браузер, в котором есть всё необходимое для конфиденциальной и безопасной работы в интернете.
 
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Opera** одной командой:
-
-```shell
-flatpak install flathub com.opera.Opera
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Opera** одной командой:
-
-```shell
-epm play opera
-```
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Выбор предпочитаемого языка (русификация браузера Opera)
 

@@ -1,15 +1,11 @@
 ---
-title: GNOME Music
-nameRepo: gnome-music
-appstreamRepo: org.gnome.Music
-appstreamFlatpak: org.gnome.Music
 aggregation:
     flatpak: org.gnome.Music
     sisyphus: gnome-music
 appstream:
     id: org.gnome.Music
     name: GNOME Music
-    icon: /gnome-music/org.gnome.Music.desktop.png
+    icon: /gnome-music/gnome-music-logo.svg
     summary: Воспроизводите и упорядочивайте свою музыкальную коллекцию
     keywords: 
         - core
@@ -28,32 +24,5 @@ appstream:
 
 GNOME Music — Лёгкий и приятный способ послушать вашу музыку. Ищите треки в вашей коллекции, пользуйтесь автоматическими списками воспроизведения или соберите свой свежий.
 
-## Установка из репозитория
-
-**GNOME Music** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-music
-```
-```shell[epm]
-epm -i gnome-music
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **GNOME Music** одной командой:
-
-```shell
-flatpak install flathub org.gnome.Music
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

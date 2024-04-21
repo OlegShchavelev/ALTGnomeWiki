@@ -1,8 +1,10 @@
 ---
-title: PortProton
-nameRepo: portproton
 aggregation:
     sisyphus: portproton
+    epm:
+        play:
+            id: portproton
+            build: offical
 appstream:
     id: portproton
     name: PortProton
@@ -77,10 +79,4 @@ wget -c "https://github.com/Castro-Fidel/PortWINE/raw/master/portwine_install_sc
 Мы рекомендуем перед установкой PortProton обновить операционную систему и ядро до актуального состоятия.
 :::
 
-## Установка c помощью epm play
-
-При наличии пакета [eepm](/epm), можно установить **PortProton** одной командой:
-
-```shell
-epm play portproton
-```
+<!--@include: @apps/_parts/install/content-epm-play.md -->

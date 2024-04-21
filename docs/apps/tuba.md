@@ -1,15 +1,12 @@
 ---
-title: Tuba  # Название приложения
-nameRepo: tuba # Название приложения в репозитории sisyphus
-nameSnap: Tuba  # Название приложения на Snapcraft
-nameEpmPlay: # Название приложения для epm play
-appstreamRepo: dev.geopjr.Tuba # appstream id приложения для sisyphus
-appstreamFlatpak: dev.geopjr.Tuba # appstream id приложения для flatpak
-
 aggregation:
     sisyphus: tuba
-    flatpak: dev.geopjr.Tuba
-    snap: tuba
+    flatpak: 
+        id: dev.geopjr.Tuba
+        builf: offical
+    snap: 
+        id: tuba
+        build: offical
 appstream:
     id: dev.geopjr.Tuba
     name: Tuba
@@ -32,4 +29,6 @@ appstream:
 # Tuba
 Tuba - неофциальный клиент для Mastodon, GoToSocial, Akkoma и других.
 
-<!--@include: ./parts/install/software-install.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

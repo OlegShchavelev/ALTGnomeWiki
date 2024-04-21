@@ -1,8 +1,12 @@
 ---
-title: Spotify
-appstreamFlatpak: com.spotify.Client
 aggregation:
-    flatpak: com.spotify.Client
+    flatpak: 
+        id: com.spotify.Clientflatpak
+        build: unoffical
+    epm:
+        play:
+            id: spotify
+            build: unoffical
 appstream:
     id: com.spotify.Client
     name: Spotify
@@ -27,19 +31,5 @@ appstream:
 
 Spotify — стриминговый сервис, позволяющий легально прослушивать музыкальные композиции, аудиокниги и подкасты, не скачивая их на устройство.
 
-## Установка с помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Spotify** одной командой:
-
-```shell
-flatpak install flathub com.spotify.Client
-```
-<!--@include: ./parts/install/software-flatpak.md-->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Spotify** одной командой:
-
-```shell
-epm play spotify
-```
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->

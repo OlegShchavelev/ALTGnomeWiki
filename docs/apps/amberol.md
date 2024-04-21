@@ -19,7 +19,7 @@ aggregation:
 appstream:
     id: io.bassi.Amberol
     name: Amberol
-    icon: /amberol/io.bassi.Amberol.png
+    icon: /amberol/amberol-logo.svg
     summary: Воспроизводит музыку и ничего больше
     keywords: 
         - adaptive

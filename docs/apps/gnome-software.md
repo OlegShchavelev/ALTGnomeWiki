@@ -1,6 +1,4 @@
 ---
-title: Gnome Software
-appstreamRepo: gnome-software.desktop
 aggregation:
     sisyphus: gnome-software
 appstream:

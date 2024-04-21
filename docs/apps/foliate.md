@@ -1,19 +1,24 @@
 ---
-title: Foliate
-appstreamFlatpak: com.github.johnfactotum.Foliate
 aggregation:
-    flatpak: com.github.johnfactotum.Foliate
-    sisyphus: flatseal
+    flatpak: 
+        id: com.github.johnfactotum.Foliate
+        build: offical
+    sisyphus: foliate
+    snap:
+        id: foliate
+        build: unoffical
 appstream:
     id: com.github.johnfactotum.Foliate
     name: Foliate
-    icon: https://dl.flathub.org/media/com/github/johnfactotum.Foliate/087fe5098abbbeabc4939b629fc3e2be/icons/128x128/com.github.johnfactotum.Foliate.png
+    icon: /foliate/foliate-logo.svg
     summary: Стильная читалка электронных книг
     metadata_license: 
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     developer: 
         name: John Factotum
+        nickname: johnfactotum 
+        avatar: /foliate/foliate-avatar.png
     url: 
         homepage: https://github.com/johnfactotum/foliate/
         bugtracker: https://github.com/johnfactotum/foliate/issues/
@@ -38,25 +43,6 @@ Foliate имеет следующие функции:
 - Поиск по книге
 - Быстрый поиск по словарю
 
-## Установка через терминал
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install foliate
-```
-```shell[epm]
-epm -i foliate
-```
-:::
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Foliate** одной командой:
-
-```shell
-flatpak install flathub com.github.johnfactotum.Foliate
-```
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

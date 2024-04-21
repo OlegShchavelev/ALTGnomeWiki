@@ -1,10 +1,9 @@
 ---
-title: Krita
-appstreamFlatpak: org.kde.krita
-appstreamRepo: org.kde.krita
 aggregation:
     sisyphus: krita
-    flatpak: org.kde.krita
+    flatpak: 
+        id: org.kde.krita
+        build: offical
 appstream:
     id: org.kde.krita
     name: Krita
@@ -24,32 +23,5 @@ appstream:
 
 Krita — свободный и открытый растровый графический редактор, программное обеспечение, входящее в состав KDE. Ранее распространялось как часть офисного пакета Calligra Suite, но впоследствии отделилось от проекта и стало развиваться самостоятельно.
 
-## Установка из репозитория
-
-**Krita** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install krita
-```
-
-```shell[epm]
-epm -i krita
-```
-:::
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Krita** одной командой:
-
-```shell
-flatpak install flathub org.kde.krita
-```
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

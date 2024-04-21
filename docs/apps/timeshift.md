@@ -1,10 +1,8 @@
 ---
-title: Timeshift
-appstreamRepo: timeshift.desktop
 aggregation:
     sisyphus: timeshift
 appstream:
-    id: timeshift.desktop
+    id: timeshift-gtk.desktop
     name: Timeshift
     icon: /timeshift/timeshift-logo.png
     summary: Инструмент для автоматического создания копий системы (снимков/snapshots) с определенной периодичностью.
@@ -30,19 +28,7 @@ Timeshift — инструмент для автоматического соз�
 ![Timeshift](/timeshift/timeshift.png)
 
 
-## Установка Timeshift
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install timeshift
-```
-```shell[epm]
-epm -i timeshift
-```
-:::
+<!--@include: @apps/_parts/install/content-repo.md-->
 
 ## Восстановление из Grub
 

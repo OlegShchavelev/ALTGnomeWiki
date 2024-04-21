@@ -1,7 +1,4 @@
 ---
-title: Lazarus
-nameRepo: lazarus
-appstreamRepo: lazarus.desktop
 aggregation: 
     sisyphus: lazarus
 appstream:
@@ -26,20 +23,4 @@ appstream:
 Lazarus — открытая среда программного обеспечения на языке Object Pascal для компилятора Free Pascal.
 Основная цель - предоставление кроссплатформенных и свободных средств разработки в Delphi-подобном окружении. Позволяет переносить Delphi-программы с графическим интерфейсом в различные операционные системы, в том числе на ALT Regular Gnome.
 
-
-## Установка из репозитория 
-
-**Lazarus** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install lazarus fpc
-```
-
-```shell[epm]
-epm -i lazarus fpc
-```
-
+<!--@include: @apps/_parts/install/content-repo.md-->

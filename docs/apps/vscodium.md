@@ -1,10 +1,13 @@
 ---
-title: VSCodium
-appstreamRepo: codium.desktop 
-appstreamFlatpak: com.vscodium.codium
 aggregation:
     sisyphus: codium
-    flatpak: com.vscodium.codium
+    flatpak: 
+        id: com.vscodium.codium
+        build: unoffical
+    epm:
+        play:
+            id: codium
+            build: unoffical
 appstream:
     id: com.vscodium.codium
     name: VSCodium
@@ -24,39 +27,9 @@ appstream:
 
 VSCodium — управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
 
-## Установка из репозитория
-
-**VSCodium** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install codium
-```
-```shell[epm]
-epm -i codium
-```
-:::
-
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **VSCodium** одной командой:
-
-```shell
-flatpak install flathub com.vscodium.codium
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **VSCodium** одной командой:
-
-```shell
-epm plat codium
-```
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Запуск VSCodium в оконном интерфейсе Wayland
 

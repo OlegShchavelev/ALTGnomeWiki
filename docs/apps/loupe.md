@@ -1,10 +1,9 @@
 ---
-title: Loupe
-appstreamRepo: org.gnome.Loupe
-appstreamFlatpak: org.gnome.Loupe
 aggregation:
     sisyphus: loupe
-    flatpak: org.gnome.Loupe
+    flatpak: 
+        id: org.gnome.Loupe
+        build: offical
 appstream:
     id: org.gnome.Loupe
     name: Loupe
@@ -30,30 +29,5 @@ appstream:
 
 Loupe — приложение для просмотра изображений, написанное на GTK 4, Libadwaita и Rust.
 
-## Установка из репозитория
-**Loupe** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install loupe
-```
-```shell[epm]
-epm -i loupe
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Loupe** одной командой:
-
-```shell
-flatpak install flathub org.gnome.Loupe
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

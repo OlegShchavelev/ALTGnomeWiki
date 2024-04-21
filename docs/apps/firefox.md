@@ -1,9 +1,12 @@
 ---
-title: Firefox
-appstreamRepo: org.mozilla.firefox
 aggregation: 
     sisyphus: firefox
-    flatpak: org.mozilla.firefox
+    flatpak: 
+        id: org.mozilla.firefox
+        build: offical
+    snap:
+        id: firefox
+        build: offical
 appstream:
     id: org.mozilla.firefox
     name: Firefox
@@ -28,44 +31,20 @@ appstream:
 
 Firefox — популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
 
-## Установка из репозитория 
+## Издания Firefox
 
-**Firefox** можно установить любым привычным и удобным способом:
+**Firefox Extended Support Release** — версия с длительным сроком поддержки для комплексной безопасности и защиты данных.
 
-<!--@include: ./parts/install/software-repo.md-->
+**Firefox Beta** — нестабильная платформа для тестирования и разработки. По умолчанию Бета отправляет данные в Mozilla, а иногда и нашим партнерам, чтобы помочь нам справиться с проблемами и попробовать идеи
 
-**Установка через терминал**
+**Firefox Developer Edition** — нестабильная платформа для тестирования и разработки. По умолчанию Developer Edition отправляет данные в Mozilla, а иногда и нашим партнерам, чтобы помочь нам справиться с проблемами и попробовать идеи.
 
-::: code-group
+**Firefox Nightly** — нестабильная платформа для тестирования и разработки. По умолчанию Nightly отправляет данные в Mozilla, а иногда и нашим партнерам, чтобы помочь нам справиться с проблемами и попробовать идеи.
 
-```shell[apt-get]
-su -
-apt-get update
-apt-get install firefox
-```
-```shell[epm]
-epm -i firefox
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Firefox** одной командой:
-
-```shell
-flatpak install flathub org.mozilla.firefox
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
-
-## Установка с помощью Snaps
-
-При наличии [snap](/snap) пакета, можно установить **Firefox** одной командой:
-
-```shell
-snap install firefox
-```
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/install/content-snap.md-->
 
 ## Firefox GNOME theme
 
@@ -110,13 +89,3 @@ cd ~/.mozilla/firefox-gnome-theme/
 ### Скрыть отдельную вкладку `gnomeTheme.hideSingleTab`
 
 Рекомендуем убрать кнопку «Новая вкладка» с панели вкладок, иначе она будет скрыта, когда откроется только одна вкладка. Вы можете изменить порядок панелей инструментов, щелкнув правой кнопкой мыши на любой панели инструментов и выбрав «Настроить панель инструментов ...»
-
-## Издания Firefox
-
-**Firefox Extended Support Release** — версия с длительным сроком поддержки для комплексной безопасности и защиты данных.
-
-**Firefox Beta** — нестабильная платформа для тестирования и разработки. По умолчанию Бета отправляет данные в Mozilla, а иногда и нашим партнерам, чтобы помочь нам справиться с проблемами и попробовать идеи
-
-**Firefox Developer Edition** — нестабильная платформа для тестирования и разработки. По умолчанию Developer Edition отправляет данные в Mozilla, а иногда и нашим партнерам, чтобы помочь нам справиться с проблемами и попробовать идеи.
-
-**Firefox Nightly** — нестабильная платформа для тестирования и разработки. По умолчанию Nightly отправляет данные в Mozilla, а иногда и нашим партнерам, чтобы помочь нам справиться с проблемами и попробовать идеи.

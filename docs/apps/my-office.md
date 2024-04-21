@@ -1,5 +1,9 @@
 ---
-title: My Office
+aggregation:
+    epm:
+        play:
+            id: myoffice
+            build: unoffical
 appstream:
     name: Мой Офис
     icon: /my-office/my-office-logo.svg
@@ -23,13 +27,7 @@ appstream:
 - **Поддержка популярных форматов**. Создавайте, просматривайте и редактируйте документы во всех популярных форматах: ODT, DOCX, ODS, XLSX и других.
 - **Полный набор самых важных функций**. Редактируйте документы, форматируйте тексты и работайте с электронными таблицами.
 
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Мой офис** одной командой:
-
-```shell
-epm play myoffice
-```
+<!--@include: @apps/_parts/install/content-epm-play.md -->
 
 ## Установка с официального сайта 
 

@@ -1,11 +1,12 @@
 ---
-title: VLC
-appstreamRepo: org.videolan.VLC
-appstreamFlatpak: org.videolan.VLC
 aggregation:
     sisyphus: vlc
-    flatpak: org.videolan.VLC
-    snap: vlc
+    flatpak: 
+        id: org.videolan.VLC
+        build: unoffical
+    snap: 
+        id: vlc
+        build: offical
 appstream:
     id: org.videolan.VLC
     name: VLC
@@ -31,7 +32,7 @@ VLC — бесплатный и свободный кросс-платформе
 
 **VLC** можно установить любым привычным и удобным способом:
 
-<!--@include: ./parts/install/software-repo.md-->
+<!--@include: @apps/_parts/install/software-repo.md-->
 
 ::: warning
 Мы не рекомендуем данный способ установки, так как в «Центр приложений» устанавливает пакет `vlc-mini`, в данном пакете содержится минимальный набор зависимостей. К примеру, после установки приложения не будет создан ярлык на экране «Приложений».
@@ -53,14 +54,5 @@ epm -i vlc
 
 :::
 
-
-
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **VLC** одной командой:
-
-```shell
-flatpak install flathub org.videolan.VLC
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

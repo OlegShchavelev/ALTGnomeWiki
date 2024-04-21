@@ -22,7 +22,7 @@ appstream:
 
 Celluloid (ранее GNOME MPV) — простой интерфейс GTK для [mpv](/mpv). Он призван быть простым в использовании при сохранении высокого уровня конфигурируемости.
 
-![celluloid1.png](/celluloid/celluloid1.png)
+![celluloid1.png](/celluloid/celluloid-1.png)
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

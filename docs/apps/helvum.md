@@ -1,11 +1,9 @@
 ---
-title: Helvum
-nameRepo: helvum
-appstreamRepo: org.pipewire.Helvum
-appstreamFlatpak: org.pipewire.Helvum
 aggregation:
     sisyphus: helvum
-    flatpak: org.pipewire.Helvum
+    flatpak: 
+        id: org.pipewire.Helvum
+        build: offical
 appstream:
     id: org.pipewire.Helvum
     name: Helvum
@@ -27,33 +25,5 @@ appstream:
 
 Helvum — графический клиент управления PipeWire. Приложение позволяет создавать и удалять соединения между приложениями или устройствами, чтобы перенаправлять поток аудио, видео и MIDI-данных туда, где это необходимо.
 
-## Установка из репозитория
-
-**Helvum** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install helvum
-```
-```shell[epm]
-epm -i helvum
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Helvum** одной командой:
-
-```shell
-flatpak install flathub org.pipewire.Helvum
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

@@ -247,5 +247,12 @@ export const contributions = [
       links: [
         { icon: 'github', link: 'https://github.com/alexkdeveloper' }
       ],
+    }, {
+      avatar: 'https://avatars.githubusercontent.com/u/159694894?v=4',
+      name: 'Максим Остапенко',
+      title: 'Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/Krator3' }
+      ],
     }
   ]

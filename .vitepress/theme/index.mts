@@ -13,6 +13,7 @@ import AGWHomeContents from './components/AGWHomeContents.vue'
 import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
+import AGWContribution from './components/AGWContribution.vue'
 
 
 /* Metrics */
@@ -45,7 +46,7 @@ import {
 import {
   pagePropertiesLocales,
   pagePropertiesMD
-} from './../../_data/page-properties'
+} from '../../_data/page-properties'
 
 import type { Options as NolebasePagePropertiesOptions } from '@nolebase/vitepress-plugin-page-properties/client';
 import { InjectionKey as NolebasePagePropertiesInjection } from '@nolebase/vitepress-plugin-page-properties/client';
@@ -85,8 +86,9 @@ export default {
       },
     }),
     
-    ctx.app.component('AGWGallery', AGWGallery);
+    ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
+    ctx.app.component('contribution', AGWContribution)
     ctx.app.provide(NolebasePagePropertiesInjection, {locales: pagePropertiesLocales, properties:pagePropertiesMD} as NolebasePagePropertiesOptions)
     ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitMapContributors})
 

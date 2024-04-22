@@ -21,7 +21,7 @@ appstream:
 
 gallery: 
     title: Галерея
-    type: carousel
+    type: slider
     items: 
         - src: /mts-link/mts-link-1.png
         - src: /mts-link/mts-link-2.png

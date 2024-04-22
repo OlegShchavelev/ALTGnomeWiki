@@ -14,6 +14,12 @@ appstream:
     url: 
         homepage: https://www.eclipse.org/
         bugtracker: https://bugs.eclipse.org/bugs/
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /eclipse-ide/eclipse-ide-1.png
+        - src: /eclipse-ide/eclipse-ide-2.png
 ---
 
 
@@ -21,6 +27,8 @@ appstream:
 # Eclipse IDE
 
 Eclipse IDE — интегрированная среда разработки (IDE), используемая в компьютерном программировании. Она содержит базовое рабочее пространство и расширяемую систему подключаемых модулей для настройки среды. Eclipse написан в основном на Java и в основном используется для разработки приложений на Java, но его также можно использовать для разработки приложений на других языках программирования с помощью подключаемых модулей.
+
+<AGWGallery />
 
 ## Установка c помощью Flatpak
 

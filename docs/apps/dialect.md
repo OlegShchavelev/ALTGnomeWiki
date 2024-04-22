@@ -30,6 +30,7 @@ gallery:
     type: slider
     items: 
         - src: /dialect/dialect-1.png
+        - src: /dialect/dialect-3.png
         - src: /dialect/dialect-2.png
 ---
 

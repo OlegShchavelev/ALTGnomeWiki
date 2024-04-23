@@ -17,5 +17,13 @@
         "wiki.md",
         "contributions.md",
         "about.md"
+    ],
+
+    "alignment_containers": [
+        ["left", {}],
+        ["center", {}],
+        ["half", {}],
+        ["highlight", {}],
+        ["right", {}]
     ]
 }

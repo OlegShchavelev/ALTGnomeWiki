@@ -220,3 +220,72 @@ figure>figcaption {
     max-height: 350px;
   } 
 }
+
+/**
+ * Alignment Containers 
+ * -------------------------------------------------------------------------- */
+
+.center {
+  &.custom-block {
+    text-align: center;
+    padding: 0;
+    img {
+      margin: auto;
+    }
+  }
+}
+
+.half {
+  &.custom-block {
+    width: 50%;
+    padding: 1px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+}
+
+.highlight {
+  &.custom-block {
+    text-align: left;
+    color: var(--vp-c-brand-1);
+    font-size: 1.2em;
+    font-weight: 700;
+    border-top: 4px dashed var(--vp-c-brand-soft);
+    border-bottom: 4px dashed var(--vp-c-brand-soft);
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.left {
+  &.custom-block {
+    float: left;
+    padding: 1em 2em;
+    padding-left: 0;
+    width: auto;
+    text-align: center;
+    max-width: 50%;
+  }
+}
+.right {
+  &.custom-block {
+    float: right;
+    padding: 1em 2em;
+    width: auto;
+    text-align: center;
+    max-width: 50%;
+  }
+}
+
+img {
+  border-radius: 15px;
+}
+
+.vp-doc .custom-block {
+	margin: 0 0 !important;
+}

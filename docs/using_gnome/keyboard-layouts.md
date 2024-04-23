@@ -25,3 +25,17 @@ gsettings set org.gnome.desktop.input-sources show-all-sources true
 1. Откройте приложение «Настройки»
 2. Нажмите пункт «Клавиатура» на боковой панели, чтобы открыть этот раздел настроек
 3. Перейдите в «Просмотр и изменения комбинация клавиш» в «Ввод текста», выберите действие и назначьте комбинацию клавиш, содержащие клавишу [[Super]]
+
+# Смена раскладки на Wayland (Gnome)
+Для того, чтобы назначить для смены раскладки сочетания клавиш: Shift+Alt, Alt+Shift, а так же по нажатию CapsLock, нужно вести в терминале следующие команды:
+```shell
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Shift>Alt_L']"
+```
+***
+```shell
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Alt>Shift_L']"
+```
+***
+```shell
+gsettings set org.gnome.desktop.input-sources xkb-options "['grp:caps_toggle']"
+```

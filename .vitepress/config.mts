@@ -7,6 +7,8 @@ import { rewrites } from './paths'
 import languages from './theme/syntaxes'
 import * as config from './config.json'
 export const META_DESCRIPTION = config.meta_description
+import {default as createContainer} from './theme/utils/customContainers';
+
 
 /* Markdown */
 import VitepressMarkdownTimeline from "vitepress-markdown-timeline";
@@ -256,6 +258,9 @@ export default defineConfig({
       detailsLabel: 'Подробнее',
     },
     config: (md) => {
+      for (const [name, opts] of config.alignment_containers) {
+        md.use(...createContainer(name, opts, md));
+      }
       md.use(markdownItKbd);
       md.use(markdownItTaskLists);
       md.use(VitepressMarkdownTimeline);

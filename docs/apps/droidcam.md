@@ -1,26 +1,20 @@
 ---
-title: DroidCam
-appstreamRepo: droidcam.desktop
-metainfo:
-    active: true
-    thumb:
-        src: /droidcam/droidcam-desktop.png
-        title: DroidCam
+aggregation: 
+    sisyphus: droidcam
+appstream:
+    id: droidcam.desktop
+    name: DroidCam
+    icon: /droidcam/droidcam-logo.svg
     summary: Приложение позволяющее превратить ваше мобильное устройство в веб-камеру для вашего компьютера.
+    metadata_license: 
+        name: BSD 3-Clause
+        link: https://github.com/chromium/chromium/blob/main/LICENSE
     developer: 
         name: dev47apps
-    site:
-        url: https://www.dev47apps.com/
-        anchor: dev47apps.com
-    licence:
-        url: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-        anchor: GPL v2
-    issue: 
-        url: https://github.com/dev47apps/droidcam/issues
-        anchor: github.com
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/droidcam/
-
+        avatar: /droidcam/droidcam-avatar.png
+    url: 
+        homepage: https://www.dev47apps.com/
+        bugtracker: https://github.com/dev47apps/droidcam/issues/
 ---
 
 
@@ -29,23 +23,9 @@ metainfo:
 
 DroidCam — приложение позволяющее превратить ваше мобильное устройство в веб-камеру для вашего компьютера.
 
-## Установка из репозитория
+![Droidcam](/droidcam/droidcam-1.png)
 
-**DroidCam** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install droidcam
-```         
-```shell[epm]
-epm -i droidcam
-```
-:::
-
-<!--@include: ./parts/install/software-repo.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
 
 ## Настройка DroidCam
 

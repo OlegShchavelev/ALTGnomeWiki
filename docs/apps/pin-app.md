@@ -1,33 +1,31 @@
 ---
-title: PinApp
-nameRepo: PinApp
-appstreamFlatpak: io.github.fabrialberio.pinapp
+aggregation:
+    flatpak: 
+        id: io.github.fabrialberio.pinapp
+        build: unoffical
+appstream:
+    id: io.github.fabrialberio.pinapp
+    name: PinApp
+    icon: /pin-app/pin-app-logo.svg
+    summary: Позволяет менять Desktop Файлы
+    developer:
+        name: Fabrizio Alberio
+        nickname: fabrialberio 
+        avatar: /pin-app/pin-app-avatar.png
+    metadata_license:
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url:
+        homepage: https://github.com/fabrialberio/PinApp
+        bugtracker: https://github.com/fabrialberio/PinApp/issues
 gallery: 
     title: Галлерея
+    type: slider
     items: 
         - src: /pin-app/pin-app-3.png
         - src: /pin-app/pin-app-4.png
         - src: /pin-app/pin-app-5.png
         - src: /pin-app/pin-app-6.png
-metainfo:
-    thumb:
-        src: /pin-app/io.github.fabrialberio.pinapp.svg
-        title: Boxes
-    summary: Позволяет менять Desktop Файлы
-    developer:
-        name: Fabrizio Alberio
-    site:
-        url: https://github.com/fabrialberio/PinApp
-        anchor: github.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue:
-        url: https://github.com/fabrialberio/PinApp/issues
-        anchor: github.com
-    gnomeCircle: false
-    flathub:
-        url: https://flathub.org/apps/io.github.fabrialberio.pinapp
 ---
 
 # PinApp
@@ -39,15 +37,7 @@ PinApp позволяет закреплять изменёные приложе
 
 <AGWGallery />
 
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **PinApp** одной командой:
-
-```shell
-flatpak install flathub io.github.fabrialberio.pinapp
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Управление классическими прилоложениями из Cизифа
 

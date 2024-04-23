@@ -1,47 +1,48 @@
 ---
-title: qBittorrent
-appstreamRepo: org.qbittorrent.qBittorrent
-appstreamFlatpak: org.qbittorrent.qBittorrent
+aggregation:
+    sisyphus: qbittorrent
+    flatpak: 
+        id: org.qbittorrent.qBittorrent
+        build: offical
+appstream:
+    id: org.qbittorrent.qBittorrent
+    name: qBittorrent
+    icon: /q-bittorrent/q-bittorrent-logo.svg
+    summary: Cвободный кроссплатформенный клиент файлообменной сети BitTorrent.
+    developer: 
+        name: qBittorrent Community
+    metadata_license: 
+        name: GNU GPLv3 + OpenSSL
+        link: https://github.com/qbittorrent/qBittorrent/blob/master/COPYING
+    url: 
+        homepage: https://www.qbittorrent.org/
+        bugtracker: https://github.com/qbittorrent/qBittorrent/issues
+        translate: https://github.com/qbittorrent/qBittorrent/wiki/How-to-translate-qBittorrent
 ---
 
 # qBittorrent
 
 qBittorrent — свободный кроссплатформенный клиент файлообменной сети BitTorrent. Клиент написан на языке C++, основан на библиотеке libtorrent-rasterbar, графический интерфейс написан на Qt.
 
-## Установка из репозитория
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
-**qBittorrent** можно установить любым привычным и удобным способом:
+## Изменение периода сохранения данных
 
-<!--@include: ./parts/install/software-repo.md-->
+Данный период отвечает за частоту сохранения данных на диск.
+При перезагрузке или в сбое питания электричества загруженные данные могут пропасть совсем или частично.
+Так же данный параметр важен если в раздаче участвуют люди с низким порогом скорости или они часто отсутствуют.
 
-**Установка через терминал**
+Раньше при установке программы выставлялся период в 3 минуты, сейчас же данный параметр изменили на 60 минут, но никто не мешает вам указать собственный.
 
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install qBittorrent
-```
-```shell[epm]
-epm -i qBittorrent
-```
+:::warning
+Будьте аккуратны, на старых HDD слишком малый период может вызвать лаги из-за частого обращения к диску.
 :::
 
-## Установка c помощью Flatpak
+Изменить данный параметр можно так:
 
-При наличии пакета [Flatpak](/flatpak), можно установить **qBittorrent** одной командой:
-
-```shell
-flatpak install flathub org.qbittorrent.qBittorrent
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-::: tip
-Можно изменить параметр «Период сохранения данных возобновления» Он находится в qBittorrent по пути Сервис-Настройки-Расширенные-Период сохранения данных возобновления
-Данный параметр отвечает за частоту сохранения данных на диск.
-Дело в том что при перезагрузке или в сбое питания электричества загруженные данные могут пропасть совсем или частично.
-Раньше при установки программы выставлялось 3 минуты но сейчас же данный параметр изменили на 60 минут. (Можете поэксперементировать с данным пунктом, но будьте аккуратны на старых HDD может вызвать лаги)
-Данный параметр важен если в раздаче участвуют люди с низким порогом скорости или они часто отсутствуют.
-:::
+1. Выбрать вкладку "Инструменты"
+2. Нажать кнопку [[Настройки]]
+3. Перейти в пункт "Расширенные"
+4. Изменить значение "Период сохранения данных возобновления"
+5. Нажать [[Применить]]  и желательно перезайти в клиент.

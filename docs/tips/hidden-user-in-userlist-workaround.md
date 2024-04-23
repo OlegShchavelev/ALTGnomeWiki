@@ -29,8 +29,8 @@ nano /etc/shadow
 
 ```shell
 nobody:*:19709::::::
-fwupd-refresh:!*:19709:::::: // [!code focus]
-username:*:19709:::::: // [!code ++] // [!code focus]
+fwupd-refresh:!*:19709:::::: # [!code focus]
+username:*:19709:::::: # [!code ++] # [!code focus]
 ```
 
 При внесении изменений в файл `/etc/shadow`:

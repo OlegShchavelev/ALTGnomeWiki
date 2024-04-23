@@ -1,66 +1,43 @@
 ---
-title: Boxes
-appstreamRepo: org.gnome.Boxes
-appstreamFlatpak: org.gnome.Boxes
-metainfo:
-    active: true
-    thumb:
-        src: /boxes/org.gnome.Boxes.png
-        title: Boxes
+aggregation:
+    flatpak: 
+        id: org.gnome.Boxes
+        build: offical
+    sisyphus: gnome-boxes
+appstream:
+    id: org.gnome.Boxes
+    name: Boxes
+    icon: /boxes/boxes-logo.svg
     summary: Виртуализация стала проще
     developer: 
-        name: The GNOME Project
-    site:
-        url: https://gnomeboxes.org/
-        anchor: gnomeboxes.org
-    licence:
-        url: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ru.html#SEC1
-        anchor: LGPL-2.1
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://gitlab.gnome.org/GNOME/gnome-boxes/issues
-        anchor: gitlab.gnome.org
-    flathub:
-        url: https://flathub.org/apps/org.gnome.Boxes
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/gnome-boxes/
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: LGPL-2.1
+        link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ru.html#SEC1
+    keywords: 
+        - core
+    url: 
+        homepage: https://gnomeboxes.org/
+        bugtracker: https://gitlab.gnome.org/GNOME/gnome-boxes/issues
+        translate: https://wiki.gnome.org/TranslationProject
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /boxes/boxes-1.png
+        - src: /boxes/boxes-2.png
 ---
 
 # Boxes
 
 Boxes — официальная утилита для рабочего окружения GNOME, которая позволяет вам создавать виртуальные машины из образов операционной системы несколькими щелчками мыши.
 
-## Установка из репозитория
+<AGWGallery />
 
-**Boxes** можно установить любым привычным и удобным способом:
 
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-boxes
-```         
-```shell[epm]
-epm -i gnome-boxes
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Boxes** одной командой:
-
-```shell
-flatpak install flathub org.gnome.Boxes
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## 3D-ускорение
 

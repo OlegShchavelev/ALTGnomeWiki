@@ -1,6 +1,23 @@
 ---
-title: Warehouse
-appstreamFlatpak: io.github.flattool.Warehouse
+aggregation:
+    flatpak: 
+        id: io.github.flattool.Warehouse
+        build: offical
+appstream:
+    id: io.github.flattool.Warehouse
+    name: Warehouse
+    icon: /warehouse/warehouse-logo.svg
+    summary: Управление всеми функциями Flatpak
+    developer: 
+        name: flattool
+        avatar: /warehouse/warehouse-avatar.png
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://github.com/flattool/warehouse
+        bugtracker: https://github.com/flattool/warehouse/issues
+        translate: https://weblate.fyralabs.com/projects/flattool/warehouse/
 gallery: 
     title: Галерея Warehouse
     type: carousel
@@ -10,27 +27,9 @@ gallery:
         - src: /warehouse/warehouse-3.png
         - src: /warehouse/warehouse-4.png
         - src: /warehouse/warehouse-5.png
-metainfo:
-    thumb:
-        src: /warehouse/io.github.flattool.Warehouse.desktop.png
-        title: Warehouse
-    summary: Управление всеми функциями Flatpak
-    developer: 
-        avatar: https://avatars.githubusercontent.com/u/143741862?s=48&v=4
-        name: flattool
-    site:
-        url: https://github.com/flattool/warehouse
-        anchor: github.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GPL-3.0
-    issue: 
-        url: https://github.com/flattool/warehouse/issues
-        anchor: github.com
-    translate: 
-        url: https://weblate.fyralabs.com/projects/flattool/warehouse/
-        anchor: weblate.fyralabs.com
 ---
+
+
 
 # Warehouse
 
@@ -46,12 +45,4 @@ Warehouse — приложение управляет установленным
 
 <AGWGallery />
 
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Warehouse** одной командой:
-
-```shell
-flatpak install flathub io.github.flattool.Warehouse
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

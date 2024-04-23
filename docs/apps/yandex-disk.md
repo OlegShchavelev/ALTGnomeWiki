@@ -1,18 +1,30 @@
 ---
-title: Яндекс Диск
+aggregation:
+    epm:
+        play:
+            id: yandex-disk
+            build: unoffical
+appstream:
+    name: Яндекс Диск
+    icon: /yandex-disk/yandex-disk-logo.png
+    summary: Облачный сервис компании Яндекс.
+    keywords: 
+        - proprietary
+    developer: 
+        name: Yandex
+        avatar: /yandex-disk/yandex-disk-avatar.png
+    metadata_license: 
+        name: Собственая
+        link: https://yandex.ru/legal/disk_agreement/
+    url: 
+        homepage: https://360.yandex.ru/disk/
 ---
 
 # Яндекс Диск
 
 Яндекс Диск — облачный сервис компании Яндекс, позволяющий пользователям хранить свои данные на серверах в «облаке» и передавать их другим пользователям в Интернете.
 
-## Установка Яндекс Диск
-
-Для установки Яндекс Диск рекомендуется воспользоваться EPM, так как во время установки будет также установлен пакет **Индикатор Яндекс.Диск** обеспечивающий графическое взаимодействие между Яндекс Диском и Пользователем.
-
-```shell
-epm play yandex-disk
-```
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Настройка Яндекс Диск
 

@@ -1,0 +1,26 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="116.205" x2="600.205" y1="66" y2="-488.08">
+        <stop offset="0" stop-color="#b2d1e9"/>
+        <stop offset="0.136" stop-color="#c0c6cd"/>
+        <stop offset="0.453" stop-color="#d2dee8"/>
+        <stop offset="0.72" stop-color="#bfc5ce"/>
+        <stop offset="0.937" stop-color="#dbe2e8"/>
+        <stop offset="1" stop-color="#e4e6e8"/>
+    </linearGradient>
+    <linearGradient id="b" gradientTransform="matrix(0 0.26563 -0.26563 0 88.251 -6.523)" gradientUnits="userSpaceOnUse" x1="99.846" x2="431.139" y1="91.301" y2="91.301">
+        <stop offset="0" stop-color="#f6d32d"/>
+        <stop offset="1" stop-color="#f9f06b"/>
+    </linearGradient>
+    <radialGradient id="c" cx="273.943" cy="67.198" gradientTransform="matrix(0.25657 -0.06875 0.06875 0.2566 -10.396 58.824)" gradientUnits="userSpaceOnUse" r="56">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset="1" stop-color="#c4c5c3"/>
+    </radialGradient>
+    <path d="m 20 12 h 88 a 8 8 0 0 1 8 8 v 88 a 8 8 0 0 1 -8 8 h -88 a 8 8 0 0 1 -8 -8 v -88 a 8 8 0 0 1 8 -8 z m 0 0" fill="url(#a)"/>
+    <path d="m 124 64 c 0 33.137 -26.863 60 -60 60 s -60 -26.863 -60 -60 s 26.863 -60 60 -60 s 60 26.863 60 60 z m 0 0" fill="url(#a)"/>
+    <path d="m 116 64 c 0 28.719 -23.281 52 -52 52 s -52 -23.281 -52 -52 c 0 -28.723 23.281 -52.004 52 -52.004 s 52 23.281 52 52.004 z m 0 0"/>
+    <path d="m 112 64 c 0 26.508 -21.492 48 -48 48 s -48 -21.492 -48 -48 c 0 -26.512 21.492 -48.004 48 -48.004 s 48 21.492 48 48.004 z m 0 0" fill="#2a2a3b"/>
+    <path d="m 64 108 c -24.3 0 -44 -19.7 -44 -44 s 19.7 -44 44 -44 s 44 19.7 44 44 s -19.7 44 -44 44 z m 0 0" fill="url(#b)"/>
+    <path d="m 84 64 c 0 11.047 -8.953 20 -20 20 s -20 -8.953 -20 -20 s 8.953 -20.004 20 -20.004 s 20 8.957 20 20.004 z m 0 0"/>
+    <path d="m 79.453 59.86 c 2.29 8.535 -2.777 17.308 -11.312 19.597 c -8.536 2.285 -17.309 -2.781 -19.594 -11.316 c -2.29 -8.536 2.777 -17.309 11.312 -19.598 c 8.536 -2.285 17.309 2.781 19.594 11.316 z m 0 0" fill="url(#c)"/>
+    <path d="m 24 106 c 0 1.125 -0.895 2.035 -2 2.035 s -2 -0.91 -2 -2.035 s 0.895 -2.035 2 -2.035 s 2 0.91 2 2.035 z m 84 0 c 0 1.125 -0.895 2.035 -2 2.035 s -2 -0.91 -2 -2.035 s 0.895 -2.035 2 -2.035 s 2 0.91 2 2.035 z m 0 -84 c 0 1.125 -0.895 2.035 -2 2.035 s -2 -0.91 -2 -2.035 s 0.895 -2.035 2 -2.035 s 2 0.91 2 2.035 z m -84 0 c 0 1.125 -0.895 2.035 -2 2.035 s -2 -0.91 -2 -2.035 s 0.895 -2.035 2 -2.035 s 2 0.91 2 2.035 z m 0 0"/>
+</svg>

@@ -1,46 +1,40 @@
 ---
-title: Brave Browser
-appstreamFlatpak: com.brave.Browser
-metainfo:
-    active: true
-    thumb:
-        src: /brave/com.brave.Browser.png
-        title: Brave Browser
+aggregation: 
+    flatpak: 
+        id: com.brave.Browser
+        build: offical
+    epm: 
+        play:
+            id: brave 
+            build: unoffical
+appstream:
+    id: com.brave.Browser
+    name: Brave Browser
+    icon: /brave/brave-logo.svg
     summary: Веб-браузер от Brave
+    metadata_license: 
+        name: MPL-2.0 licence
+        link: https://choosealicense.com/licenses/mpl-2.0/
     developer: 
         name: Brave Software
-    site:
-        url: https://brave.com/
-        anchor: brave.com
-    licence:
-        url: https://www.mozilla.org/en-US/MPL/2.0/
-        anchor: MPL-2.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    flathub:
-        url: https://flathub.org/apps/com.brave.Browser
+    url: 
+        homepage: https://brave.com/
+        bugtracker: https://github.com/brave/brave-browser/issues
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /brave/brave-1.png
+        - src: /brave/brave-2.png
 ---
 
-# Brawe Browser
+# Brave Browser
 
-Brawe Browser — веб-браузер со свободным и открытым исходным кодом на основе веб-браузера Chromium на движке Blink.
+Brave Browser — веб-браузер со свободным и открытым исходным кодом на основе веб-браузера Chromium на движке Blink.
 
-## Установка с помощью Flatpak
+<AGWGallery />
 
-При наличии пакета [Flatpak](/flatpak), можно установить **Brawe Browser** одной командой:
 
-```shell
-flatpak install flathub com.brave.Browser
-```
-<!--@include: ./parts/install/software-flatpak.md-->
-
-<!--@include: ./parts/warns/unpriveleged-spases.md -->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Brawe Browser** одной командой:
-
-```shell
-epm play brave
-```
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/install/content-epm-play.md-->

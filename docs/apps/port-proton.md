@@ -1,3 +1,29 @@
+---
+aggregation:
+    sisyphus: portproton
+    epm:
+        play:
+            id: portproton
+            build: offical
+appstream:
+    id: portproton
+    name: PortProton
+    icon: /port-proton/port-proton-logo.svg
+    summary: Проект, разработанный командой linux-gaming.ru для того, чтобы сделать легким и удобным запуск Windows игр. 
+    developer: 
+        name: Mikhail Tergoev & Linux Gaming Community
+        nickname: Castro-Fidel 
+        avatar: /port-proton/port-proton-avatar.png
+    metadata_license: 
+        name: MIT License
+        link: https://choosealicense.com/licenses/mit/
+    url: 
+        homepage: https://linux-gaming.ru/
+        bugtracker: https://discord.com/invite/SFc65A2FJ6
+---
+
+
+
 # PortProton
 
 PortProton — проект, разработанный командой linux-gaming.ru (бывший проект PortWINE) для того, чтобы сделать легким и удобным запуск Windows игр на Linux как для начинающих, так и для продвинутых пользователей. Проект стремится сделать запуск игр (и другого программного обеспечения) максимально простым, но в то же время предоставляет гибкие настройки для продвинутых пользователей.
@@ -53,10 +79,4 @@ wget -c "https://github.com/Castro-Fidel/PortWINE/raw/master/portwine_install_sc
 Мы рекомендуем перед установкой PortProton обновить операционную систему и ядро до актуального состоятия.
 :::
 
-## Установка c помощью epm play
-
-При наличии пакета [eepm](/epm), можно установить **PortProton** одной командой:
-
-```shell
-epm play portproton
-```
+<!--@include: @apps/_parts/install/content-epm-play.md -->

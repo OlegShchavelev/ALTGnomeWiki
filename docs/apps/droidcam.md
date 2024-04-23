@@ -23,6 +23,8 @@ appstream:
 
 DroidCam — приложение позволяющее превратить ваше мобильное устройство в веб-камеру для вашего компьютера.
 
+![Droidcam](/droidcam/droidcam-1.png)
+
 <!--@include: @apps/_parts/install/content-repo.md-->
 
 ## Настройка DroidCam

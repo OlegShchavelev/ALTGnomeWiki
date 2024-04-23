@@ -19,11 +19,19 @@ appstream:
     url: 
         homepage: https://github.com/tchx84/flatseal
         bugtracker: https://github.com/tchx84/flatseal/issues
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /flatseal/flatseal-1.png
+        - src: /flatseal/flatseal-2.png
 ---
 
 # Flatseal
 
 Flatseal — графическая утилита для просмотра и управления вашими приложениями Flatpak.
+
+<AGWGallery />
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

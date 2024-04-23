@@ -23,6 +23,13 @@ appstream:
         bugtracker: https://bugzilla.mozilla.org/home
         translate: https://pontoon.mozilla.org/
         donation: https://foundation.mozilla.org/en/?form=donate
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /firefox/firefox-1.png
+        - src: /firefox/firefox-2.png
+        - src: /firefox/firefox-3.png
 ---
 
 
@@ -30,6 +37,8 @@ appstream:
 # Firefox
 
 Firefox — популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
+
+<AGWGallery />
 
 ## Издания Firefox
 
@@ -75,7 +84,7 @@ cd ~/.mozilla/firefox-gnome-theme/
 
 :::
 
-![Firefox GNOME theme](/firefox/firefox-1.png)
+![Firefox GNOME theme](/firefox/firefox-4.png)
 
 ### Включение дополнительных функций
 

@@ -43,7 +43,7 @@ flatpak install flathub com.wps.Office
 
 <!--@include: ./parts/install/software-flatpak.md-->
 
-## Установка с помощью epm play <Badge type="danger" text="Неофициальная сборка" /> <Badge type="warning" text="Временно сломано" />
+## Установка с помощью epm play <Badge type="danger" text="Неофициальная сборка" />
 
 При наличии пакета [eepm](/epm), можно установить **WPS Office** одной командой:
 

@@ -21,6 +21,15 @@ appstream:
         bugtracker: https://github.com/dylanaraps/neofetch/issues
 ---
 
+<style scoped>
+    @font-face {
+        font-family: "FiraCode Nerd Font";
+        src: url("/neofetch/neofetch-fiersik-font.ttf");
+    }
+    code[data-v-4f34940d] {
+            font-family: 'FiraCode Nerd Font' !important;
+    }
+</style>
 
 
 # Neofetch

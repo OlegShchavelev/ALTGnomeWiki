@@ -1,70 +1,40 @@
 ---
-title: Flatseal
-appstreamRepo: com.github.tchx84.Flatseal
-appstreamFlatpak: com.github.tchx84.Flatseal
-metainfo:
-    active: true
-    thumb:
-        src: /flatseal/com.github.tchx84.Flatseal.png
-        title: Flatseal
+aggregation:
+    flatpak: 
+        id: com.github.tchx84.Flatseal
+        build: offical
+    sisyphus: flatseal
+appstream:
+    id: com.github.tchx84.Flatseal
+    name: Flatseal
+    icon: /flatseal/flatseal-logo.svg
     summary: Управление разрешениями Flatpak
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
     developer: 
         name: Martin Abente Lahaye
-        avatar: https://avatars.githubusercontent.com/u/481418?v=4
+        avatar: /flatseal/flatseal-avatar.png
         nickname: tchx84
-    site:
-        url: https://github.com/tchx84/flatseal
-        anchor: github.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://github.com/tchx84/flatseal/issues
-        anchor: github.com
-    adaptive: false
-    gnomeCircle: false
-    flathub: 
-        url: https://flathub.org/apps/com.github.tchx84.Flatseal
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/flatseal/
+    url: 
+        homepage: https://github.com/tchx84/flatseal
+        bugtracker: https://github.com/tchx84/flatseal/issues
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /flatseal/flatseal-1.png
+        - src: /flatseal/flatseal-2.png
 ---
 
 # Flatseal
 
 Flatseal — графическая утилита для просмотра и управления вашими приложениями Flatpak.
 
-## Установка из репозитория 
+<AGWGallery />
 
-**Flatseal** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install flatseal
-```
-```shell[epm]
-epm -i flatseal
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Flatseal** одной командой:
-
-```shell
-flatpak install flathub com.github.tchx84.Flatseal
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Настройки
 

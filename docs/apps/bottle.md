@@ -1,68 +1,33 @@
 ---
-title: Bottles
-appstreamRepo: com.usebottles.bottles
-appstreamFlatpak: com.usebottles.bottles
-metainfo:
-    active: true
-    thumb:
-        src: /bottles/com.usebottles.bottles.png
-        title: Bottles
+aggregation:
+    flatpak: 
+        id: com.usebottles.bottles
+        build: offical
+    sisyphus: bottles
+appstream:
+    id: com.usebottles.bottles
+    name: Bottles
+    icon: /bottles/bottles-logo.svg
     summary: Запуск программ Windows
     developer: 
         name: Bottles Contributors
-    site:
-        url: https://usebottles.com/
-        anchor: usebottles.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GPL-3.0
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    issue: 
-        url: https://github.com/bottlesdevs/Bottles/issues
-        anchor: github.com/bottlesdevs
-    createTheme: true
-    flathub:
-        url: https://flathub.org/apps/com.usebottles.bottles
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/bottles/
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    keywords: 
+        - dontthemes
+    url: 
+        homepage: https://usebottles.com/
+        bugtracker: https://github.com/bottlesdevs/Bottles/issues
+        translate: https://hosted.weblate.org/engage/bottles/
+        help: https://docs.usebottles.com/
 ---
 
 # Bottles
 
 Bottles — приложение, которое позволяет вам легко управлять и использовать Windows приложения игры.
 
-## Установка из репозитория
+![Bottles](/bottles/bottles-1.png)
 
-**Bottles** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install bottles
-```
-```shell[epm]
-epm -i bottles
-```
-
-:::
-
-
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Bottles** одной командой:
-
-```shell
-flatpak install flathub com.usebottles.bottles
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

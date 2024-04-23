@@ -1,25 +1,29 @@
 ---
-title: LibreOffice
-nameRepo: LibreOffice
-appstreamRepo: org.libreoffice.LibreOffice
-appstreamFlatpak: org.libreoffice.LibreOffice
-metainfo:
-    thumb:
-        src: /libreoffice/org.libreoffice.LibreOffice.desktop.png
-        title: Boxes
+aggregation:
+    sisyphus: LibreOffice-still
+    flatpak: 
+        id: org.libreoffice.LibreOffice
+        build: offical
+appstream:
+    id: org.libreoffice.LibreOffice
+    name: LibreOffice
+    icon: /libreoffice/org.libreoffice.LibreOffice.desktop.png
     summary: Мощный офисный пакет LibreOffice
+    metadata_license: 
+        name: MPL-v2.0
+        link: https://www.mozilla.org/en-US/MPL/2.0/
     developer: 
-        name: LibreOffice
-    site:
-        url: https://www.libreoffice.org/discover/libreoffice/
-        anchor: libreoffice.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue: 
-        url: https://bugs.documentfoundation.org/
-        anchor: documentfoundation.org
+        name: The Document Foundation
+    url:
+        homepage: https://www.libreoffice.org/
+        bugtracker:
+            name: documentfoundation.org
+            link: https://bugs.documentfoundation.org/
+        donation: https://www.libreoffice.org/donate/
+        translate: https://www.libreoffice.org/community/localization/
 ---
+
+
 
 # LibreOffice
 
@@ -28,8 +32,6 @@ LibreOffice — мощный офисный пакет, полностью со�
 ## Установка из репозитория
 
 **LibreOffice** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
 
 **Установка через терминал**
 
@@ -59,15 +61,7 @@ epm -i LibreOffice LibreOffice-gtk3
 :::
 
 
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **LibreOffice** одной командой:
-
-```shell
-flatpak install flathub org.libreoffice.LibreOffice
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Шрифты в LibreOffice
 

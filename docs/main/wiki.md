@@ -54,7 +54,7 @@ docs:
                 - name: Lutris
                   link: lutris
                 - name: Bottles
-                  link: bottles
+                  link: bottle
                 - name: Сartridges
                   link: cartridges
                 - name: Grapejuice

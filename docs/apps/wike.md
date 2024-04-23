@@ -1,63 +1,39 @@
 ---
-title: Wike
-nameRepo: wike
-appstreamFlatpak: com.github.hugolabe.Wike
-metainfo:
-    thumb:
-        src: /wike/com.github.hugolabe.Wike.png
-        title: Wike
-    summary: Воспроизводит музыку и ничего больше
+aggregation:
+    sisyphus: wike
+    flatpak: 
+        id: com.github.hugolabe.Wike
+        build: offical
+    snap: 
+        id: wike
+        build: unoffical
+appstream:
+    id: alacarte.desktop
+    name: Wike
+    icon: /wike/wike-logo.svg
+    summary: Программа для чтения Википедии для рабочего окружения GNOME. 
+    keywords: 
+        - adaptive
+        - circle
+        - dontthemes
     developer: 
-        name: GNOME World
-    site:
-        url: https://hugolabe.github.io/Wike/
-        anchor: hugolabe.github.io
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate: 
-        url: https://poeditor.com/join/project?hash=kNgJu4MAum
-        anchor: poeditor.com
-    issue: 
-        url: https://github.com/hugolabe/Wike/issues
-        anchor: github.com
-    adaptive: true,
-    createTheme: true
-    gnomeCircle: true
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://apps.gnome.org/Wike/
+        bugtracker: https://github.com/hugolabe/Wike/issues
 --- 
 
 # Wike
 
 Wike - программа для чтения Википедии для рабочего окружения GNOME. Предоставляет доступ ко всему содержимому этой онлайн-энциклопедии в собственном приложении с более простым и не отвлекающим от просмотра статей интерфейса.
 
-## Установка из репозитория
-
-**Wike** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install wike
-```
-```shell[epm]
-epm -i wike
-```
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Wike** одной командой:
-
-```shell
-flatpak install flathub org.pipewire.Helvum
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->
 
 ## Язык поиска статей Википедии
 

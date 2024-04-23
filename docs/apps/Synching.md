@@ -1,3 +1,27 @@
+---
+title: Syncthing
+appstreamRepo: me.kozec.syncthingtk
+aggregation:
+    flatpak: me.kozec.syncthingtk
+appstream:
+    id: me.kozec.syncthingtk
+    name: Syncthing
+    icon: /syncthing/syncthing-logo.svg
+    summary: Приложение, позволяющее синхронизировать файлы между несколькими устройствами.
+    developer: 
+        name: kozec
+        avatar: /syncthing/syncthing-avatar.png
+    metadata_license: 
+        name: GNU GPLv2
+        link: https://choosealicense.com/licenses/gpl-2.0/
+    url: 
+        homepage: https://github.com/kozec/syncthing-gtk
+        bugtracker: https://github.com/kozec/syncthing-gtk/issues
+        translate: https://explore.transifex.com/syncthing-gtk/syncthing-gtk/
+---
+
+
+
 # Syncthing
 Syncthing — приложение, позволяющее синхронизировать файлы между несколькими устройствами. Присутствует поддержка сохранения последовательных версий файла по нескольким алгоритмам, включая пользовательский, что позволяет использовать Syncthing также для целей резервного копирования, хотя это и не рекомендуется. Приложение и протокол публикуются под открытой лицензией.
 

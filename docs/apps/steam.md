@@ -1,31 +1,33 @@
 ---
-title: Steam
-appstreamFlatpak: com.valvesoftware.Steam
-metainfo:
-    active: true
-    thumb:
-        src: /steam/com.valvesoftware.Steam.png
-        title: Steam
+aggregation:
+    sisyphus: steam
+    flatpak: 
+        id: com.valvesoftware.Steam
+        build: unoffical
+    epm:
+        play:
+            id: steam
+            build: unoffical
+appstream:
+    id: steam.desktop
+    name: Steam
+    icon: /steam/steam-logo.svg
     summary: Клиент для платформы Steam
+    keywords: 
+        - proprietary
+        - restrictions
     developer: 
         name: Valve Software
         avatar: https://avatars.githubusercontent.com/u/3082775?s=200&v=4
-    site:
-        url: https://store.steampowered.com/
-        anchor: store.steampowered.com
-    licence:
-        url: https://choosealicense.com/licenses/cc0-1.0/
-        anchor: CC0-1.0
-    issue: 
-        url: https://help.steampowered.com/ru/
-        anchor: help.steampowered.com
-    proprietary: true
-    restrictions: true
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/steam/
-    flathub:
-        url: https://flathub.org/ru/apps/com.valvesoftware.Steam
+    metadata_license: 
+        name: Собственная
+        link: https://store.steampowered.com/eula/243950_eula_0
+    url: 
+        homepage: https://store.steampowered.com/
+        bugtracker: https://github.com/ValveSoftware/steam-for-linux/issues 
 ---
+
+
 
 # Steam
 
@@ -35,39 +37,10 @@ Steam — онлайн-сервис цифрового распростране�
 Для корректной работы Steam рекомендуется использовать установку с помощью epm play
 :::
 
-## Установка из репозитория
 
-**Steam** можно установить с помощью терминала:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install steam
-```
-```shell[epm]
-epm -i steam
-```
-:::
-
-## Установка c помощью Flatpak <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Steam** одной командой:
-
-```shell
-flatpak install flathub com.valvesoftware.Steam
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-## Установка c помощью epm play <Badge type="danger" text="Неофициальная сборка" />
-
-При наличии пакета [eepm](/epm), можно установить **Steam** одной командой:
-
-```shell
-epm play steam
-```
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Как поменять язык в Steam
 
@@ -177,3 +150,4 @@ STEAM_FORCE_DESKTOPUI_SCALING = 1.25
 ```shell
 flatpak override --user --env=STEAM_FORCE_DESKTOPUI_SCALING=1.25 com.valvesoftware.Steam
 ```
+

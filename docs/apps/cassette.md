@@ -1,67 +1,43 @@
 ---
-title: Cassette
-nameRepo: cassette
-appstreamRepo: io.github.Rirusha.Cassette
-appstreamFlatpak: io.github.Rirusha.Cassette
-metainfo:
-    thumb:
-        src: /cassette/io.github.Rirusha.Cassette.png
-        title: Кассета
+aggregation: 
+    sisyphus: cassette
+    flatpak: 
+        id: io.github.Rirusha.Cassette
+        build: offical
+appstream:
+    id: io.github.Rirusha.Cassette
+    name: Cassette
+    icon: /cassette/cassette-logo.svg
     summary: Неофициальный клиент Яндекс Музыки
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    keywords: 
+        - dontthemes
     developer: 
         name: Владимир Васьков
         nickname: Rirusha
         avatar: https://avatars.githubusercontent.com/u/95986183?v=4
-    site:
-        url: https://github.com/Rirusha/Cassette
-        anchor: github.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue: 
-        url: https://github.com/Rirusha/Cassette/issues
-        anchor: github.com
-    createTheme: true
-    sponsor: 
-        url: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
+    url: 
+        homepage: https://github.com/Rirusha/Cassette
+        bugtracker: https://github.com/Rirusha/Cassette/issues
+        donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /cassette/cassette-1.png
+        - src: /cassette/cassette-2.png
 ---
 
 # Cassette
 
 Cassette — неофициальный клиент сервиса Яндекс Музыки.
 
-## Установка из репозитория
+<AGWGallery />
 
-**Cassette** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install сassette
-```
-```shell[epm]
-epm -i сassette
-```
-
-:::
-
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Cassette** одной командой:
-
-```shell
-flatpak install flathub io.github.Rirusha.Cassette
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Nightly версия
 
@@ -128,7 +104,7 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 У пользователей с графическим адаптаром NVIDIA (неизвестный диапозон устройств) и c закрытыми драйверами не отображается интерфейс авторизации Яндекс ID.
 :::
 
-![Пример проблемы с отображением интерфейса при авторизации](/cassette/casseta-1.png)
+![Пример проблемы с отображением интерфейса при авторизации](/cassette/cassette-3.png)
 
 Если у вас flatpak версия, то выполните в терминале:
 ```shell

@@ -1,34 +1,34 @@
 ---
-title: Amberol
-nameRepo: amberol
-nameSnap: amberol
-appstreamRepo: io.bassi.Amberol
-appstreamFlatpak: io.bassi.Amberol
 gallery: 
     title: Галерея
-    type: carousel
+    type: slider
     items: 
         - src: /amberol/amberol-1.png
         - src: /amberol/amberol-2.png
         - src: /amberol/amberol-3.png
-metainfo:
-    thumb:
-        src: /amberol/io.bassi.Amberol.png
-        title: Boxes
+aggregation:
+    snap: 
+        id: amberol
+        build: unoffical
+    flatpak: io.bassi.Amberol
+    sisyphus: amberol
+appstream:
+    id: io.bassi.Amberol
+    name: Amberol
+    icon: /amberol/amberol-logo.svg
     summary: Воспроизводит музыку и ничего больше
+    keywords: 
+        - adaptive
+        - circle
     developer: 
-        name: GNOME World
-    site:
-        url: https://gitlab.gnome.org/World/amberol
-        anchor: gitlab.gnome.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    issue: 
-        url: https://gitlab.gnome.org/World/amberol/-/issues
-        anchor: gitlab.gnome.org
-    adaptive: true,
-    gnomeCircle: true
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://gitlab.gnome.org/World/amberol/
+        bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
 ---
 
 # Amberol
@@ -45,4 +45,6 @@ Amberol воспроизводит музыку, и ничего больше.
 
 <AGWGallery />
 
-<!--@include: ./parts/install/software-install.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

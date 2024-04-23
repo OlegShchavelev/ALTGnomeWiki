@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg enable-background="new 0 0 98 26" version="1.1" viewBox="-1.78 -7.87 42.161 40.616" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#3A3A3A;}
+        .st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#e);}
+        .st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#d);}
+        .st3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#f);}
+</style>
+  <title>WPS_LOGO_Normal</title>
+  <g transform="translate(-83 -19)">
+    <g transform="translate(83.026 19)">
+      <linearGradient id="e" x1="-1119.6" x2="-1119.6" y1="590.42" y2="591.41" gradientTransform="matrix(38.43 0 0 -25.945 43045 15344)" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FF5100" offset="0"/>
+        <stop stop-color="#FF1522" offset="1"/>
+      </linearGradient>
+      <path class="st1" d="m23.2 24.2-3.1-6.4 2.6-5.5 3 6.2 6.2-13c0.1-0.3 0-0.7-0.3-0.8-0.1 0-0.2-0.1-0.3-0.1h-6.8l-9.4 19.6c-0.6 1.4-2.2 2-3.6 1.5-0.7-0.3-1.2-0.8-1.5-1.4v-0.1l-9.8-20.7c-0.6-1.2 0-2.7 1.2-3.3 0.4-0.1 0.8-0.2 1.1-0.2h11.8c1.5 0 2.8 0.8 3.5 2.1l0.5 1-2.6 5.5-1.6-3.3c-0.2-0.4-0.7-0.7-1.1-0.7h-6c-0.3 0-0.6 0.3-0.6 0.6 0 0.1 0 0.2 0.1 0.3l6.2 13 6.5-13.5 1.4-2.8c0.6-1.4 1.9-2.2 3.4-2.2h11.9c1.4 0 2.5 1.1 2.5 2.5 0 0.4-0.1 0.7-0.2 1.1l-9.9 20.7c-0.6 1.4-2.2 2.1-3.6 1.5-0.7-0.3-1.2-0.8-1.5-1.6z"/>
+      <linearGradient id="d" x1="-1062.5" x2="-1062.5" y1="562.25" y2="563.02" gradientTransform="matrix(13.208 0 0 -11.502 14056 6476.2)" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FD7821" stop-opacity="0" offset="0"/>
+        <stop stop-color="#FF5100" offset="0.4893"/>
+        <stop stop-color="#FF9B27" offset="1"/>
+      </linearGradient>
+      <path class="st2" d="m21.3 11.5h-5.3l0.5-1 2.7-5.5 1.4-2.8c0.6-1.4 1.9-2.2 3.4-2.2h5.3-0.2c-1.4 0.1-2.7 0.9-3.2 2.1l-4.3 8.9-0.3 0.5z"/>
+      <linearGradient id="f" x1="-1066" x2="-1066.5" y1="562.63" y2="563.16" gradientTransform="matrix(13.805 0 0 -11.545 14751 6502.7)" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FD7821" stop-opacity="0" offset="0"/>
+        <stop stop-color="#881000" stop-opacity=".9245" offset="1"/>
+      </linearGradient>
+      <path class="st3" d="m35.9 0c1.4 0 2.5 1.1 2.5 2.5 0 0.4-0.1 0.7-0.2 1.1l-3.8 8-5-0.5 2.6-5.5c0.1-0.3 0-0.7-0.3-0.8-0.1 0-0.2-0.1-0.3-0.1h-6.8l1.2-2.5c0.6-1.3 1.9-2.2 3.4-2.2h6.7z"/>
+    </g>
+  </g>
+</svg>

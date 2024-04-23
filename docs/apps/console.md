@@ -1,22 +1,40 @@
+---
+aggregation:
+    sisyphus: gnome-console
+appstream:
+    id: console.desktop
+    name: Console
+    icon: /console/console-logo.svg
+    summary: Простой и удобный эмулятор терминала для рабочего стола GNOME.
+    developer: 
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://apps.gnome.org/Console/
+        bugtracker: https://gitlab.gnome.org/GNOME/console/-/issues
+        translate: https://l10n.gnome.org/module/console/
+        donation: https://www.gnome.org/donate/
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /console/console-1.png
+        - src: /console/console-2.png
+---
+
+
+
+
 # Console 
 
 Console — Простой и удобный эмулятор терминала для рабочего стола GNOME.
 
-## Установка из репозитория 
+<AGWGallery />
 
-**Console** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-console
-```
-```shell[epm]
-epm -i console
-```
-:::
+<!--@include: @apps/_parts/install/content-repo.md-->
 
 ## Удаление GNOME Terminal
 

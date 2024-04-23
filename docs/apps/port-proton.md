@@ -1,28 +1,25 @@
 ---
-title: PortProton
-nameRepo: portproton
-appstreamRepo: ru.linux_gaming.PortProton
-appstreamFlatpak: ru.linux_gaming.PortProton
-metainfo:
-    thumb:
-        src: /portproton/ru.linux_gaming.PortProton.png
-        title: PortProton
-    summary: Программа для запуска игр с Windows
-    developer:
-        name: Михаил Тергоев
-        nickname: Castro-Fidel
-        avatar: https://avatars.githubusercontent.com/u/57610802?v=4
-    site:
-        url: https://linux-gaming.ru/
-        anchor: linux-gaming.ru/
-    licence:
-        url: https://choosealicense.com/licenses/mit/
-        anchor: MIT
-    issue:
-        url: https://github.com/Castro-Fidel/PortWINE/issues
-        anchor: github.com
-    sponsor:
-        url: https://linux-gaming.ru/t/podderzhat-proekt/123
+aggregation:
+    sisyphus: portproton
+    epm:
+        play:
+            id: portproton
+            build: offical
+appstream:
+    id: portproton
+    name: PortProton
+    icon: /port-proton/port-proton-logo.svg
+    summary: Проект, разработанный командой linux-gaming.ru для того, чтобы сделать легким и удобным запуск Windows игр. 
+    developer: 
+        name: Mikhail Tergoev & Linux Gaming Community
+        nickname: Castro-Fidel 
+        avatar: /port-proton/port-proton-avatar.png
+    metadata_license: 
+        name: MIT License
+        link: https://choosealicense.com/licenses/mit/
+    url: 
+        homepage: https://linux-gaming.ru/
+        bugtracker: https://discord.com/invite/SFc65A2FJ6
 ---
 
 # PortProton
@@ -80,20 +77,4 @@ wget -c "https://github.com/Castro-Fidel/PortWINE/raw/master/portwine_install_sc
 Мы рекомендуем перед установкой PortProton обновить операционную систему и ядро до актуального состоятия.
 :::
 
-## Установка c помощью epm play
-
-При наличии пакета [eepm](/epm), можно установить **PortProton** одной командой:
-
-```shell
-epm play portproton
-```
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **PortProton** одной командой:
-
-```shell
-flatpak install flathub ru.linux_gaming.PortProton
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md -->

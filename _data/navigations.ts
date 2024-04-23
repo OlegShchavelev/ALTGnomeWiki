@@ -79,6 +79,7 @@ export const docs = [
           { text: 'Speedtest CLI', link: '/speedtest-cli' },
           { text: 'Spotify', link: '/spotify' },
           { text: 'Steam', link: '/steam' },
+          { text: 'Synching', link: '/Synching'},
           { text: 'Telegram', link: '/telegram' },
           { text: 'Thunderbird', link: '/thunderbird' },
           { text: 'Timeshift', link: '/timeshift' },
@@ -106,6 +107,7 @@ export const docs = [
           { text: 'Дела', link: '/errands' },
           { text: 'Мой офис', link: '/my-office' },
           { text: 'Музыка', link: '/gnome-music' },
+          { text: 'МТС Линк', link: '/mts-link' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },
@@ -278,6 +280,14 @@ export const docs = [
             ],
             collapsed: true
           }
+        ],
+        collapsed: true
+      },
+      {
+        text: 'Игры',
+        link: '/games',
+        items: [
+          { text: 'Изменение clearcpuid', link: '/clearcpuid' }
         ],
         collapsed: true
       }

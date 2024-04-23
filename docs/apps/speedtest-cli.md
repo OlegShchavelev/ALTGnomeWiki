@@ -1,3 +1,24 @@
+---
+aggregation:
+    sisyphus: speedtest-cli
+appstream:
+    id: speedtest-cli.desktop
+    name: Speedtest CLI
+    icon: /speedtest-cli/speedtest-cli-logo.png
+    summary: Интерфейс командной строки для тестирования пропускной способности интернета с помощью сервиса speedtest.net.
+    developer: 
+        name: Matt Martz & Community
+        nickname: sivel 
+        avatar: /speedtest-cli/speedtest-cli-avatar.png
+    metadata_license: 
+        name: 
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://github.com/sivel/speedtest-cli
+---
+
+
+
 # Speedtest CLI
 
 Speedtest CLI — Интерфейс командной строки для тестирования пропускной способности интернета с помощью сервиса speedtest.net.

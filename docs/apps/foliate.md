@@ -1,29 +1,27 @@
 ---
-title: Foliate
-appstreamFlatpak: com.github.johnfactotum.Foliate
-
-metainfo:
-    active: true
-    thumb:
-        src: https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.Foliate-stable/1248x702/com.github.johnfactotum.Foliate-7ff807e57358053b92037e50c60f32a3.png
-        title: Foliate
+aggregation:
+    flatpak: 
+        id: com.github.johnfactotum.Foliate
+        build: offical
+    sisyphus: foliate
+    snap:
+        id: foliate
+        build: unoffical
+appstream:
+    id: com.github.johnfactotum.Foliate
+    name: Foliate
+    icon: /foliate/foliate-logo.svg
     summary: Стильная читалка электронных книг
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
     developer: 
         name: John Factotum
-    site:
-        url: https://github.com/johnfactotum/foliate
-        anchor: github.com
-    licence:
-        url: 
-        anchor: GPL version 3 of the License, or (at your option) any later version.
-    translate:
-        url: 
-        anchor: 
-    issue: 
-        url: https://github.com/johnfactotum/foliate/issues
-        anchor: github.com
-    flathub:
-        url: https://flathub.org/apps/com.github.johnfactotum.Foliate
+        nickname: johnfactotum 
+        avatar: /foliate/foliate-avatar.png
+    url: 
+        homepage: https://github.com/johnfactotum/foliate/
+        bugtracker: https://github.com/johnfactotum/foliate/issues/
 ---
 
 # Foliate
@@ -45,25 +43,6 @@ Foliate имеет следующие функции:
 - Поиск по книге
 - Быстрый поиск по словарю
 
-## Установка через терминал
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install foliate
-```
-```shell[epm]
-epm -i foliate
-```
-:::
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Foliate** одной командой:
-
-```shell
-flatpak install flathub com.github.johnfactotum.Foliate
-```
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

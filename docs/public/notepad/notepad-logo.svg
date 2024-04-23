@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="128px" viewBox="0 0 128 128" width="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="20.000378" x2="108.000256" y1="67.999991" y2="67.999991">
+        <stop offset="0" stop-color="#26a269"/>
+        <stop offset="0.0466872" stop-color="#57e389"/>
+        <stop offset="0.153677" stop-color="#26a269"/>
+        <stop offset="0.847675" stop-color="#26a269"/>
+        <stop offset="0.948918" stop-color="#57e389"/>
+        <stop offset="1" stop-color="#26a269"/>
+    </linearGradient>
+    <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="25.00028850625" x2="103.0002845278" y1="61.99996343771" y2="61.99996343771">
+        <stop offset="0" stop-color="#9a9996"/>
+        <stop offset="0.0503428" stop-color="#bfbfbf"/>
+        <stop offset="0.145119" stop-color="#9a9996"/>
+        <stop offset="0.854841" stop-color="#9a9996"/>
+        <stop offset="0.953763" stop-color="#bfbfbf"/>
+        <stop offset="1" stop-color="#9a9996"/>
+    </linearGradient>
+    <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="63.99999171392" x2="63.99999171392" y1="7.99999410238" y2="17.99999136337">
+        <stop offset="0" stop-color="#c0bfbc"/>
+        <stop offset="1" stop-color="#9a9996"/>
+    </linearGradient>
+    <linearGradient id="d" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#5e5c64"/>
+        <stop offset="1" stop-color="#3d3846"/>
+    </linearGradient>
+    <radialGradient id="e" cx="76.24999345674" cy="13.49999329946" r="1.75000077736" xlink:href="#d"/>
+    <linearGradient id="f" gradientUnits="userSpaceOnUse" x1="25.00028850625" x2="103.0002845278" y1="59.99996247371" y2="59.99996247371">
+        <stop offset="0" stop-color="#e7e6e2"/>
+        <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <radialGradient id="g" cx="51.74999945674" cy="13.49999329946" r="1.75000077736" xlink:href="#d"/>
+    <path d="m 28 16 h 72 c 4.417969 0 8 3.582031 8 8 v 88 c 0 4.417969 -3.582031 8 -8 8 h -72 c -4.417969 0 -8 -3.582031 -8 -8 v -88 c 0 -4.417969 3.582031 -8 8 -8 z m 0 0" fill="url(#a)"/>
+    <path d="m 28 8 h 72 c 4.417969 0 8 3.582031 8 8 v 92 c 0 4.417969 -3.582031 8 -8 8 h -72 c -4.417969 0 -8 -3.582031 -8 -8 v -92 c 0 -4.417969 3.582031 -8 8 -8 z m 0 0" fill="#33d17a"/>
+    <path d="m 36 16 h 56 c 4.417969 0 8 3.582031 8 8 v 79 c 0 4.417969 -3.582031 8 -8 8 h -56 c -4.417969 0 -8 -3.582031 -8 -8 v -79 c 0 -4.417969 3.582031 -8 8 -8 z m 0 0" fill="url(#b)"/>
+    <path d="m 47 8 h 34 c 1.65625 0 3 1.34375 3 3 v 4 c 0 1.65625 -1.34375 3 -3 3 h -34 c -1.65625 0 -3 -1.34375 -3 -3 v -4 c 0 -1.65625 1.34375 -3 3 -3 z m 0 0" fill="url(#c)"/>
+    <path d="m 78 13.5 c 0 0.964844 -0.785156 1.75 -1.75 1.75 s -1.75 -0.785156 -1.75 -1.75 s 0.785156 -1.75 1.75 -1.75 s 1.75 0.785156 1.75 1.75 z m 0 0" fill="url(#e)"/>
+    <path d="m 36 16 h 56 c 4.417969 0 8 3.582031 8 8 v 75 c 0 4.417969 -3.582031 8 -8 8 h -56 c -4.417969 0 -8 -3.582031 -8 -8 v -75 c 0 -4.417969 3.582031 -8 8 -8 z m 0 0" fill="url(#f)"/>
+    <path d="m 45 16 h 38 v 5 h -38 z m 0 0" fill="#deddda"/>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="bevel">
+        <path d="m 39.99999526392 39.99999440841 h 31.99999652651" stroke="#77767b" stroke-width="5.9999991125"/>
+        <path d="m 39.99999526392 63.99999085841 h 47.99999667953" stroke="#77767b" stroke-width="5.9999991125"/>
+        <path d="m 39.99999526392 87.99999108794 h 41.99999756703" stroke="#77767b" stroke-width="5.9999991125"/>
+    </g>
+    <path d="m 53.5 13.5 c 0 0.964844 -0.785156 1.75 -1.75 1.75 s -1.75 -0.785156 -1.75 -1.75 s 0.785156 -1.75 1.75 -1.75 s 1.75 0.785156 1.75 1.75 z m 0 0" fill="url(#g)"/>
+    <path d="m 46.99218068635 7.9999978819 h 34.01562205514 c 1.65234495244 0 2.99218727394 1.33984610103 2.99218727394 2.99218727394 v 7.01562604889 c 0 1.65234117291 -1.3398423215 2.99218727394 -2.99218727394 2.99218727394 h -34.01562205514 c -1.65234117291 0 -2.99218727394 -1.33984610103 -2.99218727394 -2.99218727394 v -7.01562604889 c 0 -1.65234117291 1.33984610103 -2.99218727394 2.99218727394 -2.99218727394 z m 0 0" fill="none" stroke="#3d3846" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="3.99999814849"/>
+</svg>

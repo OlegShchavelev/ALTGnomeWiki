@@ -17,14 +17,14 @@ import markdownItTaskLists from 'markdown-it-task-lists'
 import markdownItImplicitFigures from 'markdown-it-implicit-figures'
 import markdownItEmbed from 'markdown-it-html5-embed'
 import markdownItConditionalRender from 'markdown-it-conditional-render'
-import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs' 
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 
-/* GitLog */ 
+/* GitLog */
 import UnoCSS from 'unocss/vite'
-import { 
+import {
   GitChangelog,
-  GitChangelogMarkdownSection 
+  GitChangelogMarkdownSection
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
  
 /* PagePropierties */
@@ -59,7 +59,7 @@ export default defineConfig({
         },
         excludes: [],
         exclude: (_, { helpers }): boolean => {
-          for (var page of config.nolebase_exclude){
+          for (var page of config.nolebase_exclude) {
             if (helpers.idEndsWith(page))
               return true
           }
@@ -183,6 +183,68 @@ export default defineConfig({
     footer: {
       message: 'Содержание доступно <a href="/licence.html">по лицензии MIT</a>',
       copyright: '2024 ALT Gnome Wiki, разработано на платформе <a href="//vitepress.dev/">VitePress 1.0.0-rc.45</a>'
+    },
+    asideMeta: {
+      keywords: {
+        core: {
+          name: 'GNOME Core',
+          type: 'info'
+        },
+        circle: {
+          name: 'GNOME Circle',
+          type: 'success'
+        },
+        adaptive: {
+          name: 'Адаптивное',
+          type: 'tip'
+        },
+        proprietary: {
+          name: 'Проприетарное',
+          type: 'danger'
+        },
+        restrictions: {
+          name: 'Региональные ограничения',
+          type: 'danger'
+        },
+        dontthemes: {
+          name: 'Please don’t theme',
+          type: 'success-1'
+        }
+      },
+      lists: {
+        labels: {
+          metadata_license: 'Лицензия',
+          homepage: 'Сайт проекта',
+          help: 'Помощь',
+          translate: 'Помощь в переводе',
+          bugtracker: 'Сообщить о проблеме'
+        },
+      },
+      links: {
+        donation: {
+          anchor: 'Поддержать автора',
+          target: '_blank',
+          style: '--agw-btn-bg: var(--vp-c-purple-soft); --agw-btn-color: var(--vp-c-purple-3); --agw-btn-hover-bg:var(--vp-c-purple-3); --agw-btn-hover-color: var(--vp-c-white);'
+        },
+        sisyphus: {
+          anchor: 'Сизиф',
+          target: '_blank',
+          baseUrl: '//packages.altlinux.org/ru/sisyphus/srpms/',
+          style: '--agw-btn-bg: var(--vp-c-yellow-dimm-1); --agw-btn-color: var(--vp-c-yellow-darker); --agw-btn-hover-bg:var(--vp-c-yellow-dark); --agw-btn-hover-color: var(--vp-c-white);'
+        },
+        flatpak: {
+          anchor: 'Flatpak',
+          target: '_blank',
+          baseUrl: '//flathub.org/apps/',
+          style: '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
+        },
+        snap: {
+          anchor: 'Snapcraft',
+          target: '_blank',
+          baseUrl: '//snapcraft.io/',
+          style: '--agw-btn-bg: var(--vp-c-orange-dimm-1); --agw-btn-color: var(--vp-c-orange-darker); --agw-btn-hover-bg:var(--vp-c-orange-dark); --agw-btn-hover-color: var(--vp-c-white);'
+        }
+      }
     }
   },
   rewrites: rewrites,

@@ -1,29 +1,22 @@
 ---
-title: Alacarte
-appstreamRepo: alacarte.desktop
-metainfo:
-    active: true
-    thumb:
-        src: /alacarte/alacarte-desktop.png
-        title: Alacarte
+aggregation:
+    sisyphus: alacarte
+appstream:
+    id: alacarte.desktop
+    name: Alacarte
+    icon: /alacarte/alacarte-logo.svg
     summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+    keywords: 
+        - adaptive
     developer: 
-        name: The GNOME Project
-    site:
-        url: https://www.gnome.org/
-        anchor: gnome.org
-    licence:
-        url: https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html
-        anchor: LGPL v2
-    issue: 
-        url: https://gitlab.gnome.org/GNOME/alacarte/-/issues
-        anchor: gitlab.gnome.org
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/alacarte/
-
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    metadata_license: 
+        name: GNU LGPLv2
+        link: https://www.gnu.org/licenses/old-licenses/lgpl-2.0.en.html
+    url: 
+        homepage: https://gitlab.gnome.org/GNOME/alacarte
+        bugtracker: https://gitlab.gnome.org/GNOME/alacarte
 ---
 
 
@@ -32,20 +25,6 @@ metainfo:
 
 Alacarte — редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
 
-## Установка из репозитория
+![Alacarte](/alacarte/alacarte-1.png)
 
-**Alacarte** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install alacarte
-```         
-```shell[epm]
-epm -i alacarte
-```
-:::
-<!--@include: ./parts/install/software-repo.md-->
-
+<!--@include: @apps/_parts/install/content-repo.md-->

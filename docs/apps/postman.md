@@ -1,52 +1,39 @@
 ---
-title: Postman
-appstreamFlatpak: com.getpostman.Postman
-metainfo:
-    active: true
-    thumb:
-        src: /postman/com.getpostman.Postman.png
-        title: Postman
+aggregation:
+    flatpak: 
+        id: com.getpostman.Postman
+        build: offical
+    epm:
+        play:
+            id: postaman
+            build: unoffical
+appstream:
+    id: com.getpostman.Postman
+    name: Postman
+    icon: /postman/postman-logo.png
     summary: Платформа для тестирования ваших собственных API
-    developer: 
+    keywords:
+        - proprietary
+    developer:
         name: Postman Inc.
-    site:
-        url: https://www.postman.com/
-        anchor: postman.com
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: CC0-1.0
-    proprietary: true
-    translate:
-        url: 
-        anchor: hosted.weblate.org
-    flathub:
-        url: https://flathub.org/ru/apps/com.getpostman.Postman
+    metadata_license:
+        name: Собственная
+        link: https://www.postman.com/legal/terms/
+    url:
+        homepage: https://www.postman.com/
 ---
 
 # Postman
 
 Postman — сервис для создания, тестирования, документирования, публикации и обслуживания API. Он позволяет создавать коллекции запросов к любому API, применять к ним разные окружения, настраивать мок-серверы, писать автотесты на JavaScript, анализировать и визуализировать результаты запросов.
 
-## Установка с помощью EPM
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ::: info
 Актуально с версии **EPM 3.60.11**
 :::
 
-Для установки **Postman** с помощью EPM введите в терминале команду
-
-```shell
-epm play postman
-```
-
-## Установка с помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Postman** одной командой:
-
-```shell
-flatpak install flathub com.getpostman.Postman
-```
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Установка вручную
 

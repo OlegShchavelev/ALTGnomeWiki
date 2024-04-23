@@ -1,26 +1,36 @@
 ---
-title: WPS Office
-appstreamRepo: com.wps.Office
-appstreamFlatpak: com.wps.Office
-
-metainfo:
-    active: true
-    thumb:
-        src: /wps-office/wps-office-free-all-in-one-office-suite.d880717.png
-        title: WPS Office
+aggregation:
+    flatpak: 
+        id: com.wps.Office
+        build: unoffical
+    epm:
+        play:
+            id: wpsoffice
+            build: unoffical
+appstream:
+    id: com.wps.Office
+    name: WPS Office
+    icon: /wps-office/wps-office-logo.svg
     summary: Универсальный пакет Office приложений
-    site:
-        url: https://www.wps.com/ru-RU/
-        anchor: wps.com
-    issue: 
-        url: https://help.wps.com/
-        anchor: help.wps.com
-    adaptive: false
-    gnomeCore: false
-    gnomeCircle: false
-    proprietary: true
-    flathub:
-        url: https://flathub.org/ru/apps/com.wps.Office
+    keywords: 
+        - proprietary
+    developer: 
+        name: Kingsoft Corporation
+        avatar: /wps-office/wps-office-avatar.png
+    metadata_license: 
+        name: Собственная
+        link: https://www.wps.com/eula/
+    url: 
+        homepage: https://www.wps.com/office/linux/
+        bugtracker: https://help.wps.com/
+gallery: 
+    title: Галерея
+    type: slider
+    items: 
+        - src: /wps-office/wps-office-1.png
+        - src: /wps-office/wps-office-2.png
+        - src: /wps-office/wps-office-3.png
+        - src: /wps-office/wps-office-4.png
 ---
 
 # WPS Office
@@ -33,23 +43,10 @@ WPS Office включает следующие приложения:
 - Presentation
 - PDF
 
-## Установка с помощью Flatpak <Badge type="danger" text="Неофициальная сборка" /> <Badge type="warning" text="Устаревшая версия" />
+<AGWGallery />
 
-При наличии пакета [Flatpak](/flatpak), можно установить **WPS Office** одной командой:
-
-```shell
-flatpak install flathub com.wps.Office
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-
-## Установка с помощью epm play <Badge type="danger" text="Неофициальная сборка" /> <Badge type="warning" text="Временно сломано" />
-
-При наличии пакета [eepm](/epm), можно установить **WPS Office** одной командой:
-
-```shell
-epm play wpsoffice
-```
+<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Установка с официального сайта
 Зайдите на [официальный сайт производителя](https://www.wps.com/).

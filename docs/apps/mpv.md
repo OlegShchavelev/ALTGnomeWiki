@@ -1,34 +1,38 @@
+---
+aggregation: 
+    sisyphus: mpv
+    flatpak: io.mpv.Mpv
+appstream:
+    id: io.mpv.Mpv
+    name: MPV
+    icon: /mpv/mpv-logo.svg
+    summary: Свободный легковесный кроссплатформенный медиаплеер.
+    metadata_license: 
+        name: GNU GPLv2
+        link: https://choosealicense.com/licenses/gpl-2.0/
+    developer: 
+        name: MPV Community
+    url: 
+        homepage: https://mpv.io/
+        bugtracker: https://github.com/mpv-player/mpv/issues
+---
+
+
+
 # MPV
 
 MPV — Свободный легковесный кроссплатформенный медиаплеер. Поддерживает множество форматов медиафайлов и субтитров.
 
+
+::: info
+Для лучшей интеграции со средой GNOME можно воспользоваться альтернативным интерфейсом MPV — [Celluloid](/celluloid).
+:::
+
 ![Draw attention to the window](/mpv/mpv.png)
 
 
-## Установка из репозитория 
-
-**MPV** можно установить через терминал:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install mpv
-```
-
-```shell[epm]
-epm -i mpv
-```
-::: 
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Mpv** одной командой:
-
-```shell
-flatpak install flathub io.mpv.Mpv
-```
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Проблемы с замедлением видео
 

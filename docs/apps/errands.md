@@ -1,6 +1,4 @@
 ---
-title: Errands
-appstreamRepo: io.github.mrvladus.List
 appstreamFlatpak: io.github.mrvladus.List
 nameRepo: errands
 gallery: 
@@ -9,23 +7,24 @@ gallery:
     items: 
         - src: /errands/errands-1.png
         - src: /errands/errands-2.png
-metainfo:
-    thumb:
-        src: /errands/io.github.mrvladus.List.png
-        title: Evince
+aggregation:
+    flatpak: io.github.mrvladus.List
+    sisyphus: errands
+appstream:
+    id: io.github.mrvladus.List
+    name: Дела
+    icon: /errands/errands-logo.svg
     summary: Управляйте своими задачами
-    site:
-        url: https://apps.gnome.org/ru/List/
-        anchor: apps.gnome.org
-    licence:
-        url: https://choosealicense.com/licenses/gpl-3.0/
-        anchor: GNU GPLv3
-    translate:
-        url: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
-        anchor: github.com
-    issue:
-        url: https://github.com/mrvladus/Errands/issues
-        anchor: github.com
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    developer: 
+        name: GNOME
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+    url: 
+        homepage: https://apps.gnome.org/ru/List/
+        translate: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
+        bugtracker: https://github.com/mrvladus/Errands/issues
 ---
 
 # Дела
@@ -44,33 +43,5 @@ metainfo:
 
 <AGWGallery />
 
-## Установка из репозитория
-
-**Errands** можно установить любым привычным и удобным способом:
-
-<!--@include: ./parts/install/software-repo.md-->
-
-**Установка через терминал**
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install errands
-```
-```shell[epm]
-epm -i errands
-```
-
-:::
-
-## Установка c помощью Flatpak
-
-При наличии пакета [Flatpak](/flatpak), можно установить **Errands** одной командой:
-
-```shell
-flatpak install flathub io.github.mrvladus.List
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

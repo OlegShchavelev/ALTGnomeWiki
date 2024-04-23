@@ -1,6 +1,8 @@
 export const getLists = (data: any | ArrayLike<unknown>, labels: any) => {
 
-    const _data = {}
+    if (!data) return
+
+    const _data = []
 
     Object.entries(data).forEach(([key, value]) => {
         (value && key !== 'donation') ?
@@ -8,27 +10,29 @@ export const getLists = (data: any | ArrayLike<unknown>, labels: any) => {
             : {}
     })
 
-    return _data
+    return Object.assign({}, _data)
 }
 
 export const getLinks = (data: any, config: {}) => {
 
-    const _data = {}
+    if (!data) return
+
+    const _data = []
 
     Object.entries(data).forEach(([key, value]) => {
         (value && config[key]) ?
-            _data[key] = Object.assign({}, { id: value }, config[key])
+            _data[key] = Object.assign({}, { id: value?.id ?? value }, config[key])
             : {}
     })
 
-    return _data
+    return Object.assign({}, _data)
 }
 
 export const getKeywords = (data: any, config: {}) => {
 
-    const _data = {}
-
     if(!data) return
+
+    const _data = []
 
     Object.values(data).forEach((value: string) => {
         (value && config[value]) ?
@@ -36,7 +40,7 @@ export const getKeywords = (data: any, config: {}) => {
             : {}
     })
 
-    return _data
+    return Object.assign({}, _data)
 
 }
 

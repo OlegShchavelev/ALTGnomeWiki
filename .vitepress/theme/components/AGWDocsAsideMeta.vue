@@ -11,40 +11,52 @@ import { getLists, getLinks, getKeywords, getLicence, getDonation } from '../com
 
 const { frontmatter, theme } = useData();
 
-const thumb = computed(() => frontmatter.value?.appstream?.icon ? {
-    src: frontmatter.value?.appstream?.icon?.src ?? frontmatter.value?.appstream?.icon,
-    title: frontmatter.value?.appstream?.icon.title ?? frontmatter.value?.appstream?.name ?? null
-} : {})
-const title = computed(() => frontmatter.value?.appstream?.summary)
-const lists = computed(() => getLists(Object.assign({}, getLicence(frontmatter.value?.appstream?.metadata_license), frontmatter.value?.appstream?.url), theme.value?.asideMeta?.lists?.labels ?? {}))
-const links = computed(() => getLinks(Object.assign({}, getDonation(frontmatter.value?.appstream?.url.donation), frontmatter.value.aggregation), theme.value?.asideMeta?.links ?? {}))
-const keywords = computed(() => getKeywords(frontmatter.value?.appstream?.keywords, theme.value?.asideMeta?.keywords))
-const developer = computed(() => frontmatter.value?.appstream?.developer)
-const hasAsideMeta = computed(() => title.value || thumb.value?.src || developer.value)
+const props = computed(() => {
+
+    if (!frontmatter.value.appstream) return
+
+    const { icon, name, summary, metadata_license, developer, keywords, url } = frontmatter.value.appstream
+    const links = frontmatter.value.aggregation
+    const config = theme.value.asideMeta
+
+    return {
+        thumb: icon,
+        name: name,
+        title: summary,
+        keywords: getKeywords(keywords, config.keywords),
+        developer: developer,
+        lists: getLists({ ...getLicence(frontmatter.value?.appstream?.metadata_license), ...url }, config.lists.labels),
+        links: getLinks({ ...getDonation(url.donation), ...links }, config.links)
+    }
+
+})
 
 </script>
 
 <template>
-    <article v-if="hasAsideMeta" class="AKWDocsAsideMeta">
-        <figure class="figure" v-if="thumb.src">
-            <VPImage :image="thumb.src" :alt="thumb.title" />
+    <article v-if="props" class="AKWDocsAsideMeta">
+        <figure class="figure" v-if="props.thumb">
+            <VPImage :image="props.thumb" :alt="props.thumb.alt ?? props.name" />
         </figure>
         <div class="body">
-            <div v-if="title" class="title">{{ title }}</div>
-            <AGWAsideMetaKeyword :keywords="keywords" />
-            <div v-if="developer" class="developers">
-                <figure v-if="developer?.avatar" class="avatar">
-                    <VPImage :image="developer?.avatar" :alt="developer?.name" />
+            <div v-if="props.title" class="title">{{ props.title }}</div>
+            <AGWAsideMetaKeyword :keywords="props.keywords" />
+            <div v-if="props.developer" class="developers">
+                <figure v-if="props.developer?.avatar" class="avatar">
+                    <VPImage :image="props.developer?.avatar" :alt="props.developer?.name" />
                 </figure>
                 <div>
                     <div class="caption">Разработчик</div>
-                    <div class="name">{{ developer?.name }}<span class="nickname">{{ developer?.nickname }}</span>
+                    <div class="name">{{ props.developer?.name }}
+                        <span class="nickname">
+                            {{ props.developer?.nickname }}
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-        <AGWAsideMetaList :lists="lists" />
-        <AGWAsideMetaLink :links="links" />
+        <AGWAsideMetaList :lists="props.lists" />
+        <AGWAsideMetaLink :links="props.links" />
     </article>
 </template>
 
@@ -66,7 +78,7 @@ const hasAsideMeta = computed(() => title.value || thumb.value?.src || developer
 
 .title {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bold;  
     margin-bottom: 8px;
 }
 

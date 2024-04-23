@@ -1,9 +1,9 @@
 ---
 aggregation: 
-    sisyphus: 
-        id: cassette
+    sisyphus: cassette
+    flatpak: 
+        id: io.github.Rirusha.Cassette
         build: offical
-    flatpak: io.github.Rirusha.Cassette
 appstream:
     id: io.github.Rirusha.Cassette
     name: Cassette

@@ -269,7 +269,8 @@ inxi -G
 - https://wiki.archlinux.org/title/Mac/Troubleshooting# - решение проблем с маком
 - https://github.com/0xbb/gpu-switch GPU переключатель на маках
 - https://nixaid.com/linux-on-macbookpro-old/ не плохая статья можно подчерпнуть что-то полезное
-- http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1 кастомизации для бука 2013 16" 11.3 
+- http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1 кастомизации для бука 2013 16" 11.3
+- https://github.com/patjak/facetimehd/issues/196 Вопрос про камеру и почему не работает драйвер из статьи
 
 # ToDo
 - [ ] Табличку поддержки может добавить, что работает, а что нет

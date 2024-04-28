@@ -42,6 +42,7 @@ export const docs = [
           { text: 'Firefox', link: '/firefox' },
           { text: 'Flatseal', link: '/flatseal' },
           { text: 'Foliate', link: '/foliate' },
+          { text: 'Footage', link: '/footage' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
           { text: 'G4Music', link: '/g4music' },

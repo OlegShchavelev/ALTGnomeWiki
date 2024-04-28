@@ -46,6 +46,7 @@ export const docs = [
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
           { text: 'G4Music', link: '/g4music' },
+          { text: 'Gaphor', link: '/gaphor' },
           { text: 'GDM Настройки', link: '/gdm-settings' },
           { text: 'Git', link: '/git' },
           { text: 'GitHub Desktop', link: '/github-desktop' },

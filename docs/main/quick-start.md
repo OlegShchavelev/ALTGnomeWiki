@@ -163,3 +163,24 @@ gsettings set org.gnome.desktop.interface show-battery-percentage false
 ```
 :::
  
+## Сетевое администрирование
+
+### Как узнать какие стандарты Wi-Fi поддерживает модуль?
+
+Чтобы узнать, какие стандарты Wi-Fi поддерживает ваш модуль в ALT Regular Gnome, введите в терминале:
+
+```shell
+lspci | egrep -i --color 'wifi|wlan|wireless'
+```
+
+| Cтарндарт        |      Альтернативное обозначение      |  Год выпуск |
+| ------------- | ----------- | ---- |
+| 802.11n      | Wi-Fi 4 | 2009 |
+| 802.11ac      |   Wi-Fi 5    |   2013 |
+| 802.11ax |   Wi-Fi 6    |    2019 |
+
+:::details Пример вывода команды
+```shell
+02:00.0 Network controller: Realtek Semiconductor Co., Ltd. RTL8852BE PCIe 802.11ax Wireless Network Controller
+```
+:::

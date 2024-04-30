@@ -6,7 +6,7 @@ aggregation:
         build: offical
 appstream:
     id: io.github.Rirusha.Cassette
-    name: Cassette
+    name: Кассета
     icon: /cassette/cassette-logo.svg
     summary: Неофициальный клиент Яндекс Музыки
     metadata_license: 
@@ -30,9 +30,9 @@ gallery:
         - src: /cassette/cassette-2.png
 ---
 
-# Cassette
+# Кассета
 
-Cassette — неофициальный клиент сервиса Яндекс Музыки.
+Кассета — неофициальный клиент сервиса Яндекс Музыки.
 
 <AGWGallery />
 
@@ -73,10 +73,10 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 Реализовать работу с плейлистами, проигрывание музыки, работу с очередью воспроизведения
 :::
 ::: timeline 0.2
-Моя волна
+Крупный релиз. Намечается работа с радио и всё из этого вытекающее
 :::
 ::: timeline 0.3
-Альбомы и исполнители
+Оптимизация работы клиента и приложения в целом. Изменение логики работы виджетов списков треков. Добавление view виджетов для альбомов и исполнителей.
 :::
 ::: timeline 0.4
 Поиск по сервису

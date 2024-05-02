@@ -23,6 +23,7 @@ export const docs = [
           { text: 'Blender', link: '/blender' },
           { text: 'Bottles', link: '/bottle' },
           { text: 'Boxes', link: '/boxes' },
+          { text: 'Boxy SVG', link: '/boxy-svg' },
           { text: 'Brave Browser', link: '/brave' },
           { text: 'Сartridges', link: '/cartridges' },
           { text: 'Celluloid', link: '/celluloid' },

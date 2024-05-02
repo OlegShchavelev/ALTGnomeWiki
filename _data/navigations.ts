@@ -76,6 +76,7 @@ export const docs = [
           { text: 'PortProton', link: '/port-proton' },
           { text: 'Postman', link: '/postman' },
           { text: 'PinApp', link: '/pin-app' },
+          { text: 'Piper', link: '/piper' },
           { text: 'qBittorrent', link: '/q-bittorrent' },
           { text: 'Skype', link: '/skype' },
           { text: 'Speedtest CLI', link: '/speedtest-cli' },

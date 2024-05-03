@@ -73,9 +73,9 @@ epm Upgrade
 
 :::
 
-## Полное обновление системы командой epm full-upgrade
+#### Полное обновление системы командой `epm full-upgrade`
 
-Команда epm full-upgrade помимо пакетов позволяет обновить также ядро системы, пакеты установленные через [epm play](https://alt-gnome.wiki/epm.html#утилита-epm-play), а также flatpak приложения:
+Команда `epm full-upgrade` помимо пакетов позволяет обновить также ядро системы, пакеты установленные через [epm play](https://alt-gnome.wiki/epm.html#утилита-epm-play), а также flatpak приложения:
 
 Использование:
 

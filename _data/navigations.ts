@@ -29,6 +29,7 @@ export const docs = [
           { text: 'Celluloid', link: '/celluloid' },
           { text: 'Chromium', link: '/chromium' },
           { text: 'Console', link: '/console' },
+          { text: 'Desktop Files Creator', link: 'desktop-files-creator' }, 
           { text: 'Dialect', link: '/dialect' },
           { text: 'Discord', link: '/discord' },
           { text: 'Docker', link: '/docker' },

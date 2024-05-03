@@ -1,4 +1,4 @@
-# ALTRegularGnomeWiki
+# ALT Gnome Wiki
 
 База знаний открытого сообщества пользователей операционной системы ALT Linux с графическим окружением GNOME.
 

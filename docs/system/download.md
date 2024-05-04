@@ -23,4 +23,4 @@
 
 ## Запись на DVD и USB Flash
 
-[AltMediaWriter](https://www.altlinux.org/Запись_образов_на_DVD_и_USB_Flash)
+[ALT Media Writer](https://www.altlinux.org/Запись_образов_на_DVD_и_USB_Flash)

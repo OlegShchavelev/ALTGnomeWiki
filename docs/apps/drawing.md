@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: drawing
-    flatpak: 
+    flatpak:
         id: com.github.maoschanz.drawing
         build: offical
 appstream:
@@ -9,14 +9,14 @@ appstream:
     name: Drawing
     icon: /drawing/drawing-logo.svg
     summary: простой редактор изображений, похожий на Microsoft Paint.
-    developer: 
+    developer:
         name: Romain F. T.
         nickname: maoschanz
         avatar: /drawing/drawing-author.png
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://maoschanz.github.io/drawing/
         bugtracker: https://github.com/maoschanz/drawing/issues
         donation: https://www.paypal.com/paypalme/maoschannz

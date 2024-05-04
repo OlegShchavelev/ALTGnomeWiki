@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.microsoft.Edge
         build: unoffical
     epm:
@@ -12,7 +12,7 @@ appstream:
     name: Microsoft Edge
     icon: /microsoft-edge/microsoft-edge-logo.svg
     summary: Веб-браузер от Microsoft
-    metadata_license: 
+    metadata_license:
         name: CC0-1.0
         link: https://choosealicense.com/licenses/cc0-1.0/
     keywords:

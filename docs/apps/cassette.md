@@ -1,7 +1,7 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: cassette
-    flatpak: 
+    flatpak:
         id: io.github.Rirusha.Cassette
         build: offical
 appstream:
@@ -9,23 +9,23 @@ appstream:
     name: Кассета
     icon: /cassette/cassette-logo.svg
     summary: Неофициальный клиент Яндекс Музыки
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords: 
+    keywords:
         - dontthemes
-    developer: 
+    developer:
         name: Владимир Васьков
         nickname: Rirusha
         avatar: https://avatars.githubusercontent.com/u/95986183?v=4
-    url: 
+    url:
         homepage: https://github.com/Rirusha/Cassette
         bugtracker: https://github.com/Rirusha/Cassette/issues
         donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /cassette/cassette-1.png
         - src: /cassette/cassette-2.png
 ---
@@ -42,7 +42,7 @@ gallery:
 ## Nightly версия
 
 ::: warning
-Данная версия каждую ночь собирается и обновляется из dev ветки приложения, поэтому может оказаться нестабильной 
+Данная версия каждую ночь собирается и обновляется из dev ветки приложения, поэтому может оказаться нестабильной
 :::
 
 Подключаем репозиторий gnome-nightly и устанавливаем GNOME Platform:

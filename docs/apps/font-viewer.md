@@ -7,15 +7,15 @@ appstream:
     name: Шрифты
     icon: /font-viewer/font-viewer-logo.svg
     summary: Просмотр шрифтов, доступных в системе
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords: 
+    keywords:
         - core
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    url: 
+    url:
         homepage: https://apps.gnome.org/ru/FontViewer/
         bugtracker: https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/issues/
 ---

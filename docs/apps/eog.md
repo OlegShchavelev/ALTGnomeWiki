@@ -1,5 +1,5 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: eog
     flatpak: org.gnome.eog
 appstream:
@@ -7,13 +7,13 @@ appstream:
     name: Глаз Gnome
     icon: /eog/eog-logo.svg
     summary: Официальная утилита для рабочего окружения GNOME, которая поддерживает множество форматов, позволяя просматривать как отдельные изображения, так и коллекции.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    url: 
+    url:
         homepage: https://wiki.gnome.org/Apps/EyeOfGnome
         bugtracker: https://gitlab.gnome.org/GNOME/eog/-/issues
         translate: https://l10n.gnome.org/module/eog/

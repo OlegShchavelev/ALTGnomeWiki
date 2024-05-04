@@ -1,7 +1,7 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: fragments
-    flatpak: 
+    flatpak:
         id: de.haeckerfelix.Fragments
         build: offical
 appstream:
@@ -13,13 +13,13 @@ appstream:
         - adaptive
         - circle
         - dontthemes
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: Felix Häcker
         avatar: /fragments/fragments-avatar.png
-    url: 
+    url:
         homepage: https://apps.gnome.org/Fragments/
         bugtracker: https://gitlab.gnome.org/World/Fragments/-/issues
         translate: https://l10n.gnome.org/module/Fragments/

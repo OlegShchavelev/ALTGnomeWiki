@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.icons8.Lunacy
         build: unoffical
     epm:
@@ -14,10 +14,10 @@ appstream:
     summary: Программа для векторной графики нового поколения для пользовательского интерфейса, UX и веб-дизайна.
     keywords:
         - proprietary
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://lunacy.docs.icons8.com/lunacy%20license/
-    developer: 
+    developer:
         name: ICONS8
         avatar: /lunacy/lunacy-avatar.png
     url:

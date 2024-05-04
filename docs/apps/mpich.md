@@ -12,7 +12,7 @@ apt-get install gcc-c++
 Скачиваем, разархивировываем и переходим в неё:
 ```shell
 wget https://github.com/pmodels/mpich/releases/download/v4.1.2/mpich-4.1.2.tar.gz
-tar -xvf mpich-4.1.2.tar.gz 
+tar -xvf mpich-4.1.2.tar.gz
 cd mpich-4.1.2
 ```
 

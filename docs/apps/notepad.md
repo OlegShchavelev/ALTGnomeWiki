@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.github.alexkdeveloper.notepad
         build: offical
 appstream:
@@ -14,7 +14,7 @@ appstream:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     developer:
-        name: Alex K 
+        name: Alex K
         nickname: alexkdeveloper
         avatar: /notepad/notepad-avatar.png
     url:

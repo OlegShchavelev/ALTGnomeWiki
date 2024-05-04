@@ -1,7 +1,7 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: dialect
-    flatpak: 
+    flatpak:
         id: app.drey.Dialect
         build: offical
 appstream:
@@ -9,26 +9,26 @@ appstream:
     name: Dialect
     icon: /dialect/dialect-logo.svg
     summary: Простое приложение для перевода с различными дополнениями для улучшения процесса.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords: 
+    keywords:
         - dontthemes
         - adaptive
         - circle
-    developer: 
+    developer:
         name: The Dialect Authors
-    url: 
+    url:
         homepage: https://github.com/dialect-app/dialect
-        bugtracker: 
+        bugtracker:
             name: github.com
             link: https://github.com/dialect-app/dialect/issues
         translate: https://hosted.weblate.org/engage/dialect/
         donation: https://opencollective.com/dialect
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /dialect/dialect-1.png
         - src: /dialect/dialect-3.png
         - src: /dialect/dialect-2.png

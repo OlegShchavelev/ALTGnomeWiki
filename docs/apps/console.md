@@ -6,21 +6,21 @@ appstream:
     name: Console
     icon: /console/console-logo.svg
     summary: Простой и удобный эмулятор терминала для рабочего стола GNOME.
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://apps.gnome.org/Console/
         bugtracker: https://gitlab.gnome.org/GNOME/console/-/issues
         translate: https://l10n.gnome.org/module/console/
         donation: https://www.gnome.org/donate/
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /console/console-1.png
         - src: /console/console-2.png
 ---
@@ -28,7 +28,7 @@ gallery:
 
 
 
-# Console 
+# Console
 
 Console — Простой и удобный эмулятор терминала для рабочего стола GNOME.
 
@@ -55,13 +55,13 @@ epm -e gnome-terminal
 
 ### Приложение
 
-| Комбинация клавиш |      Описание      | 
+| Комбинация клавиш |      Описание      |
 | ----------------- | ------------------ |
 | [[Shift]] + [[Ctrl]] + [[N]] | Новое окно |
 
 ### Терминал
 
-| Комбинация клавиш |      Описание      | 
+| Комбинация клавиш |      Описание      |
 | ----------------- | ------------------ |
 | [[Shift]] + [[Ctrl]] + [[C]] | Копировать |
 | [[Shift]] + [[Ctrl]] + [[V]] | Вставить |
@@ -69,7 +69,7 @@ epm -e gnome-terminal
 
 ## Вкладки
 
-| Комбинация клавиш |      Описание      | 
+| Комбинация клавиш |      Описание      |
 | ----------------- | ------------------ |
 | [[Shift]] + [[Ctrl]] + [[T]] | Новая вкладка |
 | [[Shift]] + [[Ctrl]] + [[W]] | Закрыть вкладку |
@@ -83,7 +83,7 @@ epm -e gnome-terminal
 
 ## Запуск Console используя комбинацию клавиш
 
-По-умолчанию в **ALT Regular Gnome** не предусмотрена комбинация клавиш для открытия **Консоли (Console)**, но вы можете назначить удобную для себя комбинацию в настройках **Gnome**
+По-умолчанию в **ALT Regular Gnome** не предусмотрена комбинация клавиш для открытия **Консоли (Console)**, но вы можете назначить удобную для себя комбинацию в настройках **GNOME**
 
 Откройте Настройки -> Просмотр и изменение комбинации клавиш -> Дополнительные комбинации клавиш.
 

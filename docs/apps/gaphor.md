@@ -6,12 +6,12 @@ appstream:
     name: Gaphor
     icon: /gaphor/org.gaphor.Gaphor.png
     summary: Элегантное воспроизведение вашей музыки
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: Gaphor
-    url: 
+    url:
         homepage: https://gaphor.org/
         translate: https://hosted.weblate.org/projects/gaphor/gaphor/
         bugtracker: https://github.com/gaphor/gaphor/issues/

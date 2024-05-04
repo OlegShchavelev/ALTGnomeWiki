@@ -1,6 +1,6 @@
 ---
-aggregation: 
-    flatpak: 
+aggregation:
+    flatpak:
         id: io.github.Figma_Linux.figma_linux
         build: unoffical
     epm:
@@ -12,12 +12,12 @@ appstream:
     name: Figma
     icon: /figma/figma-logo.svg
     summary: Неофициальная версия Figma для Linux построенная на Electron.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv2
         link: https://github.com/Figma-Linux/figma-linux/blob/master/LICENSE
-    developer: 
+    developer:
         name: Figma Linux Community
-    url: 
+    url:
         homepage: https://github.com/Figma-Linux/figma-linux/tree/master
         bugtracker: https://github.com/Figma-Linux/figma-linux/issues
 ---
@@ -36,7 +36,7 @@ Figma — неофициальная версия Figma для Linux постр�
 
 ## Установка из репозитория GitHub
 
-Загрузите пакет `.rpm` со страницы релизов приложения `figma-linux` сервиса Github, затем установите через терминал: 
+Загрузите пакет `.rpm` со страницы релизов приложения `figma-linux` сервиса Github, затем установите через терминал:
 
 ::: code-group
 

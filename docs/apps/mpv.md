@@ -1,5 +1,5 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: mpv
     flatpak: io.mpv.Mpv
 appstream:
@@ -7,12 +7,12 @@ appstream:
     name: MPV
     icon: /mpv/mpv-logo.svg
     summary: Свободный легковесный кроссплатформенный медиаплеер.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv2
         link: https://choosealicense.com/licenses/gpl-2.0/
-    developer: 
+    developer:
         name: MPV Community
-    url: 
+    url:
         homepage: https://mpv.io/
         bugtracker: https://github.com/mpv-player/mpv/issues
 ---
@@ -60,7 +60,7 @@ hwdec=vaapi
 vo=dmabuf-wayland
 ```
 
-## Проблемы с «потуханием» экрана при просмотре видео 
+## Проблемы с «потуханием» экрана при просмотре видео
 
 Для решения это проблемы существует два решения:
 
@@ -77,7 +77,7 @@ stop-screensaver
 gnome-session-inhibit mpv video.mp4
 ```
 
-Для этого можно прямо указать, как написано выше, либо заходим в **/usr/share/applications/mpv.desktop** и после **Exec=** перед **mpv**  пишем **gnome-session-inhibit** 
+Для этого можно прямо указать, как написано выше, либо заходим в **/usr/share/applications/mpv.desktop** и после **Exec=** перед **mpv**  пишем **gnome-session-inhibit**
 
 2. Более простое решение
 
@@ -85,7 +85,7 @@ gnome-session-inhibit mpv video.mp4
 Ниже вариант предпочтительный
 :::
 
-Устанавливаем расширение для Gnome - Caffeine
+Устанавливаем расширение для GNOME - Caffeine
 
 ::: code-group
 

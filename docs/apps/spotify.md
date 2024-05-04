@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.spotify.Clientflatpak
         build: unoffical
     epm:
@@ -12,15 +12,15 @@ appstream:
     name: Spotify
     icon: /spotify/spotify-logo.svg
     summary: Музыкальный стриминговый сервис.
-    keywords: 
+    keywords:
         - restrictions
         - proprietary
-    developer: 
+    developer:
         name: Spotify Technology S.A.
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://www.spotify.com/legal
-    url: 
+    url:
         homepage: https://www.spotify.com/
         bugtracker: https://community.spotify.com/t5/Desktop-Linux/bd-p/desktop_linux
 ---

@@ -4,7 +4,7 @@
 
 ### Где скачать ALT Regular Gnome?
 
-Загрузить ISO образ дистрибутива можно по ссылкам: [x86_64](https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso), [aarch64](http://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso) 
+Загрузить ISO образ дистрибутива можно по ссылкам: [x86_64](https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso), [aarch64](http://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso)
 
 ### Какие DE поддерживаются?
 
@@ -73,9 +73,9 @@ epm Upgrade
 
 :::
 
-##Полное обновление системы командой epm full-upgrade
+#### Полное обновление системы командой `epm full-upgrade`
 
-Команда epm full-upgrade помимо пакетов позволяет обновить также ядро системы, пакеты установленные через [epm play](https://alt-gnome.wiki/epm.html#утилита-epm-play), а также flatpak приложения:
+Команда `epm full-upgrade` помимо пакетов позволяет обновить также ядро системы, пакеты установленные через [epm play](https://alt-gnome.wiki/epm.html#утилита-epm-play), а также Flatpak-приложения:
 
 Использование:
 
@@ -86,7 +86,7 @@ epm full-upgrade
 Предварительно также можно сделать снимок системы с помощью [Timeshift](https://alt-gnome.wiki/timeshift.html) командой:
 
 ```shell
-timeshift --create 
+timeshift --create
 ```
 При этом настоятельно не рекомендуется запускать процесс в эмуляторах терминала графической среды. Обновление системы приходят ежедневно. Мы рекомендуем устанавливать обновления системы ежедневно.
 
@@ -131,7 +131,7 @@ apt-get reinstall foo-bar
 
 ### Почему `sudo` не работает из коробки?
 
-Образ ALT Regular Gnome выполняет несколько задач, к примеру использование актуальной версии рабочего окружения GNOME, однако все образы семейства ALT Regular предоставляют возможность простого создания производных дистрибутивов. Безусловно пользователю предоставляется возможность настроить [sudo](/sudo) самостоятольно. 
+Образ ALT Regular Gnome выполняет несколько задач, к примеру использование актуальной версии рабочего окружения GNOME, однако все образы семейства ALT Regular предоставляют возможность простого создания производных дистрибутивов. Безусловно пользователю предоставляется возможность настроить [sudo](/sudo) самостоятольно.
 
 Альтернативный вариантом вариантом использованием комманды `su -` и авторизации под привилегированным пользователем без изменения коммандного интферфейса.
 
@@ -162,7 +162,7 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.interface show-battery-percentage false
 ```
 :::
- 
+
 ## Сетевое администрирование
 
 ### Как узнать какие стандарты Wi-Fi поддерживает модуль?

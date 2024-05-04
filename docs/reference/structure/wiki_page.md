@@ -26,7 +26,7 @@ docs:
               apps:  # Подблоки приложений
 ```
 
-## 3. Приложение 
+## 3. Приложение
 
 Данный подблок описывает приложение.
 
@@ -35,7 +35,7 @@ docs:
                   link:  # Путь до страницы приложения
 ```
 
-## пример 
+## пример
 
 ```markdown
 ---
@@ -47,7 +47,7 @@ docs:
             - title: Браузеры
               icon:
                 dark: /global-light.svg
-                light: /global-dark.svg 
+                light: /global-dark.svg
               apps:
                 - name: Яндекс Браузер
                   link: yandex-browser
@@ -56,8 +56,8 @@ docs:
             - title: Месенджеры
               icon:
                 dark: /message-light.svg
-                light: /message-dark.svg 
-              apps: 
+                light: /message-dark.svg
+              apps:
                 - name: Telegram Desktop
                   link: telegram
                 - name: VK Мессенджер

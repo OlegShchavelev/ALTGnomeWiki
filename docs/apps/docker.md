@@ -8,10 +8,10 @@ appstream:
     summary: Платформа для разработки, доставки и запуска приложений с использованием контейнеризации.
     developer:
         name: Docker Project
-    metadata_license: 
+    metadata_license:
         name: Apache-2.0
         link: https://www.apache.org/licenses/LICENSE-2.0
-    url: 
+    url:
         homepage: https://hub.docker.com/
         bugtracker: https://forums.docker.com/c/docker-hub/issue-tracking/
 ---

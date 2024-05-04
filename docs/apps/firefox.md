@@ -1,7 +1,7 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: firefox
-    flatpak: 
+    flatpak:
         id: org.mozilla.firefox
         build: offical
     snap:
@@ -12,21 +12,21 @@ appstream:
     name: Firefox
     icon: /firefox/firefox-logo.svg
     summary: Популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
-    metadata_license: 
+    metadata_license:
         name: MPL-2.0 licence
         link: https://choosealicense.com/licenses/mpl-2.0/
-    developer: 
+    developer:
         name: Mozilla Foundation
         avatar: /firefox/firefox-avatar.png
-    url: 
+    url:
         homepage: https://www.mozilla.org/en-US/firefox/
         bugtracker: https://bugzilla.mozilla.org/home
         translate: https://pontoon.mozilla.org/
         donation: https://foundation.mozilla.org/en/?form=donate
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /firefox/firefox-1.png
         - src: /firefox/firefox-2.png
         - src: /firefox/firefox-3.png
@@ -57,7 +57,7 @@ Firefox — популярный графический веб-браузер с
 
 ## Firefox GNOME theme
 
-Для установки **Firefox GNOME theme** необходимо [устровить Firefox](/firefox#firefox) и запустить для формирования конфигурационных файлов.   
+Для установки **Firefox GNOME theme** необходимо [устровить Firefox](/firefox#firefox) и запустить для формирования конфигурационных файлов.
 
 Склонируйте скрипт и установите:
 

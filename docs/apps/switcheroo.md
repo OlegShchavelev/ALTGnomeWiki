@@ -7,22 +7,22 @@ appstream:
     name: Switcheroo
     icon: /switcheroo/io.gitlab.adhami3310.Converter.svg
     summary: Конвертируйте или изменяйте размер изображений
-    keywords: 
+    keywords:
         - circe
-    developer: 
+    developer:
         name: Khaleel Al-Adhami
         avatar: https://gitlab.com/uploads/-/system/user/avatar/13112052/avatar.png
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://apps.gnome.org/ru/Converter/
         translate: https://gitlab.com/adhami3310/Switcheroo/-/tree/main/po
         bugtracker: https://gitlab.com/adhami3310/Switcheroo/-/issues
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /switcheroo/switcheroo-1.png
         - src: /switcheroo/switcheroo-2.png
 ---

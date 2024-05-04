@@ -1,10 +1,10 @@
 ---
 appstreamFlatpak: io.github.mrvladus.List
 nameRepo: errands
-gallery: 
+gallery:
     title: Галерея Errands
     type: slider
-    items: 
+    items:
         - src: /errands/errands-1.png
         - src: /errands/errands-2.png
 aggregation:
@@ -15,13 +15,13 @@ appstream:
     name: Дела
     icon: /errands/errands-logo.svg
     summary: Управляйте своими задачами
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    url: 
+    url:
         homepage: https://apps.gnome.org/ru/List/
         translate: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
         bugtracker: https://github.com/mrvladus/Errands/issues

@@ -7,15 +7,15 @@ appstream:
     name: GNOME Music
     icon: /gnome-music/gnome-music-logo.svg
     summary: Воспроизводите и упорядочивайте свою музыкальную коллекцию
-    keywords: 
+    keywords:
         - core
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    url: 
+    url:
         homepage: https://apps.gnome.org/ru/Music/
         bugtracker: https://gitlab.gnome.org/GNOME/gnome-music/issues
 ---

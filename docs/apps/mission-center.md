@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: mission-center
-    flatpak: 
+    flatpak:
         id: io.missioncenter.MissionCenter
         build: offical
 appstream:
@@ -9,7 +9,7 @@ appstream:
     name: Mission Center
     icon: /mission-center/mission-center-logo.svg
     summary: Приложение для мониторинга использования системных ресурсов.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     developer:

@@ -2,21 +2,21 @@
 title: Neofetch
 nameRepo: neofetch
 appstreamRepo: neofetch.desktop
-aggregation: 
+aggregation:
     sisyphus: neofetch
 appstream:
     id: neofetch.desktop
     name: Neofetch
     icon: /neofetch/neofetch-logo.png
     summary: Средство для отображения информации о системе.
-    metadata_license: 
+    metadata_license:
         name: MIT License
         link: https://choosealicense.com/licenses/mit/
-    developer: 
+    developer:
         name: Dylan Araps & Linux Community
         nickname: dylanaraps
         avatar: /neofetch/neofetch-avatar.png
-    url: 
+    url:
         homepage: https://github.com/dylanaraps/neofetch
         bugtracker: https://github.com/dylanaraps/neofetch/issues
 ---
@@ -56,7 +56,7 @@ epm -i neofetch
 
 Neofetch имеет довольно гибкую конфигурацию, и каждый может настроить его под себя.
 
-::: info 
+::: info
 В данном блоке рассматривается настройка на примере [Данного конфига](https://github.com/fiersik/fiersik_dots/tree/main/neofetch).
 Для его правильного отображения необходимо установить один из [Nerd шрифтов](https://www.nerdfonts.com/font-downloads).
 :::
@@ -73,8 +73,9 @@ Neofetch имеет довольно гибкую конфигурацию, и �
 
 Основная визуальная часть настраивается в данной функции.
 
-::: code-group
-```shell[по умолчанию]
+::: tabs
+== по умолчанию
+```shell
 print_info() {
     info title
     info underline
@@ -98,7 +99,8 @@ print_info() {
     info cols
 }
 ```
-```shell[Fiersik]
+== Fiersik
+```shell
 print_info() {
     prin " \n \n \n \n \n \n ${cl2}F \n \n I \n \n E  \n \n R  \n \n S  \n \n I  \n \n K"
     prin " "
@@ -126,38 +128,79 @@ print_info() {
 ```
 :::
 
-##### Структура строки
-
-| Функция | Результат                   |
-| :------ | :-------------------------- |
-| info    | Выводит параметр            |
-| prin    | Выводит произвольную строку |
-| echo    | Выводит пустую строку       |
+**Структура строки**
 
 ::: tabs
 == info
+Функция `info` выводит один из параметров системы.
 ```shell
 info "КОММЕНТАРИЙ" ПАРАМЕТР
 ```
 Пример:
 ```shell
-info "Terminal Font" term_font
+    info "Theme" theme
+    info "Icons" icons
+    info "Terminal" term # [!code focus]
+    info "CPU" cpu
+    info "GPU" gpu
+
 ```
+Вывод:
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+Terminal: kgx # [!code focus]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+```
+
 == prin
+Функция `prin` выводит произвольную строку или переменную оболочки.
 ```shell
 prin "СТРОКА"
 ```
 Пример:
 ```shell
-prin " \n \n ${cl2}F \n I \n E \n R \n S \n I \n K"
+    info "Host" model
+    info "Kernel" kernel
+    prin "Строка с переменной '${USER}'" # [!code focus]
+    info "Uptime" uptime
+    info "Packages" packages
 ```
+Вывод:
+```shell
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1
+Строка с переменной 'fiersik' # [!code focus]
+Uptime: 1 hour, 7 mins
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+```
+
 == echo
+Функция `echo` выводит пустую строку.
 ```shell
 echo
 ```
+Пример:
+```shell
+    info "Shell" shell
+    info "Resolution" resolution
+    echo # [!code focus]
+    info "DE" de
+    info "WM" wm
+```
+Вывод:
+```shell
+Shell: zsh 5.9
+Resolution: 1920x1080
+ # [!code focus]
+DE: GNOME 46.1
+WM: Mutter
+```
 :::
 
-##### Параметры
+
+::: details Возможные параметры
 | Переменная | Значение              |
 | :--------- | :-------------------- |
 | title      | Заголовок (user@host) |
@@ -189,11 +232,12 @@ echo
 | users      | Пользователь          |
 | locale     | Локаль                |
 | cols       | Цветовые блоки        |
+:::
 
 
 ### Заголовок
 
-##### Скрыть/показать полное доменное имя.
+**Скрыть/показать полное доменное имя.**
 
 | Значения    | Флаг         |
 | :---------- | :----------- |
@@ -210,11 +254,26 @@ title_fqdn="off"
 
 ### Ядро
 
-##### Сократить выходные данные функции kernel.
+**Сократить выходные данные функции kernel.**
 
 | Флаг               | Значения    |
 | :----------------- | :---------- |
 | --kernel_shorthand | "on", "off" |
+
+::: tabs
+== on
+```shell
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1 # [!code focus]
+Uptime: 1 hour, 32 mins
+```
+== off
+```shell
+OS: ALT Regular Sisyphus x86_64
+Kernel: Linux 6.8.8-6.8-alt1 # [!code focus]
+Uptime: 1 hour, 32 mins
+```
+:::
 
 | Значение | Вывод                |
 | :------- | :------------------- |
@@ -233,7 +292,7 @@ kernel_shorthand="off"
 
 ### Дистрибутив
 
-##### Сократить выходные данные функции distro.
+**Сократить выходные данные функции distro.**
 
 | Флаг               | Значения            |
 | :----------------- | :------------------ |
@@ -248,16 +307,28 @@ distro_shorthand="off"
 ```
 :::
 
-##### Скрыть/показать архитектуру OS.
+**Скрыть/показать архитектуру OS.**
 
 | Флаг      | Значения    |
 | :-------- | :---------- |
 | --os_arch | "on", "off" |
 
-| Значение | Вывод                       |
-| :------- | :-------------------------- |
-| on       | ALT Regular Sisyphus x86_64 |
-| off      | ALT Regular Sisyphus        |
+::: tabs
+== on
+```shell
+fiersik@alt-gnome
+-----------------
+OS: ALT Regular Sisyphus x86_64 # [!code focus]
+Kernel: 6.8.8-6.8-alt1
+```
+== off
+```shell
+fiersik@alt-gnome
+-----------------
+OS: ALT Regular Sisyphus # [!code focus]
+Kernel: 6.8.8-6.8-alt1
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -270,17 +341,38 @@ os_arch="on"
 
 ### Время работы
 
-##### Сократить выходные данные функции uptime.
+**Сократить выходные данные функции uptime.**
 
 | Флаг               | Значения            |
 | :----------------- | :------------------ |
 | --uptime_shorthand | "on", "tiny", "off" |
 
-| Значение | Вывод                       |
-| :------- | :-------------------------- |
-| on       | 2 days, 10 hours, 3 mins    |
-| tiny     | 2d 10h 3m                   |
-| off      | 2 days, 10 hours, 3 minutes |
+::: tabs
+== on
+```shell
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1 hour, 47 mins # [!code focus]
+Packages: 2208 (rpm), 35 (flatpak)
+Shell: zsh 5.9
+```
+== tiny
+```shell
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1h 47m # [!code focus]
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+Shell: zsh 5.9
+```
+== off
+```shell
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1 hour, 47 minutes # [!code focus]
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+Shell: zsh 5.9
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -293,16 +385,30 @@ uptime_shorthand="on"
 
 ### Память
 
-##### Скрыть/показать процент использования.
+**Скрыть/показать процент использования.**
 
 | Флаг             | Значения    |
 | :--------------- | :---------- |
 | --memory_percent | "on", "off" |
 
-| Значение | Вывод                   |
-| :------- | :---------------------- |
-| on       | 1801MiB / 7881MiB (22%) |
-| off      | 1801MiB / 7881MiB       |
+::: tabs
+== on
+```shell
+Icons: Adwaita [GTK2/3]
+Terminal: kgx
+Memory: 6807MiB / 15982MiB (42%) # [!code focus]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+```
+== off
+```shell
+Icons: Adwaita [GTK2/3]
+Terminal: kgx
+Memory: 6807MiB / 15982MiB # [!code focus]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -313,17 +419,38 @@ memory_percent="on"
 ```
 :::
 
-##### Изменить единицы вывода памяти.
+**Изменить единицы вывода памяти.**
 
 | Флаг          | Значения            |
 | :------------ | :------------------ |
 | --memory_unit | "kib", "mib", "gib" |
 
-| Значение | Вывод                   |
-| :------- | :---------------------- |
-| kib      | 1020928KiB / 7117824KiB |
-| mib      | 1042MiB / 6951MiB       |
-| gib      | 0.98GiB / 6.79GiB       |
+::: tabs
+== kib
+```shell
+Icons: Adwaita [GTK2/3]
+Terminal: kgx
+Memory: 7144448KiB / 16365568KiB # [!code focus]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+```
+== mib
+```shell
+Icons: Adwaita [GTK2/3]
+Terminal: kgx
+Memory: 7516MiB / 15982MiB # [!code focus]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+```
+== gib
+```shell
+Icons: Adwaita [GTK2/3]
+Terminal: kgx
+Memory: 7.40GiB / 15.61GiB # [!code focus]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -336,17 +463,38 @@ memory_unit="mib"
 
 ### Пакеты
 
-##### Скрыть/показать имена пакетных менеджеров.
+**Скрыть/показать имена пакетных менеджеров.**
 
 | Флаг               | Значения           |
 | :----------------- | :----------------- |
 | --package_managers | "on", "tiny" "off" |
 
-| Значение | Вывод                            |
-| :------- | :------------------------------- |
-| on       | 998 (rpm), 8 (flatpak), 4 (snap) |
-| tiny     | 908 (rpm, flatpak, snap)         |
-| off      | 908                              |
+::: tabs
+== on
+```shell
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1 hour, 56 mins
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap) # [!code focus]
+Shell: zsh 5.9
+Resolution: 1920x1080
+```
+== tiny
+```shell
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1 hour, 56 mins
+Packages: 2247 (rpm, flatpak, snap) # [!code focus]
+Shell: zsh 5.9
+Resolution: 1920x1080
+```
+== off
+```shell
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1 hour, 56 mins
+Packages: 2247 # [!code focus]
+Shell: zsh 5.9
+Resolution: 1920x1080
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -359,16 +507,30 @@ package_managers="on"
 
 ### Оболочка ($SHELL)
 
-##### Скрыть/показать путь к оболочке
+**Скрыть/показать путь к оболочке**
 
 | Флаг         | Значения    |
 | :----------- | :---------- |
 | --shell_path | "on", "off" |
 
-| Значение | Вывод    |
-| :------- | :------- |
-| on       | /bin/zsh |
-| off      | zsh      |
+::: tabs
+== on
+```shell
+Uptime: 2 hours, 1 min
+Packages: 2208 (rpm), 35 (flatpak)
+Shell: /bin/zsh 5.9 # [!code focus]
+Resolution: 1920x1080
+DE: GNOME 46.1
+```
+== off
+```shell
+Uptime: 2 hours, 1 min
+Packages: 2208 (rpm), 35 (flatpak)
+Shell: zsh 5.9 # [!code focus]
+Resolution: 1920x1080
+DE: GNOME 46.1
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -379,16 +541,30 @@ shell_path="off"
 ```
 :::
 
-##### Скрыть/показать версию.
+**Скрыть/показать версию.**
 
 | Флаг            | Значения    |
 | :-------------- | :---------- |
 | --shell_version | "on", "off" |
 
-| Значение | Вывод   |
-| :------- | :------ |
-| on       | zsh 5.9 |
-| off      | zsh     |
+::: tabs
+== on
+```shell
+Uptime: 2 hours, 1 min
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+Shell: zsh 5.9 # [!code focus]
+Resolution: 1920x1080
+DE: GNOME 46.1
+```
+== off
+```shell
+Uptime: 2 hours, 1 min
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+Shell: zsh # [!code focus]
+Resolution: 1920x1080
+DE: GNOME 46.1
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -401,16 +577,30 @@ shell_version="on"
 
 ### Окружение рабочего стола
 
-##### Скрыть/показать версию.
+**Скрыть/показать версию.**
 
 | Флаг         | Значения    |
 | :----------- | :---------- |
 | --de_version | "on", "off" |
 
-| Значение | Вывод      |
-| :------- | :--------- |
-| off      | GNOME      |
-| on       | GNOME 46.0 |
+::: tabs
+== on
+```shell
+Shell: zsh 5.9
+Resolution: 1920x1080
+DE: GNOME 46.1 # [!code focus]
+WM: Mutter
+WM Theme: Adwaita
+```
+== off
+```shell
+Shell: zsh 5.9
+Resolution: 1920x1080
+DE: GNOME # [!code focus]
+WM: Mutter
+WM Theme: Adwaita
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -423,11 +613,13 @@ de_version="on"
 
 ### Процессор
 
-Тип частоты.
+**Тип частоты.**
 
 | Флаг         | Значения                                                                 |
 | :----------- | :----------------------------------------------------------------------- |
 | --speed_type | "scaling_cur_freq", "scaling_min_freq", "scaling_max_freq", "bios_limit" |
+
+<!-- На всех значениях у меня был один и тот же вывод :( -->
 
 ::: code-group
 ```shell[По умолчанию]
@@ -438,16 +630,32 @@ speed_type="scaling_cur_freq"
 ```
 :::
 
-##### Сократить частоту.
+**Сократить частоту.**
 
 | Флаг              | Значения     |
 | :---------------- | :----------- |
 | --speed_shorthand | "on", "off". |
 
-| Значение | Вывод                                 |
-| :------- | :------------------------------------ |
-| on       | Intel Xeon E5-2640 v2 (16) @ 2.5GHz   |
-| off      | Intel Xeon E5-2640 v2 (16) @ 2.500GHz |
+::: tabs
+== on
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.5GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+== off
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -458,16 +666,32 @@ speed_shorthand="on"
 ```
 :::
 
-##### Скрыть/показать бренд.
+**Скрыть/показать бренд.**
 
 | Флаг        | Значения    |
 | :---------- | :---------- |
 | --cpu_brand | "on", "off" |
 
-| Значение | Вывод                                      |
-| :------- | :----------------------------------------- |
-| on       | Intel Xeon E5-2640 v2 (16) @ 2.500GHz |
-| off      | Xeon E5-2640 v2 (16) @ 2.500GHz       |
+::: tabs
+== on
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+== off
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -478,17 +702,32 @@ cpu_brand="off"
 ```
 :::
 
-##### Скрыть/показать частоту.
+**Скрыть/показать частоту.**
 
 | Флаг        | Значения    |
 | :---------- | :---------- |
 | --cpu_speed | "on", "off" |
 
-| Значение | Вывод                           |
-| :------- | :------------------------------ |
-| on       | Xeon E5-2640 v2 (16) @ 2.500GHz |
-| off      | Xeon E5-2640 v2 (16)            |
+::: tabs
+== on
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
+```
+== off
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16) # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -499,17 +738,41 @@ cpu_speed="on"
 ```
 :::
 
-##### Скрыть/показать ядра.
+**Скрыть/показать ядра.**
 
 | Флаг        | Значения                     |
 | :---------- | :--------------------------- |
 | --cpu_cores | "logical", "physical", "off" |
 
-| Значение | Вывод                           |
-| :------- | :------------------------------ |
-| logical  | Xeon E5-2640 v2 (16) @ 2.500GHz |
-| physical | Xeon E5-2640 v2 (8) @ 2.500GHz  |
-| off      | Xeon E5-2640 v2 @ 2.500GHz      |
+::: tabs
+== logical
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+== physical
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (8) @ 2.500GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+== off
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 @ 2.500GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -520,17 +783,41 @@ cpu_cores="logical"
 ```
 :::
 
-##### Скрыть/показать температуру.
+**Скрыть/показать температуру.**
 
 | Флаг       | Значения        |
 | :--------- | :-------------- |
 | --cpu_temp | "C", "F", "off" |
 
-| Значение | Вывод                                     |
-| :------- | :---------------------------------------- |
-| C        | Xeon E5-2640 v2 (16) @ 2.500GHz [38.0°C]  |
-| F        | Xeon E5-2640 v2 (16) @ 2.500GHz [100.4°F] |
-| off      | Xeon E5-2640 v2 (16) @ 2.500GHz           |
+::: tabs
+== C
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16) @ 2.500GHz [38.0°C] # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+== F
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16) @ 2.500GHz [100.4°F] # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+== off
+```shell
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -543,16 +830,30 @@ cpu_temp="C"
 
 ### Графический процессор
 
-##### Скрыть/показать бренд.
+**Скрыть/показать бренд.**
 
 | Флаг        | Значения    |
 | :---------- | :---------- |
 | --gpu_brand | "on", "off" |
 
-| Значение | Вывод                        |
-| :------- | :--------------------------- |
-| on       | AMD ATI Radeon RX 580 2048SP |
-| off      | ATI Radeon RX 580 2048SP     |
+::: tabs
+== on
+```shell
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16)
+GPU: AMD ATI Radeon RX 580 2048SP # [!code focus]
+Memory: 7897MiB / 15982MiB
+
+```
+== off
+```shell
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16)
+GPU: ATI Radeon RX 580 2048SP # [!code focus]
+Memory: 7897MiB / 15982MiB
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -563,26 +864,34 @@ gpu_brand="off"
 ```
 :::
 
-##### Какой отображать.
+**Какой отображать.**
 
 | Флаг       | Значения                         |
 | :--------- | :------------------------------- |
 | --gpu_type | "all", "dedicated", "integrated" |
 
-
 ::: tabs
 == all
 ```shell
-AMD HD 7950
-Intel Integrated Graphics
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16)
+GPU: AMD ATI Radeon RX 580 2048SP # [!code focus]
+GPU: Intel Integrated Graphics # [!code focus]
+Memory: 7897MiB / 15982MiB
 ```
 == dedicated
 ```shell
-AMD HD 7950
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16)
+GPU: AMD ATI Radeon RX 580 2048SP # [!code focus]
+Memory: 7897MiB / 15982MiB
 ```
 == integrated
 ```shell
-Intel Integrated Graphics
+Icons: Adwaita [GTK2/3]
+CPU: Xeon E5-2640 v2 (16)
+GPU: Intel Integrated Graphics # [!code focus]
+Memory: 7897MiB / 15982MiB
 ```
 :::
 
@@ -597,16 +906,32 @@ gpu_type="all"
 
 ### Разрешение
 
-##### Скрыть/показать частоту обновления.
+**Скрыть/показать частоту обновления.**
 
 | Флаг           | Значения    |
 | :------------- | :---------- |
 | --refresh_rate | "on", "off" |
 
-| Значение | Вывод            |
-| :------- | :--------------- |
-| on       | 1920x1080 @ 75Hz |
-| off      | 1920x1080        |
+::: tabs
+== on
+```shell
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+Shell: zsh 5.9
+Resolution: 1920x1080 @ 75.00Hz # [!code focus]
+DE: GNOME 46.1
+WM: Mutter
+
+```
+== off
+```shell
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+Shell: zsh 5.9
+Resolution: 1920x1080 # [!code focus]
+DE: GNOME 46.1
+WM: Mutter
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -619,16 +944,32 @@ refresh_rate="on"
 
 ### Gtk темы / иконки / шрифты
 
-##### Сократить вывод
+**Сократить вывод**
 
 | Флаг            | Значения    |
 | :-------------- | :---------- |
 | --gtk_shorthand | "on", "off" |
 
-| Значение | Вывод                        |
-| :------- | :--------------------------- |
-| on       | Numix, Adwaita               |
-| off      | Numix [GTK2], Adwaita [GTK3] |
+::: tabs
+== on
+```shell
+WM: Mutter
+WM Theme: Adwaita
+Theme: Numix, Adwaita # [!code focus]
+Icons: Numix, Adwaita # [!code focus]
+Terminal: kgx
+
+```
+== off
+```shell
+WM: Mutter
+WM Theme: Adwaita
+Theme: Numix [GTK2], Adwaita [GTK3] # [!code focus]
+Icons: Numix [GTK2], Adwaita [GTK3] # [!code focus]
+Terminal: kgx
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -639,16 +980,32 @@ gtk_shorthand="off"
 ```
 :::
 
-##### Скрыть/показать gtk2
+**Скрыть/показать gtk2**
 
 | Флаг   | Значения    |
 | :----- | :---------- |
 | --gtk2 | "on", "off" |
 
-| Значение | Вывод                        |
-| :------- | :--------------------------- |
-| on       | Numix [GTK2], Adwaita [GTK3] |
-| off      | Adwaita [GTK3]               |
+::: tabs
+== on
+```shell
+WM: Mutter
+WM Theme: Adwaita
+Theme: Numix [GTK2], Adwaita [GTK3] # [!code focus]
+Icons: Numix [GTK2], Adwaita [GTK3] # [!code focus]
+Terminal: kgx
+
+```
+== off
+```shell
+WM: Mutter
+WM Theme: Adwaita
+Theme: Adwaita [GTK3] # [!code focus]
+Icons: Adwaita [GTK3] # [!code focus]
+Terminal: kgx
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -659,16 +1016,32 @@ gtk2="on"
 ```
 :::
 
-##### Скрыть/показать gtk3
+**Скрыть/показать gtk3**
 
 | Флаг   | Значения    |
 | :----- | :---------- |
 | --gtk3 | "on", "off" |
 
-| Значение | Вывод                        |
-| :------- | :--------------------------- |
-| on       | Numix [GTK2], Adwaita [GTK3] |
-| off      | Numix [GTK2]                 |
+::: tabs
+== on
+```shell
+WM: Mutter
+WM Theme: Adwaita
+Theme: Numix [GTK2], Adwaita [GTK3] # [!code focus]
+Icons: Numix [GTK2], Adwaita [GTK3] # [!code focus]
+Terminal: kgx
+
+```
+== off
+```shell
+WM: Mutter
+WM Theme: Adwaita
+Theme: Numix [GTK2] # [!code focus]
+Icons: Numix [GTK2] # [!code focus]
+Terminal: kgx
+
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -681,7 +1054,7 @@ gtk3="on"
 
 ### IP-адрес
 
-##### Сайт для проверки IP-адреса
+**Сайт для проверки IP-адреса**
 
 | Флаг      | Значения |
 | :-------- | :------- |
@@ -696,7 +1069,7 @@ public_ip_host="http://ident.me"
 ```
 :::
 
-##### Тайм-аут публичного IP-адреса.
+**Тайм-аут публичного IP-адреса.**
 
 | Флаг         | Значения |
 | :----------- | :------- |
@@ -713,7 +1086,7 @@ public_ip_timeout=1
 
 ### Диск
 
-##### Какие диски отображать.
+**Какие диски отображать.**
 
 | Флаг        | Значения                           |
 | :---------- | :--------------------------------- |
@@ -722,12 +1095,20 @@ public_ip_timeout=1
 ::: tabs
 == "/" "/dev/sdb1"
 ```shell
-Disk (/): 74G / 118G (66%)
-Disk (/mnt/Videos): 823G / 893G (93%)
+GPU Driver: amdgpu
+CPU Usage: 23%
+Disk (/): 105G / 162G (66%) # [!code focus]
+Disk (games): 2.5G / 61G (5%) # [!code focus]
+Font: Cantarell 11 [GTK2/3]
+Local IP: 192.168.31.154
 ```
 == "/"
 ```shell
-Disk (/): 74G / 118G (66%)
+GPU Driver: amdgpu
+CPU Usage: 23%
+Disk (/): 105G / 162G (66%) # [!code focus]
+Font: Cantarell 11 [GTK2/3]
+Local IP: 192.168.31.154
 ```
 :::
 
@@ -749,26 +1130,39 @@ disk_show=("/" "/run/media/fiersik/games")
 ::: tabs
 == name
 ```shell
-Disk (/dev/sda1): 74G / 118G (66%)
-Disk (/dev/sdb2): 74G / 118G (66%)
+GPU Driver: amdgpu
+CPU Usage: 23%
+Disk (/dev/nvme0n1p3): 105G / 162G (66%) # [!code focus]
+Disk (/dev/nvme0n1p4): 2.5G / 61G (5%) # [!code focus]
+Font: Cantarell 11 [GTK2/3]
+Local IP: 192.168.31.154
 ```
 == mount
 ```shell
-Disk (/): 74G / 118G (66%)
-Disk (/mnt/Local Disk): 74G / 118G (66%)
-Disk (/mnt/Videos): 74G / 118G (66%)
+GPU Driver: amdgpu
+CPU Usage: 23%
+Disk (/): 105G / 162G (66%) # [!code focus]
+Disk (/run/media/fiersik/games): 2.5G / 61G (5%) # [!code focus]
+Font: Cantarell 11 [GTK2/3]
+Local IP: 192.168.31.154
 ```
 == dir
 ```shell
-Disk (/): 74G / 118G (66%)
-Disk (Local Disk): 74G / 118G (66%)
-Disk (Videos): 74G / 118G (66%)
+GPU Driver: amdgpu
+CPU Usage: 23%
+Disk (/): 105G / 162G (66%) # [!code focus]
+Disk (games): 2.5G / 61G (5%) # [!code focus]
+Font: Cantarell 11 [GTK2/3]
+Local IP: 192.168.31.154
 ```
 == none
 ```shell
-Disk: 74G / 118G (66%)
-Disk: 74G / 118G (66%)
-Disk: 74G / 118G (66%)
+GPU Driver: amdgpu
+CPU Usage: 23%
+Disk: 105G / 162G (66%) # [!code focus]
+Disk: 2.5G / 61G (5%) # [!code focus]
+Font: Cantarell 11 [GTK2/3]
+Local IP: 192.168.31.154
 ```
 :::
 
@@ -781,16 +1175,30 @@ disk_subtitle="dir"
 ```
 :::
 
-##### Скрыть/показать процент использования.
+**Скрыть/показать процент использования.**
 
 | Флаг           | Значения    |
 | :------------- | :---------- |
 | --disk_percent | "on", "off" |
 
-| Значение | Вывод                      |
-| :------- | :------------------------- |
-| on       | Disk (/): 74G / 118G (66%) |
-| off      | Disk (/): 74G / 118G       |
+::: tabs
+== on
+```shell
+GPU Driver: amdgpu
+CPU Usage: 23%
+Disk (/): 105G / 162G (66%) # [!code focus]
+Font: Cantarell 11 [GTK2/3]
+Local IP: 192.168.31.154
+```
+== off
+```shell
+GPU Driver: amdgpu
+CPU Usage: 23%
+Disk (/): 105G / 162G # [!code focus]
+Font: Cantarell 11 [GTK2/3]
+Local IP: 192.168.31.154
+```
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -803,13 +1211,13 @@ disk_percent="on"
 
 ### Музыка
 
-##### Музыкальный проигрыватель.
+**Музыкальный проигрыватель.**
 
 | Флаг           | Значения              |
 | :------------- | :-------------------- |
 | --music_player | "auto", "player-name" |
 
-Музыкальные проигрыватели.
+::: details Музыкальные проигрыватели.
 | amarok        | audacious           | banshee    | bluemindo           |
 | :------------ | :------------------ | :--------- | :------------------ |
 | clementine    | cmus                | deadbeef   | deepin-music        |
@@ -822,6 +1230,7 @@ disk_percent="on"
 | rhythmbox     | sayonara            | smplayer   | spotify             |
 | strawberry    | auonmb              | tomahawk   | vlc                 |
 | xmms2d        | xnoise              |
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -832,12 +1241,23 @@ music_player="auto"
 ```
 :::
 
-##### Формат отображения информации.
+**Формат отображения информации.**
 
 | Флаг          | Значения                         |
 | :------------ | :------------------------------- |
 | --song_format | "%artist%", "%album%", "%title%" |
 
+::: tabs
+== "%artist% - %album% - %title%"
+```shell
+Disk (/): 105G / 162G (66%)
+Font: Cantarell 11 [GTK2/3]
+Song: Liar_Sieru - Обман - Реальный мир # [!code focus]
+Music Player: vlc
+Local IP: 192.168.31.154
+```
+:::
+
 ::: code-group
 ```shell[По умолчанию]
 song_format="%artist% - %album% - %title%"
@@ -847,7 +1267,7 @@ song_format="%artist% - %album% - %title%"
 ```
 :::
 
-##### Вывести в отдельных строках
+**Вывести в отдельных строках**
 
 | Флаг             | Значения    |
 | :--------------- | :---------- |
@@ -856,13 +1276,22 @@ song_format="%artist% - %album% - %title%"
 ::: tabs
 == on
 ```shell
-Artist: Liar_Sieru 
-Album: Обман 
-Song: Реальный мир 
+Disk (/): 105G / 162G (66%)
+Font: Cantarell 11 [GTK2/3]
+Artist: Liar_Sieru # [!code focus]
+Album: Обман # [!code focus]
+Song: Реальный мир # [!code focus]
+Music Player: vlc
+Local IP: 192.168.31.154
+
 ```
 == off
 ```shell
-Song: Liar_Sieru - Обман - Реальный мир
+Disk (/): 105G / 162G (66%)
+Font: Cantarell 11 [GTK2/3]
+Song: Liar_Sieru - Обман - Реальный мир # [!code focus]
+Music Player: vlc
+Local IP: 192.168.31.154
 ```
 :::
 
@@ -901,7 +1330,7 @@ colors=(distro)
 
 ### Параметры текста
 
-##### Жирный шрифт.
+**Жирный шрифт.**
 
 | Флаг   | Значения    |
 | :----- | :---------- |
@@ -916,7 +1345,7 @@ bold="on"
 ```
 :::
 
-##### Подчёркивание домена
+**Подчёркивание домена**
 
 | Флаг        | Значения    |
 | :---------- | :---------- |
@@ -928,16 +1357,16 @@ bold="on"
 fiersik@alt-gnome # [!code focus]
 ---------------- # [!code focus]
 OS: ALT Regular Sisyphus x86_64 # [!code focus]
-Kernel: 6.8.7-6.8-alt1 
-ptime: 1 hour, 14 mins 
+Kernel: 6.8.7-6.8-alt1
+ptime: 1 hour, 14 mins
 
 ```
 == off
 ```shell
 fiersik@alt-gnome # [!code focus]
 OS: ALT Regular Sisyphus x86_64 # [!code focus]
-Kernel: 6.8.7-6.8-alt1 
-ptime: 1 hour, 14 mins 
+Kernel: 6.8.7-6.8-alt1
+ptime: 1 hour, 14 mins
 ```
 :::
 
@@ -950,7 +1379,7 @@ underline_enabled="on"
 ```
 :::
 
-##### Символ разделителя домена
+**Символ разделителя домена**
 
 | Флаг             | Значения |
 | :--------------- | :------- |
@@ -959,19 +1388,19 @@ underline_enabled="on"
 ::: tabs
 == "="
 ```shell
-fiersik@alt-gnome 
+fiersik@alt-gnome
 ================= # [!code focus]
-OS: ALT Regular Sisyphus x86_64 
-Kernel: 6.8.7-6.8-alt1 
-Uptime: 1 hour, 33 mins 
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.7-6.8-alt1
+Uptime: 1 hour, 33 mins
 ```
 == ">"
 ```shell
-fiersik@alt-gnome 
+fiersik@alt-gnome
 >>>>>>>>>>>>>>>>> # [!code focus]
-OS: ALT Regular Sisyphus x86_64 
-Kernel: 6.8.7-6.8-alt1 
-Uptime: 1 hour, 34 mins 
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.7-6.8-alt1
+Uptime: 1 hour, 34 mins
 ```
 :::
 
@@ -984,7 +1413,7 @@ underline_char="-"
 ```
 :::
 
-##### Символ разделителя информации
+**Символ разделителя информации**
 
 | Флаг        | Значения |
 | :---------- | :------- |
@@ -993,19 +1422,19 @@ underline_char="-"
 ::: tabs
 == "="
 ```shell
-fiersik@alt-gnome 
+fiersik@alt-gnome
 ----------------
-OS= ALT Regular Sisyphus x86_64 
-Kernel= 6.8.7-6.8-alt1 
-Uptime= 1 hour, 33 mins 
+OS= ALT Regular Sisyphus x86_64
+Kernel= 6.8.7-6.8-alt1
+Uptime= 1 hour, 33 mins
 ```
 == " "
 ```shell
-fiersik@alt-gnome 
+fiersik@alt-gnome
 ----------------
-OS ALT Regular Sisyphus x86_64 
-Kernel 6.8.7-6.8-alt1 
-Uptime 1 hour, 34 mins 
+OS ALT Regular Sisyphus x86_64
+Kernel 6.8.7-6.8-alt1
+Uptime 1 hour, 34 mins
 ```
 :::
 
@@ -1020,7 +1449,7 @@ separator=" "
 
 ### Цветные блоки
 
-##### Диапазон цветов.
+**Диапазон цветов.**
 
 | Флаг          | Значения    |
 | :------------ | :---------- |
@@ -1035,7 +1464,7 @@ block_range=(1 18)
 ```
 :::
 
-##### Пользовательские цвета
+**Пользовательские цвета**
 
 ::: info
 Данный подблок не является обязательным и отсутствует в конфигурации по умолчанию. Он необходим для удобной настройки собственных цветов вывода информации.
@@ -1068,7 +1497,7 @@ cl10="${bgwhite}"
 ```
 :::
 
-##### Скрыть/показать цветовые блоки
+**Скрыть/показать цветовые блоки**
 
 | Флаг           | Значения    |
 | :------------- | :---------- |
@@ -1083,7 +1512,7 @@ color_blocks="off"
 ```
 :::
 
-##### Ширина блока
+**Ширина блока**
 
 | Флаг          | Значения |
 | :------------ | :------- |
@@ -1098,10 +1527,10 @@ block_width=0
 ```
 :::
 
-##### Высота блока
+**Высота блока**
 
-| Флаг          | Значения |
-| :------------ | :------- |
+| Флаг           | Значения |
+| :------------- | :------- |
 | --block_height | "num"    |
 
 ::: code-group
@@ -1113,7 +1542,7 @@ block_height=0
 ```
 :::
 
-##### Смещение блоков от левой части.
+**Смещение блоков от левой части.**
 
 | Флаг         | Значения      |
 | :----------- | :------------ |
@@ -1132,7 +1561,7 @@ col_offset="auto"
 
 ### Индикаторы выполнения
 
-##### Отображение информации
+**Отображение информации**
 
 | Флаг              | Значения                           |
 | :---------------- | :--------------------------------- |
@@ -1144,19 +1573,36 @@ col_offset="auto"
 ::: tabs
 == bar
 ```shell
-Memory: [------====]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: [-----------====] # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 10%
 ```
 == infobar
 ```shell
-Memory: 5703MiB / 15982MiB [------====]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 12545MiB / 15982MiB [-----------====] # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 10%
 ```
 == barinfo
 ```shell
-Memory: [------====] 5703MiB / 15982MiB
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: [-----------====] 12735MiB / 15982MiB # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 10%
 ```
 == off
 ```shell
-Memory: 5703MiB / 15982MiB
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 12735MiB / 15982MiB # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 10%
+
 ```
 :::
 
@@ -1175,7 +1621,7 @@ disk_display="off"
 ```
 :::
 
-##### Символы бара.
+**Символы бара.**
 
 | Флаг       | Значения          |
 | :--------- | :---------------- |
@@ -1184,11 +1630,19 @@ disk_display="off"
 ::: tabs
 == "-" "="
 ```shell
-Memory: 5703MiB / 15982MiB [------====]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 12764MiB / 15982MiB [-----------====] # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 == "0" "1"
 ```shell
-Memory: 5703MiB / 15982MiB [0000001111]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 12764MiB / 15982MiB [000000000001111] # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 :::
 
@@ -1203,7 +1657,7 @@ bar_char_total=""
 ```
 :::
 
-##### Скрыть/показать границы индикатора выполнения.
+**Скрыть/показать границы индикатора выполнения.**
 
 | Флаг         | Значения    |
 | :----------- | :---------- |
@@ -1212,11 +1666,19 @@ bar_char_total=""
 ::: tabs
 == on
 ```shell
-Memory: 5703MiB / 15982MiB [-----==========]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 12764MiB / 15982MiB [-----------====] # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 == off
 ```shell
-Memory: 5703MiB / 15982MiB -----==========
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 12764MiB / 15982MiB -----------==== # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 :::
 
@@ -1229,7 +1691,7 @@ bar_border="off"
 ```
 :::
 
-##### Ширена индикатора выполнения.
+**Ширена индикатора выполнения.**
 
 | Флаг         | Значения |
 | :----------- | :------- |
@@ -1238,11 +1700,19 @@ bar_border="off"
 ::: tabs
 == 10
 ```shell
-Memory: 5703MiB / 15982MiB [---=======]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 12764MiB / 15982MiB [-------===] # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 == 15
 ```shell
-Memory: 5703MiB / 15982MiB [-----==========]
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 12764MiB / 15982MiB [-----------====] # [!code focus]
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 :::
 
@@ -1255,7 +1725,7 @@ bar_length=0
 ```
 :::
 
-##### Цвета индикатора выполнения
+**Цвета индикатора выполнения**
 
 | Флаг         | Значения        |
 | :----------- | :-------------- |
@@ -1274,13 +1744,13 @@ bar_color_total="distro"
 
 ### Настройки бэкэнда
 
-##### Сервер изображений
+**Сервер изображений**
 
 | Флаг      | Значения              |
 | :-------- | :-------------------- |
 | --backend | "backend_name", "off" |
 
-Возможные значения
+::: details Возможные значения
 | ascii   | caca    |
 | :------ | :------ |
 | chafa   | jp2a    |
@@ -1288,6 +1758,7 @@ bar_color_total="distro"
 | termpix | pixterm |
 | tycat   | w3m     |
 | kitty   | off     |
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -1298,7 +1769,7 @@ image_backend="ascii"
 ```
 :::
 
-##### Источник изображения
+**Источник изображения**
 
 | Флаг     | Значения                                                       |
 | :------- | :------------------------------------------------------------- |
@@ -1315,44 +1786,44 @@ image_source="auto"
 
 ### Параметры Ascii
 
-##### Дистрибутив
+**Дистрибутив**
 
 | Флаг           | Значения              |
 | :------------- | :-------------------- |
 | --ascii_distro | "auto", "distro_name" |
 
 ::: details Возможные значения
-| Стандартные         | Уменьшенные  | Ретро     |
-| :------------------ | :----------- | :-------- |
-| AIX                 | Alpine       | Arch      |
-| Anarchy             | Arch         | Ubuntu    |
-| Android             | CRUX         | Red Hat   |
-| Antergos            | Debian       | Dragonfly |
-| antiX               | Gentoo       |
-| AOSC OS             | FreeBSD      |
-| AOSC OS/Retro       | Mac          |
-| Apricity            | NixOS        |
-| ArcoLinux           | OpenBSD      |
-| ARCHlabs            | android      |
-| ArchStrike          | Antrix       |
-| XFerience           | CentOS       |
-| ArchMerge           | Cleanjaro    |
-| Artix               | ElementaryOS |
-| Arya                | GUIX         |
-| Bedrock             | Hyperbola    |
-| Bitrig              | Manjaro      |
-| BlackArch           | MXLinux      |
-| BLAG                | NetBSD       |
-| BlankOn             | Parabola     |
-| BlueLight           | POP_OS       |
-| bonsai              | PureOS       |
-| BSD                 | Slackware    |
-| BunsenLabs          | SunOS        |
-| Calculate           | LinuxLite    |
-| Carbs               | OpenSUSE     |
-| CentOS              | Raspbian     |
-| Chakra              | postmarketOS |
-| ChaletOS            | Void         |
+| Стандартные         | Уменьшенные        | Ретро         |
+| :------------------ | :----------------- | :------------ |
+| AIX                 | Alpine_small       | Arch_old      |
+| Anarchy             | Arch_small         | Ubuntu_old    |
+| Android             | CRUX_small         | Redhat_old    |
+| Antergos            | Debian_small       | Dragonfly_old |
+| antiX               | Gentoo_small       |
+| "AOSC OS"           | FreeBSD_small      |
+| "AOSC OS/Retro"     | Mac_small          |
+| Apricity            | NixOS_small        |
+| ArcoLinux           | OpenBSD_small      |
+| ARCHlabs            | android_small      |
+| ArchStrike          | Antrix_small       |
+| XFerience           | CentOS_small       |
+| ArchMerge           | Cleanjaro_small    |
+| Artix               | ElementaryOS_small |
+| Arya                | GUIX_small         |
+| Bedrock             | Hyperbola_small    |
+| Bitrig              | Manjaro_small      |
+| BlackArch           | MXLinux_small      |
+| BLAG                | NetBSD_small       |
+| BlankOn             | Parabola_small     |
+| BlueLight           | POP_OS_small       |
+| bonsai              | PureOS_small       |
+| BSD                 | Slackware_small    |
+| BunsenLabs          | SunOS_small        |
+| Calculate           | LinuxLite_small    |
+| Carbs               | OpenSUSE_small     |
+| CentOS              | Raspbian_small     |
+| Chakra              | postmarketOS_small |
+| ChaletOS            | Void_small         |
 | Chapeau             |
 | Chrom*              |
 | Cleanjaro           |
@@ -1438,7 +1909,7 @@ image_source="auto"
 | OpenWrt             |
 | osmc                |
 | Oracle              |
-| OS Elbrus           |
+| "OS Elbrus"         |
 | PacBSD              |
 | Parabola            |
 | Pardus              |
@@ -1511,7 +1982,7 @@ ascii_distro="ALT_GNOME"
 ```
 :::
 
-##### Цвета Ascii
+**Цвета Ascii**
 
 | Флаг           | Значения                            |
 | :------------- | :---------------------------------- |
@@ -1526,7 +1997,7 @@ ascii_colors=(distro)
 ```
 :::
 
-##### Выделять логотип ascii жирным шрифтом.
+**Выделять логотип ascii жирным шрифтом.**
 
 | Флаг         | Значения    |
 | :----------- | :---------- |
@@ -1543,7 +2014,7 @@ ascii_bold="on"
 
 ### Параметры изображения
 
-##### Перерисовка
+**Перерисовка**
 
 ::: info
 Если значение "on", neofetch будет постоянно перерисовывать изображение до тех пор, пока нажато сочетание клавиш Ctrl+C. Это устраняет проблемы с отображением в некоторых эмуляторах терминалов.
@@ -1562,7 +2033,7 @@ image_loop="off"
 ```
 :::
 
-##### Каталог миниатюр
+**Каталог миниатюр**
 
 | Значения |
 | :------- |
@@ -1577,7 +2048,7 @@ thumbnail_dir="${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/neofetch"
 ```
 :::
 
-##### Режим обрезки
+**Режим обрезки**
 
 | Флаг        | Значения                |
 | :---------- | :---------------------- |
@@ -1592,7 +2063,7 @@ crop_mode="normal"
 ```
 :::
 
-##### Смещение
+**Смещение**
 
 ::: info ПРИМЕЧАНИЕ
 Влияет только на режим "normal".
@@ -1602,11 +2073,12 @@ crop_mode="normal"
 | :----------- | :------- |
 | -crop_offset | "mode"   |
 
-Режимы:
+::: details Режимы:
 | northwest | north  | northeast |
 | :-------- | :----- | :-------- |
 | west      | center | east      |
 | southwest | south  | southeast |
+:::
 
 ::: code-group
 ```shell[По умолчанию]
@@ -1617,7 +2089,7 @@ crop_offset="center"
 ```
 :::
 
-##### Размер изображения
+**Размер изображения**
 
 | Флаги                | Значения                      |
 | :------------------- | :---------------------------- |
@@ -1632,11 +2104,11 @@ image_size="auto"
 ```
 :::
 
-##### Разрыв между изображением и текстом.
+**Разрыв между изображением и текстом.**
 
-| Флаг | Значения |
-| :--- | :------- |
-|  --gap    |    "num", "-num"      |
+| Флаг  | Значения      |
+| :---- | :------------ |
+| --gap | "num", "-num" |
 
 ::: code-group
 ```shell[По умолчанию]
@@ -1647,7 +2119,7 @@ gap=2
 ```
 :::
 
-##### Смещение изображений
+**Смещение изображений**
 
 ::: info ПРИМЕЧАНИЕ
 Работает только с w3m.
@@ -1668,7 +2140,7 @@ xoffset=0
 ```
 :::
 
-##### Цвет фона.
+**Цвет фона.**
 
 ::: info ПРИМЕЧАНИЕ
 Работает только с w3m.
@@ -1689,7 +2161,7 @@ background_color=" "
 
 ### Другие опции
 
-##### Стандартный режим вывода
+**Стандартный режим вывода**
 
 ::: info
 Отключает все цвета. Полезно для перехода в другую команду.

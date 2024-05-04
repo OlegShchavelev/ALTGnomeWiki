@@ -33,6 +33,7 @@ export const docs = [
           { text: 'Dialect', link: '/dialect' },
           { text: 'Discord', link: '/discord' },
           { text: 'Docker', link: '/docker' },
+          { text: 'Dosage', link: '/dosage' },
           { text: 'Drawing', link: '/drawing' },
           { text: 'DroidCam', link: '/droidcam' },
           { text: 'Eclipse IDE', link: '/eclipse-ide' },

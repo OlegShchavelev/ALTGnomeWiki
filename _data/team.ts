@@ -270,5 +270,12 @@ export const contributions = [
     links: [
       { icon: 'github', link: 'https://github.com/X1Z53' }
     ],
+  }, {
+    avatar: 'https://avatars.githubusercontent.com/u/57837842?v=4',
+    name: 'Cyber:X',
+    title: 'Участник',
+    links: [
+      { icon: 'github', link: 'https://github.com/Cyber-X-Code' }
+    ],
   }
 ]

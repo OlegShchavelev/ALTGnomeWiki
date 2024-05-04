@@ -180,6 +180,44 @@ fn main() {
 ```
 :::
 
+## Контент с табами
+
+**Пример:**
+
+````markdown
+::: tabs
+== python
+Код `Hello World!` на Python.
+```python
+print("Hello World!")
+```
+== rust
+Код `Hello World!` на Rust.
+```rust
+fn main() {
+    println!("Hello World!");
+}
+```
+:::
+````
+
+**Вывод:**
+
+::: tabs
+== python
+Код `Hello World!` на Python.
+```python
+print("Hello World!")
+```
+== rust
+Код `Hello World!` на Rust.
+```rust
+fn main() {
+    println!("Hello World!");
+}
+```
+:::
+
 ## Красивые уведомления
 
 **Пример:**

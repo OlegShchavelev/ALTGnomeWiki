@@ -6,55 +6,77 @@
 
 Используются такие подблоки [Frontmatter](../pages/vitepress#frontmatter) переменных:
 
-### 1.1. Установка
-
 ```markdown
 ---
-title:  # Название приложения
-nameSnap:  # Название приложения на Snapcraft
-appstreamRepo:  # appstream id приложения для sisyphus
-appstreamFlatpak:  # appstream id приложения для flatpak
+aggregation:
+    sisyphus:   # название в репозитории
+    flatpak:
+        id:   # flatpak id 
+        build:   # сборка offical/unoffical
+    snap:
+        id:    # название на snapcraft
+        build:   # сборка offical/unoffical
+    epm:
+        play:
+            id:    # название в epm play
+            build:   # сборка offical/unoffical
+appstream:
+    id:   # appstream id приложения
+    name:   # Название приложения
+    icon:   # путь к логотипу приложения
+    summary:   # краткое описание
+    metadata_license:
+        name:   # лицензия
+        link:   # ссылка на лицензию
+    keywords:   # список бейджей (подробнее ниже)
+    developer:
+        name:   # имя разработчика
+        nickname:   # nickname разработчика
+        avatar:   # ссылка или путь на аватар разработчика
+    url:
+        homepage:   # ссылка на страницу проекта 
+        bugtracker:   # ссылка на багтрекер (например, github issue)
+        translate:   # ссылка на помощь с переводом
+        help:   # ссылка на гайд по использованию
+        donation:   # ссылка на донаты
+gallery:
+    title:   # заголовок галереи (рекомендуется, просто "Галерея")
+    type:   # тип галереи slider/carousel (рекомендуется slider)
+    items:   # список фотографий (подробнее ниже)
 ---
 ```
 
-### 1.2. Боковое меню
+
+### Cписок бейджей
+
+Можно добавить такие бейджи
 
 ```markdown
 ---
-metainfo:
-    thumb:
-        src:  # Путь до иконки приложения
-        title:   # Название приложения
-    summary:  # Краткое описание
-    developer:
-        name:  # Имя разработчика / Название компании
-        nickname:  # nickname разработчика
-        avatar:  # URL до аватара разработчика / логотипа компании
-    site:
-        url:  # Ссылка на сайт приложения
-        anchor:  # Домен сайта
-    licence:
-        url:  # Ссылка на лицензию
-        anchor:  # Лицензия
-    translate:
-        url:  # Ссылка на помощь с переводом
-        anchor:  # Домен сайта
-    issue:
-        url:  # Ссылка н асоздание issues
-        anchor:  # Домен сайта
-    adaptive:  # Является ли адаптивным
-    gnomeCircle:  # Входит ли в gnomeCircle
-    gnomeCore:  # Входит ли в gnomeCore
-    createTheme:  # Не рекомендуется ли создавать темы ( Please don’t theme )
-    proprietary:  # Является ли проприетарным
-    sponsor:
-        url:  # Ссылка на спонсорство
-    sisyphus:
-        url:  # Ссылка на пакет на packages.altlinux.org
-    flathub:
-        url:  # Ссылка на flathub
-    snap:
-        url:  # Ссылка на snapcraft
+    keywords:
+        - core   # GNOME Core
+        - circle   # GNOME Circle
+        - adaptive   # Адаптивное
+        - proprietary   # Проприетарное
+        - restrictions   # Региональные ограничения
+        - dontthemes   # Please don’t theme
+---
+```
+
+### Список фотографий
+
+Фотографии для галереи хранятся по пути `/docs/public/APP_NAME/`
+
+**Пример для amberol**
+```markdown
+---
+gallery:
+    title: Галерея
+    type: slider
+    items:
+        - src: /amberol/amberol-1.png
+        - src: /amberol/amberol-2.png
+        - src: /amberol/amberol-3.png
 ---
 ```
 
@@ -68,109 +90,42 @@ metainfo:
 NAME — ...
 ```
 
-## 3. Установка из репозитория
 
-::: info
-Данный блок добавляется если приложение есть в репозитории Sisyphus.
-:::
+## 3. Галерея
 
-### 3.1.
+Для отображения галереи в нужном месте, необходимо вызвать виджет.
 
-Если можно установить только через терминал:
+```markdown-vue
+Amberol воспроизводит музыку, и ничего больше.
 
-```markdown
-**NAME** можно установить через терминал:
+<AGWGallery /> <!-- [!code focus] -->
+
+<!--{{`@inc${''}lude: @apps/_parts/install/content-repo.md`}}-->
 ```
 
-Если можно установить и через терминал и через центр приложений:
+## 4. Установка
 
-```markdown
-**NAME** можно установить любым привычным и удобным способом:
+Блоки установки построятся автоматически, необходимо лишь заполнить Frontmatter переменные и подключить шаблоны.
 
-<!--@include: ./parts/install/software-repo.md-->
+::: tabs
+== Репозиторий
+```markdown-vue
+<!--{{`@include: @apps/_parts/install/content-repo.md`}}-->
 ```
-
-### 3.2.
-
-````markdown
-
-::: code-group
-```shell[apt-get]
-su -
-apt-get update
-apt-get install NAME
+== Flatpak
+```markdown-vue
+<!--{{`@include: @apps/_parts/install/content-flatpak.md`}}-->
 ```
-```shell[epm]
-epm -i NAME
+== Snap
+```markdown-vue
+<!--{{`@include: @apps/_parts/install/content-snap.md`}}-->
 ```
-:::
-
-````
-
-## 4. Установка c помощью Flatpak
-
-::: info
-Данный блок добавляется если приложение есть в репозитории Flathub.
-
-Если приложение собрано не разработчиком, добавляется бейдж <Badge type="danger" text="Неофициальная сборка" />
-
-```markdown
-<Badge type="danger" text="Неофициальная сборка" />
+== EPM Play
+```markdown-vue
+<!--{{`@include: @apps/_parts/install/content-epm-play.md`}}-->
 ```
 :::
 
-````markdown
-При наличии пакета [Flatpak](/flatpak), можно установить **NAME** одной командой:
-
-```shell
-flatpak install flathub < appstream id flatpak приложения >
-```
-
-<!--@include: ./parts/install/software-flatpak.md-->
-````
-
-## 5. Установка с помощью Snaps
-
-::: info
-Данный блок добавляется если приложение есть в репозитории Snapcraft.
-
-Если приложение собрано не разработчиком, добавляется бейдж <Badge type="danger" text="Неофициальная сборка" />
-
-```markdown
-<Badge type="danger" text="Неофициальная сборка" />
-```
-:::
-
-````markdown
-При наличии пакета [snapd](/snap), можно установить **NAME** одной командой:
-
-```shell-vue
-snap install NAME
-```
-
-<!--@include: ./software-snap.md-->
-````
-
-## 6. Установка c помощью epm play
-
-::: info
-Данный блок добавляется если для приложения есть скрипт установки epm play
-
-Если скрипт добавлен не разработчиком приложения, добавляется бейдж <Badge type="danger" text="Неофициальная сборка" />
-
-```markdown
-<Badge type="danger" text="Неофициальная сборка" />
-```
-:::
-
-
-````markdown
-При наличии пакета [eepm](/epm), можно установить **NAME** одной командой:
-
-```shell
-epm play NAME
-```
-````
 
 ## Дополнительные блоки
 

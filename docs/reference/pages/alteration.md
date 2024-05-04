@@ -34,36 +34,36 @@ git clone git@github.com:USER/ALTRegularGnomeWiki.git
 
 ## 2. Добавляем необходимую информацию и создаём commit.
 
-После того как добавили желаемую информацию выполняем следующие команды:
+Перед внесением изменений ознакомьтесь с [правилами](./general-rules.md) и [возможностями Vitepress](./vitepress.md ).
+
+После того как добавили всё необходимое, выполните следующие команды:
 
 ### 2.1. Добавляем изменения в индекс git:
 
-Через терминал:
-
+::: tabs 
+== Терминал
 ```shell
 git add *
 ```
-
-Через VSCodium:
-
+== VSCodium
 Нажимаем [[+]] около имени файла
 
 ![indexing_via_vscodium](/alteration/indexing_via_vscodium.png)
+:::
 
 ### 2.2. Создаём commit:
 
-Через терминал:
-
+::: tabs 
+== Терминал
 ```shell
 git commit -m "commit message"
 ```
 Замените `commit message` на описание ваших изменений.
-
-Через VSCodium:
-
+== VSCodium
 Добавляем описание и нажимаем [[Фиксация]]
 
 ![indexing_via_vscodium](/alteration/indexing_via_vscodium.png)
+:::
 
 :::info
 Описание необходимо писать на русском языке.
@@ -73,21 +73,26 @@ git commit -m "commit message"
 Добавлено: \
 Обновлено: \
 Удалено:
+
+*Например*
+```
+Обновлено: Для авторов | Страница приложения
+```
 :::
 
 ### 2.3. Отправляем изменения на GitHub:
 
-Через терминал:
-
+::: tabs 
+== Терминал
 ```shell
 git push
 ```
-
-Через VSCodium:
-
+== VSCodium
 Нажимаем [[Синхронизировать изменения]]
 
 ![indexing_via_vscodium](/alteration/sync_changes_via_vscodium.png)
+:::
+
 
 ## 3. Создаём pull request
 
@@ -102,6 +107,10 @@ git push
 ![pr_no_error](/alteration/pr_no_error.png)
 
 ### 3.3. Заполняем и нажимаем [[Create pull request]]:
+
+::: warning
+Пожалуйста, прикрепите к своему первому PR ваш nickname в телеграм! Это необходимо для связи и добавления в рабочие чаты.
+:::
 
 ![pr_create](/alteration/pr_create.png)
 

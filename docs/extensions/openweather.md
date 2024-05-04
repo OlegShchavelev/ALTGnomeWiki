@@ -1,10 +1,10 @@
 ---
-title: Open Weather
+title: OpenWeather
 pluginID: 6655
 packageName: gnome-shell-extension-openweather
 ---
 
-# Open Weather
+# OpenWeather
 
 Расширение GNOME Shell добавляющее пункт прогноза погоды в верхнем док меню.
 

@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: yandex-browser-stable
-    flatpak: 
+    flatpak:
         id: ru.yandex.Browser
         build: unoffical
     epm:
@@ -13,15 +13,15 @@ appstream:
     name: Яндекс Браузер
     icon: /yandex-browser/yandex-browser-logo.svg
     summary: Быстрый и безопасный браузер Яндекса для компьютера.
-    keywords: 
+    keywords:
         - proprietary
-    developer: 
+    developer:
         name: Yandex
         avatar: /yandex-browser/yandex-browser-avatar.png
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://yandex.ru/legal/browser_agreement/
-    url: 
+    url:
         homepage: https://browser.yandex.ru/
         bugtracker: https://browser.yandex.ru/feedback/
 ---
@@ -76,7 +76,7 @@ yandex-browser-stable --ozone-platform-hint=auto
 Удобным способом управления Flatpak-приложений является приложения [Flatseal](flatseal)
 :::
 
-### Как вернуть стандартный вид окна в рабочем окружении Gnome
+### Как вернуть стандартный вид окна в рабочем окружении GNOME
 
 По умолчанию Браузер не использует системную рамку окна в Linux и изменяет дизайн элементов управления. Если вы хотите вернуть стандартный вид окна и элементов управления Linux:
 
@@ -89,7 +89,7 @@ yandex-browser-stable --ozone-platform-hint=auto
 Данная настройка является экспериментальной, после ее включения возможны неполадки в работе Браузера. В этом случае отключите опцию и напишите нам через форму
 :::
 
-![стандартный вид окна в рабочем окружении Gnome](/yandex-browser/yandex-browser.gif)
+![стандартный вид окна в рабочем окружении GNOME](/yandex-browser/yandex-browser.gif)
 
 ### Video DownloadHelper
 Как известно, **Яндекс Браузер** , как и другие браузеры, обладает множеством расширений. **Video DownloadHelper** не исключение.
@@ -122,7 +122,7 @@ echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegca
 
 ## Известные проблемы
 
-### Не воспроизводится видео в Яндекс Браузере: 
+### Не воспроизводится видео в Яндекс Браузере:
 
 Откройте терминал и запустите **Яндекс Браузер**:
 
@@ -179,7 +179,7 @@ browser://flags/#external-media
 Открыть Яндекс Браузер, произвести дополнительную настройку:
 
 1. В поисковой строке запустить: `browser://flags/`
-2. Введите в строку поиска флаг `#enable-vulkan`, включите опцию Enabled 
+2. Введите в строку поиска флаг `#enable-vulkan`, включите опцию Enabled
 3. Введите в строку поиска флаг `#enable-flutter-suggest`, включите опцию Disabled
 4. Перезапустите Яндекс Браузер и проверьте результат
 

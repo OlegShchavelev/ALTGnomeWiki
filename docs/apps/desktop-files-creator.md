@@ -13,23 +13,23 @@ appstream:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     developer:
-        name: Alex K 
+        name: Alex K
         nickname: alexkdeveloper
         avatar: /notepad/notepad-avatar.png
-    url: 
+    url:
         homepage: https://github.com/alexkdeveloper/desktop-files-creator
         bugtracker: https://github.com/alexkdeveloper/desktop-files-creator/issues
         translate: https://github.com/alexkdeveloper/desktop-files-creator/tree/main/po
-gallery: 
+gallery:
     title: Галерея
     type: carousel
-    items: 
+    items:
         - src: /desktop-files-creator/desktop-files-creator-1.png
 ---
 
 # Desktop Files Creator
 
-Desktop Files Creator — позволяет создавать файлы рабочего стола в дистрибутивах GNU / Linux
+Desktop Files Creator — позволяет создавать файлы рабочего стола в дистрибутивах GNU/Linux
 
 <AGWGallery />
 

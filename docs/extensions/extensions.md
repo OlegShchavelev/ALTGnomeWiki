@@ -87,7 +87,7 @@ gnome-extensions uninstall foo-bar
 
 **Applications Menu**
 
-Дополнительная навигация с помощью меню в стиле gnome `2.x` на панели
+Дополнительная навигация с помощью меню в стиле GNOME `2.x` на панели
 
 **Auto Move Windows**
 

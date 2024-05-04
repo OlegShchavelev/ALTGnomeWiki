@@ -1,5 +1,5 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: celluloid
     flatpak: io.github.celluloid_player.Celluloid
 appstream:
@@ -7,20 +7,20 @@ appstream:
     name: Celluloid
     icon: /celluloid/celluloid-logo.svg
     summary: Простой интерфейс GTK для MPV. Он призван быть простым в использовании при сохранении высокого уровня конфигурируемости.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: The Celluloid Developers
-    url: 
+    url:
         homepage: https://celluloid-player.github.io/
         bugtracker: https://github.com/celluloid-player/celluloid/issues
-        translate: https://hosted.weblate.org/projects/celluloid/    
+        translate: https://hosted.weblate.org/projects/celluloid/
 ---
 
 # Celluloid
 
-Celluloid (ранее GNOME MPV) — простой интерфейс GTK для [mpv](/mpv). Он призван быть простым в использовании при сохранении высокого уровня конфигурируемости.
+Celluloid (ранее GNOME MPV) — простой интерфейс GTK для [MPV](/mpv). Он призван быть простым в использовании при сохранении высокого уровня конфигурируемости.
 
 ![celluloid1.png](/celluloid/celluloid-1.png)
 

@@ -264,7 +264,7 @@ export const contributions = [
       { icon: 'github', link: 'https://github.com/Krator3' }
     ],
   }, {
-    avatar: 'https://github.com/X1Z53',
+    avatar: 'https://avatars.githubusercontent.com/u/47402692?v=4',
     name: 'Давид Султаниязов',
     title: 'Участник',
     links: [

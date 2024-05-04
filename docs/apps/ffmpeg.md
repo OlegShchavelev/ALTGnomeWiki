@@ -1,17 +1,17 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: ffmpeg
 appstream:
     id: ffmpeg
     name: FFMPEG
     icon: /ffmpeg/ffmpeg-logo.png
     summary: Утилита для обработки мультимедийного контента, такого как аудио, видео, субтитры и связанные с ними метаданные.
-    metadata_license: 
+    metadata_license:
         name: LGPL v2.1+
         link: https://ffmpeg.org/legal.html
-    developer: 
+    developer:
         name: FFMPEG Community
-    url: 
+    url:
         homepage: https://ffmpeg.org/
         bugtracker: https://trac.ffmpeg.org/
         donation: https://ffmpeg.org/donations.html
@@ -23,7 +23,7 @@ appstream:
 
 FFmpeg — утилита для Linux, для обработки мультимедийного контента, такого как аудио, видео, субтитры и связанные с ними метаданные.
 
-## Установка из репозитория 
+## Установка из репозитория
 
 **FFmpeg** можно установить через терминал:
 
@@ -50,14 +50,14 @@ ffmpeg -i file_name
 Получить информацию можно, как для аудио, так и для видео файлов:
 
 ```shell
-ffmpeg -i video_file.mp4 
+ffmpeg -i video_file.mp4
 ffmpeg -i audio_file.mp3
 ```
 
 Для получения краткой информации, воспользуйтесь `-hide_banner`, введите:
 
 ```shell
-ffmpeg -i video_file.mp4 -hide_banner 
+ffmpeg -i video_file.mp4 -hide_banner
 ffmpeg -i audio_file.mp3 -hide_banner
 ```
 
@@ -134,9 +134,9 @@ for i in *.mp4; do ffmpeg -hide_banner -i "$i" -qscale 0 "/путь/к/ката�
 В данной команде мы используем кодек `x264` для кодирования:
 
 ```shell
-for i in *.mkv; do 
-  bitrate=$(ffmpeg -hide_banner -i "$i" 2>&1 | grep -oP 'bitrate: \K[0-9]+') 
-  ffmpeg -hide_banner -i "$i" -map 0:v:0 -map 0:a:0 -c:v libx264 -b:v ${bitrate}k -c:a copy "/путь/к/существующей/директории/где/сохранить/итоговые/файлы/${i%.*}.mkv"; 
+for i in *.mkv; do
+  bitrate=$(ffmpeg -hide_banner -i "$i" 2>&1 | grep -oP 'bitrate: \K[0-9]+')
+  ffmpeg -hide_banner -i "$i" -map 0:v:0 -map 0:a:0 -c:v libx264 -b:v ${bitrate}k -c:a copy "/путь/к/существующей/директории/где/сохранить/итоговые/файлы/${i%.*}.mkv";
 done
 ```
 
@@ -181,9 +181,9 @@ ffmpeg -hide_banner -i "файл.mkv" -map 0:v:0 -map 0:a:0 -map 0:s:1 -c:v copy
   Предположим что у вас есть сериал в котором находятся серии и два каталога с нужным аудио-переводом и субтитрами. (Все изначальные расширения в команде вы можете изменить под свои):
 
 ```shell
-for i in *.mkv; 
-do 
-  ffmpeg -hide_banner -i "$i" -i "/Путь/к/аудио/файлам/${i%.*}.mka" -i "/Путь/к/субтитрам/${i%.*}.ass" -map 0:v:0 -map 1:a -map 2:s -c:v copy -c:a copy -c:s copy "/Путь/куда/сохранить/${i}"; 
+for i in *.mkv;
+do
+  ffmpeg -hide_banner -i "$i" -i "/Путь/к/аудио/файлам/${i%.*}.mka" -i "/Путь/к/субтитрам/${i%.*}.ass" -map 0:v:0 -map 1:a -map 2:s -c:v copy -c:a copy -c:s copy "/Путь/куда/сохранить/${i}";
 done
 ```
 
@@ -207,7 +207,7 @@ done
 ## Вывод названия аудио кодека, количество каналов аудио, язык и название аудио дорожки.
 
 ```shell
-for file in *; do 
+for file in *; do
   echo "Файл: $file"
   ffprobe -v error -select_streams a -show_entries stream=codec_name,channels,tags:stream_tags=language,title -of csv=p=0 "$file"
 done
@@ -220,7 +220,7 @@ done
 ffmpeg -i "/путь/к/файлу/видео.mp4" "/путь/куда/сохранить/видео2.avi"
 :::
 
-## Работа с GIF 
+## Работа с GIF
 
 Конвертировать видео с расширением .mp4 в GIF
 

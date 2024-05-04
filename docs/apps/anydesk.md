@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.anydesk.Anydesk
         build: unoffical
     epm:
@@ -12,15 +12,15 @@ appstream:
     name: AnyDesk
     icon: /anydesk/anydesk-logo.svg
     summary: Удалённое подключение к компьютеру с AnyDesk
-    keywords: 
+    keywords:
         - proprietary
         - restrictions
-    developer: 
+    developer:
         name: AnyDesk Software GmbH
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://anydesk.com/ru/terms
-    url: 
+    url:
         homepage: https://anydesk.com/
         bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
 ---

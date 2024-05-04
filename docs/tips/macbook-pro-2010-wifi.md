@@ -43,7 +43,7 @@ epm install b43-fwcutter
 
 ```shell
 # скачать с этого ресурса или найти в другом месте
-wget http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2 
+wget http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2
 
 tar xjf broadcom-wl-5.100.138
 mkdir -p /lib/firmware

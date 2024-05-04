@@ -13,17 +13,17 @@ appstream:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     developer:
-        name: Alex K 
+        name: Alex K
         nickname: alexkdeveloper
         avatar: /notepad/notepad-avatar.png
     url:
         homepage: https://github.com/alexkdeveloper/radio
         translate: https://github.com/alexkdeveloper/radio/tree/main/po
         bugtracker: https://github.com/alexkdeveloper/radio/issues
-gallery: 
+gallery:
     title: Галлерея
     type: carousel
-    items: 
+    items:
         - src: /radio/radio-1.png
         - src: /radio/radio-2.png
         - src: /radio/radio-3.png

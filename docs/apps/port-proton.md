@@ -9,15 +9,15 @@ appstream:
     id: portproton
     name: PortProton
     icon: /port-proton/port-proton-logo.svg
-    summary: Проект, разработанный командой linux-gaming.ru для того, чтобы сделать легким и удобным запуск Windows игр. 
-    developer: 
+    summary: Проект, разработанный командой linux-gaming.ru для того, чтобы сделать легким и удобным запуск Windows игр.
+    developer:
         name: Mikhail Tergoev & Linux Gaming Community
-        nickname: Castro-Fidel 
+        nickname: Castro-Fidel
         avatar: /port-proton/port-proton-avatar.png
-    metadata_license: 
+    metadata_license:
         name: MIT License
         link: https://choosealicense.com/licenses/mit/
-    url: 
+    url:
         homepage: https://linux-gaming.ru/
         bugtracker: https://discord.com/invite/SFc65A2FJ6
 ---

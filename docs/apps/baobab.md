@@ -1,13 +1,13 @@
 ---
-gallery: 
+gallery:
     title: Галерея Disk Usage Analyzer
     type: slider
-    items: 
+    items:
         - src: /baobab/baobab-1.png
         - src: /baobab/baobab-2.png
         - src: /baobab/baobab-3.png
 aggregation:
-    flatpak: 
+    flatpak:
         id: org.gnome.baobab
         build: offical
     sisyphus: gnome-disk-usage
@@ -19,13 +19,13 @@ appstream:
     keywords:
         - core
         - adaptive
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://apps.gnome.org/ru/Baobab/
         bugtracker: https://gitlab.gnome.org/GNOME/baobab/-/issues
 ---

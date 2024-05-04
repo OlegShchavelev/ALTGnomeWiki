@@ -7,13 +7,13 @@ appstream:
     id: xlsclients.desktop
     name: XLSCLIENTS
     summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
-    developer: 
+    developer:
         name: X.Org Foundation
         avatar: /xeyes/xeyes-avatar.png
-    metadata_license: 
+    metadata_license:
         name: MIT License
         link: https://choosealicense.com/licenses/mit/
-    url: 
+    url:
         homepage: https://gitlab.freedesktop.org/xorg/app/xlsclients
         bugtracker: https://gitlab.freedesktop.org/xorg/app/xlsclients/issues
 ---
@@ -22,7 +22,7 @@ appstream:
 
 # XLSCLIENTS
 
-xlsclients — утилита для отображения информации о клиентских приложениях, запущенных в оконном интерфейсе X11. 
+xlsclients — утилита для отображения информации о клиентских приложениях, запущенных в оконном интерфейсе X11.
 
 ## Установка из репозитория
 

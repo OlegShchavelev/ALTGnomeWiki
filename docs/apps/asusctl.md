@@ -1,17 +1,17 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: asusctl
 appstream:
     id: asusctl.desktop
     name: AsusCtl
     icon: /asusctl/asusctl-logo.png
     summary: Утилита для управления многими аспектами различных ноутбуков ASUS.
-    metadata_license: 
+    metadata_license:
         name: MPL-2.0
         link: https://www.mozilla.org/en-US/MPL/2.0/
-    developer: 
+    developer:
         name: Asus Linux Community
-    url: 
+    url:
         homepage: https://asus-linux.org/
         bugtracker: https://gitlab.com/asus-linux/asusctl/-/issues
 ---

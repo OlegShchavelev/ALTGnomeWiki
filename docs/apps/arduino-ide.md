@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: cc.arduino.arduinoide
         build: offical
     sisyphus: arduino
@@ -9,12 +9,12 @@ appstream:
     name: Arduino IDE
     icon: /arduino-ide/cc.arduino.arduinoide.png
     summary: IDE для разработки программ для Arduino-совместимых плат
-    developer: 
+    developer:
         name: Arduino LLC
-    metadata_license: 
+    metadata_license:
         name: GNU LGPLv2.1
         link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
-    url: 
+    url:
         homepage: https://arduino.cc/
         bugtracker: https://github.com/arduino/Arduino/issues/
         translate: https://github.com/arduino/Arduino/tree/master/arduino-core/src/processing/app/i18n/

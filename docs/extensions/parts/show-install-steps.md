@@ -7,7 +7,7 @@
 3. Расширение установлено!
 
 :::info ... на будущее :blush:
-С помощью приложения [GNOME Shell Extension Manager](/extensions) можно легко устанавливать, просматривать и настраивать текущие расширения.  
+С помощью приложения [GNOME Shell Extension Manager](/extensions) можно легко устанавливать, просматривать и настраивать текущие расширения.
 
 ![extensions_1](/extensions/extensions_window.png)
-::: 
+:::

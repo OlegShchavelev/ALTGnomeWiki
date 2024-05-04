@@ -1,7 +1,7 @@
 ---
 aggregation:
     flatpak: org.freedesktop.Piper
-    sisyphus: piper 
+    sisyphus: piper
 appstream:
     id: org.freedesktop.Piper
     name: Piper
@@ -16,10 +16,10 @@ appstream:
     url:
         homepage: https://github.com/libratbag/piper
         bugtracker: https://github.com/libratbag/piper/issues
-gallery: 
+gallery:
     title: Галлерея
     type: slider
-    items: 
+    items:
         - src: /piper/piper-1.png
         - src: /piper/piper-2.png
         - src: /piper/piper-3.png

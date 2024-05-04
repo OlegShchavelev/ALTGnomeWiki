@@ -108,7 +108,7 @@ platform: VitePress
 
 ## Медиа-контент
 
-**Пример:** 
+**Пример:**
 
 ```markdown
 ![логотип](/logo.png)

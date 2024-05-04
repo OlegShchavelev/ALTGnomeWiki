@@ -3,7 +3,7 @@
 ## Установка зависимостей:
 
 ```shell
-su - 
+su -
 apt-get install libadwaita-devel libgtk4-devel vala
 ```
 
@@ -19,13 +19,13 @@ int main (string[] argv) {
     app.activate.connect (() => {
         var window = new Adw.ApplicationWindow (app);
         var label = new Gtk.Label ("Hello, World!");
-        
+
         var headerbar = new Adw.HeaderBar ();
-        
+
         var toolbar = new Adw.ToolbarView ();
         toolbar.add_top_bar (headerbar);
         toolbar.set_content (label);
-        
+
         window.set_content (toolbar);
         window.present ();
     });

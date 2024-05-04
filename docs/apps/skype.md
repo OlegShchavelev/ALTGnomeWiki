@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.skype.Client
         build: unoffical
     epm:
@@ -12,16 +12,16 @@ appstream:
     name: Skype
     icon: /skype/skype-logo.svg
     summary: Платформа для бесплатных видеозвонков, обмена сообщениями и файлами
-    keywords: 
+    keywords:
         - proprietary
         - restrictions
-    developer: 
+    developer:
         name: Microsoft Corporation
         avatar: /skype/skype-avatar.svg
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://www.microsoft.com/en-us/servicesagreement/
-    url: 
+    url:
         homepage: https://www.skype.com/
 ---
 

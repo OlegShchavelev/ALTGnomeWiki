@@ -8,15 +8,15 @@ appstream:
     name: VK Мессенджер
     icon: /vk-messenger/vk-messenger-logo.svg
     summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
-    keywords: 
+    keywords:
         - proprietary
-    developer: 
+    developer:
         name: VK Company Limited
         avatar: /vk-messenger/vk-messenger-avatar.svg
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://vk.com/terms
-    url: 
+    url:
         homepage: https://vk.me/app
 ---
 
@@ -36,7 +36,7 @@ epm play vk
 ```
 :::
 
-## Установка с официального сайта 
+## Установка с официального сайта
 
 Загрузите пакет `.rpm` со страницы релизов приложения `vk-messenger` с официального [сайта производителя](https://vk.me/app), затем установите через терминал:
 
@@ -54,4 +54,4 @@ epm -i vk-messenger.rpm
 ```
 :::
 
-USER — имя непривилегированного пользователя, укажите имя учетной записи. 
+USER — имя непривилегированного пользователя, укажите имя учетной записи.

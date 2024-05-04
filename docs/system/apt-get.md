@@ -58,7 +58,7 @@ epm upgrade
 :::
 
 :::info
-В операционных системах семейства Альт пакетный менеджер (APT) автоматически не обновляет ядра вместе с обновлением системы, поскольку обновление такого критичного компонента системы может привести к нежелательным последствиям. 
+В операционных системах семейства Альт пакетный менеджер (APT) автоматически не обновляет ядра вместе с обновлением системы, поскольку обновление такого критичного компонента системы может привести к нежелательным последствиям.
 :::
 
 ## Установка приложений
@@ -70,7 +70,7 @@ epm upgrade
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install firefox 
+apt-get install firefox
 ```
 ```shell[epm]
 epm -i firefox
@@ -94,7 +94,7 @@ epm -i firefox chromium
 :::
 
 :::info
-Обратите внимание, когда устанавливается несколько пакетов, действие нужно подтвердить нажатием клавиши Y 
+Обратите внимание, когда устанавливается несколько пакетов, действие нужно подтвердить нажатием клавиши Y
 :::
 
 ## Удаление пакетов
@@ -235,7 +235,7 @@ zabbix-in-telegram - Zabbix Notifications with graphs in Telegram
 64gram - 64Gram (unofficial Telegram Desktop) (use 'epm play' to install it)
 telegram - Telegram client from the official site (use 'epm play' to install it)
 ```
-::: 
+:::
 
 Для поиска только по названию пакета:
 
@@ -274,7 +274,7 @@ rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/noarch cla
 ::: code-group
 
 ```shell[apt-get]
-su - 
+su -
 apt-repo add task 329850
 ```
 ```shell[epm]

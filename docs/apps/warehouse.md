@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: io.github.flattool.Warehouse
         build: offical
 appstream:
@@ -8,20 +8,20 @@ appstream:
     name: Warehouse
     icon: /warehouse/warehouse-logo.svg
     summary: Управление всеми функциями Flatpak
-    developer: 
+    developer:
         name: flattool
         avatar: /warehouse/warehouse-avatar.png
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://github.com/flattool/warehouse
         bugtracker: https://github.com/flattool/warehouse/issues
         translate: https://weblate.fyralabs.com/projects/flattool/warehouse/
-gallery: 
+gallery:
     title: Галерея Warehouse
     type: carousel
-    items: 
+    items:
         - src: /warehouse/warehouse-1.png
         - src: /warehouse/warehouse-2.png
         - src: /warehouse/warehouse-3.png

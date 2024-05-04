@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.github.neithern.g4music
         build: offical
     sisyphus: g4music
@@ -12,13 +12,13 @@ appstream:
     name: G4Music
     icon: /g4music/g4music-logo.svg
     summary: Элегантное воспроизведение вашей музыки
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    url: 
+    url:
         homepage: https://gitlab.gnome.org/neithern/g4music
         translate: https://l10n.gnome.org/module/g4music
         bugtracker: https://gitlab.gnome.org/neithern/g4music/-/issues

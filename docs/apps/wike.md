@@ -1,31 +1,31 @@
 ---
 aggregation:
     sisyphus: wike
-    flatpak: 
+    flatpak:
         id: com.github.hugolabe.Wike
         build: offical
-    snap: 
+    snap:
         id: wike
         build: unoffical
 appstream:
     id: alacarte.desktop
     name: Wike
     icon: /wike/wike-logo.svg
-    summary: Программа для чтения Википедии для рабочего окружения GNOME. 
-    keywords: 
+    summary: Программа для чтения Википедии для рабочего окружения GNOME.
+    keywords:
         - adaptive
         - circle
         - dontthemes
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://apps.gnome.org/Wike/
         bugtracker: https://github.com/hugolabe/Wike/issues
---- 
+---
 
 # Wike
 

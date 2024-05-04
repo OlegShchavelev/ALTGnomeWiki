@@ -1,16 +1,16 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: samba-client
 appstream:
     name: Samba
     icon: /samba/samba-logo.svg
     summary: Пакет программ, которые позволяют обращаться к сетевым дискам и принтерам на различных операционных системах по протоколу SMB/CIFS.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: The Samba Team
-    url: 
+    url:
         homepage: https://www.samba.org/
 ---
 
@@ -20,7 +20,7 @@ appstream:
 
 Samba — пакет программ, которые позволяют обращаться к сетевым дискам и принтерам на различных операционных системах по протоколу SMB/CIFS.
 
-## Установка из репозитория 
+## Установка из репозитория
 
 **Samba** можно установить через терминал:
 

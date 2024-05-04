@@ -6,20 +6,20 @@ appstream:
     name: Boxy SVG
     icon: /boxy-svg/com.boxy_svg.BoxySVG.svg
     summary: Простой редактор векторной графики
-    developer: 
+    developer:
         name: Jarosław Foksa
         nickname: jarek-foksa
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://boxy-svg.com/
         help: https://boxy-svg.com/tutorials
         bugtracker: https://boxy-svg.com/bugs
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /boxy-svg/boxy-svg-1.png
         - src: /boxy-svg/boxy-svg-2.png
         - src: /boxy-svg/boxy-svg-3.png

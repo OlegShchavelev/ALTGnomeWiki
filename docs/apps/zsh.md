@@ -6,12 +6,12 @@ appstream:
     name: ZSH
     icon: /zsh/zsh-logo.png
     summary: Интерактивная оболочка для операционных систем на базе ядра Linux
-    developer: 
+    developer:
         name: Z Shell Community
-    metadata_license: 
+    metadata_license:
         name: Нет
         link: https://github.com/zsh-users/zsh?tab=License-1-ov-file#readme
-    url: 
+    url:
         homepage: https://www.zsh.org/
 ---
 

@@ -1,23 +1,23 @@
 ---
-aggregation: 
+aggregation:
     flatpak: org.eclipse.Java
 appstream:
     id: org.eclipse.Java
     name: Eclipse IDE
     icon: /eclipse-ide/eclipse-ide-logo.svg
     summary: Интегрированная среда разработки (IDE) для Java, используемая в компьютерном программировании.
-    metadata_license: 
+    metadata_license:
         name: EPL-2.0
         link: https://www.eclipse.org/legal/epl-2.0/
-    developer: 
-        name:  Eclipse Foundation, Inc. 
-    url: 
+    developer:
+        name:  Eclipse Foundation, Inc.
+    url:
         homepage: https://www.eclipse.org/
         bugtracker: https://bugs.eclipse.org/bugs/
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /eclipse-ide/eclipse-ide-1.png
         - src: /eclipse-ide/eclipse-ide-2.png
 ---
@@ -52,7 +52,7 @@ flatpak install flathub org.eclipse.Javascript
 
 :::tip Или с помощью Центра приложений :thinking:
 Перейдите по ссылке для <a :href="'appstream://org.eclipse.Javascript'">установки Eclipse IDE for Web and JavaScript Developers</a>, затем в браузере подтвердите операцию «открыть приложение». После этого откроется Центр приложений, выберите в нём источник **«Flathub»** и нажмите кнопку «скачать»
-::: 
+:::
 
 ## Издания Eclipse IDE
 

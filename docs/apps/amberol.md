@@ -1,13 +1,13 @@
 ---
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /amberol/amberol-1.png
         - src: /amberol/amberol-2.png
         - src: /amberol/amberol-3.png
 aggregation:
-    snap: 
+    snap:
         id: amberol
         build: unoffical
     flatpak: io.bassi.Amberol
@@ -17,28 +17,28 @@ appstream:
     name: Amberol
     icon: /amberol/amberol-logo.svg
     summary: Воспроизводит музыку и ничего больше
-    keywords: 
+    keywords:
         - adaptive
         - circle
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://gitlab.gnome.org/World/amberol/
         bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
 ---
 
 # Amberol
 
-Amberol — простой музыкальный проигрыватель. Разработчики стремятся сделать проигрователь более компактным, ненавязчивым и простым. 
+Amberol — простой музыкальный проигрыватель. Разработчики стремятся сделать проигрователь более компактным, ненавязчивым и простым.
 
 Философия Amberol:
 
-- не управляет вашей музыкальной коллекцией; 
-- не позволяет вам управлять списками воспроизведения, интеллектуальными или иными способами; 
+- не управляет вашей музыкальной коллекцией;
+- не позволяет вам управлять списками воспроизведения, интеллектуальными или иными способами;
 - не позволяет вам редактировать метаданные для ваших песен
 
 Amberol воспроизводит музыку, и ничего больше.

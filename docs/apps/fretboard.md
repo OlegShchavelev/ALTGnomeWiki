@@ -1,7 +1,7 @@
 ---
-aggregation: 
+aggregation:
     sisyphus: fretboard
-    flatpak: 
+    flatpak:
         id: dev.bragefuglseth.Fretboard
         build: offical
 appstream:
@@ -9,18 +9,18 @@ appstream:
     name: Fretboard
     icon: /fretboard/fretboard-logo.svg
     summary: Позволяет находить гитарные аккорды, вводя их названия или отображая их на интерактивном грифе гитары.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords: 
+    keywords:
         - circle
         - adaptive
         - dontthemes
-    developer: 
-        name: Brage Fuglseth 
+    developer:
+        name: Brage Fuglseth
         nickname: bragefuglseth
         avatar: /fretboard/fretboard-avatar.png
-    url: 
+    url:
         homepage: https://apps.gnome.org/Fretboard/
         bugtracker: https://github.com/bragefuglseth/fretboard/issues
         translate: https://hosted.weblate.org/engage/fretboard/

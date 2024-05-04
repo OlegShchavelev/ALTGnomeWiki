@@ -7,7 +7,7 @@ docs:
             - title: Браузеры
               icon:
                 dark: /global-light.svg
-                light: /global-dark.svg 
+                light: /global-dark.svg
               apps:
                 - name: Яндекс Браузер
                   link: yandex-browser
@@ -28,13 +28,13 @@ docs:
             - title: Мессенджеры
               icon:
                 dark: /message-light.svg
-                light: /message-dark.svg 
-              apps: 
+                light: /message-dark.svg
+              apps:
                 - name: Telegram Desktop
                   link: telegram
                 - name: Viber
                   link: viber
-                - name: WhatsApp Desktop 
+                - name: WhatsApp Desktop
                   link: whatsapp-desktop
                 - name: VK Мессенджер
                   link: vk-messenger
@@ -45,8 +45,8 @@ docs:
             - title: Игры
               icon:
                 dark: /gamepad-light.svg
-                light: /gamepad-dark.svg 
-              apps: 
+                light: /gamepad-dark.svg
+              apps:
                 - name: Steam
                   link: steam
                 - name: PortProton
@@ -62,7 +62,7 @@ docs:
             - title: Офис
               icon:
                 dark: /document-light.svg
-                light: /document-dark.svg 
+                light: /document-dark.svg
               apps:
                 - name: Мой офис
                   link: my-office
@@ -75,8 +75,8 @@ docs:
             - title: Работа с графикой
               icon:
                 dark: /designer-light.svg
-                light: /designer-dark.svg 
-              apps: 
+                light: /designer-dark.svg
+              apps:
                 - name: Figma
                   link: figma
                 - name: Lunacy
@@ -92,8 +92,8 @@ docs:
             - title: Стриминговые сервисы
               icon:
                 dark: /streaming-light.svg
-                light: /streaming-dark.svg 
-              apps: 
+                light: /streaming-dark.svg
+              apps:
                 - name: Kассета
                   link: cassette
                 - name: Spotify

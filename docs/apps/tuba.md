@@ -1,10 +1,10 @@
 ---
 aggregation:
     sisyphus: tuba
-    flatpak: 
+    flatpak:
         id: dev.geopjr.Tuba
         builf: offical
-    snap: 
+    snap:
         id: tuba
         build: offical
 appstream:
@@ -12,16 +12,16 @@ appstream:
     name: Tuba
     icon: /tuba/tuba-logo.svg
     summary: Неофициальный клиент Mastodon
-    developer: 
+    developer:
         name: Evan Paterakis
         nickname:  GeopJr
         avatar: /tuba/tuba-avatar.png
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
-        homepage: https://tuba.geopjr.dev/ 
-        bugtracker: https://github.com/GeopJr/Tuba/issues 
+    url:
+        homepage: https://tuba.geopjr.dev/
+        bugtracker: https://github.com/GeopJr/Tuba/issues
         translate: https://hosted.weblate.org/engage/tuba/
         donation: https://github.com/sponsors/GeopJr
 ---

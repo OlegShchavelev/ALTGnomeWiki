@@ -1,20 +1,20 @@
 ---
 aggregation:
     sisyphus: loupe
-    flatpak: 
+    flatpak:
         id: org.gnome.Loupe
         build: offical
 appstream:
     id: org.gnome.Loupe
     name: Loupe
     icon: /loupe/loupe-logo.svg
-    summary: Стандартный просмотр изображений Gnome.
+    summary: Стандартный просмотр изображений GNOME.
     keywords:
         - adaptive
     developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     url:
@@ -27,7 +27,7 @@ appstream:
 
 # Loupe
 
-Loupe — приложение для просмотра изображений, написанное на GTK 4, Libadwaita и Rust.
+Loupe — приложение для просмотра изображений, написанное на GTK4, Libadwaita и Rust.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

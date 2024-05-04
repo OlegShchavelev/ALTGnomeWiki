@@ -29,7 +29,7 @@ export const docs = [
           { text: 'Celluloid', link: '/celluloid' },
           { text: 'Chromium', link: '/chromium' },
           { text: 'Console', link: '/console' },
-          { text: 'Desktop Files Creator', link: 'desktop-files-creator' }, 
+          { text: 'Desktop Files Creator', link: '/desktop-files-creator' },
           { text: 'Dialect', link: '/dialect' },
           { text: 'Discord', link: '/discord' },
           { text: 'Docker', link: '/docker' },
@@ -58,14 +58,14 @@ export const docs = [
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },
           { text: 'Lazarus', link: '/lazarus' },
-          { text: 'Libreoffice', link: '/libreoffice' },
+          { text: 'LibreOffice', link: '/libreoffice' },
           { text: 'Loupe', link: '/loupe' },
           { text: 'Lunacy', link: '/lunacy' },
           { text: 'Lutris', link: '/lutris' },
           { text: 'Microsoft Edge', link: '/microsoft-edge' },
           { text: 'Mission Center', link: '/mission-center' },
           { text: 'Мpich', link: '/mpich' },
-          { text: 'Мpv', link: '/mpv' },
+          { text: 'МPV', link: '/mpv' },
           { text: 'Neofetch', link: '/neofetch' },
           { text: 'Neovim', link: '/neovim' },
           { text: 'Nextcloud Desktop', link: '/nextcloud-desktop' },
@@ -157,7 +157,7 @@ export const docs = [
                 collapsed: true
               },
               {
-                text: "Веб-браузеры",
+                text: 'Веб-браузеры',
                 items: [
                   { text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }
                 ],
@@ -214,11 +214,11 @@ export const docs = [
         text: 'Расширения рабочего окружения GNOME',
         link: '/extensions',
         items: [
-          { text: 'Open Weather', link: '/openweather' },
+          { text: 'OpenWeather', link: '/openweather' },
           { text: 'AppIndicator/KStatusNotifierItem', link: '/appindicator-kstatus-notifier-item' },
           { text: 'Extension List', link: '/extension-list' },
-          { text: 'U Power', link: '/u-power' },
-          { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktopicons.md' },
+          { text: 'UPower Battery', link: '/upower-battery' },
+          { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktop-icons' },
           { text: 'App menu is back', link: '/app-menu-is-back' },
           { text: 'Add to desktop', link: '/add-to-desktop' },
           { text: 'Fullscreen Avoider', link: '/fullscreen-avoider' },
@@ -227,12 +227,12 @@ export const docs = [
           { text: 'Dash to Dock', link: '/dash-to-dock' },
           { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' },
           { text: 'GSConnect', link: '/gsconnect' },
-          { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' },
+          { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher' },
           { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
-          { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' },
+          { text: 'Custom Accent Colors', link: '/custom-accent-colors' },
           { text: 'Blur my Shell', link: '/blur-my-shell' },
           { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' },
-          { text: 'UsbGuard Gnome', link: '/usbguard-gnome.md' }
+          { text: 'USBGuard', link: '/usbguard' }
         ],
         collapsed: true
       },
@@ -251,7 +251,7 @@ export const docs = [
         text: 'Периферия и оборудование',
         items: [
           { text: 'Драйверы NVIDIA', link: '/nvidia' },
-          { text: 'Подключение USB устройств', link: '/usb-devices' },
+          { text: 'Подключение USB-устройств', link: '/usb-devices' },
           { text: 'Подключение принтера', link: '/drivers-for-printer' },
           { text: 'Подключение сканера', link: '/drivers-for-scanner' },
           { text: 'Подключение DualShock', link: '/dualshock' }
@@ -312,8 +312,8 @@ export const docs = [
       { text: 'EPM', link: '/epm' },
       { text: 'Flatpak', link: '/flatpak' },
       { text: 'Snaps', link: '/snap' },
-      { text: "Приложения для GNOME", link: '/apps-gnome' },
-      { text: "Samba", link: "/samba" }
+      { text: 'Приложения для GNOME', link: '/apps-gnome' },
+      { text: 'Samba', link: '/samba' }
     ]
   }
 ]

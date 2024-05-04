@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: LibreOffice-still
-    flatpak: 
+    flatpak:
         id: org.libreoffice.LibreOffice
         build: offical
 appstream:
@@ -9,10 +9,10 @@ appstream:
     name: LibreOffice
     icon: /libreoffice/org.libreoffice.LibreOffice.desktop.png
     summary: Мощный офисный пакет LibreOffice
-    metadata_license: 
+    metadata_license:
         name: MPL-v2.0
         link: https://www.mozilla.org/en-US/MPL/2.0/
-    developer: 
+    developer:
         name: The Document Foundation
     url:
         homepage: https://www.libreoffice.org/
@@ -27,7 +27,7 @@ appstream:
 
 # LibreOffice
 
-LibreOffice — мощный офисный пакет, полностью совместимый с 32/64-битными системами. Переведён более чем на 30 языков мира. Поддерживает большинство популярных операционных систем, включая GNU/Linux, Microsoft Windows и Mac OS X.
+LibreOffice — мощный офисный пакет, полностью совместимый с 32/64-битными системами. Переведён более чем на 30 языков мира. Поддерживает большинство популярных операционных систем, включая GNU/Linux, Microsoft Windows и macOS.
 
 ## Установка из репозитория
 
@@ -47,7 +47,7 @@ apt-get install LibreOffice-still LibreOffice-still-gtk3
 ```shell[epm]
 epm -i LibreOffice-still LibreOffice-still-gtk3
 ```
-== Fresh 
+== Fresh
 ::: code-group
 
 ```shell[apt-get]

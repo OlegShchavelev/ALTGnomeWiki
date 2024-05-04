@@ -275,11 +275,6 @@ Uptime: 1 hour, 32 mins
 ```
 :::
 
-| Значение | Вывод                |
-| :------- | :------------------- |
-| on       | 6.8.7-6.8-alt1       |
-| off      | Linux 6.8.7-6.8-alt1 |
-
 ::: code-group
 ```shell[По умолчанию]
 kernel_shorthand="on"

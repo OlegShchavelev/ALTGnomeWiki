@@ -8,14 +8,14 @@ appstream:
     name: Р7-Офис
     icon: /r7-office/r7-office-logo.png
     summary: Российский кроссплатформенный пакет приложений для совместной работы с офисными документами.
-    keywords: 
+    keywords:
         - proprietary
-    developer: 
+    developer:
         name: АО «Р7»
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://r7-office.ru/license-agreement
-    url: 
+    url:
         homepage: https://r7-office.ru/
 ---
 

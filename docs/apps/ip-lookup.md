@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: iplookup-gtk
-    flatpak: io.github.bytezz.IPLookup 
+    flatpak: io.github.bytezz.IPLookup
 appstream:
     id: io.github.bytezz.IPLookup
     name: IP Lookup
@@ -11,7 +11,7 @@ appstream:
         name: Bytez
         nickname: Bytezz
         avatar: https://avatars.githubusercontent.com/u/25850701?v=4
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     url:

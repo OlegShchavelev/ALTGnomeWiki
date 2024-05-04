@@ -18,12 +18,12 @@
     :::
 
     ```shell
-        # что-бы глянуть какие внешние диски подключены 
+        # что-бы глянуть какие внешние диски подключены
         diskutil list | grep -A2 "(external, physical)"
 
         # запсиываем образ на флешку
         # /dev/disk4 - это диск определенный на предыдущем этапе
-        sudo dd if=regular-gnome-latest-x86_64.iso of=/dev/disk4 bs=1m 
+        sudo dd if=regular-gnome-latest-x86_64.iso of=/dev/disk4 bs=1m
     ```
 
 2. В `DiskUtility` выделяем раздел для установки (форматируя его в FAT32, что-бы проще было найти)
@@ -64,14 +64,14 @@
 su -
 
 # создаст своп размером с оперативную память
-dd if=/dev/zero of=/swapfile bs=1M count=`free -m | awk 'NR==2 {print $2}'` 
+dd if=/dev/zero of=/swapfile bs=1M count=`free -m | awk 'NR==2 {print $2}'`
 # или указать самостоятельно, например размер в 4 гигабайта
 dd if=/dev/zero of=/swapfile bs=1M count=4096
 
 chmod 600 /swapfile
 mkswap /swapfile
 
-echo "/swapfile none swap defaults 0 0" >> /etc/fstab # важно >> 
+echo "/swapfile none swap defaults 0 0" >> /etc/fstab # важно >>
 cat /etc/fstab # смотрим что строка с /swapfile появилась в конце файла
 
 reboot

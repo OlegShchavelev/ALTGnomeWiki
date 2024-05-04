@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: io.github.shiftey.Desktop
         build: unoffical
 appstream:
@@ -8,14 +8,14 @@ appstream:
     name: Github Desktop
     icon: /github-desktop/github-desktop-logo.svg
     summary: Приложение для удобной работы с GitHub
-    metadata_license: 
+    metadata_license:
         name: MIT
         link: https://mit-license.org/
-    developer: 
+    developer:
         name: Brendan Forster
         nickname: shiftkey
         avatar: /github-desktop/github-desktop-avatar.png
-    url: 
+    url:
         homepage: https://github.com/shiftkey/desktop
         bugtracker: https://github.com/shiftkey/desktop/issues
 ---

@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: helvum
-    flatpak: 
+    flatpak:
         id: org.pipewire.Helvum
         build: offical
 appstream:
@@ -13,7 +13,7 @@ appstream:
         name: Tom Wagner
         nickname: ryuukyu
         avatar: /helvum/helvum-avatar.png
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     url:

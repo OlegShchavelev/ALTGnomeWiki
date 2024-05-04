@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.wps.Office
         build: unoffical
     epm:
@@ -12,21 +12,21 @@ appstream:
     name: WPS Office
     icon: /wps-office/wps-office-logo.svg
     summary: Универсальный пакет Office приложений
-    keywords: 
+    keywords:
         - proprietary
-    developer: 
+    developer:
         name: Kingsoft Corporation
         avatar: /wps-office/wps-office-avatar.png
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://www.wps.com/eula/
-    url: 
+    url:
         homepage: https://www.wps.com/office/linux/
         bugtracker: https://help.wps.com/
-gallery: 
+gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /wps-office/wps-office-1.png
         - src: /wps-office/wps-office-2.png
         - src: /wps-office/wps-office-3.png

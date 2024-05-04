@@ -6,15 +6,15 @@ appstream:
     name: Alacarte
     icon: /alacarte/alacarte-logo.svg
     summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
-    keywords: 
+    keywords:
         - adaptive
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license: 
+    metadata_license:
         name: GNU LGPLv2
         link: https://www.gnu.org/licenses/old-licenses/lgpl-2.0.en.html
-    url: 
+    url:
         homepage: https://gitlab.gnome.org/GNOME/alacarte
         bugtracker: https://gitlab.gnome.org/GNOME/alacarte
 ---

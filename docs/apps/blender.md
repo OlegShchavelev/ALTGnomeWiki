@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: org.blender.Blender
         build: offical
     sisyphus: blender
@@ -9,12 +9,12 @@ appstream:
     name: Blender
     icon: /blender/blender-logo.svg
     summary: 3D-моделирование, анимация, рендеринг и компоновка
-    developer: 
+    developer:
         name: Blender Foundation
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://www.blender.org/
         bugtracker: https://developer.blender.org/
 ---

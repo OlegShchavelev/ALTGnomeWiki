@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: krita
-    flatpak: 
+    flatpak:
         id: org.kde.krita
         build: offical
 appstream:
@@ -9,10 +9,10 @@ appstream:
     name: Krita
     icon: /krita/krita-logo.svg
     summary: Творческая свобода для художников c Krita
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: Krita Foundation
     url:
         homepage: https://www.krita.org/

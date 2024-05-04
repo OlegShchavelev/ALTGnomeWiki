@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: codium
-    flatpak: 
+    flatpak:
         id: com.vscodium.codium
         build: unoffical
     epm:
@@ -13,12 +13,12 @@ appstream:
     name: VSCodium
     icon: /vscodium/vscodium-logo.svg
     summary: Управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
-    developer: 
+    developer:
         name: VSCodium Community
-    metadata_license: 
+    metadata_license:
         name: MIT License
         link: https://choosealicense.com/licenses/mit/
-    url: 
+    url:
         homepage: https://vscodium.com/
         bugtracker: https://github.com/VSCodium/vscodium/issues
 ---
@@ -48,7 +48,7 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 :::
 
 :::info
-При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/pin-app)  
+При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/pin-app)
 :::
 
 Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:

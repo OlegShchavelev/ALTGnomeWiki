@@ -9,13 +9,13 @@ appstream:
     id: com.transmissionbt.Transmission
     name: Transmission
     icon: /transmission/transmission-logo.svg
-    summary: Быстрый, простой и бесплатный клиент BitTorrent. 
-    developer: 
+    summary: Быстрый, простой и бесплатный клиент BitTorrent.
+    developer:
         name: The Transmission Project
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://transmissionbt.com/
         bugtracker: https://github.com/transmission/transmission/issues
         translate: https://explore.transifex.com/transmissionbt/transmissionbt/
@@ -24,7 +24,7 @@ appstream:
 
 # Transmission
 
-Transmission — быстрый, простой и бесплатный клиент BitTorrent. 
+Transmission — быстрый, простой и бесплатный клиент BitTorrent.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

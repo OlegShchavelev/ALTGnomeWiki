@@ -7,16 +7,16 @@ appstream:
     name: Resources
     icon: /resources/resources-logo.svg
     summary: Простой, но мощный монитор ваших системных ресурсов и процессов, написанный на Rust и использующий GTK 4 и libadwaita.
-    keywords: 
+    keywords:
         - adaptive
         - dontthemes
-    developer: 
+    developer:
         name: nokyan & Community
         avatar: /resources/resources-avatar.png
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: https://github.com/nokyan/resources/tree/main
         bugtracker: https://github.com/nokyan/resources/issues
 

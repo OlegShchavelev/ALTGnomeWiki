@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: io.github.fabrialberio.pinapp
         build: unoffical
 appstream:
@@ -10,7 +10,7 @@ appstream:
     summary: Позволяет менять Desktop Файлы
     developer:
         name: Fabrizio Alberio
-        nickname: fabrialberio 
+        nickname: fabrialberio
         avatar: /pin-app/pin-app-avatar.png
     metadata_license:
         name: GNU GPLv3
@@ -18,10 +18,10 @@ appstream:
     url:
         homepage: https://github.com/fabrialberio/PinApp
         bugtracker: https://github.com/fabrialberio/PinApp/issues
-gallery: 
+gallery:
     title: Галлерея
     type: slider
-    items: 
+    items:
         - src: /pin-app/pin-app-3.png
         - src: /pin-app/pin-app-4.png
         - src: /pin-app/pin-app-5.png

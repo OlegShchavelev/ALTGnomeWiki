@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: kooha
-    flatpak: 
+    flatpak:
         id: io.github.seadve.Kooha
         build: offical
 appstream:
@@ -9,11 +9,11 @@ appstream:
     name: Kooha
     icon: /kooha/kooha-logo.svg
     summary: Простой экранный рекордер с минимальным интерфейсом. Вы можете просто нажать кнопку записи без необходимости настраивать кучу настроек.
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     developer:
-        name: Dave Patrick 
+        name: Dave Patrick
         nickname: SeaDve
         avatar: /kooha/kooha-avatar.png
     url:

@@ -24,7 +24,7 @@ poetry new NAME
 
 `NAME` — название проекта.
 
-::: details Пример архитектуры 
+::: details Пример архитектуры
 ```shell
 new_project
 ├── new_project

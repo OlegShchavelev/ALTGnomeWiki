@@ -1,7 +1,7 @@
 ---
 aggregation:
     sisyphus: totem
-    flatpak: 
+    flatpak:
         id: org.gnome.Totem
         build: offical
 appstream:
@@ -9,16 +9,16 @@ appstream:
     name: Видео
     icon: /totem/totem-logo.svg
     summary: Видеопроигрыватель поддерживает список локальных видеофайлов и DVD с возможностью поиска и доступ к видео по сети.
-    keywords: 
+    keywords:
         - adaptive
         - core
-    developer: 
+    developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv2
         link: https://choosealicense.com/licenses/gpl-2.0/
-    url: 
+    url:
         homepage: https://apps.gnome.org/Totem/
         bugtracker: https://gitlab.gnome.org/GNOME/totem/issues
         translate: https://l10n.gnome.org/module/totem/

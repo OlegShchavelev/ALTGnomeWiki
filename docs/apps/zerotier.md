@@ -6,19 +6,19 @@ appstream:
     name: ZeroTierOne
     icon: /zerotier-one/zerotier-one-logo.png
     summary: Cервис ZeroTierOne
-    developer: 
+    developer:
         name: ZeroTier Inc.
-    metadata_license: 
+    metadata_license:
         name: ZeroTier BSL 1.1
         link: https://github.com/zerotier/ZeroTierOne/blob/dev/LICENSE.txt
-    url: 
+    url:
         homepage: https://zerotier.com/
-        bugtracker: https://github.com/zerotier/ZeroTierOne/issues        
+        bugtracker: https://github.com/zerotier/ZeroTierOne/issues
 ---
 
 # ZeroTierOne
 
-ZeroTierOne — бесплатный мультиплатформенный сервис, с открытым исходным кодом позволяющий строить современные, безопасные многоточечные виртуализированные сети практически любого типа. От надежных одноранговых сетей до мультиоблачной ячеистой инфраструктуры — обеспечение глобальной связи с простотой локальной сети. 
+ZeroTierOne — бесплатный мультиплатформенный сервис, с открытым исходным кодом позволяющий строить современные, безопасные многоточечные виртуализированные сети практически любого типа. От надежных одноранговых сетей до мультиоблачной ячеистой инфраструктуры — обеспечение глобальной связи с простотой локальной сети.
 
 ## Установка из репозитория
 

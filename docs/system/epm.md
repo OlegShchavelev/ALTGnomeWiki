@@ -5,13 +5,13 @@ metainfo:
     site:
         url: https://github.com/Etersoft/eepm
         anchor: github.com
-    developer: 
+    developer:
         name: Этерсофт
         avatar: https://avatars.githubusercontent.com/u/7222689?s=200&v=4
-    issue: 
+    issue:
         url: https://github.com/Etersoft/eepm/issues
         anchor: github.com
-    licence: 
+    licence:
         url: https://choosealicense.com/licenses/agpl-3.0/
         anchor: GNU AGPLv3
     adaptive: false
@@ -19,7 +19,7 @@ metainfo:
     gnomeCircle: false
     proprietary: false
     sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/eepm/ 
+        url: https://packages.altlinux.org/ru/sisyphus/srpms/eepm/
 ---
 
 # Единая команда управления пакетами (epm)
@@ -82,7 +82,7 @@ distro_info v20230406 (EPM version 3.60.5-alt1) : Copyright © 2007-2023 Etersof
 
 **EPM Play** — инструмент позволяющий  автоматически устанавливать и удалять пакеты используя заготовленные сценарии при этом не используя сторонний репозитории.
 
-``` 
+```
 epm play [options] [argument]
 ```
 
@@ -108,7 +108,7 @@ epm play telegram = beta
 epm play --remove telegram
 ```
 
-Возможно удалить приложение используя пакетный менеджер: 
+Возможно удалить приложение используя пакетный менеджер:
 
 ::: code-group
 
@@ -150,7 +150,7 @@ epm play --list
 ```
 
 :::warning
-При совпадение идентификаторов приложений, в списке будут присутствовать приложения установленные с помощью пакетного менеджера `apt-get` 
+При совпадение идентификаторов приложений, в списке будут присутствовать приложения установленные с помощью пакетного менеджера `apt-get`
 :::
 
 Получить список установленных утилит:
@@ -187,13 +187,13 @@ epm play --installed telegram
 epm play --product-alternatives telegram
 ```
 
-## Утилита EPM Repack 
+## Утилита EPM Repack
 
 EPM Repack — инструмент позволяющий конвертировать (переупаковать) пакеты от сторонних производителей в стандарт RPM семейства операционных систем АЛЬТ
 
 | Менеджер пакетов |      Дистрибутив     |
 | -----------------| -------------------  |
-| rpm | asplinux suse mandriva rosa mandrake pclinux sled sles fedora redhat scientific centos rhel | 
+| rpm | asplinux suse mandriva rosa mandrake pclinux sled sles fedora redhat scientific centos rhel |
 | deb | debian ubuntu mint runtu mcst |
 | tgz | slackware mopslinux |
 | tbz | freebsd |
@@ -208,13 +208,13 @@ epm repack tonfotos.deb
 epm -i tonfotos-1.6.5-epm1.repacked.2.x86_64.rpm
 ```
 
-Альтернативном вводом является:  
+Альтернативном вводом является:
 
 ```shell
 epm -i tonfotos.deb
 ```
 
-При установке пакета, epm автоматически определит, что устанавленный файл не является стандартным и запустит комманду epm repack, а после переупаковки пакета, автоматически установит переупакованный пакет. 
+При установке пакета, epm автоматически определит, что устанавленный файл не является стандартным и запустит комманду epm repack, а после переупаковки пакета, автоматически установит переупакованный пакет.
 
 :::info
  Предварительно скачайте deb-пакет [на официальном сайте производителя](https://tonfotos.com). Перейдите в папку со скаченной программой Tonfotos, в моем случае:

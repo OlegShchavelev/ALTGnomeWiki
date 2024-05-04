@@ -1,6 +1,6 @@
 # Vala
 
-Vala — язык программирования, предназначенный для прикладного и системного программирования на основе библиотек GLib Object System (GObject) рабочей среды GNOME. 
+Vala — язык программирования, предназначенный для прикладного и системного программирования на основе библиотек GLib Object System (GObject) рабочей среды GNOME.
 Язык был разработан Йюргом Биллетером (Jürg Billeter) и Раффаэле Сандрини (Raffaele Sandrini).
 
 ## Установка
@@ -28,7 +28,7 @@ class Sample {
     void run () {
         stdout.printf("Hello, World\n");
     }
- 
+
     static int main (string[] args) {
         var sample = new Sample ();
         sample.run ();

@@ -2,7 +2,7 @@
 title: Xmind
 appstreamFlatpak: net.xmind.XMind
 aggregation:
-    flatpak: 
+    flatpak:
         id: net.xmind.XMind
         build: offical
 appstream:
@@ -10,20 +10,20 @@ appstream:
     name: Xmind
     icon: /xmind/xmind-logo.svg
     summary: Приложение, которое можно использовать для визуализации идей, прояснения мыслей
-    keywords: 
+    keywords:
         - proprietary
-    developer: 
+    developer:
         name: XMIND LTD.
         avatar: /xmind/xmind-avatar.png
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://xmind.app/terms/
-    url: 
+    url:
         homepage: https://xmind.app/
         bugtracker: https://support.xmind.net/
 ---
 
-# Xmind 
+# Xmind
 
 Xmind — приложение, которое можно использовать для визуализации идей, прояснения мыслей, управления сложной информацией и содействия командному сотрудничеству. Люди используют Xmind для повышения своей производительности и креативности во время работы или обучения.
 

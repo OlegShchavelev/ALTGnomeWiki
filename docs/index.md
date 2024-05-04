@@ -21,7 +21,7 @@ hero:
 features:
   - icon:
       dark: /bolt-dark.svg
-      light: /bolt-light.svg 
+      light: /bolt-light.svg
     title: Раньше чем у других
     details: Eжедневно обновляемый репозиторий пакетов свободных программ Sisyphus
   - icon:

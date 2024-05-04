@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.vivaldi.Vivaldi
         build: unoffical
     epm:
@@ -12,14 +12,14 @@ appstream:
     name: Vivaldi
     icon: /vivaldi/vivaldi-logo.svg
     summary: Быстрый, удобный и многофункциональный браузер, основанный на движке Blink и развивающий идеи Opera.
-    keywords: 
+    keywords:
         - proprietary
-    developer: 
+    developer:
         name: Vivaldi Technologies
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://help.vivaldi.com/desktop/privacy/is-vivaldi-open-source/
-    url: 
+    url:
         homepage: https://vivaldi.com/
         bugtracker: https://help.vivaldi.com/desktop/troubleshoot/reporting-a-bug-in-vivaldi/
 ---

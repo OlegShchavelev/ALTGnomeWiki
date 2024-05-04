@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.google.Chrome
         build: unoffical
     epm:
@@ -12,15 +12,15 @@ appstream:
     name: Google Chrome
     icon: /google-chrome/google-chrome-logo.svg
     summary: Веб-браузер от Google
-    keywords: 
+    keywords:
         - proprietary
-    metadata_license: 
+    metadata_license:
         name: Собственная
         link: https://chromeenterprise.google/terms/chrome-service-license-agreement/in/
-    developer: 
+    developer:
         name: Google
         avatar: /google-chrome/google-chrome-avatar.png
-    url: 
+    url:
         homepage: https://www.google.com/chrome/
 ---
 

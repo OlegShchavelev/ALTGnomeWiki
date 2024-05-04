@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: org.audacityteam.Audacity
         build: offical
     sisyphus: audacity
@@ -9,12 +9,12 @@ appstream:
     name: Audacity
     icon: /audacity/audacity-logo.svg
     summary: Записывайте и редактируйте аудиофайлы с Audacity
-    developer: 
+    developer:
         name: Muse Group
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    url: 
+    url:
         homepage: http://www.audacityteam.org/
         bugtracker: https://github.com/audacity/audacity/issues/
         help: https://support.audacityteam.org/

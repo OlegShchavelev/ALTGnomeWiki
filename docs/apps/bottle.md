@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.usebottles.bottles
         build: offical
     sisyphus: bottles
@@ -9,14 +9,14 @@ appstream:
     name: Bottles
     icon: /bottles/bottles-logo.svg
     summary: Запуск программ Windows
-    developer: 
+    developer:
         name: Bottles Contributors
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords: 
+    keywords:
         - dontthemes
-    url: 
+    url:
         homepage: https://usebottles.com/
         bugtracker: https://github.com/bottlesdevs/Bottles/issues
         translate: https://hosted.weblate.org/engage/bottles/

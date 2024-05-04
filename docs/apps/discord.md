@@ -1,6 +1,6 @@
 ---
-aggregation: 
-    flatpak: 
+aggregation:
+    flatpak:
         id: com.discordapp.Discord
         build: offical
     epm:
@@ -12,14 +12,14 @@ appstream:
     name: Discord
     icon: /discord/discord-logo.svg
     summary: Клиент для обмена сообщениями, аудио и видеосвязи
-    metadata_license: 
+    metadata_license:
         name: CC0-1.0
         link: https://choosealicense.com/licenses/cc0-1.0/
-    keywords: 
+    keywords:
         - proprietary
-    developer: 
+    developer:
         name: Discord Inc.
-    url: 
+    url:
         homepage: https://discord.com/
 ---
 

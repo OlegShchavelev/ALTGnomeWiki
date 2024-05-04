@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: com.dec05eba.gpu_screen_recorder
         build: offical
     sisyphus: gpu-screen-recorder
@@ -9,12 +9,12 @@ appstream:
     name: GPU Screen Recorder
     icon: /gpu-screen-recorder/com.dec05eba.gpu_screen_recorder.png
     summary: Самый быстрый экранный рекордер для Linux
-    metadata_license: 
+    metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
+    developer:
         name: dec05eba
-    url: 
+    url:
         homepage: https://git.dec05eba.com/gpu-screen-recorder/about/
         bugtracker: https://github.com/dec05eba/gpu-screen-recorder-issues/issues
 ---
@@ -26,4 +26,4 @@ appstream:
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 
- 
+

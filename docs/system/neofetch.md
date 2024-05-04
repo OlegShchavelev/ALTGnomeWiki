@@ -2,21 +2,21 @@
 title: Neofetch
 nameRepo: neofetch
 appstreamRepo: neofetch.desktop
-aggregation: 
+aggregation:
     sisyphus: neofetch
 appstream:
     id: neofetch.desktop
     name: Neofetch
     icon: /neofetch/neofetch-logo.png
     summary: Средство для отображения информации о системе.
-    metadata_license: 
+    metadata_license:
         name: MIT License
         link: https://choosealicense.com/licenses/mit/
-    developer: 
+    developer:
         name: Dylan Araps & Linux Community
         nickname: dylanaraps
         avatar: /neofetch/neofetch-avatar.png
-    url: 
+    url:
         homepage: https://github.com/dylanaraps/neofetch
         bugtracker: https://github.com/dylanaraps/neofetch/issues
 ---
@@ -56,7 +56,7 @@ epm -i neofetch
 
 Neofetch имеет довольно гибкую конфигурацию, и каждый может настроить его под себя.
 
-::: info 
+::: info
 В данном блоке рассматривается настройка на примере [Данного конфига](https://github.com/fiersik/fiersik_dots/tree/main/neofetch).
 Для его правильного отображения необходимо установить один из [Nerd шрифтов](https://www.nerdfonts.com/font-downloads).
 :::
@@ -147,10 +147,10 @@ info "КОММЕНТАРИЙ" ПАРАМЕТР
 ```
 Вывод:
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 Terminal: kgx # [!code focus]
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
 GPU: AMD ATI Radeon RX 580 2048SP
 ```
 
@@ -169,11 +169,11 @@ prin "СТРОКА"
 ```
 Вывод:
 ```shell
-OS: ALT Regular Sisyphus x86_64 
-Kernel: 6.8.8-6.8-alt1 
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1
 Строка с переменной 'fiersik' # [!code focus]
-Uptime: 1 hour, 7 mins 
-Packages: 2208 (rpm), 35 (flatpak), 4 (snap)  
+Uptime: 1 hour, 7 mins
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
 ```
 
 == echo
@@ -191,11 +191,11 @@ echo
 ```
 Вывод:
 ```shell
-Shell: zsh 5.9 
-Resolution: 1920x1080 
+Shell: zsh 5.9
+Resolution: 1920x1080
  # [!code focus]
-DE: GNOME 46.1 
-WM: Mutter 
+DE: GNOME 46.1
+WM: Mutter
 ```
 :::
 
@@ -263,13 +263,13 @@ title_fqdn="off"
 ::: tabs
 == on
 ```shell
-OS: ALT Regular Sisyphus x86_64 
+OS: ALT Regular Sisyphus x86_64
 Kernel: 6.8.8-6.8-alt1 # [!code focus]
 Uptime: 1 hour, 32 mins
 ```
 == off
 ```shell
-OS: ALT Regular Sisyphus x86_64 
+OS: ALT Regular Sisyphus x86_64
 Kernel: Linux 6.8.8-6.8-alt1 # [!code focus]
 Uptime: 1 hour, 32 mins
 ```
@@ -316,17 +316,17 @@ distro_shorthand="off"
 ::: tabs
 == on
 ```shell
-fiersik@alt-gnome 
------------------ 
+fiersik@alt-gnome
+-----------------
 OS: ALT Regular Sisyphus x86_64 # [!code focus]
-Kernel: 6.8.8-6.8-alt1 
+Kernel: 6.8.8-6.8-alt1
 ```
 == off
 ```shell
-fiersik@alt-gnome 
------------------ 
+fiersik@alt-gnome
+-----------------
 OS: ALT Regular Sisyphus # [!code focus]
-Kernel: 6.8.8-6.8-alt1 
+Kernel: 6.8.8-6.8-alt1
 ```
 :::
 
@@ -350,26 +350,26 @@ os_arch="on"
 ::: tabs
 == on
 ```shell
-OS: ALT Regular Sisyphus x86_64 
-Kernel: 6.8.8-6.8-alt1 
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1
 Uptime: 1 hour, 47 mins # [!code focus]
-Packages: 2208 (rpm), 35 (flatpak) 
-Shell: zsh 5.9 
+Packages: 2208 (rpm), 35 (flatpak)
+Shell: zsh 5.9
 ```
 == tiny
 ```shell
-OS: ALT Regular Sisyphus x86_64 
-Kernel: 6.8.8-6.8-alt1 
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1
 Uptime: 1h 47m # [!code focus]
-Packages: 2208 (rpm), 35 (flatpak), 4 (snap)  
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
 Shell: zsh 5.9
 ```
 == off
 ```shell
-OS: ALT Regular Sisyphus x86_64 
-Kernel: 6.8.8-6.8-alt1 
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.8-6.8-alt1
 Uptime: 1 hour, 47 minutes # [!code focus]
-Packages: 2208 (rpm), 35 (flatpak), 4 (snap)  
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
 Shell: zsh 5.9
 ```
 :::
@@ -394,19 +394,19 @@ uptime_shorthand="on"
 ::: tabs
 == on
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 Terminal: kgx
 Memory: 6807MiB / 15982MiB (42%) # [!code focus]
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 ```
 == off
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 Terminal: kgx
 Memory: 6807MiB / 15982MiB # [!code focus]
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 ```
 :::
 
@@ -428,27 +428,27 @@ memory_percent="on"
 ::: tabs
 == kib
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 Terminal: kgx
 Memory: 7144448KiB / 16365568KiB # [!code focus]
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 ```
 == mib
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 Terminal: kgx
 Memory: 7516MiB / 15982MiB # [!code focus]
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 ```
 == gib
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 Terminal: kgx
 Memory: 7.40GiB / 15.61GiB # [!code focus]
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 ```
 :::
 
@@ -472,26 +472,26 @@ memory_unit="mib"
 ::: tabs
 == on
 ```shell
-Kernel: 6.8.8-6.8-alt1 
-Uptime: 1 hour, 56 mins 
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1 hour, 56 mins
 Packages: 2208 (rpm), 35 (flatpak), 4 (snap) # [!code focus]
-Shell: zsh 5.9 
-Resolution: 1920x1080 
+Shell: zsh 5.9
+Resolution: 1920x1080
 ```
 == tiny
 ```shell
-Kernel: 6.8.8-6.8-alt1 
-Uptime: 1 hour, 56 mins 
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1 hour, 56 mins
 Packages: 2247 (rpm, flatpak, snap) # [!code focus]
-Shell: zsh 5.9 
+Shell: zsh 5.9
 Resolution: 1920x1080
 ```
 == off
 ```shell
-Kernel: 6.8.8-6.8-alt1 
-Uptime: 1 hour, 56 mins 
+Kernel: 6.8.8-6.8-alt1
+Uptime: 1 hour, 56 mins
 Packages: 2247 # [!code focus]
-Shell: zsh 5.9 
+Shell: zsh 5.9
 Resolution: 1920x1080
 ```
 :::
@@ -516,18 +516,18 @@ package_managers="on"
 ::: tabs
 == on
 ```shell
-Uptime: 2 hours, 1 min 
-Packages: 2208 (rpm), 35 (flatpak) 
+Uptime: 2 hours, 1 min
+Packages: 2208 (rpm), 35 (flatpak)
 Shell: /bin/zsh 5.9 # [!code focus]
-Resolution: 1920x1080 
+Resolution: 1920x1080
 DE: GNOME 46.1
 ```
 == off
 ```shell
-Uptime: 2 hours, 1 min 
-Packages: 2208 (rpm), 35 (flatpak) 
+Uptime: 2 hours, 1 min
+Packages: 2208 (rpm), 35 (flatpak)
 Shell: zsh 5.9 # [!code focus]
-Resolution: 1920x1080 
+Resolution: 1920x1080
 DE: GNOME 46.1
 ```
 :::
@@ -550,18 +550,18 @@ shell_path="off"
 ::: tabs
 == on
 ```shell
-Uptime: 2 hours, 1 min 
-Packages: 2208 (rpm), 35 (flatpak), 4 (snap)  
+Uptime: 2 hours, 1 min
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
 Shell: zsh 5.9 # [!code focus]
-Resolution: 1920x1080 
+Resolution: 1920x1080
 DE: GNOME 46.1
 ```
 == off
 ```shell
-Uptime: 2 hours, 1 min 
-Packages: 2208 (rpm), 35 (flatpak), 4 (snap)  
+Uptime: 2 hours, 1 min
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
 Shell: zsh # [!code focus]
-Resolution: 1920x1080 
+Resolution: 1920x1080
 DE: GNOME 46.1
 ```
 :::
@@ -586,19 +586,19 @@ shell_version="on"
 ::: tabs
 == on
 ```shell
-Shell: zsh 5.9 
-Resolution: 1920x1080 
+Shell: zsh 5.9
+Resolution: 1920x1080
 DE: GNOME 46.1 # [!code focus]
-WM: Mutter 
-WM Theme: Adwaita 
+WM: Mutter
+WM Theme: Adwaita
 ```
 == off
 ```shell
-Shell: zsh 5.9 
-Resolution: 1920x1080 
+Shell: zsh 5.9
+Resolution: 1920x1080
 DE: GNOME # [!code focus]
-WM: Mutter 
-WM Theme: Adwaita 
+WM: Mutter
+WM Theme: Adwaita
 ```
 :::
 
@@ -639,20 +639,20 @@ speed_type="scaling_cur_freq"
 ::: tabs
 == on
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Intel Xeon E5-2640 v2 (16) @ 2.5GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 == off
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 :::
@@ -675,20 +675,20 @@ speed_shorthand="on"
 ::: tabs
 == on
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 == off
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 :::
@@ -711,20 +711,20 @@ cpu_brand="off"
 ::: tabs
 == on
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 == off
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16) # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 :::
@@ -747,29 +747,29 @@ cpu_speed="on"
 ::: tabs
 == logical
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 == physical
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (8) @ 2.500GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 == off
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 @ 2.500GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 :::
@@ -792,29 +792,29 @@ cpu_cores="logical"
 ::: tabs
 == C
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16) @ 2.500GHz [38.0°C] # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 == F
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16) @ 2.500GHz [100.4°F] # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 == off
 ```shell
-Theme: Adwaita [GTK2/3] 
-Icons: Adwaita [GTK2/3] 
+Theme: Adwaita [GTK2/3]
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16) @ 2.500GHz # [!code focus]
-GPU: AMD ATI Radeon RX 580 2048SP 
-Memory: 7897MiB / 15982MiB 
+GPU: AMD ATI Radeon RX 580 2048SP
+Memory: 7897MiB / 15982MiB
 
 ```
 :::
@@ -839,18 +839,18 @@ cpu_temp="C"
 ::: tabs
 == on
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16)
 GPU: AMD ATI Radeon RX 580 2048SP # [!code focus]
-Memory: 7897MiB / 15982MiB 
+Memory: 7897MiB / 15982MiB
 
 ```
 == off
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16)
 GPU: ATI Radeon RX 580 2048SP # [!code focus]
-Memory: 7897MiB / 15982MiB 
+Memory: 7897MiB / 15982MiB
 
 ```
 :::
@@ -873,25 +873,25 @@ gpu_brand="off"
 ::: tabs
 == all
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16)
 GPU: AMD ATI Radeon RX 580 2048SP # [!code focus]
 GPU: Intel Integrated Graphics # [!code focus]
-Memory: 7897MiB / 15982MiB 
+Memory: 7897MiB / 15982MiB
 ```
 == dedicated
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16)
 GPU: AMD ATI Radeon RX 580 2048SP # [!code focus]
-Memory: 7897MiB / 15982MiB 
+Memory: 7897MiB / 15982MiB
 ```
 == integrated
 ```shell
-Icons: Adwaita [GTK2/3] 
+Icons: Adwaita [GTK2/3]
 CPU: Xeon E5-2640 v2 (16)
 GPU: Intel Integrated Graphics # [!code focus]
-Memory: 7897MiB / 15982MiB 
+Memory: 7897MiB / 15982MiB
 ```
 :::
 
@@ -915,19 +915,19 @@ gpu_type="all"
 ::: tabs
 == on
 ```shell
-Packages: 2208 (rpm), 35 (flatpak), 4 (snap) 
-Shell: zsh 5.9 
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+Shell: zsh 5.9
 Resolution: 1920x1080 @ 75.00Hz # [!code focus]
-DE: GNOME 46.1 
+DE: GNOME 46.1
 WM: Mutter
 
 ```
 == off
 ```shell
-Packages: 2208 (rpm), 35 (flatpak), 4 (snap) 
-Shell: zsh 5.9 
+Packages: 2208 (rpm), 35 (flatpak), 4 (snap)
+Shell: zsh 5.9
 Resolution: 1920x1080 # [!code focus]
-DE: GNOME 46.1 
+DE: GNOME 46.1
 WM: Mutter
 
 ```
@@ -953,20 +953,20 @@ refresh_rate="on"
 ::: tabs
 == on
 ```shell
-WM: Mutter 
-WM Theme: Adwaita 
+WM: Mutter
+WM Theme: Adwaita
 Theme: Numix, Adwaita # [!code focus]
 Icons: Numix, Adwaita # [!code focus]
-Terminal: kgx 
+Terminal: kgx
 
 ```
 == off
 ```shell
-WM: Mutter 
-WM Theme: Adwaita 
+WM: Mutter
+WM Theme: Adwaita
 Theme: Numix [GTK2], Adwaita [GTK3] # [!code focus]
 Icons: Numix [GTK2], Adwaita [GTK3] # [!code focus]
-Terminal: kgx 
+Terminal: kgx
 
 ```
 :::
@@ -989,20 +989,20 @@ gtk_shorthand="off"
 ::: tabs
 == on
 ```shell
-WM: Mutter 
-WM Theme: Adwaita 
+WM: Mutter
+WM Theme: Adwaita
 Theme: Numix [GTK2], Adwaita [GTK3] # [!code focus]
 Icons: Numix [GTK2], Adwaita [GTK3] # [!code focus]
-Terminal: kgx 
+Terminal: kgx
 
 ```
 == off
 ```shell
-WM: Mutter 
-WM Theme: Adwaita 
+WM: Mutter
+WM Theme: Adwaita
 Theme: Adwaita [GTK3] # [!code focus]
 Icons: Adwaita [GTK3] # [!code focus]
-Terminal: kgx 
+Terminal: kgx
 
 ```
 :::
@@ -1025,20 +1025,20 @@ gtk2="on"
 ::: tabs
 == on
 ```shell
-WM: Mutter 
-WM Theme: Adwaita 
+WM: Mutter
+WM Theme: Adwaita
 Theme: Numix [GTK2], Adwaita [GTK3] # [!code focus]
 Icons: Numix [GTK2], Adwaita [GTK3] # [!code focus]
-Terminal: kgx 
+Terminal: kgx
 
 ```
 == off
 ```shell
-WM: Mutter 
-WM Theme: Adwaita 
+WM: Mutter
+WM Theme: Adwaita
 Theme: Numix [GTK2] # [!code focus]
 Icons: Numix [GTK2] # [!code focus]
-Terminal: kgx 
+Terminal: kgx
 
 ```
 :::
@@ -1095,19 +1095,19 @@ public_ip_timeout=1
 ::: tabs
 == "/" "/dev/sdb1"
 ```shell
-GPU Driver: amdgpu 
-CPU Usage: 23% 
+GPU Driver: amdgpu
+CPU Usage: 23%
 Disk (/): 105G / 162G (66%) # [!code focus]
 Disk (games): 2.5G / 61G (5%) # [!code focus]
-Font: Cantarell 11 [GTK2/3] 
+Font: Cantarell 11 [GTK2/3]
 Local IP: 192.168.31.154
 ```
 == "/"
 ```shell
-GPU Driver: amdgpu 
-CPU Usage: 23% 
+GPU Driver: amdgpu
+CPU Usage: 23%
 Disk (/): 105G / 162G (66%) # [!code focus]
-Font: Cantarell 11 [GTK2/3] 
+Font: Cantarell 11 [GTK2/3]
 Local IP: 192.168.31.154
 ```
 :::
@@ -1130,38 +1130,38 @@ disk_show=("/" "/run/media/fiersik/games")
 ::: tabs
 == name
 ```shell
-GPU Driver: amdgpu 
-CPU Usage: 23% 
+GPU Driver: amdgpu
+CPU Usage: 23%
 Disk (/dev/nvme0n1p3): 105G / 162G (66%) # [!code focus]
 Disk (/dev/nvme0n1p4): 2.5G / 61G (5%) # [!code focus]
-Font: Cantarell 11 [GTK2/3] 
+Font: Cantarell 11 [GTK2/3]
 Local IP: 192.168.31.154
 ```
 == mount
 ```shell
-GPU Driver: amdgpu 
-CPU Usage: 23% 
+GPU Driver: amdgpu
+CPU Usage: 23%
 Disk (/): 105G / 162G (66%) # [!code focus]
 Disk (/run/media/fiersik/games): 2.5G / 61G (5%) # [!code focus]
-Font: Cantarell 11 [GTK2/3] 
+Font: Cantarell 11 [GTK2/3]
 Local IP: 192.168.31.154
 ```
 == dir
 ```shell
-GPU Driver: amdgpu 
-CPU Usage: 23% 
+GPU Driver: amdgpu
+CPU Usage: 23%
 Disk (/): 105G / 162G (66%) # [!code focus]
 Disk (games): 2.5G / 61G (5%) # [!code focus]
-Font: Cantarell 11 [GTK2/3] 
+Font: Cantarell 11 [GTK2/3]
 Local IP: 192.168.31.154
 ```
 == none
 ```shell
-GPU Driver: amdgpu 
-CPU Usage: 23% 
+GPU Driver: amdgpu
+CPU Usage: 23%
 Disk: 105G / 162G (66%) # [!code focus]
 Disk: 2.5G / 61G (5%) # [!code focus]
-Font: Cantarell 11 [GTK2/3] 
+Font: Cantarell 11 [GTK2/3]
 Local IP: 192.168.31.154
 ```
 :::
@@ -1184,18 +1184,18 @@ disk_subtitle="dir"
 ::: tabs
 == on
 ```shell
-GPU Driver: amdgpu 
-CPU Usage: 23% 
+GPU Driver: amdgpu
+CPU Usage: 23%
 Disk (/): 105G / 162G (66%) # [!code focus]
-Font: Cantarell 11 [GTK2/3] 
+Font: Cantarell 11 [GTK2/3]
 Local IP: 192.168.31.154
 ```
 == off
 ```shell
-GPU Driver: amdgpu 
-CPU Usage: 23% 
+GPU Driver: amdgpu
+CPU Usage: 23%
 Disk (/): 105G / 162G # [!code focus]
-Font: Cantarell 11 [GTK2/3] 
+Font: Cantarell 11 [GTK2/3]
 Local IP: 192.168.31.154
 ```
 :::
@@ -1250,11 +1250,11 @@ music_player="auto"
 ::: tabs
 == "%artist% - %album% - %title%"
 ```shell
-Disk (/): 105G / 162G (66%) 
-Font: Cantarell 11 [GTK2/3] 
+Disk (/): 105G / 162G (66%)
+Font: Cantarell 11 [GTK2/3]
 Song: Liar_Sieru - Обман - Реальный мир # [!code focus]
-Music Player: vlc 
-Local IP: 192.168.31.154 
+Music Player: vlc
+Local IP: 192.168.31.154
 ```
 :::
 
@@ -1276,22 +1276,22 @@ song_format="%artist% - %album% - %title%"
 ::: tabs
 == on
 ```shell
-Disk (/): 105G / 162G (66%) 
-Font: Cantarell 11 [GTK2/3] 
+Disk (/): 105G / 162G (66%)
+Font: Cantarell 11 [GTK2/3]
 Artist: Liar_Sieru # [!code focus]
 Album: Обман # [!code focus]
 Song: Реальный мир # [!code focus]
-Music Player: vlc 
-Local IP: 192.168.31.154 
+Music Player: vlc
+Local IP: 192.168.31.154
 
 ```
 == off
 ```shell
-Disk (/): 105G / 162G (66%) 
-Font: Cantarell 11 [GTK2/3] 
+Disk (/): 105G / 162G (66%)
+Font: Cantarell 11 [GTK2/3]
 Song: Liar_Sieru - Обман - Реальный мир # [!code focus]
-Music Player: vlc 
-Local IP: 192.168.31.154 
+Music Player: vlc
+Local IP: 192.168.31.154
 ```
 :::
 
@@ -1357,16 +1357,16 @@ bold="on"
 fiersik@alt-gnome # [!code focus]
 ---------------- # [!code focus]
 OS: ALT Regular Sisyphus x86_64 # [!code focus]
-Kernel: 6.8.7-6.8-alt1 
-ptime: 1 hour, 14 mins 
+Kernel: 6.8.7-6.8-alt1
+ptime: 1 hour, 14 mins
 
 ```
 == off
 ```shell
 fiersik@alt-gnome # [!code focus]
 OS: ALT Regular Sisyphus x86_64 # [!code focus]
-Kernel: 6.8.7-6.8-alt1 
-ptime: 1 hour, 14 mins 
+Kernel: 6.8.7-6.8-alt1
+ptime: 1 hour, 14 mins
 ```
 :::
 
@@ -1388,19 +1388,19 @@ underline_enabled="on"
 ::: tabs
 == "="
 ```shell
-fiersik@alt-gnome 
+fiersik@alt-gnome
 ================= # [!code focus]
-OS: ALT Regular Sisyphus x86_64 
-Kernel: 6.8.7-6.8-alt1 
-Uptime: 1 hour, 33 mins 
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.7-6.8-alt1
+Uptime: 1 hour, 33 mins
 ```
 == ">"
 ```shell
-fiersik@alt-gnome 
+fiersik@alt-gnome
 >>>>>>>>>>>>>>>>> # [!code focus]
-OS: ALT Regular Sisyphus x86_64 
-Kernel: 6.8.7-6.8-alt1 
-Uptime: 1 hour, 34 mins 
+OS: ALT Regular Sisyphus x86_64
+Kernel: 6.8.7-6.8-alt1
+Uptime: 1 hour, 34 mins
 ```
 :::
 
@@ -1422,19 +1422,19 @@ underline_char="-"
 ::: tabs
 == "="
 ```shell
-fiersik@alt-gnome 
+fiersik@alt-gnome
 ----------------
-OS= ALT Regular Sisyphus x86_64 
-Kernel= 6.8.7-6.8-alt1 
-Uptime= 1 hour, 33 mins 
+OS= ALT Regular Sisyphus x86_64
+Kernel= 6.8.7-6.8-alt1
+Uptime= 1 hour, 33 mins
 ```
 == " "
 ```shell
-fiersik@alt-gnome 
+fiersik@alt-gnome
 ----------------
-OS ALT Regular Sisyphus x86_64 
-Kernel 6.8.7-6.8-alt1 
-Uptime 1 hour, 34 mins 
+OS ALT Regular Sisyphus x86_64
+Kernel 6.8.7-6.8-alt1
+Uptime 1 hour, 34 mins
 ```
 :::
 
@@ -1573,35 +1573,35 @@ col_offset="auto"
 ::: tabs
 == bar
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: [-----------====] # [!code focus]
-GPU Driver: amdgpu 
+GPU Driver: amdgpu
 CPU Usage: 10%
 ```
 == infobar
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: 12545MiB / 15982MiB [-----------====] # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 10% 
+GPU Driver: amdgpu
+CPU Usage: 10%
 ```
 == barinfo
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: [-----------====] 12735MiB / 15982MiB # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 10% 
+GPU Driver: amdgpu
+CPU Usage: 10%
 ```
 == off
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: 12735MiB / 15982MiB # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 10% 
+GPU Driver: amdgpu
+CPU Usage: 10%
 
 ```
 :::
@@ -1630,19 +1630,19 @@ disk_display="off"
 ::: tabs
 == "-" "="
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: 12764MiB / 15982MiB [-----------====] # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 9% 
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 == "0" "1"
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: 12764MiB / 15982MiB [000000000001111] # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 9% 
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 :::
 
@@ -1666,19 +1666,19 @@ bar_char_total=""
 ::: tabs
 == on
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: 12764MiB / 15982MiB [-----------====] # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 9% 
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 == off
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: 12764MiB / 15982MiB -----------==== # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 9% 
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 :::
 
@@ -1700,19 +1700,19 @@ bar_border="off"
 ::: tabs
 == 10
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: 12764MiB / 15982MiB [-------===] # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 9% 
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 == 15
 ```shell
-CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz 
-GPU: AMD ATI Radeon RX 580 2048SP 
+CPU: Intel Xeon E5-2640 v2 (16) @ 2.500GHz
+GPU: AMD ATI Radeon RX 580 2048SP
 Memory: 12764MiB / 15982MiB [-----------====] # [!code focus]
-GPU Driver: amdgpu 
-CPU Usage: 9% 
+GPU Driver: amdgpu
+CPU Usage: 9%
 ```
 :::
 

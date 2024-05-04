@@ -3,7 +3,7 @@ aggregation:
     flatpak:
         id: io.github.diegopvlk.Dosage
         build: offical
-    
+    sisyphus: gnome-dosage
 appstream:
     id: io.github.diegopvlk.Dosage
     name: Dosage
@@ -18,21 +18,20 @@ appstream:
         
     url:
         homepage: https://github.com/diegopvlk/Dosage
-        
         bugtracker: https://github.com/diegopvlk/Dosage/issues
 gallery:
     title: Галерея
     type: slider
     items:
-        - src: dosage/Dosage.png
-        - src: dosage/Dosage_2.png
-        - src: dosage/Dosage_3.png
-        - src: dosage/Dosage_4.png
+        - src: dosage/dosage-1.png
+        - src: dosage/dosage-2.png
+        - src: dosage/dosage-3.png
+        - src: dosage/dosage-4.png
 ---
 
 # Dosage
 
-Dosage - это приложение, для управления курсами лечения. С легкостью управляйте курсами лечения с Dosage: уведомления, история, многодозные приемы, настройка частоты прием, мониторинг запаса и контроль длительности курсов.
+Dosage — это приложение, для управления курсами лечения. С легкостью управляйте курсами лечения с Dosage: уведомления, история, многодозные приемы, настройка частоты прием, мониторинг запаса и контроль длительности курсов.
 
 Особенности приложения:
 
@@ -46,4 +45,5 @@ Dosage - это приложение, для управления курсами
 
 <AGWGallery />
 
+<!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

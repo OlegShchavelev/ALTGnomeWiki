@@ -6,7 +6,7 @@ appstream:
     id: com.github.alexkdeveloper.desktop-files-creator.png
     name: Desktop Files Creator
     icon: /desktop-files-creator/com.github.alexkdeveloper.desktop-files-creator.png
-    summary: Простой и удобный эмулятор терминала для рабочего стола GNOME.
+    summary: Простое приложение для создания файлов на рабочем столе в GNU / Linux
     keywords:
         - adaptive
     metadata_license:

@@ -16,6 +16,7 @@ export const gitRewritePath = {
     "docs/tips/": "",
     "docs/using_gnome/":"",
     "docs/main/": "",
+    "docs/games/": "",
     "docs/reference/pages/": "reference/pages/",
     "docs/reference/structure/": "reference/structure/"
 }
@@ -131,5 +132,15 @@ export const gitMapContributors = [
         name: "Максим Остапенко",
         avatar: "https://github.com/Krator3.png",
         nameAliases: ['Krator3'],
+    },
+    {
+        name: "Давид Султаниязов",
+        avatar: "https://github.com/X1Z53.png",
+        nameAliases: ['X1Z53', 'x1z53', 'Sultaniiazov David'],
+    },
+    {
+        name: "Cyber:X",
+        avatar: "https://github.com/Cyber-X-Code.png",
+        nameAliases: ['Cyber-X', 'Cyber-X-Code'],
     },
 ]

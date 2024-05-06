@@ -9,7 +9,7 @@ export interface Lists {
 }
 
 const props = defineProps<{
-    lists: Lists[]
+    lists: Lists
 }>();
 
 </script>

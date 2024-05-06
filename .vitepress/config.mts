@@ -42,6 +42,7 @@ import {
 } from '../_data/gitlog'
 
 export default defineConfig({
+  base: '/ALTRegularGnomeWiki/',
   vite: {
     plugins: [
       UnoCSS(),

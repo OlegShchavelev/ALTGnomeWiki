@@ -2,14 +2,19 @@
 import { contributions } from '../../../_data/team';
 import { VPTeamPage, VPTeamPageTitle, VPTeamMembers } from 'vitepress/theme';
 import { gitRepository } from '../../../_data/gitlog'
-import { getContributors } from '../utils/gitStats'
-import { loadEnv } from 'vitepress'
+import { getContributors, filterContributors, getContributorsTopInfo } from '../utils/gitStats'
 
-const contributors = await getContributors(
+let contributors = await getContributors(
   import.meta.env.VITE_GIT_KEY,
   gitRepository.split('/')[3],
   gitRepository.split('/')[4]
 )
+
+
+if (contributors) {
+    contributors = filterContributors(contributors, 6)
+    contributors = getContributorsTopInfo(contributors)
+}
 
 const { members, size } = defineProps({
   size: {
@@ -34,6 +39,6 @@ const { members, size } = defineProps({
         Участники
       </template>
     </VPTeamPageTitle>
-    <VPTeamMembers :members="contributions" />
+    <VPTeamMembers :members="contributors" />
   </VPTeamPage>
 </template>

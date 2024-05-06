@@ -5,6 +5,9 @@ import {
   vk
 } from '../.vitepress/icons.js'
 
+// commits или additions
+export const filter_type = "additions"
+
 export const contributions = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/20732384?v=4',

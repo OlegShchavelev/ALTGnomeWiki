@@ -4,7 +4,7 @@ import {
   VPTeamPageTitle,
 } from 'vitepress/theme'
 
-import VPTeamMembers from './VPTeamMembers.vue'
+import AGWTeamMembers from './AGWTeamMembers.vue'
 import { VPHomeSponsors } from 'vitepress/theme'
 
 import { contributions } from '../../../_data/team'
@@ -14,7 +14,7 @@ import { sponsors } from '../../../_data/sponsors'
 
 <template>
 <VPTeamPage>
-  <Suspense><VPTeamMembers :members="contributions" /></Suspense>
+  <Suspense><AGWTeamMembers :members="contributions" /></Suspense>
 </VPTeamPage>
 
 <VPHomeSponsors

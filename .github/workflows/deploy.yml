@@ -32,12 +32,11 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm ci
-      - name: Build with VitePress
-        env:
-          GITKEY: ${{ secrets.VITE_GIT_KEY}}
+      - name: Write secrets and build with VitePress
         run: |
-          ls ./
-          echo 'VITE_GIT_KEY="$GITKEY"' > ./docs/.env
+          cat << EOF > ./docs/.env
+          VITE_GIT_KEY="${{ secrets.VITE_GIT_KEY }}"
+          EOF
           npm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -36,9 +36,9 @@ jobs:
         env:
           GITKEY: ${{ secrets.VITE_GIT_KEY}}
         run: |
-        ls ./
-        echo 'VITE_GIT_KEY="$GITKEY"' > ./docs/.env
-        npm run docs:build
+          ls ./
+          echo 'VITE_GIT_KEY="$GITKEY"' > ./docs/.env
+          npm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -10,7 +10,7 @@
         "ogImage": "og-alt-wiki.jpg"
     },
 
-    "yandex_mrtrica": "6ef3a36c3d09e43e",
+    "yandex_metrica": "6ef3a36c3d09e43e",
 
     "nolebase_exclude": [
         "index.md",

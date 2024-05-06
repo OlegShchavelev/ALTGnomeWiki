@@ -71,9 +71,9 @@ export default defineConfig({
       PagePropertiesMarkdownSection({
         excludes: [],
         exclude: (_, { helpers }): boolean => {
-          for (var page of config.nolebase_exclude){
+          for (let page of config.nolebase_exclude){
             if (helpers.idEndsWith(page))
-              return null
+              return true
           }
           return false
         },

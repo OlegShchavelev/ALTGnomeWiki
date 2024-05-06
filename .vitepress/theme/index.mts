@@ -21,13 +21,12 @@ import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
 
 
 /* Nolebase features*/
+
 import {
+  NolebaseEnhancedReadabilitiesPlugin,
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities'
-
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { locales } from '../../_data/enhanced-readabilities'
 
 import { 
@@ -41,6 +40,7 @@ import {
 
 import {
   NolebasePagePropertiesEditor,
+  InjectionKey as NolebasePagePropertiesInjectionKey
 } from '@nolebase/vitepress-plugin-page-properties/client'
 
 import {
@@ -48,16 +48,13 @@ import {
   pagePropertiesMD
 } from '../../_data/page-properties'
 
-import type { Options as NolebasePagePropertiesOptions } from '@nolebase/vitepress-plugin-page-properties/client';
-import { InjectionKey as NolebasePagePropertiesInjection } from '@nolebase/vitepress-plugin-page-properties/client';
-
 
 /* Stylesheets */
 import 'uno.css'
 import './styles/style.css'
 import './styles/custom.css'
 import './viewerjs/dist/viewer.css'
-import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css";
 
@@ -74,10 +71,6 @@ export default {
 
   enhanceApp(ctx) {
 
-    ctx.app.provide(InjectionKey, {
-      locales: locales
-    } as Options)
-
     yandexMetrika(ctx, {
       counter: {
         id: 95081395, initParams: {
@@ -89,7 +82,9 @@ export default {
     ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('contribution', AGWContribution)
-    ctx.app.provide(NolebasePagePropertiesInjection, {locales: pagePropertiesLocales, properties:pagePropertiesMD} as NolebasePagePropertiesOptions)
+    ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
+    ctx.app.provide(NolebaseEnhancedReadabilitiesPlugin, { locales })
+    ctx.app.provide(NolebasePagePropertiesInjectionKey, { locales: pagePropertiesLocales, properties:pagePropertiesMD })
     ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitMapContributors})
 
     enhanceAppWithTabs(ctx.app)

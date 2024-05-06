@@ -9,7 +9,7 @@ export interface Links {
 }
 
 const props = defineProps<{
-    links: Links[]
+    links: Links
 }>();
 
 </script>

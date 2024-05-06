@@ -5,7 +5,7 @@ export interface Keywords {
 }
 
 const props = defineProps<{
-    keywords: Keywords[]
+    keywords: Keywords
 }>();
 
 </script>

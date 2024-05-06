@@ -14,12 +14,7 @@ import { sponsors } from '../../../_data/sponsors'
 
 <template>
 <VPTeamPage>
-  <VPTeamPageTitle>
-    <template #title>
-      Участники
-    </template>
-  </VPTeamPageTitle>
-  <VPTeamMembers :members="contributions" />
+  <Suspense><VPTeamMembers :members="contributions" /></Suspense>
 </VPTeamPage>
 
 <VPHomeSponsors

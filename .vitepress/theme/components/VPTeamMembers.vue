@@ -1,83 +1,39 @@
 <script setup lang="ts">
-import type { DefaultTheme } from 'vitepress/theme'
-import { computed } from 'vue'
-import VPTeamMembersItem from './VPTeamMembersItem.vue'
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Pagination, Navigation, Keyboard } from 'swiper/modules';
+import { contributions } from '../../../_data/team';
+import { VPTeamPage, VPTeamPageTitle, VPTeamMembers } from 'vitepress/theme';
+import { gitRepository } from '../../../_data/gitlog'
+import { getContributors } from '../utils/gitStats'
+import { loadEnv } from 'vitepress'
 
-const modules = [Pagination, Navigation, Keyboard];
+const contributors = await getContributors(
+  import.meta.env.VITE_GIT_KEY,
+  gitRepository.split('/')[3],
+  gitRepository.split('/')[4]
+)
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+const { members, size } = defineProps({
+  size: {
+    type: String,
+    default: 'medium',
+  },
+  members: {
+    type: Object,
+    default: () => {
+      return contributions ?? [];
+    },
+  },
+});
 
-const onSwiper = (swiper: any) => console.log(swiper);
-const onSlideChange = () => console.log('slide change');
-
-interface Props {
-  size?: 'small' | 'medium'
-  members: DefaultTheme.TeamMember[]
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  size: 'medium'
-})
-
-const classes = computed(() => [props.size, `count-${props.members.length}`])
 </script>
 
+
 <template>
-  <div class="VPTeamMembers" :class="classes">
-    <div class="container">
-      <swiper 
-        :slides-per-view="1.2" 
-        :breakpoints="{ 
-          767: { slidesPerView: 2.2 }, 
-          1024: { slidesPerView: 4.2 } 
-        }" 
-        :modules="modules"
-        :freeMode="true"
-        :keyboard="{ enabled: true }"
-        :pagination="{ 
-          clickable: true, 
-          dynamicBullets: true 
-        }"
-        :navigation="true"
-        :space-between="20"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange">
-        <swiper-slide v-for="member in members" :key="member.name" class="item">
-          <VPTeamMembersItem :size="size" :member="member" />
-        </swiper-slide>
-      </swiper>
-    </div>
-  </div>
+  <VPTeamPage>
+    <VPTeamPageTitle>
+      <template #title>
+        Участники
+      </template>
+    </VPTeamPageTitle>
+    <VPTeamMembers :members="contributions" />
+  </VPTeamPage>
 </template>
-
-<style scoped>
-.container {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  max-width: 1152px;
-}
-
-.swiper {
-  padding-bottom: 60px;
-  margin-bottom: -60px;
-}
-
-@media (min-width: 768px) {
-  .swiper {
-    padding-bottom: 80px;
-    margin-bottom: -80px;
-  }
-}
-</style>
-
-<style>
-.VPTeamMembers * .swiper-button-prev, 
-.VPTeamMembers * .swiper-button-next {
-  top: var(--swiper-navigation-top-offset, 95%) !important;
-}
-</style>

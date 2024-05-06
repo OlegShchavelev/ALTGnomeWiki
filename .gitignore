@@ -17,3 +17,5 @@ GitHub.sublime-settings
 ### JetBrains ###
 .idea/
 
+### .env ###
+docs/.env

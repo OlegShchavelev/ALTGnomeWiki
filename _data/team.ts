@@ -1,3 +1,4 @@
+import { link } from 'fs'
 import {
   telegram,
   gitflic,
@@ -7,6 +8,8 @@ import {
 
 // commits или additions
 export const filter_type = "additions"
+
+export const mainPageTopLimit = 6
 
 export const contributions = [
   {
@@ -19,6 +22,7 @@ export const contributions = [
         icon: {
           svg: gitflic
         },
+        link: 'https://gitflic.ru/user/olegshchavelev'
       }
     ],
     actionText: 'Поддержать',
@@ -152,6 +156,7 @@ export const contributions = [
         icon: {
           svg: gitflic
         },
+        link: 'https://gitflic.ru/user/fiersik'
       }
     ],
     actionText: 'Поддержать',

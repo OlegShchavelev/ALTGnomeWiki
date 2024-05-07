@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { contributions } from '../../../_data/team';
-import { VPTeamPage, VPTeamPageTitle, VPTeamMembers } from 'vitepress/theme';
+import { contributions, mainPageTopLimit } from '../../../_data/team';
+import { VPTeamMembers } from 'vitepress/theme';
 import { gitRepository } from '../../../_data/gitlog'
 import { getContributors, filterContributors, getContributorsTopInfo } from '../utils/gitStats'
 
@@ -12,9 +12,12 @@ let contributors = await getContributors(
 
 
 if (contributors) {
-    contributors = filterContributors(contributors, 6)
+    contributors = filterContributors(contributors, mainPageTopLimit)
     contributors = getContributorsTopInfo(contributors)
+} else {
+  contributors = contributions.slice(0, mainPageTopLimit)
 }
+
 
 const { members, size } = defineProps({
   size: {
@@ -33,12 +36,5 @@ const { members, size } = defineProps({
 
 
 <template>
-  <VPTeamPage>
-    <VPTeamPageTitle>
-      <template #title>
-        Участники
-      </template>
-    </VPTeamPageTitle>
-    <VPTeamMembers :members="contributors" />
-  </VPTeamPage>
+  <VPTeamMembers :members="contributors" />
 </template>

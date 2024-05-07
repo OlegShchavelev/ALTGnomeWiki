@@ -7,6 +7,7 @@ import {
 } from 'vitepress/theme'
 
 import AGWTeamPageButton from './AGWTeamPageButton.vue';
+import AGWTeamMembers from './AGWTeamMembers.vue'
 import { contributions } from '../../../_data/team'
 
 const { members, size } = defineProps({
@@ -31,7 +32,7 @@ const { members, size } = defineProps({
         Участники
       </template>
     </VPTeamPageTitle>
-    <VPTeamMembers :members="contributions.slice(0, 6)" />
+    <Suspense><AGWTeamMembers :members="contributions" /></Suspense>
     <AGWTeamPageButton>
       <VPButton text="Все участники" class="button" size="big" href="/contributions.html" />
     </AGWTeamPageButton>

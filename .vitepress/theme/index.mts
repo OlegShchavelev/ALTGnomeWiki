@@ -28,6 +28,8 @@ import {
   NolebaseEnhancedReadabilitiesPlugin,
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu,
+  InjectionKey as NolebaseEnhancedReadabilitiesInjectionKey,
+  Options as NolebaseEnhancedReadabilitiesOptions
 } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { locales } from '../../_data/enhanced-readabilities'
 
@@ -85,7 +87,8 @@ export default {
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('contribution', AGWContribution)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
-    ctx.app.provide(NolebaseEnhancedReadabilitiesPlugin, { locales })
+    ctx.app.provide(NolebaseEnhancedReadabilitiesInjectionKey, { locales:  locales} as NolebaseEnhancedReadabilitiesOptions)
+    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, { locales: pagePropertiesLocales, properties:pagePropertiesMD })
     ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitMapContributors})
 

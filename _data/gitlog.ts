@@ -84,6 +84,11 @@ export const gitMapContributors = [
         nameAliases: ["Dmitry", "Luckenty"]
     },
     {
+        name: "Дмитрий Бондарев",
+        avatar: "https://github.com/pokedim13.png",
+        nameAliases: ["pokedim13"]
+    },
+    {
         name: "Арсений Засыпкин",
         avatar: "https://github.com/ImCatCatcher.png",
         nameAliases: ["ImCatCatcher", "Arseniy Zasypkin"]
@@ -116,7 +121,7 @@ export const gitMapContributors = [
     {
         name: "AnameVi",
         avatar: "https://github.com/AnameVi.png",
-        nameAliases: ["AnameVi", "a1ex-ak", "AnameV1S"]
+        nameAliases: ["AnameVi", "AnameV1S"]
     },
     {
         name: "Belovmv",
@@ -142,5 +147,40 @@ export const gitMapContributors = [
         name: "Cyber:X",
         avatar: "https://github.com/Cyber-X-Code.png",
         nameAliases: ['Cyber-X', 'Cyber-X-Code'],
+    },
+    {
+        name: "Жора Змейкин",
+        avatar: "https://github.com/Katze-942.png",
+        nameAliases: ['Katze-942'],
+    },
+    {
+        name: "Александр Шамараев",
+        avatar: "https://github.com/AlexanderShad.png",
+        nameAliases: ['AlexanderShad'],
+    },
+    {
+        name: "konoos56",
+        avatar: "https://github.com/konoos56.png",
+        nameAliases: ['konoos56'],
+    },
+    {
+        name: "Alex Kryuchkov",
+        avatar: "https://github.com/alexkdeveloper.png",
+        nameAliases: ['alexkdeveloper'],
+    },
+    {
+        name: "Keleth",
+        avatar: "https://github.com/Keleth.png",
+        nameAliases: ['Keleth'],
+    },
+    {
+        name: "alchere",
+        avatar: "https://github.com/alchere.png",
+        nameAliases: ['alchere'],
+    },
+    {
+        name: "alchere",
+        avatar: "https://github.com/alchere.png",
+        nameAliases: ['alchere'],
     },
 ]

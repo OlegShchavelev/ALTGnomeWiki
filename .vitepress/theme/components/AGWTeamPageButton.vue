@@ -1,7 +1,3 @@
-<script>
-import { ref } from 'vue';
-</script>
-
 <template>
     <div class="AGWTeamPageButton">
         <slot></slot>

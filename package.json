@@ -3,7 +3,7 @@
     "@hywax/vitepress-yandex-metrika": "^0.4.0",
     "@iconify-json/icon-park-outline": "^1.1.15",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.0.0-rc11",
-    "@nolebase/vitepress-plugin-git-changelog": "^2.0.0-rc11",
+    "@nolebase/vitepress-plugin-git-changelog": "^2.0.0-rc12",
     "@nolebase/vitepress-plugin-page-properties": "^2.0.0-rc11",
     "@types/markdown-it": "^13.0.5",
     "@types/markdown-it-container": "^2.0.8",

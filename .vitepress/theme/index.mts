@@ -7,6 +7,7 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import imageViewer from 'vitepress-plugin-image-viewer'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+import * as config from '../config.json'
 
 /* AGW */
 import AGWHomeContents from './components/AGWHomeContents.vue'
@@ -73,7 +74,7 @@ export default {
 
     yandexMetrika(ctx, {
       counter: {
-        id: 95081395, initParams: {
+        id: config.yaMetrikaId, initParams: {
           webvisor: true
         }
       },

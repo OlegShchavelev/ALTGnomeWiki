@@ -10,7 +10,8 @@
         "ogImage": "og-alt-wiki.jpg"
     },
 
-    "yandex_mrtrica": "6ef3a36c3d09e43e",
+    "yaWebmasterId": "6ef3a36c3d09e43e",
+    "yaMetrikaId": 95081395,
 
     "nolebase_exclude": [
         "index.md",

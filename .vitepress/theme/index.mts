@@ -7,9 +7,11 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import imageViewer from 'vitepress-plugin-image-viewer'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+import * as config from '../config.json'
 
 /* AGW */
-import AGWHomeContents from './components/AGWHomeContents.vue'
+import AGWHomeSponsors from './components/AGWHomeSponsors.vue'
+import AGWHomeTeamMembers from './components/AGWHomeTeamMembers.vue'
 import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
@@ -64,7 +66,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'home-features-after': () => h(AGWHomeContents),
+      'home-features-after': () => [h(AGWHomeTeamMembers), h(AGWHomeSponsors)],
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AGWDocsAsideMeta),
@@ -75,7 +77,7 @@ export default {
 
     yandexMetrika(ctx, {
       counter: {
-        id: 95081395, initParams: {
+        id: config.yaMetrikaId, initParams: {
           webvisor: true
         }
       },

@@ -32,6 +32,14 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/vg9TWtByVW'
   },
   {
+    avatar: 'https://avatars.githubusercontent.com/u/168869588?v=4',
+    name: 'Владислав Темнов',
+    title: 'Разработчик, Участник',
+    links: [
+      { icon: 'github', link: 'https://github.com/trashb1t' }
+    ]
+  },
+  {
     avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
     name: 'Семен Фомченков',
     title: 'Участник',

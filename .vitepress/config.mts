@@ -93,7 +93,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'theme-color', content: config.head.themeColor }],
-    ['meta', { name: 'yandex-verification', content: config.yandex_mrtrica }]
+    ['meta', { name: 'yandex-verification', content: config.yaWebmasterId }]
   ],
   lang: config.lang,
   srcDir: './docs',

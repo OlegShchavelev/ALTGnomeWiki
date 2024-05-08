@@ -175,6 +175,11 @@
   margin-top: 0 !important;
 }
 
+/*Dark theme btn Sponsors*/
+.dark .vp-sponsor-grid-item:hover {
+  background: var(--vp-c-brand-darker);
+}
+
 /**
  * implicitFigures
  * -------------------------------------------------------------------------- */

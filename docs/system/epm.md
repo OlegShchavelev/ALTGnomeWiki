@@ -1,25 +1,19 @@
 ---
-metainfo:
-    active: true
-    summary: Оболочка для любого менеджера пакетов
-    site:
-        url: https://github.com/Etersoft/eepm
-        anchor: github.com
+title: EPM
+aggregation:
+    sisyphus: eepm
+appstream:
+    name: EPM
+    icon: /epm/etersoft.png
+    summary: Единая система управления пакетами.
     developer:
         name: Этерсофт
-        avatar: https://avatars.githubusercontent.com/u/7222689?s=200&v=4
-    issue:
-        url: https://github.com/Etersoft/eepm/issues
-        anchor: github.com
-    licence:
-        url: https://choosealicense.com/licenses/agpl-3.0/
-        anchor: GNU AGPLv3
-    adaptive: false
-    gnomeCore: false
-    gnomeCircle: false
-    proprietary: false
-    sisyphus:
-        url: https://packages.altlinux.org/ru/sisyphus/srpms/eepm/
+    metadata_license: 
+        name: GNU AGPLv3
+        link: https://choosealicense.com/licenses/agpl-3.0/
+    url: 
+        homepage: https://github.com/Etersoft/eepm
+        bugtracker: https://github.com/Etersoft/eepm/issues
 ---
 
 # Единая команда управления пакетами (epm)

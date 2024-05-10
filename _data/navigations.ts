@@ -89,7 +89,7 @@ export const docs = [
           { text: 'Spotify', link: '/spotify' },
           { text: 'Steam', link: '/steam' },
           { text: 'Switcheroo', link: '/switcheroo' },
-          { text: 'Synching', link: '/Synching'},
+          { text: 'Synching', link: '/Synching' },
           { text: 'Telegram', link: '/telegram' },
           { text: 'Thunderbird', link: '/thunderbird' },
           { text: 'Timeshift', link: '/timeshift' },
@@ -201,11 +201,11 @@ export const docs = [
                   { text: 'Подключение дополнительного монитора', link: '/display-dual-monitors' },
                   { text: 'Масштабирование экрана', link: '/scaling-the-screen' },
                   { text: 'Изменение внешнего вида рабочего стола', link: '/look-background' },
-                  { text: 'Настройка яркости экрана', link: '/display-brightness'}
+                  { text: 'Настройка яркости экрана', link: '/display-brightness' }
                 ],
                 collapsed: true
               },
-              { text: 'Установка шрифтов', link: '/add-fonts'}
+              { text: 'Установка шрифтов', link: '/add-fonts' }
 
             ],
             collapsed: true
@@ -299,7 +299,8 @@ export const docs = [
         text: 'Игры',
         link: '/games',
         items: [
-          { text: 'Изменение clearcpuid', link: '/clearcpuid' }
+          { text: 'Изменение clearcpuid', link: '/clearcpuid' },
+          { text: 'Mindustry', link: '/mindustry' }
         ],
         collapsed: true
       }

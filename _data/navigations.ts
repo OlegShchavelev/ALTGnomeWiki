@@ -1,6 +1,3 @@
-import { link } from "fs"
-import { text } from "stream/consumers"
-
 export const docs = [
   {
     items: [

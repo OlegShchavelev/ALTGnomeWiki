@@ -123,6 +123,7 @@ export const docs = [
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },
+          { text: 'Тест скорости', link: '/speedtest' },
           { text: 'Туба', link: '/tuba' },
           { text: 'Центр мониторинга системы', link: '/system-monitoring-center' },
           { text: 'Центр Приложений', link: '/gnome-software' },

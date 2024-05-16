@@ -60,6 +60,7 @@ export const docs = [
           { text: 'IP Lookup', link: '/ip-lookup' },
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },
+          { text: 'Kumir', link: '/kumir' },
           { text: 'Lazarus', link: '/lazarus' },
           { text: 'LibreOffice', link: '/libreoffice' },
           { text: 'Loupe', link: '/loupe' },

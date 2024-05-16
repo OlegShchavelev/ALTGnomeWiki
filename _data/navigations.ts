@@ -16,6 +16,7 @@ export const docs = [
         items: [
           { text: 'Alacarte', link: '/alacarte' },
           { text: 'Amberol', link: '/amberol' },
+          { text: 'AniLibrix', link: '/anilibrix' },
           { text: 'AnyDesk', link: '/anydesk' },
           { text: 'Arduino IDE', link: '/arduino-ide' },
           { text: 'AsusCtl', link: '/asusctl' },

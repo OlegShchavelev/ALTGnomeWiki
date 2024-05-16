@@ -4,10 +4,11 @@ import { telegram, gitflic, vk } from './icons'
 import * as navbar from './../_data/navigations'
 import { normalize } from './utils'
 import { rewrites } from './paths'
+import { fileURLToPath, URL } from 'node:url'
 import languages from './theme/syntaxes'
 import * as config from './config.json'
 export const META_DESCRIPTION = config.meta_description
-import {default as createContainer} from './theme/utils/customContainers';
+import {default as createContainer} from './theme/composables/customContainers';
 
 
 /* Markdown */
@@ -47,8 +48,8 @@ export default defineConfig({
       UnoCSS(),
       GitChangelog({
         maxGitLogCount: gitMaxCommits,
-        repoURL: () => gitRepository,
-        rewritePaths: gitRewritePath,
+        repoURL: gitRepository,
+        rewritePathsBy: gitRewritePath,
       }),
       GitChangelogMarkdownSection({
         getChangelogTitle: (_, __, { helpers }): string => {
@@ -85,6 +86,9 @@ export default defineConfig({
         '@nolebase/vitepress-plugin-page-properties',
       ],
     },
+    resolve: {
+      alias: { '@vitepress/theme': fileURLToPath(new URL('../node_modules/vitepress/dist/client/theme-default', import.meta.url)) }
+    }
   },
   title: config.title,
   titleTemplate: ':title' + config.head.titleSeponator + config.title,

@@ -2,11 +2,12 @@
 
 import { computed } from 'vue'
 import { VPTeamMembers } from 'vitepress/theme'
-import { contributions, homeTopLimit, home_filter_type, enable_autosearch } from '../../../_data/team';
+
+import { contributions, enable_autosearch, page_filter_type } from '../../../_data/team';
 import { gitRepository } from '../../../_data/gitlog'
 import { getContributors, filterContributors } from '../composables/git/stats'
 
-const pageName = '[AGWHomeTeamMembers]:'
+const pageName = '[AGWTeamMembers]:'
 
 let contributors = await getContributors(
   import.meta.env.VITE_GIT_KEY,
@@ -15,16 +16,16 @@ let contributors = await getContributors(
   enable_autosearch
 ).then( async response  => { 
   if (response) {
-    return filterContributors( response, home_filter_type).slice(0, homeTopLimit)
-  }
+    return filterContributors( response, page_filter_type)
+  } 
 }).catch( err => { 
   console.warn(`${pageName} Не удалось получить данные: ${err}
                       (Сортировка будет проигнорирована. Проверьте наличие токена в .env или github actions.
                       Если вы уверены в конфигурации - откройте issue)`);
-  return contributions.slice(0, homeTopLimit)
+  return contributions 
 })
 
-const refs = computed(() => {
+const refs = computed(()=>{
   return contributors
 })
 
@@ -32,5 +33,5 @@ const refs = computed(() => {
 
 
 <template>
-  <VPTeamMembers :members="refs" />
+    <VPTeamMembers :members="refs" />
 </template>

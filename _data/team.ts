@@ -2,14 +2,28 @@ import { link } from 'fs'
 import {
   telegram,
   gitflic,
+  gitverse,
   gitlab,
   vk
 } from '../.vitepress/icons.js'
+import { icons } from 'unocss/preset-icons'
 
-// commits или additions
-export const filter_type = "additions"
+/* Настройки автоматизации участников */
 
-export const mainPageTopLimit = 6
+const homeTopLimit = 6
+const home_filter_type = 'additions'
+const page_filter_type = 'role+additions'
+const enable_autosearch = true
+const loading_placeholders = [
+  'Обновляем список участников...',
+  'Получаем самых активных...',
+  'Вспоминаем имена...'
+]
+const leader_name = 'Олег Щавелев'
+
+export { homeTopLimit, home_filter_type, page_filter_type, enable_autosearch, loading_placeholders, leader_name }
+
+/* Информация об участниках */
 
 export const contributions = [
   {
@@ -284,7 +298,8 @@ export const contributions = [
     name: 'Давид Султаниязов',
     title: 'Участник',
     links: [
-      { icon: 'github', link: 'https://github.com/X1Z53' }
+      { icon: 'github', link: 'https://github.com/X1Z53' },
+      { icon: { svg: gitverse }, link: 'https://gitverse.ru/x1z53' }
     ],
   }, {
     avatar: 'https://avatars.githubusercontent.com/u/57837842?v=4',

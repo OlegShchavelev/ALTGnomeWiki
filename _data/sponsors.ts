@@ -27,7 +27,7 @@ export const sponsors = [
         ]
     }, {
         tier: 'Товарищи по цеху VitePress',
-        size: 'medium',
+        size: 'big',
         items: [
             {
                 name: 'MODX Pro',
@@ -38,6 +38,11 @@ export const sponsors = [
                 name: 'IT WIKI',
                 img: './logo_for_friends_horizontal.svg',
                 url: 'https://it-wiki.com.ru/'
+            },
+            {
+                name: 'Nólëbase',
+                img: './nolebase-logo.svg',
+                url: 'https://nolebase.ayaka.io/'
             },
         ]
     },

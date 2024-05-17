@@ -163,6 +163,52 @@ gsettings set org.gnome.desktop.interface show-battery-percentage false
 ```
 :::
 
+### Как определить какой тип сессии используется: X11 или Wayland?
+
+Для определения типа текущей сессии пользователя в рабочем окружении GNOME, существует несколько вариантов:
+
+:::tabs
+== Глобальная переменная окружения
+Получить значение глобальной переменной окружения `XDG_SESSION_TYPE`, введите в терминале:
+
+```shell
+echo $XDG_SESSION_TYPE
+```
+:::details Пример вывода команды:  
+
+```shell
+[oleg@alt-gnome ~]$ echo $XDG_SESSION_TYPE
+wayland
+```
+
+== INXI 
+
+Используйте утилиту INXI, введите в терминале используя опцию `-G`:
+
+```shell
+inxi -G
+```
+
+:::details Пример вывода команды:  
+
+```shell
+  Device-1: AMD Renoir [Radeon RX Vega 6 ] driver: amdgpu v: kernel
+  Device-2: Shine-optics USB2.0 HD UVC WebCam driver: uvcvideo type: USB
+  Display: wayland server: X.Org v: 1.24.1 with: Xwayland v: 24.1.0 
+    compositor: gnome-shell v: 46.1 driver: X: loaded: amdgpu
+    unloaded: fbdev,modesetting,radeon,vesa dri: radeonsi gpu: amdgpu
+    resolution: 1: 1920x1080~60Hz 2: 1280x720~60Hz
+  API: EGL v: 1.5 drivers: radeonsi,swrast
+    platforms: wayland,x11,surfaceless,device
+  API: OpenGL v: 4.6 compat-v: 4.5 vendor: amd mesa v: 24.0.7 renderer: AMD
+    Radeon Graphics (radeonsi renoir LLVM 18.1.5 DRM 3.54 6.6.30-un-def-alt2)
+  API: Vulkan v: 1.3.277 drivers: N/A surfaces: xcb,xlib,wayland
+```
+
+== Настройки
+![Подробности о системе](/quick-start/quick-start-1.png 'В рабочем окружении GNOME перейдите в Настройки -> Система -> Подробности о системе')
+:::
+
 ## Сетевое администрирование
 
 ### Как узнать какие стандарты Wi-Fi поддерживает модуль?

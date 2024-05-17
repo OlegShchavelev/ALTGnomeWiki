@@ -48,6 +48,7 @@ export const docs = [
           { text: 'Foliate', link: '/foliate' },
           { text: 'Folio', link: '/folio' },
           { text: 'Footage', link: '/footage' },
+          { text: 'Fotema', link: '/fotema' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
           { text: 'G4Music', link: '/g4music' },

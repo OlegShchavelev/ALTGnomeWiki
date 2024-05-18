@@ -1,0 +1,24 @@
+---
+title: OpenRazer
+aggregation:
+    sisyphus: openrazer
+appstream:
+    name: OpenRazer
+    icon: /openrazer/openrazer.svg
+    summary: Драйвер с открытым исходным для управления устройствами Razer
+    developer:
+        name: OpenRazer
+    metadata_license:
+        name: GPL-2.0
+        link: https://choosealicense.com/licenses/gpl-2.0/
+    url:
+        homepage: https://openrazer.github.io/
+        bugtracker: https://github.com/openrazer/openrazer/issues
+---
+
+# OpenRazer
+
+Набор драйверов Linux для устройств Razer включает в себя драйверы ядра, службы DBus и привязки Python для работы с интерфейсом DBus.
+
+<!--@include: @apps/_parts/install/content-repo.md-->
+

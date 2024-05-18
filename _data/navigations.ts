@@ -79,6 +79,7 @@ export const docs = [
           { text: 'OBS Studio', link: '/obs-studio' },
           { text: 'Obsidian', link: '/obsidian' },
           { text: 'OnlyOffice', link: '/onlyoffice' },
+          { text: 'OpenRazer', link: '/openrazer' },
           { text: 'Opera', link: '/opera' },
           { text: 'Penpot Desktop', link: '/penpot-desktop' },
           { text: 'PortProton', link: '/port-proton' },
@@ -262,7 +263,7 @@ export const docs = [
           { text: 'Подключение USB-устройств', link: '/usb-devices' },
           { text: 'Подключение принтера', link: '/drivers-for-printer' },
           { text: 'Подключение сканера', link: '/drivers-for-scanner' },
-          { text: 'Подключение DualShock', link: '/dualshock' }
+          { text: 'Подключение DualShock', link: '/dualshock' },
         ],
         collapsed: true
       },

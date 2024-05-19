@@ -88,10 +88,16 @@ epm play [options] [argument]
 epm play telegram
 ```
 
-Для установки [альтернативной версии](#работа-со-списком-приложений) приложения:
+Для установки альтернативной версии приложения:
 
 ```shell
 epm play telegram = beta
+```
+
+Получить список альтернативных версий возможный для установки, используйте опцию `--product-alternatives`:
+
+```shell
+epm play --product-alternatives telegram
 ```
 
 ### Удалить приложение

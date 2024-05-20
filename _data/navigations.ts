@@ -41,6 +41,7 @@ export const docs = [
           { text: 'Eclipse IDE', link: '/eclipse-ide' },
           { text: 'Emulsion', link: '/emulsion' },
           { text: 'Evince', link: '/evince' },
+          { text: 'Fastfetch', link: '/fastfetch' },
           { text: 'FFMPEG', link: '/ffmpeg' },
           { text: 'Figma', link: '/figma' },
           { text: 'Firefox', link: '/firefox' },

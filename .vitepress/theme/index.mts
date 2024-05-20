@@ -2,7 +2,7 @@
 
 /* System */
 import { h } from 'vue'
-import { useRoute, useData } from 'vitepress';
+import { useRoute } from 'vitepress';
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import imageViewer from 'vitepress-plugin-image-viewer'
@@ -10,13 +10,12 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import * as config from '../config.json'
 
 /* AGW */
+import AGWTeamPage from './components/AGWTeamPage.vue'
+import AGWHomeTeam from './components/AGWHomeTeam.vue'
 import AGWHomeSponsors from './components/AGWHomeSponsors.vue'
-import AGWHomeTeamMembers from './components/AGWHomeTeamMembers.vue'
 import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
-import AGWContribution from './components/AGWContribution.vue'
-
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
@@ -66,7 +65,10 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'home-features-after': () => [h(AGWHomeTeamMembers), h(AGWHomeSponsors)],
+      'home-features-after': () => [
+        h(AGWHomeTeam),
+        h(AGWHomeSponsors)
+      ],
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AGWDocsAsideMeta),
@@ -85,11 +87,11 @@ export default {
     
     ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
-    ctx.app.component('contribution', AGWContribution)
+    ctx.app.component('contribution', AGWTeamPage);
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
     ctx.app.provide(NolebaseEnhancedReadabilitiesInjectionKey, { locales:  locales} as NolebaseEnhancedReadabilitiesOptions)
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
-    ctx.app.provide(NolebasePagePropertiesInjectionKey, { locales: pagePropertiesLocales, properties:pagePropertiesMD })
+    ctx.app.provide(NolebasePagePropertiesInjectionKey, { locales: pagePropertiesLocales, properties: pagePropertiesMD })
     ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitMapContributors})
 
     enhanceAppWithTabs(ctx.app)

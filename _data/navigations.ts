@@ -60,6 +60,7 @@ export const docs = [
           { text: 'Google Chrome', link: '/google-chrome' },
           { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
           { text: 'Helvum', link: '/helvum' },
+          { text: 'Heroic Games Launcher', link: '/heroic-games-launcher'},
           { text: 'IP Lookup', link: '/ip-lookup' },
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },

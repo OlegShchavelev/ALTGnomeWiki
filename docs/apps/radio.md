@@ -6,7 +6,7 @@ appstream:
     id: cio.github.alexkdeveloper.radio
     name: Radio
     icon: /radio/io.github.alexkdeveloper.radio.png
-    summary: Платформа для тестирования ваших собственных API
+    summary: Простое радио для Linux
     keywords:
         - adaptive
     metadata_license:

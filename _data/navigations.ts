@@ -90,6 +90,7 @@ export const docs = [
           { text: 'Piper', link: '/piper' },
           { text: 'qBittorrent', link: '/q-bittorrent' },
           { text: 'Radio', link: '/radio' },
+          { text: 'Reaper', link: '/reaper'},
           { text: 'Skype', link: '/skype' },
           { text: 'Speedtest CLI', link: '/speedtest-cli' },
           { text: 'Spotify', link: '/spotify' },

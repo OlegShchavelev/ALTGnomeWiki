@@ -23,11 +23,18 @@ appstream:
         homepage: https://apps.gnome.org/Fragments/
         bugtracker: https://gitlab.gnome.org/World/Fragments/-/issues
         translate: https://l10n.gnome.org/module/Fragments/
+gallery:
+    title: Галерея
+    type: slider
+    items:
+        - src: /fragments/fragments-1.png
+        - src: /fragments/fragments-2.png
 ---
 
 # Fragments
 
 Fragments — простой в использовании BitTorrent-клиент. Он может использоваться для передачи файлов по протоколу BitTorrent, таких как видео, музыка или установочные образы для дистрибутивов Linux.
 
+<AGWGallery />
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

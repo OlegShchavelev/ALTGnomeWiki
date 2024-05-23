@@ -24,11 +24,18 @@ appstream:
         homepage: https://apps.gnome.org/Fretboard/
         bugtracker: https://github.com/bragefuglseth/fretboard/issues
         translate: https://hosted.weblate.org/engage/fretboard/
+gallery:
+    title: Галерея
+    type: slider
+    items:
+        - src: /fretboard/fretboard-1.png
+        - src: /fretboard/fretboard-2.png
 ---
 
 # Fretboard
 
 Fretboard — позволяет находить гитарные аккорды, вводя их названия или отображая их на интерактивном грифе гитары. Когда вы определили аккорд, вы можете поэкспериментировать с его изменением, посмотреть другие способы его воспроизведения или добавить его в закладки, чтобы сохранить на потом. Независимо от того, новичок вы или продвинутый гитарист, вы можете использовать Fretboard, чтобы практиковаться, изучать и осваивать свои любимые композиции.
 
+<AGWGallery />
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

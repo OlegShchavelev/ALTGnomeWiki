@@ -23,6 +23,8 @@ appstream:
 
  GPU Screen Recorder — программа для записи экрана, при записи экрана оказывает минимальное влияние на производительность системы, поскольку записывает монитор только с помощью графического процессора, аналогично shadowplay в Windows. Это самый быстрый инструмент для записи экрана в Linux. Экранный рекордер работает как в оконном интерфейсе X11, так и в Wayland.
 
+![gpu-screen-recorder](/gpu-screen-recorder/gpu-screen-recorder-1.png)
+
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 

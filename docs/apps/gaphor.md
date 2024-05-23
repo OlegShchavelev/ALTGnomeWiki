@@ -23,4 +23,6 @@ Gaphor — приложение для моделирования на UML, SysM
 
 Gaphor предоставляет четыре языка моделирования: UML, SysML, RAAML и C4 и делает их доступными для начинающих.
 
+![gaphor](/gaphor/gaphor-1.png)
+
 <!--@include: @apps/_parts/install/content-flatpak.md-->

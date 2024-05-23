@@ -40,6 +40,8 @@ docs:
                   link: vk-messenger
                 - name: Discord
                   link: discord
+                - name: Vesktop
+                  link: vesktop
                 - name: Skype
                   link: skype
             - title: Игры

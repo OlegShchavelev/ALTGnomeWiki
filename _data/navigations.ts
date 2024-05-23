@@ -102,6 +102,7 @@ export const docs = [
           { text: 'Toolbox', link: '/toolbox' },
           { text: 'Totem', link: '/totem' },
           { text: 'Transmission', link: '/transmission' },
+          { text: 'Vesktop', link: '/vesktop' },
           { text: 'Viber', link: '/viber' },
           { text: 'Vivaldi', link: '/vivaldi' },
           { text: 'VLC', link: '/vlc' },

@@ -4,7 +4,7 @@ aggregation:
     sisyphus: seahorse
 appstream:
     id: org.gnome.seahorse.Application
-    name: Парали и ключи
+    name: Пароли и ключи
     icon: /seahorse/org.gnome.seahorse.Application.svg
     summary: Управляйте своими паролями и ключами шифрования
     developer:

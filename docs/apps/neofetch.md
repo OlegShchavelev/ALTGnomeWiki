@@ -1,7 +1,5 @@
 ---
 title: Neofetch
-nameRepo: neofetch
-appstreamRepo: neofetch.desktop
 aggregation:
     sisyphus: neofetch
 appstream:

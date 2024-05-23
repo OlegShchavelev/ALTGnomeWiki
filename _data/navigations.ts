@@ -16,6 +16,7 @@ export const docs = [
         items: [
           { text: 'Alacarte', link: '/alacarte' },
           { text: 'Amberol', link: '/amberol' },
+          { text: 'AniLibrix', link: '/anilibrix' },
           { text: 'AnyDesk', link: '/anydesk' },
           { text: 'Arduino IDE', link: '/arduino-ide' },
           { text: 'AsusCtl', link: '/asusctl' },
@@ -40,6 +41,7 @@ export const docs = [
           { text: 'Eclipse IDE', link: '/eclipse-ide' },
           { text: 'Emulsion', link: '/emulsion' },
           { text: 'Evince', link: '/evince' },
+          { text: 'Fastfetch', link: '/fastfetch' },
           { text: 'FFMPEG', link: '/ffmpeg' },
           { text: 'Figma', link: '/figma' },
           { text: 'Firefox', link: '/firefox' },
@@ -47,6 +49,7 @@ export const docs = [
           { text: 'Foliate', link: '/foliate' },
           { text: 'Folio', link: '/folio' },
           { text: 'Footage', link: '/footage' },
+          { text: 'Fotema', link: '/fotema' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
           { text: 'G4Music', link: '/g4music' },
@@ -57,6 +60,7 @@ export const docs = [
           { text: 'Google Chrome', link: '/google-chrome' },
           { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
           { text: 'Helvum', link: '/helvum' },
+          { text: 'Heroic Games Launcher', link: '/heroic-games-launcher'},
           { text: 'IP Lookup', link: '/ip-lookup' },
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },
@@ -77,6 +81,7 @@ export const docs = [
           { text: 'OBS Studio', link: '/obs-studio' },
           { text: 'Obsidian', link: '/obsidian' },
           { text: 'OnlyOffice', link: '/onlyoffice' },
+          { text: 'OpenRazer', link: '/openrazer' },
           { text: 'Opera', link: '/opera' },
           { text: 'Penpot Desktop', link: '/penpot-desktop' },
           { text: 'PortProton', link: '/port-proton' },
@@ -261,7 +266,7 @@ export const docs = [
           { text: 'Подключение USB-устройств', link: '/usb-devices' },
           { text: 'Подключение принтера', link: '/drivers-for-printer' },
           { text: 'Подключение сканера', link: '/drivers-for-scanner' },
-          { text: 'Подключение DualShock', link: '/dualshock' }
+          { text: 'Подключение DualShock', link: '/dualshock' },
         ],
         collapsed: true
       },

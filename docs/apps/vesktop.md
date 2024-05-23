@@ -86,7 +86,7 @@ Vesktop — альтернативный клиент Discord c множеств
 
 ### Где еще можно найти темы?
 
-Vesktop умеет работать с темами для BetterDiscord, соответсвтенно темы для него можно взять на сайте [betterdiscord.app](betterdiscord.app/themes).
+Vesktop умеет работать с темами для BetterDiscord, соответсвтенно темы для него можно взять на сайте [betterdiscord.app](https://betterdiscord.app/themes).
 
 Установить темы так же просто. Для этого нужно:
 

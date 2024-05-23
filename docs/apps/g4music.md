@@ -28,6 +28,8 @@ appstream:
 
 G4Music — это быстрый и легкий музыкальный проигрыватель, написанный на GTK4, с красивым и адаптивным пользовательским интерфейсом, ориентированный на высокую производительность для большой музыкальной коллекции.
 
+![g4music](/g4music/g4music-1.png)
+
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-snap.md-->

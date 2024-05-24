@@ -1,6 +1,18 @@
-# ALT Gnome Wiki
 
-База знаний открытого сообщества пользователей операционной системы ALT Linux с графическим окружением GNOME.
+ <div align="center"> 
+  <a href="https://github.com/Ampernic/ALTRegularGnomeWiki"> 
+    <img src="https://alt-gnome.wiki/alt-gnome.png" alt="Logo" width="256" height="256"> 
+  </a> 
+  <h1 align="center">ALT Gnome Wiki
+  <br/>
+  <img alt="GitHub License" src="https://img.shields.io/github/license/OlegShchavelev/ALTGnomeWiki">
+  <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/OlegShchavelev/ALTGnomeWiki">
+  <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/OlegShchavelev/ALTGnomeWiki/github-pages?label=Last%20Deploy">
+  </h1> 
+  <p align="center"> База знаний открытого сообщества пользователей операционной системы ALT Linux с графическим окружением GNOME.</p>
+  <br/> 
+  <br/> 
+ </div> 
 
 ## Разработка
 

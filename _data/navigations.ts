@@ -354,6 +354,7 @@ export const reference = [
     base: '/reference/pages/',
     items: [
       { text: 'Внесение изменений', link: '/alteration' },
+      { text: 'Возможности Markdown', link: '/markdown-how-to' },
       { text: 'Возможности VitePress', link: '/vitepress' },
       { text: 'Общие правила', link: '/general-rules' }
     ],

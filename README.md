@@ -1,6 +1,6 @@
 
  <div align="center"> 
-  <a href="https://github.com/Ampernic/ALTRegularGnomeWiki"> 
+  <a href="https://github.com/OlegShchavelev/ALTRegularGnomeWiki"> 
     <img src="https://alt-gnome.wiki/alt-gnome.png" alt="Logo" width="256" height="256"> 
   </a> 
   <h1 align="center">ALT Gnome Wiki

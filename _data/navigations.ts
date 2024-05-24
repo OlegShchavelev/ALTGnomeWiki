@@ -306,6 +306,21 @@ export const docs = [
         collapsed: true
       },
       {
+        text: 'Cизиф',
+        link: 'sisyphus',
+        items: [
+          {
+            text: 'Hasher', link: '/hasher',
+          }, {
+            text: 'Сборка в системе', link: '/build',
+          }, {
+            text: 'Сборка RPM-пакетов', link: '/build-packages'
+          }, {
+            text: 'Патчи', link: '/patches'
+          }
+        ]
+      },
+      {
         text: 'Игры',
         link: '/games',
         items: [

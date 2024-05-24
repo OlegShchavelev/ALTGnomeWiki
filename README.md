@@ -6,6 +6,7 @@
   <h1 align="center">ALT Gnome Wiki
   <br/>
   <img alt="GitHub License" src="https://img.shields.io/github/license/OlegShchavelev/ALTGnomeWiki">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/OlegShchavelev/ALTGnomeWiki">
   <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/OlegShchavelev/ALTGnomeWiki">
   <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/OlegShchavelev/ALTGnomeWiki/github-pages?label=Last%20Deploy">
   </h1> 

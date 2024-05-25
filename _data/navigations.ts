@@ -1,3 +1,5 @@
+import { link } from "fs"
+
 export const docs = [
   {
     items: [
@@ -49,6 +51,7 @@ export const docs = [
           { text: 'Foliate', link: '/foliate' },
           { text: 'Folio', link: '/folio' },
           { text: 'Footage', link: '/footage' },
+          { text: 'FOSSology', link: '/fossology-nomos'},
           { text: 'Fotema', link: '/fotema' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },

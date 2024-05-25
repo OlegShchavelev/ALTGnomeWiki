@@ -4,6 +4,10 @@ aggregation:
     flatpak:
         id: dev.vencord.Vesktop
         build: offical
+    epm:
+        play:
+            id: vesktop
+            build: unoffical
 appstream:
     id: dev.vencord.Vesktop
     name: Vesktop
@@ -39,6 +43,7 @@ Vesktop — альтернативный клиент Discord c множеств
 <AGWGallery />
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Демонстрация экрана в Wayland со звуком
 

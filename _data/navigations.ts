@@ -314,12 +314,18 @@ export const docs = [
         link: 'sisyphus',
         items: [
           {
+            text: 'etersoft-build-utils', link: '/etersoft-build-utils',
+          },
+          {
             text: 'Hasher', link: '/hasher',
-          }, {
+          },
+          {
             text: 'Сборка в системе', link: '/build',
-          }, {
+          },
+          {
             text: 'Сборка RPM-пакетов', link: '/build-packages'
-          }, {
+          },
+          {
             text: 'Патчи', link: '/patches'
           }
         ]

@@ -66,12 +66,12 @@ export const gitMapContributors = [
     {
         name: "Александр Шамараев",
         avatar: "https://github.com/AlexanderShad.png",
-        nameAliases: ["Aleksandr Shamaraev"]
+        nameAliases: ["Aleksandr Shamaraev", "Aleksand Shamaraev"]
     },
     {
         name: "Boria138",
         avatar: "https://github.com/Boria138.png",
-        nameAliases: ["Boria138"]
+        nameAliases: ["Boria138", "Boris Yumankulov"]
     },
     {
         name: "otetswoo",

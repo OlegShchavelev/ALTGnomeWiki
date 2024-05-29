@@ -320,6 +320,9 @@ export const docs = [
             text: 'Hasher', link: '/hasher',
           },
           {
+            text: 'Spec', link: '/spec',
+          },
+          {
             text: 'Сборка в системе', link: '/build',
           },
           {

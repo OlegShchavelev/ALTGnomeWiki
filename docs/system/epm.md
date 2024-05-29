@@ -82,7 +82,7 @@ epm play [options] [argument]
 
 ### Установить приложение
 
-Для установки приложения, используйте `epm play <app>`
+Для установки приложения, используйте `epm play <app>`:
 
 ```shell
 epm play telegram
@@ -102,7 +102,7 @@ epm play --product-alternatives telegram
 
 ### Удалить приложение
 
-Для удаления приложения используйте `epm play --remove <app>`
+Для удаления приложения используйте `epm play --remove <app>`:
 
 ```shell
 epm play --remove telegram

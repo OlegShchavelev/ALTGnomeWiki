@@ -89,13 +89,13 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 :::info Наиболее популярные репозитории
 
-Репозиторий GNOME Nightly
+Репозиторий GNOME Nightly:
 
 ```shell
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 ```
 
-Репозиторий Flatpak Beta
+Репозиторий Flatpak Beta:
 
 ```shell
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
@@ -141,7 +141,7 @@ flatpak https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
 ```shell
 $ flatpak install gimp
 ```
-подтвердите удаленный доступ и приложение и приступит к установке.
+Подтвердите удаленный доступ и команда приступит к установке нужного пакета.
 
 В графическом режиме для установки приложений в Flatpak **используйте** [Центр приложений (GNOME Sofrware)](/gnome-software). Во вкладке **«Установлено»** в списке выбирите приложение и нажмите кнопку **«Установить»**.
 
@@ -165,7 +165,7 @@ chmod 775 /usr/bin/bwrap
 exit
 ```
 
-Перезагрузите операционную систему или от введите команду в терминале:
+Перезагрузите операционную систему или введите следующую команду в терминале:
 
 ```shell
 systemctl --user restart flatpak-portal.service
@@ -216,7 +216,7 @@ flatpak uninstall --unused
 flatpak repair
 ```
 
-Узнать, какие изменения вносились в вашу установку Flatpak с течением времени, вы можете просмотреть журналы:
+Чтобы узнать, какие изменения вносились в вашу установку Flatpak с течением времени, вы можете просмотреть журналы:
 
 ```shell
 flatpak history

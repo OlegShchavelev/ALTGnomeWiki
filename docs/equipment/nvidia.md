@@ -17,7 +17,7 @@ Nouveau — это [open-source](https://en.wikipedia.org/wiki/Open-source_softw
 
 Из-за обратно-проектируемого метода разработки, уровень поддержки различных архитектур GPU может варьироваться, [поэтому важно знать какая у Nouveau поддержка архитектуры вашей видеокарты](https://nouveau.freedesktop.org/FeatureMatrix.html).
 
-Драйвер Nouveau изначально присутствует в ядре системы, и настройка не требуется.
+Драйвер Nouveau изначально присутствует в ядре системы, и, [обычно], не требует вмешательств.
 
 ::: info
 У Nouveau есть страница с названиями видеокарт, их кодовыми наименованиями и их архитектурой.
@@ -184,18 +184,6 @@ GNOME, один из немногих, кто ещё поддерживает EG
 ::: info
 Для драйвера до версии ~400 ускоренное декодирование видео NVDEC **недоступен**.
 :::
-#### Сессия Wayland
-Драйверы до версии 364.12 **не имеют поддержку Kernel Mode Settings**.
-
-**Сессия Wayland на данном драйвере не поддерживается.**
-
-### Драйвер 304.137
-::: info
-Для драйвера до версии ~400 ускоренное декодирование видео NVDEC **недоступен**.
-
-Для драйвера до версии 340.108 ускоренное декодирование видео VDPAU **недоступен**.
-:::
-
 #### Сессия Wayland
 Драйверы до версии 364.12 **не имеют поддержку Kernel Mode Settings**.
 
@@ -910,7 +898,11 @@ make-initrd
 # посмотреть что в выводе сборки initrd присутствует Nouveau
 reboot
 ```
-## Управление питанием на Nouveau
+::: danger
+Для видеокарт Kepler и Maxwell потребуется обязательное [внедрение NVIDIA прошивки](#внедрение-nvidia-прошивки).
+:::
+
+## Управление питанием (Turing и новее)
 
 Nouveau, драйвер с открытым исходным кодом для графических процессоров Nvidia, развивается посредством реверс-инжиниринга. В области управления питанием были как прогрессы, так и регрессы (см. страницу [PowerManagement](https://nouveau.freedesktop.org/PowerManagement.html)).
 
@@ -924,12 +916,138 @@ mcedit /etc/sysconfig/grub2
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+## Внедрение NVIDIA прошивки
+
+Большинство видеочипов NVIDIA имеют встроенный аппаратный декодер, и некоторые видеочипы, для его работы, отдельно требуют извлечённой из драйверов NVIDIA прошивку. NVIDIA прошивка требуется для видеокарт с аппаратным декодером: VP1, VP2, VP3, VP4.0, VP4.2, VP5 или VP6+. Список видеокарт с данными декодерами смотрите на сайте [nouveau.freedesktop](https://nouveau.freedesktop.org/VideoAcceleration.html) в блоке **Which card has what engine**
+
+::: info
+Хоть вышеупомянутые аппаратные декодеры и требуют NVIDIA прошивку, не во всех реализована её поддержка. Статус поддержки для конкретнего декодера смотрите на сайте [nouveau.freedesktop](https://nouveau.freedesktop.org/VideoAcceleration.html) в блоке **Video engine support status**
+:::
+
+::: danger
+Видеочипы Kepler и Maxvell для их нормальной загрузки **обязательно требуют внедрение прошивки**. Если при первой установке или запуске системы на устройствах с видеочипом одной из этих архитектур наблюдаете проблемы, вы можете временно перейти на [другой видеорежим](#если-при-установке-или-первом-запуске-черныи-экран-артефакты-или-другие-проблемы)
+:::
+
+Распаковываем прошивку:
+```shell
+mkdir -p /tmp/nouveau && cd /tmp/nouveau
+wget http://us.download.nvidia.com/XFree86/Linux-x86_64/340.108/NVIDIA-Linux-x86_64-340.108.run
+wget https://raw.github.com/envytools/firmware/master/extract_firmware.py
+sh NVIDIA-Linux-x86_64-340.108.run --extract-only
+python3 extract_firmware.py
+```
+
+Устанавливаем прошивку:
+```shell
+su -
+cd /tmp/nouveau
+mkdir /lib/firmware/nouveau
+cp -d nv* vuc-* /lib/firmware/nouveau/
+```
+
+## Reclocking (от Celsius до Fermi)
+
+Видеочипы до архитектуры Turing не имеют поддержку управления питания на Nouveau, из-за чего  остаются в режиме пониженного энергопотребления с пониженными частотами. Но на некоторых архитектурах есть возможность менять частоты GPU и видеопамяти через уже заготовленные пресеты состояния питания. Видеочипы от Celsius до Tesla имеют возможность изменять частоты видеопамяти, а видеокарты от Rankine до Fermi имеют возможность изменять частоты GPU. Все, кто входят и в 1-ый и во 2-ой диапазон имеют управление частот и GPU и видеопамяти, что будет отображено в описании пресетов.
+
+Сначала необходимо проверить доступные состояния питания:
+```shell
+su -
+cat /sys/kernel/debug/dri/0/pstate
+```
+Вывод должен быть похож на это:
+```shell
+07: core 405 MHz memory 810 MHz
+0f: core 653-954 MHz memory 1600 MHz
+AC: core 953 MHz memory 1600 MHz
+```
+Далее пробуем интересующее состояние на работоспособность:
+
+```shell
+su -
+echo pstate > /sys/kernel/debug/dri/0/pstate
+```
+Если всё работает стабильно и нет проблем, можно записать пресет в параметры ядра. Обратите внимание, что в выводе у нас было значение в шеститеричном формате, для добавления в параметры ядра, значение необходимо перевести в деситеричный формат (Используйте любой HEXtoDEX конвектор)
+
+Как пример, в описании будет указнано значение 0f, которое перевели в деститеричный формат. Его деситеричное значение - 15
+|Параметр|Описание|
+| - | - |
+| nouveau.config=NvClkMode=15 | На этапе загрузки устанавливает необходимое состояние питания. |
+| nouveau.config=NvClkModeAC=15 | На этапе загрузки устанавливает необходимое состояние питания, если устройство работает от сети. |
+| nouveau.config=NvClkModeDC=15 | На этапе загрузки устанавливает необходимое состояние питания, если устройство работает от батареи. |
+
+Необходимо прописать в строку с `GRUB_CMDLINE_LINUX_DEFAULT` один или несколько параметров и сгенерировать новых grub.cfg:
+
+```shell
+su -
+mcedit /etc/sysconfig/grub2
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+::: danger
+Хоть эта поддержка и существует давно, она всё ещё имеет статус MOSTLY (Всё основное сделано, но ещё имеет ряд нерешённых проблем), и скорее всего, будет недоделанной навсегда.** Некоторые состояния могут перегреть устройство и навредить, пожалуйста делая это, следите за состоянием видеочипа!**
+:::
+
+## Управление скоростью вентиляторов (от Rankine до Maxwell)
+
+Видеочипы от Rankine до Maxwell имеют поддержку управления вентиляторами.
+Чтобы узнать точно, есть ли поддержка, нужно проверить, есть ли файлы управления:
+```shell
+ls /sys/class/drm/card0/device | grep pwm1
+```
+Должны быть файлы вида:
+```shell
+pwm1
+pwm1_enable
+pwm1_max
+pwm1_min
+```
+|Файл управления|Описание|
+| - | - |
+| pwm1 | Управление постоянной скоростью. |
+| pwm1_enable | Включение режимов управления скоростью. 0 - None, 1 - MANUAL, 2 - AUTO |
+| pwm1_max | Установка максимальной скорости. |
+| pwm1_min | Установка минимальной скорости. |
+
+Путём добавления процентных значений скоростей в эти файлы (Кроме pwm1_enable, где выбираются режимы) мы можем ими управлять.
+
+```shell
+su -
+echo 1 > /sys/class/drm/card0/device/pwm1_enable # Включаем ручное управление. Соответственно, если будет 0 или 2, указывать скорости нет необходимости
+echo 40 > /sys/class/drm/card0/device/pwm1 # 40 это 40% от мощности вентилятора
+```
+Один из вариантов сделать изменения постоянными, занести их в udev правила.
+
+Пример ручного управления:
+```shell
+su -
+cat << _EOF_ > /etc/udev/rules.d/50-nouveau-hwmon.rules
+ACTION=="add", SUBSYSTEM=="hwmon", DRIVERS=="nouveau", ATTR{pwm1_enable}="1", ATTR{pwm1_enable}="40"
+_EOF_
+```
+Пример автоматического управления:
+```shell
+su -
+cat << _EOF_ > /etc/udev/rules.d/50-nouveau-hwmon.rules
+ACTION=="add", SUBSYSTEM=="hwmon", DRIVERS=="nouveau", ATTR{pwm1_enable}="2"
+_EOF_
+```
+Пример управления минимальными и максимальными значениями:
+```shell
+su -
+cat << _EOF_ > /etc/udev/rules.d/50-nouveau-hwmon.rules
+ACTION=="add", SUBSYSTEM=="hwmon", DRIVERS=="nouveau", ATTR{pwm1_enable}="1", ATTR{pwm1_min}="10", ATTR{pwm1_min}="90"
+_EOF_
+```
+::: danger
+Изменяйте вращение вентиляторов на свой страх и риск! При неправильном использовании вы можете перегреть видеокарту.
+:::
+
 ### Источники:
 https://www.altlinux.org/Nvidia
 
 https://www.kernel.org/doc/html/latest/gpu/drm-kms.html
 
-https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers/ru
+https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers
 
 https://en.wikipedia.org/wiki/Nouveau_(software)
 
@@ -951,4 +1069,8 @@ https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks
 
 https://wiki.archlinux.org/title/Kernel_mode_setting
 
-https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers
+https://wiki.archlinux.org/title/Nouveau
+
+https://wiki.gentoo.org/wiki/Nouveau
+
+https://web.archive.org/web/20141031191559/https://kalgan.cc/blog/posts/Controlling_nVidia_cards_fans_with_nouveau_in_Debian/

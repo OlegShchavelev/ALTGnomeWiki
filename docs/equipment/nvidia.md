@@ -799,7 +799,7 @@ https://justin.palpant.us/monitor-and-maximize-nvidia-gpu-performance-on-linux/
 :::
 
 ::: warning
-Изменение параметров не сохраняется при перезагрузке. Для сохранения параметров используйте правила bashrc, udev, либо systemd.
+Изменение параметров не сохраняется при перезагрузке. Для сохранения параметров используйте bashrc, udev, либо systemd.
 
 Пример для способа с systemd можно подсмотреть [тут](https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Custom_TDP_Limit)
 :::

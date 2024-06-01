@@ -798,6 +798,12 @@ https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Lowering_GPU_Boost_Clock
 https://justin.palpant.us/monitor-and-maximize-nvidia-gpu-performance-on-linux/
 :::
 
+::: warning
+Изменение параметров не сохраняется при перезагрузке. Для сохранения параметров используйте правила bashrc, udev, либо systemd.
+
+Пример для способа с systemd можно подсмотреть [тут](https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Custom_TDP_Limit)
+:::
+
 ### [Coolbits](https://en.wikipedia.org/wiki/Coolbits) (Только для X11)
 
 Для сессии x11 (через [X Config Options](https://us.download.nvidia.com/XFree86/Linux-x86_64/364.19/README/xconfigoptions.html)) существует возможность активировать не поддерживаемые NVIDIA функции через [NV-CONTROL X](https://www.nvidia.com/en-us/drivers/IO-10753/) расширение. Активация функций происходит через указание битовой макси:

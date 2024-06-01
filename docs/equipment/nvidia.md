@@ -808,12 +808,6 @@ https://justin.palpant.us/monitor-and-maximize-nvidia-gpu-performance-on-linux/
 Также, для разных версий драйвера в документации заявлено разное кол-во функций. в документации для 364.19 их описано 6, а в 550.54.14 их уже 2.
 :::
 
-Установить битовую маску можно либо в конфигурационном файле xorg.conf в разделе Device, либо через такие программы, как [nvidia-xconfig](#nvidia-xconfig) и [EnvyControl](#envycontrol)
-
-Пример работы с nvidia-xconfig:
-```shell
-nvidia-xconfig --cool-bits=2
-```
 |Бит|Описание|
 | - | - |
 | 1 | Если установлено значение "1" (бит 1), позволяет разгонять старые (до Fermi) ядра на странице "Тактовые частоты" в разделе "Настройки nvidia". |
@@ -823,18 +817,21 @@ nvidia-xconfig --cool-bits=2
 | 16 | Если установлено значение "16" (бит 4), интерфейс командной строки nvidia-settings позволяет настроить перенапряжение графического процессора. Это разрешено на некоторых графических процессорах GeForce.(для Fermi и выше) |
 | 0 | Если установлено значение "0" (бит 0), все неподдерживаемые функции отключены. |
 
+Установить битовую маску можно либо вручную в конфигурационном файле xorg.conf в разделе Device, либо через такие программы, как [nvidia-xconfig](#nvidia-xconfig) и [EnvyControl](#envycontrol)
 
-При перезагрузке все изменения в nvidia-settings сбрасываются. Для сохранения разгона необходимо Использование таких утилит, как [nvclock](https://packages.altlinux.org/ru/sisyphus/srpms/nvclock/) или [gwe](https://packages.altlinux.org/ru/sisyphus/srpms/gwe/)
-
-Либо же установить автозапуск команд через CLI [nvidia-settings](#nvidia-settings), например через `~/.bashrc`.
-Пример:
-
+Пример работы с nvidia-xconfig:
 ```shell
-cat << _EOF_ >> ~/.bashrc
-# GPU Graphics Clock Offset
-nvidia-settings -a "GPUGraphicsClockOffset[performance_level]=offset"
-# GPU Memory Offset
-nvidia-settings -a "GPUMemoryTransferRateOffset[performance_level]=offset"
+nvidia-xconfig --cool-bits=2
+```
+Пример ручной записи в xorg.conf:
+```shell
+su -
+cat << _EOF_ > /etc/X11/xorg.conf.d/22-cool_bits.conf
+	Section "Device"
+  		Identifier "NVIDIA GeForce"
+  		Driver     "nvidia"
+ 	 	Option     "Coolbits" "24"
+	EndSection
 _EOF_
 ```
 
@@ -916,7 +913,8 @@ make-initrd
 
 2. через запись в /etc/X11/xorg.conf (Только для X11):
 ```shell
-cat << _EOF_ > /etc/modprobe.d//etc/X11/xorg.conf.d/20-PowerMizer.conf
+su -
+cat << _EOF_ > /etc/X11/xorg.conf.d/21-PowerMizer.conf
 	Section "Device"
   		Identifier "NVIDIA GeForce"
   		Driver     "nvidia"

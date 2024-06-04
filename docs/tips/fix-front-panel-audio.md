@@ -36,7 +36,7 @@ epm -i pavucontrol
 
 ![pavucontrol-2](/gnome-volume-fix/pavucontrol-2.png)
 
-И на всякий случай пример не правильного входа
+И на всякий случай пример неправильного входа
 
 ![pavucontrol-3](/gnome-volume-fix/pavucontrol-3.png)
 

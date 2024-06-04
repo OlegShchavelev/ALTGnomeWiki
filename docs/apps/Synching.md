@@ -34,17 +34,17 @@ Syncthing может работать в локальной сети и сети
 cd Загрузки
 sudo tar -C '/opt' -xvf syncthing*
 ```
-3. При распаковке у меня в папке opt создалась папка syncthing-linux-amd64-v1.27.3, для удобства, Я переиеновал ее в syncthing.
+3. При распаковке у меня в папке opt создалась папка syncthing-linux-amd64-v1.27.3, для удобства, Я переименовал ее в syncthing.
 4. Запускаем Syncthing под обычным пользователем.
 ```shell
 cd /opt/syncthing
 ./syncthing
 ```
-Далее, нужно настроить автоматический запуск syncthing в виде фонового демона, загрузаемого при входе пользователя в систему. Я буду использовать для этого systemd, другие варианты автоматической загрузки можно посмотреть [тут](https://docs.syncthing.net/users/autostart.html#linux).
+Далее, нужно настроить автоматический запуск syncthing в виде фонового демона, загружаемого при входе пользователя в систему. Я буду использовать для этого systemd, другие варианты автоматической загрузки можно посмотреть [тут](https://docs.syncthing.net/users/autostart.html#linux).
 
 Для этого, нам нужно скачать со страницы разработчика на [github.com](https://github.com/syncthing/syncthing/tree/main/etc/linux-systemd/user) файл syncthing.service и скопировать его в /$HOME/.config/systemd/user, где $HOME это директория Вашего пользователя.
 
-Далее необходимо отредактировать этот файл, а именно [Service] указать корректный путь к исполняемому файлу. Для этого нужно изменить значение ExecStart c `/usr/bin/syncthing` на `/opt/syncthing/syncthing`. После этого, строка должна выглядить так: `ExecStart=/opt/syncthing/syncthing serve --no-browser --no-restart --logflags=0`
+Далее необходимо отредактировать этот файл, а именно [Service] указать корректный путь к исполняемому файлу. Для этого нужно изменить значение ExecStart c `/usr/bin/syncthing` на `/opt/syncthing/syncthing`. После этого, строка должна выглядеть так: `ExecStart=/opt/syncthing/syncthing serve --no-browser --no-restart --logflags=0`
 
 Сохраняем изменения и запускаем службу. Внимание! Так как запуск службы будет осуществляться от имени обычного пользователя, следующая команда должны выполняться **НЕ** от root!
 

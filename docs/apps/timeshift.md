@@ -69,7 +69,7 @@ systemctl edit --full grub-btrfsd
 В открывшемся конфигурационном файле нужно изменить строку `ExecStart=/usr/bin/grub-btrfsd --syslog /.snapshots` на `ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto`
 и сохранить изменения
 
-Настройка закончина. Теперь можно запустить демон.
+Настройка закончена. Теперь можно запустить демон.
 
 ```shell
 su -

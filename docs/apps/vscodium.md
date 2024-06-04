@@ -51,7 +51,7 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/pin-app)
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 
@@ -66,7 +66,7 @@ codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecoration
 ```
 :::
 
-## Использование Node.js в изолированой среде в приложении VSCodium
+## Использование Node.js в изолированной среде в приложении VSCodium
 
 Вы используете VSCodium установленного с помощью пакетного менеджера [Flatpak](flatpak), для использования Node.js необходимо:
 

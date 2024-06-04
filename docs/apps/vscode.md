@@ -32,7 +32,7 @@ Visual Studio Code — инструмент, который сочетает в 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
-## Использование Node.js в изолированой среде в приложении VSCode
+## Использование Node.js в изолированной среде в приложении VSCode
 
 Вы используете VSCode установленного с помощью пакетного менеджера [Flatpak](flatpak), для использования Node.js необходимо:
 
@@ -92,7 +92,7 @@ code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platfor
 ```
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCode**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VSCode**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 

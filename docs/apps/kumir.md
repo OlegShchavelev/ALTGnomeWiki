@@ -17,13 +17,13 @@ appstream:
 gallery:
     title: Галерея
     type: slider
-    items: 
+    items:
         - src: /kumir/kumir-1.png
         - src: /kumir/kumir-2.png
         - src: /kumir/kumir-3.png
 ---
 
-# Kumir
+# KuMir
 
 КуМир (Комплект Учебных МИРов) — система программирования, предназначенная для поддержки начальных курсов информатики и программирования в средней и высшей школе.
 

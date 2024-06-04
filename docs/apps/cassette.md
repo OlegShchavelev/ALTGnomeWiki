@@ -92,7 +92,7 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 
 - Создать [ISSUE](https://github.com/Rirusha/Cassette/issues) с проблемой или предложением по улучшению;
 - Сделать [Pull Request](https://github.com/Rirusha/Cassette/pulls) с фиксом или добавлением функционала;
-- [Поддержать рублём](https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460), просьба указывать в «Сообщении получателю» свой никнейм, иначе автор проекта не сможет добавить вас в соответствующий блок окна About. Система Тинькофф к сожелению не указывает имя отправителя;
+- [Поддержать рублём](https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460), просьба указывать в «Сообщении получателю» свой никнейм, иначе автор проекта не сможет добавить вас в соответствующий блок окна About. Система Тинькофф к сожалению не указывает имя отправителя;
 - Написать отзыв в Центре Приложений о Кассете
 
 
@@ -101,7 +101,7 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 ### Не отображается интерфейс авторизации
 
 ::: info
-У пользователей с графическим адаптаром NVIDIA (неизвестный диапозон устройств) и c закрытыми драйверами не отображается интерфейс авторизации Яндекс ID.
+У пользователей с графическим адаптером NVIDIA (неизвестный диапазон устройств) и c закрытыми драйверами не отображается интерфейс авторизации Яндекс ID.
 :::
 
 ![Пример проблемы с отображением интерфейса при авторизации](/cassette/cassette-3.png)
@@ -131,7 +131,7 @@ flatpak-spawn: Invalid byte sequence in conversion input
 Try "flatpak-spawn --help" for more information.
 ```
 
-Добавте переменную окружения `LC_ALL`. Сделать это можно через терминал:
+Добавьте переменную окружения `LC_ALL`. Сделать это можно через терминал:
 
 ```shell
 flatpak override --env=LC_ALL="en_US.UTF-8" --user io.github.Rirusha.Cassette

@@ -37,7 +37,7 @@ AnyDesk — программа удалённого доступа, котора
 
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
-Далее вкючим сервис AnyDesk
+Далее включим сервис AnyDesk
 
 ```shell
 serv anydesk on

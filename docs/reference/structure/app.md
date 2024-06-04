@@ -11,7 +11,7 @@
 aggregation:
     sisyphus:   # название в репозитории
     flatpak:
-        id:   # flatpak id 
+        id:   # flatpak id
         build:   # сборка offical/unoffical
     snap:
         id:    # название на snapcraft
@@ -34,7 +34,7 @@ appstream:
         nickname:   # nickname разработчика
         avatar:   # ссылка или путь на аватар разработчика
     url:
-        homepage:   # ссылка на страницу проекта 
+        homepage:   # ссылка на страницу проекта
         bugtracker:   # ссылка на багтрекер (например, github issue)
         translate:   # ссылка на помощь с переводом
         help:   # ссылка на гайд по использованию
@@ -47,7 +47,7 @@ gallery:
 ```
 
 
-### Cписок бейджей
+### Список бейджей
 
 Можно добавить такие бейджи
 

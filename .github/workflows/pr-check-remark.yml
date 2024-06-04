@@ -1,4 +1,4 @@
-name: 'Test: Markdown Spell Check'
+name: 'Test: ReMark-Lint Markdown Check'
 
 on:
   pull_request:
@@ -24,6 +24,6 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Check spell using yaspeller
+      - name: Check markdown rules using remark-lint
         run: |
-          npm run docs:speller
+          npm run check:remark

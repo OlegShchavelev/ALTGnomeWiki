@@ -1,6 +1,8 @@
 {
   "format": "markdown",
   "excludeFiles": [
+    ".vitepress/",
+    ".github/",
     ".git",
     ".yaspeller",
     "node_modules",
@@ -22,7 +24,7 @@
     "VitePress",
     "macOS",
     "OpenCore",
-    "Mac-(а|А|ов)",
+    "Mac-(а|a|А|A|ов)",
     "TODO",
     "(F|f)rontmatter",
     "802.11(a|x|c|ax|ac)",
@@ -37,7 +39,9 @@
     "Vesktop",
     "Tuba",
     "(PortProton|ProtonLG)",
-    "OnlyOffice"
+    "OnlyOffice",
+    "WiFi",
+    "TimeMachine"
   ],
   "ignoreText": 
    [

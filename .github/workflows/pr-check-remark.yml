@@ -1,4 +1,4 @@
-name: 'Test: ReMark-Lint Markdown Check'
+name: 'Check: ReMark-Lint Markdown Check'
 
 on:
   pull_request:

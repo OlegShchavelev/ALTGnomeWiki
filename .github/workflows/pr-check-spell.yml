@@ -1,4 +1,4 @@
-name: 'Test: Markdown Spell Check'
+name: 'Check: Markdown Spell Check'
 
 on:
   pull_request:

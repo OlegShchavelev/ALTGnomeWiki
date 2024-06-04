@@ -1,0 +1,52 @@
+{
+  "format": "markdown",
+  "excludeFiles": [
+    ".vitepress/",
+    ".github/",
+    ".git",
+    ".yaspeller",
+    "node_modules",
+    "docs/system/apps-gnome.md"
+  ],
+  "dictionary": [
+    "Книжная правая",
+    "Книжная левая",
+    "BDF",
+    "(F|f)ork",
+    "(F|f)latpak",
+    "Ryzen",
+    "Bitmap",
+    "(E|e)(P|p)(M|m)",
+    "(R|r)(P|p)(M|m)",
+    "AppImage",
+    "ALT Gnome",
+    "ALT",
+    "VitePress",
+    "macOS",
+    "OpenCore",
+    "Mac-(а|a|А|A|ов)",
+    "TODO",
+    "(F|f)rontmatter",
+    "802.11(a|x|c|ax|ac)",
+    "ZeroTierOne",
+    "Flatseal",
+    "Wike",
+    "PinApp",
+    "VSCode",
+    "QuickCSS",
+    "CSS",
+    "Vencord",
+    "Vesktop",
+    "Tuba",
+    "(PortProton|ProtonLG)",
+    "OnlyOffice",
+    "WiFi",
+    "TimeMachine"
+  ],
+  "ignoreText": 
+   [
+    ["---.*?---", "gsm"]
+   ],
+  "ignoreUrls": true,
+  "findRepeatWords": true
+}

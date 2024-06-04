@@ -142,7 +142,7 @@ echo "Install complete"
 ### Предисловие
 В Macbook Pro 11,3 по умолчанию для Linux разрешена только дискретная карта Nvidia GT 750M, однако для обычной работы ее слишком много, как много и потребления питания при ее работе.
 
-Что-бы исправить это положение дел предлагается следующее решение:
+Чтобы исправить это положение дел предлагается следующее решение:
 
 ### GPU switcher
 Для переключения режима достаточно скачать приложение gpu-switch с репозитория
@@ -268,7 +268,7 @@ inxi -G
 - https://github.com/Dunedan/mbp-2016-linux большой репозиторий для макбуков 2016 год+
 - https://wiki.archlinux.org/title/Mac/Troubleshooting# - решение проблем с маком
 - https://github.com/0xbb/gpu-switch GPU переключатель на маках
-- https://nixaid.com/linux-on-macbookpro-old/ не плохая статья можно подчерпнуть что-то полезное
+- https://nixaid.com/linux-on-macbookpro-old/ неплохая статья можно почерпнуть что-то полезное
 - http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1 кастомизации для бука 2013 16" 11.3
 - https://github.com/patjak/facetimehd/issues/196 Вопрос про камеру и почему не работает драйвер из статьи
 

@@ -1,0 +1,27 @@
+{
+  "format": "markdown",
+  "excludeFiles": [
+    ".git",
+    ".yaspeller",
+    "node_modules",
+    "docs/system/apps-gnome.md"
+  ],
+  "dictionary": [
+    "Книжная правая",
+    "Книжная левая",
+    "BDF",
+    "Fork",
+    "Flatpak",
+    "Ryzen",
+    "Bitmap",
+    "(E|e)(P|p)(M|m)",
+    "(R|r)(P|p)(M|m)",
+    "AppImage"
+  ],
+  "ignoreText": 
+   [
+    ["---.*?---", "gsm"]
+   ],
+  "ignoreUrls": true,
+  "findRepeatWords": true
+}

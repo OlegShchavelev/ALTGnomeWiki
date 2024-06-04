@@ -42,6 +42,6 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "docs:speller": "yaspeller -e '.md' ./docs",
-    "docs:remark": "remark ./docs"
+    "docs:remark": "remark ./docs --frail"
   }
 }

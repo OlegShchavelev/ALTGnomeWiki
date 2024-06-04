@@ -381,5 +381,14 @@ export const reference = [
       { text: 'Страница Wiki', link: '/wiki_page' }
     ],
     collapsed: false
+  },
+  {
+    text: 'Контроль качества',
+    base: '/reference/tests/',
+    items: [
+      { text: 'Проверка текста на ошибки', link: '/speller' },
+      { text: 'Проверка структуры статьи', link: '/remark' }
+    ],
+    collapsed: false
   }
 ]

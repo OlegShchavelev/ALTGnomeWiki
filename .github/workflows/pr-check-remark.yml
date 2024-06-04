@@ -26,4 +26,4 @@ jobs:
         run: npm ci
       - name: Check markdown rules using remark-lint
         run: |
-          npm run docs:remark
+          npm run docs:remark-full

@@ -26,4 +26,4 @@ jobs:
         run: npm ci
       - name: Check spell using yaspeller
         run: |
-          npm run docs:check-spell
+          npm run check:spell

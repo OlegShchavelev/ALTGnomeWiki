@@ -48,7 +48,7 @@ tar xf ИМЯ -C $HOME/
 ```
 где ИМЯ - скаченный пакет *.tar.gz
 
-После чего создаем ярлык
+После чего создаём ярлык
 
 ```
 /usr/share/applications/postman.desktop

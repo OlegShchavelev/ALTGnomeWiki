@@ -197,19 +197,19 @@ podman-compose up
 podman-compose down
 ```
 
-Запуск определенного сервиса, описанного в docker-compose.yml:
+Запуск определённого сервиса, описанного в docker-compose.yml:
 
 ```shell
 podman-compose start <service_name>
 ```
 
-Остановка определенного сервиса:
+Остановка определённого сервиса:
 
 ```shell
 podman-compose stop <service_name>
 ```
 
-Перезапуск определенного сервиса:
+Перезапуск определённого сервиса:
 
 ```shell
 podman-compose restart <service_name>
@@ -221,7 +221,7 @@ podman-compose restart <service_name>
 podman-compose ps
 ```
 
-Отображение логов определенного сервиса:
+Отображение логов определённого сервиса:
 
 ```shell
 podman-compose logs <service_name>

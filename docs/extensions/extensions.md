@@ -14,14 +14,17 @@
 **Установка через терминал**
 
 ::: code-group
+
 ```shell[apt-get]
 su -
 apt-get update
 apt-get install gnome-extension-manager
 ```
+
 ```shell[epm]
 epm -i gnome-extension-manager
 ```
+
 :::
 
 ### Установка c помощью Flatpak<Badge type="info" text="flatpak" />
@@ -49,7 +52,6 @@ gnome-extensions list
 ```shell
 gnome-extensions show foo-bar
 ```
-
 
 ### Включить расширение
 
@@ -91,7 +93,7 @@ gnome-extensions uninstall foo-bar
 
 **Auto Move Windows**
 
-Позволяет вам проще управлять вашими рабочими пространствами, назначая определенное рабочее пространство каждому приложению, как только запускается в рабочем окружении, настраиваемым с помощью ключа `GSettings`
+Позволяет вам проще управлять вашими рабочими пространствами, назначая определённое рабочее пространство каждому приложению, как только запускается в рабочем окружении, настраиваемым с помощью ключа `GSettings`
 
 **Launch new interface**
 

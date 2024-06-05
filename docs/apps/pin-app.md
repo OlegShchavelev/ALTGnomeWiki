@@ -45,7 +45,7 @@ PinApp позволяет закреплять изменённые прилож
 
 ![pin-app-7](/pin-app/pin-app-7.png)
 
-или с помощью менеджера пакета Flatpak, в терминале введем:
+или с помощью менеджера пакета Flatpak, в терминале введём:
 
 ```shell
 flatpak override --user io.github.fabrialberio.pinapp --filesystem=host-os

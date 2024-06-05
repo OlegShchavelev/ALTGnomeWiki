@@ -27,7 +27,7 @@ appstream:
 ---
 
 # Tuba
-Tuba - неофциальный клиент для Mastodon, GoToSocial, Akkoma и других.
+Tuba - неофициальный клиент для Mastodon, GoToSocial, Akkoma и других.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

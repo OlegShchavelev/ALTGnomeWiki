@@ -34,13 +34,13 @@ git clone git@github.com:USER/ALTRegularGnomeWiki.git
 
 ## 2. Добавляем необходимую информацию и создаём commit.
 
-Перед внесением изменений ознакомьтесь с [правилами](./general-rules.md) и [возможностями Vitepress](./vitepress.md ).
+Перед внесением изменений ознакомьтесь с [правилами](./general-rules.md) и [возможностями VitePress](./vitepress.md ).
 
 После того как добавили всё необходимое, выполните следующие команды:
 
 ### 2.1. Добавляем изменения в индекс git:
 
-::: tabs 
+::: tabs
 == Терминал
 ```shell
 git add *
@@ -53,7 +53,7 @@ git add *
 
 ### 2.2. Создаём commit:
 
-::: tabs 
+::: tabs
 == Терминал
 ```shell
 git commit -m "commit message"
@@ -82,7 +82,7 @@ git commit -m "commit message"
 
 ### 2.3. Отправляем изменения на GitHub:
 
-::: tabs 
+::: tabs
 == Терминал
 ```shell
 git push
@@ -109,7 +109,7 @@ git push
 ### 3.3. Заполняем и нажимаем [[Create pull request]]:
 
 ::: warning
-Пожалуйста, прикрепите к своему первому PR ваш nickname в телеграм! Это необходимо для связи и добавления в рабочие чаты.
+Пожалуйста, прикрепите к своему первому PR ваш ник в Telegram! Это необходимо для связи и добавления в рабочие чаты.
 :::
 
 ![pr_create](/alteration/pr_create.png)

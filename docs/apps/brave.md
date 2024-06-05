@@ -34,7 +34,6 @@ Brave Browser — веб-браузер со свободным и открыт�
 
 <AGWGallery />
 
-
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
 <!--@include: @apps/_parts/install/content-epm-play.md-->

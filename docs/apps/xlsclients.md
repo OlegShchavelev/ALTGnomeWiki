@@ -18,8 +18,6 @@ appstream:
         bugtracker: https://gitlab.freedesktop.org/xorg/app/xlsclients/issues
 ---
 
-
-
 # XLSCLIENTS
 
 xlsclients — утилита для отображения информации о клиентских приложениях, запущенных в оконном интерфейсе X11.
@@ -35,9 +33,11 @@ su -
 apt-get update
 apt-get install xlsclients
 ```
+
 ```shell[epm]
 epm -i xlsclients
 ```
+
 :::
 
 ## Использование утилиты XLSCLIENTS
@@ -49,6 +49,7 @@ xlsclients
 ```
 
 ::: details Пример ответа xlsclients
+
 ```shell
 [oleg@alt-gnome ~]$ xlsclients
 alt-gnome  gsd-xsettings
@@ -60,4 +61,5 @@ alt-gnome  anydesk
 alt-gnome  mutter-x11-frames
 alt-gnome  steam
 ```
+
 :::

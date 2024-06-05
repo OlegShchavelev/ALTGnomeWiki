@@ -21,6 +21,7 @@ packageName: gnome-shell-extension-dash-to-dock
 Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
 
 ::: code-group
+
 ```shell[apt-get]
 su -
 apt-get update
@@ -30,7 +31,7 @@ apt-get install gnome-shell-extension-dash-to-dock
 ```shell[epm]
 epm -i gnome-shell-extension-dash-to-dock
 ```
-:::
 
+:::
 
 <!--@include: ./parts/install-from-repository.md-->

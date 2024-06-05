@@ -15,8 +15,6 @@ appstream:
         homepage: https://www.zsh.org/
 ---
 
-
-
 # ZSH
 
 Zsh (Z-shell) — интерактивная оболочка для операционных систем на базе ядра Linux, по своей сути такая же как и Bash, только намного интереснее.
@@ -32,9 +30,11 @@ su -
 apt-get update
 apt-get install zsh
 ```
+
 ```shell[epm]
 epm install zsh
 ```
+
 :::
 
 ## Установка oh-my-zsh
@@ -64,8 +64,8 @@ sudo ln -s /home/USER/.oh-my-zsh /root/.oh-my-zsh
 sudo ln -s /home/USER/.zshrc /root/.zshrc
 echo "ZSH_DISABLE_COMPFIX='true'" | cat - .zshrc > temp && mv temp .zshrc
 ```
-`USER` — имя вашего пользователя.
 
+`USER` — имя вашего пользователя.
 
 ## Установка темы для oh-my-zsh.
 
@@ -82,9 +82,11 @@ su -
 apt-get update
 apt-get install fonts-ttf-google-noto-emoji
 ```
+
 ```shell[epm]
 epm -i fonts-ttf-google-noto-emoji
 ```
+
 :::
 
 Устанавливаем тему и проходим первоначальную настройку:
@@ -101,4 +103,5 @@ zsh
 sudo ln -s /home/USER/.p10k.zsh /root/.p10k.zsh
 sudo ln -s /home/USER/powerlevel10k /root/powerlevel10k
 ```
+
 `USER` — имя вашего пользователя.

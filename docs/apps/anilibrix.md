@@ -31,6 +31,6 @@ gallery:
 
 AniLibrix — десктопный аниме-кинотеатр Анилибрии для любого вашего компьютера. Анилибрия — так звучит аниме!
 
-<AGWGallery /> 
+<AGWGallery />
 
 <!--@include: @apps/_parts/install/content-snap.md-->

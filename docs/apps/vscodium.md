@@ -27,7 +27,6 @@ appstream:
 
 VSCodium — управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
 
-
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
@@ -45,6 +44,7 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 ```shell[EPM Play]
 codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
 ```
+
 :::
 
 :::info
@@ -64,6 +64,7 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 codium --unity-launch %F // [[!code --]]
 codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [[!code ++]]
 ```
+
 :::
 
 ## Использование Node.js в изолированной среде в приложении VSCodium
@@ -77,6 +78,7 @@ flatpak search Sdk.Extension.node
 ```
 
 ::: details вывод при поиске `Sdk.Extension.node`
+
 ```shell
 [oleg@alt-gnome ~]$ flatpak search Sdk.Extension.node
 Имя                          Описание                                                ID Приложения                               Версия          Ветвь            Удаленные репозитории
@@ -97,6 +99,7 @@ Node.js SDK extension        Node.js SDK extension                              
 Node.js SDK extension        Node.js SDK extension                                   org.freedesktop.Sdk.Extension.node10        10.22.1         19.08            flathub
 Node.js SDK extension        Node.js SDK extension                                   org.freedesktop.Sdk.Extension.node10        10.20.1         18.08            flathub,flathub-beta
 ```
+
 :::
 
 Установите выбранную версию Node.js, [я выбрал LTS версию 20.xx](/nodejs#выпуски-node-js):

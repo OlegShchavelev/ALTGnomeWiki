@@ -26,8 +26,6 @@ gallery:
         - src: /evince/evince-2.png
 ---
 
-
-
 # Просмотр документов
 
 Просмотр документов (Evince) — официальная утилита для рабочего окружения GNOME, которая поддерживает документы в следующих форматах: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (с SyncTeX) и Comic Book Archive (CBR, CBT, CBZ, CB7).

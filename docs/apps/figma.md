@@ -22,8 +22,6 @@ appstream:
         bugtracker: https://github.com/Figma-Linux/figma-linux/issues
 ---
 
-
-
 # Figma
 
 Figma — неофициальная версия Figma для Linux построенная на Electron.
@@ -46,10 +44,12 @@ cd /home/USER/Загрузки
 apt-get update
 apt-get install figma-linux-*.x86_64.rpm
 ```
+
 ```shell[epm]
 сd Загрузки
 epm -i figma-linux-*.x86_64.rpm
 ```
+
 :::
 
 `USER` — имя вашего пользователя.

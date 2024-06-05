@@ -14,8 +14,7 @@ su -
 apt-get update
 apt-get install gvfs-backends
 ```
+
 ```shell[epm]
 epm -i gvfs-backends
 ```
-
-

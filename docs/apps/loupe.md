@@ -23,8 +23,6 @@ appstream:
         translate: https://l10n.gnome.org/module/loupe/
 ---
 
-
-
 # Loupe
 
 Loupe — приложение для просмотра изображений, написанное на GTK4, Libadwaita и Rust.

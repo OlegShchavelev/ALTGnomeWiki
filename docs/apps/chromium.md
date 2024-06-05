@@ -48,6 +48,7 @@ su -
 apt-get update
 apt-get install fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 ```
+
 ```shell[epm]
 epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 ```

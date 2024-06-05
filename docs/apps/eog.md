@@ -20,8 +20,6 @@ appstream:
         donation: https://www.gnome.org/donate/
 ---
 
-
-
 # Глаз GNOME (eog)
 
 ::: warning

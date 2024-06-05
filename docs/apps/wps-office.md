@@ -38,10 +38,11 @@ gallery:
 WPS Office — офисный пакет, разрабатываемый Kingsoft Office Software. Продукт предоставляет, пожалуй, лучшую совместимость с файлами Microsoft Office.
 
 WPS Office включает следующие приложения:
-- Document
-- Excel
-- Presentation
-- PDF
+
+-   Document
+-   Excel
+-   Presentation
+-   PDF
 
 <AGWGallery />
 
@@ -49,6 +50,7 @@ WPS Office включает следующие приложения:
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Установка с официального сайта
+
 Зайдите на [официальный сайт производителя](https://www.wps.com/).
 
 Далее скачайте rpm пакет.

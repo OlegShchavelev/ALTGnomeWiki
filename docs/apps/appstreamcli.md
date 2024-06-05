@@ -13,9 +13,11 @@ su -
 apt-get update
 apt-get install appstream
 ```
+
 ```shell[epm]
 epm -i appstream
 ```
+
 :::
 
 ## Использование утилиты Appstream CLI
@@ -54,6 +56,7 @@ appstreamcli search Yandex Browser
 Домашняя станица: https://s3drive.app
 Значок: io.kapsa.drive.png
 ```
+
 :::
 
 Или укажите ID приложения использую команду `get`:
@@ -75,4 +78,3 @@ appstreamcli get yandex-browser.desktop
 ```
 
 :::
-

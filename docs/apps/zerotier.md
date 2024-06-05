@@ -29,9 +29,11 @@ su -
 apt-get update
 apt-get install zerotier-one
 ```
+
 ```shell[epm]
 epm -i zerotier-one
 ```
+
 :::
 
 После установки **ZeroTierOne**, необходимо запустить службу для начала использования приложения в системе:

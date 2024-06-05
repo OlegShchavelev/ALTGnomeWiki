@@ -17,8 +17,6 @@ appstream:
         homepage: https://github.com/sivel/speedtest-cli
 ---
 
-
-
 # Speedtest CLI
 
 Speedtest CLI — Интерфейс командной строки для тестирования пропускной способности интернета с помощью сервиса speedtest.net.
@@ -34,9 +32,11 @@ su -
 apt-get update
 apt-get install speedtest-cli
 ```
+
 ```shell[epm]
 epm -i speedtest-cli
 ```
+
 :::
 
 ## Использование утилиты Speedtest CLI
@@ -48,6 +48,7 @@ speedtest-cli
 ```
 
 ::: details Пример ответа speedtest-cli
+
 ```shell
 [oleg@alt-gnome ~]$ speedtest-cli
 Retrieving speedtest.net configuration...
@@ -63,4 +64,5 @@ Testing upload speed............................................................
 Upload: 95.92 Mbit/s
 
 ```
+
 :::

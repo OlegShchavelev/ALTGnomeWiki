@@ -29,11 +29,10 @@ gallery:
         - src: /gdm-settings/gdm-settings-2.png
 ---
 
-
-
 # GDM Настройки
 
 GDM Settings — приложение настроек для рабочего окружения GNOME, экран входа / блокировки экрана. Написано на Python и использует LibAdwaita для графического интерфейса.
 <AGWGallery />
+
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

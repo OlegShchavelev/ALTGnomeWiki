@@ -41,6 +41,7 @@ Thunderbird — бесплатное приложение для работы с
 https://github.com/rafaelmardojai/thunderbird-gnome-theme .thunderbird/thunderbird-gnome-theme
 cd .thunderbird/thunderbird-gnome-theme
 ```
+
 **Thunderbird GNOME Theme <Badge type="warning" text="Sisyphus" />**
 
 ```shell

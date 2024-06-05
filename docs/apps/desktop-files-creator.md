@@ -34,4 +34,3 @@ Desktop Files Creator — позволяет создавать файлы ра�
 <AGWGallery />
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-

@@ -31,8 +31,9 @@ su -
 apt-get update
 apt-get install fastfetch
 ```
+
 ```shell[epm]
 epm -i fastfetch
 ```
-:::
 
+:::

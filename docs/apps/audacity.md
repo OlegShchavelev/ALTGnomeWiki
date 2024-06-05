@@ -27,6 +27,5 @@ Audacity — свободный многоплатформенный аудио�
 
 ![Audacity](/audacity/audacity-1.png)
 
-
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

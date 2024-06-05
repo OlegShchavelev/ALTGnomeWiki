@@ -22,4 +22,3 @@ cp /usr/share/applications/steam.desktop ~/.config/autostart/
 4. Нажмите кнопку «Добавить», чтобы добавить выбранное вами приложение из списка
 
 ![startup-applications-2](/startup-applications/startup-applications-2.gif)
-

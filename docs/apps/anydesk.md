@@ -25,13 +25,11 @@ appstream:
         bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
 ---
 
-
 # AnyDesk
 
 AnyDesk — программа удалённого доступа, которая позволяет пользователям получать доступ и управлять удалёнными компьютерами и серверами. Она обеспечивает быстрое и стабильное соединение, а также даёт возможность обмена файлами между устройствами. AnyDesk может использоваться для технической поддержки, обучения, доступа к домашним компьютерам и многих других задач, связанных с удалённым управлением и обслуживанием систем.
 
 ![AnyDesk](/anydesk/anydesk-1.png)
-
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 
@@ -52,7 +50,9 @@ su -
 apt-get update
 apt-get install libgtkglext
 ```
+
 ```shell[epm]
 epm -i libgtkglext
 ```
+
 :::

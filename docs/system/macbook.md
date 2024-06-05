@@ -74,7 +74,7 @@ powertop
 
 Так мы уже разительно снизили потребление
 
-# Facetime Camera
+### Facetime Camera
 
 Запуск камеры в пару простых действий
 
@@ -146,7 +146,7 @@ echo "Install complete"
 
 Можно попробовать с калибровкой цветов отсюда: https://gist.github.com/xyb/879f3bdf93cb5e8fc3d9d9675ae272cb
 
-# Включаем двойную графику и собираем GPU-Switch
+## Включаем двойную графику и собираем GPU-Switch
 
 ### Предисловие
 
@@ -277,7 +277,7 @@ inxi -G
 #  Device-2: NVIDIA GK107M [GeForce GT 750M Mac Edition] driver: nouveau
 ```
 
-# Полезные ссылки:
+## Полезные ссылки:
 
 -   https://github.com/Dunedan/mbp-2016-linux большой репозиторий для макбуков 2016 год+
 -   https://wiki.archlinux.org/title/Mac/Troubleshooting# - решение проблем с маком
@@ -286,7 +286,7 @@ inxi -G
 -   http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1 кастомизации для бука 2013 16" 11.3
 -   https://github.com/patjak/facetimehd/issues/196 Вопрос про камеру и почему не работает драйвер из статьи
 
-# ToDo
+## ToDo
 
 -   [ ] Табличку поддержки может добавить, что работает, а что нет
 -   [ ] ToDo tune kernel - стабильно дойти до PC7

@@ -15,9 +15,11 @@ su -
 apt-get update
 apt-get install fossology-nomos
 ```
+
 ```shell[epm]
 epm -i node fossology-nomos
 ```
+
 :::
 
 ## Использование утилиты **FOSSology**
@@ -29,6 +31,7 @@ nomossa -d morphosis
 ```
 
 ::: details Пример ответа nomossa
+
 ```shell
 [oleg@alt-gnome Сборка]$ nomossa -d morphosis
 File morphosis/morphosis/main.py contains license(s) GPL-3.0-or-later
@@ -41,4 +44,5 @@ File morphosis/morphosis/supported_formats.py contains license(s) GPL-3.0-or-lat
 File morphosis/.gear/morphosis.spec contains license(s) GPL-3.0-or-later
 
 ```
+
 :::

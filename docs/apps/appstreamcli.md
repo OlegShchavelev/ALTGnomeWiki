@@ -13,18 +13,20 @@ su -
 apt-get update
 apt-get install appstream
 ```
+
 ```shell[epm]
 epm -i appstream
 ```
+
 :::
 
 ## Использование утилиты Appstream CLI
 
 Для получения полного списка команд **Appstream CLI** выполните `appstreamcli --help`
 
-### Получить методанные в Appstream CLI
+### Получить метаданные в Appstream CLI
 
-Для поиска методанных вы можете воспользоваться коммандой `search`:
+Для поиска метаданных вы можете воспользоваться командой `search`:
 
 ```shell
 appstreamcli search Yandex Browser
@@ -54,6 +56,7 @@ appstreamcli search Yandex Browser
 Домашняя станица: https://s3drive.app
 Значок: io.kapsa.drive.png
 ```
+
 :::
 
 Или укажите ID приложения использую команду `get`:
@@ -62,7 +65,7 @@ appstreamcli search Yandex Browser
 appstreamcli get yandex-browser.desktop
 ```
 
-::: details методанные Appstream CLI по ID приложения
+::: details метаданные Appstream CLI по ID приложения
 
 ```shell
 [oleg@alt-gnome ~]$ appstreamcli get yandex-browser.desktop
@@ -75,4 +78,3 @@ appstreamcli get yandex-browser.desktop
 ```
 
 :::
-

@@ -17,8 +17,6 @@ appstream:
         bugtracker: https://github.com/dev47apps/droidcam/issues/
 ---
 
-
-
 # DroidCam
 
 DroidCam — приложение позволяющее превратить ваше мобильное устройство в веб-камеру для вашего компьютера.
@@ -32,7 +30,7 @@ DroidCam — приложение позволяющее превратить в
 **DroidCam** для своей работы требует модуль ядра `v4l2loopback`, который можно установить так:
 
 ::: tip
-Где *** - версия ядра `un-def` или `std-def`.
+Где \*\*\* - версия ядра `un-def` или `std-def`.
 
 Узнать нужную версию можно в терминале - через команду `uname -r`.
 :::
@@ -44,9 +42,11 @@ su -
 apt-get update
 apt-get install kernel-modules-v4l2loopback-***
 ```
+
 ```shell[epm]
 epm -i kernel-modules-v4l2loopback-***
 ```
+
 :::
 
 Далее нам необходимо включить установленный модуль, для этого отредактируем файл `/etc/modules-load.d/modules.conf`

@@ -2,17 +2,18 @@
 
 USBGuard — это система защиты, которая позволяет управлять доступом USB-устройств к компьютеру.
 
-Реализована не полная поддержка всего функционала USBGuard, а только возможность заблокировать подключение новых устройств при заблокированном экране.
+Реализована неполная поддержка всего функционала USBGuard, а только возможность заблокировать подключение новых устройств при заблокированном экране.
 
 ::: info
 Если вам нужен полный функционал, обратитесь к CLI версии USBGuard.
 :::
 
 ### Установка и настройка USBGuard:
+
 Чтобы интерфейс GNOME имел возможность общаться с USBGuard, ему необходимо дать разрешения. Для этого делаем отдельную группу, даём ей права на выполнение действий с usbguard и добавляем туда активного пользователя.
 
-
 Вход в root:
+
 ```shell
 su -
 ```
@@ -20,9 +21,11 @@ su -
 **Установка USBGuard**
 
 Установка usbguard-dbus:
+
 ```shell
 apt-get install usbguard-dbus
 ```
+
 ::: info
 Если хотите использовать только CLI вариант и не использовать интеграцию в gnome, достаточно пакета usbguard
 :::
@@ -30,25 +33,33 @@ apt-get install usbguard-dbus
 **Создание группы и настройка группы для USBGuard**
 
 Создаём группу usbguard:
+
 ```shell
 groupadd usbguard
 ```
+
 Добавляем пользователя в группу usbguard:
+
 ```shell
 usermod -a -G usbguard <пользователь>
 ```
+
 ::: info
 Вставьте в <пользователь> своего пользователя.
 :::
 
 В sudoers даём право на исполнение одной команды usbguard:
+
 ```shell
 sudo visudo -f /etc/sudoers.d/11-usbguard-group
 ```
+
 Добавляем туда эту строку. Она разрешает выполнение только usbguard
+
 ```shell
 %usbguard ALL=(ALL) /usr/bin/usbguard *
 ```
+
 :::info
 Главная причина создание новой группы и добавление пользователя, это добавление возможности пользователю выполнять программу от своего имени.
 
@@ -58,9 +69,11 @@ sudo visudo -f /etc/sudoers.d/11-usbguard-group
 **Запуск usbguard-dbus**
 
 Генерируем разрешения для подключённых устройств:
+
 ```shell
 usbguard generate-policy > /etc/usbguard/rules.conf
 ```
+
 ::: warning
 Обязательно генерируем разрешения, в противном случаем заблокируете все usb-устройства, включая мышь и клавиатуру!
 
@@ -68,10 +81,13 @@ usbguard generate-policy > /etc/usbguard/rules.conf
 :::
 
 Запускаем dbus демон:
+
 ```shell
 systemctl enable --now usbguard-dbus.service
 ```
+
 Добавляем правила polkit для группы usbguard (Если настроена другая группа, то поменять на свою):
+
 ```shell
 cat << _EOF_ > /etc/polkit-1/rules.d/70-allow-usbguard.rules
 // Allow users in usbguard group to communicate with USBGuard
@@ -96,24 +112,26 @@ _EOF_
 ```shell
 exit
 ```
+
 Включаем защиту:
+
 ```shell
 gsettings set org.gnome.desktop.privacy usb-protection true
 ```
 
 ### Теперь во вкладке Конфиденциальность будет дополнительная опция, связанная с usbguard.
 
-**Вкладка конфиденциональностьи до:**
-![Вкладка конфиденциональностьи до](/usbguard/usbguard_gnome-settings_before.jpg)
+**Вкладка конфиденциальности до:**
+![Вкладка конфиденциальности до](/usbguard/usbguard_gnome-settings_before.jpg)
 
+**Вкладка конфиденциальности после:**
 
-**Вкладка конфиденциональностьи после:**
-
-![Вкладка конфиденциональностьи после](/usbguard/usbguard_gnome-settings_after.jpg)
+![Вкладка конфиденциальности после](/usbguard/usbguard_gnome-settings_after.jpg)
 
 ### Полная блокировка Usb
 
 Если хотите полностью отключить подключение новых Usb, необходимо ввести:
+
 ```shell
 gsettings set org.gnome.desktop.privacy usb-protection-level always
 ```

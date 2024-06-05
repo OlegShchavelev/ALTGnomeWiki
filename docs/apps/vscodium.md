@@ -27,7 +27,6 @@ appstream:
 
 VSCodium — управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
 
-
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
@@ -45,13 +44,14 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 ```shell[EPM Play]
 codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
 ```
+
 :::
 
 :::info
 При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/pin-app)
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 
@@ -64,9 +64,10 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 codium --unity-launch %F // [[!code --]]
 codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [[!code ++]]
 ```
+
 :::
 
-## Использование Node.js в изолированой среде в приложении VSCodium
+## Использование Node.js в изолированной среде в приложении VSCodium
 
 Вы используете VSCodium установленного с помощью пакетного менеджера [Flatpak](flatpak), для использования Node.js необходимо:
 
@@ -77,6 +78,7 @@ flatpak search Sdk.Extension.node
 ```
 
 ::: details вывод при поиске `Sdk.Extension.node`
+
 ```shell
 [oleg@alt-gnome ~]$ flatpak search Sdk.Extension.node
 Имя                          Описание                                                ID Приложения                               Версия          Ветвь            Удаленные репозитории
@@ -97,6 +99,7 @@ Node.js SDK extension        Node.js SDK extension                              
 Node.js SDK extension        Node.js SDK extension                                   org.freedesktop.Sdk.Extension.node10        10.22.1         19.08            flathub
 Node.js SDK extension        Node.js SDK extension                                   org.freedesktop.Sdk.Extension.node10        10.20.1         18.08            flathub,flathub-beta
 ```
+
 :::
 
 Установите выбранную версию Node.js, [я выбрал LTS версию 20.xx](/nodejs#выпуски-node-js):
@@ -123,6 +126,6 @@ rm -rfv .config/VSCodium/GPUCache
 
 Для установки и просмотра плагинов выберите пункт Расширения на панели слева или нажмите сочетание клавиш [[Ctrl]]+ [[Shift]]+ [[X]].
 Введите название плагина в строке поиска, выберите дополнение и нажмите установить.
-Каждое расширение в списке включает краткое описание, имя издателя, количество загрузок и пятизвездочный рейтинг.
+Каждое расширение в списке включает краткое описание, имя издателя, количество загрузок и пятизвёздочный рейтинг.
 
 ![codium_1](/vscodium/codium_1.gif)

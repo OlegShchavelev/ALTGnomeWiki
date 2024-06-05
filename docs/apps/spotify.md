@@ -25,8 +25,6 @@ appstream:
         bugtracker: https://community.spotify.com/t5/Desktop-Linux/bd-p/desktop_linux
 ---
 
-
-
 # Spotify
 
 Spotify — стриминговый сервис, позволяющий легально прослушивать музыкальные композиции, аудиокниги и подкасты, не скачивая их на устройство.

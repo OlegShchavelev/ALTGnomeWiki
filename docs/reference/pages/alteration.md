@@ -25,26 +25,30 @@
 ```shell[https]
 git clone https://github.com/USER/ALTRegularGnomeWiki.git
 ```
+
 ```shell[ssh]
 git clone git@github.com:USER/ALTRegularGnomeWiki.git
 ```
+
 :::
 
 `USER` — имя вашего пользователя GitHub.
 
 ## 2. Добавляем необходимую информацию и создаём commit.
 
-Перед внесением изменений ознакомьтесь с [правилами](./general-rules.md) и [возможностями Vitepress](./vitepress.md ).
+Перед внесением изменений ознакомьтесь с [правилами](./general-rules.md) и [возможностями VitePress](./vitepress.md).
 
 После того как добавили всё необходимое, выполните следующие команды:
 
 ### 2.1. Добавляем изменения в индекс git:
 
-::: tabs 
+::: tabs
 == Терминал
+
 ```shell
 git add *
 ```
+
 == VSCodium
 Нажимаем [[+]] около имени файла
 
@@ -53,11 +57,13 @@ git add *
 
 ### 2.2. Создаём commit:
 
-::: tabs 
+::: tabs
 == Терминал
+
 ```shell
 git commit -m "commit message"
 ```
+
 Замените `commit message` на описание ваших изменений.
 == VSCodium
 Добавляем описание и нажимаем [[Фиксация]]
@@ -74,25 +80,28 @@ git commit -m "commit message"
 Обновлено: \
 Удалено:
 
-*Например*
+_Например_
+
 ```
 Обновлено: Для авторов | Страница приложения
 ```
+
 :::
 
 ### 2.3. Отправляем изменения на GitHub:
 
-::: tabs 
+::: tabs
 == Терминал
+
 ```shell
 git push
 ```
+
 == VSCodium
 Нажимаем [[Синхронизировать изменения]]
 
 ![indexing_via_vscodium](/alteration/sync_changes_via_vscodium.png)
 :::
-
 
 ## 3. Создаём pull request
 
@@ -109,7 +118,7 @@ git push
 ### 3.3. Заполняем и нажимаем [[Create pull request]]:
 
 ::: warning
-Пожалуйста, прикрепите к своему первому PR ваш nickname в телеграм! Это необходимо для связи и добавления в рабочие чаты.
+Пожалуйста, прикрепите к своему первому PR ваш ник в Telegram! Это необходимо для связи и добавления в рабочие чаты.
 :::
 
 ![pr_create](/alteration/pr_create.png)

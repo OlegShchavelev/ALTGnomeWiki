@@ -9,57 +9,56 @@
 ```markdown
 ---
 aggregation:
-    sisyphus:   # название в репозитории
+    sisyphus: # название в репозитории
     flatpak:
-        id:   # flatpak id 
-        build:   # сборка offical/unoffical
+        id: # flatpak id
+        build: # сборка offical/unoffical
     snap:
-        id:    # название на snapcraft
-        build:   # сборка offical/unoffical
+        id: # название на snapcraft
+        build: # сборка offical/unoffical
     epm:
         play:
-            id:    # название в epm play
-            build:   # сборка offical/unoffical
+            id: # название в epm play
+            build: # сборка offical/unoffical
 appstream:
-    id:   # appstream id приложения
-    name:   # Название приложения
-    icon:   # путь к логотипу приложения
-    summary:   # краткое описание
+    id: # appstream id приложения
+    name: # Название приложения
+    icon: # путь к логотипу приложения
+    summary: # краткое описание
     metadata_license:
-        name:   # лицензия
-        link:   # ссылка на лицензию
-    keywords:   # список бейджей (подробнее ниже)
+        name: # лицензия
+        link: # ссылка на лицензию
+    keywords: # список бейджей (подробнее ниже)
     developer:
-        name:   # имя разработчика
-        nickname:   # nickname разработчика
-        avatar:   # ссылка или путь на аватар разработчика
+        name: # имя разработчика
+        nickname: # nickname разработчика
+        avatar: # ссылка или путь на аватар разработчика
     url:
-        homepage:   # ссылка на страницу проекта 
-        bugtracker:   # ссылка на багтрекер (например, github issue)
-        translate:   # ссылка на помощь с переводом
-        help:   # ссылка на гайд по использованию
-        donation:   # ссылка на донаты
+        homepage: # ссылка на страницу проекта
+        bugtracker: # ссылка на багтрекер (например, github issue)
+        translate: # ссылка на помощь с переводом
+        help: # ссылка на гайд по использованию
+        donation: # ссылка на донаты
 gallery:
-    title:   # заголовок галереи (рекомендуется, просто "Галерея")
-    type:   # тип галереи slider/carousel (рекомендуется slider)
-    items:   # список фотографий (подробнее ниже)
+    title: # заголовок галереи (рекомендуется, просто "Галерея")
+    type: # тип галереи slider/carousel (рекомендуется slider)
+    items: # список фотографий (подробнее ниже)
 ---
 ```
 
-
-### Cписок бейджей
+### Список бейджей
 
 Можно добавить такие бейджи
 
 ```markdown
 ---
-    keywords:
-        - core   # GNOME Core
-        - circle   # GNOME Circle
-        - adaptive   # Адаптивное
-        - proprietary   # Проприетарное
-        - restrictions   # Региональные ограничения
-        - dontthemes   # Please don’t theme
+keywords:
+    - core # GNOME Core
+    - circle # GNOME Circle
+    - adaptive # Адаптивное
+    - proprietary # Проприетарное
+    - restrictions # Региональные ограничения
+    - dontthemes # Please don’t theme
 ---
 ```
 
@@ -68,6 +67,7 @@ gallery:
 Фотографии для галереи хранятся по пути `/docs/public/APP_NAME/`
 
 **Пример для amberol**
+
 ```markdown
 ---
 gallery:
@@ -90,7 +90,6 @@ gallery:
 NAME — ...
 ```
 
-
 ## 3. Галерея
 
 Для отображения галереи в нужном месте, необходимо вызвать виджет.
@@ -109,23 +108,30 @@ Amberol воспроизводит музыку, и ничего больше.
 
 ::: tabs
 == Репозиторий
+
 ```markdown-vue
 <!--{{`@include: @apps/_parts/install/content-repo.md`}}-->
 ```
+
 == Flatpak
+
 ```markdown-vue
 <!--{{`@include: @apps/_parts/install/content-flatpak.md`}}-->
 ```
+
 == Snap
+
 ```markdown-vue
 <!--{{`@include: @apps/_parts/install/content-snap.md`}}-->
 ```
+
 == EPM Play
+
 ```markdown-vue
 <!--{{`@include: @apps/_parts/install/content-epm-play.md`}}-->
 ```
-:::
 
+:::
 
 ## Дополнительные блоки
 

@@ -27,4 +27,3 @@ Blender — бесплатный пакет для создания 3D с отк
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-

@@ -17,6 +17,7 @@ packageName: gnome-shell-extension-openweather
 Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
 
 ::: code-group
+
 ```shell[apt-get]
 su -
 apt-get update
@@ -26,6 +27,7 @@ apt-get install gnome-shell-extension-openweather
 ```shell[epm]
 epm -i gnome-shell-extension-openweather
 ```
+
 :::
 
 <!--@include: ./parts/install-from-repository.md-->

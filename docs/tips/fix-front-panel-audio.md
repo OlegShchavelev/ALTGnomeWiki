@@ -9,6 +9,7 @@
 В передней панели нет звука вне зависимости от того какой источник звука выбрать
 
 ## Решение
+
 Первым делом установите pavucontrol
 
 ::: code-group
@@ -22,6 +23,7 @@ apt-get install pavucontrol
 ```shell[epm]
 epm -i pavucontrol
 ```
+
 :::
 
 Дальше зайдите в alsamixer и убедитесь что уровни громкости выглядят примерно так (не забудьте выбрать нужную звуковую карту через F6)
@@ -36,7 +38,7 @@ epm -i pavucontrol
 
 ![pavucontrol-2](/gnome-volume-fix/pavucontrol-2.png)
 
-И на всякий случай пример не правильного входа
+И на всякий случай пример неправильного входа
 
 ![pavucontrol-3](/gnome-volume-fix/pavucontrol-3.png)
 

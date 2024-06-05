@@ -2,13 +2,13 @@
 
 ## Симптомы
 
-- Не работает Wifi
-- Не подключается к сети
+-   Не работает WiFi
+-   Не подключается к сети
 
-### При использовнии bcmwl драйвера
+### При использовании bcmwl драйвера
 
-- На драйверах kernel-modules-bcmwl-un-def не работает сканирование сети
-- Ошибки в логах:
+-   На драйверах kernel-modules-bcmwl-un-def не работает сканирование сети
+-   Ошибки в логах:
 
 ```shell
 ERROR @wl_notify_scan_status :
@@ -62,4 +62,4 @@ options b43 pio=0 qos=0 verbose=3
 
 ## Источники
 
-- <https://lore.kernel.org/netdev/RO2P215MB193879B2D99DD0BAF59EFA92A721A@RO2P215MB1938.LAMP215.PROD.OUTLOOK.COM/>
+-   <https://lore.kernel.org/netdev/RO2P215MB193879B2D99DD0BAF59EFA92A721A@RO2P215MB1938.LAMP215.PROD.OUTLOOK.COM/>

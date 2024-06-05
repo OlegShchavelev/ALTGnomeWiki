@@ -19,8 +19,6 @@ appstream:
         bugtracker: https://gitlab.gnome.org/GNOME/alacarte
 ---
 
-
-
 # Alacarte
 
 Alacarte — редактор меню для GNOME, использующий спецификацию меню freedesktop.org.

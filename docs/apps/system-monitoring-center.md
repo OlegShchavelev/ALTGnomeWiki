@@ -21,14 +21,11 @@ appstream:
         translate: https://github.com/hakandundar34coding/system-monitoring-center/blob/master/docs/translations.md
 ---
 
-
-
 # Центр мониторинга системы
 
 Центр мониторинга системы — это многофункциональный системный монитор для отслеживания использования системных ресурсов, процессов, пользователей, сервисов и другого. Контролируйте использование своей операционной системы.
 
 ![system-monitoring-center](/system-monitoring-center/system-monitoring-center.png)
-
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

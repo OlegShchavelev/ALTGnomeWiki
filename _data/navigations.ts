@@ -314,7 +314,7 @@ export const docs = [
         link: 'sisyphus',
         items: [
           {
-            text: 'etersoft-build-utils', link: '/etersoft-build-utils',
+            text: 'Etersoft-build-utils', link: '/etersoft-build-utils',
           },
           {
             text: 'Hasher', link: '/hasher',
@@ -379,6 +379,15 @@ export const reference = [
     items: [
       { text: 'Страница приложения', link: '/app' },
       { text: 'Страница Wiki', link: '/wiki_page' }
+    ],
+    collapsed: false
+  },
+  {
+    text: 'Контроль качества',
+    base: '/reference/tests/',
+    items: [
+      { text: 'Проверка текста на ошибки', link: '/speller' },
+      { text: 'Проверка структуры статьи', link: '/remark' }
     ],
     collapsed: false
   }

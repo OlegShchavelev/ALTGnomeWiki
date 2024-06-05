@@ -13,7 +13,7 @@ appstream:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     developer:
-        name:  Wellington Wallace
+        name: Wellington Wallace
         nickname: wwmm
         avatar: /easyeffects/easyeffects-avatar.png
     url:

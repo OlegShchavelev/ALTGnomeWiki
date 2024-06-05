@@ -19,8 +19,6 @@ appstream:
         bugtracker: https://gitlab.gnome.org/GNOME/gnome-software/issues
 ---
 
-
-
 # Центр приложений
 
 Центр приложений (GNOME Software) — официальная утилита для рабочего окружения GNOME, позволяющая находить и устанавливать новые приложения и системные расширения, а также удалять уже установленные.
@@ -38,9 +36,11 @@ su -
 apt-get update
 apt-get install gnome-software
 ```
+
 ```shell[epm]
 epm -i gnome-software
 ```
+
 :::
 
 ## Как отключить запрос аутентификация администратора (root пользователя), при удалении приложений.
@@ -53,9 +53,11 @@ epm -i gnome-software
 su -
 apt-get remove polkit-rule-admin-root
 ```
+
 ```shell[epm]
 epm -e polkit-rule-admin-root
 ```
+
 :::
 
 :::info

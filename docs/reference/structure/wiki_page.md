@@ -4,26 +4,26 @@
 
 ## 1. Раздел
 
-Внутри данного блока распологаются подблоки категорий.
+Внутри данного блока располагаются подблоки категорий.
 
 ```yaml
 aside: false
 docs:
     categories:
         title: Быстрый старт
-        items:  # Подблоки категорий
+        items: # Подблоки категорий
 ```
 
 ## 2. Категория
 
-Данный подблок описывает категорию, внутри него распологаются подблоки приложений.
+Данный подблок описывает категорию, внутри него располагаются подблоки приложений.
 
 ```yaml
-            - title:  # Название категории
-              icon:  #  Иконка категории
-                dark:  # Тёмная тема
-                light:  # Светлая тема
-              apps:  # Подблоки приложений
+- title: # Название категории
+  icon: #  Иконка категории
+      dark: # Тёмная тема
+      light: # Светлая тема
+  apps: # Подблоки приложений
 ```
 
 ## 3. Приложение
@@ -31,8 +31,8 @@ docs:
 Данный подблок описывает приложение.
 
 ```yaml
-                - name:  # Название приложения
-                  link:  # Путь до страницы приложения
+- name: # Название приложения
+  link: # Путь до страницы приложения
 ```
 
 ## пример
@@ -46,21 +46,21 @@ docs:
         items:
             - title: Браузеры
               icon:
-                dark: /global-light.svg
-                light: /global-dark.svg
+                  dark: /global-light.svg
+                  light: /global-dark.svg
               apps:
-                - name: Яндекс Браузер
-                  link: yandex-browser
-                - name: Firefox
-                  link: firefox
+                  - name: Яндекс Браузер
+                    link: yandex-browser
+                  - name: Firefox
+                    link: firefox
             - title: Месенджеры
               icon:
-                dark: /message-light.svg
-                light: /message-dark.svg
+                  dark: /message-light.svg
+                  light: /message-dark.svg
               apps:
-                - name: Telegram Desktop
-                  link: telegram
-                - name: VK Мессенджер
-                  link: vk-messenger
+                  - name: Telegram Desktop
+                    link: telegram
+                  - name: VK Мессенджер
+                    link: vk-messenger
 ---
 ```

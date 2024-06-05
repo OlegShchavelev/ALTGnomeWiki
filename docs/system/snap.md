@@ -14,12 +14,14 @@ apt-get update
 apt-get install snapd
 
 ```
+
 ```shell[epm]
 epm -i snapd
 ```
+
 :::
 
-После установки необходимо включить модуль systemd, который управляет основным коммуникационным разъемом snap:
+После установки необходимо включить модуль systemd, который управляет основным коммуникационным разъёмом snap:
 
 ```shell
 su -
@@ -32,7 +34,8 @@ systemctl enable --now snapd
 su -
 ln -s /var/lib/snapd/snap /snap
 ```
-Выйдите из системы и снова войдите в нее, либо перезапустите систему, чтобы убедиться, что пути snap обновлены правильно.
+
+Выйдите из системы и снова войдите в неё, либо перезапустите систему, чтобы убедиться, что пути snap обновлены правильно.
 
 ## Установка с помощью EPM
 
@@ -46,7 +49,7 @@ ln -s /var/lib/snapd/snap /snap
 epm play snap
 ```
 
-Если хотите включить поддержку класических snap пакетов введите в терминале команду
+Если хотите включить поддержку классических snap пакетов введите в терминале команду
 
 ```shell
 epm play snap=classic
@@ -65,6 +68,7 @@ snap find telegram
 ```
 
 ::: details результат `snap search telegram`
+
 ```
 Name                 Version             Publisher               Notes  Summary
 telegram-desktop     4.14.15             telegram-desktop\u2713       -      Fast. Secure. Powerful.
@@ -73,6 +77,7 @@ telegram-testbart    1.7.7               snap-retiring           -      A cloud-
 telega               0.7.1               alexmurray\u272a             -      Full featured unofficial client for Telegram in GNU Emacs.
 superperms           13.3                lucyllewy\u272a              -      Search for minimal Super Permutations
 ```
+
 :::
 
 Вы можете узнать более подробную информацию о поставляемом пакете:
@@ -82,6 +87,7 @@ snap info chromium
 ```
 
 ::: details результат выполнения команды для вывода подробной информации о пакете chromium
+
 ```
 [oleg@alt-gnome ~]$ snap info chromium
 name:      chromium
@@ -106,6 +112,7 @@ channels:
   latest/edge:      123.0.6286.0   2024-02-09 (2755) 167MB -
 installed:          121.0.6167.160            (2749) 167MB -
 ```
+
 :::
 
 ### Установка приложений
@@ -116,15 +123,17 @@ installed:          121.0.6167.160            (2749) 167MB -
 snap install chromium
 ```
 
-Для подтверждение операции и привелегий введите пароль администратора.
+Для подтверждение операции и привилегий введите пароль администратора.
 
 ::: details результат выполнения команды по установке chromium
+
 ```
 chromium 121.0.6167.160 from Canonical\u2713 installed
 ```
+
 :::
 
-Для установки пакета из определенного канала используйте соответствующую опцию, например `--stable`, `--candidate`, `--beta` или `--edge`:
+Для установки пакета из определённого канала используйте соответствующую опцию, например `--stable`, `--candidate`, `--beta` или `--edge`:
 
 ```shell
 snap install chromium --edge
@@ -139,20 +148,23 @@ snap remove chromium
 ```
 
 ::: details результат выполнения команды по удалению chromium
+
 ```
 chromium removed
 ```
+
 :::
 
 ### Устранение неполадок
 
-Получить информацию о подключеных интерфейсов, введите:
+Получить информацию о подключённых интерфейсов, введите:
 
 ```shell
 snap connections chromium
 ```
 
 ::: details результат выполнения команды connections для программы chromium
+
 ```
 [oleg@alt-gnome ~]$ snap connections chromium
 Interface                 Plug                                    Slot                            Notes
@@ -195,6 +207,7 @@ wayland                   chromium:wayland                        :wayland      
 x11                       chromium:x11                            :x11                            -
 
 ```
+
 ::::
 
 Узнать, какие изменения вносились в вашу установку snaps с течением времени, вы можете просмотреть журналы:
@@ -204,6 +217,7 @@ snap changes
 ```
 
 ::: details результат выполнения команды changes
+
 ```
 [oleg@alt-gnome ~]$ snap changes
 ID   Status  Spawn               Ready               Summary
@@ -219,4 +233,5 @@ ID   Status  Spawn               Ready               Summary
 10   Done    today at 03:13 MSK  today at 03:13 MSK  Remove "chromium" snap
 
 ```
+
 :::

@@ -21,4 +21,3 @@ appstream:
 Набор драйверов Linux для устройств Razer включает в себя драйверы ядра, службы DBus и привязки Python для работы с интерфейсом DBus.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
-

@@ -9,7 +9,7 @@ apt-get install libadwaita-devel libgtk4-devel vala
 
 ## Пример приложения Adwaita
 
-Создаем файл sample.vala в любом удобном месте.
+Создаём файл sample.vala в любом удобном месте.
 
 ### Вставляем следующий код в файл sample.vala:
 

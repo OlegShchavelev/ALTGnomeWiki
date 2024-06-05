@@ -8,10 +8,10 @@ appstream:
     summary: Единая система управления пакетами.
     developer:
         name: Этерсофт
-    metadata_license: 
+    metadata_license:
         name: GNU AGPLv3
         link: https://choosealicense.com/licenses/agpl-3.0/
-    url: 
+    url:
         homepage: https://github.com/Etersoft/eepm
         bugtracker: https://github.com/Etersoft/eepm/issues
 ---
@@ -21,6 +21,7 @@ appstream:
 **EPM** — имеющая одинаковый интерфейс на всех системах команда управления пакетами. При интерфейсе, похожем на rpm, apt и urpm, выполняет необходимые операции **на любой платформе**.
 
 ## Установка из репозитория
+
 **EPM** можно установить используя терминал:
 
 ```shell
@@ -31,29 +32,30 @@ apt-get install eepm
 
 ## Команды
 
-| Описание операции |      Команда EPM      |  Команда ALT Linux |
-| ----------------- | :-------------------: | :-----------------: |
-| Установка пакета по названию в систему      | epm -i (package) | apt-get install (package) |
-| Установка файла пакета в систему      |   epm -i (package file)	    |   apt-get install (package file) |
-| Удаление пакета из системы |   epm -e (package)    |    apt-get remove (package) |
-| Поиск пакета в репозитории |   epm -s (text)    |    apt-cache search (text) |
-| Проверка наличия пакета в системе |   epm -q (package)    |    rpm -qa (pipe) grep (package) |
-| Список установленных пакетов |   epm -qa    |    rpm -qa |
-| Поиск по названиям установленных пакетов |   epm -qp (word)    |    grep (word) |
-| Принадлежность файла к (установленному) пакету |   epmqf (file)   |  rpm -qf (file) |
-| Список файлов в (установленном) пакете |  epm -ql (package)   |  rpm -ql (package) |
-| Вывести информацию о пакете |  epm -ql (package)   |  apt-cache show (package) |
-| Обновить дистрибутив |  epm upgrade   |  apt-get dist-upgrade |
+| Описание операции                              |      Команда EPM      |       Команда ALT Linux        |
+| ---------------------------------------------- | :-------------------: | :----------------------------: |
+| Установка пакета по названию в систему         |   epm -i (package)    |   apt-get install (package)    |
+| Установка файла пакета в систему               | epm -i (package file) | apt-get install (package file) |
+| Удаление пакета из системы                     |   epm -e (package)    |    apt-get remove (package)    |
+| Поиск пакета в репозитории                     |     epm -s (text)     |    apt-cache search (text)     |
+| Проверка наличия пакета в системе              |   epm -q (package)    | rpm -qa (pipe) grep (package)  |
+| Список установленных пакетов                   |        epm -qa        |            rpm -qa             |
+| Поиск по названиям установленных пакетов       |    epm -qp (word)     |          grep (word)           |
+| Принадлежность файла к (установленному) пакету |     epmqf (file)      |         rpm -qf (file)         |
+| Список файлов в (установленном) пакете         |   epm -ql (package)   |       rpm -ql (package)        |
+| Вывести информацию о пакете                    |   epm -ql (package)   |    apt-cache show (package)    |
+| Обновить дистрибутив                           |      epm upgrade      |      apt-get dist-upgrade      |
 
 ### Информация о системе
 
-Для ввывода информации о системе, введите в терминале:
+Для вывода информации о системе, введите в терминале:
 
 ```shell
 epm print info
 ```
 
 ::: details Пример вывода информация о системе
+
 ```shell
 distro_info v20230406 (EPM version 3.60.5-alt1) : Copyright © 2007-2023 Etersoft
 
@@ -70,11 +72,12 @@ distro_info v20230406 (EPM version 3.60.5-alt1) : Copyright © 2007-2023 Etersof
                  Running service manager (-y): systemd
             Bug report URL (--bug-report-url): https://bugs.altlinux.org/
 ```
+
 :::
 
 ## Утилита EPM Play
 
-**EPM Play** — инструмент позволяющий  автоматически устанавливать и удалять пакеты используя заготовленные сценарии при этом не используя сторонний репозитории.
+**EPM Play** — инструмент позволяющий автоматически устанавливать и удалять пакеты используя заготовленные сценарии при этом не используя сторонний репозитории.
 
 ```
 epm play [options] [argument]
@@ -116,9 +119,11 @@ epm play --remove telegram
 su -
 apt-get remove Telegram
 ```
+
 ```shell[epm]
 epm -e Telegram
 ```
+
 :::
 
 ### Обновить приложение до последней версии
@@ -150,7 +155,7 @@ epm play --list
 ```
 
 :::warning
-При совпадение идентификаторов приложений, в списке будут присутствовать приложения установленные с помощью пакетного менеджера `apt-get`
+При совпадении идентификаторов приложений, в списке будут присутствовать приложения установленные с помощью пакетного менеджера `apt-get`
 :::
 
 Получить список установленных утилит:
@@ -191,15 +196,15 @@ epm play --product-alternatives telegram
 
 EPM Repack — инструмент позволяющий конвертировать (переупаковать) пакеты от сторонних производителей в стандарт RPM семейства операционных систем АЛЬТ
 
-| Менеджер пакетов |      Дистрибутив     |
-| -----------------| -------------------  |
-| rpm | asplinux suse mandriva rosa mandrake pclinux sled sles fedora redhat scientific centos rhel |
-| deb | debian ubuntu mint runtu mcst |
-| tgz | slackware mopslinux |
-| tbz | freebsd |
-| tbz2 | gentoo |
-| apk | alpine |
-| pkg.gz | sunos |
+| Менеджер пакетов | Дистрибутив                                                                                 |
+| ---------------- | ------------------------------------------------------------------------------------------- |
+| rpm              | asplinux suse mandriva rosa mandrake pclinux sled sles fedora redhat scientific centos rhel |
+| deb              | debian ubuntu mint runtu mcst                                                               |
+| tgz              | slackware mopslinux                                                                         |
+| tbz              | freebsd                                                                                     |
+| tbz2             | gentoo                                                                                      |
+| apk              | alpine                                                                                      |
+| pkg.gz           | sunos                                                                                       |
 
 Установим deb приложение используя утилиту epm repack:
 
@@ -214,14 +219,15 @@ epm -i tonfotos-1.6.5-epm1.repacked.2.x86_64.rpm
 epm -i tonfotos.deb
 ```
 
-При установке пакета, epm автоматически определит, что устанавленный файл не является стандартным и запустит комманду epm repack, а после переупаковки пакета, автоматически установит переупакованный пакет.
+При установке пакета, epm автоматически определит, что установленный файл не является стандартным, и запустит команду epm repack, а после переупаковки пакета, автоматически установит переупакованный пакет.
 
 :::info
- Предварительно скачайте deb-пакет [на официальном сайте производителя](https://tonfotos.com). Перейдите в папку со скаченной программой Tonfotos, в моем случае:
+Предварительно скачайте deb-пакет [на официальном сайте производителя](https://tonfotos.com). Перейдите в папку со скаченной программой Tonfotos, в моем случае:
 
 ```shell
 cd Загрузки
 ```
+
 :::
 
 ## Установка приложений с помощью appinstall
@@ -237,7 +243,9 @@ su -
 apt-get update
 apt-get install appinstall
 ```
+
 ```shell[epm]
 epm -i appinstall
 ```
+
 :::

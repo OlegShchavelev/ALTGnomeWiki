@@ -15,7 +15,7 @@ appstream:
         link: https://heroicgameslauncher.com/cla
     developer:
         name: Heroic Games Launcher
-        avatar: 
+        avatar:
     url:
         homepage: https://heroicgameslauncher.com/
         bugtracker: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues

@@ -5,27 +5,33 @@
 ## Установка темы LibAdwaita для устаревших (GTK3) приложений
 
 ::: code-group
+
 ```shell[apt-get]
 su -
 apt-get update
 apt-get install gtk3-theme-adw-gtk3
 ```
+
 ```shell[epm]
 epm -i gtk3-theme-adw-gtk3
 ```
+
 :::
 
 ## Установка Kvantum и темы под него
 
 ::: code-group
+
 ```shell[apt-get]
 su -
 apt-get update
 apt-get install Kvantum git
 ```
+
 ```shell[epm]
 epm -i Kvantum git
 ```
+
 :::
 
 ```shell
@@ -38,7 +44,7 @@ cp -r Kvantum/* ~/.config/Kvantum/
 
 ## Настройка GNOME для использования Kvantum
 
-Открывем файл /etc/environment нужным вам текстовым редактором (nano исключительно как пример)
+Открываем файл /etc/environment нужным вам текстовым редактором (nano исключительно как пример)
 
 ```shell
 su -

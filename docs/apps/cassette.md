@@ -46,26 +46,26 @@ gallery:
 :::
 
 Подключаем репозиторий gnome-nightly и устанавливаем GNOME Platform:
+
 ```shell
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 flatpak install gnome-nightly org.gnome.Platform//master
 ```
 
 Подключаем Nightly репозиторий и устанавливаем приложение:
+
 ```shell
 flatpak remote-add --if-not-exists cassette-nightly https://rirusha.github.io/Cassette/index.flatpakrepo
 flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 ```
 
-
 ## Авторизация
 
 Доступна авторизация по:
 
-- логину и паролю;
-- логину и коду из приложения Я.Ключ;
-- QR-коду;
-
+-   логину и паролю;
+-   логину и коду из приложения Я.Ключ;
+-   QR-коду;
 
 ## План обновлений
 
@@ -87,26 +87,25 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 
 Все запланированные фичи можете [посмотреть в бэклоге](https://github.com/users/Rirusha/projects/2)
 
-
 ## Как помочь Кассете
 
-- Создать [ISSUE](https://github.com/Rirusha/Cassette/issues) с проблемой или предложением по улучшению;
-- Сделать [Pull Request](https://github.com/Rirusha/Cassette/pulls) с фиксом или добавлением функционала;
-- [Поддержать рублём](https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460), просьба указывать в «Сообщении получателю» свой никнейм, иначе автор проекта не сможет добавить вас в соответствующий блок окна About. Система Тинькофф к сожелению не указывает имя отправителя;
-- Написать отзыв в Центре Приложений о Кассете
-
+-   Создать [ISSUE](https://github.com/Rirusha/Cassette/issues) с проблемой или предложением по улучшению;
+-   Сделать [Pull Request](https://github.com/Rirusha/Cassette/pulls) с фиксом или добавлением функционала;
+-   [Поддержать рублём](https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460), просьба указывать в «Сообщении получателю» свой никнейм, иначе автор проекта не сможет добавить вас в соответствующий блок окна About. Система Тинькофф к сожалению не указывает имя отправителя;
+-   Написать отзыв в Центре Приложений о Кассете
 
 ## Решение проблем
 
 ### Не отображается интерфейс авторизации
 
 ::: info
-У пользователей с графическим адаптаром NVIDIA (неизвестный диапозон устройств) и c закрытыми драйверами не отображается интерфейс авторизации Яндекс ID.
+У пользователей с графическим адаптером NVIDIA (неизвестный диапазон устройств) и c закрытыми драйверами не отображается интерфейс авторизации Яндекс ID.
 :::
 
 ![Пример проблемы с отображением интерфейса при авторизации](/cassette/cassette-3.png)
 
 Если у вас flatpak версия, то выполните в терминале:
+
 ```shell
 WEBKIT_DISABLE_COMPOSITING_MODE=1 flatpak run io.github.Rirusha.Cassette
 ```
@@ -114,6 +113,7 @@ WEBKIT_DISABLE_COMPOSITING_MODE=1 flatpak run io.github.Rirusha.Cassette
 Или создайте строчку в блоке переменных окружения в приложении [Flatseal](/flatseal) и перезапустите приложение.
 
 При наличии версии из репозитория выполните:
+
 ```shell
 WEBKIT_DISABLE_COMPOSITING_MODE=1 cassette
 ```
@@ -131,7 +131,7 @@ flatpak-spawn: Invalid byte sequence in conversion input
 Try "flatpak-spawn --help" for more information.
 ```
 
-Добавте переменную окружения `LC_ALL`. Сделать это можно через терминал:
+Добавьте переменную окружения `LC_ALL`. Сделать это можно через терминал:
 
 ```shell
 flatpak override --env=LC_ALL="en_US.UTF-8" --user io.github.Rirusha.Cassette

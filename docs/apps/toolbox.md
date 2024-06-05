@@ -17,8 +17,6 @@ appstream:
         homepage: https://www.jetbrains.com/toolbox-app/
 ---
 
-
-
 # Toolbox
 
 Toolbox — приложение от компании JetBrains, предназначенное для управления инструментами и продуктами разработки, созданными этой компанией.

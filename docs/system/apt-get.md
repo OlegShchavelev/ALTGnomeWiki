@@ -4,17 +4,17 @@ Advanced packaging tool — программа для установки, обн
 
 С помощью пакетного менеджера Вы можете:
 
-- получить индексы
-- обновить все установленные пакеты
-- установить новые пакеты
-- удалить установленные пакеты
-- найти пакеты в репозитории
+-   получить индексы
+-   обновить все установленные пакеты
+-   установить новые пакеты
+-   удалить установленные пакеты
+-   найти пакеты в репозитории
 
- Все операции с пакетами проводятся в терминале при помощи пакетного менеджера. Для большинства команд пакетного менеджера нужны права суперпользователя. Хотя, для операции поиска, достаточно обычных прав пользователя.
+Все операции с пакетами проводятся в терминале при помощи пакетного менеджера. Для большинства команд пакетного менеджера нужны права суперпользователя. Хотя, для операции поиска, достаточно обычных прав пользователя.
 
 ## Обновление информации о репозиториях
 
-Данную операцию пользователь производит при первичном запуске системы или при обновление списка подключенных репозиториев:
+Данную операцию пользователь производит при первичном запуске системы или при обновление списка подключённых репозиториев:
 
 ```shell
 su -
@@ -24,6 +24,7 @@ apt-get update
 После выполнения команды, apt обновит свой кеш новой информацией.
 
 ::: details Нажмите для отображения кода
+
 ```shell
 su -
 apt-get update
@@ -38,6 +39,7 @@ apt-get update
 Найдено http://ftp.altlinux.org Sisyphus/noarch/classic pkglist
 Найдено http://ftp.altlinux.org Sisyphus/noarch/classic release
 ```
+
 :::
 
 ## Обновить систему
@@ -51,6 +53,7 @@ su -
 apt-get update
 apt-get dist-upgrade
 ```
+
 ```shell[epm]
 epm upgrade
 ```
@@ -72,6 +75,7 @@ su -
 apt-get update
 apt-get install firefox
 ```
+
 ```shell[epm]
 epm -i firefox
 ```
@@ -87,6 +91,7 @@ su -
 apt-get update
 apt-get install firefox chromium
 ```
+
 ```shell[epm]
 epm -i firefox chromium
 ```
@@ -108,11 +113,12 @@ su -
 apt-get update
 apt-get remove firefox
 ```
+
 ```shell[epm]
 epm -e firefox
 ```
-:::
 
+:::
 
 ДЛя удаления двух и более пакетов необходимо написать их названия через пробел:
 
@@ -123,9 +129,11 @@ su -
 apt-get update
 apt-get remove firefox chromium
 ```
+
 ```shell[epm]
 epm -e firefox chromium
 ```
+
 :::
 
 Удаление неиспользуемых пакетов:
@@ -140,7 +148,7 @@ apt-get autoremove
 :::
 
 :::info
-Если вы удалили по зависимости мета-пакет, при условии что он был установлен в процессе установки ALT Regular Gnome, то содержание мета-пакета не будет удалено командой autoremove
+Если вы удалили по зависимости метапакет, при условии что он был установлен в процессе установки ALT Regular Gnome, то содержание метапакета не будет удалено командой autoremove
 :::
 
 Удалить пакет вместе с установленными вместе с зависимостями:
@@ -149,8 +157,6 @@ apt-get autoremove
 su -
 apt-get remove -D пакет
 ```
-
-
 
 ## Поиск по выражению или части названия пакета
 
@@ -161,9 +167,11 @@ apt-get remove -D пакет
 ```shell[apt-get]
 apt-cache search telegram
 ```
+
 ```shell[epm]
 epm search telegram
 ```
+
 :::
 
 ::: details Нажмите для отображения кода
@@ -206,6 +214,7 @@ python3-module-salt - Management component for salt, a parallel remote execution
 python3-module-yt_dlp - Python 3 module for yt-dlp
 zabbix-in-telegram - Zabbix Notifications with graphs in Telegram
 ```
+
 ```shell [epm]
 cutegram - Cutegram is a telegram client by Aseman Land
 libqtelegram-ae - Most powerfull telegram library that created using C++ and Qt.
@@ -235,6 +244,7 @@ zabbix-in-telegram - Zabbix Notifications with graphs in Telegram
 64gram - 64Gram (unofficial Telegram Desktop) (use 'epm play' to install it)
 telegram - Telegram client from the official site (use 'epm play' to install it)
 ```
+
 :::
 
 Для поиска только по названию пакета:
@@ -244,11 +254,13 @@ apt-cache search --names-only ^telegram
 ```
 
 ::: details Нажмите для отображения кода
+
 ```shell
 telegram-bot-api - The Telegram Bot API provides an HTTP API for creating Telegram Bots.
 telegram-desktop - Telegram Desktop messaging app
 telegramqml - Telegram API tools for QtQml and Qml
 ```
+
 :::
 
 ## Работа с репозиторием
@@ -262,11 +274,13 @@ apt-repo
 ```
 
 ::: details Нажмите для отображения кода
+
 ```shell
 rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/x86_64 classic
 rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/x86_64-i586 classic
 rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/noarch classic
 ```
+
 :::
 
 Чтобы добавить репозитории конкретной pflfxb, выполните следующую команду:
@@ -277,19 +291,22 @@ rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/noarch cla
 su -
 apt-repo add task 329850
 ```
+
 ```shell[epm]
 epm install 329850
 ```
+
 :::
 
 :::info
 Если вы используйте epm, программа установит или обновит пакет находящейся в задании. Если вы используйте apt-repo необходимо установить пакет.
+
 ```shell
 su -
 apt-get install 0ag
 ```
-:::
 
+:::
 
 Удалить все задания из репозитория:
 

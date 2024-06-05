@@ -25,7 +25,7 @@ appstream:
 
 # Obsidian
 
-Obsidian — мощная база знаний, работает поверх локальной папки с обычными текстовыми файлами Markdown. В Obsidian создание соединений и последующее их выполнение не вызывает затруднений, и, установив соединения, вы можете изучить все свои знания в интерактивных графических представлений. Obsidian поддерживает CommonMark и GitHub Markdown (GFM), а также другие полезные функции ведения заметок, такие как теги, математические выражения LaTeX, диаграммы mermaid, сноски, внутренние ссылки и встраивание заметок Obsidian или внешних файлов. Obsidian также имеет систему плагинов с большим наборов плагинов для расширения своих возможностей.
+Obsidian — мощная база знаний, работает поверх локальной папки с обычными текстовыми файлами Markdown. В Obsidian создание соединений и последующее их выполнение не вызывает затруднений, и, установив соединения, вы можете изучить все свои знания в интерактивных графических представлений. Obsidian поддерживает CommonMark и GitHub Markdown (GFM), а также другие полезные функции ведения заметок, такие как теги, математические выражения LaTeX, диаграммы mermaid, сноски, внутренние ссылки и встраивание заметок Obsidian или внешних файлов. Obsidian также имеет систему плагинов с большим набором плагинов для расширения своих возможностей.
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
@@ -43,26 +43,28 @@ flatpak run md.obsidian.Obsidian --ozone-platform-hint=auto
 ```shell[epm play]
 obsidian --ozone-platform-hint=auto
 ```
+
 :::
 
 :::warning
-При запуске приложения `md.obsidian.Obsidian` Flatpak-версии убедитесь в возможности запуска в оконном интерфейсе Wayland. Один из самых удобных варинтов проверки, [программа Flatseal](/flatseal)
+При запуске приложения `md.obsidian.Obsidian` Flatpak-версии убедитесь в возможности запуска в оконном интерфейсе Wayland. Один из самых удобных вариантов проверки, [программа Flatseal](/flatseal)
 
 ![Включите оконный интерфейс Wayland](/obsidian/obsidian-1.png)
 
-По умолчанию запуск в оконном интерфейсе Wayland запрещен, разрещите:
+По умолчанию запуск в оконном интерфейсе Wayland запрещён, разрешите:
 
-- Оконная система Wayland
-- Возрат к оконной системе X11
+-   Оконная система Wayland
+-   Возврат к оконной системе X11
 
 Альтернативной настройкой окружения является терминал введите:
 
 ```shell
 flatpak override --user md.obsidian.Obsidian --socket=wayland --socket=fallback-x11
 ```
+
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **Obsidian**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **Obsidian**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 
@@ -75,12 +77,15 @@ flatpak override --user md.obsidian.Obsidian --socket=wayland --socket=fallback-
 obsidian %U // [!code --]
 obsidian --ozone-platform-hint=auto %U // [!code ++]
 ```
+
 :::
 
 ## Аппаратное ускорение:
+
 Чтобы избежать графических ошибок при запуске, [аппаратное ускорение нужно отключить](https://github.com/flathub/md.obsidian.Obsidian?tab=readme-ov-file#gpu-acceleration).
 
 Для **Flatpak** версии добавляется переменная со значением `--env=OBSIDIAN_DISABLE_GPU=1:`
+
 ```shell
 flatpak override --user --env=OBSIDIAN_DISABLE_GPU=1 md.obsidian.Obsidian
 ```

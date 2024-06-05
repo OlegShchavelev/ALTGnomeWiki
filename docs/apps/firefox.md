@@ -32,8 +32,6 @@ gallery:
         - src: /firefox/firefox-3.png
 ---
 
-
-
 # Firefox
 
 Firefox — популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.

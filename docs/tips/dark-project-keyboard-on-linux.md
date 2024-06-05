@@ -13,12 +13,14 @@
 **Решение:** Для исправления данной проблемы необходимо внести изменения в файл `/etc/modprobe.d/hid_apple.conf`:
 
 **Запишем в файл `/etc/modprobe.d/hid_apple.conf` строку `options hid_apple fnmode=2`:**
+
 ```Shell
 su -
 echo "options hid_apple fnmode=2" > /etc/modprobe.d/hid_apple.conf
 ```
 
 **Для временного исправления в рамках текущей сессии достаточно выполнить команду:**
+
 ```Shell
 su -
 echo 2 >> /sys/module/hid_apple/parameters/fnmode

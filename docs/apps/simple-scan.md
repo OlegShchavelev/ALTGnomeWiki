@@ -20,8 +20,6 @@ appstream:
         bugtracker: https://gitlab.gnome.org/GNOME/simple-scan/issues
 ---
 
-
-
 # Сканер документов
 
 Сканер документов — официальная утилита для рабочего окружения GNOME, которая позволяет вам захватывать изображения с

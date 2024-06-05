@@ -14,7 +14,7 @@ appstream:
     summary: Неофициальный клиент Mastodon
     developer:
         name: Evan Paterakis
-        nickname:  GeopJr
+        nickname: GeopJr
         avatar: /tuba/tuba-avatar.png
     metadata_license:
         name: GNU GPLv3
@@ -27,7 +27,8 @@ appstream:
 ---
 
 # Tuba
-Tuba - неофициальный клиент для Mastodon, GoToSocial, Akkoma и других.
+
+Tuba - неофциальный клиент для Mastodon, GoToSocial, Akkoma и других.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

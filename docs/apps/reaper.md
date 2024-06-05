@@ -8,7 +8,7 @@ appstream:
     icon: /reaper/reaper-logo.svg
     summary: Программная среда для создания, обработки, мастеринга аудио.
     keywords:
-    - proprietary
+        - proprietary
     developer:
         name: Cockos
         avatar: https://www.cockos.com/images/rooster.gif

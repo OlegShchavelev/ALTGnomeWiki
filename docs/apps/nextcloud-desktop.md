@@ -20,8 +20,6 @@ appstream:
         bugtracker: https://github.com/nextcloud/desktop/issues
 ---
 
-
-
 # Nextcloud Desktop
 
 Nextcloud Desktop — клиент для клиент-серверного хранилища данных. Nextcloud можно установить как на коммерческом хостинге, так и на собственном сервере. По доступной функциональности похож на Google Workspace.

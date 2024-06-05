@@ -13,9 +13,11 @@ su -
 apt-get update
 apt-get install rust-cargo
 ```
+
 ```shell[epm]
 epm -i rust-cargo
 ```
+
 :::
 
 ## Установка с официального сайта
@@ -47,6 +49,7 @@ cargo new NAME
 `NAME` — название проекта.
 
 ::: details Пример архитектуры
+
 ```shell
 new_project
 ├── Cargo.lock
@@ -56,6 +59,7 @@ new_project
 └── src/
     └── main.rs
 ```
+
 :::
 
 ### Указание зависимостей:

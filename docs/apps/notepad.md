@@ -22,8 +22,6 @@ appstream:
         bugtracker: https://github.com/alexkdeveloper/notepad/issues
 ---
 
-
-
 # Notepad
 
 Notepad — программа для простого создания текстовых заметок.

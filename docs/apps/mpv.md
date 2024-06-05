@@ -17,19 +17,15 @@ appstream:
         bugtracker: https://github.com/mpv-player/mpv/issues
 ---
 
-
-
 # MPV
 
 MPV — Свободный легковесный кроссплатформенный медиаплеер. Поддерживает множество форматов медиафайлов и субтитров.
-
 
 ::: info
 Для лучшей интеграции со средой GNOME можно воспользоваться альтернативным интерфейсом MPV — [Celluloid](/celluloid).
 :::
 
 ![Draw attention to the window](/mpv/mpv.png)
-
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
@@ -77,7 +73,7 @@ stop-screensaver
 gnome-session-inhibit mpv video.mp4
 ```
 
-Для этого можно прямо указать, как написано выше, либо заходим в **/usr/share/applications/mpv.desktop** и после **Exec=** перед **mpv**  пишем **gnome-session-inhibit**
+Для этого можно прямо указать, как написано выше, либо заходим в **/usr/share/applications/mpv.desktop** и после **Exec=** перед **mpv** пишем **gnome-session-inhibit**
 
 2. Более простое решение
 
@@ -102,5 +98,6 @@ epm -i gnome-shell-extension-caffeine
 Затем нужно перезапустить сессию и не забыть включить Caffeine
 
 ## Альтернатива
+
 В качестве альтернативы, можно воспользоваться плеером с графическим интерфейсом построенным на MPV — [Celluloid](/celluloid).
 :::

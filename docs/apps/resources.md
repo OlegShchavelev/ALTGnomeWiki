@@ -19,7 +19,6 @@ appstream:
     url:
         homepage: https://github.com/nokyan/resources/tree/main
         bugtracker: https://github.com/nokyan/resources/issues
-
 ---
 
 # Ресурсы

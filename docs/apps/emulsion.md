@@ -17,7 +17,7 @@ appstream:
         homepage: https://github.com/lainsce/emulsion/
         bugtracker: https://github.com/lainsce/emulsion/issues
         translate: https://github.com/lainsce/emulsion/blob/master/po/README.md
-gallery: 
+gallery:
     title: Галерея
     type: slider
     items:

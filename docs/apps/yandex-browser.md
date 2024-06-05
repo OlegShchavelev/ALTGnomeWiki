@@ -31,6 +31,7 @@ appstream:
 Яндекс Браузер — быстрый и безопасный браузер Яндекса для компьютера, смартфонов и планшетов на Android и iOS (iPhone и iPad). Ускоряет загрузку при медленном соединении, защищает от вирусов и мошенников, делает поиск удобнее.
 
 ## Издания Яндекс Браузера
+
 **Яндекс Браузер** — Быстрый и безопасный браузер со встроенной технологией активной защиты Protect. Она проверяет скачиваемые файлы на вирусы, предупреждает об опасных сайтах, защищает подключение к общественным сетям и ваши пароли.
 
 **Яндекс Браузер для организаций** — Защита от вредоносных программ, фишинга и кражи паролей. Простая настройка в пару кликов на всю компанию и выделенная техподдержка.
@@ -69,8 +70,8 @@ yandex-browser-stable --ozone-platform-hint=auto
 :::tip
 Для запуска Яндекс Браузера версии Flatpak, необходимо разрешить список сокетов:
 
-- Оконная система Wayland
-- Возврат к оконной системе X11
+-   Оконная система Wayland
+-   Возврат к оконной системе X11
 
 :::info
 Удобным способом управления Flatpak-приложений является приложение [Flatseal](flatseal)
@@ -92,6 +93,7 @@ yandex-browser-stable --ozone-platform-hint=auto
 ![стандартный вид окна в рабочем окружении GNOME](/yandex-browser/yandex-browser.gif)
 
 ### Video DownloadHelper
+
 Как известно, **Яндекс Браузер** , как и другие браузеры, обладает множеством расширений. **Video DownloadHelper** не исключение.
 Однако не так давно, приложение компаньон обновилось и поменяло своё название на VdhCoApp.
 В настоящее время в EPM существует возможность установки нового приложения-компаньона для корректной работы **Video DownloadHelper**.
@@ -119,7 +121,6 @@ echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegca
 
 Запускаем Яндекс Браузер.
 
-
 ## Известные проблемы
 
 ### Не воспроизводится видео в Яндекс Браузере:
@@ -131,13 +132,16 @@ echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegca
 ```shell[sysphus]
 yandex-browser-stable
 ```
+
 ```shell[epm play]
 yandex-browser
 ```
+
 :::
 
 Ответ в терминале при установленных кодеках следующий:
 ::: code-group
+
 ```shell[Успешно]
 Found ffmpeg: /usr/lib64/yandex/browser/libffmpeg.so
   avcodec: 3882340
@@ -145,21 +149,26 @@ Found ffmpeg: /usr/lib64/yandex/browser/libffmpeg.so
   avutil: 3746916
 Ffmpeg version is OK! Let's use it.
 ```
+
 ```shell[Ошибка]
 find_ffmpeg failed, using integrated library
 ```
+
 :::
 
 Обновите кодеки с помощью утилиты **update-ffmpeg**:
 ::: code-group
+
 ```shell[sysphus]
 su -
 /usr/lib64/yandex/browser/update-ffmpeg
 ```
+
 ```shell[epm play]
 su -
 /opt/yandex/browser/update-ffmpeg
 ```
+
 :::
 
 :::warning

@@ -9,7 +9,7 @@ appstream:
     name: Turtle
     icon: /turtle/de.philippun1.turtle.svg
     summary: Управляйте своими репозиториями git
-    developer: 
+    developer:
         name: Philipp Unger
     metadata_license:
         name: GNU GPLv3.0
@@ -31,12 +31,12 @@ gallery:
 
 Управляйте своими репозиториями Git с помощью удобных диалоговых окон в Файлах. В данный момент доступны следующие команды Git:
 
-- commit, add, stage, unstage, revert, resolve
-- sync (pull+push), pull, push
-- checkout, create branch, merge
-- init, clone
-- remotes, submodules
-- log, diff
+-   commit, add, stage, unstage, revert, resolve
+-   sync (pull+push), pull, push
+-   checkout, create branch, merge
+-   init, clone
+-   remotes, submodules
+-   log, diff
 
 <AGWGallery />
 <!--@include: @apps/_parts/install/content-flatpak.md-->
@@ -53,14 +53,16 @@ apt-get update
 apt-get install python3-module-pygit2 nautilus-python meld
 
 ```
+
 ```shell-vue[epm]
 epm -i python3-module-pygit2 nautilus-python meld
 ```
+
 :::
 
 Склонируйте репозиторий приложения Turtle использую команду [git clone](/git)
 
-```shell 
+```shell
 git clone https://gitlab.gnome.org/philippun1/turtle.git .turtle
 ```
 
@@ -71,11 +73,14 @@ su -
 cd /home/USER/.turtle
 python3 install.py install --flatpak
 ```
+
 ::: warning
 Замените переменную USER на ваше имя пользователя, например, в моём случае имя пользователя — oleg, а путь к директории:
+
 ```shell
 cd /home/oleg/.turtle
 ```
+
 :::
 
 Чтобы начать работу с дополнением, вам нужно перезагрузить «Файлы». Для этого в терминале введите:
@@ -93,7 +98,7 @@ git pull
 python3 install.py install --flatpak
 ```
 
-После обновления дополнения Turtle необходимо перезагрузить «Файлы»: 
+После обновления дополнения Turtle необходимо перезагрузить «Файлы»:
 
 ```shell
 nautilus -q

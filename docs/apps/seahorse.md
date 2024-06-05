@@ -17,7 +17,6 @@ appstream:
         homepage: https://wiki.gnome.org/Apps/Seahorse
         help: https://help.gnome.org/users/seahorse/stable/
         bugtracker: https://gitlab.gnome.org/GNOME/seahorse/issues
-
 ---
 
 # Пароли и ключи

@@ -2,6 +2,7 @@
 lastUpdated: false
 ExampleVar: Hello World!
 ---
+
 # Возможности VitePress
 
 ::: info
@@ -24,6 +25,7 @@ VitePress использует [markdown-it](https://github.com/markdown-it/mark
 
 ```markdown
 ## Обычный заголовок
+
 ### Произвольный анкор {#my-anchor}
 ```
 
@@ -124,14 +126,14 @@ platform: VitePress
 
 ````markdown
 ```js
-console.log('Hello World!');
+console.log('Hello World!')
 ```
 ````
 
 **Вывод:**
 
 ```js
-console.log('Hello World!');
+console.log('Hello World!')
 ```
 
 ## Блоки кода c парсингом Vue JS
@@ -156,28 +158,34 @@ console.log('{{ $frontmatter.ExampleVar }}');
 
 ````markdown
 ::: code-group
+
 ```python[python]
 print("Hello World!")
 ```
+
 ```rust[rust]
 fn main() {
     println!("Hello World!");
 }
 ```
+
 :::
 ````
 
 **Вывод:**
 
 ::: code-group
+
 ```python[python]
 print("Hello World!")
 ```
+
 ```rust[rust]
 fn main() {
     println!("Hello World!");
 }
 ```
+
 :::
 
 ## Контент с табами
@@ -188,16 +196,20 @@ fn main() {
 ::: tabs
 == python
 Код `Hello World!` на Python.
+
 ```python
 print("Hello World!")
 ```
+
 == rust
 Код `Hello World!` на Rust.
+
 ```rust
 fn main() {
     println!("Hello World!");
 }
 ```
+
 :::
 ````
 
@@ -206,16 +218,20 @@ fn main() {
 ::: tabs
 == python
 Код `Hello World!` на Python.
+
 ```python
 print("Hello World!")
 ```
+
 == rust
 Код `Hello World!` на Rust.
+
 ```rust
 fn main() {
     println!("Hello World!");
 }
 ```
+
 :::
 
 ## Красивые уведомления
@@ -280,9 +296,11 @@ fn main() {
 :::
 
 ::: details Нажмите для отображения кода
+
 ```js
-console.log('Привет, VitePress!');
+console.log('Привет, VitePress!')
 ```
+
 :::
 ````
 
@@ -297,7 +315,9 @@ console.log('Привет, VitePress!');
 :::
 
 ::: details Нажмите для отображения кода
+
 ```js
-console.log('Привет, VitePress!');
+console.log('Привет, VitePress!')
 ```
+
 :::

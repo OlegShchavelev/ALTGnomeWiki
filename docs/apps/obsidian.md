@@ -43,6 +43,7 @@ flatpak run md.obsidian.Obsidian --ozone-platform-hint=auto
 ```shell[epm play]
 obsidian --ozone-platform-hint=auto
 ```
+
 :::
 
 :::warning
@@ -52,14 +53,15 @@ obsidian --ozone-platform-hint=auto
 
 По умолчанию запуск в оконном интерфейсе Wayland запрещён, разрешите:
 
-- Оконная система Wayland
-- Возврат к оконной системе X11
+-   Оконная система Wayland
+-   Возврат к оконной системе X11
 
 Альтернативной настройкой окружения является терминал введите:
 
 ```shell
 flatpak override --user md.obsidian.Obsidian --socket=wayland --socket=fallback-x11
 ```
+
 :::
 
 Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **Obsidian**, сделайте Pin и внесите следующие параметры в поле `Exec`:
@@ -75,12 +77,15 @@ flatpak override --user md.obsidian.Obsidian --socket=wayland --socket=fallback-
 obsidian %U // [!code --]
 obsidian --ozone-platform-hint=auto %U // [!code ++]
 ```
+
 :::
 
 ## Аппаратное ускорение:
+
 Чтобы избежать графических ошибок при запуске, [аппаратное ускорение нужно отключить](https://github.com/flathub/md.obsidian.Obsidian?tab=readme-ov-file#gpu-acceleration).
 
 Для **Flatpak** версии добавляется переменная со значением `--env=OBSIDIAN_DISABLE_GPU=1:`
+
 ```shell
 flatpak override --user --env=OBSIDIAN_DISABLE_GPU=1 md.obsidian.Obsidian
 ```

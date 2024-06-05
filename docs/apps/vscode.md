@@ -43,6 +43,7 @@ flatpak search Sdk.Extension.node
 ```
 
 ::: details вывод при поиске `Sdk.Extension.node`
+
 ```shell
 [oleg@alt-gnome ~]$ flatpak search Sdk.Extension.node
 Имя                          Описание                                                ID Приложения                               Версия          Ветвь            Удаленные репозитории
@@ -63,6 +64,7 @@ Node.js SDK extension        Node.js SDK extension                              
 Node.js SDK extension        Node.js SDK extension                                   org.freedesktop.Sdk.Extension.node10        10.22.1         19.08            flathub
 Node.js SDK extension        Node.js SDK extension                                   org.freedesktop.Sdk.Extension.node10        10.20.1         18.08            flathub,flathub-beta
 ```
+
 :::
 
 Установите выбранную версию Node.js, [я выбрал LTS версию 20.xx](/nodejs#выпуски-node-js):
@@ -90,6 +92,7 @@ flatpak run com.visualstudio.code --enable-features=UseOzonePlatform,WaylandWind
 ```shell[EPM Play]
 code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
 ```
+
 :::
 
 Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VSCode**, сделайте Pin и внесите следующие параметры в поле `Exec`:
@@ -105,4 +108,5 @@ code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platfor
 code --unity-launch %F // [!code --]
 code --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [!code ++]
 ```
+
 :::

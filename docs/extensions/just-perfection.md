@@ -15,4 +15,3 @@ gallery:
 <AGWGallery/>
 
 <!--@include: ./parts/show-install-steps.md-->
-

@@ -20,8 +20,6 @@ appstream:
         translate: https://hosted.weblate.org/engage/mission-center/
 ---
 
-
-
 # Mission Center
 
 Mission Center — приложение для мониторинга использования системных ресурсов. Контролируйте использование вашего процессора, памяти, диска, сети и графического процессора.

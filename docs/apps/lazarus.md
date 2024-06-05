@@ -16,8 +16,6 @@ appstream:
         bugtracker: https://gitlab.com/freepascal.org/lazarus/lazarus/issues
 ---
 
-
-
 # Lazarus
 
 Lazarus — открытая среда программного обеспечения на языке Object Pascal для компилятора Free Pascal.

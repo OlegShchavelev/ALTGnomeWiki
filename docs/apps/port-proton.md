@@ -45,15 +45,16 @@ su -
 apt-get update
 apt-get install portproton i586-{libvulkan1,libd3d,libGL,libgio,libnm,libnsl1,libnss,glibc-nss,glibc-pthread,libunwind,xorg-dri-swrast}
 ```
+
 ```shell[epm]
 epm -i portproton i586-{libvulkan1,libd3d,libGL,libgio,libnm,libnsl1,libnss,glibc-nss,glibc-pthread,libunwind,xorg-dri-swrast}
 ```
+
 :::
 
 :::info
 Мы рекомендуем перед установкой PortProton обновить операционную систему и ядро до актуального состояния.
 :::
-
 
 <!--@include: @apps/_parts/install/content-epm-play.md -->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

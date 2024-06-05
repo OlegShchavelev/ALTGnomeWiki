@@ -314,7 +314,7 @@ export const docs = [
         link: 'sisyphus',
         items: [
           {
-            text: 'etersoft-build-utils', link: '/etersoft-build-utils',
+            text: 'Etersoft-build-utils', link: '/etersoft-build-utils',
           },
           {
             text: 'Hasher', link: '/hasher',

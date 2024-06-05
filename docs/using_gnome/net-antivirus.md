@@ -8,6 +8,8 @@
 
 Тем не менее, вы можете установить антивирусное ПО для дополнительной защиты или для проверки на вирусы файлов, которыми вы делитесь с пользователями Windows и macOS. Доступно несколько таких программ, которые можно найти на официальных сайтах производителей антивирусов.
 
-# Российское антивирусное ПО для Linux
+## Российское антивирусное ПО для Linux
 
-Для домашних пользователей доступен только - [Dr.Web Security Space (для Linux) ](https://products.drweb.ru/home/linux/),
+Для домашних пользователей на данный момент доступны:
+ - [Dr.Web Security Space (для Linux) ](https://products.drweb.ru/home/linux/),
+ - [Kaspersky Virus Removal Tool (для Linux)](https://www.kaspersky.com/downloads/free-virus-removal-tool)

@@ -42,7 +42,7 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "docs:speller-full": "yaspeller -e '.md' ./docs --only-errors",
-    "docs:speller": "yaspeller -e '.md' --only-errors",
+    "docs:speller": "yaspeller -e '.md' ",
     "docs:remark-full": "remark ./docs --frail",
     "docs:remark": "remark "
   }

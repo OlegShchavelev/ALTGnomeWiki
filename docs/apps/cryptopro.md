@@ -48,7 +48,7 @@ sudo ./install_gui.sh
 
 1. Установить расширение для браузера [Google Chrome/Chromium/Chromium GOST/Спутник/Яндекс.Браузер/Opera](https://chrome.google.com/webstore/detail/ifcplugin-extension/pbefkdcndngodfeigfdgiodgnmbgcfha) или [Mozilla Firefox](https://ds-plugin.gosuslugi.ru/plugin/upload/assets/distrib/addon-1.2.8-fx.xpi)
 
-2. Проверьте, что расширение включено в браузере, на сайте [Госуслуг](https://www.gosuslugi.ru/) расширение должно быть цветным и включенным, если нет, проверьте настройки расширений
+2. Проверьте, что расширение включено в браузере, на сайте [Госуслуг](https://www.gosuslugi.ru/) расширение должно быть цветным и включённым, если нет, проверьте настройки расширений
 ![Цветное расширение в меню расширений следующий после строчки адреса сайта обычно, для проверки работы: находясь на сайте госуслуг, нажмите ПКМ на Расширение для плагина Госуслуг, второй пункт сверху в меню должен быть - расширение может получать доступ к данным сайта и изменять их](/cryptopro/ext-is-on.png)
 
 3. Установите плагин для работы с порталом государственных услуг [IFCPlugin.rpm](https://ds-plugin.gosuslugi.ru/plugin/upload/assets/distrib/IFCPlugin-x86_64.rpm) ([Источник: п.2 установки, x64-rpm](https://support.cryptopro.ru/index.php?/Knowledgebase/Article/View/275))

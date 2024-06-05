@@ -8,17 +8,17 @@
 
 Формат шрифтов, формы букв создаются преимущественно в формате монохромной растровой графики. Популярным примером bitmap-шрифтов являются `emoji`. Для создания коллекции шрифтов используется следующие форматы:
 
-- Bitmap Distribution Format (BDF) от Adobe
-- Portable Compiled Format (PCB) от Xorg
-- PC Screen Font (PSF) используется ядром операционной системы для консольных шрифтов не поддерживается Xorg
+-   Bitmap Distribution Format (BDF) от Adobe
+-   Portable Compiled Format (PCB) от Xorg
+-   PC Screen Font (PSF) используется ядром операционной системы для консольных шрифтов не поддерживается Xorg
 
 **Контурные шрифты (outline)**
 
 Основной формат шрифтов для описания каждого глифа используются кривые Безье (векторная графика). Для создания коллекции шрифтов используется следующие форматы:
 
-- TrueType от Apple и Microsoft (расширение файла: ttf)
-- OpenType от Microsoft, построен на TrueType (расширения файлов: otf, ttf)
-- PostScript от Adobe – имеют различные форматы, например: шрифт принтера ASCII (PFA) и шрифт принтера Binary (PFB)
+-   TrueType от Apple и Microsoft (расширение файла: ttf)
+-   OpenType от Microsoft, построен на TrueType (расширения файлов: otf, ttf)
+-   PostScript от Adobe – имеют различные форматы, например: шрифт принтера ASCII (PFA) и шрифт принтера Binary (PFB)
 
 ## Установка шрифтов
 
@@ -26,7 +26,7 @@
 
 ### Из репозитория
 
-Для поиска шрифтов размещенные репозитории Сизиф, перейдите [в раздел Шрифты](https://packages.altlinux.org/ru/sisyphus/packages/System/Fonts/) на `packages.altlinux.org`.
+Для поиска шрифтов размещённые репозитории Сизиф, перейдите [в раздел Шрифты](https://packages.altlinux.org/ru/sisyphus/packages/System/Fonts/) на `packages.altlinux.org`.
 
 **Установим** дополнительные шрифты, на примере `google-noto-emoji` из репозитория Сизиф:
 
@@ -37,9 +37,11 @@ su -
 apt-get update
 apt-get install fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 ```
+
 ```shell[epm]
 epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 ```
+
 :::
 
 ### Локальная установка (ручная)
@@ -55,9 +57,11 @@ epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 
 :::info
 Шрифты устанавливается для конкретного пользователя и доступны после установки в следующей директории:
+
 ```
 ~/.local/share/fonts
 ```
+
 :::
 
 Альтернативным вариантом является установка через терминал. Операционная система будет рекурсивно искать пути по умолчанию, гарантируя, что вложенные файлы будут обнаружены. Пример файловой структуры:
@@ -82,25 +86,28 @@ epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 На примере шрифта [CascadiaCode](https://github.com/microsoft/cascadia-code/releases/tag/v2111.01):
 
 ::: code-group
+
 ```shell[Общесистемная]
 su -
 cd /home/`user`/Загрузки/CascadiaCode-2111.01/ttf
 cp *.ttf /usr/share/fonts/ttf/CascadiaCode/
 ```
+
 ```shell[Пользовательская]
 cd ~/Загрузки/CascadiaCode-2111.01/ttf
 cp *.ttf ~/.local/share/fonts/ttf/CascadiaCode/
 ```
+
 :::
 
 ## Шрифты из репозитория Сизиф
 
-| Название                  |     Описание                      |       Название пакета                  |
-|:--------------------------|:----------------------------------|:---------------------------------------|
-| Microsoft                 | Шрифты от Microsoft               | fonts-ttf-ms                           |
-| Ubuntu                    | Шрифты от дистрибутива Ubuntu     | fonts-ttf-ubuntu-font-family           |
-| Cascadia Code             | Шрифты от Microsoft, используется VSCode и Windows Terminal | fonts-cascadia-code |
-| Noto Emoji                | Шрифты удовлетворяет всем вашим потребностям в эмодзи, включая поддержку последней спецификации эмодзи в Юникоде | fonts-ttf-google-noto-emoji |
+| Название      | Описание                                                                                                         | Название пакета              |
+| :------------ | :--------------------------------------------------------------------------------------------------------------- | :--------------------------- |
+| Microsoft     | Шрифты от Microsoft                                                                                              | fonts-ttf-ms                 |
+| Ubuntu        | Шрифты от дистрибутива Ubuntu                                                                                    | fonts-ttf-ubuntu-font-family |
+| Cascadia Code | Шрифты от Microsoft, используется VSCode и Windows Terminal                                                      | fonts-cascadia-code          |
+| Noto Emoji    | Шрифты удовлетворяет всем вашим потребностям в эмодзи, включая поддержку последней спецификации эмодзи в Юникоде | fonts-ttf-google-noto-emoji  |
 
 ## Советы и рекомендации
 

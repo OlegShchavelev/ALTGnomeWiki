@@ -42,8 +42,8 @@
             "addWords": true
         },
         {
-            "name": "forbiden",
-            "path": "./.cspell/forbiden.dict",
+            "name": "forbidden",
+            "path": "./.cspell/forbidden.dict",
             "addWords": true
         },
         {
@@ -71,5 +71,5 @@
         "terms",
         "simple words"
     ],
-    "import": ["@cspell/dict-ru_ru/cspell-ext.json"]    
+    "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
 }

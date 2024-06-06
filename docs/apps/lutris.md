@@ -21,7 +21,7 @@ appstream:
 
 # Lutris
 
-Lutris — платформа с помощью которой можно запускать и играть в игры на компютерах с операционной системой Linux.
+Lutris — платформа с помощью которой можно запускать и играть в игры на компьютерах с операционной системой Linux.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

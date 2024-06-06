@@ -79,6 +79,7 @@
     ["```.*?```", "gsm"],
     ["---.*?---", "gsm"]
    ],
+  "fileExtensions": [".md"],
   "ignoreUrls": true,
   "findRepeatWords": true
 }

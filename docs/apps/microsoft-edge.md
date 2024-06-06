@@ -31,5 +31,5 @@ appstream:
 Браузер от Microsoft, выпущенный в 2015 году, замена Internet Explorer, основан на Chromium.
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->

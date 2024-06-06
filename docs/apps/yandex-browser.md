@@ -45,7 +45,7 @@ C версии `23.5.1.753`, устанавливается **Яндекс Бр�
 :::
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Полезные советы и дополнения

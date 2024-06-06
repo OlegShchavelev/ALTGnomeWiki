@@ -1978,7 +1978,7 @@ bar_border="off"
 
 :::
 
-**Ширена индикатора выполнения.**
+**Ширина индикатора выполнения.**
 
 | Флаг         | Значения |
 | :----------- | :------- |
@@ -2039,7 +2039,7 @@ bar_color_total="distro"
 
 :::
 
-### Настройки бэкэнда
+### Настройки бэкенда
 
 **Сервер изображений**
 
@@ -2048,13 +2048,15 @@ bar_color_total="distro"
 | --backend | "backend_name", "off" |
 
 ::: details Возможные значения
-| ascii | caca |
+
+| ascii   | caca    |
 | :------ | :------ |
-| chafa | jp2a |
-| iterm2 | pot |
+| chafa   | jp2a    |
+| iterm2  | pot     |
 | termpix | pixterm |
-| tycat | w3m |
-| kitty | off |
+| tycat   | w3m     |
+| kitty   | off     |
+
 :::
 
 ::: code-group

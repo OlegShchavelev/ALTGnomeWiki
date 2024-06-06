@@ -31,7 +31,7 @@ Google Chrome — Браузер, разрабатываемый компани�
 ![google-chrome](/google-chrome/google-chrome-1.png)
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Запуск Google Chrome в оконном интерфейсе Wayland

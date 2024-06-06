@@ -1,0 +1,57 @@
+{
+    "version": "0.2",
+    "language": "en, ru",
+    "patterns": [
+        {
+            "name": "code-block",
+            "pattern": "/^\\s*```[\\s\\S]*?^\\s*```/gm"
+        },
+        {
+            "name": "frontmatter-block",
+            "pattern": "/^\\s*---[\\s\\S]*?^\\s*---/gm"
+        },
+        {
+            "name": "html-comment-block",
+            "pattern": "/^\\s*<!--[\\s\\S]*?^\\s*-->/gm"
+        }
+    ],
+    "ignoreRegExpList": [
+        "code-block",
+        "frontmatter-block"
+    ],
+    "dictionaryDefinitions": [
+        {
+            "name": "apps & companies",
+            "path": "./.cspell/apps&companies.dict",
+            "addWords": true
+        },
+        {
+            "name": "anglicisms",
+            "path": "./.cspell/anglicisms.dict",
+            "addWords": true
+        },
+        {
+            "name": "slang",
+            "path": "./.cspell/slang.dict",
+            "addWords": true
+        },
+        {
+            "name": "forbiden",
+            "path": "./.cspell/forbiden.dict",
+            "addWords": true
+        },
+        {
+            "name": "terms",
+            "path": "./.cspell/terms.dict",
+            "addWords": true
+        }
+    ],
+    "dictionaries": [
+        "apps & companies",
+        "anglicisms",
+        "slang",
+        "forbiden",
+        "terms"
+    ],
+    "import": ["@cspell/dict-ru_ru/cspell-ext.json"]    
+}

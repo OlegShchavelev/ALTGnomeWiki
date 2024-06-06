@@ -45,8 +45,8 @@
     "docs:preview": "vitepress preview",
     "docs:speller-full": "yaspeller -e '.md' ./docs --only-errors",
     "docs:speller": "yaspeller -e '.md' ",
-    "docs:cspeller-full": " npx cspell ./docs/apps/*.md --show-context --show-suggestions",
-    "docs:cspeller": " npx cspell --show-context --show-suggestions ",
+    "docs:cspeller-full": " npx cspell ./docs/**/*.md --show-context --show-suggestions --color",
+    "docs:cspeller": " npx cspell --color --show-context --show-suggestions ",
     "docs:remark-full": "remark ./docs --frail",
     "docs:remark": "remark "
   }

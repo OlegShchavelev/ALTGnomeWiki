@@ -56,7 +56,7 @@ su -
 mcedit /etc/sysconfig/grub2
 ```
 
-Добавляем в параметр GRUB_CMDLINE_LINUX_DEFAULT значение в конец `acpi_osi=` прям вот так, пустой. И сохраняем.
+Добавляем в параметр `GRUB_CMDLINE_LINUX_DEFAULT` значение в конец `acpi_osi=` прям вот так, пустой. И сохраняем.
 
 `grub-mkconfig -o /boot/grub/grub.cfg` обновляем GRUB с новой конфигурацией и перезагружаемся
 

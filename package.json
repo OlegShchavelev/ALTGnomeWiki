@@ -9,6 +9,7 @@
     "@types/markdown-it": "^13.0.5",
     "@types/markdown-it-container": "^2.0.8",
     "@types/node": "^20.10.2",
+    "cspell": "^8.8.4",
     "markdown-it": "^13.0.2",
     "markdown-it-conditional-render": "^0.1.0",
     "markdown-it-container": "^3.0.0",
@@ -24,6 +25,7 @@
     "yaspeller": "^10.0.1"
   },
   "dependencies": {
+    "@cspell/dict-ru_ru": "^2.2.1",
     "@octokit/core": "^6.1.2",
     "remark-lint-no-multiple-toplevel-headings": "^4.0.0",
     "shiki": "^1.2.0",
@@ -43,6 +45,8 @@
     "docs:preview": "vitepress preview",
     "docs:speller-full": "yaspeller -e '.md' ./docs --only-errors",
     "docs:speller": "yaspeller -e '.md' ",
+    "docs:cspeller-full": " npx cspell ./docs/apps/*.md --show-context --show-suggestions",
+    "docs:cspeller": " npx cspell --show-context --show-suggestions ",
     "docs:remark-full": "remark ./docs --frail",
     "docs:remark": "remark "
   }

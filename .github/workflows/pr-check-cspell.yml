@@ -1,4 +1,4 @@
-name: 'Check: Markdown Spell Check (YaSpeller)'
+name: 'Check: Markdown Spell Check (CSpell)'
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  check-spell:
+  check-cspell:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,4 +26,4 @@ jobs:
         run: npm ci
       - name: Check spell using yaspeller
         run: |
-          npm run docs:speller-full
+          npm run docs:cspeller-full

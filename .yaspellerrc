@@ -68,8 +68,15 @@
     "WiFi",
     "TimeMachine"
   ],
+  "format": "plain",
   "ignoreText":
    [
+    "> ",
+    "<.+/>",
+    "`.+`",
+    "#+ ",
+    "!\\[.+\\]",
+    ["```.*?```", "gsm"],
     ["---.*?---", "gsm"]
    ],
   "ignoreUrls": true,

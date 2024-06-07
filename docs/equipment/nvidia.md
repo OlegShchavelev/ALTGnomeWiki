@@ -894,6 +894,10 @@ make-initrd
 
 ### [nvidia-smi](#nvidia-smi)
 
+::: info
+Все указанные цифры указаны для примера. Все решения и риски лежат на вашей ответственности.
+:::
+
 С его помощью можно установить порог TDP
 
 ```shell
@@ -901,15 +905,21 @@ su -
 nvidia-smi -pl 160.30
 ```
 
-Установить пороги часто GPU:
+Вывести в терминале поддерживаемые частоты:
 
 ```shell
 su -
 nvidia-smi -q -d SUPPORTED_CLOCKS
-nvidia-smi --lock-gpu-clocks=0,1695 --mode=1
 ```
 
 Установить пороги часто GPU:
+
+```shell
+su -
+nvidia-smi --lock-gpu-clocks=0,1695 --mode=1
+```
+
+Установить пороги часто видеопамяти:
 
 ```shell
 su -

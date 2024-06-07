@@ -6,7 +6,7 @@ appstream:
     id: celluloid.desktop
     name: Celluloid
     icon: /celluloid/celluloid-logo.svg
-    summary: Простой интерфейс GTK для MPV. Он призван быть простым в использовании при сохранении высокого уровня конфигурируемости.
+    summary: Простой интерфейс GTK для MPV. Он призван быть простым в использовании при сохранении высокого уровня кастомизации.
     metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
@@ -20,7 +20,7 @@ appstream:
 
 # Celluloid
 
-Celluloid (ранее GNOME MPV) — простой интерфейс GTK для [MPV](/mpv). Он призван быть простым в использовании при сохранении высокого уровня конфигурируемости.
+Celluloid (ранее GNOME MPV) — простой интерфейс GTK для [MPV](/mpv). Он призван быть простым в использовании при сохранении высокого уровня кастомизации.
 
 ![celluloid1.png](/celluloid/celluloid-1.png)
 

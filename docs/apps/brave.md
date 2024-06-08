@@ -30,7 +30,7 @@ gallery:
 
 # Brave Browser
 
-Brave Browser — веб-браузер со свободным и открытым исходным кодом на основе веб-браузера Chromium на движке Blink.
+Brave Browser — веб-браузер с открытым исходным кодом на основе веб-браузера [Chromium](/chromium) и движке Blink.
 
 <AGWGallery />
 

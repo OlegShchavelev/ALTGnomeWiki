@@ -1,5 +1,4 @@
 aarch
-Quadro
 ACPI
 bootloader
 BTRFS
@@ -24,6 +23,7 @@ nomodeset
 NTSC
 PCIROM
 PRAMIN
+Quadro
 simpledrm
 TMDS
 tmpfs

@@ -24,7 +24,7 @@ appstream:
 
 # Figma
 
-Figma — неофициальная версия Figma для Linux построенная на Electron.
+Figma — неофициальная версия Figma для Linux, построенная на Electron.
 
 ![Figma](/figma/figma-1.png)
 

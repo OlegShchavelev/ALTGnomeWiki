@@ -39,6 +39,7 @@ Probe - это моментальный снимок состояния обор
 
 <AGWGallery />
 
+<!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-snap.md-->
 

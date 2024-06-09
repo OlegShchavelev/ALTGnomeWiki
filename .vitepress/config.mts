@@ -186,7 +186,7 @@ export default defineConfig({
     },
     footer: {
       message: 'Содержание доступно <a href="/licence.html">по лицензии MIT</a>',
-      copyright: `2023-${new Date().getFullYear()} ALT Gnome Wiki, разработано на платформе <a href="//vitepress.dev/">VitePress 1.0.0-rc.45</a>`
+      copyright: `2023-${new Date().getFullYear()} ALT Gnome Wiki, разработано на платформе <a href="//vitepress.dev/">VitePress v1.2.3</a>`
     },
     asideMeta: {
       keywords: {

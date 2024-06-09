@@ -18,8 +18,7 @@ appstream:
     id: org.linux_hardware.hw-probe
     name: Hardware Probe
     icon: /hw-probe/hw-probe.png
-    summary: Инструмент для проверки работоспособности компьютерного оборудования и загрузки результатов
-в базу данных оборудования Linux
+    summary: Инструмент для проверки работоспособности компьютерного оборудования и загрузки результатов в базу данных оборудования Linux
     developer:
         name: Linux Hardware Project (linuxhw)
 

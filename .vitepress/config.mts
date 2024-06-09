@@ -210,6 +210,10 @@ export default defineConfig({
           name: 'Региональные ограничения',
           type: 'danger'
         },
+        oobe: {
+          name: 'Предустановлено',
+          type: 'warning'
+        },
         dontthemes: {
           name: 'Please don’t theme',
           type: 'success-1'

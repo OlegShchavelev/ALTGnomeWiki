@@ -1,9 +1,10 @@
 ---
 aggregation:
+    flatpak: org.gnome.Console
     sisyphus: gnome-console
 appstream:
-    id: console.desktop
-    name: Console
+    id: org.gnome.Console
+    name: Консоль
     icon: /console/console-logo.svg
     summary: Простой и удобный эмулятор терминала для рабочего стола GNOME.
     developer:
@@ -12,6 +13,9 @@ appstream:
     metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
+    keywords:
+        - core
+        - adaptive
     url:
         homepage: https://apps.gnome.org/Console/
         bugtracker: https://gitlab.gnome.org/GNOME/console/-/issues
@@ -25,13 +29,14 @@ gallery:
         - src: /console/console-2.png
 ---
 
-# Console
+# Консоль
 
-Console — простой и удобный эмулятор терминала для рабочего стола GNOME.
+Консоль — простой и удобный эмулятор терминала для рабочего стола GNOME.
 
 <AGWGallery />
 
 <!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Удаление GNOME Terminal
 

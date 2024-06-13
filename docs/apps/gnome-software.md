@@ -8,6 +8,7 @@ appstream:
     summary: Официальная утилита управления приложениями для рабочего окружения GNOME
     keywords:
         - adaptive
+        - oobe
     developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48

@@ -144,7 +144,7 @@ Started 1 task.
 Project 'покупки' is 0% complete (2 of 2 tasks remaining).
  ```
 
-# Остановить задачу 
+## Остановить задачу 
 ``` bash
 $ task 2 stop
 Stopping task 2 'Купить кабель-канал'.
@@ -152,7 +152,7 @@ Stopped 1 task.
 Project 'покупки' is 0% complete (2 of 2 tasks remaining).
  ```
 
-# Список активных задач
+## Список активных задач
 ``` bash
 $ task active
 No matches.
@@ -462,9 +462,9 @@ Context unset.
  ```
 
 
-# Отчеты
+## Отчеты
 
-## Список возможных отчетов
+### Список возможных отчетов
 ``` bash
 $ task report
 

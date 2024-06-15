@@ -4,9 +4,6 @@ aggregation:
 appstream:
     name: Taskwarrior
     summary: инструмент управления задачами
-    keywords:
-        - gtd
-        - todo
     developer:
         name: Gothenburg Bit Factory 
         avatar: https://avatars.githubusercontent.com/u/36100920?s=200&v=4

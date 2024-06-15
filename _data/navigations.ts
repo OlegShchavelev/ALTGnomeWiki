@@ -101,6 +101,7 @@ export const docs = [
           { text: 'Steam', link: '/steam' },
           { text: 'Switcheroo', link: '/switcheroo' },
           { text: 'Synching', link: '/Synching' },
+          { text: 'Taskwarrior', link: '/taskwarrior' },
           { text: 'Telegram', link: '/telegram' },
           { text: 'Thunderbird', link: '/thunderbird' },
           { text: 'Timeshift', link: '/timeshift' },

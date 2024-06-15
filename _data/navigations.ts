@@ -94,6 +94,7 @@ export const docs = [
           { text: 'qBittorrent', link: '/q-bittorrent' },
           { text: 'Radio', link: '/radio' },
           { text: 'Reaper', link: '/reaper'},
+          { text: 'RetroArch', link: '/retroarch'},
           { text: 'Rnote', link: '/rnote'},
           { text: 'Skype', link: '/skype' },
           { text: 'Speedtest CLI', link: '/speedtest-cli' },

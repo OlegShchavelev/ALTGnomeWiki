@@ -224,6 +224,7 @@ export default defineConfig({
           metadata_license: 'Лицензия',
           homepage: 'Сайт проекта',
           help: 'Помощь',
+          faq: 'Вопросы и ответы',
           translate: 'Помощь в переводе',
           bugtracker: 'Сообщить о проблеме'
         },

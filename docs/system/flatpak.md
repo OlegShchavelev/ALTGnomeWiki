@@ -165,10 +165,21 @@ flatpak run org.gimp.GIMP
 
 Если при запуске приложения вы получаете ошибку: «enabling unprivileged user namespaces», то в данном случае может помочь выполнение следующих команд:
 
-```shell
+::: code-group
+
+```shell[apt-get]
 su -
-echo kernel.unprivileged_userns_clone=1 > /etc/sysctl.d/50-bubblewrap.conf
-sysctl -w kernel.unprivileged_userns_clone=1
+apt-get update
+apt-get install sysctl-conf-users
+```
+
+```shell[epm]
+epm -i sysctl-conf-users
+```
+
+:::
+
+```shell
 chmod 775 /usr/bin/bwrap
 exit
 ```
@@ -185,12 +196,24 @@ systemctl --user restart flatpak-portal.service
 
 Отключение непривилегированных пользователей:
 
+
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get remove sysctl-conf-users
+```
+
+```shell[epm]
+epm -e sysctl-conf-users
+```
+
+:::
+
 ```shell
 su -
-echo kernel.unprivileged_userns_clone=0 > /etc/sysctl.d/50-bubblewrap.conf
-sysctl -w kernel.unprivileged_userns_clone=0
 chmod 4511 /usr/bin/bwrap
-systemctl --user restart flatpak-portal.service
 exit
 ```
 

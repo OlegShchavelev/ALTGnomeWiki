@@ -55,14 +55,14 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 
 ::: code-group
 
-```shell[Сизиф]
+```[Сизиф]
 /usr/bin/codium --unity-launch %F // [!code --]
 /usr/bin/codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [!code ++]
 ```
 
-```shell[EPM Play]
-codium --unity-launch %F // [[!code --]]
-codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [[!code ++]]
+```[EPM Play]
+codium --unity-launch %F // [!code --]
+codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [!code ++]
 ```
 
 :::

@@ -99,12 +99,12 @@ code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platfor
 
 ::: code-group
 
-```shell[Flatpak]
+```[Flatpak]
 /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=code --file-forwarding com.visualstudio.code --reuse-window @@ %F @@ // [!code --]
 /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=code --file-forwarding com.visualstudio.code --reuse-window --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto @@ %F @@ // [!code ++]
 ```
 
-```shell[EPM Play]
+```[EPM Play]
 code --unity-launch %F // [!code --]
 code --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [!code ++]
 ```

@@ -34,7 +34,7 @@ apt-get install ffmpeg
 ```
 
 ```shell[epm]
-epm -i ffpmeg
+epm -i ffmpeg
 ```
 
 :::

@@ -76,6 +76,18 @@ VITE_GIT_KEY="{ваш токен}"
 
 Вся документация из этого репозитория размещается на сайте [alt-gnome.wiki](https://alt-gnome.wiki/) автоматически.
 
+
+## Участники проекта
+
+Список людей внесших вклад в проект:
+
+[![Участники](https://contrib.rocks/image?repo=OlegShchavelev/ALTGnomeWiki)](https://github.com/OlegShchavelev/ALTGnomeWiki/graphs/contributors)
+
+## Активность проекта
+
+![Статистика активности](https://repobeats.axiom.co/api/embed/4637fb51923408d570b8e555b3fde24eedb2bfea.svg "Repobeats analytics image")
+
+
 ## Поддержка
 Вы можете поддержать проект несколькими способами:
 - Создать issue с проблемой или предложением по улучшению

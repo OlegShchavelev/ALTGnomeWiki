@@ -87,7 +87,10 @@ VITE_GIT_KEY="{ваш токен}"
     </a>
   </p>
 - [Поддержать конкретного автора найдя его на странице команды](https://alt-gnome.wiki/contributions.html)
-## Лицензия
 
+## Благодарность
+Спасибо [команде разработки Nólëbase](https://github.com/nolebase) за создание и поддержку набора плагинов [Nólëbase Integrations](https://github.com/nolebase/integrations) и активное взаимодействие.
+
+## Лицензия
 [MIT](https://github.com/OlegShchavelev/ALTRegularGnomeWiki/blob/main/LICENSE)
 Copyright © 2023-present OLEG SHCHAVELEV

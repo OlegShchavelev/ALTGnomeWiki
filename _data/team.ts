@@ -301,12 +301,14 @@ export const contributions = [
       { icon: 'github', link: 'https://github.com/X1Z53' },
       { icon: { svg: gitverse }, link: 'https://gitverse.ru/x1z53' }
     ],
+    actionText: 'Поддержать',
+    sponsor: 'https://www.tinkoff.ru/cf/IpsmO1P5PJ'
   }, {
     avatar: 'https://avatars.githubusercontent.com/u/57837842?v=4',
     name: 'Cyber:X',
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/Cyber-X-Code' }
-    ],
+    ]
   }
 ]

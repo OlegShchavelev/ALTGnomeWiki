@@ -170,11 +170,11 @@ flatpak run org.gimp.GIMP
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install sysctl-conf-users
+apt-get install sysctl-conf-userns
 ```
 
 ```shell[epm]
-epm -i sysctl-conf-users
+epm -i sysctl-conf-userns
 ```
 
 :::
@@ -202,11 +202,11 @@ systemctl --user restart flatpak-portal.service
 ```shell[apt-get]
 su -
 apt-get update
-apt-get remove sysctl-conf-users
+apt-get remove sysctl-conf-userns
 ```
 
 ```shell[epm]
-epm -e sysctl-conf-users
+epm -e sysctl-conf-userns
 ```
 
 :::

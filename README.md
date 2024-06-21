@@ -76,6 +76,17 @@ VITE_GIT_KEY="{ваш токен}"
 
 Вся документация из этого репозитория размещается на сайте [alt-gnome.wiki](https://alt-gnome.wiki/) автоматически.
 
+## Поддержка
+Вы можете поддержать проект несколькими способами:
+- Создать issue с проблемой или предложением по улучшению
+- Отправить pull request с добавлением/исправлением статьи или функционала
+- Поддержать весь проект рублем на бусти:
+  <p>
+    <a href="http://boosty.to/alt_gnome">
+      <img height="36" src="https://github.com/Rirusha/Cassette/assets/95986183/313ee5af-d374-4f95-af62-9445d1c27347" alt="boosty.to">
+    </a>
+  </p>
+- [Поддержать конкретного автора найдя его на странице команды](https://alt-gnome.wiki/contributions.html)
 ## Лицензия
 
 [MIT](https://github.com/OlegShchavelev/ALTRegularGnomeWiki/blob/main/LICENSE)

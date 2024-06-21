@@ -9,6 +9,9 @@
   <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/OlegShchavelev/ALTGnomeWiki">
   <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/OlegShchavelev/ALTGnomeWiki">
   <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/OlegShchavelev/ALTGnomeWiki/github-pages?label=Last%20Deploy">
+  <br/>
+  <a href="https://t.me/alt_gnome"><img src="https://img.shields.io/badge/Group-%235AA9E6?logo=telegram&label=Telegram" /></a>
+  <a href="https://rutube.ru/channel/32425669/"><img src="https://badgen.net/static/Rutube/Chanel/cyan?icon=https://static.rutube.ru/static/img/favicon-icons/icon.svg" /></a>
   </h1> 
   <p align="center"> База знаний открытого сообщества пользователей операционной системы ALT Linux с графическим окружением GNOME.</p>
   <br/> 
@@ -101,6 +104,7 @@ VITE_GIT_KEY="{ваш токен}"
 - [Поддержать конкретного автора найдя его на странице команды](https://alt-gnome.wiki/contributions.html)
 
 ## Благодарность
+
 Спасибо [команде разработки Nólëbase](https://github.com/nolebase) за создание и поддержку набора плагинов [Nólëbase Integrations](https://github.com/nolebase/integrations) и активное взаимодействие.
 
 ## Лицензия

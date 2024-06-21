@@ -216,6 +216,8 @@ export const contributions = [
     links: [
       { icon: 'github', link: 'https://github.com/AlexanderShad' }
     ],
+    actionText: 'Поддержать',
+    sponsor: 'https://www.tinkoff.ru/cf/Ae2RCqqTpgR'
   }, {
     avatar: 'https://avatars.githubusercontent.com/u/65094576?v=4',
     name: 'Владислав Бабенко',

@@ -34,11 +34,11 @@
 sudo apt-get install node git
 ```
 
-Выполним загрузку репозитория, перейдём в каталог проекта и запустим в режиме разработки
+Выполним загрузку из репозитория, перейдём в каталог проекта и запустим в режиме разработки
 
-```
+```shell
 git clone https://github.com/{ваш username}/ALTGnomeWiki.git
-cd ALTRegularGnomeWiki
+cd ALTGnomeWiki
 npm i
 npm run docs:dev
 ```

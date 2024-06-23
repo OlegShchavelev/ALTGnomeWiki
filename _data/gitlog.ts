@@ -183,4 +183,14 @@ export const gitMapContributors = [
         avatar: "https://github.com/alchere.png",
         nameAliases: ['alchere'],
     },
+    {
+        name: "Женя Бородин",
+        avatar: "https://github.com/zheny-creator.png",
+        nameAliases: ['zheny-creator'],
+    },
+    {
+        name: "Вовка Морковка",
+        avatar: "https://github.com/Vovk4Morkovk4.png",
+        nameAliases: ['Vovk4Morkovk4'],
+    },
 ]

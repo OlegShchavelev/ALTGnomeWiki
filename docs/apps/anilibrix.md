@@ -3,6 +3,10 @@ aggregation:
     snap:
         id: anilibrix
         build: offical
+    epm: 
+        play:
+             id: anilibrix
+             build: unoffical
 appstream:
     id: anilibrix
     name: AniLibrix
@@ -34,3 +38,4 @@ AniLibrix — десктопный аниме-кинотеатр Анилибр�
 <AGWGallery />
 
 <!--@include: @apps/_parts/install/content-snap.md-->
+<!--@include: @apps/_parts/install/content-epm-play.md-->

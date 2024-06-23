@@ -31,6 +31,7 @@ export const docs = [
           { text: 'Сartridges', link: '/cartridges' },
           { text: 'Celluloid', link: '/celluloid' },
           { text: 'Chromium', link: '/chromium' },
+          { text: 'Conky', link: '/conky' },
           { text: 'Desktop Files Creator', link: '/desktop-files-creator' },
           { text: 'Dialect', link: '/dialect' },
           { text: 'Discord', link: '/discord' },

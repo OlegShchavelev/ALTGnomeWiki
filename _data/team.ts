@@ -1,4 +1,4 @@
-import { link } from 'fs'
+
 import {
   telegram,
   gitflic,
@@ -6,22 +6,7 @@ import {
   gitlab,
   vk
 } from '../.vitepress/icons.js'
-import { icons } from 'unocss/preset-icons'
 
-/* Настройки автоматизации участников */
-
-const homeTopLimit = 6
-const home_filter_type = 'additions'
-const page_filter_type = 'role+additions'
-const enable_autosearch = true
-const loading_placeholders = [
-  'Обновляем список участников...',
-  'Получаем самых активных...',
-  'Вспоминаем имена...'
-]
-const leader_name = 'Олег Щавелев'
-
-export { homeTopLimit, home_filter_type, page_filter_type, enable_autosearch, loading_placeholders, leader_name }
 
 /* Информация об участниках */
 

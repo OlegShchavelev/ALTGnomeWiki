@@ -153,44 +153,4 @@ export const gitMapContributors = [
         avatar: "https://github.com/Katze-942.png",
         nameAliases: ['Katze-942'],
     },
-    {
-        name: "Александр Шамараев",
-        avatar: "https://github.com/AlexanderShad.png",
-        nameAliases: ['AlexanderShad'],
-    },
-    {
-        name: "konoos56",
-        avatar: "https://github.com/konoos56.png",
-        nameAliases: ['konoos56'],
-    },
-    {
-        name: "Alex Kryuchkov",
-        avatar: "https://github.com/alexkdeveloper.png",
-        nameAliases: ['alexkdeveloper'],
-    },
-    {
-        name: "Keleth",
-        avatar: "https://github.com/Keleth.png",
-        nameAliases: ['Keleth'],
-    },
-    {
-        name: "alchere",
-        avatar: "https://github.com/alchere.png",
-        nameAliases: ['alchere'],
-    },
-    {
-        name: "alchere",
-        avatar: "https://github.com/alchere.png",
-        nameAliases: ['alchere'],
-    },
-    {
-        name: "Женя Бородин",
-        avatar: "https://github.com/zheny-creator.png",
-        nameAliases: ['zheny-creator'],
-    },
-    {
-        name: "Вовка Морковка",
-        avatar: "https://github.com/Vovk4Morkovk4.png",
-        nameAliases: ['Vovk4Morkovk4'],
-    },
 ]

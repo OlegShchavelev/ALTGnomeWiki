@@ -25,6 +25,8 @@ docs:
                     link: vivaldi
                   - name: Microsoft Edge
                     link: microsoft-edge
+                  - name: Librewolf
+                    link: librewolf
             - title: Мессенджеры
               icon:
                   dark: /message-light.svg

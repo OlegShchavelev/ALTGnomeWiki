@@ -5,7 +5,6 @@ import {
 } from 'vitepress/theme'
 
 import AGWTeamPageMembers from './AGWTeamPageMembers.vue';
-import AGWTeamLoader from './AGWTeamLoader.vue';
 
 import { useData } from 'vitepress'
 const { frontmatter } = useData();
@@ -19,14 +18,7 @@ const { frontmatter } = useData();
         {{ frontmatter.longtitle }}
         </template>
         </VPTeamPageTitle>
-        <ClientOnly>
-            <Suspense>
-                <AGWTeamPageMembers />
-                <template #fallback>
-                    <AGWTeamLoader />
-                </template>
-            </Suspense>
-        </ClientOnly>
+        <AGWTeamPageMembers />
     </VPTeamPage>
 </template>
 

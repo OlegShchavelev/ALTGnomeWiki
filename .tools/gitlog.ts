@@ -58,16 +58,19 @@ const userGetMore = async (user) => {
 
 const teamRaw = []
     
-gitMapContributors.forEach( gitMapped => {
-    contributions.forEach( teamMapped => {
-        if (gitMapped.name == teamMapped.name) {
-            teamRaw.push({...gitMapped, ...teamMapped})
-        }
-    })
+//console.log(Object.values(gitMapContributors))
+contributions.forEach( memberMapped => {
+    const teamMapped = gitMapContributors.filter(o => memberMapped.name.includes(o.name))[0]
+    teamMapped ? Object.keys(teamMapped).forEach(key => {
+        memberMapped[key] = teamMapped[key]
+    }):undefined
+    teamRaw.push(memberMapped)
 })
 
+console.log(teamRaw)
 
-const authorsGitRaw = []
+
+const authors = []
 
 for await (const gitter of contributorsRawBase) {
 
@@ -80,6 +83,7 @@ for await (const gitter of contributorsRawBase) {
     let author = {
         nameAliases: [ gitter.author.login ],
         name: userMore.name,
+        title: "Участник",
         avatar: gitter.author.avatar_url,
         weeks: gitter.weeks,
         links: [
@@ -88,20 +92,20 @@ for await (const gitter of contributorsRawBase) {
     }
 
     teamRaw.forEach( memberRaw => {
-        if (memberRaw.name == userMore.name || memberRaw.nameAliases.includes(gitter.author.login)){
+        if (memberRaw.name == userMore.name || Object.values(memberRaw.links[0])[1] == Object.values(author.links[0])[1] || ( memberRaw.nameAliases && memberRaw.nameAliases.includes(gitter.author.login))){
             Object.keys(memberRaw).forEach( key => {
-                author[key] = memberRaw[key] 
+                key == "nameAliases" ? memberRaw[key].forEach(alias => {author[key].push(alias)}) : author[key] = memberRaw[key] 
             })
         }
     })
 
-    authorsGitRaw.push(author)
+    authors.push(author)
 }
 
 
-fs.writeFile(path.join(__dirname, "../_data/newteam.json"), JSON.stringify(authorsGitRaw), (err) => err && console.error(err))
+fs.writeFile(path.join(__dirname, "../_data/newteam.json"), JSON.stringify(authors), (err) => err && console.error(err))
 
-if (args.debug) console.log(authorsGitRaw)
+if (args.debug) console.log(authors)
 
 spinner.succeed()
 spinner.stop()

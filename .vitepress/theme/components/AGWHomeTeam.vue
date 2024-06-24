@@ -7,7 +7,6 @@ import {
 
 import AGWHomeTeamButton from './AGWHomeTeamButton.vue';
 import AGWHomeTeamMembers from './AGWHomeTeamMembers.vue';
-import AGWTeamLoader from './AGWTeamLoader.vue';
 
 </script>
 
@@ -18,14 +17,7 @@ import AGWTeamLoader from './AGWTeamLoader.vue';
                 Участники
             </template>
         </VPTeamPageTitle>
-        <ClientOnly>
-            <Suspense>
-                <AGWHomeTeamMembers/>
-                <template #fallback>
-                    <AGWTeamLoader />
-                </template>
-            </Suspense>
-        </ClientOnly>
+        <AGWHomeTeamMembers/>
         <AGWHomeTeamButton>
             <VPButton text="Все участники" class="button" size="big" href="/contributions" />
         </AGWHomeTeamButton>

@@ -84,11 +84,6 @@ export const gitMapContributors = [
         nameAliases: ["Dmitry", "Luckenty"]
     },
     {
-        name: "Дмитрий Бондарев",
-        avatar: "https://github.com/pokedim13.png",
-        nameAliases: ["pokedim13"]
-    },
-    {
         name: "Арсений Засыпкин",
         avatar: "https://github.com/ImCatCatcher.png",
         nameAliases: ["ImCatCatcher", "Arseniy Zasypkin"]
@@ -124,19 +119,9 @@ export const gitMapContributors = [
         nameAliases: ["AnameVi", "AnameV1S"]
     },
     {
-        name: "Belovmv",
-        avatar: "https://github.com/Belovmv.png",
-        nameAliases: ["Belovmv"]
-    },
-    {
         name: "Anton Palgunov",
         avatar: "https://github.com/Toxblh.png",
         nameAliases: ["Anton Palgunov", "Toxblh"],
-    },
-    {
-        name: "Максим Остапенко",
-        avatar: "https://github.com/Krator3.png",
-        nameAliases: ['Krator3'],
     },
     {
         name: "Давид Султаниязов",
@@ -147,10 +132,5 @@ export const gitMapContributors = [
         name: "Cyber:X",
         avatar: "https://github.com/Cyber-X-Code.png",
         nameAliases: ['Cyber-X', 'Cyber-X-Code'],
-    },
-    {
-        name: "Жора Змейкин",
-        avatar: "https://github.com/Katze-942.png",
-        nameAliases: ['Katze-942'],
     },
 ]

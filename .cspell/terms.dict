@@ -19,12 +19,15 @@ fullscreen
 GART
 instdebug
 MTRR
+noarch
 nomodeset
 NTSC
 PCIROM
+POSIX
 PRAMIN
 Quadro
 simpledrm
+taskrc
 TMDS
 tmpfs
 UEFI
@@ -32,5 +35,6 @@ vaapi
 VBIOS
 VESA
 vesafb
+weekstart
 xoffset
 yoffset

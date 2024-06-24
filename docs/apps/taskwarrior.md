@@ -5,7 +5,7 @@ appstream:
     name: Taskwarrior
     summary: инструмент управления задачами
     developer:
-        name: Gothenburg Bit Factory 
+        name: Gothenburg Bit Factory
         avatar: https://avatars.githubusercontent.com/u/36100920?s=200&v=4
     metadata_license:
         name: MIT
@@ -16,7 +16,7 @@ appstream:
 
 
 # Taskwarrior
-Taskwarrior - приложение для управления задачами с широкими возможностями по кастомизации, с текстовым интерфейсом. 
+Taskwarrior - приложение для управления задачами с широкими возможностями по кастомизации, с текстовым интерфейсом.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 
@@ -26,7 +26,7 @@ Taskwarrior - приложение для управления задачами 
 
 Пример:
 ``` bash
-$ task add Бросить кабель 
+$ task add Бросить кабель
 Created task 1.
 
 $ task add Купить кабельканал
@@ -37,7 +37,7 @@ Created task 3.
 
 $ task list
 
-ID Age  Description                 Urg 
+ID Age  Description                 Urg
  1 1min Бросить кабель                 0
  2 59s  Купить кабельканал             0
  3 28s  Купить кабель ВВГ 3х2,5        0
@@ -49,11 +49,11 @@ ID Age  Description                 Urg
 :::
 
 ### Задача с датой завершения, высоким приоритетом и проектом.
-Дата указывается в параметре: **due**  
-дату можно указывать в формате: 20th - для текущего месяца  
-или полностью: 2024-06-20  
-приоритет: **priority**  
-проект: **project**  
+Дата указывается в параметре: **due**
+дату можно указывать в формате: 20th - для текущего месяца
+или полностью: 2024-06-20
+приоритет: **priority**
+проект: **project**
 
 ``` bash
 $ task add project:Еда due:2024-06-24 priority:H сделать окрошку
@@ -62,7 +62,7 @@ The project 'Еда' has changed.  Project 'Еда' is 0% complete (2 of 2 tasks
 
 $ task list
 
-ID Age  D P Project Tags     Due        Description                 Urg 
+ID Age  D P Project Tags     Due        Description                 Urg
  4 4min   H Еда              2024-06-24 сделать окрошку             11.9
  2 5h       покупки дача дом            Купить кабель ВВГ 3х2,5      9.9
  3 3h       покупки дача дом            Купить саморезы              1.9
@@ -73,11 +73,11 @@ ID Age  D P Project Tags     Due        Description                 Urg
 
 ## Изменение задачи
 Изменение названия задачи выполняется с применением команды modify
-``` bash 
+``` bash
 $ task 2 modify кабель-канал
 $ task list
 
-ID Age  Description                 Urg 
+ID Age  Description                 Urg
  1 1min Бросить кабель                 0
  2 59s  Купить кабель-канал            0
  3 28s  Купить кабель ВВГ 3х2,5        0
@@ -86,7 +86,7 @@ ID Age  Description                 Urg
 ```
 
 Для полностью ручного изменения задачи используется команда edit
-``` bash 
+``` bash
 $ task 1 edit
 ```
 Откроется внешний редактор с подробными данными о задаче (целиком приводить его нет смысла - он достаточно объемный).
@@ -101,13 +101,13 @@ VISUAL="mousepad"
 $ task 1 edit
 ```
 
-### Изменение названия у задачи 
-Существует возможность изменения задачи без применения modify и последующего написания нового обновленного текста, или использования edit.  
-**append** - для добавления в конец  
-**prepend** - для добавления к началу  
+### Изменение названия у задачи
+Существует возможность изменения задачи без применения modify и последующего написания нового обновленного текста, или использования edit.
+**append** - для добавления в конец
+**prepend** - для добавления к началу
 
 Пример append
-``` bash 
+``` bash
 $ task 1 append до сарая
 Appending to task 1 'Бросить кабель до сарая'.
 Appended 1 task.
@@ -115,7 +115,7 @@ Project 'ремонт' is 0% complete (1 task remaining).
 
 $ task list
 
-ID Age   D Project Description                 Urg 
+ID Age   D Project Description                 Urg
  2 57min   покупки Купить кабель-канал            9
  3 56min   покупки Купить кабель ВВГ 3х2,5        9
  1 57min D ремонт  Бросить кабель до сарая       -4
@@ -125,7 +125,7 @@ ID Age   D Project Description                 Urg
 
 пример prepend
 ``` bash
-$ task 1 prepend Срочно 
+$ task 1 prepend Срочно
 Prepending to task 1 'Срочно Бросить кабель до сарая'.
 Prepended 1 task.
 Project 'ремонт' is 0% complete (1 task remaining).
@@ -140,18 +140,18 @@ Modified 1 task.
 Project 'ремонт' is 0% complete (1 task remaining).
 ```
 
-Так-же taskwarrior предлагает следующие даты:  
-**scheduled** - дата подразумевающая, что данную задачу можно выполнить заранее due, и по прошествии указанной в scheduled даты - к задаче автоматически автоматически добавляется тег READY.  
-**wait** - позволяет не отображать задачу в списках до наступления указанной даты.  
+Так-же taskwarrior предлагает следующие даты:
+**scheduled** - дата подразумевающая, что данную задачу можно выполнить заранее due, и по прошествии указанной в scheduled даты - к задаче автоматически автоматически добавляется тег READY.
+**wait** - позволяет не отображать задачу в списках до наступления указанной даты.
 
-#### Просмотр списка задач с заполненой датой в атрибуте waiting
+#### Просмотр списка задач с заполненной датой в атрибуте waiting
 ``` bash
 $ task waiting
 ```
 
 ## Отмена последних внесенных изменений
 Как же мы и здесь без всемогущего undo.
-``` bash 
+``` bash
 $ task undo
 ```
 ![Результат отмены](/taskwarrior/task_undo.png)
@@ -164,7 +164,7 @@ Started 1 task.
 Project 'покупки' is 0% complete (2 of 2 tasks remaining).
  ```
 
-## Остановить задачу 
+## Остановить задачу
 ``` bash
 $ task 2 stop
 Stopping task 2 'Купить кабель-канал'.
@@ -187,7 +187,7 @@ Project 'покупки' is 50% complete (1 of 2 tasks remaining).
 
 $ task active
 
-ID Started    Active Age Project Description            
+ID Started    Active Age Project Description
  2 2024-06-15 2s     1h  покупки Купить кабель ВВГ 3х2,5
 
 1 task
@@ -222,7 +222,7 @@ The project 'покупки' has changed.  Project 'покупки' is 33% compl
 
 $ task list
 
-ID Active Age D Project Description                 Urg 
+ID Active Age D Project Description                 Urg
  2 15min  1h    покупки Купить кабель ВВГ 3х2,5       13
  3        2s    покупки Купить кабель ВВГ 3х2,5        1
  1        1h  D ремонт  Срочно Бросить кабель         -4
@@ -239,7 +239,7 @@ Modified 1 task.
 Project 'покупки' is 33% complete (2 of 3 tasks remaining).
 [danila@zoidberg:~ $ task list
 
-ID Age  D Project Tags Description                 Urg 
+ID Age  D Project Tags Description                 Urg
  2 2h     покупки      Купить кабель ВВГ 3х2,5        9
  3 7min   покупки дача Купить саморезы              1.8
  1 2h   D ремонт       Срочно Бросить кабель         -4
@@ -258,7 +258,7 @@ Project 'покупки' is 33% complete (2 of 3 tasks remaining).
 
 $ task list
 
-ID Age   D Project Tags     Description                 Urg 
+ID Age   D Project Tags     Description                 Urg
  2 2h      покупки дача дом Купить кабель ВВГ 3х2,5      9.8
  3 49min   покупки дача дом Купить саморезы              1.8
  1 2h    D ремонт  дом      Срочно Бросить кабель       -3.2
@@ -280,7 +280,7 @@ Tag  Count
 $ task +дача
 [task next ( +дача )]
 
-ID Age   Project Tag      Description             Urg 
+ID Age   Project Tag      Description             Urg
  2 2h    покупки дача дом Купить кабель ВВГ 3х2,5  9.9
  3 58min покупки дача дом Купить саморезы          1.9
 
@@ -288,11 +288,11 @@ ID Age   Project Tag      Description             Urg
 ```
 
 ## Управление приоритетом задачи
-Для управления приоритетом используются уровни:  
-**H** - высокий,  
-**M** - обычный (средний),  
-**L** - низкий  
-Пример установки для задачи 2 высокого приоритета  
+Для управления приоритетом используются уровни:
+**H** - высокий,
+**M** - обычный (средний),
+**L** - низкий
+Пример установки для задачи 2 высокого приоритета
 ``` bash
 task 2 modify priority:H
 ```
@@ -313,7 +313,7 @@ Modified 1 task.
 
 $ task list
 
-ID Age  D Description                 Urg 
+ID Age  D Description                 Urg
  2 4min   Купить кабель-канал            8
  3 4min   Купить кабель ВВГ 3х2,5        8
  1 5min D Бросить кабель                -5
@@ -333,7 +333,7 @@ Modified 1 task.
 The project 'ремонт' has changed.  Project 'ремонт' is 0% complete (1 task remaining).
 
 $ task list
-ID Age  D Project Description                 Urg 
+ID Age  D Project Description                 Urg
  2 6min           Купить кабель-канал            8
  3 6min           Купить кабель ВВГ 3х2,5        8
  1 7min D ремонт  Бросить кабель                -4
@@ -347,7 +347,7 @@ The project 'покупки' has changed.  Project 'покупки' is 0% comple
 
 $ task list
 
-ID Age  D Project Description                 Urg 
+ID Age  D Project Description                 Urg
  2 9min   покупки Купить кабель-канал            9
  3 9min   покупки Купить кабель ВВГ 3х2,5        9
  1 9min D ремонт  Бросить кабель                -4
@@ -384,19 +384,19 @@ Project 'покупки' is 33% complete (2 of 3 tasks remaining).
 $ task 2
 No command specified - assuming 'information'.
 
-Name                  Value                                               
+Name                  Value
 ID                    2
-Description           Купить кабель ВВГ 3х2,5                             
+Description           Купить кабель ВВГ 3х2,5
 Status                Pending
-Project               покупки                                             
+Project               покупки
 This task is blocking 1 Срочно Брос
-Entered               2024-06-15 07:57:18 (6h)                            
+Entered               2024-06-15 07:57:18 (6h)
 Last modified         2024-06-15 14:23:42 (44s)
-Tags                  дача дом                                            
+Tags                  дача дом
 Virtual tags          BLOCKING PENDING READY TAGGED UDA UNBLOCKED PROJECT
-UUID                  41aca2e4-def9-48e4-8342-9a65637649d0                
+UUID                  41aca2e4-def9-48e4-8342-9a65637649d0
 Urgency                9.9
-Стоимость             10000                                               
+Стоимость             10000
 
     project       1 *    1 =      1
     blocking      1 *    8 =      8
@@ -404,12 +404,12 @@ Urgency                9.9
                              ------
                                 9.9
 
-Date                Modification                                                       
+Date                Modification
 2024-06-15 07:59:37 Description changed from 'Купить кабель ВВГ 3х2,5' to 'depends :1'.
 2024-06-15 08:00:34 Description changed from 'depends :1' to 'Купить кабель ВВГ 3х2,5'.
 2024-06-15 08:06:03 Project set to 'поку�
 2024-06-15 09:40:56 Start set to '2024-06-15 09:40:56'.                          2024-06-15 10:57:12 Tags set to 'дача,�
-2024-06-15 14:23:42 Cost set to '10000'.                                               
+2024-06-15 14:23:42 Cost set to '10000'.
 ```
 
 ### Добавление атрибута в отчет
@@ -419,7 +419,7 @@ Date                Modification
 ``` bash
 $ task show list
 
-Config Variable         Value                                                                                                                                           
+Config Variable         Value
 list.all.projects       no
 list.all.tags           no
 report.list.columns     id,start.age,entry.age,depends.indicator,priority,project,tags,recur.indicator,scheduled.countdown,due,until.remaining,description.count,urgency
@@ -431,7 +431,7 @@ report.list.sort        start-,due+,project+,urgency-
 
 Добавим нужное поле в columns и labels
 ``` bash
-$ task config report.list.columns     id,start.age,entry.age,depends.indicator,priority,project,tags,recur.indicator,scheduled.countdown,due,until.remaining,description.count,urgency,cost 
+$ task config report.list.columns     id,start.age,entry.age,depends.indicator,priority,project,tags,recur.indicator,scheduled.countdown,due,until.remaining,description.count,urgency,cost
 Are you sure you want to add 'report.list.columns' with a value of 'id,start.age,entry.age,depends.indicator,priority,project,tags,recur.indicator,scheduled.countdown,due,until.remaining,description.count,urgency,cost'? (yes/no) yes
 Config file ~/.taskrc modified.
 
@@ -444,9 +444,9 @@ Config file ~/.taskrc modified.
 $ task list
 
 ID Age D Project Tags     Due        Description                 Urg  Стоимость
- 1 6h  D ремонт  дом      2024-06-30 Срочно Бросить кабель       -0.8          
+ 1 6h  D ремонт  дом      2024-06-30 Срочно Бросить кабель       -0.8
  2 6h    покупки дача дом            Купить кабель ВВГ 3х2,5      9.9     10000
- 3 4h    покупки дача дом            Купить саморезы              1.9          
+ 3 4h    покупки дача дом            Купить саморезы              1.9
 
 3 tasks
 
@@ -467,9 +467,9 @@ Context 'дом' set. Use 'task context none' to remove.
 $ task list
 
 ID Age D Project Tags     Due        Description                 Urg  Стоимость
- 1 6h  D ремонт  дом      2024-06-30 Срочно Бросить кабель       -0.8          
+ 1 6h  D ремонт  дом      2024-06-30 Срочно Бросить кабель       -0.8
  2 6h    покупки дача дом            Купить кабель ВВГ 3х2,5      9.9     10000
- 3 4h    покупки дача дом            Купить саморезы              1.9          
+ 3 4h    покупки дача дом            Купить саморезы              1.9
 
 3 tasks
 ```
@@ -487,35 +487,35 @@ Context unset.
 ``` bash
 $ task report
 
-Report           Description                                       
+Report           Description
 active           Active tasks
-all              All tasks                                         
+all              All tasks
 blocked          Blocked tasks
-blocking         Blocking tasks                                    
+blocking         Blocking tasks
 burndown.daily   Shows a graphical burndown chart, by day
-burndown.monthly Shows a graphical burndown chart, by month        
+burndown.monthly Shows a graphical burndown chart, by month
 burndown.weekly  Shows a graphical burndown chart, by week
-completed        Completed tasks                                   
+completed        Completed tasks
 ghistory.annual  Shows a graphical report of task history, by year
 ghistory.monthly Shows a graphical report of task history, by month
 history.annual   Shows a report of task history, by year
-history.monthly  Shows a report of task history, by month          
+history.monthly  Shows a report of task history, by month
 information      Shows all data and metadata
-list             Most details of tasks                             
+list             Most details of tasks
 long             All details of tasks
-ls               Few details of tasks                              
+ls               Few details of tasks
 minimal          Minimal details of tasks
-newest           Newest tasks                                      
+newest           Newest tasks
 next             Most urgent tasks
-oldest           Oldest tasks                                      
+oldest           Oldest tasks
 overdue          Overdue tasks
-projects         Shows all project names used                      
+projects         Shows all project names used
 ready            Most urgent actionable tasks
-recurring        Recurring Tasks                                   
+recurring        Recurring Tasks
 summary          Shows a report of task status by project
-tags             Shows a list of all tags used                     
+tags             Shows a list of all tags used
 unblocked        Unblocked tasks
-waiting          Waiting (hidden) tasks                            
+waiting          Waiting (hidden) tasks
 
 28 reports
 ```
@@ -525,7 +525,7 @@ waiting          Waiting (hidden) tasks
 
 2024-06-09 - 2024-06-15
   Completed (1 tasks)
-    Project Due Description        
+    Project Due Description
     покупки     Купить кабель-канал
 
   Started (0 tasks)
@@ -535,7 +535,7 @@ waiting          Waiting (hidden) tasks
 ``` bash
 $ task completed
 
-ID UUID     Created    Completed  Age Project Description        
+ID UUID     Created    Completed  Age Project Description
  - bec68c82 2024-06-15 2024-06-15 1h  покупки Купить кабель-канал
 
 1 task
@@ -564,7 +564,7 @@ task burndown.daily
 ![графический отчет по дням](/taskwarrior/task_burn_daily.png)
 
 ### Создание собственного отчета
-Для ускорения, а так-же демонстрации ручного изменения конфигурации не будем использовать task config, а сразу откроем ~/.taskrc в текстовом редакторе и будем добавлять необходимые данные в конец файла.  
+Для ускорения, а так-же демонстрации ручного изменения конфигурации не будем использовать task config, а сразу откроем ~/.taskrc в текстовом редакторе и будем добавлять необходимые данные в конец файла.
 Пример создания отчета состоящего только из созданного ранее поля **cost**
 ```
 # _____ CUSTOM_REPORTS_____
@@ -593,12 +593,12 @@ $ task calc 2+3
 
 ### Календарь
 Календарь подсвечивает все даты с запланированными задачами.
-``` bash 
+``` bash
 $ task calendar
 ```
 ![календарь](/taskwarrior/task_calendar.png)
 
-Как видим по умолчанию недели начинаются с Воскресенья, для исправления необходимо добавить строку:  
+Как видим по умолчанию недели начинаются с Воскресенья, для исправления необходимо добавить строку:
 **weekstart=monday** в файл **~/.taskrc**
 
 ![календарь исправленный](/taskwarrior/task_calendar_fixed.png)
@@ -629,8 +629,8 @@ task show
 ``` bash
 task color
 ```
-![пример цветового оформления](/taskwarrior/task_color.png)
-У меня используется палитра solarized-light, настройки находятся в ~/.taskrc, там-же есть набор из предустановленных тем, достаточно просто раскоментировать интересующую из них.
+![Пример цветового оформления](/taskwarrior/task_color.png)
+У меня используется палитра solarized-light, настройки находятся в ~/.taskrc, там же есть набор из предустановленных тем, достаточно просто раскомментировать интересующую из них.
 
 
 ## Bash alias

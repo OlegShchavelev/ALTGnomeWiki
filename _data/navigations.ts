@@ -23,6 +23,7 @@ export const docs = [
           { text: 'Arduino IDE', link: '/arduino-ide' },
           { text: 'AsusCtl', link: '/asusctl' },
           { text: 'Audacity', link: '/audacity' },
+          { text: 'Ayugram', link: '/ayugram-desktop' },
           { text: 'Blender', link: '/blender' },
           { text: 'Bottles', link: '/bottle' },
           { text: 'Boxes', link: '/boxes' },

@@ -75,6 +75,7 @@ export const docs = [
           { text: 'Loupe', link: '/loupe' },
           { text: 'Lunacy', link: '/lunacy' },
           { text: 'Lutris', link: '/lutris' },
+          { text: 'Librewolf', link: '/librewolf' },
           { text: 'Microsoft Edge', link: '/microsoft-edge' },
           { text: 'Mission Center', link: '/mission-center' },
           { text: 'Мpich', link: '/mpich' },

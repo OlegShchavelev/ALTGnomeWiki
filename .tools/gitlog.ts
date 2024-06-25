@@ -35,7 +35,7 @@ const octokit = new Octokit({
 
 const contributorsRawBase = async () => {
     let retryCount = 0
-    while (retryCount<10){
+    while (retryCount<1000){
         const response = await octokit.request('GET /repos/{owner}/{repo}/stats/contributors', {
             owner: args.repoUrl.split("/")[3],
             repo: args.repoUrl.split("/")[4],

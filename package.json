@@ -58,7 +58,7 @@
     "typescript": "^5.5.2",
     "vitepress": "^1.1.4",
     "vitepress-markdown-timeline": "^1.2.1",
-    "vitepress-plugin-image-viewer": "^1.1.2",
+    "vitepress-plugin-image-viewer": "1.1.2",
     "vitepress-plugin-tabs": "^0.5.0",
     "yaspeller": "^10.0.1"
   },

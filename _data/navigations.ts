@@ -80,7 +80,6 @@ export const docs = [
           { text: 'Mission Center', link: '/mission-center' },
           { text: 'Мpich', link: '/mpich' },
           { text: 'МPV', link: '/mpv' },
-          { text: 'Materialgram', link: '/materialgram' },
           { text: 'Neofetch', link: '/neofetch' },
           { text: 'Neovim', link: '/neovim' },
           { text: 'Nextcloud Desktop', link: '/nextcloud-desktop' },

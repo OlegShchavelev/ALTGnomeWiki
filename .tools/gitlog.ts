@@ -31,15 +31,29 @@ const octokit = new Octokit({
     auth: args.key
 })
 
-const contributorsRawBase = await octokit.request('GET /repos/{owner}/{repo}/stats/contributors', {
-    owner: args.repoUrl.split("/")[3],
-    repo: args.repoUrl.split("/")[4],
-    headers: {
-        'X-GitHub-Api-Version': '2022-11-28'
-    }
-}).then( response => response.data ).catch( err => spiner.fail( `${toolname} Не удалось получить данные:
+
+
+const contributorsRawBase = async () => {
+    let retryCount = 0
+    while (retryCount<10){
+        const response = await octokit.request('GET /repos/{owner}/{repo}/stats/contributors', {
+            owner: args.repoUrl.split("/")[3],
+            repo: args.repoUrl.split("/")[4],
+            headers: {
+                'X-GitHub-Api-Version': '2022-11-28'
+            }
+        }).then( response => response ).catch( err => spiner.fail( `${toolname} Не удалось получить данные:
 \t\t\t\t\t\t\t     ${red(err.toString())}
 \t\t\t\t\t\t\t   Проверьте соединение с интернетом и ключ или оставьте ISSUE.`) )
+
+        if (response.status==202){
+            spiner.text = `${toolname} Ожидаем генерации статистики со стороны API GitHub... ${args.debug?"( Попытка "+retryCount+" )":""}\n`
+            retryCount += 1
+        } else {
+            return (response.data)
+        }
+    } 
+}
 
 const userGetMore = async (user) => {
     spiner.text = `${toolname} Получаем дополнительную о пользователях ${args.debug?"( "+user+" )":""}...\n`
@@ -59,8 +73,8 @@ const teamRaw = contributions.map( member => ({
     ...gitMapContributors.find( contributor => contributor.name == member.name)
 }))
 
-if (!contributorsRawBase.color && contributorsRawBase.length){
-    for await (const gitter of contributorsRawBase) {
+
+    for await (const gitter of await contributorsRawBase().then(response => response)) {
 
         const userMore = await userGetMore(gitter.author.login)
         .then( response => response.data )
@@ -113,6 +127,3 @@ if (!contributorsRawBase.color && contributorsRawBase.length){
     fs.writeFile(path.join(__dirname, "../_data/fullteam.json"), JSON.stringify(authors), (err) => err && spiner.fail(err.toString()))
 
     spiner.succeed(`${toolname} Список успешно сгенерирован!\n`)
-} else {
-    spiner.fail(`Настучите амперу по шее`)
-}

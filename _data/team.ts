@@ -1,4 +1,3 @@
-
 import {
   telegram,
   gitflic,
@@ -7,6 +6,23 @@ import {
   vk
 } from '../.vitepress/icons.js'
 
+
+/* Параметры страницы участников */
+
+const homeSorting = 'month, commits'
+const teamSorting = 'role, commits, month'
+const leader = 'Олег Щавелев'
+const limit = 6
+const developersSection = {
+  title: 'Разработчики',
+  description: 'Люди принимающие участие в активном улучшении не только базы документации, но и ее функционала'
+}
+const membersSection = {
+  title: 'Авторы',
+  description: 'Люди принимающие участие в улучшении нашей документации' 
+}
+
+export { homeSorting, teamSorting, leader, limit, membersSection, developersSection }
 
 /* Информация об участниках */
 

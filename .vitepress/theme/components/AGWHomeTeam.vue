@@ -3,10 +3,13 @@ import {
   VPTeamPage,
   VPTeamPageTitle,
   VPButton,
+  VPTeamMembers,
 } from 'vitepress/theme'
 
-import AGWHomeTeamButton from './AGWHomeTeamButton.vue';
-import AGWHomeTeamMembers from './AGWHomeTeamMembers.vue';
+import { sortMembers } from '../composables/sorters';
+import { homeSorting, limit } from '../../../_data/team';
+import * as team from '../../../_data/newteam.json'
+
 
 </script>
 
@@ -17,9 +20,17 @@ import AGWHomeTeamMembers from './AGWHomeTeamMembers.vue';
                 Участники
             </template>
         </VPTeamPageTitle>
-        <AGWHomeTeamMembers/>
-        <AGWHomeTeamButton>
+        <VPTeamMembers :members="sortMembers(team.default, homeSorting).slice(0,limit)" />
+        <div class="teamButton">
             <VPButton text="Все участники" class="button" size="big" href="/contributions" />
-        </AGWHomeTeamButton>
+        </div>
     </VPTeamPage>
 </template>
+
+<style scoped>
+.teamButton {
+    margin-top: 40px;
+    display: grid;
+    place-items: center;
+}
+</style>

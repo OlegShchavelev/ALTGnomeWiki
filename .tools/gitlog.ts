@@ -5,28 +5,27 @@ import { contributions } from "../_data/team"
 import * as fs from 'fs';
 import * as path from 'path';
 import ora from 'ora';
-import { cyan, gray } from 'colorette'
+import { cyan, gray, red } from 'colorette'
 
+/*
+    CLI Arguments
+*/
 const args = yargs(process.argv).options({
     key: { type: "string", default: ""},
     repoUrl: { type: "string", default: "https://github.com/OlegShchavelev/ALTGnomeWiki"},
-    preview: {type: "boolean", default: false},
-    limit: { type: "number", default: 6},
-    filter: { type: "string", default: "role"},
-    autosearch: { type: "boolean", default: true},
-    leader: { type: "string", default: "Олег Щавелев"},
     debug: {type: "boolean", default: false}
 }).parse()
 
+const authors = []
 
 /* 
-  Network
+    Net + Local Mapping
 */
 
 const toolname = `${cyan(`[ @alt-gnome/alt-wiki-vitepress-gnome | Git Statistic ]`)}${gray(':')}`
 
-const spinner = ora({discardStdin: false})
-spinner.start(`${toolname} Читаем данные с гита...\n`)
+const spiner = ora({discardStdin: false})
+spiner.start(`${toolname} Читаем данные с гита...\n`)
 
 const octokit = new Octokit({
     auth: args.key
@@ -38,75 +37,82 @@ const contributorsRawBase = await octokit.request('GET /repos/{owner}/{repo}/sta
     headers: {
         'X-GitHub-Api-Version': '2022-11-28'
     }
-}).then( response => { 
-    return response.data 
-}).catch( err => {
-    console.error(err)
-    spinner.fail(err)
-})
+}).then( response => response.data ).catch( err => spiner.fail( `${toolname} Не удалось получить данные:
+\t\t\t\t\t\t\t     ${red(err.toString())}
+\t\t\t\t\t\t\t   Проверьте соединение с интернетом и ключ или оставьте ISSUE.`) )
 
 const userGetMore = async (user) => {
-    spinner.text = `${toolname} Получаем дополнительную информацию о ${user}...\n`
+    spiner.text = `${toolname} Получаем дополнительную о пользователях ${args.debug?"( "+user+" )":""}...\n`
     return await octokit.request('GET /users/{user}', {
       user: user,
       headers: {
         'X-GitHub-Api-Version': '2022-11-28'
       }
-    })
+    }).catch( err => spiner.fail( `${toolname} Не удалось получить данные:
+\t\t\t\t\t\t\t     ${red(err.toString())}
+\t\t\t\t\t\t\t   Проверьте соединение с интернетом и ключ или оставьте ISSUE.`) )
 }
 
 
-const teamRaw = []
-    
-//console.log(Object.values(gitMapContributors))
-contributions.forEach( memberMapped => {
-    const teamMapped = gitMapContributors.filter(o => memberMapped.name.includes(o.name))[0]
-    teamMapped ? Object.keys(teamMapped).forEach(key => {
-        memberMapped[key] = teamMapped[key]
-    }):undefined
-    teamRaw.push(memberMapped)
-})
+const teamRaw = contributions.map( member => ({
+    ...member,
+    ...gitMapContributors.find( contributor => contributor.name == member.name)
+}))
 
-console.log(teamRaw)
+if (!contributorsRawBase.color && !contributorsRawBase.length == 0){
+    for await (const gitter of contributorsRawBase) {
 
+        const userMore = await userGetMore(gitter.author.login)
+        .then( response => response.data )
+        .catch( err => spiner.fail( `${toolname} Не удалось получить данные:
+\t\t\t\t\t\t\t     ${red(err.toString())}
+\t\t\t\t\t\t\t   Проверьте соединение с интернетом и ключ или оставьте ISSUE.`) )
+        
+        const author = {
+            nameAliases: [ gitter.author.login ],
+            name: userMore.name,
+            title: "Участник",
+            avatar: gitter.author.avatar_url,
+            summary: {
+                commits: gitter.total,
+                add: 0,
+                remove: 0,
+            },
+            lastMonthActive: {
+                commits: 0,
+                add: 0,
+                remove: 0,
+            },
+            links: [
+                { icon: 'github', link: gitter.author.html_url}
+            ]
+        }
 
-const authors = []
+        gitter.weeks.forEach( week => {
+            author.summary.add += week.a
+            author.summary.remove += week.d
+        })
 
-for await (const gitter of contributorsRawBase) {
+        gitter.weeks.slice(-10).forEach( week => {
+            author.lastMonthActive.add += week.a
+            author.lastMonthActive.remove += week.d
+            author.lastMonthActive.commits += week.c
+        })
 
-    const userMore = await userGetMore(gitter.author.login).then( response => {return response.data}).catch( error => {
-        console.error(error)
-        spinner.fail(error)
-        spinner.stop()
-    })
-    
-    let author = {
-        nameAliases: [ gitter.author.login ],
-        name: userMore.name,
-        title: "Участник",
-        avatar: gitter.author.avatar_url,
-        weeks: gitter.weeks,
-        links: [
-            { icon: 'github', link: gitter.author.html_url}
-        ]
+        teamRaw.forEach( memberRaw => {
+            if (memberRaw.name == userMore.name || Object.values(memberRaw.links[0])[1] == Object.values(author.links[0])[1] || ( memberRaw.nameAliases && memberRaw.nameAliases.includes(gitter.author.login))){
+                Object.keys(memberRaw).forEach( key => {
+                    key == "nameAliases" ? memberRaw[key].forEach(alias => {author[key].push(alias)}) : author[key] = memberRaw[key] 
+                })
+            }
+        })
+
+        authors.push(author)
     }
 
-    teamRaw.forEach( memberRaw => {
-        if (memberRaw.name == userMore.name || Object.values(memberRaw.links[0])[1] == Object.values(author.links[0])[1] || ( memberRaw.nameAliases && memberRaw.nameAliases.includes(gitter.author.login))){
-            Object.keys(memberRaw).forEach( key => {
-                key == "nameAliases" ? memberRaw[key].forEach(alias => {author[key].push(alias)}) : author[key] = memberRaw[key] 
-            })
-        }
-    })
+    fs.writeFile(path.join(__dirname, "../_data/fullteam.json"), JSON.stringify(authors), (err) => err && spiner.fail(err.toString()))
 
-    authors.push(author)
+    spiner.succeed(`${toolname} Список успешно сгенерирован!\n`)
+} else {
+    spiner.fail(`Настучите амперу по шее`)
 }
-
-
-fs.writeFile(path.join(__dirname, "../_data/newteam.json"), JSON.stringify(authors), (err) => err && console.error(err))
-
-if (args.debug) console.log(authors)
-
-spinner.succeed()
-spinner.stop()
-

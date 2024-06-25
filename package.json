@@ -25,10 +25,9 @@
     ]
   },
   "scripts": {
-    "git:preview": "npx esrun ./.tools/gitlog.ts --preview",
-    "git:build": "npx esrun ./.tools/gitlog.ts",
+    "git:debug": "npx esrun ./.tools/gitlog.ts --debug ",
     "docs:dev": "vitepress dev",
-    "docs:build": "npm run git:build && vitepress build",
+    "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "docs:speller-full": "yaspeller ./docs --only-errors",
     "docs:speller": "yaspeller",

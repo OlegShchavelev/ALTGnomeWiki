@@ -26,6 +26,9 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm ci
-      - name: Write secrets and build with VitePress
+      - name: Parsing info about members from git
+        run: |
+          npx esrun ./.tools/gitlog.ts --key="${{ secrets.VITE_GIT_KEY }}" --debug
+      - name: Build with VitePress
         run: |
           npm run docs:build

@@ -1,4 +1,3 @@
-import { link } from 'fs'
 import {
   telegram,
   gitflic,
@@ -6,22 +5,24 @@ import {
   gitlab,
   vk
 } from '../.vitepress/icons.js'
-import { icons } from 'unocss/preset-icons'
 
-/* Настройки автоматизации участников */
 
-const homeTopLimit = 6
-const home_filter_type = 'additions'
-const page_filter_type = 'role+additions'
-const enable_autosearch = true
-const loading_placeholders = [
-  'Обновляем список участников...',
-  'Получаем самых активных...',
-  'Вспоминаем имена...'
-]
-const leader_name = 'Олег Щавелев'
+/* Параметры страницы участников */
 
-export { homeTopLimit, home_filter_type, page_filter_type, enable_autosearch, loading_placeholders, leader_name }
+const homeSorting = 'month, commits'
+const teamSorting = 'role, commits, month'
+const leader = 'Олег Щавелев'
+const limit = 6
+const developersSection = {
+  title: 'Разработчики',
+  description: 'Люди принимающие участие в активном не только в расширении базы знаний, но и в улучшении ее функционала'
+}
+const membersSection = {
+  title: 'Авторы',
+  description: 'Люди принимающие участие исправлении и написании новых статей' 
+}
+
+export { homeSorting, teamSorting, leader, limit, membersSection, developersSection }
 
 /* Информация об участниках */
 

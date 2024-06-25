@@ -3,31 +3,46 @@ import {
   VPTeamPage,
   VPTeamPageTitle,
   VPButton,
+  VPTeamMembers,
 } from 'vitepress/theme'
 
-import AGWHomeTeamButton from './AGWHomeTeamButton.vue';
-import AGWHomeTeamMembers from './AGWHomeTeamMembers.vue';
-import AGWTeamLoader from './AGWTeamLoader.vue';
+import { sortMembers } from '../composables/sorters';
+import { homeSorting, limit, contributions } from '../../../_data/team';
+import { data as gitOnline } from '../../../_data/gitlog-loader.data.ts'
+
+console.log(gitOnline)
 
 </script>
 
 <template>
-    <VPTeamPage>
+    <VPTeamPage v-if="gitOnline.length">
         <VPTeamPageTitle>
             <template #title>
                 Участники
             </template>
         </VPTeamPageTitle>
-        <ClientOnly>
-            <Suspense>
-                <AGWHomeTeamMembers/>
-                <template #fallback>
-                    <AGWTeamLoader />
-                </template>
-            </Suspense>
-        </ClientOnly>
-        <AGWHomeTeamButton>
+        <VPTeamMembers :members="sortMembers(gitOnline, homeSorting).slice(0,limit)" />
+        <div class="teamButton">
             <VPButton text="Все участники" class="button" size="big" href="/contributions" />
-        </AGWHomeTeamButton>
+        </div>
+    </VPTeamPage>
+    <VPTeamPage v-if="!gitOnline.length">
+        <VPTeamPageTitle>
+            <template #title>
+                Участники
+            </template>
+        </VPTeamPageTitle>
+        <VPTeamMembers :members="contributions.slice(0,limit)" />
+        <div class="teamButton">
+            <VPButton text="Все участники" class="button" size="big" href="/contributions" />
+        </div>
     </VPTeamPage>
 </template>
+
+<style scoped>
+.teamButton {
+    margin-top: 40px;
+    display: grid;
+    place-items: center;
+}
+</style>

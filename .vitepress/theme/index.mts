@@ -38,8 +38,9 @@ import {
 
 import {
   gitLocales,
-  gitMapContributors
 } from '../../_data/gitlog'
+
+import { data as gitOnline } from '../../_data/gitlog-loader.data.ts'
 
 import {
   NolebasePagePropertiesEditor,
@@ -92,7 +93,7 @@ export default {
     ctx.app.provide(NolebaseEnhancedReadabilitiesInjectionKey, { locales:  locales} as NolebaseEnhancedReadabilitiesOptions)
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, { locales: pagePropertiesLocales, properties: pagePropertiesMD })
-    ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitMapContributors})
+    ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitOnline})
 
     enhanceAppWithTabs(ctx.app)
   },

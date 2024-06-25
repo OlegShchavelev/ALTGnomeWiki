@@ -19,3 +19,7 @@ GitHub.sublime-settings
 
 ### .env ###
 docs/.env
+
+### team ###
+
+_data/fullteam.json

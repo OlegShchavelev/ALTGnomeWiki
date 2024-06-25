@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="250" y2="500" id="gradient-0" spreadMethod="pad" gradientTransform="matrix(0.790303, -0.792405, 1.001506, 0.99885, -198.814681, 198.101125)">
+      <stop offset="0" style="stop-color: rgb(33, 38, 141);"/>
+      <stop offset="1" style="stop-color: rgb(12, 12, 49);"/>
+    </linearGradient>
+    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0"/>
+      <feOffset dx="10" dy="10"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="2"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect style="fill: url('#gradient-0'); paint-order: fill;" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 0)" x="0" y="0" width="500" height="500" rx="100" ry="100"/>
+  <path d="M 375.55 403.55 L 314.8 403.55 L 212.65 258.2 L 177.1 296.9 L 177.1 403.55 L 124 403.55 L 124 80.45 L 176.65 80.45 L 176.65 223.1 L 309.85 80.45 L 375.1 80.45 L 248.65 218.15 Z" transform="matrix(1, 0, 0, 1, 0.000006, -0.000006)" style="fill: rgb(251, 241, 1); filter: url('#drop-shadow-filter-0');"/>
+</svg>

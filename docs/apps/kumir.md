@@ -2,8 +2,8 @@
 aggregation:
     sisyphus: kumir2
 appstream:
-    name: Кумир
-    icon: /kumir/kumir-logo.png
+    name: КуМир
+    icon: /kumir/kumir-logo-path.svg
     summary: Система программирования, созданная для изучения информатики и программирования в школе и вузе.
     metadata_license:
         name: GNU GPLv2
@@ -23,7 +23,7 @@ gallery:
         - src: /kumir/kumir-3.png
 ---
 
-# KuMir
+# КуМир
 
 КуМир (Комплект Учебных МИРов) — система программирования, предназначенная для поддержки начальных курсов информатики и программирования в средней и высшей школе.
 

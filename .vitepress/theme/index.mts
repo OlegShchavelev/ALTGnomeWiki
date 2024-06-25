@@ -40,7 +40,7 @@ import {
   gitLocales,
 } from '../../_data/gitlog'
 
-import * as team from '../../_data/newteam.json'
+import * as team from '../../_data/fullteam.json'
 
 import {
   NolebasePagePropertiesEditor,

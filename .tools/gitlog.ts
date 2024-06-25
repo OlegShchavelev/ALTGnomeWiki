@@ -93,7 +93,7 @@ if (!contributorsRawBase.color && !contributorsRawBase.length == 0){
             author.summary.remove += week.d
         })
 
-        gitter.weeks.slice(-10).forEach( week => {
+        gitter.weeks.slice(-4).forEach( week => {
             author.lastMonthActive.add += week.a
             author.lastMonthActive.remove += week.d
             author.lastMonthActive.commits += week.c

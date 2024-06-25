@@ -8,7 +8,7 @@ import {
 
 import { developersSection, membersSection, teamSorting } from '../../../_data/team';
 import { sortMembers } from '../composables/sorters';
-import * as team from '../../../_data/newteam.json'
+import * as team from '../../../_data/fullteam.json'
 
 
 import { useData } from 'vitepress'

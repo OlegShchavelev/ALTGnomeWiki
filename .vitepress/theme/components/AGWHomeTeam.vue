@@ -8,7 +8,7 @@ import {
 
 import { sortMembers } from '../composables/sorters';
 import { homeSorting, limit } from '../../../_data/team';
-import * as team from '../../../_data/newteam.json'
+import * as team from '../../../_data/fullteam.json'
 
 
 </script>

@@ -59,7 +59,7 @@ const teamRaw = contributions.map( member => ({
     ...gitMapContributors.find( contributor => contributor.name == member.name)
 }))
 
-if (!contributorsRawBase.color && !contributorsRawBase.length == 0){
+if (!contributorsRawBase.color && contributorsRawBase.length){
     for await (const gitter of contributorsRawBase) {
 
         const userMore = await userGetMore(gitter.author.login)

@@ -6,10 +6,11 @@ import {
   VPTeamMembers,
 } from 'vitepress/theme'
 
-import { developersSection, membersSection, teamSorting } from '../../../_data/team';
+import { data as gitOnline } from '../../../_data/gitlog-loader.data.ts'
+import { developersSection, membersSection, teamSorting, contributions } from '../../../_data/team';
 import { sortMembers } from '../composables/sorters';
-import * as team from '../../../_data/fullteam.json'
 
+console.log(gitOnline.length)
 
 import { useData } from 'vitepress'
 const { frontmatter } = useData();
@@ -17,8 +18,7 @@ const { frontmatter } = useData();
 </script>
 
 <template>
-    <VPTeamPage>
-
+    <VPTeamPage v-if="gitOnline.length">
         <VPTeamPageTitle>
             <template v-if="frontmatter.longtitle" #title>
                 {{ frontmatter.longtitle }}
@@ -34,7 +34,7 @@ const { frontmatter } = useData();
                     {{ developersSection.description }}}
                 </template>
                 <template #members>
-                    <VPTeamMembers :members="sortMembers(team.default, teamSorting).filter( member => member.title.includes('Разработчик'))" />
+                    <VPTeamMembers :members="sortMembers(gitOnline, teamSorting).filter( member => member.title.includes('Разработчик'))" />
                 </template>
             </VPTeamPageSection>
 
@@ -46,15 +46,24 @@ const { frontmatter } = useData();
                     {{ membersSection.description }}
                 </template>
                 <template #members>
-                    <VPTeamMembers :members="sortMembers(team.default, teamSorting).filter( member => !member.title.includes('Разработчик'))" />
+                    <VPTeamMembers :members="sortMembers(gitOnline, teamSorting).filter( member => !member.title.includes('Разработчик'))" />
                 </template>
             </VPTeamPageSection>
         </div>
 
         <div v-if="!teamSorting.includes('role')">
-            <VPTeamMembers :members="sortMembers(team.default, teamSorting)" />
+            <VPTeamMembers :members="sortMembers(gitOnline, teamSorting)" />
         </div>
 
+    </VPTeamPage>
+
+    <VPTeamPage v-if="!gitOnline.length">
+        <VPTeamPageTitle>
+            <template v-if="frontmatter.longtitle" #title>
+                {{ frontmatter.longtitle }}
+            </template>
+        </VPTeamPageTitle>
+        <VPTeamMembers :members="contributions" />
     </VPTeamPage>
 </template>
 

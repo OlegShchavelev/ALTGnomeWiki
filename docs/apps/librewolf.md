@@ -6,7 +6,7 @@ aggregation:
         build: offical
 appstream:
     name: Librewolf
-    icon: /librewolf/librewolf.png
+    icon: /librewolf/librewolf.svg
     summary: Максимально приватный и безопасный браузер
     developer:
         name: ohfp

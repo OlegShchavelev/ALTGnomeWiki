@@ -25,7 +25,7 @@ docs:
                     link: vivaldi
                   - name: Microsoft Edge
                     link: microsoft-edge
-                  - name: Librewolf
+                  - name: LibreWolf
                     link: librewolf
             - title: Мессенджеры
               icon:

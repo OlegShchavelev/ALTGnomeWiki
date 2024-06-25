@@ -1,11 +1,11 @@
 ---
-
 aggregation:
     flatpak:
         id: io.gitlab.librewolf-community
         build: offical
 appstream:
-    name: Librewolf
+    id: io.gitlab.librewolf-community
+    name: LibreWolf
     icon: /librewolf/librewolf.svg
     summary: Максимально приватный и безопасный браузер
     developer:

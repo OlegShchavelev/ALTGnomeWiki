@@ -31,7 +31,7 @@ const { frontmatter } = useData();
                     {{ developersSection.title }}
                 </template>
                 <template #lead>
-                    {{ developersSection.description }}}
+                    {{ developersSection.description }}
                 </template>
                 <template #members>
                     <VPTeamMembers :members="sortMembers(gitOnline, teamSorting).filter( member => member.title.includes('Разработчик'))" />

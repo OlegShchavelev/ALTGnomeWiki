@@ -34,7 +34,7 @@ jobs:
         run: npm ci
       - name: Parsing info about members from git
         run: |
-          npx esrun ./.tools/gitlog.ts --key="${{ secrets.VITE_GIT_KEY }}" --debug
+          npm run history:build -- --key="${{ secrets.VITE_GIT_KEY }}"
       - name: Build with VitePress
         run: |
           npm run docs:build

@@ -93,7 +93,10 @@ export default {
     ctx.app.provide(NolebaseEnhancedReadabilitiesInjectionKey, { locales:  locales} as NolebaseEnhancedReadabilitiesOptions)
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, { locales: pagePropertiesLocales, properties: pagePropertiesMD })
-    ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitOnline})
+    ctx.app.use(NolebaseGitChangelogPlugin, {
+      locales: gitLocales,
+      mapAuthors: gitOnline
+    })
 
     enhanceAppWithTabs(ctx.app)
   },

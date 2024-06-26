@@ -102,6 +102,7 @@ docs:
                     link: cassette
                   - name: Spotify
                     link: spotify
+gitChangelog: false
 ---
 
 # ALT REGULAR GNOME WIKI

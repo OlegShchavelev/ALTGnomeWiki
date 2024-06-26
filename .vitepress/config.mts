@@ -38,8 +38,6 @@ import {
   gitRepository,
   gitMaxCommits,
   gitDisplay,
-  gitRewritePath,
-  gitHeadersLocale
 } from '../_data/gitlog'
 
 export default defineConfig({
@@ -49,23 +47,8 @@ export default defineConfig({
       GitChangelog({
         maxGitLogCount: gitMaxCommits,
         repoURL: gitRepository,
-        rewritePathsBy: gitRewritePath,
       }),
       GitChangelogMarkdownSection({
-        getChangelogTitle: (_, __, { helpers }): string => {
-          return gitHeadersLocale.history_title
-        },
-        getContributorsTitle: (_, __, { helpers }): string => {
-          return gitHeadersLocale.author_title
-        },
-        excludes: [],
-        exclude: (_, { helpers }): boolean => {
-          for (var page of config.nolebase_exclude) {
-            if (helpers.idEndsWith(page))
-              return true
-          }
-          return false
-        },
         sections: gitDisplay,
       }),
       PageProperties(),

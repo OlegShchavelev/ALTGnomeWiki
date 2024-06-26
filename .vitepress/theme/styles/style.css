@@ -144,6 +144,10 @@
   background-color: var(--vp-c-gray-3) !important;
 }
 
+.vp-nolebase-git-changelog-contributors a {
+  text-decoration: none;
+}
+
 /**
  * Component: Page Properties
  * -------------------------------------------------------------------------- */

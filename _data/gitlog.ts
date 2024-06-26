@@ -22,18 +22,20 @@ export const gitRewritePath = {
 }
 
 
-export const gitHeadersLocale = {
-    author_title: "Авторы",
-    history_title: "История изменений",
-}
-
 export const gitLocales = {
     "ru-RU": {
-        noLogs: "Нет изменений",
-        lastEdited: "Последнее редактирование: {{daysAgo}}",
-        lastEditedDateFnsLocaleName: "ru",
-        viewFullHistory: "Показать историю",
-        committedOn: " от {{date}}"
+        changelog: {
+            title: "История изменений",
+            noData: "Нет изменений",
+            lastEdited: "Последнее редактирование: {{daysAgo}}",
+            lastEditedDateFnsLocaleName: "ru",
+            viewFullHistory: "Показать историю",
+            committedOn: " от {{date}}"
+        },
+        contributors: {
+            title: "Авторы",
+            noData: "Нет информации"
+        }
     }
 }
 

@@ -63,6 +63,7 @@ export const docs = [
           { text: 'GitHub Desktop', link: '/github-desktop' },
           { text: 'Google Chrome', link: '/google-chrome' },
           { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
+          { text: 'Gimp', link: '/gimp' },
           { text: 'Hardware Probe', link: '/hw-probe'},
           { text: 'Helvum', link: '/helvum' },
           { text: 'Heroic Games Launcher', link: '/heroic-games-launcher'},

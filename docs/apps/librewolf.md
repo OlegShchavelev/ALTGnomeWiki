@@ -6,7 +6,7 @@ aggregation:
 appstream:
     id: io.gitlab.librewolf-community
     name: LibreWolf
-    icon: /librewolf/librewolf.svg
+    icon: /librewolf/librewolf-logo.svg
     summary: Максимально приватный и безопасный браузер
     developer:
         name: ohfp
@@ -20,9 +20,9 @@ appstream:
 
 # LibreWolf
 
-LibreWolf — независимая версия Firefox, которая стремится быть более приватной и безопасной. По умолчанию установлены расширение uBlock Origin и поисковая система DuckDuckGo, отключена вся телеметрия из Firefox.
+LibreWolf — независимая версия [Firefox](/firefox), которая стремится быть более приватной и безопасной. По умолчанию установлены расширение uBlock Origin и поисковая система DuckDuckGo, отключена вся телеметрия из Firefox.
 
-![Интерфейс Librewolf](/librewolf/превью.png)
+![Интерфейс LibreWolf](/librewolf/librewolf-preview.png)
 
 <AGWGallery />
 <!--@include: @apps/_parts/install/content-flatpak.md-->

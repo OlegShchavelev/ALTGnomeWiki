@@ -347,7 +347,8 @@ export const docs = [
         link: '/games',
         items: [
           { text: 'Изменение clearcpuid', link: '/clearcpuid' },
-          { text: 'Mindustry', link: '/mindustry' }
+          { text: 'Mindustry', link: '/mindustry' },
+          { text: 'Sonic 3 A.I.R', link: '/sonic3-a.i.r' },
         ],
         collapsed: true
       }

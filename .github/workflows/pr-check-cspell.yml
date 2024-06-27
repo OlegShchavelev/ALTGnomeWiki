@@ -24,6 +24,6 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Check spell using yaspeller
+      - name: Check spell using cspell
         run: |
           npm run docs:cspeller-full

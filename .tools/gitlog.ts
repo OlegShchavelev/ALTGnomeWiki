@@ -83,7 +83,7 @@ const teamRaw = contributions.map( member => ({
 \t\t\t\t\t\t\t   Проверьте соединение с интернетом и ключ или оставьте ISSUE.`) )
         
         const author = {
-            nameAliases: [ gitter.author.login ],
+            mapByNameAliases: [ gitter.author.login ],
             name: userMore.name,
             title: "Участник",
             avatar: gitter.author.avatar_url,
@@ -116,7 +116,7 @@ const teamRaw = contributions.map( member => ({
         teamRaw.forEach( memberRaw => {
             if (memberRaw.name == userMore.name || Object.values(memberRaw.links[0])[1] == Object.values(author.links[0])[1] || ( memberRaw.nameAliases && memberRaw.nameAliases.includes(gitter.author.login))){
                 Object.keys(memberRaw).forEach( key => {
-                    key == "nameAliases" ? memberRaw[key].forEach(alias => {author[key].push(alias)}) : author[key] = memberRaw[key] 
+                    key == "mapByNameAliases" ? memberRaw[key].forEach(alias => {author[key].push(alias)}) : author[key] = memberRaw[key] 
                 })
             }
         })

@@ -5,7 +5,7 @@ aggregation:
 appstream:
     id: io.github.lainsce.Emulsion
     name: Emulsion
-    icon: /emulsion/io.github.lainsce.Emulsion.svg
+    icon: /emulsion/emulsion-logo.svg
     summary: Запаситесь красками
     metadata_license:
         name: GNU GPLv3
@@ -29,7 +29,7 @@ gallery:
 
 # Emulsion
 
-Emulsion - приложение для хранения и редактирования палитр удобным способом.
+Emulsion — приложение для хранения и редактирования палитр удобным способом.
 
 <AGWGallery />
 

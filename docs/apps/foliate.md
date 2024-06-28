@@ -11,7 +11,7 @@ appstream:
     id: com.github.johnfactotum.Foliate
     name: Foliate
     icon: /foliate/foliate-logo.svg
-    summary: Стильная читалка электронных книг
+    summary: Стильное приложение для чтения электронных книг
     metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
@@ -26,11 +26,9 @@ appstream:
 
 # Foliate
 
-Foliate — Стильная читалка электронных книг.
+Foliate — стильное приложение для чтения электронных книг.
 
 ![wfL](https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.Foliate-stable/1248x702/com.github.johnfactotum.Foliate-7ff807e57358053b92037e50c60f32a3.png)
-
-Откройте для себя новую главу в чтении электронных книг с Foliate, современной программной для чтения электронных книг, разработанной специально для окружения GNOME. Погрузитесь в удобный интерфейс с гибкими функциями настройки, созданными специально по предпочтениям пользователей и позволяющими настроить все под себя.
 
 Foliate имеет следующие функции:
 

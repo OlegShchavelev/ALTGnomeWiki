@@ -156,7 +156,3 @@ Flatseal — графическая утилита для просмотра и 
 ```shell
 rm ~/.local/share/flatpak/overrides/com.github.tchx84.Flatseal
 ```
-
-## Источники и ссылки
-
--   https://github.com/tchx84/Flatseal/blob/master/DOCUMENTATION.md

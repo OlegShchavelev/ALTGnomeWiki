@@ -22,11 +22,15 @@ epm -i appstream
 
 ## Использование утилиты Appstream CLI
 
-Для получения полного списка команд Appstream CLI выполните `appstreamcli --help`
+Полный список команд Appstream CLI:
+
+```
+appstreamcli --help
+```
 
 ### Получить метаданные в Appstream CLI
 
-Для поиска метаданных вы можете воспользоваться командой `search`:
+Поиск метаданных, команда `search`:
 
 ```shell
 appstreamcli search Yandex Browser
@@ -59,7 +63,7 @@ appstreamcli search Yandex Browser
 
 :::
 
-Или укажите ID приложения использую команду `get`:
+Или можно указать ID в команде `get`:
 
 ```shell
 appstreamcli get yandex-browser.desktop
@@ -68,7 +72,6 @@ appstreamcli get yandex-browser.desktop
 ::: details Метаданные Appstream CLI по ID приложения
 
 ```shell
-[oleg@alt-gnome ~]$ appstreamcli get yandex-browser.desktop
 Идентификатор: yandex-browser.desktop [desktop-application]
 Имя: Yandex Browser
 Сводка: The web browser from Yandex

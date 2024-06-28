@@ -7,7 +7,7 @@ aggregation:
 appstream:
     id: cc.arduino.arduinoide.desktop
     name: Arduino IDE
-    icon: /arduino-ide/cc.arduino.arduinoide.png
+    icon: /arduino-ide/arduino-ide-logo.png
     summary: IDE для разработки программ для Arduino-совместимых плат
     developer:
         name: Arduino LLC

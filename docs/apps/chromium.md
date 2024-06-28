@@ -37,7 +37,7 @@ Chromium — проект браузера с открытым исходным 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
 
-## Отображение шрифта Emoji при просмотре веб-страниц в браузере Chromium
+## Отображение Emoji-шрифта при просмотре веб-страниц в браузере Chromium
 
 Необходимо установить дополнительные шрифты:
 

@@ -3,10 +3,10 @@ aggregation:
     snap:
         id: anilibrix
         build: offical
-    epm: 
+    epm:
         play:
-             id: anilibrix
-             build: unoffical
+            id: anilibrix
+            build: unoffical
 appstream:
     id: anilibrix
     name: AniLibrix

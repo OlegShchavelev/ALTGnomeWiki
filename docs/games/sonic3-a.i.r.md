@@ -1,6 +1,6 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: org.sonic3air.Sonic3AIR
         build: offical
 appstream:
@@ -19,7 +19,7 @@ appstream:
 
 # Sonic 3 A.I.R
 
-Sonic 3 A.I.R — кроссплатформенный порт игры  Sonic 3 & Knuckles  с открытым исходным кодом.Распространяется под лицензией GNU GPLv3
+Sonic 3 A.I.R — кроссплатформенный порт игры Sonic 3 & Knuckles с открытым исходным кодом. Распространяется под лицензией GNU GPLv3
 
 ![Скриншот геймплея Sonic 3 A.I.R](/sonic3-a.i.r/preview.png)
 

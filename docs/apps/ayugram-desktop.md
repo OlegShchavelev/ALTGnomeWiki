@@ -2,7 +2,6 @@
 aggregation:
     sisyphus: ayugram-desktop
 appstream:
-    id: org.audacityteam.Audacity
     name: ayugram-desktop
     icon: /ayugram-desktop/AyuGram.png
     summary: Телеграм клиент с хорошей кастомизацией

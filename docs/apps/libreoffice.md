@@ -7,7 +7,7 @@ aggregation:
 appstream:
     id: org.libreoffice.LibreOffice
     name: LibreOffice
-    icon: /libreoffice/org.libreoffice.LibreOffice.desktop.png
+    icon: /libreoffice/libreoffice-logo.png
     summary: Мощный офисный пакет LibreOffice
     metadata_license:
         name: MPL-v2.0
@@ -25,14 +25,14 @@ appstream:
 
 # LibreOffice
 
-LibreOffice — мощный офисный пакет, полностью совместимый с 32/64-битными системами. Переведён более чем на 30 языков мира. Поддерживает большинство популярных операционных систем, включая GNU/Linux, Microsoft Windows и macOS.
+LibreOffice — мощный офисный пакет, полностью совместимый с 32-64-битными системами. Переведён более чем на 30 языков. Поддерживает большинство популярных операционных систем, включая Windows, macOS и системы, основанные на ядре GNU/Linux,.
 
 ## Установка из репозитория
 
 В репозитории Сизиф есть две версии **LibreOffice**, а именно:
 
--   **LibreOffice** - которая является стабильной версией, но с самыми передовыми нововведениями, так называемая **Fresh** версия
--   **LibreOffice (Still version)** - стабильная версия прошедшая длительное тестирование
+-   **LibreOffice** — стабильная версия с передовыми нововведениями (Fresh-версия)
+-   **LibreOffice (Still version)** — стабильная версия, прошедшая длительное тестирование
 
 Установить любую из версий **LibreOffice** можно любым привычным и удобным способом:
 
@@ -68,7 +68,7 @@ epm -i LibreOffice
 :::
 
 :::info
-Для улучшенной интеграции с Gnome, можно использовать пакеты **_LibreOffice-gtk3_** и **_LibreOffice-still-gtk3_** соответственно.
+Для улучшенной интеграции с GNOME, можно использовать пакеты `LibreOffice-gtk3` и `LibreOffice-still-gtk3` соответственно.
 
 Однако стоит учитывать, что при **Тёмном стиле** оформления Gnome, возможно не читаемость интерфейса офисного пакета
 
@@ -79,7 +79,7 @@ epm -i LibreOffice
 
 ## Шрифты в LibreOffice
 
-В документации LibreOffice [перечисленные шрифты](https://wiki.documentfoundation.org/Fonts), идущие в комплекте с LibreOffice. В ALT Regular Gnome вам может понадобиться установить дополнительные пакеты, к примеру для использования «Times New Roman» от Microsoft, установите в терминале следующий пакет:
+[В документации LibreOffice](https://wiki.documentfoundation.org/Fonts) перечисленны шрифты, идущие в комплекте из коробки. В ALT Regular Gnome вам может понадобиться установить дополнительные пакеты, к примеру для использования `Times New Roman` от Microsoft, установите в терминале следующий пакет:
 
 ::: code-group
 
@@ -95,4 +95,4 @@ epm -i fonts-ttf-ms
 
 :::
 
-В офисном пакете LibreOffice отсутствует шрифт, который вы используйте, [установите дополнительный шрифт](/add-fonts) и он появится в LibreOffice в списке шрифтов.
+Если в LibreOffice отсутствует шрифт, который вы используйте, [установите дополнительный шрифт](/add-fonts) и он появится в списке.

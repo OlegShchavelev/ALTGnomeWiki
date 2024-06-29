@@ -5,7 +5,7 @@ aggregation:
 appstream:
     id: io.gitlab.adhami3310.Footage
     name: Footage
-    icon: /footage/io.gitlab.adhami3310.Footage.png
+    icon: /footage/footage-logo.png
     summary: Улучшайте качество ваших видео
     metadata_license:
         name: GNU GPLv3

@@ -15,7 +15,7 @@ console.log(gitOnline)
 </script>
 
 <template>
-    <CientOnly>
+    <ClientOnly>
         <VPTeamPage v-if="gitOnline.length">
             <VPTeamPageTitle>
                 <template #title>
@@ -38,7 +38,7 @@ console.log(gitOnline)
                 <VPButton text="Все участники" class="button" size="big" href="/contributions" />
             </div>
         </VPTeamPage>
-    </CientOnly>
+    </ClientOnly>
 </template>
 
 <style scoped>

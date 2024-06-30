@@ -3,10 +3,13 @@ aggregation:
     flatpak:
         id: org.gimp.GIMP
         build: offical
+    snap:
+        id: gimp
+        build: offical
     sisyphus: gimp
 appstream:
     id: org.gimp.GIMP
-    name: GIMP
+    name: Gimp
     icon: /gimp/gimp-logo.svg
     summary: Растровый графический редактор
     developer:
@@ -19,11 +22,12 @@ appstream:
         bugtracker: https://gitlab.gnome.org/GNOME/gimp/-/issues
 ---
 
-# GIMP
+# Gimp
 
-GIMP — Растровый графический редактор с открытым исходным кодом.Распространяется под лицензией GNU GPLv3.
+GIMP — Растровый графический редактор с открытым исходным кодом. Распространяется под лицензией GNU GPLv3.
 
 ![Интерфейс GIMP](/gimp/gimp-1.png)
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

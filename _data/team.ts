@@ -60,8 +60,17 @@ export const contributions = [
     links: [
       { icon: 'github', link: 'https://github.com/trashb1t' }
     ]
-  },
-  {
+  }, {
+    avatar: 'https://avatars.githubusercontent.com/u/47402692?v=4',
+    name: 'Давид Султаниязов',
+    title: 'Разработчик, Участник',
+    links: [
+      { icon: 'github', link: 'https://github.com/X1Z53' },
+      { icon: { svg: gitverse }, link: 'https://gitverse.ru/x1z53' }
+    ],
+    actionText: 'Поддержать',
+    sponsor: 'https://www.tinkoff.ru/cf/IpsmO1P5PJ'
+  }, {
     avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
     name: 'Семен Фомченков',
     title: 'Участник',
@@ -296,16 +305,6 @@ export const contributions = [
     links: [
       { icon: 'github', link: 'https://github.com/Krator3' }
     ],
-  }, {
-    avatar: 'https://avatars.githubusercontent.com/u/47402692?v=4',
-    name: 'Давид Султаниязов',
-    title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/X1Z53' },
-      { icon: { svg: gitverse }, link: 'https://gitverse.ru/x1z53' }
-    ],
-    actionText: 'Поддержать',
-    sponsor: 'https://www.tinkoff.ru/cf/IpsmO1P5PJ'
   }, {
     avatar: 'https://avatars.githubusercontent.com/u/57837842?v=4',
     name: 'Cyber:X',

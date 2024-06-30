@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: com.sudovanilla.penpot-desktop
-        build: offical
+        build: unoffical
 appstream:
     id: com.sudovanilla.penpot-desktop
     name: Penpot Desktop
@@ -20,6 +20,6 @@ appstream:
 
 # Penpot Desktop
 
-Penpot Desktop — первая платформа для проектирования и прототипирования с открытым исходным кодом, предназначенная для междоменных команд. Penpot не зависит от операционных систем, он основан на облачных технологиях и работает с открытыми веб-стандартами. Penpot Desktop не официальный клиент с поддержкой от сообщества.
+Penpot Desktop — первая платформа для проектирования и прототипирования с открытым исходным кодом, предназначенная для междоменных команд. Penpot не зависит от операционных систем, основан на облачных технологиях и работает с открытыми веб-стандартами. Penpot Desktop неофициальный клиент с поддержкой от сообщества.
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->

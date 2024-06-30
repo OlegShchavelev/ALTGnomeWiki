@@ -6,7 +6,7 @@ aggregation:
 appstream:
     id: org.sonic3air.Sonic3AIR
     name: Sonic 3 A.I.R
-    icon: /sonic3-a.i.r/sonic3.png
+    icon: /sonic3-a.i.r/sonic3-a.i.r-logo.png
     summary: Порт игры Sonic 3 & Knuckles с большим количеством настроек и модов
     developer:
         name: Eukaryot
@@ -21,31 +21,28 @@ appstream:
 
 Sonic 3 A.I.R — кроссплатформенный порт игры Sonic 3 & Knuckles с открытым исходным кодом. Распространяется под лицензией GNU GPLv3
 
-![Скриншот геймплея Sonic 3 A.I.R](/sonic3-a.i.r/preview.png)
+![Геймплей Sonic 3 A.I.R](/sonic3-a.i.r/sonic3-a.i.r-1.png)
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 
-## Установка Модов
+## Установка модов
 
-Скачиваем мод и открываем архив.Распоковываем архив по пути `/home/****/.var/app/org.sonic3air.Sonic3AIR/data/Sonic3AIR/mods`
+Скачайте интересующий мод и распакуйте архив по пути `$HOME/.var/app/org.sonic3air.Sonic3AIR/data/Sonic3AIR/mods`
 
-![Куда будет распокован архив](/sonic3-a.i.r/installing-mods.png)
+![Место распаковки мода](/sonic3-a.i.r/sonic3-a.i.r-2.png)
 
 ::: warning
-
-Для запуска игры вам потребуется Rom игры или купленая в Стиме Sonic 3 & Knuckles.
-
+Для запуска игры вам потребуется ROM игры или купленная [Sonic 3 & Knuckles](https://store.steampowered.com/app/71162) в [Steam](/steam).
 :::
 
-Запускаем игру и нажимем `Enter`.После этого мы попадаем  меню и с помощью стрелочек выбираем пункт `mods`.
+Запустите игру и нажмите [[Enter]]. После этого откроется меню и с помощью стрелочек выберите пункт `MODS`.
 
-![Меню с выбранным пунктом mods](/sonic3-a.i.r/installing-mods2.png)
+![Главное меню](/sonic3-a.i.r/sonic3-a.i.r-3.png)
 
-Во вкладке `Inactive mods` находится наш мод.Нажимаем на `A`.
+Во вкладке `Inactive mods` находится распакованный мод. Нажмите на [[A]].
 
-![Включаем мод](/sonic3-a.i.r/installing-mods3.png)
+![Включение мода](/sonic3-a.i.r/sonic3-a.i.r-4.png)
 
-А потом на клавиатуре на стрелку влево.И мод успешно включен
+Нажмите стрелку влево и мод будет успешно включён
 
-![Мод включен](/sonic3-a.i.r/installing-mods4.png)
-
+![Мод включён](/sonic3-a.i.r/sonic3-a.i.r-5.png)

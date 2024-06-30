@@ -22,7 +22,7 @@ appstream:
         bugtracker: https://gitlab.gnome.org/GNOME/gimp/-/issues
 ---
 
-# GIMP
+# Gimp
 
 GIMP — Растровый графический редактор с открытым исходным кодом. Распространяется под лицензией GNU GPLv3.
 

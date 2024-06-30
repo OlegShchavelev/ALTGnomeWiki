@@ -58,7 +58,7 @@ npm run docs:dev
 
 Для того, чтобы ваши изменения стали доступны всем, нужно открыть pull-request.
 
-Процесс его открытия также описан на [нашей вики в разделе "Внесение изменений"](https://alt-gnome.wiki/reference/pages/alteration.html#_3-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC-pull-request)
+Процесс его открытия также описан на [нашей вики в разделе "Внесение изменений"](https://alt-gnome.wiki/reference/pages/alteration.html#_3-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC-pull-request).
 
 
 ## Зеркало

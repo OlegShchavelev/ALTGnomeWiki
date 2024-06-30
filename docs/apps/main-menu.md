@@ -6,7 +6,7 @@ aggregation:
 appstream:
     id: page.codeberg.libre_menu_editor.LibreMenuEditor
     name: Main Menu
-    icon: /main-menu/icon.png
+    icon: /main-menu/main-menu-logo.png
     summary: Программа для настройки главного меню
     developer:
         name: libre-menu-editor
@@ -22,6 +22,6 @@ appstream:
 
 Main Menu — программа для настройки главного меню с открытым кодом. Распространяется под лицензией GNU GPLv3. Она содержит список всех приложений, которые установлены на вашем компьютере
 
-![Интерфейс Main Menu](/main-menu/preview.png)
+![Интерфейс Main Menu](/main-menu/main-menu-1.png)
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->

@@ -5,7 +5,7 @@ aggregation:
 appstream:
     id: io.github.bytezz.IPLookup
     name: IP Lookup
-    icon: /ip-lookup/io.github.bytezz.IPLookup.svg
+    icon: /ip-lookup/ip-lookup-logo.svg
     summary: Найти информацию об IP-адресе
     developer:
         name: Bytez
@@ -22,7 +22,7 @@ appstream:
 
 # IP Lookup
 
-IP Lookup — приложение, позволяющие просмотреть информацию об ip адресе! Можно узнать сеть, организацию, адрес и многое другое.
+IP Lookup — приложение, позволяющие просмотреть информацию об IP-адресе. Можно узнать сеть, организацию, адрес и многое другое.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

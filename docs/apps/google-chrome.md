@@ -26,7 +26,7 @@ appstream:
 
 # Google Chrome
 
-Google Chrome — Браузер, разрабатываемый компанией Google на основе свободного браузера Chromium и движка Blink. Первая стабильная версия вышла для операционных систем семейства Linux вышла в мае 2010 года.
+Google Chrome — браузер, разрабатываемый компанией Google на основе свободного браузера [Chromium](/chromium) и движка Blink. Первая стабильная версия вышла для операционных систем семейства Linux вышла в мае 2010 года.
 
 ![google-chrome](/google-chrome/google-chrome-1.png)
 

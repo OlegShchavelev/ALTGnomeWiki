@@ -1,78 +1,79 @@
 {
-  "name": "@alt-gnome/alt-wiki-vitepress-gnome",
-  "description": "Библиотека знаний операционной системы ALT Regular Gnome",
-  "homepage": "https://alt-gnome.wiki/",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/OlegShchavelev/ALTGnomeWiki/issues"
-  },
-  "keywords": [
-    "linux",
-    "altgnome",
-    "altregulargnome",
-    "altgnomewiki",
-    "altwiki",
-    "vitepress"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OlegShchavelev/ALTGnomeWiki"
-  },
-  "type": "module",
-  "remarkConfig": {
-    "plugins": [
-      "remark-lint-no-multiple-toplevel-headings"
-    ]
-  },
-  "scripts": {
-    "history:build": "npx esrun ./.tools/gitlog.ts",
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
-    "docs:speller-full": "yaspeller ./docs --only-errors",
-    "docs:speller": "yaspeller",
-    "docs:cspeller-full": "npx cspell ./docs/**/*.md --show-context --show-suggestions --color",
-    "docs:cspeller": "npx cspell --color --show-context --show-suggestions",
-    "docs:remark-full": "remark ./docs --frail",
-    "docs:remark": "remark "
-  },
-  "devDependencies": {
-    "@hywax/vitepress-yandex-metrika": "^0.4.0",
-    "@iconify-json/icon-park-outline": "^1.1.15",
-    "@iconify-json/svg-spinners": "^1.1.2",
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.0.0-rc11",
-    "@nolebase/vitepress-plugin-git-changelog": "^2.0.0-rc12",
-    "@nolebase/vitepress-plugin-page-properties": "^2.0.0-rc11",
-    "@types/markdown-it": "^13.0.5",
-    "@types/markdown-it-container": "^2.0.8",
-    "@types/node": "^20.14.8",
-    "cspell": "^8.8.4",
-    "markdown-it": "^13.0.2",
-    "markdown-it-conditional-render": "^0.1.0",
-    "markdown-it-container": "^3.0.0",
-    "markdown-it-html5-embed": "^0.3.3",
-    "markdown-it-implicit-figures": "^0.12.0",
-    "markdown-it-kbd": "^2.2.2",
-    "markdown-it-task-lists": "^2.1.1",
-    "remark-cli": "^12.0.1",
-    "typescript": "^5.5.2",
-    "vitepress": "^1.1.4",
-    "vitepress-markdown-timeline": "^1.2.1",
-    "vitepress-plugin-image-viewer": "1.1.2",
-    "vitepress-plugin-tabs": "^0.5.0",
-    "yaspeller": "^10.0.1"
-  },
-  "dependencies": {
-    "@cspell/dict-ru_ru": "^2.2.1",
-    "@digitak/esrun": "^3.2.26",
-    "@octokit/core": "^6.1.2",
-    "args-parser": "^1.3.0",
-    "remark-lint-no-multiple-toplevel-headings": "^4.0.0",
-    "shiki": "^1.2.0",
-    "swiper": "^11.0.6",
-    "ts-node": "^10.9.2",
-    "unocss": "^0.58.6",
-    "vue-silentbox": "^3.0.4",
-    "yargs": "^17.7.2"
-  }
+    "name": "@alt-gnome/alt-wiki-vitepress-gnome",
+    "description": "Библиотека знаний операционной системы ALT Regular Gnome",
+    "homepage": "https://alt-gnome.wiki/",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/OlegShchavelev/ALTGnomeWiki/issues"
+    },
+    "keywords": [
+        "linux",
+        "altgnome",
+        "altregulargnome",
+        "altgnomewiki",
+        "altwiki",
+        "vitepress"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OlegShchavelev/ALTGnomeWiki"
+    },
+    "type": "module",
+    "remarkConfig": {
+        "plugins": [
+            "remark-lint-no-multiple-toplevel-headings"
+        ]
+    },
+    "scripts": {
+        "history:build": "npx esrun ./.tools/gitlog.ts",
+        "docs:dev": "vitepress dev",
+        "docs:build": "vitepress build",
+        "docs:preview": "vitepress preview",
+        "docs:spell-check": "npm run docs:yaspeller-full && npm run docs:cspell-full",
+        "docs:yaspeller-full": "yaspeller ./docs --only-errors",
+        "docs:yaspeller": "yaspeller",
+        "docs:cspell-full": "npx cspell ./docs/**/*.md --show-context --show-suggestions --color",
+        "docs:cspell": "npx cspell --color --show-context --show-suggestions",
+        "docs:remark-full": "remark ./docs --frail",
+        "docs:remark": "remark "
+    },
+    "devDependencies": {
+        "@hywax/vitepress-yandex-metrika": "^0.4.0",
+        "@iconify-json/icon-park-outline": "^1.1.15",
+        "@iconify-json/svg-spinners": "^1.1.2",
+        "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.0.0-rc11",
+        "@nolebase/vitepress-plugin-git-changelog": "^2.0.0-rc12",
+        "@nolebase/vitepress-plugin-page-properties": "^2.0.0-rc11",
+        "@types/markdown-it": "^13.0.5",
+        "@types/markdown-it-container": "^2.0.8",
+        "@types/node": "^20.14.8",
+        "cspell": "^8.8.4",
+        "markdown-it": "^13.0.2",
+        "markdown-it-conditional-render": "^0.1.0",
+        "markdown-it-container": "^3.0.0",
+        "markdown-it-html5-embed": "^0.3.3",
+        "markdown-it-implicit-figures": "^0.12.0",
+        "markdown-it-kbd": "^2.2.2",
+        "markdown-it-task-lists": "^2.1.1",
+        "remark-cli": "^12.0.1",
+        "typescript": "^5.5.2",
+        "vitepress": "^1.1.4",
+        "vitepress-markdown-timeline": "^1.2.1",
+        "vitepress-plugin-image-viewer": "1.1.2",
+        "vitepress-plugin-tabs": "^0.5.0",
+        "yaspeller": "^10.0.1"
+    },
+    "dependencies": {
+        "@cspell/dict-ru_ru": "^2.2.1",
+        "@digitak/esrun": "^3.2.26",
+        "@octokit/core": "^6.1.2",
+        "args-parser": "^1.3.0",
+        "remark-lint-no-multiple-toplevel-headings": "^4.0.0",
+        "shiki": "^1.2.0",
+        "swiper": "^11.0.6",
+        "ts-node": "^10.9.2",
+        "unocss": "^0.58.6",
+        "vue-silentbox": "^3.0.4",
+        "yargs": "^17.7.2"
+    }
 }

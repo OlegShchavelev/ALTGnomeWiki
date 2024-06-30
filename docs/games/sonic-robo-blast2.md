@@ -5,11 +5,11 @@ aggregation:
         build: offical
 appstream:
     id: org.srb2.SRB2
-    name: Sonic Robo blast 2
-    icon: /sonic-robo-blast2/icon.png
-    summary:  3D-фанатская игра про ежика Соника с открытым исходным кодом
+    name: Sonic Robo Blast 2
+    icon: /sonic-robo-blast2/sonic-robo-blast2-logo.png
+    summary: Фанатская 3D-игра про ёжика Соника с открытым исходным кодом
     developer:
-        name: Sonic Team Junior 
+        name: Sonic Team Junior
     metadata_license:
         name: GNU GPL2v
         link: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -17,9 +17,9 @@ appstream:
         homepage: https://www.srb2.org/download/
 ---
 
-# Sonic Robo blast 2
+# Sonic Robo Blast 2
 
-Sonic Robo blast 2 — это 3D-фанатская игра про ежика Соника с открытым исходным кодом, используя движок `Doom Legacy`.
+Sonic Robo Blast 2 — это фанатская 3D-игра про ёжика Соника с открытым исходным кодом, используя движок `Doom Legacy`.
 
 <AGWGallery />
 <!--@include: @apps/_parts/install/content-flatpak.md-->

@@ -3,10 +3,13 @@ aggregation:
     flatpak:
         id: org.gimp.GIMP
         build: offical
+    snap:
+        id: gimp
+        build: offical
     sisyphus: gimp
 appstream:
     id: org.gimp.GIMP
-    name: GIMP
+    name: Gimp
     icon: /gimp/gimp-logo.svg
     summary: Растровый графический редактор
     developer:
@@ -27,3 +30,4 @@ GIMP — Растровый графический редактор с откр�
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

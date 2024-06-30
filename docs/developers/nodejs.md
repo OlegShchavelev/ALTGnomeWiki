@@ -65,7 +65,7 @@ Node.js SDK extension        Node.js SDK extension                              
 flatpak install flathub org.freedesktop.Sdk.Extension.node20
 ```
 
-Разрешите использовать расширение SDK Node.js в изолированном Flatpak-приложении, в котором вы будете использовать `Node.js`. Для этого необходимо [установить Flatseal](flatseal), выберите приложение и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
+Разрешите использовать расширение SDK Node.js в изолированном [Flatpak](/flatpak)-приложении, в котором вы будете использовать `Node.js`. Для этого необходимо [установить Flatseal](flatseal), выберите приложение и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
 
 ## Выпуски Node.js
 

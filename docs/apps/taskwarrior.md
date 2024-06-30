@@ -14,18 +14,20 @@ appstream:
         homepage: https://taskwarrior.org/
 ---
 
-
 # Taskwarrior
+
 Taskwarrior - приложение для управления задачами с широкими возможностями по кастомизации, с текстовым интерфейсом.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 
 ## Создание задач
+
 Для добавления новой задачи достаточно выполнить команду:
 **task add название задачи**
 
 Пример:
-``` bash
+
+```bash
 $ task add Бросить кабель
 Created task 1.
 
@@ -44,18 +46,20 @@ ID Age  Description                 Urg
 
 3 tasks
 ```
+
 ::: info
 В задаче 2 ошибка сделана намеренно, будем исправлять чуть ниже.
 :::
 
 ### Задача с датой завершения, высоким приоритетом и проектом.
+
 Дата указывается в параметре: **due**
 дату можно указывать в формате: 20th - для текущего месяца
 или полностью: 2024-06-20
 приоритет: **priority**
 проект: **project**
 
-``` bash
+```bash
 $ task add project:Еда due:2024-06-24 priority:H сделать окрошку
 Created task 5.
 The project 'Еда' has changed.  Project 'Еда' is 0% complete (2 of 2 tasks remaining).
@@ -72,8 +76,10 @@ ID Age  D P Project Tags     Due        Description                 Urg
 ```
 
 ## Изменение задачи
+
 Изменение названия задачи выполняется с применением команды modify
-``` bash
+
+```bash
 $ task 2 modify кабель-канал
 $ task list
 
@@ -86,28 +92,32 @@ ID Age  Description                 Urg
 ```
 
 Для полностью ручного изменения задачи используется команда edit
-``` bash
+
+```bash
 $ task 1 edit
 ```
+
 Откроется внешний редактор с подробными данными о задаче (целиком приводить его нет смысла - он достаточно объемный).
 
 ::: info
 Под ALT Linux наблюдается проблема при использовании GVim - открывается пустой файл, что-то с передачей пути, поэтому предварительно можно выбрать любой другой редактор.
 :::
 
-``` bash
+```bash
 VISUAL="mousepad"
 
 $ task 1 edit
 ```
 
 ### Изменение названия у задачи
+
 Существует возможность изменения задачи без применения modify и последующего написания нового обновленного текста, или использования edit.
 **append** - для добавления в конец
 **prepend** - для добавления к началу
 
 Пример append
-``` bash
+
+```bash
 $ task 1 append до сарая
 Appending to task 1 'Бросить кабель до сарая'.
 Appended 1 task.
@@ -124,7 +134,8 @@ ID Age   D Project Description                 Urg
 ```
 
 пример prepend
-``` bash
+
+```bash
 $ task 1 prepend Срочно
 Prepending to task 1 'Срочно Бросить кабель до сарая'.
 Prepended 1 task.
@@ -133,7 +144,8 @@ Project 'ремонт' is 0% complete (1 task remaining).
 ```
 
 ### Добавить дату завершения у задачи
-``` bash
+
+```bash
 $ task 1 modify due:2024-06-30
 Modifying task 1 'Срочно Бросить кабель'.
 Modified 1 task.
@@ -145,41 +157,49 @@ Project 'ремонт' is 0% complete (1 task remaining).
 **wait** - позволяет не отображать задачу в списках до наступления указанной даты.
 
 #### Просмотр списка задач с заполненной датой в атрибуте waiting
-``` bash
+
+```bash
 $ task waiting
 ```
 
 ## Отмена последних внесенных изменений
+
 Как же мы и здесь без всемогущего undo.
-``` bash
+
+```bash
 $ task undo
 ```
+
 ![Результат отмены](/taskwarrior/task_undo.png)
 
 ## Сделать задачу активной
-``` bash
+
+```bash
 $ task 2 start
 Starting task 2 'Купить кабель-канал'.
 Started 1 task.
 Project 'покупки' is 0% complete (2 of 2 tasks remaining).
- ```
+```
 
 ## Остановить задачу
-``` bash
+
+```bash
 $ task 2 stop
 Stopping task 2 'Купить кабель-канал'.
 Stopped 1 task.
 Project 'покупки' is 0% complete (2 of 2 tasks remaining).
- ```
+```
 
 ## Список активных задач
-``` bash
+
+```bash
 $ task active
 No matches.
 ```
 
 Нет в списке активных задач, запустим задачу 2
-``` bash
+
+```bash
 $ task 2 start
 Starting task 2 'Купить кабель ВВГ 3х2,5'.
 Started 1 task.
@@ -194,26 +214,31 @@ ID Started    Active Age Project Description
 ```
 
 ## Завершение задачи
-``` bash
+
+```bash
 $ task 2 done
 Completed task 2 'Купить кабель-канал'.
 Completed 1 task.
 The project 'покупки' has changed.  Project 'покупки' is 50% complete (1 of 2 tasks remaining).
 ```
+
 После завершения задачи у нее удаляется ID, остается только UUID идентификатор.
 
 ## Удаление задачи
+
 Для удаления задачи используется команда **delete**
 
 Пример:
-``` bash
+
+```bash
 task 4 delete
 ```
 
 ## Копирование задачи
+
 Для создания копии задачи используется команда duplicate, не копируются данные о зависимостях задачи и ее приоритет.
 
-``` bash
+```bash
 $ task 2 duplicate
 Duplicated task 2 'Купить кабель ВВГ 3х2,5'.
 Created task 3.
@@ -231,8 +256,10 @@ ID Active Age D Project Description                 Urg
 ```
 
 ## Теги
+
 ### Добавление тега к задаче
-``` bash
+
+```bash
 $ task 3 modify +дача
 Modifying task 3 'Купить саморезы'.
 Modified 1 task.
@@ -247,9 +274,9 @@ ID Age  D Project Tags Description                 Urg
 3 tasks
 ```
 
-
 Добавим несколько тегов к двум задачам:
-``` bash
+
+```bash
 $ task 2 3 modify +дача,дом
 Modifying task 2 'Купить кабель ВВГ 3х2,5'.
 Modifying task 3 'Купить саморезы'.
@@ -267,7 +294,8 @@ ID Age   D Project Tags     Description                 Urg
 ```
 
 ### Список тегов
-``` bash
+
+```bash
 $ task tags
 
 Tag  Count
@@ -276,7 +304,8 @@ Tag  Count
 ```
 
 ### Список задач с определенным тегом
-``` bash
+
+```bash
 $ task +дача
 [task next ( +дача )]
 
@@ -288,21 +317,24 @@ ID Age   Project Tag      Description             Urg
 ```
 
 ## Управление приоритетом задачи
+
 Для управления приоритетом используются уровни:
 **H** - высокий,
 **M** - обычный (средний),
 **L** - низкий
 Пример установки для задачи 2 высокого приоритета
-``` bash
+
+```bash
 task 2 modify priority:H
 ```
 
-
 ## Связывание задач в цепочки
+
 Для управления зависимостями задачи от одной или нескольких других используется свойство **depends**.
 
 Пример установки зависимости задачи 1 от задач 2 и 3
-``` bash
+
+```bash
 $ task 1 modify depends:3
 Modifying task 1 'Бросить кабель'.
 Modified 1 task.
@@ -323,10 +355,12 @@ ID Age  D Description                 Urg
 ```
 
 ## Добавление задачи в проект
+
 Задачи можно группировать по проектам, это позволит фильтровать дополнительно к тегам.
 
-Пример добавления задачи 1 в проект *ремонт*, а 2 и 3 в проект *покупки*.
-``` bash
+Пример добавления задачи 1 в проект _ремонт_, а 2 и 3 в проект _покупки_.
+
+```bash
 $ task 1 modify project:ремонт
 Modifying task 1 'Бросить кабель'.
 Modified 1 task.
@@ -355,32 +389,40 @@ ID Age  D Project Description                 Urg
 3 tasks
 ```
 
-
 ## Добавление собственных атрибутов задачам
+
 Существует возможность добавления собственных атрибутов для задач, реализовано это за счет использования префикса UDA (user defined attributes) в конфигурационном файле.
 
-### Добавить атрибут *стоимость*
+### Добавить атрибут _стоимость_
+
 Первым делом добавим тип данных для атрибута:
-``` bash
+
+```bash
 $ task config uda.cost.type numeric
 Are you sure you want to add 'uda.cost.type' with a value of 'numeric'? (yes/no) yes
 Config file ~/.taskrc modified.
 ```
+
 Теперь необходимо добавить отображаемую метку:
-``` bash
+
+```bash
 $ task config uda.cost.label Стоимость
 Are you sure you want to add 'uda.cost.label' with a value of 'Стоимость'? (yes/no) yes
 Config file ~/.taskrc modified.
 ```
+
 Добавляем данные о стоимости в задачу:
-``` bash
+
+```bash
 $ task 2 modify cost:10000
 Modifying task 2 'Купить кабель ВВГ 3х2,5'.
 Modified 1 task.
 Project 'покупки' is 33% complete (2 of 3 tasks remaining).
 ```
+
 И увидеть результат, в котором есть наша стоимость:
-``` bash
+
+```bash
 $ task 2
 No command specified - assuming 'information'.
 
@@ -413,10 +455,12 @@ Date                Modification
 ```
 
 ### Добавление атрибута в отчет
+
 Для добавления атрибута в отчет начнем отталкиваться с стандартных настроек отчета, в качестве примера добавим нашу Стоимость в стандартный отчет **list**
 
 Отображение текущих настроек отчета list
-``` bash
+
+```bash
 $ task show list
 
 Config Variable         Value
@@ -430,7 +474,8 @@ report.list.sort        start-,due+,project+,urgency-
 ```
 
 Добавим нужное поле в columns и labels
-``` bash
+
+```bash
 $ task config report.list.columns     id,start.age,entry.age,depends.indicator,priority,project,tags,recur.indicator,scheduled.countdown,due,until.remaining,description.count,urgency,cost
 Are you sure you want to add 'report.list.columns' with a value of 'id,start.age,entry.age,depends.indicator,priority,project,tags,recur.indicator,scheduled.countdown,due,until.remaining,description.count,urgency,cost'? (yes/no) yes
 Config file ~/.taskrc modified.
@@ -439,8 +484,10 @@ $ task config report.list.labels ID,Active,Age,D,P,Project,Tags,R,Sch,Due,Until,
 Are you sure you want to add 'report.list.labels' with a value of 'ID,Active,Age,D,P,Project,Tags,R,Sch,Due,Until,Description,Urg,Стоимость'? (yes/no) yes
 Config file ~/.taskrc modified.
 ```
+
 Проверка результата
-``` bash
+
+```bash
 $ task list
 
 ID Age D Project Tags     Due        Description                 Urg  Стоимость
@@ -453,14 +500,18 @@ ID Age D Project Tags     Due        Description                 Urg  Стоим
 ```
 
 ## Контекст
+
 Для фильтрации задач на определенном контексте во время работы можно использовать контексты.
 
-Создание нового контекста *дом*, для которого фильтром выступает тег *дом*
-``` bash
+Создание нового контекста _дом_, для которого фильтром выступает тег _дом_
+
+```bash
 $ task context define дом "+дом"
- ```
+```
+
 Переключение текущего контекста
-``` bash
+
+```bash
 $ task context дом
 Context 'дом' set. Use 'task context none' to remove.
 
@@ -475,16 +526,17 @@ ID Age D Project Tags     Due        Description                 Urg  Стоим
 ```
 
 Снятие активного контекста - для отображения всех задач
-``` bash
+
+```bash
 $ task context none
 Context unset.
 ```
 
-
 ## Отчеты
 
 ### Список возможных отчетов
-``` bash
+
+```bash
 $ task report
 
 Report           Description
@@ -519,8 +571,10 @@ waiting          Waiting (hidden) tasks
 
 28 reports
 ```
+
 ### пример недельного отчета
-``` bash
+
+```bash
  $ task timesheet
 
 2024-06-09 - 2024-06-15
@@ -532,7 +586,8 @@ waiting          Waiting (hidden) tasks
 ```
 
 ### Выполненные задачи
-``` bash
+
+```bash
 $ task completed
 
 ID UUID     Created    Completed  Age Project Description
@@ -541,15 +596,17 @@ ID UUID     Created    Completed  Age Project Description
 1 task
 ```
 
-
 ### Пример графического отчета
-``` bash
+
+```bash
 task ghistory
 ```
+
 ![графический отчет](/taskwarrior/task_ghistory.png)
 
 ### Пример общего отчета
-``` bash
+
+```bash
 $ task history
 
 Year Month   Added Completed Deleted Net
@@ -558,14 +615,18 @@ Year Month   Added Completed Deleted Net
 ```
 
 ### Пример графического отчета по дням
-``` bash
+
+```bash
 task burndown.daily
 ```
+
 ![графический отчет по дням](/taskwarrior/task_burn_daily.png)
 
 ### Создание собственного отчета
+
 Для ускорения, а так-же демонстрации ручного изменения конфигурации не будем использовать task config, а сразу откроем ~/.taskrc в текстовом редакторе и будем добавлять необходимые данные в конец файла.
 Пример создания отчета состоящего только из созданного ранее поля **cost**
+
 ```
 # _____ CUSTOM_REPORTS_____
 report.Costs.description=Траты в задачах
@@ -574,7 +635,8 @@ report.Costs.labels=Стоимость
 ```
 
 Проверяем результат:
-``` bash
+
+```bash
 $ task Costs
 
 Стоимость
@@ -584,18 +646,24 @@ $ task Costs
 ```
 
 ## Дополнительные команды
+
 ### Калькулятор
+
 Да, он тут тоже есть
-``` bash
+
+```bash
 $ task calc 2+3
 5
 ```
 
 ### Календарь
+
 Календарь подсвечивает все даты с запланированными задачами.
-``` bash
+
+```bash
 $ task calendar
 ```
+
 ![календарь](/taskwarrior/task_calendar.png)
 
 Как видим по умолчанию недели начинаются с Воскресенья, для исправления необходимо добавить строку:
@@ -604,8 +672,10 @@ $ task calendar
 ![календарь исправленный](/taskwarrior/task_calendar_fixed.png)
 
 ### Экспорт задач
+
 Для экспорта задач используется команда export.
-``` bash
+
+```bash
 task export
 [
 {"id":1,"depends":"41aca2e4-def9-48e4-8342-9a65637649d0,bec68c82-2e6b-4405-9bfa-20be651c8d1b","description":"Бросить кабель","entry":"20240615T025635Z","modified":"20240615T030333Z","project":"ремонт","status":"pending","uuid":"585d5567-cf08-4a73-ab2c-e56c261e7ab3","urgency":-4},
@@ -616,25 +686,30 @@ task export
 ```
 
 export по умолчанию выводит на stdout, поэтому вывод стоит перенаправлять сразу в желаемый файл.
-``` bash
+
+```bash
 task export > ~/.task_backup.txt
 ```
 
 ### Список всех настроек и алиасов для команд
-``` bash
+
+```bash
 task show
 ```
 
 ### Цвета
-``` bash
+
+```bash
 task color
 ```
+
 ![Пример цветового оформления](/taskwarrior/task_color.png)
 У меня используется палитра solarized-light, настройки находятся в ~/.taskrc, там же есть набор из предустановленных тем, достаточно просто раскомментировать интересующую из них.
 
-
 ## Bash alias
+
 По желанию можно добавить alias-ы на наиболее частые команды или функции
+
 ```
 alias ta="task add $1"
 alias tl="task list"
@@ -646,9 +721,11 @@ taskprojectfunction() {
 }
 alias t_p=taskprojectfunction
 ```
+
 Таким образом можно создавать функции состоящие из набора заготовленных задач, при создании которых будут автоматически создаваться и необходимые подзадачи.
 
 ## В качестве резюме
+
 Также стоит отметить, что taskwarrior может работать в качестве сервера, клиенты есть почти для всех платформ и на мобильных устройствах в том числе, что значительно расширяет возможности применения.
 
-В качестве бонусных возможностей за рамками остались: создание собственных расцветок у полей в отчетах, добавление хуков к созданию/изменению задач, и много-много прочего, что крайне сумбурно собрано в официальной документации (местами еще более сумбурная, чем то, что я попытался собрать здесь).
+В качестве бонусных возможностей за рамками остались: создание собственных расцветок у полей в отчётах, добавление хуков к созданию/изменению задач, и много-много прочего, что крайне сумбурно собрано в официальной документации (местами ещё более сумбурная, чем то, что я попытался собрать здесь).

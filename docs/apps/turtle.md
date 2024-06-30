@@ -31,12 +31,12 @@ gallery:
 
 Управляйте своими репозиториями Git с помощью удобных диалоговых окон в Файлах. В данный момент доступны следующие команды Git:
 
--   commit, add, stage, unstage, revert, resolve
--   sync (pull+push), pull, push
--   checkout, create branch, merge
--   init, clone
--   remotes, submodules
--   log, diff
+-   `commit`, `add`, `stage`, `unstage`, `revert`, `resolve`
+-   `pull`, `push`, `sync` (`pull` + `push`)
+-   `checkout`, `create` `branch`, `merge`
+-   `init`, `clone`
+-   `remotes`, `submodules`
+-   `log`, `diff`
 
 <AGWGallery />
 <!--@include: @apps/_parts/install/content-flatpak.md-->

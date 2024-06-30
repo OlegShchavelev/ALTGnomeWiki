@@ -1,4 +1,4 @@
-name: 'Test: Build Vitepress'
+name: 'Test: Build and prewiew Vitepress'
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  check-build:
+  prewiew-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,13 +22,19 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm ci
+      - name: Change vitepress base config
+        run: |
+          sudo apt-get install jq
+          echo $(jq '.base = "/pr-preview/pr-${{ github.event.number }}/"' ./.vitepress/config.json) > ./.vitepress/config.json 
       - name: Parsing info about members from git
         run: |
           npm run history:build -- --key="${{ secrets.GITHUB_TOKEN }}" --debug
       - name: Build with VitePress
         run: |
           npm run docs:build
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: .vitepress/dist

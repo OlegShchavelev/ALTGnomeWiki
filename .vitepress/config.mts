@@ -42,6 +42,7 @@ import {
 
 export default defineConfig({
   vite: {
+    base: config.base,
     plugins: [
       UnoCSS(),
       GitChangelog({
@@ -82,6 +83,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: config.head.themeColor }],
     ['meta', { name: 'yandex-verification', content: config.yaWebmasterId }]
   ],
+  base: config.base,
   lang: config.lang,
   srcDir: './docs',
   sitemap: {

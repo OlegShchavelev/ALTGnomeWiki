@@ -32,19 +32,19 @@ apt-get install eepm
 
 ## Команды
 
-| Описание операции                              |      Команда EPM      |       Команда ALT Linux        |
-| ---------------------------------------------- | :-------------------: | :----------------------------: |
-| Установка пакета по названию в систему         |   epm -i (package)    |   apt-get install (package)    |
-| Установка файла пакета в систему               | epm -i (package file) | apt-get install (package file) |
-| Удаление пакета из системы                     |   epm -e (package)    |    apt-get remove (package)    |
-| Поиск пакета в репозитории                     |     epm -s (text)     |    apt-cache search (text)     |
-| Проверка наличия пакета в системе              |   epm -q (package)    | rpm -qa (pipe) grep (package)  |
-| Список установленных пакетов                   |        epm -qa        |            rpm -qa             |
-| Поиск по названиям установленных пакетов       |    epm -qp (word)     |          grep (word)           |
-| Принадлежность файла к (установленному) пакету |     epmqf (file)      |         rpm -qf (file)         |
-| Список файлов в (установленном) пакете         |   epm -ql (package)   |       rpm -ql (package)        |
-| Вывести информацию о пакете                    |   epm -ql (package)   |    apt-cache show (package)    |
-| Обновить дистрибутив                           |      epm upgrade      |      apt-get dist-upgrade      |
+| Описание операции                              |       Команда EPM       |        Команда ALT Linux         |
+| ---------------------------------------------- | :---------------------: | :------------------------------: |
+| Установка пакета по названию в систему         |   `epm -i (package)`    |   `apt-get install (package)`    |
+| Установка файла пакета в систему               | `epm -i (package file)` | `apt-get install (package file)` |
+| Удаление пакета из системы                     |   `epm -e (package)`    |    `apt-get remove (package)`    |
+| Поиск пакета в репозитории                     |     `epm -s (text)`     |    `apt-cache search (text)`     |
+| Проверка наличия пакета в системе              |   `epm -q (package)`    | `rpm -qa (pipe) grep (package)`  |
+| Список установленных пакетов                   |        `epm -qa`        |            `rpm -qa`             |
+| Поиск по названиям установленных пакетов       |    `epm -qp (word)`     |          `grep (word)`           |
+| Принадлежность файла к (установленному) пакету |     `epmqf (file)`      |         `rpm -qf (file)`         |
+| Список файлов в (установленном) пакете         |   `epm -ql (package)`   |       `rpm -ql (package)`        |
+| Вывести информацию о пакете                    |   `epm -ql (package)`   |    `apt-cache show (package)`    |
+| Обновить дистрибутив                           |      `epm upgrade`      |      `apt-get dist-upgrade`      |
 
 ### Информация о системе
 
@@ -196,17 +196,17 @@ epm play --product-alternatives telegram
 
 EPM Repack — инструмент позволяющий конвертировать (переупаковать) пакеты от сторонних производителей в стандарт RPM семейства операционных систем АЛЬТ
 
-| Менеджер пакетов | Дистрибутив                                                                                 |
-| ---------------- | ------------------------------------------------------------------------------------------- |
-| rpm              | asplinux suse mandriva rosa mandrake pclinux sled sles fedora redhat scientific centos rhel |
-| deb              | debian ubuntu mint runtu mcst                                                               |
-| tgz              | slackware mopslinux                                                                         |
-| tbz              | freebsd                                                                                     |
-| tbz2             | gentoo                                                                                      |
-| apk              | alpine                                                                                      |
-| pkg.gz           | sunos                                                                                       |
+| Менеджер пакетов | Дистрибутив                                                                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `rpm`            | ASPLinux, SUSE (+ Enterprise Desktop/Server), Mandriva, ROSA, Mandrake, PCLinuxOS, Fedora, Red Hat (+ Enterprise), Scientific, CentOS |
+| `deb`            | Debian, Ubuntu, Mint, Runtu, mcst                                                                                                     |
+| `tgz`            | Slackware, MOPSLinux                                                                                                                  |
+| `tbz`            | FreeBSD                                                                                                                               |
+| `tbz2`           | Gentoo                                                                                                                                |
+| `apk`            | Alpine                                                                                                                                |
+| `pkg.gz`         | SunOS                                                                                                                                 |
 
-Установим deb приложение используя утилиту epm repack:
+Установим `deb`-приложение используя утилиту epm repack:
 
 ```shell
 epm repack tonfotos.deb

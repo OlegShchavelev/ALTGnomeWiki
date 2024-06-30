@@ -19,7 +19,7 @@ appstream:
 
 # Sonic Robo blast 2
 
-Sonic Robo blast 2 — это 3D-фанатская игра про ежика Соника с открытым исходным кодом, созданная используя модифицированную версию порта Doom Legacy.
+Sonic Robo blast 2 — это 3D-фанатская игра про ежика Соника с открытым исходным кодом, используя движок Doom Legacy.
 
 <AGWGallery />
 <!--@include: @apps/_parts/install/content-flatpak.md-->

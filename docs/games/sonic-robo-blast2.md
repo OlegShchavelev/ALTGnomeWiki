@@ -21,5 +21,7 @@ appstream:
 
 Sonic Robo Blast 2 — это фанатская 3D-игра про ёжика Соника с открытым исходным кодом, используя движок `Doom Legacy`.
 
+![Геймплей Sonic Robo Blast 2](/sonic-robo-blast2/greenflower-zone.png)
+
 <AGWGallery />
 <!--@include: @apps/_parts/install/content-flatpak.md-->

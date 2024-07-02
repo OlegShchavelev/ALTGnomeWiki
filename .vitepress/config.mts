@@ -235,6 +235,12 @@ export default defineConfig({
           target: '_blank',
           baseUrl: '//snapcraft.io/',
           style: '--agw-btn-bg: var(--vp-c-orange-dimm-1); --agw-btn-color: var(--vp-c-orange-darker); --agw-btn-hover-bg:var(--vp-c-orange-dark); --agw-btn-hover-color: var(--vp-c-white);'
+        },
+        about_app: {
+          anchor: 'Подробнее',
+          target: '_blank',
+          baseUrl: config.host,
+          style: '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
         }
       }
     }

@@ -86,6 +86,11 @@ export const gitMapContributors = [
         mapByNameAliases: ["Dmitry", "Luckenty"]
     },
     {
+        name: "Дмитрий Бондарев",
+        avatar: "https://avatars.githubusercontent.com/u/72319244?v=4",
+        mapByNameAliases: ["pokedim13", "h3try"]
+    },
+    {
         name: "Арсений Засыпкин",
         avatar: "https://github.com/ImCatCatcher.png",
         mapByNameAliases: ["ImCatCatcher", "Arseniy Zasypkin"]

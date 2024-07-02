@@ -3,6 +3,7 @@ aggregation:
     flatpak:
         id: page.codeberg.libre_menu_editor.LibreMenuEditor
         build: offical
+    sisyphus: libre-menu-editor
 appstream:
     id: page.codeberg.libre_menu_editor.LibreMenuEditor
     name: Main Menu
@@ -25,3 +26,4 @@ Main Menu — программа для настройки главного ме
 ![Интерфейс Main Menu](/main-menu/main-menu-1.png)
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-repo.md-->

@@ -1,16 +1,23 @@
 <script setup>
+import { useData } from 'vitepress';
 import AGWGnomeAppCard from './AGWGnomeAppCard.vue'
 import { data as apps } from '../../composables/appsGnomeDataLoader.data.ts'
+
+const { frontmatter } = useData()
 
 const props = defineProps({
   category: String
 })
 
-const appsByCategory = apps.filter(app => {
+const appsByCategory = {
+  ...apps.filter(app => {
     return app?.frontmatter?.appstream?.keywords?.includes(props?.category)
-})
+  })
+}
 
-console.log(appsByCategory)
+
+console.log(frontmatter?.value?.apps?.[props.category])
+//console.log(appsByCategory)
 
 </script>
 

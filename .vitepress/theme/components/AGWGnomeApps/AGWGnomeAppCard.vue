@@ -15,7 +15,6 @@ const { icon, name, summary, metadata_license, developer, keywords, url } = prop
 const wiki_url = props.app.url
 
 const links = getLinks({ ...props.app.frontmatter.aggregation, ...{ about_app: wiki_url.slice(1, wiki_url) } }, config.links)
-console.log(theme.value.asideMeta)
 
 </script>
 
@@ -116,59 +115,4 @@ console.log(theme.value.asideMeta)
   color: var(--vp-c-text-2);
 }
 
-.org.link {
-  color: var(--vp-c-text-2);
-  transition: color 0.25s;
-}
-
-.org.link:hover {
-  color: var(--vp-c-brand-1);
-}
-
-.desc {
-  margin: 0 auto;
-  padding-top: 12px;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.desc :deep(a) {
-  font-weight: 500;
-  color: var(--vp-c-brand-1);
-  text-decoration-style: dotted;
-  transition: color 0.25s;
-}
-
-.links {
-  margin: 0 -16px -20px;
-  padding: 10px 0 0;
-  display: flex;
-  justify-content: center;
-  height: 56px;
-}
-
-.sp-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 16px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--vp-c-sponsor);
-  background-color: var(--vp-c-bg-soft);
-  transition: color 0.25s, background-color 0.25s;
-}
-
-.sp .sp-link.link:hover,
-.sp .sp-link.link:focus {
-  outline: none;
-  color: var(--vp-c-white);
-  background-color: var(--vp-c-sponsor);
-}
-
-.sp-icon {
-  margin-right: 8px;
-  font-size: 16px;
-}
 </style>

@@ -90,7 +90,7 @@ export default {
     ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('contribution', AGWTeamPage);
-    ctx.app.component('AGWGnomeAppsList', AGWGnomeAppsList);
+    ctx.app.component('GnomeAppsList', AGWGnomeAppsList);
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
     ctx.app.provide(NolebaseEnhancedReadabilitiesInjectionKey, { locales:  locales} as NolebaseEnhancedReadabilitiesOptions)
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)

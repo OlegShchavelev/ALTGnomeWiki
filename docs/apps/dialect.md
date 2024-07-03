@@ -13,6 +13,7 @@ appstream:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
     keywords:
+        - donttheme
         - adaptive
         - circle
     developer:

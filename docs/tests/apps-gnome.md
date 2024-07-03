@@ -216,6 +216,8 @@ apps:
                 flatpak: com.belmoussaoui.Authenticator
                 sisyphus: authenticator
             appstream:
+                keywords:
+                    - donttheme
                 name: Аутентификатор
                 summary: Создание двухфакторных кодов
                 icon: https://apps.gnome.org/icons/scalable/org.gnome.Authenticator.svg
@@ -234,6 +236,8 @@ apps:
                 flatpak: com.rafaelmardojai.WebfontKitGenerator
                 sisyphus: webfont-kit-generator
             appstream:
+                keywords:
+                    - donttheme
                 name: Генератор набора веб-шрифтов
                 summary: Легко создавайте наборы @font-face
                 icon: https://apps.gnome.org/icons/scalable/org.gnome.WebfontKitGenerator.svg
@@ -244,6 +248,7 @@ apps:
                 sisyphus: gnome-qr-decoder
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: Декодер
                 summary: Сканирование и генерация QR-кодов
@@ -293,6 +298,8 @@ apps:
                 flatpak: com.rafaelmardojai.SharePreview
                 sisyphus: share-preview
             appstream:
+                keywords:
+                    - donttheme
                 name: Поделиться превью
                 summary: Тестируйте карточки социальных сетей на местах
                 icon: https://apps.gnome.org/icons/scalable/org.gnome.SharePreview.svg
@@ -302,6 +309,7 @@ apps:
                 flatpak: org.gnome.Podcasts
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: Подкасты
                 summary: Слушайте свои любимые шоу
@@ -341,6 +349,7 @@ apps:
                 flatpak: org.gnome.World.Citations
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: Цитаты
                 summary: Управляйте своей библиографией
@@ -389,6 +398,8 @@ apps:
                 flatpak: com.rafaelmardojai.Blanket
                 sisyphus: blanket
             appstream:
+                keywords:
+                    - donttheme
                 name: Blanket
                 summary: Слушайте звуки окружающей среды
                 icon: https://apps.gnome.org/icons/scalable/org.gnome.Blanket.svg
@@ -474,6 +485,7 @@ apps:
                 sisyphus: graphs
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: Graphs
                 summary: Построение графиков и манипулирование данными
@@ -514,6 +526,8 @@ apps:
                 flatpak: io.github.lainsce.Khronos
                 sisyphus: khronos
             appstream:
+                keywords:
+                    - donttheme
                 name: Khronos
                 summary: Записывайте в журнал время, затраченное на выполнение заданий
                 icon: https://apps.gnome.org/icons/scalable/org.gnome.Khronos.svg
@@ -544,6 +558,7 @@ apps:
                 flatpak: org.gnome.design.Lorem
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: Lorem
                 summary: Создание текста-заполнителя
@@ -566,6 +581,7 @@ apps:
                 sisyphus: newsflash
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: NewsFlash
                 summary: Следите за своими каналами
@@ -577,6 +593,7 @@ apps:
                 sisyphus: obfuscate
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: Obfuscate
                 summary: Цензор личной информации
@@ -598,6 +615,7 @@ apps:
                 sisyphus: pika-backup
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: Pika Backup
                 summary: Обеспечьте сохранность своих данных
@@ -630,6 +648,7 @@ apps:
                 sisyphus: secrets
             appstream:
                 keywords:
+                    - donttheme
                     - adaptive
                 name: Secrets
                 summary: Управление паролями
@@ -640,6 +659,8 @@ apps:
                 flatpak: de.haeckerfelix.Shortwave
                 sisyphus: shortwave
             appstream:
+                keywords:
+                    - donttheme
                 name: Shortwave
                 summary: Слушайте интернет-радио
                 icon: https://apps.gnome.org/icons/scalable/org.gnome.Shortwave.svg

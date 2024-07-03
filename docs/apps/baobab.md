@@ -18,7 +18,6 @@ appstream:
     summary: Проверьте размеры папок и доступное дисковое пространство
     keywords:
         - core
-        - adaptive
     developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48

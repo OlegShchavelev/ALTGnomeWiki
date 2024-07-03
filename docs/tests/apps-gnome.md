@@ -51,7 +51,7 @@ apps:
                 keywords:
                     - adaptive
                 name: Калькулятор
-                summary: Вычисления: арифметические, научные и финансовые
+                summary: "Вычисления: арифметические, научные и финансовые"
                 icon: https://apps.gnome.org/icons/scalable/org.gnome.Calculator.svg
             about_app: https://apps.gnome.org/ru/Calculator/
         'Snapshot':

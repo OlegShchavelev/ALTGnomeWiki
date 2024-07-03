@@ -694,6 +694,51 @@ apps:
                 summary: Прототип с использованием технологий GNOME
                 icon: https://apps.gnome.org/icons/scalable/org.gnome.Workbench.svg
             about_app: https://apps.gnome.org/ru/Workbench/
+    dev:
+        'DconfEditor':
+            aggregation:
+                flatpak: ca.desrt.dconf-editor
+                sisyphus: dconf-editor
+            appstream:
+                name: Редактор Dconf
+                summary: Графический инструмент для редактирования базы данных dconf
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.DconfEditor.svg
+            about_app: https://apps.gnome.org/ru/DconfEditor/
+        'Builder':
+            aggregation:
+                flatpak: org.gnome.Builder
+                sisyphus: gnome-builder
+            appstream:
+                name: Builder
+                summary: IDE для GNOME
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.Builder.svg
+            about_app: https://apps.gnome.org/ru/Builder/
+        'Dspy':
+            aggregation:
+                flatpak: org.gnome.dspy
+                sisyphus: dspy
+            appstream:
+                name: D-Spy
+                summary: Анализ соединений D-Bus
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.Dspy.svg
+            about_app: https://apps.gnome.org/ru/Dspy/
+        'Devhelp':
+            aggregation:
+                flatpak: org.gnome.Devhelp
+                sisyphus: devhelp
+            appstream:
+                name: Devhelp
+                summary: Инструмент разработчика для поиска и просмотра документации к API
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.Devhelp.svg
+            about_app: https://apps.gnome.org/ru/Devhelp/
+        'Sysprof':
+            aggregation:
+                sisyphus: sysprof
+            appstream:
+                name: Sysprof
+                summary: Профилирование приложения или всей системы
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.Sysprof.svg
+            about_app: https://apps.gnome.org/ru/Sysprof/
 ---
 
 # Приложения для GNOME

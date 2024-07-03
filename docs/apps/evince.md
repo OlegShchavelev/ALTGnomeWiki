@@ -4,9 +4,11 @@ aggregation:
     flatpak: org.gnome.Evince
 appstream:
     id: org.gnome.Evince
-    name: Evince
+    name: Просмотр документов
     icon: /evince/evince-logo.svg
     summary: Просмотрщик документов, позволяющий отображать как многостраничные, так и одностраничные форматы документов, такие как PDF и Postscript
+    keywords:
+        - core
     metadata_license:
         name: GNU GPLv2
         link: https://gitlab.gnome.org/GNOME/evince/-/blob/main/COPYING

@@ -6,11 +6,12 @@ aggregation:
         build: offical
 appstream:
     id: org.gnome.Loupe
-    name: Loupe
+    name: Просмотрщик изображений
     icon: /loupe/loupe-logo.svg
     summary: Стандартный просмотр изображений GNOME.
     keywords:
         - adaptive
+        - core
     developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
@@ -23,9 +24,9 @@ appstream:
         translate: https://l10n.gnome.org/module/loupe/
 ---
 
-# Loupe
+# Просмотрщик изображений
 
-Loupe — приложение для просмотра изображений, написанное на GTK4, Libadwaita и Rust.
+Просмотрщик изображений (Loupe) — приложение для просмотра изображений, написанное на GTK4, Libadwaita и Rust.
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

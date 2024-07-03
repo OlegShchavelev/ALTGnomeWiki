@@ -1,0 +1,30 @@
+Core
+
+- [x] Baobab (Анализатор использования дисков)
+- [ ] Epiphany (Веб-браузер) adaptive
+- [x] Totem (Видео)
+- [ ] DiskUtility (Диски) adaptive
+- [ ] Logs (Журналы)
+- [ ] Calendar (Календарь) adaptive
+- [ ] Calculator (Калькулятор) adaptive
+- [ ] Snapshot (Камера) adaptive
+- [ ] Maps (Карты) adaptive
+- [x] Console (Консоль) adaptive
+- [ ] Contacts (Контакты) adaptive
+- [x] Music (Музыка)
+- [ ] Settings (Настройки) adaptive
+- [ ] Weather (Погода)
+- [ ] Connections (Подключения)
+- [x] Evince (Просмотр документов)
+- [x] Loupe (Просмотрщик изображений) adaptive
+- [ ] Extensions (Расширения) adaptive
+- [ ] Characters (Символы) adaptive
+- [ ] SystemMonitor (Системный монитор)
+- [x] SimpleScan (Сканер документов)
+- [ ] Yelp (Справка)
+- [ ] TextEditor (Текстовый редактор)
+- [ ] Nautilus (Файлы) adaptive
+- [ ] Software (Центр приложений) adaptive
+- [ ] Clocks (Часы) adaptive
+- [x] FontViewer (Шрифты) adaptive
+- [ ] Tour (Экскурсия)

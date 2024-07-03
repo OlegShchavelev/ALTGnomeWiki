@@ -10,7 +10,6 @@ appstream:
     icon: /totem/totem-logo.svg
     summary: Видеопроигрыватель поддерживает список локальных видеофайлов и DVD с возможностью поиска и доступ к видео по сети.
     keywords:
-        - adaptive
         - core
     developer:
         name: GNOME

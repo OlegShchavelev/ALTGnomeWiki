@@ -9,11 +9,30 @@ const props = defineProps({
   category: String
 })
 
-const appsByCategory = {
-  ...apps.filter(app => {
+const wikiApps = () => {
+  const rawApps = apps.filter(app => {
     return app?.frontmatter?.appstream?.keywords?.includes(props?.category)
+  }) 
+  
+  const Apps = []
+
+  rawApps.forEach( app => {
+    const result = {
+        ...app.frontmatter,
+        ...{about_app: app.url}
+    }
+    Apps.push(result)
   })
+  return(Apps)
+
 }
+
+const appsByCategory = {
+  ...frontmatter?.value?.apps?.[props.category],
+  ...wikiApps()
+}
+
+console.log(appsByCategory)
 
 
 console.log(frontmatter?.value?.apps?.[props.category])

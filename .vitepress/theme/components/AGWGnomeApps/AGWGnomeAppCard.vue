@@ -1,20 +1,37 @@
 <script setup>
 import { computed } from 'vue'
 import AGWAsideMetaLink from '../AGWAsideMetaLink.vue';
+import AGWAsideMetaKeyword from '../AGWAsideMetaKeyword.vue'
 import { useData } from 'vitepress';
 
 const { theme } = useData()
 const config = theme.value.asideMeta
-import { getLinks } from '../../composables/asidemeta'
+import { getLinks, getKeywords } from '../../composables/asidemeta'
 
 const props = defineProps({
   app: Object
 })
 
-const { icon, name, summary, metadata_license, developer, keywords, url } = props.app.frontmatter.appstream
-const wiki_url = props.app.url
+//console.log(props.app)
 
-const links = getLinks({ ...props.app.frontmatter.aggregation, ...{ about_app: wiki_url.slice(1, wiki_url) } }, config.links)
+const cardProps = computed(() => {
+  const { icon, name, summary } = props.app.appstream
+  const repos = Object.fromEntries(Object.entries(props.app.aggregation).sort( (repo1, repo2) => {
+      return repo1[0] == 'sisyphus'?-1:1
+  }))
+
+  console.log(repos)
+  const is_adaptive = props.app.appstream?.keywords?.includes('adaptive')?['adaptive']:[]
+  const is_donttheme = props.app.appstream?.keywords?.includes('dontthemes')?['dontthemes']:[]
+
+  return {
+    icon: icon,
+    name: name,
+    summary: summary,
+    links: getLinks({ ...repos , ...{ about_app: props.app.about_app }, snap: undefined }, config.links),
+    keywords: getKeywords([...is_adaptive, ...is_donttheme], config.keywords),
+  }
+})
 
 </script>
 
@@ -22,40 +39,36 @@ const links = getLinks({ ...props.app.frontmatter.aggregation, ...{ about_app: w
     <article class="AGWGnomeAppCard">
       <div class="profile">
         <figure class="avatar">
-          <img class="avatar-img" :src="icon"/>
+          <img class="avatar-img" :src="cardProps.icon"/>
         </figure>
         <div class="data">
           <h3 class="name">
-            {{name}}
+            {{cardProps.name}}
           </h3>
+          <div class="badges">
+            <AGWAsideMetaKeyword :keywords="cardProps.keywords" />
+          </div>
           <p class="affiliation">
-            {{summary}}
+            {{cardProps.summary}}
           </p>
         </div>
       </div>
-      <AGWAsideMetaLink :links="links" />
+      <AGWAsideMetaLink :links="cardProps.links" />
     </article>
 </template>
 
 <style scoped>
-.AGWCardRepoLinks {
-  display: block;
-  justify-content: center;
-}
-.AGWCardRepoLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 36px;
-  width: 36px;
-  color: var(--vp-c-text-2);
-  transition: color 0.5s;
-  text-decoration:none;
+
+.badges {
+  margin-top: 5px;
 }
 
-.AGWCardRepoLink:hover, :hover {
-  color: var(--vp-c-text-1);
-  transition: color 0.25s;
+.badges[data-v-834f837e] {
+  display: inline;
+}
+
+AGWAsideMetaLink {
+  text-decoration: none;
 }
 
 .AGWGnomeAppCard {

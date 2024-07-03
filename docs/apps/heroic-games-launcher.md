@@ -37,10 +37,6 @@ Heroic — игровой лаунчер с открытым исходным к
 
 <AGWGallery />
 
-::: warning
-Версия [Flatpak](/flatpak) на момент создания статьи не работает
-:::
-
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-snap.md-->
 

@@ -184,7 +184,7 @@ apps:
             about_app: https://apps.gnome.org/ru/Software/
         'Clocks':
             aggregation:
-                flatpak: org.gnome.Clocks
+                flatpak: org.gnome.clocks
                 sisyphus: gnome-clocks
             appstream:
                 keywords:

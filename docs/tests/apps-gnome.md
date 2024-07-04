@@ -151,7 +151,7 @@ apps:
             appstream:
                 name: Справка
                 summary: Приложение для просмотра справки GNOME
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Yelp.svg
+                icon: https://apps.gnome.org/icons/scalable/yelp.svg
             about_app: https://apps.gnome.org/ru/Yelp/
         'TextEditor':
             aggregation:
@@ -191,7 +191,7 @@ apps:
                     - adaptive
                 name: Часы
                 summary: Следить за временем
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Clocks.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.clocks.svg
             about_app: https://apps.gnome.org/ru/Clocks/
         'Tour':
             aggregation:
@@ -209,7 +209,7 @@ apps:
             appstream:
                 name: Апостроф
                 summary: Редактировать в стиле Markdown
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Apostrophe.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.gitlab.somas.Apostrophe.svg
             about_app: https://apps.gnome.org/ru/Apostrophe/
         'Authenticator':
             aggregation:
@@ -220,7 +220,7 @@ apps:
                     - donttheme
                 name: Аутентификатор
                 summary: Создание двухфакторных кодов
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Authenticator.svg
+                icon: https://apps.gnome.org/icons/scalable/com.belmoussaoui.Authenticator.svg
             about_app: https://apps.gnome.org/ru/Authenticator/
         'VideoTrimmer':
             aggregation:
@@ -229,7 +229,7 @@ apps:
             appstream:
                 name: Видеотриммер
                 summary: Быстрая обрезка видео-файлов
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.VideoTrimmer.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.gitlab.YaLTeR.VideoTrimmer.svg
             about_app: https://apps.gnome.org/ru/VideoTrimmer/
         'WebfontKitGenerator':
             aggregation:
@@ -240,7 +240,7 @@ apps:
                     - donttheme
                 name: Генератор набора веб-шрифтов
                 summary: Легко создавайте наборы @font-face
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.WebfontKitGenerator.svg
+                icon: https://apps.gnome.org/icons/scalable/com.rafaelmardojai.WebfontKitGenerator.svg
             about_app: https://apps.gnome.org/ru/WebfontKitGenerator/
         'Decoder':
             aggregation:
@@ -252,7 +252,7 @@ apps:
                     - adaptive
                 name: Декодер
                 summary: Сканирование и генерация QR-кодов
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Decoder.svg
+                icon: https://apps.gnome.org/icons/scalable/com.belmoussaoui.Decoder.svg
             about_app: https://apps.gnome.org/ru/Decoder/
         'Decibels':
             aggregation:
@@ -267,12 +267,12 @@ apps:
             about_app: https://apps.gnome.org/ru/Decibels/
         'Health':
             aggregation:
-                flatpak: org.gnome.Health
+                flatpak: dev.Cogitri.Health
                 sisyphus: gnome-health
             appstream:
                 name: Здоровье
                 summary: Отслеживайте свои фитнес-цели
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Health.svg
+                icon: https://apps.gnome.org/icons/scalable/dev.Cogitri.Health.svg
             about_app: https://apps.gnome.org/ru/Health/
         'Identity':
             aggregation:
@@ -281,7 +281,7 @@ apps:
             appstream:
                 name: Идентичность
                 summary: Сравнение изображений и видео
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Identity.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.gitlab.YaLTeR.Identity.svg
             about_app: https://apps.gnome.org/ru/Identity/
         'MetadataCleaner':
             aggregation:
@@ -291,7 +291,7 @@ apps:
                     - adaptive
                 name: Очиститель метаданных
                 summary: Просмотр и очистка метаданных в файлах
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.MetadataCleaner.svg
+                icon: https://apps.gnome.org/icons/scalable/fr.romainvigier.MetadataCleaner.svg
             about_app: https://apps.gnome.org/ru/MetadataCleaner/
         'SharePreview':
             aggregation:
@@ -302,7 +302,7 @@ apps:
                     - donttheme
                 name: Поделиться превью
                 summary: Тестируйте карточки социальных сетей на местах
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.SharePreview.svg
+                icon: https://apps.gnome.org/icons/scalable/com.rafaelmardojai.SharePreview.svg
             about_app: https://apps.gnome.org/ru/SharePreview/
         'Podcasts':
             aggregation:
@@ -321,7 +321,7 @@ apps:
             appstream:
                 name: Провидец
                 summary: Задавайте вопросы, получайте предсказания
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Clairvoyant.svg
+                icon: https://apps.gnome.org/icons/scalable/com.github.cassidyjames.clairvoyant.svg
             about_app: https://apps.gnome.org/ru/Clairvoyant/
         'DejaDup':
             aggregation:
@@ -342,7 +342,7 @@ apps:
                     - adaptive
                 name: Файловый шредер
                 summary: Безвозвратно удалите ваши файлы
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Raider.svg
+                icon: https://apps.gnome.org/icons/scalable/com.github.ADBeveridge.Raider.svg
             about_app: https://apps.gnome.org/ru/Raider/
         'Citations':
             aggregation:
@@ -353,7 +353,7 @@ apps:
                     - adaptive
                 name: Цитаты
                 summary: Управляйте своей библиографией
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Citations.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.World.Citations.svg
             about_app: https://apps.gnome.org/ru/Citations/
         'Chessclock':
             aggregation:
@@ -361,7 +361,7 @@ apps:
             appstream:
                 name: Шахматные часы
                 summary: Партии в шахматы на время
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Chessclock.svg
+                icon: https://apps.gnome.org/icons/scalable/com.clarahobbs.chessclock.svg
             about_app: https://apps.gnome.org/ru/Chessclock/
         'Emblem':
             aggregation:
@@ -370,7 +370,7 @@ apps:
             appstream:
                 name: Эмблема
                 summary: Создание аватаров проекта
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Emblem.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.design.Emblem.svg
             about_app: https://apps.gnome.org/ru/Emblem/
         'AudioSharing':
             aggregation:
@@ -381,7 +381,7 @@ apps:
                     - adaptive
                 name: Audio Sharing
                 summary: Делитесь аудио с вашего компьютера
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.AudioSharing.svg
+                icon: https://apps.gnome.org/icons/scalable/de.haeckerfelix.AudioSharing.svg
             about_app: https://apps.gnome.org/ru/AudioSharing/
         'Biblioteca':
             aggregation:
@@ -391,7 +391,7 @@ apps:
                     - adaptive
                 name: Biblioteca
                 summary: Читайте документацию GNOME в автономном режиме
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Biblioteca.svg
+                icon: https://apps.gnome.org/icons/scalable/app.drey.Biblioteca.svg
             about_app: https://apps.gnome.org/ru/Biblioteca/
         'Blanket':
             aggregation:
@@ -402,7 +402,7 @@ apps:
                     - donttheme
                 name: Blanket
                 summary: Слушайте звуки окружающей среды
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Blanket.svg
+                icon: https://apps.gnome.org/icons/scalable/com.rafaelmardojai.Blanket.svg
             about_app: https://apps.gnome.org/ru/Blanket/
         'Boatswain':
             aggregation:
@@ -410,7 +410,7 @@ apps:
             appstream:
                 name: Boatswain
                 summary: Управляйте своими Elgato Stream Decks
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Boatswain.svg
+                icon: https://apps.gnome.org/icons/scalable/com.feaneron.Boatswain.svg
             about_app: https://apps.gnome.org/ru/Boatswain/
         'Collision':
             aggregation:
@@ -420,7 +420,7 @@ apps:
                     - adaptive
                 name: Collision
                 summary: Проверьте хеши ваших файлов
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Collision.svg
+                icon: https://apps.gnome.org/icons/scalable/dev.geopjr.Collision.svg
             about_app: https://apps.gnome.org/ru/Collision/
         'Commit':
             aggregation:
@@ -428,7 +428,7 @@ apps:
             appstream:
                 name: Commit
                 summary: Редактор сообщений коммитов
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Commit.svg
+                icon: https://apps.gnome.org/icons/scalable/re.sonny.Commit.svg
             about_app: https://apps.gnome.org/ru/Commit/
         'Curtail':
             aggregation:
@@ -437,7 +437,7 @@ apps:
             appstream:
                 name: Curtail
                 summary: Сжатие изображений
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Curtail.svg
+                icon: https://apps.gnome.org/icons/scalable/com.github.huluti.Curtail.svg
             about_app: https://apps.gnome.org/ru/Curtail/
         'EarTag':
             aggregation:
@@ -448,7 +448,7 @@ apps:
                     - adaptive
                 name: Ear Tag
                 summary: Редактор тегов аудиофайлов
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.EarTag.svg
+                icon: https://apps.gnome.org/icons/scalable/app.drey.EarTag.svg
             about_app: https://apps.gnome.org/ru/EarTag/
         'Elastic':
             aggregation:
@@ -458,7 +458,7 @@ apps:
                     - adaptive
                 name: Elastic
                 summary: Проектирование пружинных анимаций
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Elastic.svg
+                icon: https://apps.gnome.org/icons/scalable/app.drey.Elastic.svg
             about_app: https://apps.gnome.org/ru/Elastic/
         'Eyedropper':
             aggregation:
@@ -467,7 +467,7 @@ apps:
             appstream:
                 name: Eyedropper
                 summary: Выбирайте и форматируйте цвета
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Eyedropper.svg
+                icon: https://apps.gnome.org/icons/scalable/com.github.finefindus.eyedropper.svg
             about_app: https://apps.gnome.org/ru/Eyedropper/
         'ForgeSparks':
             aggregation:
@@ -477,7 +477,7 @@ apps:
                     - adaptive
                 name: Forge Sparks
                 summary: Получайте уведомления Git forges
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.ForgeSparks.svg
+                icon: https://apps.gnome.org/icons/scalable/com.mardojai.ForgeSparks.svg
             about_app: https://apps.gnome.org/ru/ForgeSparks/
         'Graphs':
             aggregation:
@@ -489,7 +489,7 @@ apps:
                     - adaptive
                 name: Graphs
                 summary: Построение графиков и манипулирование данными
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Graphs.svg
+                icon: https://apps.gnome.org/icons/scalable/se.sjoerd.Graphs.svg
             about_app: https://apps.gnome.org/ru/Graphs/
         'Hieroglyphic':
             aggregation:
@@ -497,7 +497,7 @@ apps:
             appstream:
                 name: Hieroglyphic
                 summary: Поиск символов LaTeX
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Hieroglyphic.svg
+                icon: https://apps.gnome.org/icons/scalable/io.github.finefindus.Hieroglyphic.svg
             about_app: https://apps.gnome.org/ru/Hieroglyphic/
         'Impression':
             aggregation:
@@ -508,7 +508,7 @@ apps:
                     - adaptive
                 name: Impression
                 summary: Создание загрузочных дисков
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Impression.svg
+                icon: https://apps.gnome.org/icons/scalable/io.gitlab.adhami3310.Impression.svg
             about_app: https://apps.gnome.org/ru/Impression/
         'Junction':
             aggregation:
@@ -519,7 +519,7 @@ apps:
                     - adaptive
                 name: Junction
                 summary: Выбор приложения
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Junction.svg
+                icon: https://apps.gnome.org/icons/scalable/re.sonny.Junction.svg
             about_app: https://apps.gnome.org/ru/Junction/
         'Khronos':
             aggregation:
@@ -530,7 +530,7 @@ apps:
                     - donttheme
                 name: Khronos
                 summary: Записывайте в журнал время, затраченное на выполнение заданий
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Khronos.svg
+                icon: https://apps.gnome.org/icons/scalable/io.github.lainsce.Khronos.svg
             about_app: https://apps.gnome.org/ru/Khronos/
         'Komikku':
             aggregation:
@@ -540,7 +540,7 @@ apps:
                     - adaptive
                 name: Komikku
                 summary: Откройте для себя и читайте мангу и комиксы
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Komikku.svg
+                icon: https://apps.gnome.org/icons/scalable/info.febvre.Komikku.svg
             about_app: https://apps.gnome.org/ru/Komikku/
         'Letterpress':
             aggregation:
@@ -551,7 +551,7 @@ apps:
                     - adaptive
                 name: Letterpress
                 summary: Создайте красивые ASCII-арты
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Letterpress.svg
+                icon: https://apps.gnome.org/icons/scalable/io.gitlab.gregorni.Letterpress.svg
             about_app: https://apps.gnome.org/ru/Letterpress/
         'Lorem':
             aggregation:
@@ -562,7 +562,7 @@ apps:
                     - adaptive
                 name: Lorem
                 summary: Создание текста-заполнителя
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Lorem.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.design.Lorem.svg
             about_app: https://apps.gnome.org/ru/Lorem/
         'Mousai':
             aggregation:
@@ -573,7 +573,7 @@ apps:
                     - adaptive
                 name: Mousai
                 summary: Распознавайте песни за секунды
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Mousai.svg
+                icon: https://apps.gnome.org/icons/scalable/io.github.seadve.Mousai.svg
             about_app: https://apps.gnome.org/ru/Mousai/
         'NewsFlash':
             aggregation:
@@ -585,7 +585,7 @@ apps:
                     - adaptive
                 name: NewsFlash
                 summary: Следите за своими каналами
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.NewsFlash.svg
+                icon: https://apps.gnome.org/icons/scalable/io.gitlab.news_flash.NewsFlash.svg
             about_app: https://apps.gnome.org/ru/NewsFlash/
         'Obfuscate':
             aggregation:
@@ -597,7 +597,7 @@ apps:
                     - adaptive
                 name: Obfuscate
                 summary: Цензор личной информации
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Obfuscate.svg
+                icon: https://apps.gnome.org/icons/scalable/com.belmoussaoui.Obfuscate.svg
             about_app: https://apps.gnome.org/ru/Obfuscate/
         'PdfMetadataEditor':
             aggregation:
@@ -607,7 +607,7 @@ apps:
                     - adaptive
                 name: Paper Clip
                 summary: Редактирование метаданных документов PDF
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.PdfMetadataEditor.svg
+                icon: https://apps.gnome.org/icons/scalable/io.github.diegoivan.pdf_metadata_editor.svg
             about_app: https://apps.gnome.org/ru/PdfMetadataEditor/
         'PikaBackup':
             aggregation:
@@ -619,7 +619,7 @@ apps:
                     - adaptive
                 name: Pika Backup
                 summary: Обеспечьте сохранность своих данных
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.PikaBackup.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.World.PikaBackup.svg
             about_app: https://apps.gnome.org/ru/PikaBackup/
         'Polari':
             aggregation:
@@ -640,7 +640,7 @@ apps:
                     - adaptive
                 name: Railway
                 summary: Найти всю информацию о путешествиях
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.DieBahn.svg
+                icon: https://apps.gnome.org/icons/scalable/de.schmidhuberj.DieBahn.svg
             about_app: https://apps.gnome.org/ru/DieBahn/
         'Secrets':
             aggregation:
@@ -652,7 +652,7 @@ apps:
                     - adaptive
                 name: Secrets
                 summary: Управление паролями
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Secrets.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.World.Secrets.svg
             about_app: https://apps.gnome.org/ru/Secrets/
         'Shortwave':
             aggregation:
@@ -663,7 +663,7 @@ apps:
                     - donttheme
                 name: Shortwave
                 summary: Слушайте интернет-радио
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Shortwave.svg
+                icon: https://apps.gnome.org/icons/scalable/de.haeckerfelix.Shortwave.svg
             about_app: https://apps.gnome.org/ru/Shortwave/
         'Solanum':
             aggregation:
@@ -683,7 +683,7 @@ apps:
                     - adaptive
                 name: Tangram
                 summary: Браузер для закрепленных вкладок
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Tangram.svg
+                icon: https://apps.gnome.org/icons/scalable/re.sonny.Tangram.svg
             about_app: https://apps.gnome.org/ru/Tangram/
         'TextPieces':
             aggregation:
@@ -694,7 +694,7 @@ apps:
                     - adaptive
                 name: Text Pieces
                 summary: Блокнот разработчика
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.TextPieces.svg
+                icon: https://apps.gnome.org/icons/scalable/io.gitlab.liferooter.TextPieces.svg
             about_app: https://apps.gnome.org/ru/TextPieces/
         'Warp':
             aggregation:
@@ -705,7 +705,7 @@ apps:
                     - adaptive
                 name: Warp
                 summary: Быстрая и безопасная передача файлов
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Warp.svg
+                icon: https://apps.gnome.org/icons/scalable/app.drey.Warp.svg
             about_app: https://apps.gnome.org/ru/Warp/
         'Workbench':
             aggregation:
@@ -713,7 +713,7 @@ apps:
             appstream:
                 name: Workbench
                 summary: Прототип с использованием технологий GNOME
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Workbench.svg
+                icon: https://apps.gnome.org/icons/scalable/re.sonny.Workbench.svg
             about_app: https://apps.gnome.org/ru/Workbench/
     dev:
         'DconfEditor':
@@ -723,7 +723,7 @@ apps:
             appstream:
                 name: Редактор Dconf
                 summary: Графический инструмент для редактирования базы данных dconf
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.DconfEditor.svg
+                icon: https://apps.gnome.org/icons/scalable/ca.desrt.dconf-editor.svg
             about_app: https://apps.gnome.org/ru/DconfEditor/
         'Builder':
             aggregation:
@@ -741,7 +741,7 @@ apps:
             appstream:
                 name: D-Spy
                 summary: Анализ соединений D-Bus
-                icon: https://apps.gnome.org/icons/scalable/org.gnome.Dspy.svg
+                icon: https://apps.gnome.org/icons/scalable/org.gnome.dspy.svg
             about_app: https://apps.gnome.org/ru/Dspy/
         'Devhelp':
             aggregation:

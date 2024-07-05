@@ -4,7 +4,7 @@
 
 ## 1. Переменные
 
-Используются такие подблоки [Frontmatter](../pages/vitepress#frontmatter) переменных:
+Используются такие блоки метаданных [Frontmatter](/reference/pages/vitepress#frontmatter):
 
 ```markdown
 ---

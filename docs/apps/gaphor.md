@@ -4,7 +4,7 @@ aggregation:
 appstream:
     id: corg.gaphor.Gaphor
     name: Gaphor
-    icon: /gaphor/org.gaphor.Gaphor.png
+    icon: /gaphor/gaphor-logo.png
     summary: Элегантное воспроизведение вашей музыки
     metadata_license:
         name: GNU GPLv3

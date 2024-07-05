@@ -5,7 +5,7 @@ aggregation:
 appstream:
     id: com.toolstack.Folio
     name: Folio
-    icon: /folio/com.toolstack.Folio.svg
+    icon: /folio/folio-logo.svg
     summary: Делайте заметки в Markdown
     metadata_license:
         name: GNU GPLv3
@@ -27,7 +27,7 @@ gallery:
 
 # Folio
 
-Прекрасное приложение для создания заметок markdown для GNOME
+Folio - приложение для создания Markdown-заметок в GNOME
 
 <AGWGallery />
 

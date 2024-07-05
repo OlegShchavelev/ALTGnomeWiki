@@ -15,7 +15,6 @@ appstream:
         link: https://heroicgameslauncher.com/cla
     developer:
         name: Heroic Games Launcher
-        avatar:
     url:
         homepage: https://heroicgameslauncher.com/
         bugtracker: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues
@@ -34,31 +33,24 @@ gallery:
 
 # Heroic Games Launcher
 
-Heroic - это игровой лаунчер с открытым исходным кодом. Прямо сейчас он поддерживает запуск игр из Epic Games Store с использованием Legendary, GOG Games с использованием нашей пользовательской реализации с помощью gogdl и Amazon Games с использованием Nile.
+Heroic — игровой лаунчер с открытым исходным кодом. Прямо сейчас он поддерживает запуск игр из Epic Games Store с использованием Legendary, GOG Games с использованием нашей пользовательской реализации с помощью `gogdl` и Amazon Games с использованием `Nile`.
 
 <AGWGallery />
 
-::: warning
-Версия flatpak на момент создания статьи не работает
-:::
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-snap.md-->
 
-## Установка версии Appimage
+## Установка версии AppImage
 
-### Загрузка пакета
+-   Скачайте дистрибутив с [официального сайта](https://heroicgameslauncher.com/downloads) по кнопке `AppImage`
 
-Переходим на [сайт программы](https://heroicgameslauncher.com/downloads) и нажимаем кнопку [[AppImage]]
-
-### Установка пакета
-
-Открываем терминал и выполняем
+-   Откройте терминал и выполняем
 
 ```shell
 su -
-cd /home/.../Downloads/ # Где "..." - имя вашего пользователя
+cd $HOME/Downloads/
 epm install Heroic-2.14.1.AppImage
 ```
 
-Соглашаемся на всех шагах и готово, приложение установлено.
-
+-   Следуйте инструкциям в установщике
+-   Готово, приложение установлено.

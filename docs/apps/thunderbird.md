@@ -35,10 +35,10 @@ Thunderbird — бесплатное приложение для работы с
 
 ## Thunderbird GNOME Theme
 
-Склонируйте скрипт и установите:
+Клонируйте скрипт и установите:
 
 ```shell
-https://github.com/rafaelmardojai/thunderbird-gnome-theme .thunderbird/thunderbird-gnome-theme
+git clone https://github.com/rafaelmardojai/thunderbird-gnome-theme .thunderbird/thunderbird-gnome-theme
 cd .thunderbird/thunderbird-gnome-theme
 ```
 

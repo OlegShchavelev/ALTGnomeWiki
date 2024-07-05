@@ -104,7 +104,7 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 
 ![Пример проблемы с отображением интерфейса при авторизации](/cassette/cassette-3.png)
 
-Если у вас Flatpak-версия, то выполните в терминале:
+Если у вас [Flatpak-версия](/flatpak), то выполните в терминале:
 
 ```shell
 WEBKIT_DISABLE_COMPOSITING_MODE=1 flatpak run io.github.Rirusha.Cassette
@@ -118,7 +118,7 @@ WEBKIT_DISABLE_COMPOSITING_MODE=1 flatpak run io.github.Rirusha.Cassette
 WEBKIT_DISABLE_COMPOSITING_MODE=1 cassette
 ```
 
-### Бесконечная загрузка при авторизации во Flatpak-версии приложения
+### Бесконечная загрузка при авторизации во [Flatpak-версии](/flatpak) приложения
 
 Если при авторизации появляется значок загрузки и далее ничего не происходит, а при запуске приложения через терминал, выводит следующее:
 

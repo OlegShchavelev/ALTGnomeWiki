@@ -10,7 +10,7 @@ appstream:
         - adaptive
     developer:
         name: GNOME
-        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png
     metadata_license:
         name: GNU LGPLv2
         link: https://www.gnu.org/licenses/old-licenses/lgpl-2.0.en.html

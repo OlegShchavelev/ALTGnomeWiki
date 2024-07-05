@@ -80,6 +80,7 @@ export const docs = [
           { text: 'Mission Center', link: '/mission-center' },
           { text: 'Мpich', link: '/mpich' },
           { text: 'МPV', link: '/mpv' },
+          { text: 'Main-menu', link: '/main-menu' },
           { text: 'Neofetch', link: '/neofetch' },
           { text: 'Neovim', link: '/neovim' },
           { text: 'Nextcloud Desktop', link: '/nextcloud-desktop' },
@@ -113,6 +114,7 @@ export const docs = [
           { text: 'Totem', link: '/totem' },
           { text: 'Transmission', link: '/transmission' },
           { text: 'Turtle', link: '/turtle' },
+          { text: 'Ungoogled-chromium', link: '/ungoogled-chromium' },
           { text: 'Vesktop', link: '/vesktop' },
           { text: 'Viber', link: '/viber' },
           { text: 'Vivaldi', link: '/vivaldi' },
@@ -349,6 +351,7 @@ export const docs = [
           { text: 'Изменение clearcpuid', link: '/clearcpuid' },
           { text: 'Mindustry', link: '/mindustry' },
           { text: 'Sonic 3 A.I.R', link: '/sonic3-a.i.r' },
+          { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' },
         ],
         collapsed: true
       }

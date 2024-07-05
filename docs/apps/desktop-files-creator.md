@@ -5,8 +5,8 @@ aggregation:
 appstream:
     id: com.github.alexkdeveloper.desktop-files-creator.png
     name: Desktop Files Creator
-    icon: /desktop-files-creator/com.github.alexkdeveloper.desktop-files-creator.png
-    summary: Простое приложение для создания файлов на рабочем столе в GNU / Linux
+    icon: /desktop-files-creator/desktop-files-creator-logo.png
+    summary: Простое приложение для создания файлов на рабочем столе в GNU/Linux
     keywords:
         - adaptive
     metadata_license:

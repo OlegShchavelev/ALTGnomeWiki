@@ -36,5 +36,6 @@ gallery:
 Fragments — простой в использовании BitTorrent-клиент. Он может использоваться для передачи файлов по протоколу BitTorrent, таких как видео, музыка или установочные образы для дистрибутивов Linux.
 
 <AGWGallery />
+
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

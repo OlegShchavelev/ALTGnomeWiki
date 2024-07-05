@@ -15,11 +15,11 @@ const leader = 'Олег Щавелев'
 const limit = 6
 const developersSection = {
   title: 'Разработчики',
-  description: 'Люди принимающие участие в активном не только в расширении базы знаний, но и в улучшении ее функционала'
+  description: 'Люди, которые активно участвуют не только в расширении базы знаний, но и в улучшении её функционала.'
 }
 const membersSection = {
   title: 'Авторы',
-  description: 'Люди принимающие участие исправлении и написании новых статей' 
+  description: 'Люди, которые участвуют в улучшении и создании новых статей.' 
 }
 
 export { homeSorting, teamSorting, leader, limit, membersSection, developersSection }
@@ -60,8 +60,17 @@ export const contributions = [
     links: [
       { icon: 'github', link: 'https://github.com/trashb1t' }
     ]
-  },
-  {
+  }, {
+    avatar: 'https://avatars.githubusercontent.com/u/47402692?v=4',
+    name: 'Давид Султаниязов',
+    title: 'Разработчик, Участник',
+    links: [
+      { icon: 'github', link: 'https://github.com/X1Z53' },
+      { icon: { svg: gitverse }, link: 'https://gitverse.ru/x1z53' }
+    ],
+    actionText: 'Поддержать',
+    sponsor: 'https://www.tinkoff.ru/cf/IpsmO1P5PJ'
+  }, {
     avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
     name: 'Семен Фомченков',
     title: 'Участник',
@@ -296,16 +305,6 @@ export const contributions = [
     links: [
       { icon: 'github', link: 'https://github.com/Krator3' }
     ],
-  }, {
-    avatar: 'https://avatars.githubusercontent.com/u/47402692?v=4',
-    name: 'Давид Султаниязов',
-    title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/X1Z53' },
-      { icon: { svg: gitverse }, link: 'https://gitverse.ru/x1z53' }
-    ],
-    actionText: 'Поддержать',
-    sponsor: 'https://www.tinkoff.ru/cf/IpsmO1P5PJ'
   }, {
     avatar: 'https://avatars.githubusercontent.com/u/57837842?v=4',
     name: 'Cyber:X',

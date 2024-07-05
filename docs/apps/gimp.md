@@ -1,16 +1,19 @@
 ---
 aggregation:
-    flatpak: 
+    flatpak:
         id: org.gimp.GIMP
+        build: offical
+    snap:
+        id: gimp
         build: offical
     sisyphus: gimp
 appstream:
     id: org.gimp.GIMP
     name: Gimp
-    icon: /gimp/gimp-icon.svg
+    icon: /gimp/gimp-logo.svg
     summary: Растровый графический редактор
     developer:
-        name:  	Питер Маттис,Спенсер Кимбелл
+        name: Питер Маттис,Спенсер Кимбелл
     metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/
@@ -21,9 +24,10 @@ appstream:
 
 # Gimp
 
-Gimp — Растровый графический редактор с открытым исходным кодом.Распространяется под лицензией GNU GPLv3.
+GIMP — Растровый графический редактор с открытым исходным кодом. Распространяется под лицензией GNU GPLv3.
 
-![Интерфейс Gimp](/gimp/gimp.png)
+![Интерфейс GIMP](/gimp/gimp-1.png)
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/_parts/install/content-snap.md-->

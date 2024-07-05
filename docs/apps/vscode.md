@@ -9,7 +9,7 @@ aggregation:
             build: unoffical
 appstream:
     id: com.visualstudio.code
-    name: VSCode
+    name: VS Code
     icon: /vscode/vscode-logo.svg
     summary: Инструмент, который сочетает в себе простоту редактора кода с тем, что нужно разработчикам для редактирования, сборки и отладки.
     keywords:
@@ -25,16 +25,16 @@ appstream:
         homepage: https://code.visualstudio.com/
 ---
 
-# VSCode
+# Visual Studio Code
 
 Visual Studio Code — инструмент, который сочетает в себе простоту редактора кода с тем, что нужно разработчикам для основного цикла: редактирования, сборки и отладки. Приложение выпускается с настройками, специфичными для Microsoft, выпущенный по традиционной [лицензии Microsoft на продукт](https://code.visualstudio.com/License/).
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
-## Использование Node.js в изолированной среде в приложении VSCode
+## Использование Node.js в изолированной среде в приложении VS Code
 
-Вы используете VSCode установленного с помощью пакетного менеджера [Flatpak](flatpak), для использования Node.js необходимо:
+Вы используете VS Code установленного с помощью пакетного менеджера [Flatpak](flatpak), для использования Node.js необходимо:
 
 Выберите расширение SDK для этого воспользуемся поиском:
 
@@ -73,15 +73,15 @@ Node.js SDK extension        Node.js SDK extension                              
 flatpak install flathub org.freedesktop.Sdk.Extension.node20
 ```
 
-Разрешите использование Node.js приложению **VSCode**:
+Разрешите использование Node.js приложению **VS Code**:
 
-Для этого необходимо [установить Flatseal](flatseal), выберите **VSCode** и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
+Для этого необходимо [установить Flatseal](flatseal), выберите **VS Code** и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
 
 ![vscode-1](/vscode/vscode-1.png)
 
-## Запуск VSCode в оконном интерфейсе Wayland
+## Запуск VS Code в оконном интерфейсе Wayland
 
-Запустить **VSCode** через терминал указав дополнительные опции запуска:
+Запустить **VS Code** через терминал указав дополнительные опции запуска:
 
 ::: code-group
 
@@ -95,7 +95,7 @@ code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platfor
 
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VSCode**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VS Code**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 

@@ -34,5 +34,6 @@ gallery:
 EasyEffects — приложение для настройки звуковых эффектов при использовании сервера PipeWire. Имеется как возможность ручной настройки, так и импорта/экспорта готовых пресетов.
 
 <AGWGallery />
+
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

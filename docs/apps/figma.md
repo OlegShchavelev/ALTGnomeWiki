@@ -18,7 +18,7 @@ appstream:
     developer:
         name: Figma Linux Community
     url:
-        homepage: https://github.com/Figma-Linux/figma-linux/tree/master
+        homepage: https://github.com/Figma-Linux/figma-linux
         bugtracker: https://github.com/Figma-Linux/figma-linux/issues
 ---
 
@@ -34,7 +34,7 @@ Figma — неофициальная версия Figma для Linux, постр
 
 ## Установка из репозитория GitHub
 
-Загрузите пакет `.rpm` со страницы релизов приложения `figma-linux` сервиса Github, затем установите через терминал:
+Загрузите пакет `.rpm` со страницы релизов приложения [`figma-linux` на Github](https://github.com/Figma-Linux/figma-linux/tree/master), затем установите через терминал:
 
 ::: code-group
 

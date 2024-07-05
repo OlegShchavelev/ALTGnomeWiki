@@ -28,7 +28,7 @@ jobs:
         run: npm ci
       - name: Parsing info about members from git
         run: |
-          npm run history:build -- --key="${{ secrets.VITE_GIT_KEY }}" --debug
+          npm run history:build -- --key="${{ secrets.GITHUB_TOKEN }}" --debug
       - name: Build with VitePress
         run: |
           npm run docs:build

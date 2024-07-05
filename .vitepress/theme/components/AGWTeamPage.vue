@@ -18,6 +18,7 @@ const { frontmatter } = useData();
 </script>
 
 <template>
+    <ClientOnly>
     <VPTeamPage v-if="gitOnline.length">
         <VPTeamPageTitle>
             <template v-if="frontmatter.longtitle" #title>
@@ -65,6 +66,7 @@ const { frontmatter } = useData();
         </VPTeamPageTitle>
         <VPTeamMembers :members="contributions" />
     </VPTeamPage>
+</ClientOnly>
 </template>
 
 <style scoped>

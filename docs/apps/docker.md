@@ -55,11 +55,19 @@ reboot
 
 Docker Compose можно установить через терминал:
 
-```shell
+::: code-group
+
+```shell-vue[apt-get]
 su -
 apt-get update
 apt-get install docker-compose-v2
 ```
+
+```shell-vue[epm]
+epm -i docker-compose-v2
+```
+
+:::
 
 Проверить, что Docker Compose установился, можно выполнив команду, которая покажет справку:
 

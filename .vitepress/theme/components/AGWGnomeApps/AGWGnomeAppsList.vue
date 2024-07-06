@@ -2,7 +2,7 @@
 import { useData } from 'vitepress';
 import AGWGnomeAppCard from './AGWGnomeAppCard.vue'
 import { data as apps } from '../../composables/appsGnomeDataLoader.data.ts'
-import { sortAppsByName } from '../../composables/sorters.ts'
+
 const { frontmatter } = useData()
 
 const props = defineProps({
@@ -43,13 +43,15 @@ const frontmatterApps = () => {
 const appsByCategory = [
   ...frontmatterApps(),
   ...wikiApps()
-]
+].sort((app1, app2) => {
+        return app1.appstream.name.localeCompare(app2.appstream.name, 'ru-RU')
+})
 
 </script>
 
 <template>
   <div class="container">
-    <AGWGnomeAppCard v-for="app of sortAppsByName(appsByCategory)" :app="app"/>
+    <AGWGnomeAppCard v-for="app of appsByCategory" :app="app"/>
   </div>
 </template>
 

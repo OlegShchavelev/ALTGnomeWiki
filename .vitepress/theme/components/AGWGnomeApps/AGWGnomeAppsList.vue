@@ -9,41 +9,30 @@ const props = defineProps({
   category: String
 })
 
-const wikiApps = () => {
-  const rawApps = apps.filter(app => {
+const getAppsList = () => {
+  const rawWikiApps = apps.filter(app => {
     return app?.frontmatter?.appstream?.keywords?.includes(props?.category)
   })
   
   const Apps = []
 
-  rawApps.forEach( app => {
+  rawWikiApps.forEach( app => {
     Apps.push({
         ...app.frontmatter,
         ...{about_app: app.url}
     })
+  })
+
+  Object.entries(frontmatter?.value?.apps?.[props.category]).forEach( app => {
+    Apps.find(appFound => appFound.appstream.name == app[1].appstream.name) ? "" : Apps.push({...app[1]})
   })
   
   return(Apps)
 
 }
 
-const frontmatterApps = () => {
-  const Apps = []
 
-  Object.entries(frontmatter?.value?.apps?.[props.category]).forEach( app => {
-    Apps.push({
-      ...app[1]
-    })
-  })
-
-  return Apps
-}
-
-
-const appsByCategory = [
-  ...frontmatterApps(),
-  ...wikiApps()
-].sort((app1, app2) => {
+const appsByCategory = getAppsList().sort((app1, app2) => {
         return app1.appstream.name.localeCompare(app2.appstream.name, 'ru-RU')
 })
 

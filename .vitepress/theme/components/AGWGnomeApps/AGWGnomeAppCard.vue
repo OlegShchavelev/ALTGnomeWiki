@@ -38,9 +38,7 @@ const cardProps = computed(() => {
 <template>
     <article class="AGWGnomeAppCard">
       <div class="profile">
-        <figure class="avatar">
-          <img class="avatar-img" :src="cardProps.icon"/>
-        </figure>
+        <img class="avatar-img" :src="cardProps.icon"/>
         <div class="data">
           <h3 class="name">
             {{cardProps.name}}
@@ -53,15 +51,11 @@ const cardProps = computed(() => {
           </p>
         </div>
       </div>
-      <AGWAsideMetaLink class="pkgLinks" :links="cardProps.links" />
+      <AGWAsideMetaLink :links="cardProps.links" />
     </article>
 </template>
 
 <style scoped>
-
-.pkgLinks {
-  margin-top: -2px;
-}
 
 .badges {
   margin-top: 5px;
@@ -78,7 +72,6 @@ AGWAsideMetaLink {
 .AGWGnomeAppCard {
   display: flex;
   flex-direction: column;
-  gap: 2px;
   border-radius: 12px;
   width: 100%;
   height: 100%;
@@ -96,24 +89,13 @@ AGWAsideMetaLink {
   text-align: center;
 }
 
-.avatar {
+.avatar-img {
   width: 64px;
   height: 64px;
   position: relative;
   flex-shrink: 0;
   margin: 0 auto;
   border-radius: 5px;
-  box-shadow: var(--vp-shadow-3);
-}
-
-.avatar-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 5px;
-  object-fit: cover;
 }
 
 .name {

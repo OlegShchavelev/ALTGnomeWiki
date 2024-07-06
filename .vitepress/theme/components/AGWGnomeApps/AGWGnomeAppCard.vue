@@ -20,7 +20,7 @@ const cardProps = computed(() => {
       return repo1[0] == 'sisyphus'?-1:1
   }))
 
-  console.log(repos)
+  //console.log(repos)
   const is_adaptive = props.app.appstream?.keywords?.includes('adaptive')?['adaptive']:[]
   const is_donttheme = props.app.appstream?.keywords?.includes('dontthemes')?['dontthemes']:[]
 
@@ -53,11 +53,15 @@ const cardProps = computed(() => {
           </p>
         </div>
       </div>
-      <AGWAsideMetaLink :links="cardProps.links" />
+      <AGWAsideMetaLink class="pkgLinks" :links="cardProps.links" />
     </article>
 </template>
 
 <style scoped>
+
+.pkgLinks {
+  margin-top: -2px;
+}
 
 .badges {
   margin-top: 5px;

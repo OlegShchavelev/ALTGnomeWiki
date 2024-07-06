@@ -18,3 +18,9 @@ export const sortMembers = (team, filter) => {
 
     return team
 }
+
+export const sortAppsByName = (apps) => {
+    return apps.sort((app1, app2) => {
+        return app1.appstream.name.localeCompare(app2.appstream.name, 'ru-RU')
+    })
+}

@@ -1,32 +1,32 @@
 Core
 
-- [x] Baobab (Анализатор использования дисков)
+- [x] Baobab (Анализатор использования дисков) +
 - [ ] Epiphany (Веб-браузер) adaptive
-- [x] Totem (Видео)
+- [x] Totem (Видео) +
 - [ ] DiskUtility (Диски) adaptive
 - [ ] Logs (Журналы)
 - [ ] Calendar (Календарь) adaptive
 - [ ] Calculator (Калькулятор) adaptive
 - [ ] Snapshot (Камера) adaptive
 - [ ] Maps (Карты) adaptive
-- [x] Console (Консоль) adaptive
+- [x] Console (Консоль) adaptive +
 - [ ] Contacts (Контакты) adaptive
-- [x] Music (Музыка)
+- [x] Music (Музыка) + 
 - [ ] Settings (Настройки) adaptive
 - [ ] Weather (Погода)
 - [ ] Connections (Подключения)
-- [x] Evince (Просмотр документов)
-- [x] Loupe (Просмотрщик изображений) adaptive
+- [x] Evince (Просмотр документов) +
+- [x] Loupe (Просмотрщик изображений) adaptive +
 - [ ] Extensions (Расширения) adaptive
 - [ ] Characters (Символы) adaptive
 - [ ] SystemMonitor (Системный монитор)
-- [x] SimpleScan (Сканер документов)
+- [x] SimpleScan (Сканер документов) +
 - [ ] Yelp (Справка)
 - [ ] TextEditor (Текстовый редактор)
 - [ ] Nautilus (Файлы) adaptive
 - [ ] Software (Центр приложений) adaptive
 - [ ] Clocks (Часы) adaptive
-- [x] FontViewer (Шрифты) adaptive
+- [x] FontViewer (Шрифты) adaptive +
 - [ ] Tour (Экскурсия)
 
 Circle
@@ -36,11 +36,11 @@ Circle
 - [ ] VideoTrimmer (Видеотриммер)
 - [ ] WebfontKitGenerator (Генератор набора веб-шрифтов)
 - [ ] Decoder (Декодер) adaptive
-- [x] List / Errands (Дела) adaptive
+- [x] List / Errands (Дела) adaptive + 
 - [ ] Decibels (Децибелы) adaptive
 - [ ] Health (Здоровье)
 - [ ] Identity (Идентичность)
-- [x] Cartridges (Картриджи)
+- [x] Cartridges (Картриджи) + 
 - [ ] MetadataCleaner (Очиститель метаданных) adaptive
 - [ ] SharePreview (Поделиться превью)
 - [ ] Podcasts (Подкасты) adaptive
@@ -50,7 +50,7 @@ Circle
 - [ ] Citations (Цитаты) adaptive
 - [ ] Chessclock (Шахматные часы)
 - [ ] Emblem (Эмблема)
-- [x] Amberol
+- [x] Amberol + 
 - [ ] AudioSharing (Audio Sharing) adaptive
 - [ ] Biblioteca adaptive
 - [ ] Blanket
@@ -58,14 +58,25 @@ Circle
 - [ ] Collision adaptive
 - [ ] Commit
 - [ ] Curtail
-- [x] Dialect adaptive
+- [x] Dialect adaptive +
 - [ ] EarTag (Ear Tag) adaptive
 - [ ] Elastic adaptive
 - [ ] Eyedropper
 - [ ] ForgeSparks (Forge Sparks) adaptive
-- [x] Fragments adaptive
-- [x] Fretbaord adaptive
-- [x] Garphor
+- [x] Fragments adaptive +
+- [x] Fretbaord adaptive + 
+- [x] Garphor +
 - [ ] Graphs adaptive
 - [ ] Hieroglyphic
 - [ ] Impression adaptive
+- [x] Switcheroo +
+- [x] Wike +
+
+Dev
+
+- [x] Boxes +
+- [ ] Dconf Editor
+- [ ] Builder
+- [ ] D-Spy
+- [ ] Devhelp
+- [ ] Sysprof

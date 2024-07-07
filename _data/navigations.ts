@@ -56,6 +56,7 @@ export const docs = [
           { text: 'Fotema', link: '/fotema' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
+          { text: 'Fish', link: '/fish' },
           { text: 'G4Music', link: '/g4music' },
           { text: 'Gaphor', link: '/gaphor' },
           { text: 'GDM Настройки', link: '/gdm-settings' },

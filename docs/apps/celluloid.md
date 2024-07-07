@@ -3,7 +3,7 @@ aggregation:
     sisyphus: celluloid
     flatpak: io.github.celluloid_player.Celluloid
 appstream:
-    id: celluloid.desktop
+    id: io.github.celluloid_player.Celluloid
     name: Celluloid
     icon: /celluloid/celluloid-logo.svg
     summary: Простой интерфейс GTK для MPV. Он призван быть простым в использовании при сохранении высокого уровня кастомизации.

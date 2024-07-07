@@ -3,7 +3,7 @@ aggregation:
     sisyphus: simple-scan
     flatpak:
         id: org.gnome.SimpleScan
-        build: offical
+        build: official
 appstream:
     id: org.gnome.SimpleScan
     name: Сканер документов

@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: io.github.fabrialberio.pinapp
-        build: unoffical
+        build: unofficial
 appstream:
     id: io.github.fabrialberio.pinapp
     name: PinApp

@@ -2,10 +2,10 @@
 aggregation:
     flatpak:
         id: com.github.Anuken.Mindustry
-        build: unoffical
+        build: unofficial
     snap:
         id: mindustry
-        build: unoffical
+        build: unofficial
 appstream:
     id: com.github.Anuken.Mindustry
     name: Mindustry

@@ -3,7 +3,7 @@ aggregation:
     sisyphus: loupe
     flatpak:
         id: org.gnome.Loupe
-        build: offical
+        build: official
 appstream:
     id: org.gnome.Loupe
     name: Loupe

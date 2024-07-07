@@ -4,7 +4,6 @@ appstreamRepo: xeyes.desktop
 aggregation:
     sisyphus: xeyes
 appstream:
-    id: xeyes.desktop
     name: Xeyes
     icon: /xeyes/xeyes-logo.png
     summary: Программа, которая отображает на экране два глаза, следящих за движениями курсора мыши

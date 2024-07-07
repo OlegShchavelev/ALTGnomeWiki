@@ -3,7 +3,7 @@ aggregation:
     epm:
         play:
             id: yandex-disk
-            build: unoffical
+            build: unofficial
 appstream:
     name: Яндекс Диск
     icon: /yandex-disk/yandex-disk-logo.png

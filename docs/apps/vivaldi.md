@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.vivaldi.Vivaldi
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: vivaldi
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.vivaldi.Vivaldi
     name: Vivaldi

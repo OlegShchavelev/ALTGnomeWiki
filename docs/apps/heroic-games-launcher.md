@@ -2,10 +2,10 @@
 aggregation:
     flatpak:
         id: com.heroicgameslauncher.hgl
-        build: offical
+        build: official
     snap:
         id: heroic
-        build: unoffical
+        build: unofficial
 appstream:
     name: Heroic Games Launcher
     icon: /heroic/heroic-logo.png

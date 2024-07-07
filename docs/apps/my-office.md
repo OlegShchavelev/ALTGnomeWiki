@@ -3,7 +3,7 @@ aggregation:
     epm:
         play:
             id: myoffice
-            build: unoffical
+            build: unofficial
 appstream:
     name: МойОфис
     icon: /my-office/my-office-logo.svg

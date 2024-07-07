@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: org.sonic3air.Sonic3AIR
-        build: offical
+        build: official
 appstream:
     id: org.sonic3air.Sonic3AIR
     name: Sonic 3 A.I.R

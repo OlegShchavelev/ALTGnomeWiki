@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.microsoft.Edge
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: edge
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.microsoft.Edge
     name: Microsoft Edge

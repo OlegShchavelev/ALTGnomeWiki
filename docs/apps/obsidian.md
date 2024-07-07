@@ -4,7 +4,7 @@ aggregation:
     epm:
         play:
             id: obsidian
-            build: unoffical
+            build: unofficial
 appstream:
     id: md.obsidian.Obsidian
     name: Obsidian

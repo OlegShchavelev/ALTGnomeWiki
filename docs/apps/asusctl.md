@@ -2,7 +2,7 @@
 aggregation:
     sisyphus: asusctl
 appstream:
-    id: asusctl.desktop
+    id: rog-control-center.desktop
     name: AsusCtl
     icon: /asusctl/asusctl-logo.png
     summary: Утилита для управления многими аспектами различных ноутбуков ASUS.

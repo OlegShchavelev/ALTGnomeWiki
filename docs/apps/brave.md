@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.brave.Browser
-        build: offical
+        build: official
     epm:
         play:
             id: brave
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.brave.Browser
     name: Brave Browser

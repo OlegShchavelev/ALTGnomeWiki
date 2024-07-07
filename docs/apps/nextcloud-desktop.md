@@ -3,7 +3,7 @@ aggregation:
     sisyphus: nextcloud-client
     flatpak:
         id: com.nextcloud.desktopclient.nextcloud
-        build: offical
+        build: official
 appstream:
     id: com.nextcloud.desktopclient.nextcloud
     name: Nextcloud Desktop

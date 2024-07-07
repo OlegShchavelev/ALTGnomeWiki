@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.getpostman.Postman
-        build: offical
+        build: official
     epm:
         play:
             id: postaman
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.getpostman.Postman
     name: Postman

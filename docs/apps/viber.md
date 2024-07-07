@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.viber.Viber
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: viber
-            build: unoffical
+            build: unofficial
 
 appstream:
     name: Viber

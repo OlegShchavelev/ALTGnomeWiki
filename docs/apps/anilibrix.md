@@ -2,11 +2,11 @@
 aggregation:
     snap:
         id: anilibrix
-        build: offical
+        build: official
     epm:
         play:
             id: anilibrix
-            build: unoffical
+            build: unofficial
 appstream:
     id: anilibrix
     name: AniLibrix

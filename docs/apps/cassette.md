@@ -3,7 +3,7 @@ aggregation:
     sisyphus: cassette
     flatpak:
         id: io.github.Rirusha.Cassette
-        build: offical
+        build: official
 appstream:
     id: io.github.Rirusha.Cassette
     name: Кассета

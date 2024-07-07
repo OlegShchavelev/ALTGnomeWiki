@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: us.zoom.Zoom
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: zoom
-            build: unoffical
+            build: unofficial
 appstream:
     id: us.zoom.Zoom
     name: Zoom

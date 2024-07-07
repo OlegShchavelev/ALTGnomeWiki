@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.wps.Office
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: wpsoffice
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.wps.Office
     name: WPS Office

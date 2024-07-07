@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: com.dec05eba.gpu_screen_recorder
-        build: offical
+        build: official
     sisyphus: gpu-screen-recorder
 appstream:
     id: com.dec05eba.gpu_screen_recorder

@@ -5,7 +5,7 @@ appstreamRepo: org.chromium.Chromium
 aggregation:
     flatpak:
         id: org.chromium.Chromium
-        build: unoffical
+        build: unofficial
     sisyphus: chromium
 appstream:
     id: org.chromium.Chromium

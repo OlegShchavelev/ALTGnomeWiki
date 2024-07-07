@@ -2,7 +2,6 @@
 aggregation:
     sisyphus: git
 appstream:
-    id: git.desktop
     name: Git
     icon: /git/git-logo.svg
     summary: Бесплатная и открытая система управления версиями с распределённой структурой.

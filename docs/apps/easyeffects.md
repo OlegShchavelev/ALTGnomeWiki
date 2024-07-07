@@ -3,7 +3,7 @@ aggregation:
     sisyphus: easyeffects
     flatpak:
         id: com.github.wwmm.easyeffects
-        build: offical
+        build: official
 appstream:
     id: com.github.wwmm.easyeffects
     name: EasyEffects

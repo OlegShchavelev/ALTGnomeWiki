@@ -3,7 +3,7 @@ aggregation:
     sisyphus: kooha
     flatpak:
         id: io.github.seadve.Kooha
-        build: offical
+        build: official
 appstream:
     id: io.github.seadve.Kooha
     name: Kooha

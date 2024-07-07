@@ -3,12 +3,12 @@ aggregation:
     sisyphus: wike
     flatpak:
         id: com.github.hugolabe.Wike
-        build: offical
+        build: official
     snap:
         id: wike
-        build: unoffical
+        build: unofficial
 appstream:
-    id: alacarte.desktop
+    id: com.github.hugolabe.Wike
     name: Wike
     icon: /wike/wike-logo.svg
     summary: Программа для чтения Википедии для рабочего окружения GNOME.

@@ -4,7 +4,6 @@ appstreamRepo: alacarte.desktop
 aggregation:
     sisyphus: xlsclients
 appstream:
-    id: xlsclients.desktop
     name: XLSCLIENTS
     summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
     developer:

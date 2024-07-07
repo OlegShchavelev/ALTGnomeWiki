@@ -3,7 +3,7 @@ aggregation:
     epm:
         play:
             id: r7-office
-            build: unoffical
+            build: unofficial
 appstream:
     name: Р7-Офис
     icon: /r7-office/r7-office-logo.png

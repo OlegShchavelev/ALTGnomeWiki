@@ -3,10 +3,10 @@ aggregation:
     sisyphus: firefox
     flatpak:
         id: org.mozilla.firefox
-        build: offical
+        build: official
     snap:
         id: firefox
-        build: offical
+        build: official
 appstream:
     id: org.mozilla.firefox
     name: Firefox

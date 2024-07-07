@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.github.neithern.g4music
-        build: offical
+        build: official
     sisyphus: g4music
     snap:
         id: g4music
-        build: unoffical
+        build: unofficial
 appstream:
     id: com.github.neithern.g4music
     name: G4Music

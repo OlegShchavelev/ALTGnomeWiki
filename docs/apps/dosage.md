@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: io.github.diegopvlk.Dosage
-        build: offical
+        build: official
     sisyphus: gnome-dosage
 appstream:
     id: io.github.diegopvlk.Dosage

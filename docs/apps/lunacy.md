@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.icons8.Lunacy
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: lunacy
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.icons8.Lunacy
     name: Lunacy

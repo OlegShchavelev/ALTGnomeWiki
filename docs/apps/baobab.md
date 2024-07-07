@@ -9,7 +9,7 @@ gallery:
 aggregation:
     flatpak:
         id: org.gnome.baobab
-        build: offical
+        build: official
     sisyphus: gnome-disk-usage
 appstream:
     id: org.gnome.baobab

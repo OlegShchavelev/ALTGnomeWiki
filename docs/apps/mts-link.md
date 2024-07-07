@@ -3,7 +3,7 @@ aggregation:
     epm:
         play:
             id: mts-link-desktop
-            build: unoffical
+            build: unofficial
 appstream:
     name: МТС Линк
     icon: /mts-link/mts-link-logo.svg

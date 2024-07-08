@@ -15,6 +15,9 @@ appstream:
     name: Дела
     icon: /errands/errands-logo.svg
     summary: Управляйте своими задачами
+    keywords:
+        - circle
+        - adaptive
     metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/

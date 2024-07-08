@@ -8,12 +8,10 @@ aggregation:
         id: wike
         build: unoffical
 appstream:
-    id: alacarte.desktop
     name: Wike
     icon: /wike/wike-logo.svg
-    summary: Программа для чтения Википедии для рабочего окружения GNOME.
+    summary: Ищите и читайте статьи в Википедии
     keywords:
-        - adaptive
         - circle
         - dontthemes
     developer:

@@ -8,7 +8,7 @@ appstream:
     icon: /switcheroo/io.gitlab.adhami3310.Converter.svg
     summary: Конвертируйте или изменяйте размер изображений
     keywords:
-        - circe
+        - circle
     developer:
         name: Khaleel Al-Adhami
         avatar: https://gitlab.com/uploads/-/system/user/avatar/13112052/avatar.png

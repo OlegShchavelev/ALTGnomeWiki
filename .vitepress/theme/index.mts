@@ -98,7 +98,7 @@ export default {
     // Get route
     const route = useRoute()
     // Using
-    imageViewer(route, '.vp-doc img:not(.gallery)', {
+    imageViewer(route, '.vp-doc img:not(.gallery, .VPImage)', {
       title: true,
       toolbar: {
         zoomIn: 4,

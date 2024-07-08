@@ -63,6 +63,7 @@ const cardProps = computed(() => {
 
 .badges[data-v-834f837e] {
   display: inline;
+  justify-content: center;
 }
 
 AGWAsideMetaLink {

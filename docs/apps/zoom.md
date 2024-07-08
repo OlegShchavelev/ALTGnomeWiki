@@ -14,7 +14,7 @@ appstream:
   summary: Платформа для проведения видеоконференций, вебинаров и других онлайн-мероприятий.
   keywords:
     - proprietary
-    - restictions
+    - restrictions
   developer:
     name: Zoom Video Communications
   metadata_license:

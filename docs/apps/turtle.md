@@ -2,17 +2,17 @@
 title: Turtle
 aggregation:
   flatpak:
-    id: flathub de.philippun1.turtle
+    id: de.philippun1.turtle
     build: official
 appstream:
-  id: flathub de.philippun1.turtle
+  id: de.philippun1.turtle
   name: Turtle
   icon: /turtle/de.philippun1.turtle.svg
   summary: Управляйте своими репозиториями git
   developer:
     name: Philipp Unger
   metadata_license:
-    name: GNU GPLv3.0
+    name: GNU GPLv3
     link: https://choosealicense.com/licenses/gpl-3.0/
   url:
     homepage: https://gitlab.gnome.org/philippun1/turtle

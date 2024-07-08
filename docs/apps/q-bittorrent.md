@@ -8,7 +8,7 @@ appstream:
   id: org.qbittorrent.qBittorrent
   name: qBittorrent
   icon: /q-bittorrent/q-bittorrent-logo.svg
-  summary: Cвободный кроссплатформенный клиент файлообменной сети BitTorrent.
+  summary: Свободный кроссплатформенный клиент файлообменной сети BitTorrent.
   developer:
     name: qBittorrent Community
   metadata_license:

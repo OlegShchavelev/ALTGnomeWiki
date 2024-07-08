@@ -684,7 +684,7 @@ apps:
         keywords:
           - adaptive
         name: Tangram
-        summary: Браузер для закрепленных вкладок
+        summary: Браузер для закреплённых вкладок
         icon: https://apps.gnome.org/icons/scalable/re.sonny.Tangram.svg
       about_app: https://apps.gnome.org/ru/Tangram/
     'TextPieces':

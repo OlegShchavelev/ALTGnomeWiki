@@ -16,7 +16,7 @@ appstream:
   developer:
     name: Vencord Contributors
   metadata_license:
-    name: GNU GPLv3.0
+    name: GNU GPLv3
     link: https://choosealicense.com/licenses/gpl-3.0/
   url:
     homepage: https://vencord.dev/

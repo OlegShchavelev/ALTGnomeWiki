@@ -59,7 +59,7 @@ docs:
             link: lutris
           - name: Bottles
             link: bottle
-          - name: Сartridges
+          - name: Cartridges
             link: cartridges
           - name: Grapejuice
             link: grapejuice
@@ -98,7 +98,7 @@ docs:
           dark: /streaming-light.svg
           light: /streaming-dark.svg
         apps:
-          - name: Kассета
+          - name: Кассета
             link: cassette
           - name: Spotify
             link: spotify

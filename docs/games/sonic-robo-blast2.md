@@ -11,7 +11,7 @@ appstream:
   developer:
     name: Sonic Team Junior
   metadata_license:
-    name: GNU GPL2v
+    name: GNU GPLv2
     link: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
   url:
     homepage: https://www.srb2.org/download/

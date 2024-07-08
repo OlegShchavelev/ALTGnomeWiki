@@ -12,7 +12,7 @@ hero:
     alt: GNOME
   actions:
     - theme: brand
-      text: Cкачать ALT Regular Gnome
+      text: Скачать ALT Regular Gnome
       link: /download
     - theme: alt
       text: Документация
@@ -23,11 +23,11 @@ features:
       dark: /bolt-dark.svg
       light: /bolt-light.svg
     title: Раньше чем у других
-    details: Eжедневно обновляемый репозиторий пакетов свободных программ Sisyphus
+    details: Ежедневно обновляемый репозиторий пакетов свободных программ Sisyphus
   - icon:
       dark: /shield-dark.svg
       light: /shield-light.svg
-    title: Цифровая НЕзависмость
+    title: Цифровая НЕзависимость
     details: Семейство дистрибутивов Linux, производится в России с 2000 года.
   - icon:
       dark: /users-dark.svg

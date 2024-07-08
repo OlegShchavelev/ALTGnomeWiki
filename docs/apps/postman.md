@@ -5,7 +5,7 @@ aggregation:
     build: official
   epm:
     play:
-      id: postaman
+      id: postman
       build: unofficial
 appstream:
   id: com.getpostman.Postman

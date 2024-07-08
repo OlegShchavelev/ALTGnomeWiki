@@ -5,7 +5,7 @@ appstream:
   id: zerotier-one
   name: ZeroTierOne
   icon: /zerotier-one/zerotier-one-logo.png
-  summary: Cервис ZeroTierOne
+  summary: Сервис ZeroTierOne
   developer:
     name: ZeroTier Inc.
   metadata_license:

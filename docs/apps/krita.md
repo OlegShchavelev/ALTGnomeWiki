@@ -8,7 +8,7 @@ appstream:
   id: org.kde.krita
   name: Krita
   icon: /krita/krita-logo.svg
-  summary: Творческая свобода для художников c Krita
+  summary: Творческая свобода для художников с Krita
   metadata_license:
     name: GNU GPLv3
     link: https://choosealicense.com/licenses/gpl-3.0/

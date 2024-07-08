@@ -2,7 +2,7 @@
 aggregation:
   flatpak:
     id: net.codelogistics.webapps
-    build: offical
+    build: official
 appstream:
   id: net.codelogistics.webapps
   name: Web Apps

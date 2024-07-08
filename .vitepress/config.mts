@@ -109,14 +109,14 @@ export default defineConfig({
     },
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'Документация', link: 'wiki' },
-      { text: 'Приложения GNOME', link: 'apps-gnome' },
+      { text: 'Документация', link: '/wiki' },
+      { text: 'Приложения GNOME', link: '/apps-gnome' },
       { text: 'Для авторов', link: '/reference/' },
       {
         text: 'О проекте',
         items: [
-          { text: 'О проекте', link: '/about' },
-          { text: 'Участники', link: '/contributions' }
+          { text: 'О проекте', link: 'about' },
+          { text: 'Участники', link: 'contributions' }
         ]
       }
     ],

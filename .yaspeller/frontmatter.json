@@ -1,13 +1,13 @@
 [
+  "avatar",
   "bolt",
-  "progress",
   "createdAt",
-  "pluginID",
-  "packageName",
-  "lastUpdated",
   "dontthemes",
   "icon",
+  "lastUpdated",
+  "link",
   "logo",
-  "avatar",
-  "link"
+  "packageName",
+  "pluginID",
+  "progress"
 ]

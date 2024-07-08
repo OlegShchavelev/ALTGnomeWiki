@@ -27,6 +27,7 @@
     "scripts": {
         "history:build": "npx esrun ./.tools/gitlog.ts",
         "docs:dev": "vitepress dev",
+        "docs:dev-host": "vitepress dev --host",
         "docs:build": "vitepress build",
         "docs:preview": "vitepress preview",
         "docs:spell-check": "npm run docs:yaspeller-full && npm run docs:cspell-full",

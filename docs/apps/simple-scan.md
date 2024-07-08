@@ -9,6 +9,8 @@ appstream:
     name: Сканер документов
     icon: /simple-scan/simple-scan-logo.svg
     summary: Официальная утилита для рабочего окружения GNOME, которая позволяет вам захватывать изображения с помощью сканеров
+    keywords:
+        - core
     metadata_license:
         name: GNU GPLv3
         link: https://choosealicense.com/licenses/gpl-3.0/

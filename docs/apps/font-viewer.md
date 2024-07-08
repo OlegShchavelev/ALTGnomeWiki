@@ -12,6 +12,7 @@ appstream:
         link: https://choosealicense.com/licenses/gpl-3.0/
     keywords:
         - core
+        - adaptive
     developer:
         name: GNOME
         avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48

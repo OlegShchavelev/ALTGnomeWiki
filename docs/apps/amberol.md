@@ -18,7 +18,6 @@ appstream:
     icon: /amberol/amberol-logo.svg
     summary: Воспроизводит музыку и ничего больше
     keywords:
-        - adaptive
         - circle
     developer:
         name: GNOME

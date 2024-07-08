@@ -26,6 +26,7 @@ const props = defineProps<{
 .btn {
     padding: 8px 24px;
     text-align: center;
+    text-decoration: none;
     transition: all .5s ease-in-out;
     display: grid;
     background-color: var(--agw-btn-bg);

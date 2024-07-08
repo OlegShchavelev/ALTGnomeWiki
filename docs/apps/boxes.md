@@ -16,7 +16,7 @@ appstream:
         name: LGPL-2.1
         link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ru.html#SEC1
     keywords:
-        - core
+        - dev
     url:
         homepage: https://gnomeboxes.org/
         bugtracker: https://gitlab.gnome.org/GNOME/gnome-boxes/issues

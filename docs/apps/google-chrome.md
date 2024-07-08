@@ -1,27 +1,27 @@
 ---
 aggregation:
-    flatpak:
-        id: com.google.Chrome
-        build: unofficial
-    epm:
-        play:
-            id: chrome
-            build: unofficial
-appstream:
+  flatpak:
     id: com.google.Chrome
-    name: Google Chrome
-    icon: /google-chrome/google-chrome-logo.svg
-    summary: Веб-браузер от Google
-    keywords:
-        - proprietary
-    metadata_license:
-        name: Собственная
-        link: https://chromeenterprise.google/terms/chrome-service-license-agreement/in/
-    developer:
-        name: Google
-        avatar: /google-chrome/google-chrome-avatar.png
-    url:
-        homepage: https://www.google.com/chrome/
+    build: unofficial
+  epm:
+    play:
+      id: chrome
+      build: unofficial
+appstream:
+  id: com.google.Chrome
+  name: Google Chrome
+  icon: /google-chrome/google-chrome-logo.svg
+  summary: Веб-браузер от Google
+  keywords:
+    - proprietary
+  metadata_license:
+    name: Собственная
+    link: https://chromeenterprise.google/terms/chrome-service-license-agreement/in/
+  developer:
+    name: Google
+    avatar: /google-chrome/google-chrome-avatar.png
+  url:
+    homepage: https://www.google.com/chrome/
 ---
 
 # Google Chrome

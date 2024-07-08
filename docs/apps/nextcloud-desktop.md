@@ -1,23 +1,23 @@
 ---
 aggregation:
-    sisyphus: nextcloud-client
-    flatpak:
-        id: com.nextcloud.desktopclient.nextcloud
-        build: official
-appstream:
+  sisyphus: nextcloud-client
+  flatpak:
     id: com.nextcloud.desktopclient.nextcloud
-    name: Nextcloud Desktop
-    icon: /nextcloud-client/nextcloud-client-logo.svg
-    summary: Официальный клиент Nextcloud Desktop
-    metadata_license:
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    developer:
-        name: Nextcloud GmbH
-        avatar: /nextcloud-client/nextcloud-client-avatar.svg
-    url:
-        homepage: https://nextcloud.com/
-        bugtracker: https://github.com/nextcloud/desktop/issues
+    build: official
+appstream:
+  id: com.nextcloud.desktopclient.nextcloud
+  name: Nextcloud Desktop
+  icon: /nextcloud-client/nextcloud-client-logo.svg
+  summary: Официальный клиент Nextcloud Desktop
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  developer:
+    name: Nextcloud GmbH
+    avatar: /nextcloud-client/nextcloud-client-avatar.svg
+  url:
+    homepage: https://nextcloud.com/
+    bugtracker: https://github.com/nextcloud/desktop/issues
 ---
 
 # Nextcloud Desktop

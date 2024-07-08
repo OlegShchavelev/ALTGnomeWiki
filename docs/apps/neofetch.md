@@ -1,21 +1,21 @@
 ---
 title: Neofetch
 aggregation:
-    sisyphus: neofetch
+  sisyphus: neofetch
 appstream:
-    name: Neofetch
-    icon: /neofetch/neofetch-logo.png
-    summary: Средство для отображения информации о системе.
-    metadata_license:
-        name: MIT License
-        link: https://choosealicense.com/licenses/mit/
-    developer:
-        name: Dylan Araps & Linux Community
-        nickname: dylanaraps
-        avatar: /neofetch/neofetch-avatar.png
-    url:
-        homepage: https://github.com/dylanaraps/neofetch
-        bugtracker: https://github.com/dylanaraps/neofetch/issues
+  name: Neofetch
+  icon: /neofetch/neofetch-logo.png
+  summary: Средство для отображения информации о системе.
+  metadata_license:
+    name: MIT License
+    link: https://choosealicense.com/licenses/mit/
+  developer:
+    name: Dylan Araps & Linux Community
+    nickname: dylanaraps
+    avatar: /neofetch/neofetch-avatar.png
+  url:
+    homepage: https://github.com/dylanaraps/neofetch
+    bugtracker: https://github.com/dylanaraps/neofetch/issues
 ---
 
 <style scoped>

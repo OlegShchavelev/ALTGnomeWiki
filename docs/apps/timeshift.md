@@ -1,20 +1,20 @@
 ---
 aggregation:
-    sisyphus: timeshift
+  sisyphus: timeshift
 appstream:
-    id: timeshift-gtk.desktop
-    name: Timeshift
-    icon: /timeshift/timeshift-logo.png
-    summary: Инструмент для автоматического создания копий системы (снимков/snapshots) с определённой периодичностью.
-    developer:
-        name: Linux Mint Team
-        avatar: /timeshift/timeshift-avatar.svg
-    metadata_license:
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    url:
-        homepage: https://github.com/linuxmint/timeshift
-        bugtracker: https://github.com/linuxmint/timeshift/issues
+  id: timeshift-gtk.desktop
+  name: Timeshift
+  icon: /timeshift/timeshift-logo.png
+  summary: Инструмент для автоматического создания копий системы (снимков/snapshots) с определённой периодичностью.
+  developer:
+    name: Linux Mint Team
+    avatar: /timeshift/timeshift-avatar.svg
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  url:
+    homepage: https://github.com/linuxmint/timeshift
+    bugtracker: https://github.com/linuxmint/timeshift/issues
 ---
 
 # Timeshift

@@ -1,30 +1,30 @@
 ---
 aggregation:
-    flatpak:
-        id: app.fotema.Fotema
-        build: official
-appstream:
+  flatpak:
     id: app.fotema.Fotema
-    name: Fotema
-    icon: /fotema/fotema-logo.svg
-    summary: Любуйтесь своими фотографиями
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    developer:
-        name: Дэвид Блисс
-        nickname: blissd
-        avatar: https://avatars.githubusercontent.com/u/2624723?v=4
-    url:
-        homepage: https://github.com/blissd/fotema
-        bugtracker: https://github.com/blissd/fotema/issues
+    build: official
+appstream:
+  id: app.fotema.Fotema
+  name: Fotema
+  icon: /fotema/fotema-logo.svg
+  summary: Любуйтесь своими фотографиями
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  developer:
+    name: Дэвид Блисс
+    nickname: blissd
+    avatar: https://avatars.githubusercontent.com/u/2624723?v=4
+  url:
+    homepage: https://github.com/blissd/fotema
+    bugtracker: https://github.com/blissd/fotema/issues
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /fotema/fotema-1.png
-        - src: /fotema/fotema-2.png
-        - src: /fotema/fotema-3.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /fotema/fotema-1.png
+    - src: /fotema/fotema-2.png
+    - src: /fotema/fotema-3.png
 ---
 
 # Fotema

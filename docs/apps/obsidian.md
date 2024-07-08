@@ -1,26 +1,26 @@
 ---
 aggregation:
-    flatpak: md.obsidian.Obsidian
-    epm:
-        play:
-            id: obsidian
-            build: unofficial
+  flatpak: md.obsidian.Obsidian
+  epm:
+    play:
+      id: obsidian
+      build: unofficial
 appstream:
-    id: md.obsidian.Obsidian
-    name: Obsidian
-    icon: /obsidian/obsidian-logo.png
-    summary: Мощная база знаний, работает поверх локальной папки с обычными текстовыми файлами Markdown.
-    keywords:
-        - proprietary
-    metadata_license:
-        name: Собственная
-        link: https://obsidian.md/license
-    developer:
-        name: Dynalist Inc.
-    url:
-        homepage: https://obsidian.md/
-        bugtracker: https://github.com/flathub/md.obsidian.Obsidian/issues
-        translate: https://github.com/obsidianmd/obsidian-translations
+  id: md.obsidian.Obsidian
+  name: Obsidian
+  icon: /obsidian/obsidian-logo.png
+  summary: Мощная база знаний, работает поверх локальной папки с обычными текстовыми файлами Markdown.
+  keywords:
+    - proprietary
+  metadata_license:
+    name: Собственная
+    link: https://obsidian.md/license
+  developer:
+    name: Dynalist Inc.
+  url:
+    homepage: https://obsidian.md/
+    bugtracker: https://github.com/flathub/md.obsidian.Obsidian/issues
+    translate: https://github.com/obsidianmd/obsidian-translations
 ---
 
 # Obsidian
@@ -53,8 +53,8 @@ obsidian --ozone-platform-hint=auto
 
 По умолчанию запуск в оконном интерфейсе Wayland запрещён. Для запуска через него, включите следующие пункты:
 
--   Оконная система Wayland
--   Возврат к оконной системе X11
+- Оконная система Wayland
+- Возврат к оконной системе X11
 
 Альтернативной настройкой окружения является терминал:
 

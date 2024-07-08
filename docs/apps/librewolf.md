@@ -1,21 +1,21 @@
 ---
 aggregation:
-    flatpak:
-        id: io.gitlab.librewolf-community
-        build: official
-appstream:
+  flatpak:
     id: io.gitlab.librewolf-community
-    name: LibreWolf
-    icon: /librewolf/librewolf-logo.svg
-    summary: Максимально приватный и безопасный браузер
-    developer:
-        name: ohfp
-    metadata_license:
-        name: MPL 2.0
-        link: https://www.mozilla.org/en-US/MPL/2.0/
-    url:
-        homepage: https://librewolf.net/
-        bugtracker: https://codeberg.org/librewolf/issues/issues
+    build: official
+appstream:
+  id: io.gitlab.librewolf-community
+  name: LibreWolf
+  icon: /librewolf/librewolf-logo.svg
+  summary: Максимально приватный и безопасный браузер
+  developer:
+    name: ohfp
+  metadata_license:
+    name: MPL 2.0
+    link: https://www.mozilla.org/en-US/MPL/2.0/
+  url:
+    homepage: https://librewolf.net/
+    bugtracker: https://codeberg.org/librewolf/issues/issues
 ---
 
 # LibreWolf

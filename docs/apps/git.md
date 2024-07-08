@@ -1,17 +1,17 @@
 ---
 aggregation:
-    sisyphus: git
+  sisyphus: git
 appstream:
-    name: Git
-    icon: /git/git-logo.svg
-    summary: Бесплатная и открытая система управления версиями с распределённой структурой.
-    metadata_license:
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    developer:
-        name: Git Community
-    url:
-        homepage: https://git-scm.com/
+  name: Git
+  icon: /git/git-logo.svg
+  summary: Бесплатная и открытая система управления версиями с распределённой структурой.
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  developer:
+    name: Git Community
+  url:
+    homepage: https://git-scm.com/
 ---
 
 # Git

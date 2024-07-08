@@ -1,30 +1,30 @@
 ---
 aggregation:
-    flatpak:
-        id: com.github.tchx84.Flatseal
-        build: official
-    sisyphus: flatseal
-appstream:
+  flatpak:
     id: com.github.tchx84.Flatseal
-    name: Flatseal
-    icon: /flatseal/flatseal-logo.svg
-    summary: Управление разрешениями Flatpak
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    developer:
-        name: Martin Abente Lahaye
-        avatar: /flatseal/flatseal-avatar.png
-        nickname: tchx84
-    url:
-        homepage: https://github.com/tchx84/flatseal
-        bugtracker: https://github.com/tchx84/flatseal/issues
+    build: official
+  sisyphus: flatseal
+appstream:
+  id: com.github.tchx84.Flatseal
+  name: Flatseal
+  icon: /flatseal/flatseal-logo.svg
+  summary: Управление разрешениями Flatpak
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  developer:
+    name: Martin Abente Lahaye
+    avatar: /flatseal/flatseal-avatar.png
+    nickname: tchx84
+  url:
+    homepage: https://github.com/tchx84/flatseal
+    bugtracker: https://github.com/tchx84/flatseal/issues
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /flatseal/flatseal-1.png
-        - src: /flatseal/flatseal-2.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /flatseal/flatseal-1.png
+    - src: /flatseal/flatseal-2.png
 ---
 
 # Flatseal

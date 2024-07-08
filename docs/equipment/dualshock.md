@@ -1,7 +1,7 @@
 ---
 tags:
-    - Устройства/Геймпады
-    - DualShock
+  - Устройства/Геймпады
+  - DualShock
 createdAt: 02-29-2024
 progress: 70
 ---

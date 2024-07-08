@@ -1,25 +1,25 @@
 ---
 aggregation:
-    flatpak:
-        id: org.gimp.GIMP
-        build: official
-    snap:
-        id: gimp
-        build: official
-    sisyphus: gimp
-appstream:
+  flatpak:
     id: org.gimp.GIMP
-    name: Gimp
-    icon: /gimp/gimp-logo.svg
-    summary: Растровый графический редактор
-    developer:
-        name: Питер Маттис,Спенсер Кимбелл
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    url:
-        homepage: https://www.gimp.org/
-        bugtracker: https://gitlab.gnome.org/GNOME/gimp/-/issues
+    build: official
+  snap:
+    id: gimp
+    build: official
+  sisyphus: gimp
+appstream:
+  id: org.gimp.GIMP
+  name: Gimp
+  icon: /gimp/gimp-logo.svg
+  summary: Растровый графический редактор
+  developer:
+    name: Питер Маттис,Спенсер Кимбелл
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  url:
+    homepage: https://www.gimp.org/
+    bugtracker: https://gitlab.gnome.org/GNOME/gimp/-/issues
 ---
 
 # Gimp

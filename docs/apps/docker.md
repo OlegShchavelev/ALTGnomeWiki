@@ -1,19 +1,19 @@
 ---
 aggregation:
-    sisyphus: docker-engine
+  sisyphus: docker-engine
 appstream:
-    id: docker-engine
-    name: Docker
-    icon: /docker/docker-logo.svg
-    summary: Платформа для разработки, доставки и запуска приложений с использованием контейнеризации.
-    developer:
-        name: Docker Project
-    metadata_license:
-        name: Apache-2.0
-        link: https://www.apache.org/licenses/LICENSE-2.0
-    url:
-        homepage: https://hub.docker.com/
-        bugtracker: https://forums.docker.com/c/docker-hub/issue-tracking/
+  id: docker-engine
+  name: Docker
+  icon: /docker/docker-logo.svg
+  summary: Платформа для разработки, доставки и запуска приложений с использованием контейнеризации.
+  developer:
+    name: Docker Project
+  metadata_license:
+    name: Apache-2.0
+    link: https://www.apache.org/licenses/LICENSE-2.0
+  url:
+    homepage: https://hub.docker.com/
+    bugtracker: https://forums.docker.com/c/docker-hub/issue-tracking/
 ---
 
 # Docker

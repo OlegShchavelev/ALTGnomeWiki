@@ -1,18 +1,18 @@
 ---
 aggregation:
-    sisyphus: zsh
+  sisyphus: zsh
 appstream:
-    id: zsh
-    name: ZSH
-    icon: /zsh/zsh-logo.png
-    summary: Интерактивная оболочка для операционных систем на базе ядра Linux
-    developer:
-        name: Z Shell Community
-    metadata_license:
-        name: Нет
-        link: https://github.com/zsh-users/zsh?tab=License-1-ov-file#readme
-    url:
-        homepage: https://www.zsh.org/
+  id: zsh
+  name: ZSH
+  icon: /zsh/zsh-logo.png
+  summary: Интерактивная оболочка для операционных систем на базе ядра Linux
+  developer:
+    name: Z Shell Community
+  metadata_license:
+    name: Нет
+    link: https://github.com/zsh-users/zsh?tab=License-1-ov-file#readme
+  url:
+    homepage: https://www.zsh.org/
 ---
 
 # ZSH

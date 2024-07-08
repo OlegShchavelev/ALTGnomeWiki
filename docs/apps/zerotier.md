@@ -1,19 +1,19 @@
 ---
 aggregation:
-    sisyphus: zerotier-one
+  sisyphus: zerotier-one
 appstream:
-    id: zerotier-one
-    name: ZeroTierOne
-    icon: /zerotier-one/zerotier-one-logo.png
-    summary: Cервис ZeroTierOne
-    developer:
-        name: ZeroTier Inc.
-    metadata_license:
-        name: ZeroTier BSL 1.1
-        link: https://github.com/zerotier/ZeroTierOne/blob/dev/LICENSE.txt
-    url:
-        homepage: https://zerotier.com/
-        bugtracker: https://github.com/zerotier/ZeroTierOne/issues
+  id: zerotier-one
+  name: ZeroTierOne
+  icon: /zerotier-one/zerotier-one-logo.png
+  summary: Cервис ZeroTierOne
+  developer:
+    name: ZeroTier Inc.
+  metadata_license:
+    name: ZeroTier BSL 1.1
+    link: https://github.com/zerotier/ZeroTierOne/blob/dev/LICENSE.txt
+  url:
+    homepage: https://zerotier.com/
+    bugtracker: https://github.com/zerotier/ZeroTierOne/issues
 ---
 
 # ZeroTierOne

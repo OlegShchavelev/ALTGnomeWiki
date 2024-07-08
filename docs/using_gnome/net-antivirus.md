@@ -11,5 +11,6 @@
 ## Российское антивирусное ПО для Linux
 
 Для домашних пользователей на данный момент доступны:
- - [Dr.Web Security Space (для Linux) ](https://products.drweb.ru/home/linux/),
- - [Kaspersky Virus Removal Tool (для Linux)](https://www.kaspersky.com/downloads/free-virus-removal-tool)
+
+- [Dr.Web Security Space (для Linux) ](https://products.drweb.ru/home/linux/),
+- [Kaspersky Virus Removal Tool (для Linux)](https://www.kaspersky.com/downloads/free-virus-removal-tool)

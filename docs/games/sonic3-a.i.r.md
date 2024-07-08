@@ -1,20 +1,20 @@
 ---
 aggregation:
-    flatpak:
-        id: org.sonic3air.Sonic3AIR
-        build: official
-appstream:
+  flatpak:
     id: org.sonic3air.Sonic3AIR
-    name: Sonic 3 A.I.R
-    icon: /sonic3-a.i.r/sonic3-a.i.r-logo.png
-    summary: Порт игры Sonic 3 & Knuckles с большим количеством настроек и модов
-    developer:
-        name: Eukaryot
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    url:
-        homepage: https://sonic3air.org/index.html
+    build: official
+appstream:
+  id: org.sonic3air.Sonic3AIR
+  name: Sonic 3 A.I.R
+  icon: /sonic3-a.i.r/sonic3-a.i.r-logo.png
+  summary: Порт игры Sonic 3 & Knuckles с большим количеством настроек и модов
+  developer:
+    name: Eukaryot
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  url:
+    homepage: https://sonic3air.org/index.html
 ---
 
 # Sonic 3 A.I.R

@@ -1,32 +1,32 @@
 ---
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /hw-probe/hw-probe1.png
-        - src: /hw-probe/hw-probe2.png
-        - src: /hw-probe/hw-probe3.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /hw-probe/hw-probe1.png
+    - src: /hw-probe/hw-probe2.png
+    - src: /hw-probe/hw-probe3.png
 aggregation:
-    snap:
-        id: hw-probe
-        build: official
-    flatpak:
-        id: org.linux_hardware.hw-probe
-        build: official
-    sisyphus: hw-probe
-appstream:
+  snap:
+    id: hw-probe
+    build: official
+  flatpak:
     id: org.linux_hardware.hw-probe
-    name: Hardware Probe
-    icon: /hw-probe/hw-probe-logo.png
-    summary: Инструмент для проверки работоспособности компьютерного оборудования и загрузки результатов в базу данных оборудования Linux
-    developer:
-        name: Linux Hardware Project (linuxhw)
-    metadata_license:
-        name: LGPL-2.1-or-later/BSD-4-Clause
-        link: https://www.gnu.org/licenses/
-    url:
-        homepage: https://linux-hardware.org/
-        bugtracker: https://github.com/linuxhw/hw-probe/issues
+    build: official
+  sisyphus: hw-probe
+appstream:
+  id: org.linux_hardware.hw-probe
+  name: Hardware Probe
+  icon: /hw-probe/hw-probe-logo.png
+  summary: Инструмент для проверки работоспособности компьютерного оборудования и загрузки результатов в базу данных оборудования Linux
+  developer:
+    name: Linux Hardware Project (linuxhw)
+  metadata_license:
+    name: LGPL-2.1-or-later/BSD-4-Clause
+    link: https://www.gnu.org/licenses/
+  url:
+    homepage: https://linux-hardware.org/
+    bugtracker: https://github.com/linuxhw/hw-probe/issues
 ---
 
 # Hardware Probe (hw-probe)

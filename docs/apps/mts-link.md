@@ -1,31 +1,31 @@
 ---
 aggregation:
-    epm:
-        play:
-            id: mts-link-desktop
-            build: unofficial
+  epm:
+    play:
+      id: mts-link-desktop
+      build: unofficial
 appstream:
-    name: МТС Линк
-    icon: /mts-link/mts-link-logo.svg
-    summary: Приложение MTS Link для Linux
-    keywords:
-        - proprietary
-    developer:
-        name: ПАО «Мобильные ТелеСистемы»
-        avatar: /mts-link/mts-link-avatar.svg
-    metadata_license:
-        name: Собственная
-        link: https://mts-link.ru/legal/license-agreement.pdf
-    url:
-        homepage: https://mts-link.ru/application/
+  name: МТС Линк
+  icon: /mts-link/mts-link-logo.svg
+  summary: Приложение MTS Link для Linux
+  keywords:
+    - proprietary
+  developer:
+    name: ПАО «Мобильные ТелеСистемы»
+    avatar: /mts-link/mts-link-avatar.svg
+  metadata_license:
+    name: Собственная
+    link: https://mts-link.ru/legal/license-agreement.pdf
+  url:
+    homepage: https://mts-link.ru/application/
 
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /mts-link/mts-link-1.png
-        - src: /mts-link/mts-link-2.png
-        - src: /mts-link/mts-link-3.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /mts-link/mts-link-1.png
+    - src: /mts-link/mts-link-2.png
+    - src: /mts-link/mts-link-3.png
 ---
 
 # МТС Линк
@@ -46,7 +46,7 @@ gallery:
 
 ### Установка пакета
 
--   откройте терминал и выполняем
+- откройте терминал и выполняем
 
 ```shell
 su -
@@ -56,8 +56,8 @@ epm install mts-link-desktop.AppImage
 
 ![Установка](/mts-link/mts-link-5.gif)
 
--   Пройдите все шаги в установщике
--   Готово, приложение установлено.
+- Пройдите все шаги в установщике
+- Готово, приложение установлено.
 
 ## Известные проблемы
 

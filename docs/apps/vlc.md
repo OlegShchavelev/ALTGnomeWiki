@@ -1,27 +1,27 @@
 ---
 aggregation:
-    sisyphus: vlc
-    flatpak:
-        id: org.videolan.VLC
-        build: unofficial
-    snap:
-        id: vlc
-        build: official
-appstream:
+  sisyphus: vlc
+  flatpak:
     id: org.videolan.VLC
-    name: VLC
-    icon: /vlc/vlc-logo.svg
-    summary: Бесплатный и свободный кросс-платформенный медиаплеер и медиаплатформа с открытым исходным кодом.
-    developer:
-        name: VideoLAN
-        avatar: /vlc/vlc-avatar.png
-    metadata_license:
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    url:
-        homepage: https://www.videolan.org/vlc/
-        bugtracker: https://code.videolan.org/videolan/vlc/issues
-        donation: https://www.videolan.org/contribute.html
+    build: unofficial
+  snap:
+    id: vlc
+    build: official
+appstream:
+  id: org.videolan.VLC
+  name: VLC
+  icon: /vlc/vlc-logo.svg
+  summary: Бесплатный и свободный кросс-платформенный медиаплеер и медиаплатформа с открытым исходным кодом.
+  developer:
+    name: VideoLAN
+    avatar: /vlc/vlc-avatar.png
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  url:
+    homepage: https://www.videolan.org/vlc/
+    bugtracker: https://code.videolan.org/videolan/vlc/issues
+    donation: https://www.videolan.org/contribute.html
 ---
 
 # VLC

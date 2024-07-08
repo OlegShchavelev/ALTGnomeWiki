@@ -4,18 +4,18 @@ export default defineConfig({
   shortcuts: [],
   presets: [
     presetUno({
-      dark: 'class',
+      dark: 'class'
     }),
     presetAttributify(),
     presetIcons({
       prefix: 'i-',
       scale: 1.2, // size: 1.2 rem
       extraProperties: {
-        'display': 'inline-block',
+        display: 'inline-block',
         'vertical-align': 'middle',
-        'min-width': '1.2rem',
+        'min-width': '1.2rem'
       },
-      warn: true,
-    }),
-  ],
+      warn: true
+    })
+  ]
 })

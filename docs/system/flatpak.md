@@ -196,7 +196,6 @@ systemctl --user restart flatpak-portal.service
 
 Отключение непривилегированных пользователей:
 
-
 ::: code-group
 
 ```shell[apt-get]

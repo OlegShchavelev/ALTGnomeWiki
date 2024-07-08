@@ -1,26 +1,26 @@
 ---
 aggregation:
-    flatpak:
-        id: com.viber.Viber
-        build: unofficial
-    epm:
-        play:
-            id: viber
-            build: unofficial
+  flatpak:
+    id: com.viber.Viber
+    build: unofficial
+  epm:
+    play:
+      id: viber
+      build: unofficial
 
 appstream:
-    name: Viber
-    icon: /viber/viber-logo.svg
-    summary: Кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
-    keywords:
-        - proprietary
-    developer:
-        name: Viber Media
-    metadata_license:
-        name: Собсвтенная
-        link: https://www.viber.com/app/uploads/ViberEULA82316.pdf
-    url:
-        homepage: https://www.viber.com/
+  name: Viber
+  icon: /viber/viber-logo.svg
+  summary: Кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
+  keywords:
+    - proprietary
+  developer:
+    name: Viber Media
+  metadata_license:
+    name: Собсвтенная
+    link: https://www.viber.com/app/uploads/ViberEULA82316.pdf
+  url:
+    homepage: https://www.viber.com/
 ---
 
 # Viber

@@ -1,27 +1,27 @@
 ---
 aggregation:
-    flatpak:
-        id: us.zoom.Zoom
-        build: unofficial
-    epm:
-        play:
-            id: zoom
-            build: unofficial
-appstream:
+  flatpak:
     id: us.zoom.Zoom
-    name: Zoom
-    icon: /zoom/zoom-logo.png
-    summary: Платформа для проведения видеоконференций, вебинаров и других онлайн-мероприятий.
-    keywords:
-        - proprietary
-        - restictions
-    developer:
-        name: Zoom Video Communications
-    metadata_license:
-        name: Собственная
-        link: https://explore.zoom.us/ru/terms/
-    url:
-        homepage: https://zoom.us/
+    build: unofficial
+  epm:
+    play:
+      id: zoom
+      build: unofficial
+appstream:
+  id: us.zoom.Zoom
+  name: Zoom
+  icon: /zoom/zoom-logo.png
+  summary: Платформа для проведения видеоконференций, вебинаров и других онлайн-мероприятий.
+  keywords:
+    - proprietary
+    - restictions
+  developer:
+    name: Zoom Video Communications
+  metadata_license:
+    name: Собственная
+    link: https://explore.zoom.us/ru/terms/
+  url:
+    homepage: https://zoom.us/
 ---
 
 # Zoom

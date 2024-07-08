@@ -1,26 +1,26 @@
 ---
 aggregation:
-    sisyphus: codium
-    flatpak:
-        id: com.vscodium.codium
-        build: unofficial
-    epm:
-        play:
-            id: codium
-            build: unofficial
-appstream:
+  sisyphus: codium
+  flatpak:
     id: com.vscodium.codium
-    name: VSCodium
-    icon: /vscodium/vscodium-logo.svg
-    summary: Управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
-    developer:
-        name: VSCodium Community
-    metadata_license:
-        name: MIT License
-        link: https://choosealicense.com/licenses/mit/
-    url:
-        homepage: https://vscodium.com/
-        bugtracker: https://github.com/VSCodium/vscodium/issues
+    build: unofficial
+  epm:
+    play:
+      id: codium
+      build: unofficial
+appstream:
+  id: com.vscodium.codium
+  name: VSCodium
+  icon: /vscodium/vscodium-logo.svg
+  summary: Управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
+  developer:
+    name: VSCodium Community
+  metadata_license:
+    name: MIT License
+    link: https://choosealicense.com/licenses/mit/
+  url:
+    homepage: https://vscodium.com/
+    bugtracker: https://github.com/VSCodium/vscodium/issues
 ---
 
 # VSCodium

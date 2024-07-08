@@ -9,9 +9,9 @@
 ```yaml
 aside: false
 docs:
-    categories:
-        title: Быстрый старт
-        items: # Подблоки категорий
+  categories:
+    title: Быстрый старт
+    items: # Подблоки категорий
 ```
 
 ## 2. Категория
@@ -21,8 +21,8 @@ docs:
 ```yaml
 - title: # Название категории
   icon: #  Иконка категории
-      dark: # Тёмная тема
-      light: # Светлая тема
+    dark: # Тёмная тема
+    light: # Светлая тема
   apps: # Подблоки приложений
 ```
 
@@ -41,26 +41,26 @@ docs:
 ---
 aside: false
 docs:
-    categories:
-        title: Быстрый старт
-        items:
-            - title: Браузеры
-              icon:
-                  dark: /global-light.svg
-                  light: /global-dark.svg
-              apps:
-                  - name: Яндекс Браузер
-                    link: yandex-browser
-                  - name: Firefox
-                    link: firefox
-            - title: Месенджеры
-              icon:
-                  dark: /message-light.svg
-                  light: /message-dark.svg
-              apps:
-                  - name: Telegram Desktop
-                    link: telegram
-                  - name: VK Мессенджер
-                    link: vk-messenger
+  categories:
+    title: Быстрый старт
+    items:
+      - title: Браузеры
+        icon:
+          dark: /global-light.svg
+          light: /global-dark.svg
+        apps:
+          - name: Яндекс Браузер
+            link: yandex-browser
+          - name: Firefox
+            link: firefox
+      - title: Месенджеры
+        icon:
+          dark: /message-light.svg
+          light: /message-dark.svg
+        apps:
+          - name: Telegram Desktop
+            link: telegram
+          - name: VK Мессенджер
+            link: vk-messenger
 ---
 ```

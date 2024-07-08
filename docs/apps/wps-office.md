@@ -1,36 +1,36 @@
 ---
 aggregation:
-    flatpak:
-        id: com.wps.Office
-        build: unofficial
-    epm:
-        play:
-            id: wpsoffice
-            build: unofficial
-appstream:
+  flatpak:
     id: com.wps.Office
-    name: WPS Office
-    icon: /wps-office/wps-office-logo.svg
-    summary: Универсальный пакет Office приложений
-    keywords:
-        - proprietary
-    developer:
-        name: Kingsoft Corporation
-        avatar: /wps-office/wps-office-avatar.png
-    metadata_license:
-        name: Собственная
-        link: https://www.wps.com/eula/
-    url:
-        homepage: https://www.wps.com/office/linux/
-        bugtracker: https://help.wps.com/
+    build: unofficial
+  epm:
+    play:
+      id: wpsoffice
+      build: unofficial
+appstream:
+  id: com.wps.Office
+  name: WPS Office
+  icon: /wps-office/wps-office-logo.svg
+  summary: Универсальный пакет Office приложений
+  keywords:
+    - proprietary
+  developer:
+    name: Kingsoft Corporation
+    avatar: /wps-office/wps-office-avatar.png
+  metadata_license:
+    name: Собственная
+    link: https://www.wps.com/eula/
+  url:
+    homepage: https://www.wps.com/office/linux/
+    bugtracker: https://help.wps.com/
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /wps-office/wps-office-1.png
-        - src: /wps-office/wps-office-2.png
-        - src: /wps-office/wps-office-3.png
-        - src: /wps-office/wps-office-4.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /wps-office/wps-office-1.png
+    - src: /wps-office/wps-office-2.png
+    - src: /wps-office/wps-office-3.png
+    - src: /wps-office/wps-office-4.png
 ---
 
 # WPS Office
@@ -39,10 +39,10 @@ WPS Office — офисный пакет, разрабатываемый Kingsof
 
 WPS Office включает следующие приложения:
 
--   Document
--   Excel
--   Presentation
--   PDF
+- Document
+- Excel
+- Presentation
+- PDF
 
 <AGWGallery />
 

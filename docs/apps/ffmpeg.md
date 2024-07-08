@@ -1,20 +1,20 @@
 ---
 aggregation:
-    sisyphus: ffmpeg
+  sisyphus: ffmpeg
 appstream:
-    id: ffmpeg
-    name: FFMPEG
-    icon: /ffmpeg/ffmpeg-logo.png
-    summary: Утилита для обработки мультимедийного контента, такого как аудио, видео, субтитры и связанные с ними метаданные.
-    metadata_license:
-        name: LGPL v2.1+
-        link: https://ffmpeg.org/legal.html
-    developer:
-        name: FFMPEG Community
-    url:
-        homepage: https://ffmpeg.org/
-        bugtracker: https://trac.ffmpeg.org/
-        donation: https://ffmpeg.org/donations.html
+  id: ffmpeg
+  name: FFMPEG
+  icon: /ffmpeg/ffmpeg-logo.png
+  summary: Утилита для обработки мультимедийного контента, такого как аудио, видео, субтитры и связанные с ними метаданные.
+  metadata_license:
+    name: LGPL v2.1+
+    link: https://ffmpeg.org/legal.html
+  developer:
+    name: FFMPEG Community
+  url:
+    homepage: https://ffmpeg.org/
+    bugtracker: https://trac.ffmpeg.org/
+    donation: https://ffmpeg.org/donations.html
 ---
 
 # FFmpeg
@@ -159,9 +159,9 @@ done
 ::: info
 Для использования аппаратного ускорения видеокарты, отредактируйте ключ `-c:v libx264`
 
--   NVIDIA NVENC `-c:v h264_nvenc`
--   AMD AMF `-c:v h264_amf`
--   Intel Quick Sync Video `-c:v h264_qsv`
+- NVIDIA NVENC `-c:v h264_nvenc`
+- AMD AMF `-c:v h264_amf`
+- Intel Quick Sync Video `-c:v h264_qsv`
 
 :::
 
@@ -178,9 +178,9 @@ done
 ffmpeg -hide_banner -i "файл.mkv" -map 0:v:0 -map 0:a:0 -map 0:s:1 -c:v copy -c:a copy -c:s copy "/путь/к/файлу/куда/сохранить/файл.mkv"
 ```
 
--   Выбираем первую видеодорожку: `-map 0:v:0`
--   Выбираем первую аудиодорожку: `-map 0:a:0`
--   Выбираем второй поток субтитров: `-map 0:s:1`
+- Выбираем первую видеодорожку: `-map 0:v:0`
+- Выбираем первую аудиодорожку: `-map 0:a:0`
+- Выбираем второй поток субтитров: `-map 0:s:1`
 
 ::: tip Будьте внимательны
 Счёт начинается с 0

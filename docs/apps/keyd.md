@@ -1,12 +1,12 @@
 ---
 appstream:
-    name: keyd
-    summary: Переназначение клавиш
-    developer:
-        name: rvaiya
-    url:
-        homepage: https://github.com/rvaiya/keyd/
-        bugtracker: https://github.com/rvaiya/keyd/issues
+  name: keyd
+  summary: Переназначение клавиш
+  developer:
+    name: rvaiya
+  url:
+    homepage: https://github.com/rvaiya/keyd/
+    bugtracker: https://github.com/rvaiya/keyd/issues
 ---
 
 # keyd

@@ -2,10 +2,10 @@
 title: Just Perfection
 pluginID: 3843
 gallery:
-    type: carousel
-    items:
-        - src: /extensions/just-perfection/just-perfection-1.png
-        - src: /extensions/just-perfection/just-perfection-2.png
+  type: carousel
+  items:
+    - src: /extensions/just-perfection/just-perfection-1.png
+    - src: /extensions/just-perfection/just-perfection-2.png
 ---
 
 # Just Perfection

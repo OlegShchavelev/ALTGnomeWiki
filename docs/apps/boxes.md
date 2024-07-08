@@ -1,32 +1,32 @@
 ---
 aggregation:
-    flatpak:
-        id: org.gnome.Boxes
-        build: official
-    sisyphus: gnome-boxes
-appstream:
+  flatpak:
     id: org.gnome.Boxes
-    name: Boxes
-    icon: /boxes/boxes-logo.svg
-    summary: Виртуализация стала проще
-    developer:
-        name: GNOME
-        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license:
-        name: LGPL-2.1
-        link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ru.html#SEC1
-    keywords:
-        - dev
-    url:
-        homepage: https://gnomeboxes.org/
-        bugtracker: https://gitlab.gnome.org/GNOME/gnome-boxes/issues
-        translate: https://wiki.gnome.org/TranslationProject
+    build: official
+  sisyphus: gnome-boxes
+appstream:
+  id: org.gnome.Boxes
+  name: Boxes
+  icon: /boxes/boxes-logo.svg
+  summary: Виртуализация стала проще
+  developer:
+    name: GNOME
+    avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+  metadata_license:
+    name: LGPL-2.1
+    link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ru.html#SEC1
+  keywords:
+    - dev
+  url:
+    homepage: https://gnomeboxes.org/
+    bugtracker: https://gitlab.gnome.org/GNOME/gnome-boxes/issues
+    translate: https://wiki.gnome.org/TranslationProject
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /boxes/boxes-1.png
-        - src: /boxes/boxes-2.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /boxes/boxes-1.png
+    - src: /boxes/boxes-2.png
 ---
 
 # Boxes

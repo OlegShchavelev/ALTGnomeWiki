@@ -1,20 +1,20 @@
 ---
 title: Toolbox
 appstream:
-    name: Toolbox
-    icon: /toolbox/toolbox-logo.svg
-    summary: Приложение от компании JetBrains, предназначенное для управления инструментами и продуктами разработки, созданными этой компанией.
-    keywords:
-        - proprietary
-        - restrictions
-    developer:
-        name: IntelliJ Software S.R.O
-        avatar: /toolbox/toolbox-avatar.svg
-    metadata_license:
-        name: Собственная
-        link: https://www.jetbrains.com/legal/docs/toolbox/user/
-    url:
-        homepage: https://www.jetbrains.com/toolbox-app/
+  name: Toolbox
+  icon: /toolbox/toolbox-logo.svg
+  summary: Приложение от компании JetBrains, предназначенное для управления инструментами и продуктами разработки, созданными этой компанией.
+  keywords:
+    - proprietary
+    - restrictions
+  developer:
+    name: IntelliJ Software S.R.O
+    avatar: /toolbox/toolbox-avatar.svg
+  metadata_license:
+    name: Собственная
+    link: https://www.jetbrains.com/legal/docs/toolbox/user/
+  url:
+    homepage: https://www.jetbrains.com/toolbox-app/
 ---
 
 # Toolbox

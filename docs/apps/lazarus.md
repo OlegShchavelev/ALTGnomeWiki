@@ -1,19 +1,19 @@
 ---
 aggregation:
-    sisyphus: lazarus
+  sisyphus: lazarus
 appstream:
-    id: lazarus.desktop
-    name: Lazarus
-    icon: /lazarus/lazarus-logo.svg
-    summary: Открытая среда программного обеспечения на языке Object Pascal для компилятора Free Pascal.
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    developer:
-        name: Lazarus and Free Pascal Team
-    url:
-        homepage: https://www.lazarus-ide.org/
-        bugtracker: https://gitlab.com/freepascal.org/lazarus/lazarus/issues
+  id: lazarus.desktop
+  name: Lazarus
+  icon: /lazarus/lazarus-logo.svg
+  summary: Открытая среда программного обеспечения на языке Object Pascal для компилятора Free Pascal.
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  developer:
+    name: Lazarus and Free Pascal Team
+  url:
+    homepage: https://www.lazarus-ide.org/
+    bugtracker: https://gitlab.com/freepascal.org/lazarus/lazarus/issues
 ---
 
 # Lazarus

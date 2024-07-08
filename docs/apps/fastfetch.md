@@ -1,18 +1,18 @@
 ---
 title: Fastfetch
 aggregation:
-    sisyphus: fastfetch
+  sisyphus: fastfetch
 appstream:
-    name: Fastfetch
-    summary: Средство для отображения информации о системе.
-    metadata_license:
-        name: MIT License
-        link: https://choosealicense.com/licenses/mit/
-    developer:
-        name: fastfetch-cli
-    url:
-        homepage: https://github.com/dylanaraps/neofetch
-        bugtracker: https://github.com/dylanaraps/neofetch/issues
+  name: Fastfetch
+  summary: Средство для отображения информации о системе.
+  metadata_license:
+    name: MIT License
+    link: https://choosealicense.com/licenses/mit/
+  developer:
+    name: fastfetch-cli
+  url:
+    homepage: https://github.com/dylanaraps/neofetch
+    bugtracker: https://github.com/dylanaraps/neofetch/issues
 ---
 
 # Fastfetch

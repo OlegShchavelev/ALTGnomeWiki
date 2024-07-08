@@ -1,39 +1,39 @@
 ---
 aggregation:
-    flatpak:
-        id: com.github.Anuken.Mindustry
-        build: unofficial
-    snap:
-        id: mindustry
-        build: unofficial
-appstream:
+  flatpak:
     id: com.github.Anuken.Mindustry
-    name: Mindustry
-    icon: /mindustry/mindustry-logo.png
-    summary: Добывайте ресурсы и стройте заводы для защиты базы
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords:
-    developer:
-        name: Антон Крамской
-        nickname: Anuken
-        avatar: https://avatars.githubusercontent.com/u/10100000?v=4
-    url:
-        homepage: https://mindustrygame.github.io/
-        bugtracker: https://github.com/Anuken/Mindustry/issues
-        help: https://mindustrygame.github.io/wiki/
+    build: unofficial
+  snap:
+    id: mindustry
+    build: unofficial
+appstream:
+  id: com.github.Anuken.Mindustry
+  name: Mindustry
+  icon: /mindustry/mindustry-logo.png
+  summary: Добывайте ресурсы и стройте заводы для защиты базы
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  keywords:
+  developer:
+    name: Антон Крамской
+    nickname: Anuken
+    avatar: https://avatars.githubusercontent.com/u/10100000?v=4
+  url:
+    homepage: https://mindustrygame.github.io/
+    bugtracker: https://github.com/Anuken/Mindustry/issues
+    help: https://mindustrygame.github.io/wiki/
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /mindustry/mindustry-menu.png
-        - src: /mindustry/mindustry-serpulo-1.png
-        - src: /mindustry/mindustry-serpulo-2.png
-        - src: /mindustry/mindustry-serpulo-3.png
-        - src: /mindustry/mindustry-erekir-1.png
-        - src: /mindustry/mindustry-erekir-2.png
-        - src: /mindustry/mindustry-erekir-3.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /mindustry/mindustry-menu.png
+    - src: /mindustry/mindustry-serpulo-1.png
+    - src: /mindustry/mindustry-serpulo-2.png
+    - src: /mindustry/mindustry-serpulo-3.png
+    - src: /mindustry/mindustry-erekir-1.png
+    - src: /mindustry/mindustry-erekir-2.png
+    - src: /mindustry/mindustry-erekir-3.png
 ---
 
 # Mindustry

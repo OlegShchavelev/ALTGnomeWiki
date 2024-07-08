@@ -1,28 +1,28 @@
 ---
 aggregation:
-    sisyphus: obs-studio
-    flatpak:
-        id: com.obsproject.Studio
-        build: official
-    snap:
-        id: obs-studio
-        build: unofficial
+  sisyphus: obs-studio
+  flatpak:
+    id: com.obsproject.Studio
+    build: official
+  snap:
+    id: obs-studio
+    build: unofficial
 
 appstream:
-    id: com.obsproject.Studio
-    name: OBS Studio
-    icon: /obs-studio/obs-studio-logo.svg
-    summary: Бесплатная программа с открытым исходным кодом для записи видео и потокового вещания.
-    metadata_license:
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    developer:
-        name: OBS Project
-    url:
-        homepage: https://obsproject.com/
-        bugtracker: https://github.com/Rirusha/Cassette/issues
-        translate: https://crowdin.com/project/obs-studio
-        donation: https://opencollective.com/obsproject
+  id: com.obsproject.Studio
+  name: OBS Studio
+  icon: /obs-studio/obs-studio-logo.svg
+  summary: Бесплатная программа с открытым исходным кодом для записи видео и потокового вещания.
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  developer:
+    name: OBS Project
+  url:
+    homepage: https://obsproject.com/
+    bugtracker: https://github.com/Rirusha/Cassette/issues
+    translate: https://crowdin.com/project/obs-studio
+    donation: https://opencollective.com/obsproject
 ---
 
 # OBS Studio

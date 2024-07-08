@@ -2,22 +2,22 @@
 title: Syncthing
 appstreamRepo: me.kozec.syncthingtk
 aggregation:
-    flatpak: me.kozec.syncthingtk
+  flatpak: me.kozec.syncthingtk
 appstream:
-    id: me.kozec.syncthingtk
-    name: Syncthing
-    icon: /syncthing/syncthing-logo.svg
-    summary: Приложение, позволяющее синхронизировать файлы между несколькими устройствами.
-    developer:
-        name: kozec
-        avatar: https://avatars.githubusercontent.com/u/1282500?v=4
-    metadata_license:
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    url:
-        homepage: https://github.com/kozec/syncthing-gtk
-        bugtracker: https://github.com/kozec/syncthing-gtk/issues
-        translate: https://explore.transifex.com/syncthing-gtk/syncthing-gtk/
+  id: me.kozec.syncthingtk
+  name: Syncthing
+  icon: /syncthing/syncthing-logo.svg
+  summary: Приложение, позволяющее синхронизировать файлы между несколькими устройствами.
+  developer:
+    name: kozec
+    avatar: https://avatars.githubusercontent.com/u/1282500?v=4
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  url:
+    homepage: https://github.com/kozec/syncthing-gtk
+    bugtracker: https://github.com/kozec/syncthing-gtk/issues
+    translate: https://explore.transifex.com/syncthing-gtk/syncthing-gtk/
 ---
 
 # Syncthing
@@ -46,14 +46,14 @@ cd /opt/syncthing
 
 Нужно настроить автоматический запуск Syncthing в виде демона, запускаемого при входе пользователя в систему. В примере использован `systemd`, другие варианты автоматической загрузки можно посмотреть на [сайте проекта](https://docs.syncthing.net/users/autostart.html#linux).
 
--   Скачайте файл `syncthing.service` c [GitHub](https://github.com/syncthing/syncthing/tree/main/etc/linux-systemd/user) и скопируйте в `$HOME/.config/systemd/user`
--   Отредактируйте раздел `[Service]`, указав корректный путь к исполняемому файлу — измените `ExecStart` c `/usr/bin/syncthing` на `/opt/syncthing/syncthing`. Строка должна выглядеть так:
+- Скачайте файл `syncthing.service` c [GitHub](https://github.com/syncthing/syncthing/tree/main/etc/linux-systemd/user) и скопируйте в `$HOME/.config/systemd/user`
+- Отредактируйте раздел `[Service]`, указав корректный путь к исполняемому файлу — измените `ExecStart` c `/usr/bin/syncthing` на `/opt/syncthing/syncthing`. Строка должна выглядеть так:
 
 ```
 ExecStart=/opt/syncthing/syncthing serve --no-browser --no-restart --logflags=0
 ```
 
--   Сохраните изменения и запустите службу.
+- Сохраните изменения и запустите службу.
 
 ::: warning
 Так как запуск службы будет осуществляться от имени обычного пользователя, следующая команда должна выполняться без root-прав

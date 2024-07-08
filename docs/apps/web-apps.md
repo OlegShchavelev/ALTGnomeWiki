@@ -1,21 +1,21 @@
 ---
 aggregation:
-    flatpak:
-        id: net.codelogistics.webapps
-        build: offical
-appstream:
+  flatpak:
     id: net.codelogistics.webapps
-    name: Web Apps
-    icon: /web-apps/icon.png
-    summary: Устанавливайте и открывайте сайты как отдельное приложение
-    developer:
-        name: Satvik Patwardhan
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    url:
-        homepage: https://codeberg.org/eyekay/webapps
-        bugtracker: https://codeberg.org/eyekay/webapps/issues
+    build: offical
+appstream:
+  id: net.codelogistics.webapps
+  name: Web Apps
+  icon: /web-apps/icon.png
+  summary: Устанавливайте и открывайте сайты как отдельное приложение
+  developer:
+    name: Satvik Patwardhan
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  url:
+    homepage: https://codeberg.org/eyekay/webapps
+    bugtracker: https://codeberg.org/eyekay/webapps/issues
 ---
 
 # Web Apps

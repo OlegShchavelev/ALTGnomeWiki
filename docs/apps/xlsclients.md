@@ -2,19 +2,19 @@
 title: XLSCLIENTS
 appstreamRepo: alacarte.desktop
 aggregation:
-    sisyphus: xlsclients
+  sisyphus: xlsclients
 appstream:
-    name: XLSCLIENTS
-    summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
-    developer:
-        name: X.Org Foundation
-        avatar: /xeyes/xeyes-avatar.png
-    metadata_license:
-        name: MIT License
-        link: https://choosealicense.com/licenses/mit/
-    url:
-        homepage: https://gitlab.freedesktop.org/xorg/app/xlsclients
-        bugtracker: https://gitlab.freedesktop.org/xorg/app/xlsclients/issues
+  name: XLSCLIENTS
+  summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+  developer:
+    name: X.Org Foundation
+    avatar: /xeyes/xeyes-avatar.png
+  metadata_license:
+    name: MIT License
+    link: https://choosealicense.com/licenses/mit/
+  url:
+    homepage: https://gitlab.freedesktop.org/xorg/app/xlsclients
+    bugtracker: https://gitlab.freedesktop.org/xorg/app/xlsclients/issues
 ---
 
 # XLSCLIENTS

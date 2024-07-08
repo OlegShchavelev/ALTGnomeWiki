@@ -1,22 +1,22 @@
 ---
 aggregation:
-    sisyphus: krita
-    flatpak:
-        id: org.kde.krita
-        build: official
-appstream:
+  sisyphus: krita
+  flatpak:
     id: org.kde.krita
-    name: Krita
-    icon: /krita/krita-logo.svg
-    summary: Творческая свобода для художников c Krita
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    developer:
-        name: Krita Foundation
-    url:
-        homepage: https://www.krita.org/
-        bugtracker: https://docs.krita.org/en/untranslatable_pages/reporting_bugs.html
+    build: official
+appstream:
+  id: org.kde.krita
+  name: Krita
+  icon: /krita/krita-logo.svg
+  summary: Творческая свобода для художников c Krita
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  developer:
+    name: Krita Foundation
+  url:
+    homepage: https://www.krita.org/
+    bugtracker: https://docs.krita.org/en/untranslatable_pages/reporting_bugs.html
 ---
 
 # Krita

@@ -8,17 +8,17 @@
 
 Формат шрифтов, формы букв создаются преимущественно в формате монохромной растровой графики. Популярным примером bitmap-шрифтов являются `emoji`. Для создания коллекции шрифтов используется следующие форматы:
 
--   Bitmap Distribution Format (BDF) от Adobe
--   Portable Compiled Format (PCB) от Xorg
--   PC Screen Font (PSF) используется ядром операционной системы для консольных шрифтов не поддерживается Xorg
+- Bitmap Distribution Format (BDF) от Adobe
+- Portable Compiled Format (PCB) от Xorg
+- PC Screen Font (PSF) используется ядром операционной системы для консольных шрифтов не поддерживается Xorg
 
 **Контурные шрифты (outline)**
 
 Основной формат шрифтов для описания каждого глифа используются кривые Безье (векторная графика). Для создания коллекции шрифтов используется следующие форматы:
 
--   TrueType от Apple и Microsoft (расширение файла: ttf)
--   OpenType от Microsoft, построен на TrueType (расширения файлов: otf, ttf)
--   PostScript от Adobe – имеют различные форматы, например: шрифт принтера ASCII (PFA) и шрифт принтера Binary (PFB)
+- TrueType от Apple и Microsoft (расширение файла: ttf)
+- OpenType от Microsoft, построен на TrueType (расширения файлов: otf, ttf)
+- PostScript от Adobe – имеют различные форматы, например: шрифт принтера ASCII (PFA) и шрифт принтера Binary (PFB)
 
 ## Установка шрифтов
 

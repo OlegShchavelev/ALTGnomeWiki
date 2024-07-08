@@ -1,25 +1,25 @@
 ---
 aggregation:
-    flatpak: org.eclipse.Java
+  flatpak: org.eclipse.Java
 appstream:
-    id: org.eclipse.Java
-    name: Eclipse IDE
-    icon: /eclipse-ide/eclipse-ide-logo.svg
-    summary: Интегрированная среда разработки (IDE) для Java.
-    metadata_license:
-        name: EPL-2.0
-        link: https://www.eclipse.org/legal/epl-2.0/
-    developer:
-        name: Eclipse Foundation, Inc.
-    url:
-        homepage: https://www.eclipse.org/
-        bugtracker: https://bugs.eclipse.org/bugs/
+  id: org.eclipse.Java
+  name: Eclipse IDE
+  icon: /eclipse-ide/eclipse-ide-logo.svg
+  summary: Интегрированная среда разработки (IDE) для Java.
+  metadata_license:
+    name: EPL-2.0
+    link: https://www.eclipse.org/legal/epl-2.0/
+  developer:
+    name: Eclipse Foundation, Inc.
+  url:
+    homepage: https://www.eclipse.org/
+    bugtracker: https://bugs.eclipse.org/bugs/
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /eclipse-ide/eclipse-ide-1.png
-        - src: /eclipse-ide/eclipse-ide-2.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /eclipse-ide/eclipse-ide-1.png
+    - src: /eclipse-ide/eclipse-ide-2.png
 ---
 
 # Eclipse IDE

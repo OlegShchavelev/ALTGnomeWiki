@@ -1,26 +1,26 @@
 ---
 aggregation:
-    sisyphus: kumir2
+  sisyphus: kumir2
 appstream:
-    name: КуМир
-    icon: /kumir/kumir-logo.svg
-    summary: Система программирования, созданная для изучения информатики и программирования в школе и вузе.
-    metadata_license:
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    developer:
-        name: Научно-исследовательский институт системных исследований РАН
-    url:
-        homepage: https://www.niisi.ru/kumir/
-        bugtracker: https://github.com/a-a-maly/kumir2/issues
-        help: https://github.com/a-a-maly/kumir2/blob/master/README.md
+  name: КуМир
+  icon: /kumir/kumir-logo.svg
+  summary: Система программирования, созданная для изучения информатики и программирования в школе и вузе.
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  developer:
+    name: Научно-исследовательский институт системных исследований РАН
+  url:
+    homepage: https://www.niisi.ru/kumir/
+    bugtracker: https://github.com/a-a-maly/kumir2/issues
+    help: https://github.com/a-a-maly/kumir2/blob/master/README.md
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /kumir/kumir-1.png
-        - src: /kumir/kumir-2.png
-        - src: /kumir/kumir-3.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /kumir/kumir-1.png
+    - src: /kumir/kumir-2.png
+    - src: /kumir/kumir-3.png
 ---
 
 # КуМир

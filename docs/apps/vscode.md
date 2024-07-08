@@ -1,28 +1,28 @@
 ---
 aggregation:
-    flatpak:
-        id: com.visualstudio.code
-        build: unofficial
-    epm:
-        play:
-            id: code
-            build: unofficial
-appstream:
+  flatpak:
     id: com.visualstudio.code
-    name: VS Code
-    icon: /vscode/vscode-logo.svg
-    summary: Инструмент, который сочетает в себе простоту редактора кода с тем, что нужно разработчикам для редактирования, сборки и отладки.
-    keywords:
-        - proprietary
-        - restrictions
-    developer:
-        name: Microsoft Corporation
-        avatar: /vscode/vscode-avatar.svg
-    metadata_license:
-        name: Собственная
-        link: https://code.visualstudio.com/License/
-    url:
-        homepage: https://code.visualstudio.com/
+    build: unofficial
+  epm:
+    play:
+      id: code
+      build: unofficial
+appstream:
+  id: com.visualstudio.code
+  name: VS Code
+  icon: /vscode/vscode-logo.svg
+  summary: Инструмент, который сочетает в себе простоту редактора кода с тем, что нужно разработчикам для редактирования, сборки и отладки.
+  keywords:
+    - proprietary
+    - restrictions
+  developer:
+    name: Microsoft Corporation
+    avatar: /vscode/vscode-avatar.svg
+  metadata_license:
+    name: Собственная
+    link: https://code.visualstudio.com/License/
+  url:
+    homepage: https://code.visualstudio.com/
 ---
 
 # Visual Studio Code

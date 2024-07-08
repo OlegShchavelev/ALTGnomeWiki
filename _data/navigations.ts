@@ -127,6 +127,7 @@ export const docs = [
           { text: 'WhatsApp', link: '/whatsapp-desktop' },
           { text: 'Wike', link: '/wike' },
           { text: 'WPS Office', link: '/wps-office' },
+          { text: 'Waterfox', link: '/waterfox' },
           { text: 'Web Apps', link: '/web-apps' },
           { text: 'Xeyes', link: '/xeyes' },
           { text: 'XLSCLIENTS', link: '/xlsclients' },

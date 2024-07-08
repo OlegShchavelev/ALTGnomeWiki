@@ -17,7 +17,7 @@ appstream:
     homepage: https://github.com/libratbag/piper
     bugtracker: https://github.com/libratbag/piper/issues
 gallery:
-  title: Галлерея
+  title: Галерея
   type: slider
   items:
     - src: /piper/piper-1.png

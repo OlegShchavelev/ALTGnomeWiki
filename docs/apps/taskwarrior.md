@@ -8,7 +8,7 @@ appstream:
     name: Gothenburg Bit Factory
     avatar: https://avatars.githubusercontent.com/u/36100920?s=200&v=4
   metadata_license:
-    name: MIT
+    name: MIT License
     link: https://opensource.org/license/mit
   url:
     homepage: https://taskwarrior.org/

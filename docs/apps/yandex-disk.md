@@ -14,7 +14,7 @@ appstream:
     name: Yandex
     avatar: /yandex-disk/yandex-disk-avatar.png
   metadata_license:
-    name: Собственая
+    name: Собственная
     link: https://yandex.ru/legal/disk_agreement/
   url:
     homepage: https://360.yandex.ru/disk/

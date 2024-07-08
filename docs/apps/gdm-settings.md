@@ -10,7 +10,7 @@ appstream:
   icon: /gdm-settings/gdm-settings-logo.svg
   summary: Приложение настроек для рабочего окружения GNOME, экран входа / блокировки экрана.
   metadata_license:
-    name: GNU AGPL-3.0
+    name: GNU AGPLv3
     link: https://packages.altlinux.org/license/AGPL-3.0-only
   developer:
     name: Mazhar Hussain

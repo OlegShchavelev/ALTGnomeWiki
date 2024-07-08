@@ -7,7 +7,6 @@ aggregation:
     play:
       id: viber
       build: unofficial
-
 appstream:
   name: Viber
   icon: /viber/viber-logo.svg
@@ -17,7 +16,7 @@ appstream:
   developer:
     name: Viber Media
   metadata_license:
-    name: Собсвтенная
+    name: Собственная
     link: https://www.viber.com/app/uploads/ViberEULA82316.pdf
   url:
     homepage: https://www.viber.com/

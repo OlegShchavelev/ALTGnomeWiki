@@ -2,7 +2,7 @@
 aggregation:
   flatpak: org.gaphor.Gaphor
 appstream:
-  id: corg.gaphor.Gaphor
+  id: org.gaphor.Gaphor
   name: Gaphor
   icon: /gaphor/gaphor-logo.png
   summary: Простой инструмент моделирования на UML и SysML

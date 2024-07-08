@@ -21,7 +21,7 @@ appstream:
     translate: https://github.com/alexkdeveloper/radio/tree/main/po
     bugtracker: https://github.com/alexkdeveloper/radio/issues
 gallery:
-  title: Галлерея
+  title: Галерея
   type: carousel
   items:
     - src: /radio/radio-1.png

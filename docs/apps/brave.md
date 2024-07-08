@@ -13,7 +13,7 @@ appstream:
   icon: /brave/brave-logo.svg
   summary: Веб-браузер от Brave
   metadata_license:
-    name: MPL-2.0 licence
+    name: MPLv2
     link: https://choosealicense.com/licenses/mpl-2.0/
   developer:
     name: Brave Software

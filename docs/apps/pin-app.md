@@ -19,7 +19,7 @@ appstream:
     homepage: https://github.com/fabrialberio/PinApp
     bugtracker: https://github.com/fabrialberio/PinApp/issues
 gallery:
-  title: Галлерея
+  title: Галерея
   type: slider
   items:
     - src: /pin-app/pin-app-3.png

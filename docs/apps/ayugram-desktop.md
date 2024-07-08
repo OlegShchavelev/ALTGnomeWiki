@@ -4,7 +4,7 @@ aggregation:
 appstream:
   name: ayugram-desktop
   icon: /ayugram-desktop/ayugram-logo.png
-  summary: Телеграм клиент с хорошей кастомизацией
+  summary: Клиент Telegram с хорошей кастомизацией
   metadata_license:
     name: GNU GPLv3
     link: https://choosealicense.com/licenses/gpl-3.0/

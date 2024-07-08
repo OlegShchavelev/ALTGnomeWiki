@@ -11,7 +11,7 @@ appstream:
   id: org.videolan.VLC
   name: VLC
   icon: /vlc/vlc-logo.svg
-  summary: Бесплатный и свободный кросс-платформенный медиаплеер и медиаплатформа с открытым исходным кодом.
+  summary: Бесплатный и свободный кроссплатформенный медиаплеер и медиаплатформа с открытым исходным кодом.
   developer:
     name: VideoLAN
     avatar: /vlc/vlc-avatar.png

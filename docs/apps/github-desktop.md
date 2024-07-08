@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: io.github.shiftey.Desktop
-        build: unoffical
+        build: unofficial
 appstream:
     id: io.github.shiftey.Desktop
     name: Github Desktop

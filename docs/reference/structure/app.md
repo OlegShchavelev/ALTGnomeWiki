@@ -12,14 +12,14 @@ aggregation:
     sisyphus: # название в репозитории
     flatpak:
         id: # flatpak id
-        build: # сборка offical/unoffical
+        build: # сборка official/unofficial
     snap:
         id: # название на snapcraft
-        build: # сборка offical/unoffical
+        build: # сборка official/unofficial
     epm:
         play:
             id: # название в epm play
-            build: # сборка offical/unoffical
+            build: # сборка official/unofficial
 appstream:
     id: # appstream id приложения
     name: # Название приложения

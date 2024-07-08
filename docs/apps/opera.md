@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.opera.Opera
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: opera
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.opera.Opera
     name: Opera

@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.discordapp.Discord
-        build: offical
+        build: official
     epm:
         play:
             id: discord
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.discordapp.Discord
     name: Discord

@@ -3,7 +3,7 @@ aggregation:
     sisyphus: dialect
     flatpak:
         id: app.drey.Dialect
-        build: offical
+        build: official
 appstream:
     id: app.drey.Dialect
     name: Dialect

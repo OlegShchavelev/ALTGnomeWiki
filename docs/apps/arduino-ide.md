@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: cc.arduino.arduinoide
-        build: offical
+        build: official
     sisyphus: arduino
 appstream:
     id: cc.arduino.arduinoide.desktop

@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: org.srb2.SRB2
-        build: offical
+        build: official
 appstream:
     id: org.srb2.SRB2
     name: Sonic Robo Blast 2

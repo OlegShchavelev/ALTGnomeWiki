@@ -3,7 +3,7 @@ title: Turtle
 aggregation:
     flatpak:
         id: flathub de.philippun1.turtle
-        build: offical
+        build: official
 appstream:
     id: flathub de.philippun1.turtle
     name: Turtle

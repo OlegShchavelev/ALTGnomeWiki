@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.github.johnfactotum.Foliate
-        build: offical
+        build: official
     sisyphus: foliate
     snap:
         id: foliate
-        build: unoffical
+        build: unofficial
 appstream:
     id: com.github.johnfactotum.Foliate
     name: Foliate

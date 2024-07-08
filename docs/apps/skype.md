@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.skype.Client
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: skype
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.skype.Client
     name: Skype

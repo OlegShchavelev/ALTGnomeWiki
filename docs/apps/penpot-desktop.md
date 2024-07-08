@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: com.sudovanilla.penpot-desktop
-        build: unoffical
+        build: unofficial
 appstream:
     id: com.sudovanilla.penpot-desktop
     name: Penpot Desktop

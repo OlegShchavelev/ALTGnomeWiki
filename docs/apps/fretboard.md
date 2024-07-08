@@ -3,7 +3,7 @@ aggregation:
     sisyphus: fretboard
     flatpak:
         id: dev.bragefuglseth.Fretboard
-        build: offical
+        build: official
 appstream:
     id: dev.bragefuglseth.Fretboard
     name: Fretboard

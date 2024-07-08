@@ -9,7 +9,7 @@ gallery:
 aggregation:
     snap:
         id: amberol
-        build: unoffical
+        build: unofficial
     flatpak: io.bassi.Amberol
     sisyphus: amberol
 appstream:

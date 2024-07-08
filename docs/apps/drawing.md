@@ -3,7 +3,7 @@ aggregation:
     sisyphus: drawing
     flatpak:
         id: com.github.maoschanz.drawing
-        build: offical
+        build: official
 appstream:
     id: com.github.maoschanz.drawing
     name: Drawing

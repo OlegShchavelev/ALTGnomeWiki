@@ -3,7 +3,7 @@ aggregation:
     sisyphus: LibreOffice-still
     flatpak:
         id: org.libreoffice.LibreOffice
-        build: offical
+        build: official
 appstream:
     id: org.libreoffice.LibreOffice
     name: LibreOffice

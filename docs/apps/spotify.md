@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.spotify.Clientflatpak
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: spotify
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.spotify.Client
     name: Spotify

@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.visualstudio.code
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: code
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.visualstudio.code
     name: VS Code

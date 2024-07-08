@@ -3,7 +3,6 @@ title: Neofetch
 aggregation:
     sisyphus: neofetch
 appstream:
-    id: neofetch.desktop
     name: Neofetch
     icon: /neofetch/neofetch-logo.png
     summary: Средство для отображения информации о системе.

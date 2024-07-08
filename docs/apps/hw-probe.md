@@ -9,10 +9,10 @@ gallery:
 aggregation:
     snap:
         id: hw-probe
-        build: offical
+        build: official
     flatpak:
         id: org.linux_hardware.hw-probe
-        build: offical
+        build: official
     sisyphus: hw-probe
 appstream:
     id: org.linux_hardware.hw-probe

@@ -8,10 +8,10 @@ gallery:
 aggregation:
     snap:
         id: rnote
-        build: unoffical
+        build: unofficial
     flatpak: 
         id: com.github.flxzt.rnote
-        build: offical
+        build: official
 appstream:
     id: com.github.flxzt.rnote
     name: Rnote

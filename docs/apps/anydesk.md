@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.anydesk.Anydesk
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: anydesk
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.anydesk.Anydesk
     name: AnyDesk

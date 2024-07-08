@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: io.github.Figma_Linux.figma_linux
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: figma
-            build: unoffical
+            build: unofficial
 appstream:
     id: io.github.Figma_Linux.figma_linux
     name: Figma

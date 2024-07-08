@@ -3,10 +3,10 @@ aggregation:
     sisyphus: tuba
     flatpak:
         id: dev.geopjr.Tuba
-        builf: offical
+        builf: official
     snap:
         id: tuba
-        build: offical
+        build: official
 appstream:
     id: dev.geopjr.Tuba
     name: Tuba

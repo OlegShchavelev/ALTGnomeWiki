@@ -3,13 +3,13 @@ aggregation:
     sisyphus: steam
     flatpak:
         id: com.valvesoftware.Steam
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: steam
-            build: unoffical
+            build: unofficial
 appstream:
-    id: steam.desktop
+    id: com.valvesoftware.Steam
     name: Steam
     icon: /steam/steam-logo.svg
     summary: Клиент для платформы Steam

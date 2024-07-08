@@ -2,7 +2,7 @@
 aggregation:
     sisyphus: gnome-software
 appstream:
-    id: gnome-software.desktop
+    id: org.gnome.Software.desktop
     name: GNOME Software
     icon: /gnome-software/gnome-software-logo.svg
     summary: Официальная утилита управления приложениями для рабочего окружения GNOME

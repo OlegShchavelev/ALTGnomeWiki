@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: com.github.tchx84.Flatseal
-        build: offical
+        build: official
     sisyphus: flatseal
 appstream:
     id: com.github.tchx84.Flatseal

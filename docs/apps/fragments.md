@@ -3,7 +3,7 @@ aggregation:
     sisyphus: fragments
     flatpak:
         id: de.haeckerfelix.Fragments
-        build: offical
+        build: official
 appstream:
     id: de.haeckerfelix.Fragments
     name: Fragments

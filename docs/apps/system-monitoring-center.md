@@ -3,9 +3,9 @@ aggregation:
     sisyphus: system-monitoring-center
     flatpak:
         id: io.github.hakandundar34coding.system-monitoring-center
-        build: offical
+        build: official
 appstream:
-    id: system-monitoring-center.desktop
+    id: io.github.hakandundar34coding.system-monitoring-center.desktop
     name: Центр мониторинга системы
     icon: /system-monitoring-center/system-monitoring-center-logo.svg
     summary: Многофункциональный системный монитор для отслеживания использования системных ресурсов, процессов, пользователей, сервисов и другого.

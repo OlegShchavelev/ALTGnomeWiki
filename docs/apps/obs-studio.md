@@ -3,10 +3,10 @@ aggregation:
     sisyphus: obs-studio
     flatpak:
         id: com.obsproject.Studio
-        build: offical
+        build: official
     snap:
         id: obs-studio
-        build: unoffical
+        build: unofficial
 
 appstream:
     id: com.obsproject.Studio

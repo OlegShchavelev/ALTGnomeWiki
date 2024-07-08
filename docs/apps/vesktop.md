@@ -3,11 +3,11 @@ title: Vesktop
 aggregation:
     flatpak:
         id: dev.vencord.Vesktop
-        build: offical
+        build: official
     epm:
         play:
             id: vesktop
-            build: unoffical
+            build: unofficial
 appstream:
     id: dev.vencord.Vesktop
     name: Vesktop

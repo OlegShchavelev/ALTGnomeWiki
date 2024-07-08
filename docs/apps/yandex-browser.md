@@ -3,11 +3,11 @@ aggregation:
     sisyphus: yandex-browser-stable
     flatpak:
         id: ru.yandex.Browser
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: yandex-browser
-            build: unoffical
+            build: unofficial
 appstream:
     id: yandex-browser.desktop
     name: Яндекс Браузер

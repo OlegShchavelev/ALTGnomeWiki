@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: com.google.Chrome
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: chrome
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.google.Chrome
     name: Google Chrome

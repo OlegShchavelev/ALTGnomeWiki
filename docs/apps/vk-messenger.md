@@ -3,7 +3,7 @@ aggregation:
     epm:
         play:
             id: vk-messenger
-            build: unoffical
+            build: unofficial
 appstream:
     name: VK Мессенджер
     icon: /vk-messenger/vk-messenger-logo.svg

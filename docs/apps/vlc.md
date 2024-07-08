@@ -3,10 +3,10 @@ aggregation:
     sisyphus: vlc
     flatpak:
         id: org.videolan.VLC
-        build: unoffical
+        build: unofficial
     snap:
         id: vlc
-        build: offical
+        build: official
 appstream:
     id: org.videolan.VLC
     name: VLC

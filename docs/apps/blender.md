@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: org.blender.Blender
-        build: offical
+        build: official
     sisyphus: blender
 appstream:
     id: org.blender.Blender

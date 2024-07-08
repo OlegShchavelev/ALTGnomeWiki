@@ -2,11 +2,11 @@
 aggregation:
     flatpak:
         id: org.onlyoffice.desktopeditors
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: onlyoffice
-            build: unoffical
+            build: unofficial
 appstream:
     id: org.onlyoffice.desktopeditors
     name: OnlyOffice

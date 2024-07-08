@@ -5,7 +5,7 @@ aggregation:
     epm:
         play:
             id: telegram
-            build: unoffical
+            build: unofficial
 appstream:
     id: org.telegram.desktop
     name: Telegram

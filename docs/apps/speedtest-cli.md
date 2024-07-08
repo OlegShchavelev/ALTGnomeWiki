@@ -2,7 +2,6 @@
 aggregation:
     sisyphus: speedtest-cli
 appstream:
-    id: speedtest-cli.desktop
     name: Speedtest CLI
     icon: /speedtest-cli/speedtest-cli-logo.png
     summary: Интерфейс командной строки для тестирования пропускной способности интернета с помощью сервиса speedtest.net.

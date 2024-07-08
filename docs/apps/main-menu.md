@@ -2,7 +2,7 @@
 aggregation:
     flatpak:
         id: page.codeberg.libre_menu_editor.LibreMenuEditor
-        build: offical
+        build: official
     sisyphus: libre-menu-editor
 appstream:
     id: page.codeberg.libre_menu_editor.LibreMenuEditor

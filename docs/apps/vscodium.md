@@ -3,11 +3,11 @@ aggregation:
     sisyphus: codium
     flatpak:
         id: com.vscodium.codium
-        build: unoffical
+        build: unofficial
     epm:
         play:
             id: codium
-            build: unoffical
+            build: unofficial
 appstream:
     id: com.vscodium.codium
     name: VSCodium

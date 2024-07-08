@@ -3,7 +3,6 @@ title: Fastfetch
 aggregation:
     sisyphus: fastfetch
 appstream:
-    id: fastfetch.desktop
     name: Fastfetch
     summary: Средство для отображения информации о системе.
     metadata_license:

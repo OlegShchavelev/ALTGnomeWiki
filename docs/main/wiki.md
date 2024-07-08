@@ -27,6 +27,8 @@ docs:
             link: microsoft-edge
           - name: LibreWolf
             link: librewolf
+          - name: Waterfox
+            link: waterfox
       - title: Мессенджеры
         icon:
           dark: /message-light.svg

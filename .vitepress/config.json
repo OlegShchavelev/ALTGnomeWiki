@@ -1,31 +1,25 @@
 {
-    "host": "https://alt-gnome.wiki/",
-    "lang": "ru-RU",
-    "title": "ALT Gnome Wiki",
-    "meta_description": "Свободная WIKI по операционной системе ALT Regular Gnome",
-    "head": {
-        "titleSeponator": " — ",
-        "themeColor": "#62a0ea",
-        "type": "website",
-        "ogImage": "og-alt-wiki.jpg"
-    },
+  "host": "https://alt-gnome.wiki/",
+  "lang": "ru-RU",
+  "title": "ALT Gnome Wiki",
+  "meta_description": "Свободная WIKI по операционной системе ALT Regular Gnome",
+  "head": {
+    "titleSeponator": " — ",
+    "themeColor": "#62a0ea",
+    "type": "website",
+    "ogImage": "og-alt-wiki.jpg"
+  },
 
-    "yaWebmasterId": "6ef3a36c3d09e43e",
-    "yaMetrikaId": 95081395,
+  "yaWebmasterId": "6ef3a36c3d09e43e",
+  "yaMetrikaId": 95081395,
 
-    "nolebase_exclude": [
-        "index.md",
-        "wiki.md",
-        "contributions.md",
-        "about.md",
-        "games.md"
-    ],
+  "nolebase_exclude": ["index.md", "wiki.md", "contributions.md", "about.md", "games.md"],
 
-    "alignment_containers": [
-        ["left", {}],
-        ["center", {}],
-        ["half", {}],
-        ["highlight", {}],
-        ["right", {}]
-    ]
+  "alignment_containers": [
+    ["left", {}],
+    ["center", {}],
+    ["half", {}],
+    ["highlight", {}],
+    ["right", {}]
+  ]
 }

@@ -1,8 +1,8 @@
 <script setup>
 import { computed } from 'vue'
-import AGWAsideMetaLink from '../AGWAsideMetaLink.vue';
+import AGWAsideMetaLink from '../AGWAsideMetaLink.vue'
 import AGWAsideMetaKeyword from '../AGWAsideMetaKeyword.vue'
-import { useData } from 'vitepress';
+import { useData } from 'vitepress'
 
 const { theme } = useData()
 const config = theme.value.asideMeta
@@ -16,47 +16,47 @@ const props = defineProps({
 
 const cardProps = computed(() => {
   const { icon, name, summary } = props.app.appstream
-  const repos = Object.fromEntries(Object.entries(props.app.aggregation).sort( (repo1, repo2) => {
-      return repo1[0] == 'sisyphus'?-1:1
-  }))
+  const repos = Object.fromEntries(
+    Object.entries(props.app.aggregation).sort((repo1, repo2) => {
+      return repo1[0] == 'sisyphus' ? -1 : 1
+    })
+  )
 
   //console.log(repos)
-  const is_adaptive = props.app.appstream?.keywords?.includes('adaptive')?['adaptive']:[]
-  const is_donttheme = props.app.appstream?.keywords?.includes('dontthemes')?['dontthemes']:[]
+  const is_adaptive = props.app.appstream?.keywords?.includes('adaptive') ? ['adaptive'] : []
+  const is_donttheme = props.app.appstream?.keywords?.includes('dontthemes') ? ['dontthemes'] : []
 
   return {
     icon: icon,
     name: name,
     summary: summary,
-    links: getLinks({ ...repos , ...{ about_app: props.app.about_app }, snap: undefined }, config.links),
-    keywords: getKeywords([...is_adaptive, ...is_donttheme], config.keywords),
+    links: getLinks({ ...repos, ...{ about_app: props.app.about_app }, snap: undefined }, config.links),
+    keywords: getKeywords([...is_adaptive, ...is_donttheme], config.keywords)
   }
 })
-
 </script>
 
 <template>
-    <article class="AGWGnomeAppCard">
-      <div class="profile">
-        <img class="avatar-img" :src="cardProps.icon"/>
-        <div class="data">
-          <h3 class="name">
-            {{cardProps.name}}
-          </h3>
-          <div class="badges">
-            <AGWAsideMetaKeyword :keywords="cardProps.keywords" />
-          </div>
-          <p class="affiliation">
-            {{cardProps.summary}}
-          </p>
+  <article class="AGWGnomeAppCard">
+    <div class="profile">
+      <img class="avatar-img" :src="cardProps.icon" />
+      <div class="data">
+        <h3 class="name">
+          {{ cardProps.name }}
+        </h3>
+        <div class="badges">
+          <AGWAsideMetaKeyword :keywords="cardProps.keywords" />
         </div>
+        <p class="affiliation">
+          {{ cardProps.summary }}
+        </p>
       </div>
-      <AGWAsideMetaLink :links="cardProps.links" />
-    </article>
+    </div>
+    <AGWAsideMetaLink :links="cardProps.links" />
+  </article>
 </template>
 
 <style scoped>
-
 .badges {
   margin-top: 5px;
   justify-content: center;
@@ -111,5 +111,4 @@ AGWAsideMetaLink {
   font-weight: 500;
   color: var(--vp-c-text-2);
 }
-
 </style>

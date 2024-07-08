@@ -1,30 +1,30 @@
 export const pagePropertiesMD = {
-    'ru-RU': [
-        {
-          key: 'tags',
-          type: 'tags',
-          title: 'Теги',
-        },
-        {
-          key: 'progress',
-          type: 'progress',
-          title: 'Прогресс',
-        },
-        {
-          key: 'createdAt',
-          type: 'datetime',
-          title: 'Создано',
-          formatAsFrom: true,
-          dateFnsLocaleName: 'ru',
-        },
-        {
-          key: 'updatedAt',
-          type: 'datetime',
-          title: 'Обновлено',
-          formatAsFrom: true,
-          dateFnsLocaleName: 'ru',
-        },
-        /*
+  'ru-RU': [
+    {
+      key: 'tags',
+      type: 'tags',
+      title: 'Теги'
+    },
+    {
+      key: 'progress',
+      type: 'progress',
+      title: 'Прогресс'
+    },
+    {
+      key: 'createdAt',
+      type: 'datetime',
+      title: 'Создано',
+      formatAsFrom: true,
+      dateFnsLocaleName: 'ru'
+    },
+    {
+      key: 'updatedAt',
+      type: 'datetime',
+      title: 'Обновлено',
+      formatAsFrom: true,
+      dateFnsLocaleName: 'ru'
+    }
+    /*
         {
           key: 'wordsCount',
           type: 'dynamic',
@@ -43,11 +43,11 @@ export const pagePropertiesMD = {
           },
         },
         */
-      ],
+  ]
 }
 
 export const pagePropertiesLocales = {
-    'ru-RU':{
-        wordsCount: '{{wordsCount}}   слов'
-    }
+  'ru-RU': {
+    wordsCount: '{{wordsCount}}   слов'
+  }
 }

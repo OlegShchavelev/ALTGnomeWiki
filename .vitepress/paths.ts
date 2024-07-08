@@ -1,19 +1,30 @@
-import * as fs from 'fs';
-import path from 'path';
+import * as fs from 'fs'
+import path from 'path'
 
-const paths = ['apps', 'system', 'main', 'tips', 'extensions', 'developers', 'equipment', 'using_gnome', 'games', 'build']
+const paths = [
+  'apps',
+  'system',
+  'main',
+  'tips',
+  'extensions',
+  'developers',
+  'equipment',
+  'using_gnome',
+  'games',
+  'build'
+]
 const prefix = 'docs/'
 
 function getFilesWithMdExtension(paths) {
-    const filesWithMdExtension = {};
-    const filesmd = [];
-    for (const path of paths) {
-        const files = fs.readdirSync(prefix + path);
-        for (const file of files) {
-            filesWithMdExtension[path + '/' + file] = file;
-        }
+  const filesWithMdExtension = {}
+  const filesmd = []
+  for (const path of paths) {
+    const files = fs.readdirSync(prefix + path)
+    for (const file of files) {
+      filesWithMdExtension[path + '/' + file] = file
     }
-    return filesWithMdExtension
+  }
+  return filesWithMdExtension
 }
 
-export const rewrites: Record<string, string> = getFilesWithMdExtension(paths);
+export const rewrites: Record<string, string> = getFilesWithMdExtension(paths)

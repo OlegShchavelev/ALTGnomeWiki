@@ -1,4 +1,4 @@
-import { link } from "fs"
+import { link } from 'fs'
 
 export const docs = [
   {
@@ -52,7 +52,7 @@ export const docs = [
           { text: 'Foliate', link: '/foliate' },
           { text: 'Folio', link: '/folio' },
           { text: 'Footage', link: '/footage' },
-          { text: 'FOSSology', link: '/fossology-nomos'},
+          { text: 'FOSSology', link: '/fossology-nomos' },
           { text: 'Fotema', link: '/fotema' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
@@ -65,9 +65,9 @@ export const docs = [
           { text: 'Google Chrome', link: '/google-chrome' },
           { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
           { text: 'Gimp', link: '/gimp' },
-          { text: 'Hardware Probe', link: '/hw-probe'},
+          { text: 'Hardware Probe', link: '/hw-probe' },
           { text: 'Helvum', link: '/helvum' },
-          { text: 'Heroic Games Launcher', link: '/heroic-games-launcher'},
+          { text: 'Heroic Games Launcher', link: '/heroic-games-launcher' },
           { text: 'IP Lookup', link: '/ip-lookup' },
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },
@@ -98,9 +98,9 @@ export const docs = [
           { text: 'Piper', link: '/piper' },
           { text: 'qBittorrent', link: '/q-bittorrent' },
           { text: 'Radio', link: '/radio' },
-          { text: 'Reaper', link: '/reaper'},
-          { text: 'RetroArch', link: '/retroarch'},
-          { text: 'Rnote', link: '/rnote'},
+          { text: 'Reaper', link: '/reaper' },
+          { text: 'RetroArch', link: '/retroarch' },
+          { text: 'Rnote', link: '/rnote' },
           { text: 'Skype', link: '/skype' },
           { text: 'Speedtest CLI', link: '/speedtest-cli' },
           { text: 'Spotify', link: '/spotify' },
@@ -153,7 +153,7 @@ export const docs = [
           { text: 'Центр мониторинга системы', link: '/system-monitoring-center' },
           { text: 'Центр Приложений', link: '/gnome-software' },
           { text: 'Яндекс Браузер', link: '/yandex-browser' },
-          { text: 'Яндекс Диск', link: '/yandex-disk' },
+          { text: 'Яндекс Диск', link: '/yandex-disk' }
         ],
         collapsed: true
       },
@@ -182,15 +182,16 @@ export const docs = [
                 text: 'Безопасность',
                 items: [
                   { text: 'Нужна ли мне антивирусная программа', link: '/net-antivirus' },
-                  { text: 'Нужно ли сканировать свою электронную почту на наличие вирусов', link: '/net-email-virus' }
+                  {
+                    text: 'Нужно ли сканировать свою электронную почту на наличие вирусов',
+                    link: '/net-email-virus'
+                  }
                 ],
                 collapsed: true
               },
               {
                 text: 'Веб-браузеры',
-                items: [
-                  { text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }
-                ],
+                items: [{ text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }],
                 collapsed: true
               }
             ],
@@ -201,24 +202,20 @@ export const docs = [
             items: [
               {
                 text: 'Звук',
-                items: [
-                  { text: 'Управление громкостью', link: '/gnome-volume-control' }
-                ],
+                items: [{ text: 'Управление громкостью', link: '/gnome-volume-control' }],
                 collapsed: true
               },
               {
                 text: 'Клавиатура',
                 items: [
                   { text: 'Использование других раскладок клавиатуры', link: '/keyboard-layouts' },
-                  { text: 'Сочетание клавиш', link: '/keyboard-shortcuts' },
+                  { text: 'Сочетание клавиш', link: '/keyboard-shortcuts' }
                 ],
                 collapsed: true
               },
               {
                 text: 'Тема',
-                items: [
-                  { text: 'Общая тема для всех приложений', link: '/uniform-look' },
-                ],
+                items: [{ text: 'Общая тема для всех приложений', link: '/uniform-look' }],
                 collapsed: true
               },
               {
@@ -233,7 +230,6 @@ export const docs = [
                 collapsed: true
               },
               { text: 'Установка шрифтов', link: '/add-fonts' }
-
             ],
             collapsed: true
           }
@@ -269,10 +265,19 @@ export const docs = [
       {
         text: 'Решение проблем',
         items: [
-          { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround' },
+          {
+            text: 'Проблема со сбросом уровня звука по истечению времени',
+            link: '/drop-soundlevel-after-cron-workaround'
+          },
           { text: 'Проблема со звуком в передней панели', link: '/fix-front-panel-audio' },
-          { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround' },
-          { text: 'Обновить названия стандартных папок в соответствутвии с локалью', link: '/change-the-language-of-the-home-user-folders-automatically' },
+          {
+            text: 'Проблема с отображением пользователя на экрание приветствия GDM',
+            link: '/hidden-user-in-userlist-workaround'
+          },
+          {
+            text: 'Обновить названия стандартных папок в соответствутвии с локалью',
+            link: '/change-the-language-of-the-home-user-folders-automatically'
+          },
           { text: 'Использование клавиатур Дарк Проджект', link: '/dark-project-keyboard-on-linux' }
         ],
         collapsed: true
@@ -284,7 +289,7 @@ export const docs = [
           { text: 'Подключение USB-устройств', link: '/usb-devices' },
           { text: 'Подключение принтера', link: '/drivers-for-printer' },
           { text: 'Подключение сканера', link: '/drivers-for-scanner' },
-          { text: 'Подключение DualShock', link: '/dualshock' },
+          { text: 'Подключение DualShock', link: '/dualshock' }
         ],
         collapsed: true
       },
@@ -298,25 +303,19 @@ export const docs = [
           {
             text: 'Python',
             link: '/python',
-            items: [
-              { text: 'Использование Poetry', link: 'python-use-poetry' }
-            ],
+            items: [{ text: 'Использование Poetry', link: 'python-use-poetry' }],
             collapsed: true
           },
           {
             text: 'Rust',
             link: '/rust',
-            items: [
-              { text: 'Приложение на GTK4', link: 'rust-gtk4-applications' }
-            ],
+            items: [{ text: 'Приложение на GTK4', link: 'rust-gtk4-applications' }],
             collapsed: true
           },
           {
             text: 'Vala',
             link: '/vala',
-            items: [
-              { text: 'Приложение на GTK4', link: 'vala-gtk4-applications' }
-            ],
+            items: [{ text: 'Приложение на GTK4', link: 'vala-gtk4-applications' }],
             collapsed: true
           }
         ],
@@ -327,22 +326,28 @@ export const docs = [
         link: 'sisyphus',
         items: [
           {
-            text: 'Etersoft-build-utils', link: '/etersoft-build-utils',
+            text: 'Etersoft-build-utils',
+            link: '/etersoft-build-utils'
           },
           {
-            text: 'Hasher', link: '/hasher',
+            text: 'Hasher',
+            link: '/hasher'
           },
           {
-            text: 'Spec', link: '/spec',
+            text: 'Spec',
+            link: '/spec'
           },
           {
-            text: 'Сборка в системе', link: '/build',
+            text: 'Сборка в системе',
+            link: '/build'
           },
           {
-            text: 'Сборка RPM-пакетов', link: '/build-packages'
+            text: 'Сборка RPM-пакетов',
+            link: '/build-packages'
           },
           {
-            text: 'Патчи', link: '/patches'
+            text: 'Патчи',
+            link: '/patches'
           }
         ]
       },
@@ -353,7 +358,7 @@ export const docs = [
           { text: 'Изменение clearcpuid', link: '/clearcpuid' },
           { text: 'Mindustry', link: '/mindustry' },
           { text: 'Sonic 3 A.I.R', link: '/sonic3-a.i.r' },
-          { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' },
+          { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' }
         ],
         collapsed: true
       }
@@ -376,7 +381,7 @@ export const docs = [
 ]
 
 export const reference = [
-  { text: 'Для авторов', link: '/reference/', },
+  { text: 'Для авторов', link: '/reference/' },
   {
     text: 'Создание страниц',
     base: '/reference/pages/',

@@ -31,11 +31,4 @@ const gitverse = `
 </svg>
 `
 
-export {
-    telegram,
-    gitflic,
-    gitlab,
-    vk,
-    messager,
-    gitverse
-}
+export { telegram, gitflic, gitlab, vk, messager, gitverse }

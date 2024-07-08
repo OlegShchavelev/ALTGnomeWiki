@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { VPHomeSponsors } from 'vitepress/theme'
-import { sponsors } from '../../../_data/sponsors';
+import { sponsors } from '../../../_data/sponsors'
 
 const { message, actionLink, actionText, data } = defineProps({
   message: {
     type: String,
-    default: 'Данный сервис является Open-Source проектом и его поддержка и развитие зависит только от нашей совместной активности.'
+    default:
+      'Данный сервис является Open-Source проектом и его поддержка и развитие зависит только от нашей совместной активности.'
   },
   actionText: {
     type: String,
@@ -18,14 +19,18 @@ const { message, actionLink, actionText, data } = defineProps({
   data: {
     type: Object,
     default: () => {
-      return sponsors ?? [];
-    },
-  },
-});
-
+      return sponsors ?? []
+    }
+  }
+})
 </script>
 
 <template>
-  <VPHomeSponsors v-if="sponsors" :message="message" :actionText="actionText" :actionLink="actionLink"
-    :data="sponsors" />
+  <VPHomeSponsors
+    v-if="sponsors"
+    :message="message"
+    :actionText="actionText"
+    :actionLink="actionLink"
+    :data="sponsors"
+  />
 </template>

@@ -5,7 +5,6 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-
   --vp-c-blue: #3584e4;
   --vp-c-blue-light: #62a0ea;
   --vp-c-blue-lighter: #99c1f1;
@@ -73,18 +72,13 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
-      #c061cb 30%,
-      #62a0ea);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #c061cb 30%, #62a0ea);
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg,
-      #c061cb 50%,
-      #62a0ea 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #c061cb 50%, #62a0ea 50%);
   --vp-home-hero-image-filter: blur(40px);
 }
 
 @media (min-width: 960px) {
-
   :root {
     --vp-home-hero-image-filter: blur(72px);
     --vp-nav-logo-height: 36px;
@@ -124,7 +118,7 @@
  * kdb
  * -------------------------------------------------------------------------- */
 
- .vp-doc kbd {
+.vp-doc kbd {
   font-size: 0.8rem;
   border-radius: 4px;
   padding: 2px 6px;
@@ -135,10 +129,10 @@
   border: 1px solid rgba(128, 128, 128, 0.15);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
   text-wrap: nowrap;
- }
+}
 
 :root {
-  --vp-nav-logo-height: 36px
+  --vp-nav-logo-height: 36px;
 }
 
 /**
@@ -183,7 +177,7 @@
 /**
  * implicitFigures
  * -------------------------------------------------------------------------- */
-figure>figcaption {
+figure > figcaption {
   text-align: center;
   color: var(--vp-c-brand-lightest);
   font-size: 14px;
@@ -223,11 +217,11 @@ figure>figcaption {
   .VPHomeHero .image-src {
     max-width: 350px;
     max-height: 350px;
-  } 
+  }
 }
 
 /**
- * Alignment Containers 
+ * Alignment Containers
  * -------------------------------------------------------------------------- */
 
 .center {

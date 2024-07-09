@@ -140,7 +140,7 @@ export const docs = [
           { text: 'Глаз GNOME', link: '/eog' },
           { text: 'Дела', link: '/errands' },
           { text: 'Диски', link: '/diskutility' },
-          { text: 'Журнал', link: '/gnome-logs' },
+          { text: 'Журналы', link: '/gnome-logs' },
           { text: 'Кассета', link: '/cassette' },
           { text: 'Консоль', link: '/console' },
           { text: 'КуМир', link: '/kumir' },

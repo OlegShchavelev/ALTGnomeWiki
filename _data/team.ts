@@ -64,7 +64,7 @@ export const contributions = [
   },
   {
     avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
-    name: 'Семен Фомченков',
+    name: 'Семён Фомченков',
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/Armatik' },

@@ -8,6 +8,7 @@ appstream:
   summary: Официальная утилита управления приложениями для рабочего окружения GNOME
   keywords:
     - adaptive
+    - core
     - oobe
   developer:
     name: GNOME

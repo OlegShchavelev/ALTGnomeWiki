@@ -55,6 +55,8 @@ gallery:
 keywords:
   - core # GNOME Core
   - circle # GNOME Circle
+  - dev # GNOME Development
+  - oobe # Предустановлено
   - adaptive # Адаптивное
   - proprietary # Проприетарное
   - restrictions # Региональные ограничения

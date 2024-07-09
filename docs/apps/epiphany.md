@@ -18,6 +18,7 @@ appstream:
   summary: Простой, чистый и красивый вид Интернета
   keywords:
     - core
+    - oobe
   developer:
     name: GNOME
     avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48

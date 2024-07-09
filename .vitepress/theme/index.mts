@@ -21,29 +21,38 @@ import AGWGnomeAppsList from './components/AGWGnomeApps/AGWGnomeAppsList.vue'
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
 
-/* Nolebase features*/
+/* Nolebase ER */
 
-import {
-  NolebaseEnhancedReadabilitiesPlugin,
+import { 
   NolebaseEnhancedReadabilitiesMenu,
-  NolebaseEnhancedReadabilitiesScreenMenu,
-  InjectionKey as NolebaseEnhancedReadabilitiesInjectionKey,
-  Options as NolebaseEnhancedReadabilitiesOptions
-} from '@nolebase/vitepress-plugin-enhanced-readabilities'
+  NolebaseEnhancedReadabilitiesScreenMenu
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+
 import { locales } from '../../_data/enhanced-readabilities'
 
-import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 
-import { gitLocales } from '../../_data/gitlog'
-
-import { data as gitOnline } from '../../_data/gitlog-loader.data.ts'
+/* Nolebase PP */
 
 import {
   NolebasePagePropertiesEditor,
   InjectionKey as NolebasePagePropertiesInjectionKey
 } from '@nolebase/vitepress-plugin-page-properties/client'
+import type { Options as NEROptions } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
-import { pagePropertiesLocales, pagePropertiesMD } from '../../_data/page-properties'
+import { pagePropertiesLocales, pagePropertiesMD } from '../../_data/page-properties' 
+
+
+/* Nolebase Gitlog */
+
+import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
+
+import { gitLocales, gitMapContributors } from '../../_data/gitlog'
+
+import { data as gitOnline } from '../../_data/gitlog-loader.data.ts'
+
 
 /* Stylesheets */
 import 'uno.css'
@@ -79,17 +88,14 @@ export default {
     ctx.app.component('contribution', AGWTeamPage)
     ctx.app.component('GnomeAppsList', AGWGnomeAppsList)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
-    ctx.app.provide(NolebaseEnhancedReadabilitiesInjectionKey, {
-      locales: locales
-    } as NolebaseEnhancedReadabilitiesOptions)
-    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, {
       locales: pagePropertiesLocales,
       properties: pagePropertiesMD
-    })
+    } as NEROptions)
+    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, {locales: locales} as Options)
     ctx.app.use(NolebaseGitChangelogPlugin, {
       locales: gitLocales,
-      mapAuthors: gitOnline
+      mapAuthors: gitOnline.length ? gitOnline : gitMapContributors
     })
 
     enhanceAppWithTabs(ctx.app)

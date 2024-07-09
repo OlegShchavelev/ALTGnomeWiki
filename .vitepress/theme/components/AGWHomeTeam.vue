@@ -3,9 +3,7 @@ import { VPTeamPage, VPTeamPageTitle, VPButton, VPTeamMembers } from 'vitepress/
 
 import { sortMembers } from '../composables/sorters'
 import { homeSorting, limit, contributions } from '../../../_data/team'
-import { data as gitOnline } from '../../../_data/gitlog-loader.data.ts'
-
-console.log(gitOnline)
+import { data as gitOnline } from '../loaders/gitlogDataLoader.data.ts'
 </script>
 
 <template>

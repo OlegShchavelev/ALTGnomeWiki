@@ -1,7 +1,7 @@
 <script setup>
 import { useData } from 'vitepress'
 import AGWGnomeAppCard from './AGWGnomeAppCard.vue'
-import { data as apps } from '../../composables/appsGnomeDataLoader.data.ts'
+import { data as apps } from '../../loaders/appsGnomeDataLoader.data.ts'
 
 const { frontmatter } = useData()
 

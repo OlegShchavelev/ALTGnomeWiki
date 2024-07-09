@@ -12,8 +12,6 @@ const props = defineProps({
   app: Object
 })
 
-//console.log(props.app)
-
 const cardProps = computed(() => {
   const { icon, name, summary } = props.app.appstream
   const repos = Object.fromEntries(
@@ -21,8 +19,7 @@ const cardProps = computed(() => {
       return repo1[0] == 'sisyphus' ? -1 : 1
     })
   )
-
-  //console.log(repos)
+  
   const is_adaptive = props.app.appstream?.keywords?.includes('adaptive') ? ['adaptive'] : []
   const is_donttheme = props.app.appstream?.keywords?.includes('dontthemes') ? ['dontthemes'] : []
 

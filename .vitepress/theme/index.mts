@@ -48,7 +48,7 @@ import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-chang
 
 import { contributions } from '../../_data/team.ts'
 
-import { data as gitOnline } from '../../_data/gitlog-loader.data.ts'
+import { data as gitOnline } from './loaders/gitlogDataLoader.data.ts'
 
 
 /* Stylesheets */

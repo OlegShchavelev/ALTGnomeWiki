@@ -2,11 +2,9 @@
 <script setup lang="ts">
 import { VPTeamPage, VPTeamPageTitle, VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
 
-import { data as gitOnline } from '../../../_data/gitlog-loader.data.ts'
+import { data as gitOnline } from '../loaders/gitlogDataLoader.data.ts'
 import { developersSection, membersSection, teamSorting, contributions } from '../../../_data/team'
 import { sortMembers } from '../composables/sorters'
-
-console.log(gitOnline.length)
 
 import { useData } from 'vitepress'
 const { frontmatter } = useData()

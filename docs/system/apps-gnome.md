@@ -4,36 +4,6 @@ sidebar: false
 aside: false
 apps:
   core:
-    'Epiphany':
-      aggregation:
-        flatpak: org.gnome.Epiphany
-        sisyphus: epiphany
-      appstream:
-        keywords:
-          - adaptive
-        name: Веб-браузер
-        summary: Просмотр веб-страниц
-        icon: https://apps.gnome.org/icons/scalable/org.gnome.Epiphany.svg
-      about_app: https://apps.gnome.org/ru/Epiphany/
-    'DiskUtility':
-      aggregation:
-        sisyphus: gnome-disk-utility
-      appstream:
-        keywords:
-          - adaptive
-        name: Диски
-        summary: Приложение управления дисками для GNOME
-        icon: https://apps.gnome.org/icons/scalable/org.gnome.DiskUtility.svg
-      about_app: https://apps.gnome.org/ru/DiskUtility/
-    'Logs':
-      aggregation:
-        flatpak: org.gnome.Logs
-        sisyphus: gnome-logs
-      appstream:
-        name: Журналы
-        summary: Просмотр подробной информации о событиях в системе
-        icon: https://apps.gnome.org/icons/scalable/org.gnome.Logs.svg
-      about_app: https://apps.gnome.org/ru/Logs/
     'Calendar':
       aggregation:
         flatpak: org.gnome.Calendar

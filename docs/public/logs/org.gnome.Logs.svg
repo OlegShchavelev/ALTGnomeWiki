@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg">
+    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="266" x2="265" y1="102" y2="101">
+        <stop offset="0" stop-color="#d5d3cf"/>
+        <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <clipPath id="b">
+        <path d="m 252 116 l 28 -28 v -8 h -36 v 36 z"/>
+    </clipPath>
+    <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="268" y2="-180.00006">
+        <stop offset="0" stop-color="#eeeeec"/>
+        <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <g transform="matrix(1 0 0 1 0 -172)">
+        <g enable-background="new" fill="url(#c)" stroke-width="1.029857" transform="matrix(0.3 0 0 -0.21279762 -12.799997 247.3631)">
+            <rect fill="#1a5fb4" height="451.13287" rx="26.666666" ry="44.431889" transform="matrix(-1 0 0 1 0 0)" width="346.66669" x="-429.33334" y="-190.965"/>
+            <rect fill="#d5d3cf" height="451.13287" rx="26.666666" ry="44.431889" transform="matrix(-1 0 0 1 0 0)" width="346.66669" x="-429.33334" y="-181.56641"/>
+            <rect fill="#f6f5f4" height="451.13284" rx="26.666666" ry="37.594406" transform="matrix(-1 0 0 1 0 0)" width="346.66669" x="-429.33334" y="-153.37062"/>
+        </g>
+        <g enable-background="new" fill="#d5d3cf">
+            <circle cx="108.000003" cy="252.000003" r="2"/>
+            <circle cx="108.000003" cy="242.000003" r="2"/>
+            <circle cx="108.000003" cy="232.000003" r="2"/>
+            <circle cx="108.000003" cy="222.000003" r="2"/>
+            <circle cx="108.000003" cy="212.000003" r="2"/>
+            <circle cx="108.000003" cy="202.000003" r="2"/>
+            <circle cx="108.000003" cy="192.000003" r="2"/>
+        </g>
+        <g enable-background="new" fill="#d5d3cf">
+            <circle cx="20.000003" cy="272.000003" r="2"/>
+            <circle cx="20.000003" cy="262.000003" r="2"/>
+            <circle cx="20.000003" cy="252.000003" r="2"/>
+            <circle cx="20.000003" cy="242.000003" r="2"/>
+            <circle cx="20.000003" cy="232.000003" r="2"/>
+            <circle cx="20.000003" cy="222.000003" r="2"/>
+            <circle cx="20.000003" cy="212.000003" r="2"/>
+            <circle cx="20.000003" cy="202.000003" r="2"/>
+            <circle cx="20.000003" cy="192.000003" r="2"/>
+        </g>
+        <g enable-background="new" fill="none" opacity="0.3" stroke="#d5d3cf" stroke-width="2">
+            <path d="m 28.000003 191.000003 h 72"/>
+            <path d="m 28.000003 201.000003 h 72"/>
+            <path d="m 28.000003 211.000003 h 72"/>
+            <path d="m 28.000003 221.000003 h 72"/>
+            <path d="m 28.000003 231.000003 h 72"/>
+            <path d="m 28.000003 241.000003 h 72"/>
+            <path d="m 28.000003 251.000003 h 72"/>
+            <path d="m 28.000003 261.000003 h 72"/>
+            <path d="m 28.000003 271.000003 h 66"/>
+        </g>
+        <g enable-background="new" transform="matrix(1 0 0 1 -19.999997 0.000003)">
+            <g fill="none" opacity="0.1" stroke="#00000f">
+                <path d="m 50 238 l -8 8" stroke-width="6"/>
+                <path d="m 42 246 l -14 14" stroke-linecap="round" stroke-width="12"/>
+                <circle cx="72.000006" cy="215.999993" opacity="1" r="30.117647" stroke-linejoin="round" stroke-width="3.764706"/>
+            </g>
+            <g enable-background="new" fill="none">
+                <path d="m 25.890345 254.550553 l 15.45714 -15.45715" opacity="0.154" stroke="#ffffff" stroke-linecap="round" stroke-width="1.637843"/>
+                <path d="m 50 236.000003 l -8 8" stroke="#949390" stroke-width="6"/>
+                <path d="m 50 234.000003 l -8 8" stroke="#d5d3cf" stroke-width="6"/>
+                <g stroke-linecap="round" stroke-width="12">
+                    <path d="m 42 244.000003 l -14 14" stroke="#241f31"/>
+                    <path d="m 42 242.000003 l -14 14" stroke="#424048"/>
+                </g>
+            </g>
+            <circle cx="-71.999969" cy="212.06238" fill="#ffffff" opacity="0.5" r="29.937637" transform="matrix(-1 0 0 1 0 0)"/>
+            <g fill="none">
+                <circle cx="72.000008" cy="214" r="30.117647" stroke="#1a5fb4" stroke-linejoin="round" stroke-width="3.764706"/>
+                <circle cx="72.000008" cy="212" r="30.117647" stroke="#62a0ea" stroke-linejoin="round" stroke-width="3.764706"/>
+                <path d="m 25 255 l 16 -16" opacity="0.154" stroke="#ffffff" stroke-linecap="round" stroke-width="2"/>
+            </g>
+        </g>
+        <rect clip-path="url(#b)" fill="url(#a)" height="36" rx="8" transform="matrix(0 1 1 0 0.000003 0.000003)" width="36" x="252" y="88"/>
+    </g>
+</svg>

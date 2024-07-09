@@ -62,8 +62,8 @@ ffmpeg -hide_banner
 ## Получите информацию о медиафайле
 
 ```shell
-1. ffmpeg -i video_file.mp4
-2. ffmpeg -i /home/USER/video_file.mp4
+1. ffmpeg -i input_file.mp4
+2. ffmpeg -i /home/input_file.mp4
 ```
 
 В примере присутствуют два способа:
@@ -86,19 +86,22 @@ ffmpeg -i "audio_input.mp3" "audio_output.ogg"
 ffmpeg -i "audio_input.wav" "audio_output.flac"
 ```
 
-Все поддерживаемые форматы:
-
-```shell
-ffmpeg -formats
-```
-
 ## Изменение разрешения или соотношение сторон для видео
 
 Ещё одна простая задача для FFmpeg. Всё, что нужно сделать, чтобы изменить размер видео, - указать новое разрешение, использовав флаг `s`:
+Флаг `-c copy` используется для сохранения оригинального качества (Простым языком перепаковка из одного контейнера в другой внося при этом изменения)
 
-```shell
-ffmpeg -i "Файл.avi" -s 1024x576 "Файл.mp4"
+::: code-group
+
+```shell[Один файл]
+ffmpeg -i "Файл.avi" -s 1024x576 -c copy "Файл1.avi"
 ```
+
+```shell[Пакетная работа]
+for i in *.mkv; do ffmpeg -hide_banner -i "$i" -s 1024x576 -c copy "/mnt/Hard/Итог/${i}"; done
+```
+
+:::
 
 ## Обрезка видео без перекодирования
 

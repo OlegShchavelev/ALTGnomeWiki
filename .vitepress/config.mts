@@ -7,6 +7,7 @@ import { rewrites } from './paths'
 import { fileURLToPath, URL } from 'node:url'
 import languages from './theme/syntaxes'
 import * as config from './config.json'
+import { packages } from '../package-lock.json'
 export const META_DESCRIPTION = config.meta_description
 import { default as createContainer } from './theme/composables/customContainers'
 
@@ -51,11 +52,9 @@ export default defineConfig({
         }
       })
     ],
-    optimizeDeps: { 
-      exclude: [ 
-        '@nolebase/vitepress-plugin-enhanced-readabilities/client', 
-      ], 
-    }, 
+    optimizeDeps: {
+      exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']
+    },
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
@@ -171,7 +170,10 @@ export default defineConfig({
     },
     footer: {
       message: 'Содержание доступно <a href="/licence.html">по лицензии MIT</a>',
-      copyright: `2023-${new Date().getFullYear()} ALT Gnome Wiki, разработано на платформе <a href="//vitepress.dev/">VitePress v1.3.0</a>`
+      copyright: `
+        2023-${new Date().getFullYear()} ALT Gnome Wiki,
+        разработано на платформе <a href="//vitepress.dev/">VitePress ${packages['node_modules/vitepress'].version}</a>
+      `
     },
     asideMeta: {
       keywords: {

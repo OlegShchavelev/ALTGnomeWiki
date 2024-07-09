@@ -31,7 +31,7 @@ import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/
 import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
-import { locales } from '../../_data/enhanced-readabilities'
+import { ERlocales, GitLocales, PPLocales, PPMarkdown } from '../../_data/lexicon.ts'
 
 
 /* Nolebase PP */
@@ -42,14 +42,11 @@ import {
 } from '@nolebase/vitepress-plugin-page-properties/client'
 import type { Options as NEROptions } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
-import { pagePropertiesLocales, pagePropertiesMD } from '../../_data/page-properties' 
-
-
 /* Nolebase Gitlog */
 
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 
-import { gitLocales, gitMapContributors } from '../../_data/gitlog'
+import { contributions } from '../../_data/team.ts'
 
 import { data as gitOnline } from '../../_data/gitlog-loader.data.ts'
 
@@ -89,13 +86,13 @@ export default {
     ctx.app.component('GnomeAppsList', AGWGnomeAppsList)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, {
-      locales: pagePropertiesLocales,
-      properties: pagePropertiesMD
+      locales: PPLocales,
+      properties: PPMarkdown
     } as NEROptions)
-    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, {locales: locales} as Options)
+    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, {locales: ERlocales} as Options)
     ctx.app.use(NolebaseGitChangelogPlugin, {
-      locales: gitLocales,
-      mapAuthors: gitOnline.length ? gitOnline : gitMapContributors
+      locales: GitLocales,
+      mapAuthors: gitOnline.length ? gitOnline : contributions
     })
 
     enhanceAppWithTabs(ctx.app)

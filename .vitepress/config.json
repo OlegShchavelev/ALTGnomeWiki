@@ -14,6 +14,25 @@
   "yaMetrikaId": 95081395,
 
   "nolebase_exclude": ["index.md", "wiki.md", "contributions.md", "about.md", "games.md"],
+  "nolebase_gitlog_enabled": {
+    "disableChangelog": false,
+    "disableContributors": false
+  },
+  "nolebase_gitlog_repo": "https://github.com/OlegShchavelev/ALTRegularGnomeWiki",
+  "nolebase_gitlog_maxCommits": 20000,
+  "nolebase_gitlog_rewrite": {
+    "docs/apps/": "",
+    "docs/developers/": "",
+    "docs/equipment/": "",
+    "docs/extensions/": "",
+    "docs/system/": "",
+    "docs/tips/": "",
+    "docs/using_gnomlocalese/": "",
+    "docs/main/": "",
+    "docs/games/": "",
+    "docs/reference/pages/": "reference/pages/",
+    "docs/reference/structure/": "reference/structure/"
+  },
 
   "alignment_containers": [
     ["left", {}],

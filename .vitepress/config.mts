@@ -29,18 +29,16 @@ import {
   PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
 
-import { gitRepository, gitMaxCommits, gitDisplay } from '../_data/gitlog'
-
 export default defineConfig({
   vite: {
     plugins: [
       UnoCSS(),
       GitChangelog({
-        maxGitLogCount: gitMaxCommits,
-        repoURL: gitRepository
+        maxGitLogCount: config.nolebase_gitlog_maxCommits,
+        repoURL: config.nolebase_gitlog_repo
       }),
       GitChangelogMarkdownSection({
-        sections: gitDisplay
+        sections: config.nolebase_gitlog_enabled
       }),
       PageProperties(),
       PagePropertiesMarkdownSection({

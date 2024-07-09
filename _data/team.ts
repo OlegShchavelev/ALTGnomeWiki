@@ -22,8 +22,9 @@ export { homeSorting, teamSorting, leader, limit, membersSection, developersSect
 
 export const contributions = [
   {
-    avatar: 'https://avatars.githubusercontent.com/u/20732384?v=4',
+    avatar: 'https://github.com/OlegShchavelev.png',
     name: 'Олег Щавелев',
+    mapByNameAliases: ['OlegShchavelev', 'Oleg Shchavelev', 'Олег Щавелев'],
     title: 'Разработчик, Участник',
     links: [
       { icon: 'github', link: 'https://github.com/OlegShchavelev' },
@@ -52,8 +53,9 @@ export const contributions = [
     links: [{ icon: 'github', link: 'https://github.com/trashb1t' }]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/47402692?v=4',
+    avatar: 'https://github.com/X1Z53.png',
     name: 'Давид Султаниязов',
+    mapByNameAliases: ['X1Z53', 'x1z53', 'Sultaniiazov David'],
     title: 'Разработчик, Участник',
     links: [
       { icon: 'github', link: 'https://github.com/X1Z53' },
@@ -63,8 +65,9 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/IpsmO1P5PJ'
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
+    avatar: 'https://github.com/Armatik.png',
     name: 'Семён Фомченков',
+    mapByNameAliases: ['Semen Fomchenkov', 'Armatik', 'armatik'],
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/Armatik' },
@@ -79,8 +82,9 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/2MA0Bm6ax63'
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/2198153?v=4',
+    avatar: 'https://github.com/Toxblh.png',
     name: 'Anton Palgunov',
+    mapByNameAliases: ['Anton Palgunov', 'Toxblh'],
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/Toxblh' },
@@ -95,8 +99,9 @@ export const contributions = [
     sponsor: 'https://www.donationalerts.com/r/toxblh'
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/1888230?v=4',
+    avatar: 'https://github.com/iDevPro.png',
     name: 'iQQator',
+    mapByNameAliases: ['Субач Павел', 'iQQator', 'iDevPro'],
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/iDevPro' },
@@ -119,6 +124,7 @@ export const contributions = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/72319244?v=4',
     name: 'Дмитрий Бондарев',
+    mapByNameAliases: ['pokedim13', 'h3try'],
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/pokedim13' },
@@ -131,8 +137,9 @@ export const contributions = [
     ]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/54739833?v=4',
+    avatar: 'https://github.com/ilyazheprog.png',
     name: 'Илья Женецкий',
+    mapByNameAliases: ['ilyazheprog', 'Ilya Zhenetskij'],
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/ilyazheprog' },
@@ -145,8 +152,9 @@ export const contributions = [
     ]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/21331080?v=4',
+    avatar: 'https://github.com/Luckenty.png',
     name: 'Дмитрий Орлов',
+    mapByNameAliases: ['Dmitry', 'Luckenty'],
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/Luckenty' },
@@ -161,8 +169,9 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/9o0c3eIAJ2D'
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/131641124?v=4',
+    avatar: 'https://github.com/fiersik.png',
     name: 'Кирилл Уницаев',
+    mapByNameAliases: ['fiersik', 'Fiersik Kouji'],
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/fiersik' },
@@ -183,36 +192,41 @@ export const contributions = [
     links: [{ icon: 'github', link: 'https://github.com/konoos56' }]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/36149587?v=4',
+    avatar: 'https://github.com/ImCatCatcher.png',
     name: 'Арсений Засыпкин',
+    mapByNameAliases: ['ImCatCatcher', 'Arseniy Zasypkin'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/ImCatCatcher' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.tinkoff.ru/cf/53rijgvIPem'
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/57502877?v=4',
+    avatar: 'https://github.com/otetswoo.png',
     name: 'otetswoo',
+    mapByNameAliases: ['vldmr_true', 'otetswoo'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/otetswoo' }]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/158994205?v=4',
+    avatar: 'https://github.com/AnameVi.png',
     name: 'AnameVi',
+    mapByNameAliases: ['AnameVi', 'AnameV1S'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/AnameVi' }]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/153871261?v=4',
+    avatar: 'https://github.com/AlexanderShad.png',
     name: 'Александр Шамараев',
+    mapByNameAliases: ['Aleksandr Shamaraev', 'Aleksand Shamaraev'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/AlexanderShad' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.tinkoff.ru/cf/Ae2RCqqTpgR'
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/65094576?v=4',
+    avatar: 'https://github.com/vlad196.png',
     name: 'Владислав Бабенко',
+    mapByNameAliases: ['vlad196', 'Владислав Бабенко'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/vlad196' }],
     actionText: 'Поддержать',
@@ -227,8 +241,9 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/1qXUImsZFTN'
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/55319144?v=4',
+    avatar: 'https://github.com/feyte11.png',
     name: 'Хачатур Тоникян',
+    mapByNameAliases: ['Feytell228', 'feyte11', 'Khachatur Tonikyan'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/feyte11' }],
     actionText: 'Поддержать',
@@ -248,14 +263,16 @@ export const contributions = [
     links: [{ icon: 'github', link: 'https://github.com/Rirusha' }]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/36843745?v=4',
+    avatar: 'https://github.com/Boria138.png',
     name: 'Boria138',
+    mapByNameAliases: ['Boria138', 'Boris Yumankulov'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/Boria138' }]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/121604147?v=4',
+    avatar: 'https://github.com/a1ex-ak.png',
     name: 'Алексей Камаев',
+    mapByNameAliases: ['Alexey Kamaev', 'a1ex-ak'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/a1ex-ak' }]
   },
@@ -278,9 +295,16 @@ export const contributions = [
     links: [{ icon: 'github', link: 'https://github.com/Krator3' }]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/57837842?v=4',
+    avatar: 'https://github.com/Cyber-X-Code.png',
     name: 'Cyber:X',
+    mapByNameAliases: ['Cyber-X', 'Cyber-X-Code'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/Cyber-X-Code' }]
+  },
+  {
+    name: 'Владимир Васьков',
+    mapByNameAliases: ['Rirusha', 'Vladimir Vaskov'],
+    avatar: 'https://github.com/Rirusha.png',
+    links: [{ icon: 'github', link: 'https://github.com/Rirusha'}]
   }
 ]

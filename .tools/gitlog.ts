@@ -1,6 +1,5 @@
 import yargs from 'yargs/yargs'
 import { Octokit } from '@octokit/core'
-import { gitMapContributors } from '../_data/gitlog'
 import { contributions } from '../_data/team'
 import * as fs from 'fs'
 import * as path from 'path'
@@ -76,11 +75,6 @@ const userGetMore = async (user) => {
     )
 }
 
-const teamRaw = contributions.map((member) => ({
-  ...member,
-  ...gitMapContributors.find((contributor) => contributor.name == member.name)
-}))
-
 for await (const gitter of await contributorsRawBase().then((response) => response)) {
   const userMore = await userGetMore(gitter.author.login)
     .then((response) => response.data)
@@ -119,7 +113,7 @@ for await (const gitter of await contributorsRawBase().then((response) => respon
     author.lastMonthActive.commits += week.c
   })
 
-  teamRaw.forEach((memberRaw) => {
+  contributions.forEach((memberRaw) => {
     if (
       memberRaw.name == userMore.name ||
       Object.values(memberRaw.links[0])[1] == Object.values(author.links[0])[1] ||

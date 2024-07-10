@@ -228,6 +228,8 @@ for i in *.mkv; do ffmpeg -hide_banner -i "$i" -map 0:v:0 -map 0:a:0 -map 0:s:1 
 
 Предположим, что у вас есть сериал и два каталога с нужным аудио-переводом и субтитрами:
 
+::: code-group
+
 ```shell[С субтитрами]
 for i in *.mkv; do
   ffmpeg -hide_banner -i "$i" \

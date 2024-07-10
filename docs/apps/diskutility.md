@@ -1,6 +1,6 @@
 ---
 gallery:
-  title: Галерея DiskUtility
+  title: Галерея
   type: slider
   items:
     - src: /diskutility/sc-1.png

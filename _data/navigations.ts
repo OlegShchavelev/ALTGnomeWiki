@@ -142,7 +142,12 @@ export const docs = [
           { text: 'Диски', link: '/diskutility' },
           { text: 'Журналы', link: '/gnome-logs' },
           { text: 'Кассета', link: '/cassette' },
+          { text: 'Календарь', link: '/gnome-calendar' },
+          { text: 'Камера', link: '/snapshot' },
+          { text: 'Карты', link: '/maps' },
+          { text: 'Калькулятор', link: '/gnome-calculator' },
           { text: 'Консоль', link: '/console' },
+          { text: 'Контакты', link: '/gnome-contacts' },
           { text: 'КуМир', link: '/kumir' },
           { text: 'Мой офис', link: '/my-office' },
           { text: 'Музыка', link: '/gnome-music' },
@@ -362,7 +367,8 @@ export const docs = [
           { text: 'Изменение clearcpuid', link: '/clearcpuid' },
           { text: 'Mindustry', link: '/mindustry' },
           { text: 'Sonic 3 A.I.R', link: '/sonic3-a.i.r' },
-          { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' }
+          { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' },
+          { text: 'Space Station-14', link: '/space-station-14' }
         ],
         collapsed: true
       }

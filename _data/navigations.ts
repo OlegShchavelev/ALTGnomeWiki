@@ -367,7 +367,8 @@ export const docs = [
           { text: 'Изменение clearcpuid', link: '/clearcpuid' },
           { text: 'Mindustry', link: '/mindustry' },
           { text: 'Sonic 3 A.I.R', link: '/sonic3-a.i.r' },
-          { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' }
+          { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' },
+          { text: 'Space Station-14', link: '/space-station-14' }
         ],
         collapsed: true
       }

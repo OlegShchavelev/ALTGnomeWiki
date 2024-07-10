@@ -57,6 +57,8 @@ docs:
             link: steam
           - name: PortProton
             link: port-proton
+          - name: Space Station 14
+            link: space-station-14
           - name: Lutris
             link: lutris
           - name: Bottles

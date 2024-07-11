@@ -152,6 +152,7 @@ export const docs = [
           { text: 'Мой офис', link: '/my-office' },
           { text: 'Музыка', link: '/gnome-music' },
           { text: 'МТС Линк', link: '/mts-link' },
+          { text: 'Настройки', link: '/gnome-control-center' },
           { text: 'Пароли и ключи', link: '/seahorse' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },

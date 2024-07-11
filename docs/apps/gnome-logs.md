@@ -1,6 +1,6 @@
 ---
 gallery:
-  title: Галерея Logs
+  title: Галерея
   type: slider
   items:
     - src: /logs/sc-1.png

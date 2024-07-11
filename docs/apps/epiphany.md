@@ -1,6 +1,6 @@
 ---
 gallery:
-  title: Галерея Epiphany
+  title: Галерея
   type: slider
   items:
     - src: /epiphany/sc-1.png

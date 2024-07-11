@@ -1,6 +1,6 @@
 ---
 gallery:
-  title: Галерея Карты
+  title: Галерея
   type: slider
   items:
     - src: /maps/sc-1.webp

@@ -1,19 +1,23 @@
 ---
 gallery:
-  title: Галерея Настроек
+  title: Галерея Контакт
   type: slider
   items:
-    - src: /gnome-control-center/sc-1.png
-    - src: /gnome-control-center/sc-2.png
-    - src: /gnome-control-center/sc-3.png
-    - src: /gnome-control-center/sc-4.png
+    - src: /gnome-contacts/sc-1.webp
+    - src: /gnome-contacts/sc-2.webp
+    - src: /gnome-contacts/sc-3.webp
+    - src: /gnome-contacts/sc-4.webp
+    - src: /gnome-contacts/sc-5.webp
 aggregation:
-  sisyphus: gnome-control-center
+  flatpak:
+    id: org.gnome.Contacts
+    build: official
+  sisyphus: gnome-Contacts
 appstream:
-  id: gnome-control-center
-  name: Настройки
-  icon: /gnome-control-center/Logo.svg
-  summary: Инструмент для настройки рабочего стола GNOME
+  id: org.gnome.Contacts
+  name: Контакты
+  icon: /gnome-contacts/Contacts-logo.png
+  summary: Управление контактами
   keywords:
     - adaptive
     - core
@@ -25,14 +29,17 @@ appstream:
     name: GPL-2.0
     link: https://packages.altlinux.org/license/GPL-2.0-or-later
   url:
-    homepage: https://apps.gnome.org/ru/Settings/
-    bugtracker: https://gitlab.gnome.org/GNOME/gnome-control-center/-/issues
+    homepage: https://apps.gnome.org/ru/Contacts/
+    bugtracker: https://gitlab.gnome.org/GNOME/gnome-contacts/-/issues
 ---
 
-# Настройки
+# Контакты
 
-Настройки — основной интерфейс для настройки вашей системы.
+Приложение «Контакты» помогает управлять информацией о контактах. Вы можете создавать, изменять, удалять и связывать вместе сведения о ваших контактах. Приложение объединяет информацию со всех ваших источников, предоставляя централизованный способ управления контактами.
+
+Приложение «Контакты» также выполнит интеграцию с сетевой адресной книгой и автоматически свяжет контакты из различных сетевых источников.
 
 <AGWGallery />
 
 <!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/_parts/install/content-flatpak.md-->

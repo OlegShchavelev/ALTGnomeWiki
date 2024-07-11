@@ -88,12 +88,35 @@ update-kernel
 
 Удаление Nouveau и установка проприетарного драйвера:
 
+- Перейдите в режим root:
+
 ```shell
 su -
-rpm -e $(rpm -qf `modinfo -F filename nouveau`)
+```
+
+- Установите `nvidia_glx_common`:
+::: code-group
+
+```shell[apt-get]
 apt-get install nvidia_glx_common
+```
+
+```shell[epm]
+epm -i nvidia_glx_common
+```
+
+:::
+
+- Добавьте Nouveau в чёрный список:
+
+```shell
+echo "blacklist nouveau" > /etc/modprobe.d/blacklist-nvidia-x11.conf
+```
+
+- Запустите скрипт установки драйверов:
+
+```shell
 nvidia-install-driver
-make-initrd
 ```
 
 ::: danger

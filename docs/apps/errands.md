@@ -2,7 +2,7 @@
 appstreamFlatpak: io.github.mrvladus.List
 nameRepo: errands
 gallery:
-  title: Галерея Errands
+  title: Галерея
   type: slider
   items:
     - src: /errands/errands-1.png

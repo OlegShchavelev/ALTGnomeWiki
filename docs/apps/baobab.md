@@ -1,6 +1,6 @@
 ---
 gallery:
-  title: Галерея Disk Usage Analyzer
+  title: Галерея
   type: slider
   items:
     - src: /baobab/baobab-1.png

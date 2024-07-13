@@ -19,7 +19,7 @@ appstream:
     bugtracker: https://github.com/flattool/warehouse/issues
     translate: https://weblate.fyralabs.com/projects/flattool/warehouse/
 gallery:
-  title: Галерея Warehouse
+  title: Галерея
   type: carousel
   items:
     - src: /warehouse/warehouse-1.png

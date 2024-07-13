@@ -1,6 +1,6 @@
 ---
 gallery:
-  title: Галерея Контакт
+  title: Галерея
   type: slider
   items:
     - src: /gnome-contacts/sc-1.webp

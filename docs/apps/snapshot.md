@@ -1,6 +1,6 @@
 ---
 gallery:
-  title: Галерея Камеры
+  title: Галерея
   type: slider
   items:
     - src: /snapshot/sc-1.webp

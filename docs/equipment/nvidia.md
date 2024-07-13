@@ -54,9 +54,9 @@ Nouveau — это проект с [открытым исходным кодом
 
 #### Способ 1. EPM Play
 
-:: tip
+::: tip
 Если необходима наиболее простая установка, используйте этот способ.
-::
+:::
 
 Для упрощения процесса установки проприетарного драйвера для графических карт NVIDIA, можно использовать скрипт из [EPM](/epm).
 
@@ -86,14 +86,37 @@ update-kernel
 
 Для дальнейшей установки проприетарного драйвера NVIDIA **необходимо перезагрузить операционную систему**.
 
-Удаление Nouveau и установка проприетарного драйвера:
+Установка проприетарного драйвера и добавление Nouveau в чёрный список:
+
+- Перейдите в режим root:
 
 ```shell
 su -
-rpm -e $(rpm -qf `modinfo -F filename nouveau`)
+```
+
+- Установите `nvidia_glx_common`:
+::: code-group
+
+```shell[apt-get]
 apt-get install nvidia_glx_common
+```
+
+```shell[epm]
+epm -i nvidia_glx_common
+```
+
+:::
+
+- Добавьте Nouveau в чёрный список:
+
+```shell
+echo "blacklist nouveau" > /etc/modprobe.d/blacklist-nvidia-x11.conf
+```
+
+- Запустите скрипт установки драйверов:
+
+```shell
 nvidia-install-driver
-make-initrd
 ```
 
 ::: danger

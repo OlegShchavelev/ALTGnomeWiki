@@ -36,28 +36,28 @@ features:
     details: Путеводитель в мир открытого программного обеспечения.
 
 sponsors:
-  introtext: Данный сервис является CПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
+  introtext: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
   donationtext: 'Поддержать проект ALT Gnome'
   donationlink: 'https://boosty.to/alt_gnome'
   collections:
     - tier: Организационная структура
       size: big
-      items: 
+      items:
         - name: ALT Linux Team
           img: ./alt-linux-team.png
           url: https://packages.altlinux.org/ru/sisyphus
         - name: BaseALT
           img: ./basealt.png
           url: https://www.basealt.ru
-    - tier: Технические партнеры
+    - tier: Технические партнёры
       size: big
       items:
         - name: Beget
           img: ./beget.png
           url: https://beget.com
-    - tier: Товарищи по цеху Vitepress
+    - tier: Товарищи по цеху VitePress
       size: big
-      items: 
+      items:
         - name: MODX Pro
           img: ./modx.svg
           url: https://docs.modx.pro/
@@ -68,4 +68,3 @@ sponsors:
           img: ./nolebase-logo.svg
           url: https://nolebase.ayaka.io/
 ---
-

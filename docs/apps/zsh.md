@@ -1,21 +1,19 @@
 ---
 aggregation:
-    sisyphus: zsh
+  sisyphus: zsh
 appstream:
-    id: zsh
-    name: ZSH
-    icon: /zsh/zsh-logo.png
-    summary: Интерактивная оболочка для операционных систем на базе ядра Linux
-    developer: 
-        name: Z Shell Community
-    metadata_license: 
-        name: Нет
-        link: https://github.com/zsh-users/zsh?tab=License-1-ov-file#readme
-    url: 
-        homepage: https://www.zsh.org/
+  id: zsh
+  name: ZSH
+  icon: /zsh/zsh-logo.png
+  summary: Интерактивная оболочка для операционных систем на базе ядра Linux
+  developer:
+    name: Z Shell Community
+  metadata_license:
+    name: Нет
+    link: https://github.com/zsh-users/zsh?tab=License-1-ov-file#readme
+  url:
+    homepage: https://www.zsh.org/
 ---
-
-
 
 # ZSH
 
@@ -32,9 +30,11 @@ su -
 apt-get update
 apt-get install zsh
 ```
+
 ```shell[epm]
 epm install zsh
 ```
+
 :::
 
 ## Установка oh-my-zsh
@@ -56,7 +56,7 @@ usermod USER -s /bin/zsh
 
 ## Настройка Zsh для root пользователя
 
-Если вы хотите поставить стороннюю тему, данные действие рекомендуется делать уже после её установки.
+Если вы хотите поставить стороннюю тему, данное действие рекомендуется делать уже после её установки.
 Создаём несколько символьных ссылок и прописываем параметр в .zshrc:
 
 ```shell
@@ -64,8 +64,8 @@ sudo ln -s /home/USER/.oh-my-zsh /root/.oh-my-zsh
 sudo ln -s /home/USER/.zshrc /root/.zshrc
 echo "ZSH_DISABLE_COMPFIX='true'" | cat - .zshrc > temp && mv temp .zshrc
 ```
-`USER` — имя вашего пользователя.
 
+`USER` — имя вашего пользователя.
 
 ## Установка темы для oh-my-zsh.
 
@@ -73,7 +73,7 @@ echo "ZSH_DISABLE_COMPFIX='true'" | cat - .zshrc > temp && mv temp .zshrc
 
 Скачиваем необходимые шрифты с github страницы темы и устанавливаем их: [MesloLGS NF Regular.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf) | [MesloLGS NF Bold.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf) | [MesloLGS NF Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf) | [MesloLGS NF Bold Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
 
-Для корректный работы плагина необходимо устоновить шрифт «Noto Emoji»:
+Для корректный работы плагина необходимо установить шрифт «Noto Emoji»:
 
 ::: code-group
 
@@ -82,9 +82,11 @@ su -
 apt-get update
 apt-get install fonts-ttf-google-noto-emoji
 ```
+
 ```shell[epm]
 epm -i fonts-ttf-google-noto-emoji
 ```
+
 :::
 
 Устанавливаем тему и проходим первоначальную настройку:
@@ -101,4 +103,5 @@ zsh
 sudo ln -s /home/USER/.p10k.zsh /root/.p10k.zsh
 sudo ln -s /home/USER/powerlevel10k /root/powerlevel10k
 ```
+
 `USER` — имя вашего пользователя.

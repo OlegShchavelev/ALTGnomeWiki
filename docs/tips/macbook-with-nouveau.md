@@ -46,9 +46,11 @@ Section "Device"
     Option "AccelMethod" "glamor"
 EndSection
 ```
+
 Сохранить и перезапустить компьютер.
 
 ### Источники информации
+
 - https://gitweb.gentoo.org/repo/gentoo.git/tree/sys-firmware/nvidia-firmware/nvidia-firmware-340.32-r1.ebuild
 - https://nouveau.freedesktop.org/VideoAcceleration.html
 - https://github.com/envytools/firmware

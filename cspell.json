@@ -1,0 +1,70 @@
+{
+  "version": "0.2",
+  "language": "en, ru",
+  "patterns": [
+    {
+      "name": "code-block",
+      "pattern": "`[\\s\\S]*?`"
+    },
+    {
+      "name": "frontmatter-inter",
+      "pattern": "{{[\\s\\S]*?}}"
+    },
+    {
+      "name": "frontmatter-block",
+      "pattern": "/^\\s*---[\\s\\S]*?^\\s*---/gm"
+    },
+    {
+      "name": "html-comment-block",
+      "pattern": "/^\\s*<<!--[\\s\\S]*?^\\s*-->>/gs"
+    }
+  ],
+  "ignoreRegExpList": [["code-block"], ["frontmatter-block"], ["html-comment-block"], ["frontmatter-inter"]],
+  "dictionaryDefinitions": [
+    {
+      "name": "apps & companies",
+      "path": "./.cspell/apps&companies.dict",
+      "addWords": true
+    },
+    {
+      "name": "anglicisms",
+      "path": "./.cspell/anglicisms.dict",
+      "addWords": true
+    },
+    {
+      "name": "slang",
+      "path": "./.cspell/slang.dict",
+      "addWords": true
+    },
+    {
+      "name": "forbidden",
+      "path": "./.cspell/forbidden.dict",
+      "addWords": true
+    },
+    {
+      "name": "terms",
+      "path": "./.cspell/terms.dict",
+      "addWords": true
+    },
+    {
+      "name": "people names",
+      "path": "./.cspell/people-names.dict",
+      "addWords": true
+    },
+    {
+      "name": "simple words",
+      "path": "./.cspell/words.dict",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "apps & companies",
+    "anglicisms",
+    "slang",
+    "forbiden",
+    "people names",
+    "terms",
+    "simple words"
+  ],
+  "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
+}

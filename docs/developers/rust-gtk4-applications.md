@@ -3,7 +3,7 @@
 ## Установка зависимостей:
 
 ```shell
-su - 
+su -
 apt-get install libadwaita-devel libgtk4-devel libgdk-pixbuf-devel libpango-devel libcairo-gobject-devel libgio-devel libcairo-devel
 ```
 
@@ -25,7 +25,7 @@ vscodium .
 ```rust
 use adw::prelude::*;
 use adw::{
-    Application, 
+    Application,
     ApplicationWindow,
     HeaderBar
 };

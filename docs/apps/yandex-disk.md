@@ -1,23 +1,23 @@
 ---
 aggregation:
-    epm:
-        play:
-            id: yandex-disk
-            build: unoffical
+  epm:
+    play:
+      id: yandex-disk
+      build: unofficial
 appstream:
-    name: Яндекс Диск
-    icon: /yandex-disk/yandex-disk-logo.png
-    summary: Облачный сервис компании Яндекс.
-    keywords: 
-        - proprietary
-    developer: 
-        name: Yandex
-        avatar: /yandex-disk/yandex-disk-avatar.png
-    metadata_license: 
-        name: Собственая
-        link: https://yandex.ru/legal/disk_agreement/
-    url: 
-        homepage: https://360.yandex.ru/disk/
+  name: Яндекс Диск
+  icon: /yandex-disk/yandex-disk-logo.png
+  summary: Облачный сервис компании Яндекс.
+  keywords:
+    - proprietary
+  developer:
+    name: Yandex
+    avatar: /yandex-disk/yandex-disk-avatar.png
+  metadata_license:
+    name: Собственная
+    link: https://yandex.ru/legal/disk_agreement/
+  url:
+    homepage: https://360.yandex.ru/disk/
 ---
 
 # Яндекс Диск

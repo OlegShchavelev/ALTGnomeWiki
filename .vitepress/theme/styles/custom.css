@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /**
  * Colors
  * -------------------------------------------------------------------------- */
 
 :root {
-
   --vp-c-blue: #3584e4;
   --vp-c-blue-light: #62a0ea;
   --vp-c-blue-lighter: #99c1f1;
@@ -65,6 +65,7 @@
 :root {
   /* Typography */
   --vp-font-family-base: 'Manrope', sans-serif;
+  --vp-font-family-bages: 'Roboto', sans-serif
 }
 
 /**
@@ -73,18 +74,13 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
-      #c061cb 30%,
-      #62a0ea);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #c061cb 30%, #62a0ea);
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg,
-      #c061cb 50%,
-      #62a0ea 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #c061cb 50%, #62a0ea 50%);
   --vp-home-hero-image-filter: blur(40px);
 }
 
 @media (min-width: 960px) {
-
   :root {
     --vp-home-hero-image-filter: blur(72px);
     --vp-nav-logo-height: 36px;
@@ -124,7 +120,7 @@
  * kdb
  * -------------------------------------------------------------------------- */
 
- .vp-doc kbd {
+.vp-doc kbd {
   font-size: 0.8rem;
   border-radius: 4px;
   padding: 2px 6px;
@@ -135,10 +131,10 @@
   border: 1px solid rgba(128, 128, 128, 0.15);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
   text-wrap: nowrap;
- }
+}
 
 :root {
-  --vp-nav-logo-height: 36px
+  --vp-nav-logo-height: 36px;
 }
 
 /**
@@ -175,10 +171,15 @@
   margin-top: 0 !important;
 }
 
+/*Dark theme btn Sponsors*/
+.dark .vp-sponsor-grid-item:hover {
+  background: var(--vp-c-brand-darker);
+}
+
 /**
  * implicitFigures
  * -------------------------------------------------------------------------- */
-figure>figcaption {
+figure > figcaption {
   text-align: center;
   color: var(--vp-c-brand-lightest);
   font-size: 14px;
@@ -192,6 +193,13 @@ figure>figcaption {
   left: 0;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.VPBadge {
+  font-family: var(--vp-font-family-bages);
+  letter-spacing: 0.0em;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .VPBadge.success {
@@ -218,11 +226,11 @@ figure>figcaption {
   .VPHomeHero .image-src {
     max-width: 350px;
     max-height: 350px;
-  } 
+  }
 }
 
 /**
- * Alignment Containers 
+ * Alignment Containers
  * -------------------------------------------------------------------------- */
 
 .center {
@@ -284,8 +292,4 @@ figure>figcaption {
 
 .vp-doc .custom-block img {
   border-radius: 10px;
-}
-
-.vp-doc .custom-block {
-	margin: 0 0 !important;
 }

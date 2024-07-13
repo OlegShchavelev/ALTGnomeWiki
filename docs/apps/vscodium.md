@@ -1,32 +1,31 @@
 ---
 aggregation:
-    sisyphus: codium
-    flatpak: 
-        id: com.vscodium.codium
-        build: unoffical
-    epm:
-        play:
-            id: codium
-            build: unoffical
-appstream:
+  sisyphus: codium
+  flatpak:
     id: com.vscodium.codium
-    name: VSCodium
-    icon: /vscodium/vscodium-logo.svg
-    summary: Управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
-    developer: 
-        name: VSCodium Community
-    metadata_license: 
-        name: MIT License
-        link: https://choosealicense.com/licenses/mit/
-    url: 
-        homepage: https://vscodium.com/
-        bugtracker: https://github.com/VSCodium/vscodium/issues
+    build: unofficial
+  epm:
+    play:
+      id: codium
+      build: unofficial
+appstream:
+  id: com.vscodium.codium
+  name: VSCodium
+  icon: /vscodium/vscodium-logo.svg
+  summary: Управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
+  developer:
+    name: VSCodium Community
+  metadata_license:
+    name: MIT License
+    link: https://choosealicense.com/licenses/mit/
+  url:
+    homepage: https://vscodium.com/
+    bugtracker: https://github.com/VSCodium/vscodium/issues
 ---
 
 # VSCodium
 
 VSCodium — управляемый сообществом, свободно лицензированный двоичный дистрибутив Microsoft editor VSCode.
-
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
@@ -45,28 +44,30 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 ```shell[EPM Play]
 codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto
 ```
+
 :::
 
 :::info
-При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/pin-app)  
+При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/pin-app)
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 
-```shell[Сизиф]
+```[Сизиф]
 /usr/bin/codium --unity-launch %F // [!code --]
 /usr/bin/codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [!code ++]
 ```
 
-```shell[EPM Play]
-codium --unity-launch %F // [[!code --]]
-codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [[!code ++]]
+```[EPM Play]
+codium --unity-launch %F // [!code --]
+codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto %F // [!code ++]
 ```
+
 :::
 
-## Использование Node.js в изолированой среде в приложении VSCodium
+## Использование Node.js в изолированной среде в приложении VSCodium
 
 Вы используете VSCodium установленного с помощью пакетного менеджера [Flatpak](flatpak), для использования Node.js необходимо:
 
@@ -77,6 +78,7 @@ flatpak search Sdk.Extension.node
 ```
 
 ::: details вывод при поиске `Sdk.Extension.node`
+
 ```shell
 [oleg@alt-gnome ~]$ flatpak search Sdk.Extension.node
 Имя                          Описание                                                ID Приложения                               Версия          Ветвь            Удаленные репозитории
@@ -97,6 +99,7 @@ Node.js SDK extension        Node.js SDK extension                              
 Node.js SDK extension        Node.js SDK extension                                   org.freedesktop.Sdk.Extension.node10        10.22.1         19.08            flathub
 Node.js SDK extension        Node.js SDK extension                                   org.freedesktop.Sdk.Extension.node10        10.20.1         18.08            flathub,flathub-beta
 ```
+
 :::
 
 Установите выбранную версию Node.js, [я выбрал LTS версию 20.xx](/nodejs#выпуски-node-js):
@@ -123,6 +126,6 @@ rm -rfv .config/VSCodium/GPUCache
 
 Для установки и просмотра плагинов выберите пункт Расширения на панели слева или нажмите сочетание клавиш [[Ctrl]]+ [[Shift]]+ [[X]].
 Введите название плагина в строке поиска, выберите дополнение и нажмите установить.
-Каждое расширение в списке включает краткое описание, имя издателя, количество загрузок и пятизвездочный рейтинг.
+Каждое расширение в списке включает краткое описание, имя издателя, количество загрузок и пятизвёздочный рейтинг.
 
 ![codium_1](/vscodium/codium_1.gif)

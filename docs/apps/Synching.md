@@ -2,62 +2,74 @@
 title: Syncthing
 appstreamRepo: me.kozec.syncthingtk
 aggregation:
-    flatpak: me.kozec.syncthingtk
+  flatpak: me.kozec.syncthingtk
 appstream:
-    id: me.kozec.syncthingtk
-    name: Syncthing
-    icon: /syncthing/syncthing-logo.svg
-    summary: Приложение, позволяющее синхронизировать файлы между несколькими устройствами.
-    developer: 
-        name: kozec
-        avatar: /syncthing/syncthing-avatar.png
-    metadata_license: 
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    url: 
-        homepage: https://github.com/kozec/syncthing-gtk
-        bugtracker: https://github.com/kozec/syncthing-gtk/issues
-        translate: https://explore.transifex.com/syncthing-gtk/syncthing-gtk/
+  id: me.kozec.syncthingtk
+  name: Syncthing
+  icon: /syncthing/syncthing-logo.svg
+  summary: Приложение, позволяющее синхронизировать файлы между несколькими устройствами.
+  developer:
+    name: kozec
+    avatar: https://avatars.githubusercontent.com/u/1282500?v=4
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  url:
+    homepage: https://github.com/kozec/syncthing-gtk
+    bugtracker: https://github.com/kozec/syncthing-gtk/issues
+    translate: https://explore.transifex.com/syncthing-gtk/syncthing-gtk/
 ---
 
-
-
 # Syncthing
-Syncthing — приложение, позволяющее синхронизировать файлы между несколькими устройствами. Присутствует поддержка сохранения последовательных версий файла по нескольким алгоритмам, включая пользовательский, что позволяет использовать Syncthing также для целей резервного копирования, хотя это и не рекомендуется. Приложение и протокол публикуются под открытой лицензией.
 
-Syncthing может работать в локальной сети и сети интернет, передача всех данных происходит по защищенным каналам TLS с использованием протокола обмена ключами с совершенной прямой секретностью, чтобы исключить возможность прослушивания. Синхронизация происходит по дате изменения файла, есть поддержка синхронизации на уровне блоков, то есть при небольших изменениях в файле будут синхронизированы только изменившиеся блоки, а не весь файл.
+Syncthing — приложение, позволяющее синхронизировать файлы между несколькими устройствами. Присутствует поддержка сохранения последовательных версий файла по нескольким алгоритмам, включая пользовательский, что позволяет использовать Syncthing для резервного копирования (не рекомендуется). Приложение и протокол публикуются под открытой лицензией.
+
+Syncthing может работать как в локальной сети, так и в сети Интернет. Передача всех данных происходит по защищённым каналам TLS с использованием PFS (обмен ключами с совершенной прямой секретностью), чтобы исключить возможность прослушивания. Синхронизация происходит по дате изменения файла. Есть поддержка синхронизации на уровне блоков, то есть при небольших изменениях в файле будут синхронизированы только изменившиеся блоки, а не весь файл.
 
 ## Установка Syncthing
-1. Скачиваем программу с [сайта разработчика](https://syncthing.net/downloads/) 
-2. Распаковываем архив в папку opt
+
+1. Скачайте программу с [сайта разработчика](https://syncthing.net/downloads/)
+2. Распакуйте архив в папку `/opt`
+
 ```shell
 cd Загрузки
 sudo tar -C '/opt' -xvf syncthing*
 ```
-3. При распаковке у меня в папке opt создалась папка syncthing-linux-amd64-v1.27.3, для удобства, Я переиеновал ее в syncthing.
-4. Запускаем Syncthing под обычным пользователем.
+
+3. При распаковке создалась папка `/opt/syncthing-linux-amd64-v1.27.3` (для удобства в примере она переименована в `/opt/syncthing`)
+4. Запустите Syncthing под обычным пользователем.
+
 ```shell
 cd /opt/syncthing
 ./syncthing
 ```
-Далее, нужно настроить автоматический запуск syncthing в виде фонового демона, загрузаемого при входе пользователя в систему. Я буду использовать для этого systemd, другие варианты автоматической загрузки можно посмотреть [тут](https://docs.syncthing.net/users/autostart.html#linux).
 
-Для этого, нам нужно скачать со страницы разработчика на [github.com](https://github.com/syncthing/syncthing/tree/main/etc/linux-systemd/user) файл syncthing.service и скопировать его в /$HOME/.config/systemd/user, где $HOME это директория Вашего пользователя.
+Нужно настроить автоматический запуск Syncthing в виде демона, запускаемого при входе пользователя в систему. В примере использован `systemd`, другие варианты автоматической загрузки можно посмотреть на [сайте проекта](https://docs.syncthing.net/users/autostart.html#linux).
 
-Далее необходимо отредактировать этот файл, а именно [Service] указать корректный путь к исполняемому файлу. Для этого нужно изменить значение ExecStart c `/usr/bin/syncthing` на `/opt/syncthing/syncthing`. После этого, строка должна выглядить так: `ExecStart=/opt/syncthing/syncthing serve --no-browser --no-restart --logflags=0`
+- Скачайте файл `syncthing.service` c [GitHub](https://github.com/syncthing/syncthing/tree/main/etc/linux-systemd/user) и скопируйте в `$HOME/.config/systemd/user`
+- Отредактируйте раздел `[Service]`, указав корректный путь к исполняемому файлу — измените `ExecStart` c `/usr/bin/syncthing` на `/opt/syncthing/syncthing`. Строка должна выглядеть так:
 
-Сохраняем изменения и запускаем службу. Внимание! Так как запуск службы будет осуществляться от имени обычного пользователя, следующая команда должны выполняться **НЕ** от root!
+```
+ExecStart=/opt/syncthing/syncthing serve --no-browser --no-restart --logflags=0
+```
+
+- Сохраните изменения и запустите службу.
+
+::: warning
+Так как запуск службы будет осуществляться от имени обычного пользователя, следующая команда должна выполняться без root-прав
+:::
 
 ```shell
 systemctl --user enable --now syncthing.service
 ```
 
-5. Готово, можно запускать браузер, переходить по адресу [http://127.0.0.1:8384/](http://127.0.0.1:8384/), привязывать устройства и настраивать папки для синхронизации.
+5. Готово. Запустите браузер, перейдите по адресу [http://127.0.0.1:8384/](http://127.0.0.1:8384/), привяжите устройства и настройте папки для синхронизации.
 
-6. Если Вы предпочитаете проводить дальнейшую настройку не через web интерфейс, а через приложение, то можно установить [Syncthing-GTK](https://flathub.org/apps/me.kozec.syncthingtk) в виде Flatpak пакета.
+::: tip
+Для управления сервисом можно использовать приложение [Syncthing-GTK](https://flathub.org/apps/me.kozec.syncthingtk)
 
 ```shell
 flatpak install flathub me.kozec.syncthingtk
 ```
 
-
+:::

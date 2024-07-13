@@ -1,29 +1,26 @@
 ---
 aggregation:
-    flatpak: 
-        id: com.viber.Viber
-        build: unoffical
-    epm:
-        play:
-            id: viber
-            build: unoffical
-
+  flatpak:
+    id: com.viber.Viber
+    build: unofficial
+  epm:
+    play:
+      id: viber
+      build: unofficial
 appstream:
-    name: Viber
-    icon: /viber/viber-logo.svg
-    summary: Кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
-    keywords: 
-        - proprietary
-    developer: 
-        name: Viber Media
-    metadata_license: 
-        name: Собсвтенная
-        link: https://www.viber.com/app/uploads/ViberEULA82316.pdf
-    url: 
-        homepage: https://www.viber.com/
+  name: Viber
+  icon: /viber/viber-logo.svg
+  summary: Кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
+  keywords:
+    - proprietary
+  developer:
+    name: Viber Media
+  metadata_license:
+    name: Собственная
+    link: https://www.viber.com/app/uploads/ViberEULA82316.pdf
+  url:
+    homepage: https://www.viber.com/
 ---
-
-
 
 # Viber
 
@@ -34,7 +31,7 @@ Viber — кроссплатформенное приложение для об�
 
 ## Установка с официального сайта
 
-Cкачиваем пакет с официального сайта Viber:
+Скачиваем пакет с официального сайта Viber:
 
 ```shell
 cd ~/Загрузки

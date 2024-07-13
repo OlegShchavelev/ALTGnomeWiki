@@ -1,6 +1,6 @@
-# Удаленный рабочий стол (Gnome)
+# Удалённый рабочий стол (GNOME)
 
-**Удаленный рабочий стол** позволяет производить удаленное управление системой. Данный функционал предоставляется пакетом `gnome-remote-desktop`.
+**Удалённый рабочий стол** позволяет производить удалённое управление системой. Данный функционал предоставляется пакетом `gnome-remote-desktop`.
 
 ## Установка из репозитория
 
@@ -25,14 +25,14 @@ epm -i gnome-remote-desktop
 
 - Открыть приложение настройки
 - Открыть группу настроек «Общий доступ»\
-![gnome-remote-desktop-1](/gnome-remote-desktop/open-settings.gif)
+  ![gnome-remote-desktop-1](/gnome-remote-desktop/open-settings.gif)
 
-- Изменить состояние переключателя «Удаленный рабочий стол» на - включено
-- Переключатель «Удаленное управление» управляет режимами «просмотр» / «управление»\
-![gnome-remote-desktop-2](/gnome-remote-desktop/enable-service.gif)
+- Изменить состояние переключателя «Удалённый рабочий стол» на - включено
+- Переключатель «Удалённое управление» управляет режимами «просмотр» / «управление»\
+  ![gnome-remote-desktop-2](/gnome-remote-desktop/enable-service.gif)
 
 - Задать пароль пользователя (установить новый)\
-![gnome-remote-desktop-3](/gnome-remote-desktop/set-user-password.gif)
+  ![gnome-remote-desktop-3](/gnome-remote-desktop/set-user-password.gif)
 
 ### Из командной строки
 
@@ -43,7 +43,7 @@ grdctl rdp enable
 # Настроить авторизацию в RDP <username>, <password>
 grdctl rdp set-credential <username> <password>
 
-# Так-же из коммандной строки (терминала) доступно управление 
+# Так-же из коммандной строки (терминала) доступно управление
 # другой системой удаленного доступа - VNC
 # Включить VNC
 grdctl vnc enable

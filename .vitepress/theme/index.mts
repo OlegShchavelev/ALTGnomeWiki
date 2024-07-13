@@ -2,54 +2,53 @@
 
 /* System */
 import { h } from 'vue'
-import { useRoute, useData } from 'vitepress';
+import { useRoute } from 'vitepress'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import imageViewer from 'vitepress-plugin-image-viewer'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+import * as config from '../config.json'
 
 /* AGW */
-import AGWHomeContents from './components/AGWHomeContents.vue'
+import AGWTeamPage from './components/AGWTeamPage.vue'
+import AGWHomeTeam from './components/AGWHomeTeam.vue'
+import AGWHomeSponsors from './components/AGWHomeSponsors.vue'
 import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
-import AGWContribution from './components/AGWContribution.vue'
-
+import AGWGnomeAppsList from './components/AGWGnomeApps/AGWGnomeAppsList.vue'
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
 
-
-/* Nolebase features*/
-import {
-  NolebaseEnhancedReadabilitiesMenu,
-  NolebaseEnhancedReadabilitiesScreenMenu,
-} from '@nolebase/vitepress-plugin-enhanced-readabilities'
-
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import { locales } from '../../_data/enhanced-readabilities'
+/* Nolebase ER */
 
 import { 
-  NolebaseGitChangelogPlugin 
-} from '@nolebase/vitepress-plugin-git-changelog/client'
+  NolebaseEnhancedReadabilitiesMenu,
+  NolebaseEnhancedReadabilitiesScreenMenu
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
-import {
-  gitLocales,
-  gitMapContributors
-} from '../../_data/gitlog'
+import { ERlocales, GitLocales, PPLocales, PPMarkdown } from '../../_data/lexicon.ts'
+
+
+/* Nolebase PP */
 
 import {
   NolebasePagePropertiesEditor,
+  InjectionKey as NolebasePagePropertiesInjectionKey
 } from '@nolebase/vitepress-plugin-page-properties/client'
+import type { Options as NEROptions } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
-import {
-  pagePropertiesLocales,
-  pagePropertiesMD
-} from '../../_data/page-properties'
+/* Nolebase Gitlog */
 
-import type { Options as NolebasePagePropertiesOptions } from '@nolebase/vitepress-plugin-page-properties/client';
-import { InjectionKey as NolebasePagePropertiesInjection } from '@nolebase/vitepress-plugin-page-properties/client';
+import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
+
+import { contributions } from '../../_data/team.ts'
+
+import { data as gitOnline } from './loaders/gitlogDataLoader.data.ts'
 
 
 /* Stylesheets */
@@ -57,48 +56,52 @@ import 'uno.css'
 import './styles/style.css'
 import './styles/custom.css'
 import './viewerjs/dist/viewer.css'
-import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-page-properties/client/style.css'
-import "vitepress-markdown-timeline/dist/theme/index.css";
+import 'vitepress-markdown-timeline/dist/theme/index.css'
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'home-features-after': () => h(AGWHomeContents),
+      'home-features-after': () => [h(AGWHomeTeam), h(AGWHomeSponsors)],
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
-      'aside-outline-after': () => h(AGWDocsAsideMeta),
+      'aside-outline-after': () => h(AGWDocsAsideMeta)
     })
   },
 
   enhanceApp(ctx) {
-
-    ctx.app.provide(InjectionKey, {
-      locales: locales
-    } as Options)
-
     yandexMetrika(ctx, {
       counter: {
-        id: 95081395, initParams: {
+        id: config.yaMetrikaId,
+        initParams: {
           webvisor: true
         }
-      },
+      }
     }),
-    
-    ctx.app.component('AGWGallery', AGWGallery)
+      ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
-    ctx.app.component('contribution', AGWContribution)
-    ctx.app.provide(NolebasePagePropertiesInjection, {locales: pagePropertiesLocales, properties:pagePropertiesMD} as NolebasePagePropertiesOptions)
-    ctx.app.use(NolebaseGitChangelogPlugin, {locales: gitLocales, mapContributors: gitMapContributors})
+    ctx.app.component('contribution', AGWTeamPage)
+    ctx.app.component('GnomeAppsList', AGWGnomeAppsList)
+    ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
+    ctx.app.provide(NolebasePagePropertiesInjectionKey, {
+      locales: PPLocales,
+      properties: PPMarkdown
+    } as NEROptions)
+    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, {locales: ERlocales} as Options)
+    ctx.app.use(NolebaseGitChangelogPlugin, {
+      locales: GitLocales,
+      mapAuthors: gitOnline.length ? gitOnline : contributions
+    })
 
     enhanceAppWithTabs(ctx.app)
   },
   setup() {
     // Get route
-    const route = useRoute();
+    const route = useRoute()
     // Using
-    imageViewer(route, '.vp-doc img:not(.gallery)', {
+    imageViewer(route, '.vp-doc img:not(.gallery, .VPImage)', {
       title: true,
       toolbar: {
         zoomIn: 4,
@@ -108,7 +111,7 @@ export default {
         prev: false,
         next: false
       }
-    });
+    })
     imageViewer(route, '.galleries', {
       title: true,
       toolbar: {
@@ -119,6 +122,6 @@ export default {
         prev: true,
         next: true
       }
-    });
+    })
   }
 } satisfies Theme

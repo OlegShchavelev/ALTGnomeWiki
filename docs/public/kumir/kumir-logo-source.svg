@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="250" y2="500" id="gradient-0" spreadMethod="pad" gradientTransform="matrix(0.790303, -0.792405, 1.001506, 0.99885, -198.814681, 198.101125)">
+      <stop offset="0" style="stop-color: rgb(33, 38, 141);"/>
+      <stop offset="1" style="stop-color: rgb(12, 12, 49);"/>
+    </linearGradient>
+    <style bx:fonts="Nanum Gothic Coding">@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding%3Aital%2Cwght%400%2C400%3B0%2C700&amp;display=swap);</style>
+    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 10 10 0 1 rgba(0,0,0,0.3)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0"/>
+      <feOffset dx="10" dy="10"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="2"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect style="fill: url('#gradient-0'); paint-order: fill;" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 0, 0)" x="0" y="0" width="500" height="500" rx="100" ry="100"/>
+  <text style="fill: rgb(251, 241, 1); font-family: 'Nanum Gothic Coding'; font-size: 450px; font-weight: 700; white-space: pre; filter: url('#drop-shadow-filter-0'); transform-box: fill-box; transform-origin: 50% 50%;" x="24.997" y="384.647" transform="matrix(1, 0, 0, 1, 0.000005722046, -0.000005722046)">К</text>
+</svg>

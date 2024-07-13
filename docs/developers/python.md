@@ -14,9 +14,11 @@ apt-get update
 apt-get install gcc-c++ zlib-devel libssl-devel libsqlite3-devel libffi-devel
 exit
 ```
+
 ```shell[epm]
 epm -i gcc-c++ zlib-devel libssl-devel libsqlite3-devel libffi-devel
 ```
+
 :::
 
 ## Установка из исходного кода
@@ -33,10 +35,10 @@ tar zxvf Python-VERSION.tgz
 
 | Стабильные версии |
 | :---------------: |
-|      3.12.2       |
-|      3.11.8       |
-|      3.10.13      |
-|      3.9.18       |
+|      3.12.3       |
+|      3.11.9       |
+|      3.10.14      |
+|      3.9.19       |
 
 ### Собираем Python:
 
@@ -55,8 +57,6 @@ exit
 `VERSION` — необходимая версия Python. \
 `--prefix` — устанавливает директорию для сборки, можно убрать.
 
-
-
 :::info
 При сборке Python в собственную директорию, необходимо добавить её в переменную PATH.
 :::
@@ -71,9 +71,11 @@ apt-get update
 apt-get install pip
 exit
 ```
+
 ```shell[epm]
 epm -i pip
 ```
+
 :::
 
 ## Использование venv

@@ -1,28 +1,25 @@
 ---
-aggregation: 
-    sisyphus: mpv
-    flatpak: io.mpv.Mpv
+aggregation:
+  sisyphus: mpv
+  flatpak: io.mpv.Mpv
 appstream:
-    id: io.mpv.Mpv
-    name: MPV
-    icon: /mpv/mpv-logo.svg
-    summary: Свободный легковесный кроссплатформенный медиаплеер.
-    metadata_license: 
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    developer: 
-        name: MPV Community
-    url: 
-        homepage: https://mpv.io/
-        bugtracker: https://github.com/mpv-player/mpv/issues
+  id: io.mpv.Mpv
+  name: MPV
+  icon: /mpv/mpv-logo.svg
+  summary: Свободный легковесный кроссплатформенный медиаплеер.
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  developer:
+    name: MPV Community
+  url:
+    homepage: https://mpv.io/
+    bugtracker: https://github.com/mpv-player/mpv/issues
 ---
-
-
 
 # MPV
 
-MPV — Свободный легковесный кроссплатформенный медиаплеер. Поддерживает множество форматов медиафайлов и субтитров.
-
+MPV — свободный легковесный кроссплатформенный медиаплеер. Поддерживает множество форматов медиа и субтитров.
 
 ::: info
 Для лучшей интеграции со средой GNOME можно воспользоваться альтернативным интерфейсом MPV — [Celluloid](/celluloid).
@@ -30,62 +27,45 @@ MPV — Свободный легковесный кроссплатформен
 
 ![Draw attention to the window](/mpv/mpv.png)
 
-
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 
 ## Проблемы с замедлением видео
 
-При просмотре некоторых видео, особенно 4к, возможно замедление видеопотока, при этом звуковая дорожка идет без опозданий. Для выхода из этой ситуации существует два варианта.
+При просмотре некоторых видео, особенно 4К, возможно замедление видеопотока, при этом звуковая дорожка идёт без опозданий. Для выхода из этой ситуации существует два варианта.
 
-1. Использование профиля fast, для этого в терминале видео необходимо запустить с использование профиля fast
+1. Использование профиля `fast`: для этого в терминале необходимо запустить утилиту с использованием нужного профиля
 
 ```shell
 mpv --profile=fast video.mp4
 ```
 
-2. Использование аппаратного декодирования. Для этого в файле настроек **mpv.conf** необходимо прописать **hwdec** и **vo**
+2. Использование аппаратного декодирования: для этого в файле настроек `mpv.conf` необходимо прописать значения параметрам `hwdec` и `vo`. Вот рекомендованные настройки в зависимости от сессии
 
-Для сессии X.org рекомендуется
+::: tabs
+== Xorg
 
 ```
 hwdec=vaapi
 vo=gpu-next
 ```
 
-Для сессии Wayland рекомендуется
+== Wayland
 
 ```
 hwdec=vaapi
 vo=dmabuf-wayland
 ```
 
-## Проблемы с «потуханием» экрана при просмотре видео 
-
-Для решения это проблемы существует два решения:
-
-1. В сессии X.org должно быть достаточно добавления одной опции в **mpv.conf**
-
-```
-stop-screensaver
-```
-
-В сессии Wayland сложнее, учитывая что MPV не совсем поддерживает wayland, то вышеописанная опция работать не будет.
-Видео нужно запускать с учетом **gnome-session-inhibit**
-
-```shell
-gnome-session-inhibit mpv video.mp4
-```
-
-Для этого можно прямо указать, как написано выше, либо заходим в **/usr/share/applications/mpv.desktop** и после **Exec=** перед **mpv**  пишем **gnome-session-inhibit** 
-
-2. Более простое решение
-
-:::info
-Ниже вариант предпочтительный
 :::
 
-Устанавливаем расширение для Gnome - Caffeine
+## Проблемы с уходом в спящий режим при просмотре видео
+
+Для решения этой проблемы существует два решения:
+
+1. Более простое и предпочитаемое решение
+
+Устанавливаем расширение для GNOME - [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 
 ::: code-group
 
@@ -99,8 +79,26 @@ apt-get install gnome-shell-extension-caffeine
 epm -i gnome-shell-extension-caffeine
 ```
 
+:::
+
 Затем нужно перезапустить сессию и не забыть включить Caffeine
 
+2. В сессии Xorg должно быть достаточно добавления одной опции в `mpv.conf`
+
+```
+stop-screensaver
+```
+
+В сессии Wayland сложнее, учитывая что MPV не совсем поддерживает Wayland, то вышеописанная опция работать не будет.
+
+Видео нужно запускать с учётом `gnome-session-inhibit`
+
+```shell
+gnome-session-inhibit mpv video.mp4
+```
+
+Для этого можно или прямо указывать это при вызове (как написано выше), или отредактировать значение `Exec` в `/usr/share/applications/mpv.desktop`: перед `mpv` укажите `gnome-session-inhibit`
+
 ## Альтернатива
+
 В качестве альтернативы, можно воспользоваться плеером с графическим интерфейсом построенным на MPV — [Celluloid](/celluloid).
-:::

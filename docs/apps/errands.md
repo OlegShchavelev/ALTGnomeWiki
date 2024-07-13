@@ -1,35 +1,38 @@
 ---
 appstreamFlatpak: io.github.mrvladus.List
 nameRepo: errands
-gallery: 
-    title: Галерея Errands
-    type: slider
-    items: 
-        - src: /errands/errands-1.png
-        - src: /errands/errands-2.png
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /errands/errands-1.png
+    - src: /errands/errands-2.png
 aggregation:
-    flatpak: io.github.mrvladus.List
-    sisyphus: errands
+  flatpak: io.github.mrvladus.List
+  sisyphus: errands
 appstream:
-    id: io.github.mrvladus.List
-    name: Дела
-    icon: /errands/errands-logo.svg
-    summary: Управляйте своими задачами
-    metadata_license: 
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    developer: 
-        name: GNOME
-        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    url: 
-        homepage: https://apps.gnome.org/ru/List/
-        translate: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
-        bugtracker: https://github.com/mrvladus/Errands/issues
+  id: io.github.mrvladus.List
+  name: Дела
+  icon: /errands/errands-logo.svg
+  summary: Управляйте своими задачами
+  keywords:
+    - circle
+    - adaptive
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  developer:
+    name: GNOME
+    avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+  url:
+    homepage: https://apps.gnome.org/ru/List/
+    translate: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
+    bugtracker: https://github.com/mrvladus/Errands/issues
 ---
 
 # Дела
 
-Список задач для тех, кто предпочитает простоту.
+Дела (Errands) — простое приложение для управления задачами
 
 Главные функции:
 

@@ -1,50 +1,53 @@
 ---
-aggregation: 
-    flatpak: 
-        id: com.opera.Opera
-        build: unoffical
-    epm:
-        play:
-            id: opera
-            build: unoffical
-appstream:
+aggregation:
+  flatpak:
     id: com.opera.Opera
-    name: Opera
-    icon: /opera/opera-logo.svg
-    summary: Быстрый, безопасный и удобный браузер, в котором есть всё необходимое для конфиденциальной и безопасной работы в интернете.
-    metadata_license: 
-        name: Собственная
-        link: https://legal.opera.com/eula/computers/eula.html
-    keywords: 
-        - proprietary
-    developer: 
-        name: Opera Software
-    url: 
-        homepage: https://www.opera.com/
+    build: unofficial
+  epm:
+    play:
+      id: opera
+      build: unofficial
+appstream:
+  id: com.opera.Opera
+  name: Opera
+  icon: /opera/opera-logo.svg
+  summary: Быстрый, безопасный и удобный браузер, в котором есть всё необходимое для конфиденциальной и безопасной работы в интернете.
+  metadata_license:
+    name: Собственная
+    link: https://legal.opera.com/eula/computers/eula.html
+  keywords:
+    - proprietary
+  developer:
+    name: Opera Software
+  url:
+    homepage: https://www.opera.com/
 ---
-
-
 
 # Opera
 
-Opera — быстрый, безопасный и удобный браузер, в котором есть всё необходимое для конфиденциальной и безопасной работы в интернете.
+Opera — быстрый, безопасный и удобный браузер, в котором есть всё необходимое для конфиденциальной и безопасной работы в Интернете.
 
+<!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Выбор предпочитаемого языка (русификация браузера Opera)
 
-При первом запуске браузера Opera, приложение использует язык English (United States), изменим предпочтительный язык на Русский:
+При первом запуске Opera, используется язык английский. Переключить язык можно в настройках:
 
-1. Откройте «Easy setup»
-2. В контекстном меню, выберите пункт «Go to full browser settings»
-3. В поиске введите «land»
+1. Откройте `Easy setup`
+2. Внизу контекстного меню выберите пункт `Go to browser settings`
+3. В поиске введите `lang`
 
-или в строке вывидите `opera://settings/?search=lang`
+Также, можно сразу открыть искомый раздел настроек через адресную строку браузера:
 
-В настройке «Preferred languages», нажмите «Add languages» и выберите из списка `Russian`. Закройте браузер для изменение параметра запуска приложения.
+```
+opera://settings/?search=lang
+```
 
-Для простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выбирите приложение **Opera**, сделайте Pin и внесите следующие параметр `--lang=ru` в поле `Exec`:
+В разделе `Preferred languages` нажмите `Add languages` и выберите из списка `Russian`. Перезапустите браузер для изменение параметра запуска приложения.
+
+Для простоты настройки рекомендуется установить приложение [PinApp](/pin-app). Выберите приложение **Opera**, сделайте `Pin` и внесите следующие параметр `--lang=ru` в поле `Exec`:
 
 ::: code-group
 
@@ -57,8 +60,9 @@ Opera — быстрый, безопасный и удобный браузер,
 opera %U // [!code --]
 opera --lang=ru %U // [!code ++]
 ```
+
 :::
 
-После изменения параметра запуска, выйдите из сессии и авторизируйтесь повторно на эране входа или перезапустите операционную систему ALT Regular Gnome
+После изменения параметров запуска, перезайдите в учётную запись или перезагрузитесь
 
 ![opera](/opera/opera-1.png)

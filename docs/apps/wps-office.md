@@ -1,36 +1,36 @@
 ---
 aggregation:
-    flatpak: 
-        id: com.wps.Office
-        build: unoffical
-    epm:
-        play:
-            id: wpsoffice
-            build: unoffical
-appstream:
+  flatpak:
     id: com.wps.Office
-    name: WPS Office
-    icon: /wps-office/wps-office-logo.svg
-    summary: Универсальный пакет Office приложений
-    keywords: 
-        - proprietary
-    developer: 
-        name: Kingsoft Corporation
-        avatar: /wps-office/wps-office-avatar.png
-    metadata_license: 
-        name: Собственная
-        link: https://www.wps.com/eula/
-    url: 
-        homepage: https://www.wps.com/office/linux/
-        bugtracker: https://help.wps.com/
-gallery: 
-    title: Галерея
-    type: slider
-    items: 
-        - src: /wps-office/wps-office-1.png
-        - src: /wps-office/wps-office-2.png
-        - src: /wps-office/wps-office-3.png
-        - src: /wps-office/wps-office-4.png
+    build: unofficial
+  epm:
+    play:
+      id: wpsoffice
+      build: unofficial
+appstream:
+  id: com.wps.Office
+  name: WPS Office
+  icon: /wps-office/wps-office-logo.svg
+  summary: Универсальный пакет Office приложений
+  keywords:
+    - proprietary
+  developer:
+    name: Kingsoft Corporation
+    avatar: /wps-office/wps-office-avatar.png
+  metadata_license:
+    name: Собственная
+    link: https://www.wps.com/eula/
+  url:
+    homepage: https://www.wps.com/office/linux/
+    bugtracker: https://help.wps.com/
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /wps-office/wps-office-1.png
+    - src: /wps-office/wps-office-2.png
+    - src: /wps-office/wps-office-3.png
+    - src: /wps-office/wps-office-4.png
 ---
 
 # WPS Office
@@ -38,6 +38,7 @@ gallery:
 WPS Office — офисный пакет, разрабатываемый Kingsoft Office Software. Продукт предоставляет, пожалуй, лучшую совместимость с файлами Microsoft Office.
 
 WPS Office включает следующие приложения:
+
 - Document
 - Excel
 - Presentation
@@ -49,6 +50,7 @@ WPS Office включает следующие приложения:
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Установка с официального сайта
+
 Зайдите на [официальный сайт производителя](https://www.wps.com/).
 
 Далее скачайте rpm пакет.

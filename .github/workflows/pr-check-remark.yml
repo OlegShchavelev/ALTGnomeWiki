@@ -1,0 +1,29 @@
+name: 'Check: ReMark-Lint Markdown Check'
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  statuses: write
+  checks: write
+  pull-requests: write
+
+jobs:
+  check-remark:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Check markdown rules using remark-lint
+        run: |
+          npm run docs:remark-full

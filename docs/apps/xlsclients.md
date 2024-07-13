@@ -2,27 +2,24 @@
 title: XLSCLIENTS
 appstreamRepo: alacarte.desktop
 aggregation:
-    sisyphus: xlsclients
+  sisyphus: xlsclients
 appstream:
-    id: xlsclients.desktop
-    name: XLSCLIENTS
-    summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
-    developer: 
-        name: X.Org Foundation
-        avatar: /xeyes/xeyes-avatar.png
-    metadata_license: 
-        name: MIT License
-        link: https://choosealicense.com/licenses/mit/
-    url: 
-        homepage: https://gitlab.freedesktop.org/xorg/app/xlsclients
-        bugtracker: https://gitlab.freedesktop.org/xorg/app/xlsclients/issues
+  name: XLSCLIENTS
+  summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+  developer:
+    name: X.Org Foundation
+    avatar: /xeyes/xeyes-avatar.png
+  metadata_license:
+    name: MIT License
+    link: https://choosealicense.com/licenses/mit/
+  url:
+    homepage: https://gitlab.freedesktop.org/xorg/app/xlsclients
+    bugtracker: https://gitlab.freedesktop.org/xorg/app/xlsclients/issues
 ---
-
-
 
 # XLSCLIENTS
 
-xlsclients — утилита для отображения информации о клиентских приложениях, запущенных в оконном интерфейсе X11. 
+xlsclients — утилита для отображения информации о клиентских приложениях, запущенных в оконном интерфейсе X11.
 
 ## Установка из репозитория
 
@@ -35,9 +32,11 @@ su -
 apt-get update
 apt-get install xlsclients
 ```
+
 ```shell[epm]
 epm -i xlsclients
 ```
+
 :::
 
 ## Использование утилиты XLSCLIENTS
@@ -49,6 +48,7 @@ xlsclients
 ```
 
 ::: details Пример ответа xlsclients
+
 ```shell
 [oleg@alt-gnome ~]$ xlsclients
 alt-gnome  gsd-xsettings
@@ -60,4 +60,5 @@ alt-gnome  anydesk
 alt-gnome  mutter-x11-frames
 alt-gnome  steam
 ```
+
 :::

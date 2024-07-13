@@ -17,3 +17,9 @@ GitHub.sublime-settings
 ### JetBrains ###
 .idea/
 
+### .env ###
+docs/.env
+
+### team ###
+
+_data/fullteam.json

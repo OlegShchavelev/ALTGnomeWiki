@@ -6,7 +6,7 @@ packageName: gnome-shell-extension-extension-list
 
 # Extension List
 
-Расширение позволяет удобно управлять расширениями для Gnome: быстро перейти к настройкам расширения, включить/выключить
+Расширение позволяет удобно управлять расширениями для GNOME: быстро перейти к настройкам расширения, включить/выключить
 одним нажатием или удалить расширение. Точка рядом с расширением показывает, что расширение включено.
 
 ![extension-list](/extensions/extension-list/extension-list-1.png)
@@ -20,6 +20,7 @@ packageName: gnome-shell-extension-extension-list
 Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
 
 ::: code-group
+
 ```shell[apt-get]
 su -
 apt-get update
@@ -29,6 +30,7 @@ apt-get install gnome-shell-extension-extension-list
 ```shell[epm]
 epm -i gnome-shell-extension-extension-list
 ```
+
 :::
 
 <!--@include: ./parts/install-from-repository.md-->

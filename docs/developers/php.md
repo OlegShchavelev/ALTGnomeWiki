@@ -15,12 +15,14 @@ su -
 apt-get update
 apt-get install php8.3
 ```
+
 ```shell[epm]
 epm -i php8.3
 ```
+
 :::
 
-Проверить установленную версия PHP, используя следующаю комманду:
+Проверить установленную версию PHP, используя следующую команду:
 
 ```shell
 php -v
@@ -37,9 +39,11 @@ su -
 apt-get update
 apt-get install php8.3-fpm-fcgi
 ```
+
 ```shell[epm]
 epm -i php8.3-fpm-fcgi
 ```
+
 :::
 
 ### Управление сервисом PHP-FPM
@@ -81,6 +85,3 @@ cp -r /etc/php/8.3/cli/* /etc/php/8.3/cli-server
 ```shell
 ln -s /etc/php/8.3/cli /etc/php/8.3/cli-server
 ```
-
-
-

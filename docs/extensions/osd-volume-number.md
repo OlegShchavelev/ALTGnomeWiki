@@ -5,7 +5,7 @@ pluginID: 5461
 
 # OSD Volume Number
 
-Расширение добавляет числовое значение текущей громкости звука при ее изменении.
+Расширение добавляет числовое значение текущей громкости звука при её изменении.
 
 ![osd-volume-number-1](/extensions/osd-volume-number/osd-volume-number-1.png)
 

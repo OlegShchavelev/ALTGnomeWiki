@@ -1,26 +1,24 @@
 ---
 aggregation:
-    epm:
-        play:
-            id: vk-messenger
-            build: unoffical
+  epm:
+    play:
+      id: vk-messenger
+      build: unofficial
 appstream:
-    name: VK Мессенджер
-    icon: /vk-messenger/vk-messenger-logo.svg
-    summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
-    keywords: 
-        - proprietary
-    developer: 
-        name: VK Company Limited
-        avatar: /vk-messenger/vk-messenger-avatar.svg
-    metadata_license: 
-        name: Собственная
-        link: https://vk.com/terms
-    url: 
-        homepage: https://vk.me/app
+  name: VK Мессенджер
+  icon: /vk-messenger/vk-messenger-logo.svg
+  summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+  keywords:
+    - proprietary
+  developer:
+    name: VK Company Limited
+    avatar: /vk-messenger/vk-messenger-avatar.svg
+  metadata_license:
+    name: Собственная
+    link: https://vk.com/terms
+  url:
+    homepage: https://vk.me/app
 ---
-
-
 
 # VK Мессенджер
 
@@ -34,9 +32,10 @@ VK Мессенджер — бесплатное и быстрое прилож�
 ```shell
 epm play vk
 ```
+
 :::
 
-## Установка с официального сайта 
+## Установка с официального сайта
 
 Загрузите пакет `.rpm` со страницы релизов приложения `vk-messenger` с официального [сайта производителя](https://vk.me/app), затем установите через терминал:
 
@@ -48,10 +47,12 @@ cd /home/USER/Загрузки
 apt-get install vk-messenger.rpm
 
 ```
+
 ```shell[epm]
 сd Загрузки
 epm -i vk-messenger.rpm
 ```
+
 :::
 
-USER — имя непривилегированного пользователя, укажите имя учетной записи. 
+USER — имя непривилегированного пользователя, укажите имя учётной записи.

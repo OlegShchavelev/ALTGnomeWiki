@@ -1,10 +1,10 @@
 # Appstream CLI
 
-Appstream CLI — доступа к пулу программных компонентов, а также для прямой работы с метаданными AppStream, включая проверку их на соответствие спецификации.
+Appstream CLI — утилита доступа к пулу программных компонентов, а также для прямой работы с метаданными AppStream, включая проверку на соответствие спецификации.
 
 ## Установка из репозитория
 
-**Appstream CLI** входит состав пакета **Appstream**, можно установить через терминал:
+Appstream CLI входит состав пакета `appstream`, который можно установить через терминал:
 
 ::: code-group
 
@@ -13,24 +13,30 @@ su -
 apt-get update
 apt-get install appstream
 ```
+
 ```shell[epm]
 epm -i appstream
 ```
+
 :::
 
 ## Использование утилиты Appstream CLI
 
-Для получения полного списка команд **Appstream CLI** выполните `appstreamcli --help`
+Полный список команд Appstream CLI:
 
-### Получить методанные в Appstream CLI
+```
+appstreamcli --help
+```
 
-Для поиска методанных вы можете воспользоваться коммандой `search`:
+### Получить метаданные в Appstream CLI
+
+Поиск метаданных, команда `search`:
 
 ```shell
 appstreamcli search Yandex Browser
 ```
 
-::: details поиск Appstream CLI по запросу
+::: details Результаты Appstream CLI по запросу
 
 ```shell
 Идентификатор: yandex-browser.desktop [desktop-application]
@@ -54,18 +60,18 @@ appstreamcli search Yandex Browser
 Домашняя станица: https://s3drive.app
 Значок: io.kapsa.drive.png
 ```
+
 :::
 
-Или укажите ID приложения использую команду `get`:
+Или можно указать ID в команде `get`:
 
 ```shell
 appstreamcli get yandex-browser.desktop
 ```
 
-::: details методанные Appstream CLI по ID приложения
+::: details Метаданные Appstream CLI по ID приложения
 
 ```shell
-[oleg@alt-gnome ~]$ appstreamcli get yandex-browser.desktop
 Идентификатор: yandex-browser.desktop [desktop-application]
 Имя: Yandex Browser
 Сводка: The web browser from Yandex
@@ -75,4 +81,3 @@ appstreamcli get yandex-browser.desktop
 ```
 
 :::
-

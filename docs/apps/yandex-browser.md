@@ -1,29 +1,29 @@
 ---
 aggregation:
-    sisyphus: yandex-browser-stable
-    flatpak: 
-        id: ru.yandex.Browser
-        build: unoffical
-    epm:
-        play:
-            id: yandex-browser
-            build: unoffical
+  sisyphus: yandex-browser-stable
+  flatpak:
+    id: ru.yandex.Browser
+    build: unofficial
+  epm:
+    play:
+      id: yandex-browser
+      build: unofficial
 appstream:
-    id: yandex-browser.desktop
-    name: Яндекс Браузер
-    icon: /yandex-browser/yandex-browser-logo.svg
-    summary: Быстрый и безопасный браузер Яндекса для компьютера.
-    keywords: 
-        - proprietary
-    developer: 
-        name: Yandex
-        avatar: /yandex-browser/yandex-browser-avatar.png
-    metadata_license: 
-        name: Собственная
-        link: https://yandex.ru/legal/browser_agreement/
-    url: 
-        homepage: https://browser.yandex.ru/
-        bugtracker: https://browser.yandex.ru/feedback/
+  id: yandex-browser.desktop
+  name: Яндекс Браузер
+  icon: /yandex-browser/yandex-browser-logo.svg
+  summary: Быстрый и безопасный браузер Яндекса для компьютера.
+  keywords:
+    - proprietary
+  developer:
+    name: Yandex
+    avatar: /yandex-browser/yandex-browser-avatar.png
+  metadata_license:
+    name: Собственная
+    link: https://yandex.ru/legal/browser_agreement/
+  url:
+    homepage: https://browser.yandex.ru/
+    bugtracker: https://browser.yandex.ru/feedback/
 ---
 
 # Яндекс Браузер
@@ -31,6 +31,7 @@ appstream:
 Яндекс Браузер — быстрый и безопасный браузер Яндекса для компьютера, смартфонов и планшетов на Android и iOS (iPhone и iPad). Ускоряет загрузку при медленном соединении, защищает от вирусов и мошенников, делает поиск удобнее.
 
 ## Издания Яндекс Браузера
+
 **Яндекс Браузер** — Быстрый и безопасный браузер со встроенной технологией активной защиты Protect. Она проверяет скачиваемые файлы на вирусы, предупреждает об опасных сайтах, защищает подключение к общественным сетям и ваши пароли.
 
 **Яндекс Браузер для организаций** — Защита от вредоносных программ, фишинга и кражи паролей. Простая настройка в пару кликов на всю компанию и выделенная техподдержка.
@@ -40,11 +41,11 @@ appstream:
 <!--@include: @apps/_parts/install/content-repo.md-->
 
 ::: info
-C версии `23.5.1.753`, устанавливается **Яндекс Браузер для организаций** — специальная сборка, поддерживающая корпоративные функции, например, управление при помощи групповых политик. Однако ее можно использовать и на домашних компьютерах.
+C версии `23.5.1.753`, устанавливается **Яндекс Браузер для организаций** — специальная сборка, поддерживающая корпоративные функции, например, управление при помощи групповых политик. Однако её можно использовать и на домашних компьютерах.
 :::
 
 <!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/warns/unpriveleged-spases.md -->
+<!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
 <!--@include: @apps/_parts/install/content-epm-play.md-->
 
 ## Полезные советы и дополнения
@@ -70,13 +71,13 @@ yandex-browser-stable --ozone-platform-hint=auto
 Для запуска Яндекс Браузера версии Flatpak, необходимо разрешить список сокетов:
 
 - Оконная система Wayland
-- Возрат к оконной системе X11
+- Возврат к оконной системе X11
 
 :::info
-Удобным способом управления Flatpak-приложений является приложения [Flatseal](flatseal)
+Удобным способом управления Flatpak-приложений является приложение [Flatseal](flatseal)
 :::
 
-### Как вернуть стандартный вид окна в рабочем окружении Gnome
+### Как вернуть стандартный вид окна в рабочем окружении GNOME
 
 По умолчанию Браузер не использует системную рамку окна в Linux и изменяет дизайн элементов управления. Если вы хотите вернуть стандартный вид окна и элементов управления Linux:
 
@@ -86,15 +87,16 @@ yandex-browser-stable --ozone-platform-hint=auto
 4. Перезапустите Браузер и проверьте результат.
 
 ::: warning
-Данная настройка является экспериментальной, после ее включения возможны неполадки в работе Браузера. В этом случае отключите опцию и напишите нам через форму
+Данная настройка является экспериментальной, после её включения возможны неполадки в работе Браузера. В этом случае отключите опцию и напишите нам через форму
 :::
 
-![стандартный вид окна в рабочем окружении Gnome](/yandex-browser/yandex-browser.gif)
+![стандартный вид окна в рабочем окружении GNOME](/yandex-browser/yandex-browser.gif)
 
 ### Video DownloadHelper
+
 Как известно, **Яндекс Браузер** , как и другие браузеры, обладает множеством расширений. **Video DownloadHelper** не исключение.
-Однако не так давно, приложение компаньон обновилось и поменяло свое название на VdhCoApp.
-В настоящее время в EPM существует возможность установки нового приложения компаньона для корректной работы **Video DownloadHelper**.
+Однако не так давно, приложение компаньон обновилось и поменяло своё название на VdhCoApp.
+В настоящее время в EPM существует возможность установки нового приложения-компаньона для корректной работы **Video DownloadHelper**.
 
 Для установки приложения компаньона используем консоль и EPM версии **3.60.9** или выше
 
@@ -106,7 +108,7 @@ epm play vdhcoapp
 Далее описан вариант для версии EPM ниже **3.60.9**
 :::
 
-Если Вы используете **Video DownloadHelper** и столкнулись с проблемой обновления приложения компаньона, но после его установки в Яндекс Браузере не заработало, необходимо выполнить следующие действия.
+Если Вы используете **Video DownloadHelper** и столкнулись с проблемой обновления приложения-компаньона, но после его установки в Яндекс Браузере не заработало, необходимо выполнить следующие действия.
 
 ```shell
 cd ~
@@ -119,10 +121,9 @@ echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegca
 
 Запускаем Яндекс Браузер.
 
-
 ## Известные проблемы
 
-### Не воспроизводится видео в Яндекс Браузере: 
+### Не воспроизводится видео в Яндекс Браузере:
 
 Откройте терминал и запустите **Яндекс Браузер**:
 
@@ -131,13 +132,16 @@ echo -e '{\n"type": "stdio",\n"allowed_origins": [\n"chrome-extension://lmjnegca
 ```shell[sysphus]
 yandex-browser-stable
 ```
+
 ```shell[epm play]
 yandex-browser
 ```
+
 :::
 
 Ответ в терминале при установленных кодеках следующий:
 ::: code-group
+
 ```shell[Успешно]
 Found ffmpeg: /usr/lib64/yandex/browser/libffmpeg.so
   avcodec: 3882340
@@ -145,21 +149,26 @@ Found ffmpeg: /usr/lib64/yandex/browser/libffmpeg.so
   avutil: 3746916
 Ffmpeg version is OK! Let's use it.
 ```
+
 ```shell[Ошибка]
 find_ffmpeg failed, using integrated library
 ```
+
 :::
 
 Обновите кодеки с помощью утилиты **update-ffmpeg**:
 ::: code-group
+
 ```shell[sysphus]
 su -
 /usr/lib64/yandex/browser/update-ffmpeg
 ```
+
 ```shell[epm play]
 su -
 /opt/yandex/browser/update-ffmpeg
 ```
+
 :::
 
 :::warning
@@ -179,7 +188,7 @@ browser://flags/#external-media
 Открыть Яндекс Браузер, произвести дополнительную настройку:
 
 1. В поисковой строке запустить: `browser://flags/`
-2. Введите в строку поиска флаг `#enable-vulkan`, включите опцию Enabled 
+2. Введите в строку поиска флаг `#enable-vulkan`, включите опцию Enabled
 3. Введите в строку поиска флаг `#enable-flutter-suggest`, включите опцию Disabled
 4. Перезапустите Яндекс Браузер и проверьте результат
 

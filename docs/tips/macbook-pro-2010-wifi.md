@@ -2,10 +2,10 @@
 
 ## Симптомы
 
-- Не работает Wifi
+- Не работает Wi-Fi
 - Не подключается к сети
 
-### При использовнии bcmwl драйвера
+### При использовании bcmwl драйвера
 
 - На драйверах kernel-modules-bcmwl-un-def не работает сканирование сети
 - Ошибки в логах:
@@ -43,7 +43,7 @@ epm install b43-fwcutter
 
 ```shell
 # скачать с этого ресурса или найти в другом месте
-wget http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2 
+wget http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2
 
 tar xjf broadcom-wl-5.100.138
 mkdir -p /lib/firmware

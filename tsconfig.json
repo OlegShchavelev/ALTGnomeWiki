@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "ESNext", 
+    "moduleResolution": "Bundler", 
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "types": [
-      "vite/client"
-    ]
+    "types": ["node", "vite/client"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./*"],
+      "@vitepress/theme/*": ["node_modules/vitepress/dist/client/theme-default/*"]
+    }
   },
-  "include": [
-    ".vitepress/theme/**/*",
-    "node_modules/vitepress/dist/client/theme-default/components/**/*.vue"
-  ]
+  "include": ["**/*.d.ts", "**/*.ts"],
+  "exclude": ["node_modules"]
 }

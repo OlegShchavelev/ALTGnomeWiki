@@ -5,15 +5,15 @@ appstreamFlatpak: io.podman_desktop.PodmanDesktop
 
 # Podman
 
-![podman-sektop](/podman/from-docker-to-podman.png)
+![podman-desktop](/podman/from-docker-to-podman.png)
 
 Podman — инструмент командной строки для управления контейнерами в Linux. Он является альтернативой Docker,
 но работает без необходимости использования демона контейнеров. Podman позволяет создавать, запускать, останавливать,
 удалять и управлять контейнерами на хост-системе. Он поддерживает изоляцию процессов, файловую систему и сеть для
-каждого контейнера. Podman также поддерживает работу с Kubernetes и позволяет управлять подами (pods) и производить
+каждого контейнера. Podman также поддерживает работу с Kubernetes и позволяет управлять "подами" (pods) и производить
 билды образов контейнеров без необходимости использования демона контейнеров.
 
-![podman-sektop](/podman/podman-vs-docker.png)
+![podman-desktop](/podman/podman-vs-docker.png)
 
 ### Установка
 
@@ -143,7 +143,7 @@ podman restart containerID
 
 ## podman-compose
 
-![podman-sektop](/podman/podman-compose.png)
+![podman-desktop](/podman/podman-compose.png)
 
 Podman-compose — инструмент, предоставляемый командой Podman, который позволяет запускать и управлять
 многоконтейнерными приложениями. Он является аналогом инструмента Docker Compose, который используется для определения
@@ -197,19 +197,19 @@ podman-compose up
 podman-compose down
 ```
 
-Запуск определенного сервиса, описанного в docker-compose.yml:
+Запуск определённого сервиса, описанного в docker-compose.yml:
 
 ```shell
 podman-compose start <service_name>
 ```
 
-Остановка определенного сервиса:
+Остановка определённого сервиса:
 
 ```shell
 podman-compose stop <service_name>
 ```
 
-Перезапуск определенного сервиса:
+Перезапуск определённого сервиса:
 
 ```shell
 podman-compose restart <service_name>
@@ -221,7 +221,7 @@ podman-compose restart <service_name>
 podman-compose ps
 ```
 
-Отображение логов определенного сервиса:
+Отображение логов определённого сервиса:
 
 ```shell
 podman-compose logs <service_name>
@@ -235,7 +235,7 @@ podman-compose exec <service_name> <command>
 
 ## podman-desktop
 
-![podman-sektop](/podman/podman-desktop.png)
+![podman-desktop](/podman/podman-desktop.png)
 
 Podman-Desktop — удобный пользовательский интерфейс для создания, запуска, остановки и удаления контейнеров,
 а также для управления их конфигурацией и настройками. Оно также интегрируется со средой разработки, чтобы

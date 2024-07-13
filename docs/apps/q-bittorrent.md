@@ -1,23 +1,23 @@
 ---
 aggregation:
-    sisyphus: qbittorrent
-    flatpak: 
-        id: org.qbittorrent.qBittorrent
-        build: offical
-appstream:
+  sisyphus: qbittorrent
+  flatpak:
     id: org.qbittorrent.qBittorrent
-    name: qBittorrent
-    icon: /q-bittorrent/q-bittorrent-logo.svg
-    summary: Cвободный кроссплатформенный клиент файлообменной сети BitTorrent.
-    developer: 
-        name: qBittorrent Community
-    metadata_license: 
-        name: GNU GPLv3 + OpenSSL
-        link: https://github.com/qbittorrent/qBittorrent/blob/master/COPYING
-    url: 
-        homepage: https://www.qbittorrent.org/
-        bugtracker: https://github.com/qbittorrent/qBittorrent/issues
-        translate: https://github.com/qbittorrent/qBittorrent/wiki/How-to-translate-qBittorrent
+    build: official
+appstream:
+  id: org.qbittorrent.qBittorrent
+  name: qBittorrent
+  icon: /q-bittorrent/q-bittorrent-logo.svg
+  summary: Свободный кроссплатформенный клиент файлообменной сети BitTorrent.
+  developer:
+    name: qBittorrent Community
+  metadata_license:
+    name: GNU GPLv3 + OpenSSL
+    link: https://github.com/qbittorrent/qBittorrent/blob/master/COPYING
+  url:
+    homepage: https://www.qbittorrent.org/
+    bugtracker: https://github.com/qbittorrent/qBittorrent/issues
+    translate: https://github.com/qbittorrent/qBittorrent/wiki/How-to-translate-qBittorrent
 ---
 
 # qBittorrent
@@ -45,4 +45,4 @@ qBittorrent — свободный кроссплатформенный клие
 2. Нажать кнопку [[Настройки]]
 3. Перейти в пункт "Расширенные"
 4. Изменить значение "Период сохранения данных возобновления"
-5. Нажать [[Применить]]  и желательно перезайти в клиент.
+5. Нажать [[Применить]] и желательно перезайти в клиент.

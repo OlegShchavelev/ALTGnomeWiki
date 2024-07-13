@@ -1,3 +1,5 @@
+import { link } from 'fs'
+
 export const docs = [
   {
     items: [
@@ -16,52 +18,70 @@ export const docs = [
         items: [
           { text: 'Alacarte', link: '/alacarte' },
           { text: 'Amberol', link: '/amberol' },
+          { text: 'AniLibrix', link: '/anilibrix' },
           { text: 'AnyDesk', link: '/anydesk' },
           { text: 'Arduino IDE', link: '/arduino-ide' },
           { text: 'AsusCtl', link: '/asusctl' },
           { text: 'Audacity', link: '/audacity' },
+          { text: 'Ayugram', link: '/ayugram-desktop' },
           { text: 'Blender', link: '/blender' },
           { text: 'Bottles', link: '/bottle' },
           { text: 'Boxes', link: '/boxes' },
+          { text: 'Boxy SVG', link: '/boxy-svg' },
           { text: 'Brave Browser', link: '/brave' },
           { text: 'Сartridges', link: '/cartridges' },
-          { text: 'Cassette (Яндекс Музыка)', link: '/cassette' },
           { text: 'Celluloid', link: '/celluloid' },
           { text: 'Chromium', link: '/chromium' },
-          { text: 'Console', link: '/console' },
+          { text: 'Conky', link: '/conky' },
+          { text: 'Desktop Files Creator', link: '/desktop-files-creator' },
           { text: 'Dialect', link: '/dialect' },
           { text: 'Discord', link: '/discord' },
           { text: 'Docker', link: '/docker' },
+          { text: 'Dosage', link: '/dosage' },
           { text: 'Drawing', link: '/drawing' },
           { text: 'DroidCam', link: '/droidcam' },
-          { text: 'Eclipse IDE', link: '/eclipse-ide' },
           { text: 'EasyEffects', link: '/easyeffects' },
+          { text: 'Eclipse IDE', link: '/eclipse-ide' },
+          { text: 'Emulsion', link: '/emulsion' },
           { text: 'Evince', link: '/evince' },
+          { text: 'Fastfetch', link: '/fastfetch' },
           { text: 'FFMPEG', link: '/ffmpeg' },
           { text: 'Figma', link: '/figma' },
           { text: 'Firefox', link: '/firefox' },
           { text: 'Flatseal', link: '/flatseal' },
           { text: 'Foliate', link: '/foliate' },
+          { text: 'Folio', link: '/folio' },
+          { text: 'Footage', link: '/footage' },
+          { text: 'FOSSology', link: '/fossology-nomos' },
+          { text: 'Fotema', link: '/fotema' },
           { text: 'Fragments', link: '/fragments' },
           { text: 'Fretboard', link: '/fretboard' },
+          { text: 'Fish', link: '/fish' },
           { text: 'G4Music', link: '/g4music' },
+          { text: 'Gaphor', link: '/gaphor' },
           { text: 'GDM Настройки', link: '/gdm-settings' },
           { text: 'Git', link: '/git' },
           { text: 'GitHub Desktop', link: '/github-desktop' },
           { text: 'Google Chrome', link: '/google-chrome' },
           { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
+          { text: 'Gimp', link: '/gimp' },
+          { text: 'Hardware Probe', link: '/hw-probe' },
           { text: 'Helvum', link: '/helvum' },
+          { text: 'Heroic Games Launcher', link: '/heroic-games-launcher' },
+          { text: 'IP Lookup', link: '/ip-lookup' },
           { text: 'Kooha', link: '/kooha' },
           { text: 'Krita', link: '/krita' },
           { text: 'Lazarus', link: '/lazarus' },
-          { text: 'Libreoffice', link: '/libreoffice' },
+          { text: 'LibreOffice', link: '/libreoffice' },
           { text: 'Loupe', link: '/loupe' },
           { text: 'Lunacy', link: '/lunacy' },
           { text: 'Lutris', link: '/lutris' },
+          { text: 'LibreWolf', link: '/librewolf' },
           { text: 'Microsoft Edge', link: '/microsoft-edge' },
           { text: 'Mission Center', link: '/mission-center' },
           { text: 'Мpich', link: '/mpich' },
-          { text: 'Мpv', link: '/mpv' },
+          { text: 'МPV', link: '/mpv' },
+          { text: 'Main-menu', link: '/main-menu' },
           { text: 'Neofetch', link: '/neofetch' },
           { text: 'Neovim', link: '/neovim' },
           { text: 'Nextcloud Desktop', link: '/nextcloud-desktop' },
@@ -69,23 +89,34 @@ export const docs = [
           { text: 'OBS Studio', link: '/obs-studio' },
           { text: 'Obsidian', link: '/obsidian' },
           { text: 'OnlyOffice', link: '/onlyoffice' },
+          { text: 'OpenRazer', link: '/openrazer' },
           { text: 'Opera', link: '/opera' },
           { text: 'Penpot Desktop', link: '/penpot-desktop' },
           { text: 'PortProton', link: '/port-proton' },
           { text: 'Postman', link: '/postman' },
           { text: 'PinApp', link: '/pin-app' },
+          { text: 'Piper', link: '/piper' },
           { text: 'qBittorrent', link: '/q-bittorrent' },
+          { text: 'Radio', link: '/radio' },
+          { text: 'Reaper', link: '/reaper' },
+          { text: 'RetroArch', link: '/retroarch' },
+          { text: 'Rnote', link: '/rnote' },
           { text: 'Skype', link: '/skype' },
           { text: 'Speedtest CLI', link: '/speedtest-cli' },
           { text: 'Spotify', link: '/spotify' },
           { text: 'Steam', link: '/steam' },
-          { text: 'Synching', link: '/Synching'},
+          { text: 'Switcheroo', link: '/switcheroo' },
+          { text: 'Synching', link: '/Synching' },
+          { text: 'Taskwarrior', link: '/taskwarrior' },
           { text: 'Telegram', link: '/telegram' },
           { text: 'Thunderbird', link: '/thunderbird' },
           { text: 'Timeshift', link: '/timeshift' },
           { text: 'Toolbox', link: '/toolbox' },
           { text: 'Totem', link: '/totem' },
           { text: 'Transmission', link: '/transmission' },
+          { text: 'Turtle', link: '/turtle' },
+          { text: 'Ungoogled-chromium', link: '/ungoogled-chromium' },
+          { text: 'Vesktop', link: '/vesktop' },
           { text: 'Viber', link: '/viber' },
           { text: 'Vivaldi', link: '/vivaldi' },
           { text: 'VLC', link: '/vlc' },
@@ -96,6 +127,8 @@ export const docs = [
           { text: 'WhatsApp', link: '/whatsapp-desktop' },
           { text: 'Wike', link: '/wike' },
           { text: 'WPS Office', link: '/wps-office' },
+          { text: 'Waterfox', link: '/waterfox' },
+          { text: 'Web Apps', link: '/web-apps' },
           { text: 'Xeyes', link: '/xeyes' },
           { text: 'XLSCLIENTS', link: '/xlsclients' },
           { text: 'Xmind', link: '/xmind' },
@@ -103,19 +136,34 @@ export const docs = [
           { text: 'Zoom', link: '/zoom' },
           { text: 'Zsh', link: '/zsh' },
           { text: 'Анализатор использования дисков', link: '/baobab' },
+          { text: 'Веб-браузер Epiphany', link: '/epiphany' },
           { text: 'Глаз GNOME', link: '/eog' },
           { text: 'Дела', link: '/errands' },
+          { text: 'Диски', link: '/diskutility' },
+          { text: 'Журналы', link: '/gnome-logs' },
+          { text: 'Кассета', link: '/cassette' },
+          { text: 'Календарь', link: '/gnome-calendar' },
+          { text: 'Камера', link: '/snapshot' },
+          { text: 'Карты', link: '/maps' },
+          { text: 'Калькулятор', link: '/gnome-calculator' },
+          { text: 'Консоль', link: '/console' },
+          { text: 'Контакты', link: '/gnome-contacts' },
+          { text: 'КуМир', link: '/kumir' },
           { text: 'Мой офис', link: '/my-office' },
           { text: 'Музыка', link: '/gnome-music' },
           { text: 'МТС Линк', link: '/mts-link' },
+          { text: 'Настройки', link: '/gnome-control-center' },
+          { text: 'Пароли и ключи', link: '/seahorse' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },
+          { text: 'Тест скорости', link: '/speedtest' },
+          { text: 'Терминал', link: '/terminal' },
           { text: 'Туба', link: '/tuba' },
           { text: 'Центр мониторинга системы', link: '/system-monitoring-center' },
           { text: 'Центр Приложений', link: '/gnome-software' },
           { text: 'Яндекс Браузер', link: '/yandex-browser' },
-          { text: 'Яндекс Диск', link: '/yandex-disk' },
+          { text: 'Яндекс Диск', link: '/yandex-disk' }
         ],
         collapsed: true
       },
@@ -144,15 +192,16 @@ export const docs = [
                 text: 'Безопасность',
                 items: [
                   { text: 'Нужна ли мне антивирусная программа', link: '/net-antivirus' },
-                  { text: 'Нужно ли сканировать свою электронную почту на наличие вирусов', link: '/net-email-virus' }
+                  {
+                    text: 'Нужно ли сканировать свою электронную почту на наличие вирусов',
+                    link: '/net-email-virus'
+                  }
                 ],
                 collapsed: true
               },
               {
-                text: "Веб-браузеры",
-                items: [
-                  { text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }
-                ],
+                text: 'Веб-браузеры',
+                items: [{ text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }],
                 collapsed: true
               }
             ],
@@ -163,24 +212,20 @@ export const docs = [
             items: [
               {
                 text: 'Звук',
-                items: [
-                  { text: 'Управление громкостью', link: '/gnome-volume-control' }
-                ],
+                items: [{ text: 'Управление громкостью', link: '/gnome-volume-control' }],
                 collapsed: true
               },
               {
                 text: 'Клавиатура',
                 items: [
                   { text: 'Использование других раскладок клавиатуры', link: '/keyboard-layouts' },
-                  { text: 'Сочетание клавиш', link: '/keyboard-shortcuts' },
+                  { text: 'Сочетание клавиш', link: '/keyboard-shortcuts' }
                 ],
                 collapsed: true
               },
               {
                 text: 'Тема',
-                items: [
-                  { text: 'Общая тема для всех приложений', link: '/uniform-look' },
-                ],
+                items: [{ text: 'Общая тема для всех приложений', link: '/uniform-look' }],
                 collapsed: true
               },
               {
@@ -190,12 +235,11 @@ export const docs = [
                   { text: 'Подключение дополнительного монитора', link: '/display-dual-monitors' },
                   { text: 'Масштабирование экрана', link: '/scaling-the-screen' },
                   { text: 'Изменение внешнего вида рабочего стола', link: '/look-background' },
-                  { text: 'Настройка яркости экрана', link: '/display-brightness'}
+                  { text: 'Настройка яркости экрана', link: '/display-brightness' }
                 ],
                 collapsed: true
               },
-              { text: 'Установка шрифтов', link: '/add-fonts'}
-
+              { text: 'Установка шрифтов', link: '/add-fonts' }
             ],
             collapsed: true
           }
@@ -206,11 +250,11 @@ export const docs = [
         text: 'Расширения рабочего окружения GNOME',
         link: '/extensions',
         items: [
-          { text: 'Open Weather', link: '/openweather' },
+          { text: 'OpenWeather', link: '/openweather' },
           { text: 'AppIndicator/KStatusNotifierItem', link: '/appindicator-kstatus-notifier-item' },
           { text: 'Extension List', link: '/extension-list' },
-          { text: 'U Power', link: '/u-power' },
-          { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktopicons.md' },
+          { text: 'UPower Battery', link: '/upower-battery' },
+          { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktop-icons' },
           { text: 'App menu is back', link: '/app-menu-is-back' },
           { text: 'Add to desktop', link: '/add-to-desktop' },
           { text: 'Fullscreen Avoider', link: '/fullscreen-avoider' },
@@ -219,22 +263,32 @@ export const docs = [
           { text: 'Dash to Dock', link: '/dash-to-dock' },
           { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' },
           { text: 'GSConnect', link: '/gsconnect' },
-          { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher.md' },
+          { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher' },
           { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
-          { text: 'Custom Accent Colors', link: '/custom-accent-colors.md' },
+          { text: 'Custom Accent Colors', link: '/custom-accent-colors' },
           { text: 'Blur my Shell', link: '/blur-my-shell' },
           { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' },
-          { text: 'UsbGuard Gnome', link: '/usbguard-gnome.md' }
+          { text: 'USBGuard', link: '/usbguard' }
         ],
         collapsed: true
       },
       {
         text: 'Решение проблем',
         items: [
-          { text: 'Проблема со сбросом уровня звука по истечению времени', link: '/drop-soundlevel-after-cron-workaround' },
+          {
+            text: 'Проблема со сбросом уровня звука по истечению времени',
+            link: '/drop-soundlevel-after-cron-workaround'
+          },
           { text: 'Проблема со звуком в передней панели', link: '/fix-front-panel-audio' },
-          { text: 'Проблема с отображением пользователя на экрание приветствия GDM', link: '/hidden-user-in-userlist-workaround' },
-          { text: 'Обновить названия стандартных папок в соответствутвии с локалью', link: '/change-the-language-of-the-home-user-folders-automatically' }
+          {
+            text: 'Проблема с отображением пользователя на экрание приветствия GDM',
+            link: '/hidden-user-in-userlist-workaround'
+          },
+          {
+            text: 'Обновить названия стандартных папок в соответствутвии с локалью',
+            link: '/change-the-language-of-the-home-user-folders-automatically'
+          },
+          { text: 'Использование клавиатур Дарк Проджект', link: '/dark-project-keyboard-on-linux' }
         ],
         collapsed: true
       },
@@ -242,7 +296,7 @@ export const docs = [
         text: 'Периферия и оборудование',
         items: [
           { text: 'Драйверы NVIDIA', link: '/nvidia' },
-          { text: 'Подключение USB устройств', link: '/usb-devices' },
+          { text: 'Подключение USB-устройств', link: '/usb-devices' },
           { text: 'Подключение принтера', link: '/drivers-for-printer' },
           { text: 'Подключение сканера', link: '/drivers-for-scanner' },
           { text: 'Подключение DualShock', link: '/dualshock' }
@@ -259,35 +313,63 @@ export const docs = [
           {
             text: 'Python',
             link: '/python',
-            items: [
-              { text: 'Использование Poetry', link: 'python-use-poetry' }
-            ],
+            items: [{ text: 'Использование Poetry', link: 'python-use-poetry' }],
             collapsed: true
           },
           {
             text: 'Rust',
             link: '/rust',
-            items: [
-              { text: 'Приложение на GTK4', link: 'rust-gtk4-applications' }
-            ],
+            items: [{ text: 'Приложение на GTK4', link: 'rust-gtk4-applications' }],
             collapsed: true
           },
           {
             text: 'Vala',
             link: '/vala',
-            items: [
-              { text: 'Приложение на GTK4', link: 'vala-gtk4-applications' }
-            ],
+            items: [{ text: 'Приложение на GTK4', link: 'vala-gtk4-applications' }],
             collapsed: true
           }
         ],
         collapsed: true
       },
       {
+        text: 'Cизиф',
+        link: 'sisyphus',
+        items: [
+          {
+            text: 'Etersoft-build-utils',
+            link: '/etersoft-build-utils'
+          },
+          {
+            text: 'Hasher',
+            link: '/hasher'
+          },
+          {
+            text: 'Spec',
+            link: '/spec'
+          },
+          {
+            text: 'Сборка в системе',
+            link: '/build'
+          },
+          {
+            text: 'Сборка RPM-пакетов',
+            link: '/build-packages'
+          },
+          {
+            text: 'Патчи',
+            link: '/patches'
+          }
+        ]
+      },
+      {
         text: 'Игры',
         link: '/games',
         items: [
-          { text: 'Изменение clearcpuid', link: '/clearcpuid' }
+          { text: 'Изменение clearcpuid', link: '/clearcpuid' },
+          { text: 'Mindustry', link: '/mindustry' },
+          { text: 'Sonic 3 A.I.R', link: '/sonic3-a.i.r' },
+          { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' },
+          { text: 'Space Station-14', link: '/space-station-14' }
         ],
         collapsed: true
       }
@@ -303,19 +385,20 @@ export const docs = [
       { text: 'EPM', link: '/epm' },
       { text: 'Flatpak', link: '/flatpak' },
       { text: 'Snaps', link: '/snap' },
-      { text: "Приложения для GNOME", link: '/apps-gnome' },
-      { text: "Samba", link: "/samba" }
+      { text: 'Приложения для GNOME', link: '/apps-gnome' },
+      { text: 'Samba', link: '/samba' }
     ]
   }
 ]
 
 export const reference = [
-  { text: 'Для авторов', link: '/reference/', },
+  { text: 'Для авторов', link: '/reference/' },
   {
     text: 'Создание страниц',
     base: '/reference/pages/',
     items: [
       { text: 'Внесение изменений', link: '/alteration' },
+      { text: 'Возможности Markdown', link: '/markdown-how-to' },
       { text: 'Возможности VitePress', link: '/vitepress' },
       { text: 'Общие правила', link: '/general-rules' }
     ],
@@ -327,6 +410,15 @@ export const reference = [
     items: [
       { text: 'Страница приложения', link: '/app' },
       { text: 'Страница Wiki', link: '/wiki_page' }
+    ],
+    collapsed: false
+  },
+  {
+    text: 'Контроль качества',
+    base: '/reference/tests/',
+    items: [
+      { text: 'Проверка текста на ошибки', link: '/speller' },
+      { text: 'Проверка структуры статьи', link: '/remark' }
     ],
     collapsed: false
   }

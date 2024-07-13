@@ -4,14 +4,15 @@ import { telegram, gitflic, vk } from './icons'
 import * as navbar from './../_data/navigations'
 import { normalize } from './utils'
 import { rewrites } from './paths'
+import { fileURLToPath, URL } from 'node:url'
 import languages from './theme/syntaxes'
 import * as config from './config.json'
+import { packages } from '../package-lock.json'
 export const META_DESCRIPTION = config.meta_description
-import {default as createContainer} from './theme/utils/customContainers';
-
+import { default as createContainer } from './theme/composables/customContainers'
 
 /* Markdown */
-import VitepressMarkdownTimeline from "vitepress-markdown-timeline";
+import VitepressMarkdownTimeline from 'vitepress-markdown-timeline'
 import markdownItKbd from 'markdown-it-kbd'
 import markdownItTaskLists from 'markdown-it-task-lists'
 import markdownItImplicitFigures from 'markdown-it-implicit-figures'
@@ -19,72 +20,54 @@ import markdownItEmbed from 'markdown-it-html5-embed'
 import markdownItConditionalRender from 'markdown-it-conditional-render'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
-
 /* GitLog */
 import UnoCSS from 'unocss/vite'
-import {
-  GitChangelog,
-  GitChangelogMarkdownSection
-} from '@nolebase/vitepress-plugin-git-changelog/vite'
- 
+import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
+
 /* PagePropierties */
-import { 
+import {
   PageProperties,
   PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
-
-import {
-  gitRepository,
-  gitMaxCommits,
-  gitDisplay,
-  gitRewritePath,
-  gitHeadersLocale
-} from '../_data/gitlog'
 
 export default defineConfig({
   vite: {
     plugins: [
       UnoCSS(),
       GitChangelog({
-        maxGitLogCount: gitMaxCommits,
-        repoURL: () => gitRepository,
-        rewritePaths: gitRewritePath,
+        maxGitLogCount: config.nolebase_gitlog_maxCommits,
+        repoURL: config.nolebase_gitlog_repo
       }),
       GitChangelogMarkdownSection({
-        getChangelogTitle: (_, __, { helpers }): string => {
-          return gitHeadersLocale.history_title
-        },
-        getContributorsTitle: (_, __, { helpers }): string => {
-          return gitHeadersLocale.author_title
-        },
-        excludes: [],
-        exclude: (_, { helpers }): boolean => {
-          for (var page of config.nolebase_exclude) {
-            if (helpers.idEndsWith(page))
-              return true
-          }
-          return false
-        },
-        sections: gitDisplay,
+        sections: config.nolebase_gitlog_enabled
       }),
       PageProperties(),
       PagePropertiesMarkdownSection({
         excludes: [],
         exclude: (_, { helpers }): boolean => {
-          for (var page of config.nolebase_exclude){
-            if (helpers.idEndsWith(page))
-              return null
+          for (let page of config.nolebase_exclude) {
+            if (helpers.idEndsWith(page)) return true
           }
           return false
-        },
-      }),
+        }
+      })
     ],
+    optimizeDeps: {
+      exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']
+    },
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
-        '@nolebase/vitepress-plugin-page-properties',
-      ],
+        '@nolebase/vitepress-plugin-page-properties'
+      ]
     },
+    resolve: {
+      alias: {
+        '@vitepress/theme': fileURLToPath(
+          new URL('../node_modules/vitepress/dist/client/theme-default', import.meta.url)
+        )
+      }
+    }
   },
   title: config.title,
   titleTemplate: ':title' + config.head.titleSeponator + config.title,
@@ -93,7 +76,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'theme-color', content: config.head.themeColor }],
-    ['meta', { name: 'yandex-verification', content: config.yandex_mrtrica }]
+    ['meta', { name: 'yandex-verification', content: config.yaWebmasterId }]
   ],
   lang: config.lang,
   srcDir: './docs',
@@ -128,14 +111,16 @@ export default defineConfig({
     },
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'Документация', link: 'wiki' },
+      { text: 'Документация', link: '/wiki' },
+      { text: 'Приложения GNOME', link: '/apps-gnome' },
       { text: 'Для авторов', link: '/reference/' },
       {
-        text: 'О проекте', items: [
-          { text: 'О проекте', link: '/about' },
-          { text: 'Участники', link: '/contributions' }
+        text: 'О проекте',
+        items: [
+          { text: 'О проекте', link: 'about' },
+          { text: 'Участники', link: 'contributions' }
         ]
-      },
+      }
     ],
     sidebar: { '/': navbar.docs, '/reference/': navbar.reference },
     socialLinks: [
@@ -151,7 +136,10 @@ export default defineConfig({
         },
         link: 'https://vk.com/alt_gnome'
       },
-      { icon: 'github', link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki' }
+      {
+        icon: 'github',
+        link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki'
+      }
     ],
     editLink: {
       pattern: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki/edit/main/docs/:path',
@@ -173,7 +161,7 @@ export default defineConfig({
     darkModeSwitchLabel: 'Тема',
     outlineTitle: 'Оглавление',
     outline: {
-      level: [2, 3],
+      level: [2, 3]
     },
     notFound: {
       title: 'Страница не найдена',
@@ -182,7 +170,10 @@ export default defineConfig({
     },
     footer: {
       message: 'Содержание доступно <a href="/licence.html">по лицензии MIT</a>',
-      copyright: '2024 ALT Gnome Wiki, разработано на платформе <a href="//vitepress.dev/">VitePress 1.0.0-rc.45</a>'
+      copyright: `
+        2023-${new Date().getFullYear()} ALT Gnome Wiki,
+        разработано на платформе <a href="//vitepress.dev/">VitePress ${packages['node_modules/vitepress'].version}</a>
+      `
     },
     asideMeta: {
       keywords: {
@@ -193,6 +184,10 @@ export default defineConfig({
         circle: {
           name: 'GNOME Circle',
           type: 'success'
+        },
+        dev: {
+          name: 'GNOME Development',
+          type: 'danger'
         },
         adaptive: {
           name: 'Адаптивное',
@@ -206,6 +201,10 @@ export default defineConfig({
           name: 'Региональные ограничения',
           type: 'danger'
         },
+        oobe: {
+          name: 'Предустановлено',
+          type: 'warning'
+        },
         dontthemes: {
           name: 'Please don’t theme',
           type: 'success-1'
@@ -216,33 +215,44 @@ export default defineConfig({
           metadata_license: 'Лицензия',
           homepage: 'Сайт проекта',
           help: 'Помощь',
+          faq: 'Вопросы и ответы',
           translate: 'Помощь в переводе',
           bugtracker: 'Сообщить о проблеме'
-        },
+        }
       },
       links: {
         donation: {
           anchor: 'Поддержать автора',
           target: '_blank',
-          style: '--agw-btn-bg: var(--vp-c-purple-soft); --agw-btn-color: var(--vp-c-purple-3); --agw-btn-hover-bg:var(--vp-c-purple-3); --agw-btn-hover-color: var(--vp-c-white);'
+          style:
+            '--agw-btn-bg: var(--vp-c-purple-soft); --agw-btn-color: var(--vp-c-purple-3); --agw-btn-hover-bg:var(--vp-c-purple-3); --agw-btn-hover-color: var(--vp-c-white);'
         },
         sisyphus: {
           anchor: 'Сизиф',
           target: '_blank',
           baseUrl: '//packages.altlinux.org/ru/sisyphus/srpms/',
-          style: '--agw-btn-bg: var(--vp-c-yellow-dimm-1); --agw-btn-color: var(--vp-c-yellow-darker); --agw-btn-hover-bg:var(--vp-c-yellow-dark); --agw-btn-hover-color: var(--vp-c-white);'
+          style:
+            '--agw-btn-bg: var(--vp-c-yellow-dimm-1); --agw-btn-color: var(--vp-c-yellow-darker); --agw-btn-hover-bg:var(--vp-c-yellow-dark); --agw-btn-hover-color: var(--vp-c-white);'
         },
         flatpak: {
           anchor: 'Flatpak',
           target: '_blank',
           baseUrl: '//flathub.org/apps/',
-          style: '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
+          style:
+            '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
         },
         snap: {
           anchor: 'Snapcraft',
           target: '_blank',
           baseUrl: '//snapcraft.io/',
-          style: '--agw-btn-bg: var(--vp-c-orange-dimm-1); --agw-btn-color: var(--vp-c-orange-darker); --agw-btn-hover-bg:var(--vp-c-orange-dark); --agw-btn-hover-color: var(--vp-c-white);'
+          style:
+            '--agw-btn-bg: var(--vp-c-orange-dimm-1); --agw-btn-color: var(--vp-c-orange-darker); --agw-btn-hover-bg:var(--vp-c-orange-dark); --agw-btn-hover-color: var(--vp-c-white);'
+        },
+        about_app: {
+          anchor: 'Подробнее',
+          target: '_blank',
+          style:
+            '--agw-btn-bg: var(--vp-c-green-dimm-1); --agw-btn-color: var(--vp-c-green-darker); --agw-btn-hover-bg:var(--vp-c-green-dark); --agw-btn-hover-color: var(--vp-c-white);'
         }
       }
     }
@@ -255,27 +265,26 @@ export default defineConfig({
       warningLabel: 'Внимание',
       dangerLabel: 'Осторожно',
       infoLabel: 'Информация',
-      detailsLabel: 'Подробнее',
+      detailsLabel: 'Подробнее'
     },
     config: (md) => {
       for (const [name, opts] of config.alignment_containers) {
-        md.use(...createContainer(name, opts, md));
+        md.use(...createContainer(name, opts, md))
       }
-      md.use(markdownItKbd);
-      md.use(markdownItTaskLists);
-      md.use(VitepressMarkdownTimeline);
+      md.use(markdownItKbd)
+      md.use(markdownItTaskLists)
+      md.use(VitepressMarkdownTimeline)
       md.use(markdownItImplicitFigures, {
         figcaption: 'title',
         copyAttrs: '^class$'
-      });
+      })
       md.use(markdownItEmbed, {
         html5embed: {
-          useImageSyntax: true, // Enables video/audio embed with ![]() syntax (default)
+          useImageSyntax: true // Enables video/audio embed with ![]() syntax (default)
         }
-      });
-      md.use(markdownItConditionalRender);
-      md.use(tabsMarkdownPlugin);
-
+      })
+      md.use(markdownItConditionalRender)
+      md.use(tabsMarkdownPlugin)
     }
   },
   transformPageData: (pageData: normalize) => {
@@ -294,13 +303,11 @@ export default defineConfig({
       ['meta', { name: 'og:site_name', content: config.title }],
       ['meta', { name: 'og:image', content: config.host + image }],
       ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-      ['meta', { name: 'twitter:image', content: config.host + image }],
+      ['meta', { name: 'twitter:image', content: config.host + image }]
     )
 
     if (pageData.frontmatter.layout !== 'home') {
-      pageData.frontmatter.head.push(
-        ['link', { rel: 'canonical', href: `${url}.html` }],
-      )
+      pageData.frontmatter.head.push(['link', { rel: 'canonical', href: `${url}.html` }])
       pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString(config.lang)}`
     }
   }

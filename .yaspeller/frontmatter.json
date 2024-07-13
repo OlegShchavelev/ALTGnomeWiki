@@ -9,5 +9,7 @@
   "logo",
   "packageName",
   "pluginID",
-  "progress"
+  "progress",
+  "donationlink",
+  "basealt"
 ]

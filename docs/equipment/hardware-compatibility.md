@@ -120,7 +120,6 @@
 | Ryzen 7 5800H | :green_circle: | - |
 | Ryzen 7 5800HS | :green_circle: | - |
 | Ryzen 7 7800X3D | :green_circle: | - |
-| Ryzen 7 5800H | :green_circle: | - |
 
 #### INTEL
 | Модель | Состояние | Примечание |

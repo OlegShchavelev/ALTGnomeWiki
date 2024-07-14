@@ -128,22 +128,3 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
-
-/**
- * Component: GitChangeLog
- * -------------------------------------------------------------------------- */
-.bg-\$vp-custom-block-details-bg,
-.bg-vp-custom-block-details-bg {
-  background-color: var(--vp-c-gray-3) !important;
-}
-
-.vp-nolebase-git-changelog-contributors a {
-  text-decoration: none;
-}
-
-/**
- * Component: Page Properties
- * -------------------------------------------------------------------------- */
-.VPDocFooter[data-v-29ec59c0] {
-  margin-top: 10px !important;
-}

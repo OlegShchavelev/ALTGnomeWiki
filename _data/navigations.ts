@@ -154,6 +154,7 @@ export const docs = [
           { text: 'МТС Линк', link: '/mts-link' },
           { text: 'Настройки', link: '/gnome-control-center' },
           { text: 'Пароли и ключи', link: '/seahorse' },
+          { text: 'Погода', link: '/gnome-weather' },
           { text: 'Р7-Офис', link: '/r7-office' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },

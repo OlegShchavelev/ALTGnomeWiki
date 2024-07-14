@@ -9,6 +9,7 @@ export const docs = [
         link: '/download',
         items: [
           { text: 'Установка на Mac', link: '/macbook' },
+          { text: 'Создание загрузочного диска ALT Regular Gnome', link: '/bootable-drive' },
           { text: 'Установка рядом с MacOS', link: '/install-on-macbook-with-opencore-parallel' }
         ],
         collapsed: true

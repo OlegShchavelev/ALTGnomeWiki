@@ -42,17 +42,17 @@ epm -i altmediawriter
 
 :::
 
-[Окно ALT Media Writer](/bootable-drive/bootable-drive-alt-media-writer-1.png)
+![Окно ALT Media Writer](/bootable-drive/bootable-drive-alt-media-writer-1.png)
 
 2. Откройте AMW и выберите пункт `Другой образ`:
 
-[ALT Media Writer с выбранным образом](/bootable-drive/bootable-drive-alt-media-writer-2.png)
+![ALT Media Writer с выбранным образом](/bootable-drive/bootable-drive-alt-media-writer-2.png)
 
 3. Нажмите кнопку `Записать на диск` и после окончания записи, загрузочный диск будет готов:
 
-[Начало записи образа в Окно ALT Media Writer](/bootable-drive/bootable-drive-alt-media-writer-2.png)
+![Начало записи образа в Окно ALT Media Writer](/bootable-drive/bootable-drive-alt-media-writer-2.png)
 
-[Конец записи образа в ALT Media Writer](/bootable-drive/bootable-drive-alt-media-writer-2.png)
+![Конец записи образа в ALT Media Writer](/bootable-drive/bootable-drive-alt-media-writer-2.png)
 
 ## Ventoy
 
@@ -70,15 +70,15 @@ cd ventoy-***
 
 Где `***` — версия дистрибутива.
 
-[Окно Ventoy](/bootable-drive/bootable-drive-ventoy-1.png)
+![Окно Ventoy](/bootable-drive/bootable-drive-ventoy-1.png)
 
 3. Если накопитель не был вставлен до открытия программы, нажмите кнопку обновления. Выберите свой USB-накопитель в интерфейсе программы:
 
-[Ventoy с выбранным накопителем](/bootable-drive/bootable-drive-ventoy-2.png)
+![Ventoy с выбранным накопителем](/bootable-drive/bootable-drive-ventoy-2.png)
 
 4. Нажмите кнопку `Install`, а также `OK` в двух следующих окнах подтверждения и дождитесь оповещения о завершении установки:
 
-[Оповещение Ventoy о завершении установки](/bootable-drive/bootable-drive-ventoy-3.png)
+![Оповещение Ventoy о завершении установки](/bootable-drive/bootable-drive-ventoy-3.png)
 
 5. Просто скопируйте ISO образ системы на носитель любым удобным способом и загрузочный диск готов
 
@@ -126,18 +126,42 @@ cd balenaEtcher-linux-x64
 
 :::
 
-[Окно Balena Etcher](/bootable-drive/bootable-drive-balena-etcher-1.png)
+![Окно Balena Etcher](/bootable-drive/bootable-drive-balena-etcher-1.png)
 
 2. В интерфейсе программы выберите образ и накопитель:
 
-[Balena Etcher с выбранным образом](/bootable-drive/bootable-drive-balena-etcher-2.png)
+![Balena Etcher с выбранным образом](/bootable-drive/bootable-drive-balena-etcher-2.png)
 
-[Выбор накопителя в Balena Etcher](/bootable-drive/bootable-drive-balena-etcher-3.png)
+![Выбор накопителя в Balena Etcher](/bootable-drive/bootable-drive-balena-etcher-3.png)
 
-[Balena Etcher готов к записи образа](/bootable-drive/bootable-drive-balena-etcher-4.png)
+![Balena Etcher готов к записи образа](/bootable-drive/bootable-drive-balena-etcher-4.png)
 
 3. Нажмите кнопку `Flash!` для начала записи образа на накопитель. После завершения записи накопитель будет готов к загрузке.
 
-[Начало записи образа в Balena Etcher](/bootable-drive/bootable-drive-balena-etcher-5.png)
+![Начало записи образа в Balena Etcher](/bootable-drive/bootable-drive-balena-etcher-5.png)
 
-[Конец записи образа в Balena Etcher](/bootable-drive/bootable-drive-balena-etcher-6.png)
+![Конец записи образа в Balena Etcher](/bootable-drive/bootable-drive-balena-etcher-6.png)
+
+## Rufus
+
+[Rufus](https://rufus.ie) — утилита для форматирования и создания загрузочных флешек, карт памяти и т.д. из-под Windows
+
+1. Загрузите установщик или переносную версию (с постфиксом `p`) и запустите программ:
+
+![Окно Rufus](/bootable-drive/bootable-drive-rufus-1.png)
+
+2. Выберите ISO образ и нажмите кнопку `СТАРТ`:
+
+![Rufus с выбранным образом](/bootable-drive/bootable-drive-rufus-2.png)
+
+3. Выберите режим записи, нажмите кнопку `ОК` в этом окне и следующем окне подтверждения:
+
+![Окно Rufus с выбором режима записи](/bootable-drive/bootable-drive-rufus-3.png)
+
+![Окно Rufus с подтверждением](/bootable-drive/bootable-drive-rufus-4.png)
+
+4. Дождитесь окончания записи, и загрузочная флешка будет готова:
+
+![Начало записи образа в Rufus](/bootable-drive/bootable-drive-rufus-5.png)
+
+![Конец записи образа в Rufus](/bootable-drive/bootable-drive-rufus-6.png)

@@ -75,7 +75,7 @@
 | FIFINE | K688 | USB | :green_circle: | - | - |
 
 ### Внешние сетевые карты
-| Производитель | Модель | WIFI | Bluetooth | ПО | Примечание |
+| Производитель | Модель | WiFi | Bluetooth | ПО | Примечание |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | Buro | BU-BT40A | - | :green_circle: | - | - |
 | Realtek | RTL8811CE USB | :large_blue_circle: | - | kernel-modules-rtl8821cu-* | - |
@@ -174,7 +174,7 @@
 | Realtek | RTL8168D | kernel-modules-r8168-* | :green_circle: | - |
 | Realtek | RTL8168DP | kernel-modules-r8168-* | :green_circle: | - |
 
-### Сетевые адаптеры Wi-Fi / Bluetooth
+### Сетевые адаптеры WiFi / Bluetooth
 | Производитель | Модель | Драйвер | WiFi | Bluetooth | Примечание |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | Broadcom | BCM4311 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
@@ -266,7 +266,7 @@
   * `HDMI` - устройство подключается через интерфейс HDMI.
   * `DisplayPort` - устройство подключается через интерфейс DisplayPort.
   * `RJ45` - устройство подключается через интерфейс RJ45.
-  * `Wi-Fi` - устройство подключается через интерфейс Wi-Fi.
+  * `WiFi` - устройство подключается через интерфейс Wi-Fi.
   * `Bluetooth` - устройство подключается через интерфейс Bluetooth.
   * `SD` - устройство подключается через интерфейс SD.
   * `microSD` - устройство подключается через интерфейс microSD.

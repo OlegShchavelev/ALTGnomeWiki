@@ -155,28 +155,6 @@
 }
 
 /**
- * VPHomeSponsors
- * -------------------------------------------------------------------------- */
-
-.vp-sponsor-grid.big .vp-sponsor-grid-image {
-  max-width: 170px;
-  max-height: 120px;
-}
-
-.VPHomeSponsors .message {
-  max-width: 800px;
-}
-
-.VPHome .VPHomeSponsors {
-  margin-top: 0 !important;
-}
-
-/*Dark theme btn Sponsors*/
-.dark .vp-sponsor-grid-item:hover {
-  background: var(--vp-c-brand-darker);
-}
-
-/**
  * implicitFigures
  * -------------------------------------------------------------------------- */
 figure > figcaption {

@@ -22,13 +22,14 @@ const cardProps = computed(() => {
   
   const is_adaptive = props.app.appstream?.keywords?.includes('adaptive') ? ['adaptive'] : []
   const is_donttheme = props.app.appstream?.keywords?.includes('dontthemes') ? ['dontthemes'] : []
+  const is_oobe = props.app.appstream?.keywords?.includes('oobe') ? ['oobe'] : []
 
   return {
     icon: icon,
     name: name,
     summary: summary,
     links: getLinks({ ...repos, ...{ about_app: props.app.about_app }, snap: undefined }, config.links),
-    keywords: getKeywords([...is_adaptive, ...is_donttheme], config.keywords)
+    keywords: getKeywords([...is_adaptive, ...is_donttheme, ...is_oobe], config.keywords)
   }
 })
 </script>

@@ -355,6 +355,8 @@ systemctl enable --now switcheroo-control.service
 
 После установки приложения switcheroo-control, в меню появится пункт «Запустить с помощью выделенной видеокарты»
 
+![Запустить с помощью выделенной видеокарты](/nvidia/switcheroo-control-1.jpg)
+
 #### EnvyControl
 
 EnvyControl — CLI-утилита, которая позволяет выбирать режим работы гибридной графики:

@@ -297,7 +297,9 @@ export const docs = [
       },
       {
         text: 'Периферия и оборудование',
+        link: '/hardware-compatibility',
         items: [
+          { text: 'Аппаратная совместимость', link: '/hardware-compatibility' },
           { text: 'Драйверы NVIDIA', link: '/nvidia' },
           { text: 'Подключение USB-устройств', link: '/usb-devices' },
           { text: 'Подключение принтера', link: '/drivers-for-printer' },

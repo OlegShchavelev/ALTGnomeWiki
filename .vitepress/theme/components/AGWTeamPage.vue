@@ -1,4 +1,3 @@
-ву
 <script setup lang="ts">
 import { VPTeamPage, VPTeamPageTitle, VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
 
@@ -56,15 +55,18 @@ const { frontmatter } = useData()
       <div v-if="!teamSorting.includes('role')">
         <VPTeamMembers :members="sortMembers(gitOnline, teamSorting)" />
       </div>
+
+      <Content class="container" />
     </VPTeamPage>
 
-    <VPTeamPage v-if="!gitOnline.length">
+    <VPTeamPage v-else>
       <VPTeamPageTitle>
         <template v-if="frontmatter.longtitle" #title>
           {{ frontmatter.longtitle }}
         </template>
       </VPTeamPageTitle>
       <VPTeamMembers :members="contributions" />
+      <Content class="container" />
     </VPTeamPage>
   </ClientOnly>
 </template>
@@ -87,5 +89,22 @@ const { frontmatter } = useData()
 
 .team {
   margin-bottom: 40px;
+}
+
+.container {
+  margin: 40px auto;
+  max-width: 1152px;
+  padding: 0 64px;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    padding: 0;
+  }
+}
+@media (max-width: 960px) {
+  .container {
+    padding: 0 48px;
+  }
 }
 </style>

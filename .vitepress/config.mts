@@ -11,6 +11,8 @@ import { packages } from '../package-lock.json'
 export const META_DESCRIPTION = config.meta_description
 import { default as createContainer } from './theme/composables/customContainers'
 
+import vueDevTools from 'vite-plugin-vue-devtools'
+
 /* Markdown */
 import VitepressMarkdownTimeline from 'vitepress-markdown-timeline'
 import markdownItKbd from 'markdown-it-kbd'
@@ -33,6 +35,7 @@ import {
 export default defineConfig({
   vite: {
     plugins: [
+      vueDevTools(),
       UnoCSS(),
       GitChangelog({
         maxGitLogCount: config.nolebase_gitlog_maxCommits,

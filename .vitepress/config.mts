@@ -230,7 +230,7 @@ export default defineConfig({
         sisyphus: {
           anchor: 'Сизиф',
           target: '_blank',
-          baseUrl: '//packages.altlinux.org/ru/sisyphus/srpms/',
+          baseUrl: '//packages.altlinux.org/ru/',
           style:
             '--agw-btn-bg: var(--vp-c-yellow-dimm-1); --agw-btn-color: var(--vp-c-yellow-darker); --agw-btn-hover-bg:var(--vp-c-yellow-dark); --agw-btn-hover-color: var(--vp-c-white);'
         },

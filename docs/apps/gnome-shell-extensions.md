@@ -10,7 +10,7 @@ aggregation:
   flatpak:
     id: org.gnome.Extensions
     build: official
-  sisyphus: gnome-shell-extensions
+  sisyphus: gnome-extensions-app
 appstream:
   id: gnome-shell-extensions
   name: Расширения

@@ -162,6 +162,7 @@ export const docs = [
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },
           { text: 'Символы', link: '/gnome-characters' },
+          { text: 'Системный монитор', link: '/gnome-system-monitor' },
           { text: 'Тест скорости', link: '/speedtest' },
           { text: 'Терминал', link: '/terminal' },
           { text: 'Туба', link: '/tuba' },

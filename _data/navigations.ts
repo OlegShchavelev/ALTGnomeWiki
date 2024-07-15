@@ -158,7 +158,7 @@ export const docs = [
           { text: 'Погода', link: '/gnome-weather' },
           { text: 'Подключения', link: '/gnome-connections' },
           { text: 'Р7-Офис', link: '/r7-office' },
-          { text: 'Pасширения', link: '/gnome-shell-extensions' },
+          { text: 'Pасширения', link: '/extensions-app' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },
           { text: 'Символы', link: '/gnome-characters' },

@@ -10,9 +10,11 @@ aggregation:
   flatpak:
     id: org.gnome.Extensions
     build: official
-  sisyphus: gnome-shell
+  sisyphus: 
+    id: gnome-extensions-app
+    url: sisyphus/srpms/gnome-shell
 appstream:
-  id: gnome-shell-extensions
+  id: org.gnome.Extensions
   name: Расширения
   icon: /gnome-shell-extensions/logo.png
   summary: Управление расширениями GNOME Shell
@@ -34,9 +36,6 @@ appstream:
 
 GNOME Extensions занимается обновлением расширений, настройкой параметров расширений и удалением или отключением нежелательных расширений.
 
-::: info
-Для работы приложения требуется GNOME версии 3.36 или новее.
-:::
 
 <AGWGallery />
 

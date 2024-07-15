@@ -11,11 +11,11 @@
 ```shell-vue[apt-get]
 su -
 apt-get update
-apt-get install {{ $frontmatter?.aggregation?.sisyphus }}
+apt-get install {{ $frontmatter?.aggregation?.sisyphus?.id ?? $frontmatter?.aggregation?.sisyphus }}
 ```
 
 ```shell-vue[epm]
-epm -i {{ $frontmatter?.aggregation?.sisyphus }}
+epm -i {{ $frontmatter?.aggregation?.sisyphus?.id ?? $frontmatter?.aggregation?.sisyphus }}
 ```
 
 :::

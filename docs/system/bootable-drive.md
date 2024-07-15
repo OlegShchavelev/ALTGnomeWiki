@@ -165,3 +165,47 @@ cd balenaEtcher-linux-x64
 ![Начало записи образа в Rufus](/bootable-drive/bootable-drive-rufus-5.png)
 
 ![Конец записи образа в Rufus](/bootable-drive/bootable-drive-rufus-6.png)
+
+## Impression
+
+[Impression](https://apps.gnome.org/ru/Impression) — утилита GNOME Apps для создания загрузочного диска в три клика
+
+1. Установите Impression:
+
+**Установка через терминал**
+
+::: code-group
+
+```shell-vue[apt-get]
+su -
+apt-get update
+apt-get install impression
+```
+
+```shell-vue[epm]
+epm -i impression
+```
+
+:::
+
+**Установка c помощью Flatpak**
+
+```shell-vue
+flatpak install flathub io.gitlab.adhami3310.Impression
+```
+
+2. Выберите пункт `Другой файл...` и выберите образ:
+
+![Окно Impression](/bootable-drive/bootable-drive-impression-1.png)
+
+3. Выберите носитель для записи образа:
+
+![Выбор носителя в Impression](/bootable-drive/bootable-drive-impression-2.png)
+
+4. Подтвердите начало записи, и после окончания процесса загрузочный диск будет готов:
+
+![Подтверждение записи в Impression](/bootable-drive/bootable-drive-impression-3.png)
+
+![Начало записи образа в Impression](/bootable-drive/bootable-drive-impression-4.png)
+
+![Конец записи образа в Impression](/bootable-drive/bootable-drive-impression-5.png)

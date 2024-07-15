@@ -1,6 +1,7 @@
 <script setup lang="ts">
 export interface Links {
   id: string
+  url: string
   baseUrl: string
   anchor: string
   blank: string
@@ -10,14 +11,21 @@ export interface Links {
 const props = defineProps<{
   links: Links
 }>()
+console.log(props)
 </script>
 
 <template>
   <div>
     <template v-for="link in links">
-      <a :href="(link.baseUrl ?? '') + link.id" :target="link.blank" class="btn" :style="link.style">{{
-        link.anchor
-      }}</a>
+      <a
+        :href="
+          (link.baseUrl ?? '') + (link.anchor == 'Сизиф' ? link.url ?? 'sisyphus/srpms/' + link.id : link.id)
+        "
+        :target="link.blank"
+        class="btn"
+        :style="link.style"
+        >{{ link.anchor }}</a
+      >
     </template>
   </div>
 </template>

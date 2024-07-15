@@ -23,7 +23,7 @@ import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
 
 /* Nolebase ER */
 
-import { 
+import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
@@ -32,7 +32,6 @@ import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
 import { ERlocales, GitLocales, PPLocales, PPMarkdown } from '../../_data/lexicon.ts'
-
 
 /* Nolebase PP */
 
@@ -49,7 +48,6 @@ import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-chang
 import { contributions } from '../../_data/team.ts'
 
 import { data as gitOnline } from './loaders/gitlogDataLoader.data.ts'
-
 
 /* Stylesheets */
 import 'uno.css'
@@ -79,8 +77,8 @@ export default {
           webvisor: true
         }
       }
-    }),
-      ctx.app.component('AGWGallery', AGWGallery)
+    })
+    ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('contribution', AGWTeamPage)
     ctx.app.component('GnomeAppsList', AGWGnomeAppsList)
@@ -89,7 +87,7 @@ export default {
       locales: PPLocales,
       properties: PPMarkdown
     } as NEROptions)
-    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, {locales: ERlocales} as Options)
+    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, { locales: ERlocales } as Options)
     ctx.app.use(NolebaseGitChangelogPlugin, {
       locales: GitLocales,
       mapAuthors: gitOnline.length ? gitOnline : contributions

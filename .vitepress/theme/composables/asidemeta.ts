@@ -21,7 +21,9 @@ export const getLinks = (data: any, config: {}) => {
   const _data = []
 
   Object.entries(data).forEach(([key, value]) => {
-    value && config[key] ? (_data[key] = Object.assign({}, { id: value?.id ?? value }, config[key])) : {}
+    value && config[key]
+      ? (_data[key] = Object.assign({}, { id: value?.id ?? value, url: value?.url ?? '' }, config[key]))
+      : {}
   })
 
   return Object.assign({}, _data)

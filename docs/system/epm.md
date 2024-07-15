@@ -91,6 +91,10 @@ epm play [options] [argument]
 epm play telegram
 ```
 
+:::info
+Чтобы получить актуальный список приложений, воспользуйтесь командой `epm play` в терминале или [посетите сайт](https://download.etersoft.ru/pub/download/epm-app-versions/epm-play-list.txt)
+:::
+
 Для установки альтернативной версии приложения:
 
 ```shell
@@ -147,6 +151,12 @@ epm play telegram
 ```
 
 ### Работа со списком приложений
+
+Получить список доступных к установке приложений:
+
+```shell
+epm play
+```
 
 Получить список установленных приложений:
 

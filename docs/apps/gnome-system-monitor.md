@@ -1,6 +1,6 @@
 ---
 gallery:
-  title: Галерея Символов
+  title: Галерея GNOME System Monitor
   type: slider
   items:
     - src: /gnome-system-monitor/sc-1.png

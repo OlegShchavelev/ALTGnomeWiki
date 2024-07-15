@@ -161,6 +161,7 @@ export const docs = [
           { text: 'Pасширения', link: '/gnome-shell-extensions' },
           { text: 'Ресурсы', link: '/resources' },
           { text: 'Сканер документов', link: '/simple-scan' },
+          { text: 'Символы', link: '/gnome-characters' },
           { text: 'Тест скорости', link: '/speedtest' },
           { text: 'Терминал', link: '/terminal' },
           { text: 'Туба', link: '/tuba' },

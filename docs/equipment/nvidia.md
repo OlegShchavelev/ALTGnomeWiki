@@ -1183,7 +1183,7 @@ _EOF_
 
 - Перейдите в режим root:
 
-```
+```shell
 su -
 ```
 
@@ -1203,31 +1203,31 @@ epm -e nvidia_glx_common
 
 - Удалите `initcall_blacklist` и `nvidia-drm.modeset`, если они есть:
 
-```
+```shell
 mcedit /etc/sysconfig/grub2
 ```
 
 - Сгенерируйте `grub.cfg`
 
-```
+```shell
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 - Удалите ссылку на `61-gdm.rules`, если она есть
 
-```
+```shell
 rm /etc/udev/rules.d/61-gdm.rules
 ```
 
 - Удалите правила, запрещающие Nouveau, если они есть:
 
-```
+```shell
 rm /etc/modprobe.d/blacklist-nvidia-x11.conf
 ```
 
 - Удалите изменение размещения видеопамяти, если оно есть:
 
-```
+```shell
 rm /etc/modprobe.d/nvidia_videomemory_allocation.conf
 ```
 

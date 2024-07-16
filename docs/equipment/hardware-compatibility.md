@@ -92,7 +92,6 @@
 | LG | 24MK430H | HDMI | :green_circle: | FHD75HZ |
 | Xiaomi | Redmi Display 27 | HDMI | :green_circle: | FHD75HZ |
 
-
 ### Графические планшеты
 | Производитель | Модель | Состояние | ПО | Примечание |
 | :---: | :---: | :---: | :---: | :---: |
@@ -143,7 +142,6 @@
 | :---: | :---: | :---: | :---: | :---: |
 | ASRock | Radeon RX 6400 | AMDGPU | :green_circle: | - |
 | Sapphire | Radeon RX570 | AMDGPU | :green_circle: | - |
-
 
 #### NVIDIA
 | Производитель | Модель | Драйвер | Состояние | Примечание |

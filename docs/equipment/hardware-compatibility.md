@@ -115,6 +115,7 @@
 #### AMD
 | Модель | Состояние | Примечание |
 | :---: | :---: | :---: |
+| Ryzen 5 3600 | :green_circle: | - |
 | Ryzen 7 3700X | :green_circle: | - |
 | Ryzen 7 4800HS | :green_circle: | - |
 | Ryzen 7 5800H | :green_circle: | - |
@@ -144,6 +145,7 @@
 | Apple | GeForce GT 750M Mac (10de:0fe9) | NOUVEAU | :green_circle: | firmware-nouveau-340.108-alt1 |
 | ASUS | GeForce GTX 1660 Super TUF Gaming (10de:21c4) | NOUVEAU | :green_circle: | - |
 | ASUS | GeForce GTX 1660 Super TUF Gaming (10de:21c4) | NVIDIA | :green_circle: | - |
+| GYGABYTE | GeForce RTX 3070 TI (GV-N307TGAMING OC-8GD) (10de:2482) | NVIDIA | :green_circle: | Wayland работает |
 | Palit | GeForce RTX 4080 Plus OC () | NOUVEAU | :yellow_circle: | 550x не работают |
 
 #### INTEL
@@ -167,6 +169,7 @@
 | Realtek | RTL8111CP | kernel-modules-r8168-* | :green_circle: | - |
 | Realtek | RTL8111D | kernel-modules-r8168-* | :green_circle: | - |
 | Realtek | RTL8111DP | kernel-modules-r8168-* | :green_circle: | - |
+| Realtek | RTL8125 2.5GbE (10ec:8125) | kernel-modules-r8169 | :green_circle: | - | - |
 | Realtek | RTL8168 | kernel-modules-r8168-* | :green_circle: | - |
 | Realtek | RTL8168B | kernel-modules-r8168-* | :green_circle: | - |
 | Realtek | RTL8168C | kernel-modules-r8168-* | :green_circle: | - |
@@ -187,6 +190,7 @@
 | Broadcom | BCM43227 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
 | Broadcom | BCM43228 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
 | Broadcom | BCM4360 (14e4:43a0) | kernel-modules-bcmwl-* | :green_circle: | :green_circle: | - |
+| MEDIATEK | MT7921K (RZ608) Wi-Fi 6E 80MHz (14c3:0608) | - | :green_circle: | :green_circle: | - |
 | Realtek | RTL8188EU | kernel-modules-rtl8188eu-* | :large_blue_circle: | - | - |
 | Realtek | RTL8192EU | kernel-modules-rtl8192eu-* | :large_blue_circle: | - | - |
 | Realtek | RTL8812AU | kernel-modules-rlt8812au-* | :large_blue_circle: | - | - |
@@ -198,6 +202,15 @@
 | Производитель | Модель  | Драйвер | Состояние | Примечание |
 | :---: | :---: | :---: | :---: | :---: |
 | - | - | - | - | - |
+| GIGABYTE | B550 Aorus Elite AX, 500 Series Chipset SATA Controller (1022:43eb) | SATA | :green_circle: | - |
+| GIGABYTE | B550 Aorus Elite AX, 500 Series Chipset USB 3.1 XHCI Controller  (1022:43ee) | USB | :green_circle: | - |
+| Realtek | RTS5762 NVMe SSD Controller (10ec:5762) | NVMe | :green_circle: | - |
+
+### Запоминающие устройства
+| Производитель | Модель | Тип подключения | Состояние | Примечание |
+| :---: | :---: | :---: | :---: | :---: |
+| ADATA | LEGEND 960 NVMe SSD (1cc1:622a) | NVMe | :green_circle: | - |
+
 
 ## Правила добавления/оформления данных в таблицах
 1. Все данные должны быть структурированы в таблицы.

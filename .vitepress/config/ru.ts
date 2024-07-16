@@ -139,7 +139,7 @@ export const ru = defineConfigWithTheme({
             )
 
             if (pageData.frontmatter.layout !== 'home') {
-                pageData.frontmatter.head.push(['link', { rel: 'canonical', href: `${url}.html` }])
+                pageData.frontmatter.head.push(['link', { rel: 'canonical', href: `${'https://alt-gnome.wiki/' + normalize(pageData.relativePath)}.html` }])
                 pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString('ru-RU')}`
             }
         }

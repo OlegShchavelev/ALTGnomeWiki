@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
 import { telegram, vk } from '../icons'
 import { rewrites } from '../paths'
+import { normalize } from '../utils'
 
 /* Config */
 import * as config from '../config.json'
@@ -35,6 +36,7 @@ import {
     PageProperties,
     PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
+import { headTransformer } from './plugins'
 
 
 export const shared = defineConfig({
@@ -164,5 +166,16 @@ export const shared = defineConfig({
             md.use(markdownItConditionalRender)
             md.use(tabsMarkdownPlugin)
         }
+    },
+    transformPageData: (pageData: normalize) => {
+      if (pageData.filePath.split('/')[0] in Object.keys(headTransformer)){
+        pageData.frontmatter.head ??= []
+        headTransformer[pageData.filePath.split('/')[0]].frontmatterHead(pageData, normalize)
+        headTransformer[pageData.filePath.split('/')[0]].notHomeFrontmatter(pageData, normalize)
+      } else {
+        pageData.frontmatter.head ??= []
+        headTransformer['ru-RU'].frontmatterHead(pageData, normalize)
+        headTransformer['ru-RU'].notHomeFrontmatter(pageData, normalize)
+      }
     }
 })

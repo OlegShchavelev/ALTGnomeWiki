@@ -60,6 +60,7 @@
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | COMMO | One | 3.5mm | :green_circle: | - | - |
 | COMMO | One | Bluetooth | :green_circle: | - | - |
+| SENNHEISER | HD458BT | Bluetooth | :green_circle: | - | - |
 | FIFINE | H8 | 3.5mm | :green_circle: | - | - |
 
 ### Веб-камеры
@@ -81,6 +82,7 @@
 | Realtek | RTL8811CE USB | :large_blue_circle: | - | kernel-modules-rtl8821cu-* | - |
 | Realtek | RTL8821CU USB |  :large_blue_circle: | - | kernel-modules-rtl8821cu-* | - |
 | TP-Link | TL-WN725N | :green_circle: | - | - | - |
+| TP-Link | UB500 | - | :green_circle: | - | - |
 
 ### Мониторы
 | Производитель | Модель | Тип подключения | Состояние | Примечание |
@@ -88,6 +90,7 @@
 | Бештау | M27/2KP | HDMI/DP | :green_circle: | QHD165HZ(HDMI,DP) |
 | IIYAMA | PL2792Q | HDMI/DP | :green_circle: | QHD60HZ(HDMI), QHD70HZ(DP) |
 | Xiaomi | Redmi Display 27 | HDMI | :green_circle: | FHD75HZ |
+| LG | 24MK430H | HDMI | :green_circle: | FHD75HZ |
 
 ### Графические планшеты
 | Производитель | Модель | Состояние | ПО | Примечание |
@@ -138,6 +141,7 @@
 | Вендор | Модель | Драйвер | Состояние | Примечание |
 | :---: | :---: | :---: | :---: | :---: |
 | Sapphire | Radeon RX570 | AMDGPU | :green_circle: | - |
+| ASRock | Radeon RX 6400 | AMDGPU | :green_circle: | - |
 
 #### NVIDIA
 | Производитель | Модель | Драйвер | Состояние | Примечание |
@@ -169,6 +173,7 @@
 | Realtek | RTL8111CP | kernel-modules-r8168-* | :green_circle: | - |
 | Realtek | RTL8111D | kernel-modules-r8168-* | :green_circle: | - |
 | Realtek | RTL8111DP | kernel-modules-r8168-* | :green_circle: | - |
+| Realtek | RTL8111H | kernel-modules-r8169-* | :green_circle: | - |
 | Realtek | RTL8125 2.5GbE (10ec:8125) | kernel-modules-r8169 | :green_circle: | - | - |
 | Realtek | RTL8168 | kernel-modules-r8168-* | :green_circle: | - |
 | Realtek | RTL8168B | kernel-modules-r8168-* | :green_circle: | - |
@@ -210,7 +215,7 @@
 | Производитель | Модель | Тип подключения | Состояние | Примечание |
 | :---: | :---: | :---: | :---: | :---: |
 | ADATA | LEGEND 960 NVMe SSD (1cc1:622a) | NVMe | :green_circle: | - |
-
+| Kingston | NV2 (SNV2S) | NVMe | :green_circle: | - |
 
 ## Правила добавления/оформления данных в таблицах
 1. Все данные должны быть структурированы в таблицы.

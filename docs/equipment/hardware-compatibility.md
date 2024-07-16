@@ -60,8 +60,8 @@
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | COMMO | One | 3.5mm | :green_circle: | - | - |
 | COMMO | One | Bluetooth | :green_circle: | - | - |
-| SENNHEISER | HD458BT | Bluetooth | :green_circle: | - | - |
 | FIFINE | H8 | 3.5mm | :green_circle: | - | - |
+| SENNHEISER | HD458BT | Bluetooth | :green_circle: | - | - |
 
 ### Веб-камеры
 | Производитель | Модель | Состояние | ПО | Примечание |
@@ -89,8 +89,8 @@
 | :---: | :---: | :---: | :---: | :---: |
 | Бештау | M27/2KP | HDMI/DP | :green_circle: | QHD165HZ(HDMI,DP) |
 | IIYAMA | PL2792Q | HDMI/DP | :green_circle: | QHD60HZ(HDMI), QHD70HZ(DP) |
-| Xiaomi | Redmi Display 27 | HDMI | :green_circle: | FHD75HZ |
 | LG | 24MK430H | HDMI | :green_circle: | FHD75HZ |
+| Xiaomi | Redmi Display 27 | HDMI | :green_circle: | FHD75HZ |
 
 ### Графические планшеты
 | Производитель | Модель | Состояние | ПО | Примечание |
@@ -140,8 +140,8 @@
 #### AMD
 | Вендор | Модель | Драйвер | Состояние | Примечание |
 | :---: | :---: | :---: | :---: | :---: |
-| Sapphire | Radeon RX570 | AMDGPU | :green_circle: | - |
 | ASRock | Radeon RX 6400 | AMDGPU | :green_circle: | - |
+| Sapphire | Radeon RX570 | AMDGPU | :green_circle: | - |
 
 #### NVIDIA
 | Производитель | Модель | Драйвер | Состояние | Примечание |

@@ -1,5 +1,22 @@
+/*------------------------------------------------
+|                ALT GNOME Wiki          <:0)~~~  |
+|  <:0)~~~ MultiLang head configuration           |
+|-------------------------------------------------|
+|          Published under MIT Licence            |
+|-------------------------------------------------|
+|         *Пока обойдусь без перевода*            |
+|                                                 |
+|  Коротко про эту часть - тут храним заголовки   |
+| страниц для разных локалей. Как это вызывается  |
+| я позже задокументирую.                         |
+|-------------------------------------------------|
+| May the force be with you - FORCE OF SHITCODE   |
+|                             - (c) Ampernic 2024 |
+-------------------------------------------------*/
+
+
 export const headTransformer = {
-  'ru-RU': {
+  'root': {
     frontmatterHead: (pageData, normalize) => {
       pageData.frontmatter.head.push(
         ['meta', { name: 'og:title', content: pageData.title + ' — ALT Gnome Wiki' }],

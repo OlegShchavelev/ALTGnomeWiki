@@ -28,7 +28,7 @@
 | СustomMade | CM x Fispeckt Katana Dark | :green_circle: | Размер XXL |
 | Logitech | Desk Mat | :green_circle: | - |
 
-### Джойстики
+### Геймпады / Джойстики
 | Производитель | Модель | BT | Радио | Провод | ПО | Примечание |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Logitech | F710 | - | :green_circle: | - | - | - |
@@ -122,7 +122,7 @@
 | Ryzen 7 5800HS | :green_circle: | - |
 | Ryzen 7 7800X3D | :green_circle: | - |
 
-#### INTEL
+#### Intel
 | Модель | Состояние | Примечание |
 | :---: | :---: | :---: |
 | - | - | - |
@@ -148,7 +148,7 @@
 | GYGABYTE | GeForce RTX 3070 TI (GV-N307TGAMING OC-8GD) (10de:2482) | NVIDIA | :green_circle: | Wayland работает |
 | Palit | GeForce RTX 4080 Plus OC () | NOUVEAU | :yellow_circle: | 550x не работают |
 
-#### INTEL
+#### Intel
 | Модель | Драйвер | Состояние | Примечание |
 | :---: | :---: | :---: | :---: |
 | - | - | - | - |

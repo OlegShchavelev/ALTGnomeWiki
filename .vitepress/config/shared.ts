@@ -40,7 +40,7 @@ import {
 export const shared = defineConfig({
     title: 'ALT Gnome Wiki',
     titleTemplate: ':title — ALT Gnome Wiki',
-    base: '',
+    base: '/ALTGnomeWiki/',
     srcDir: './docs',
     sitemap: {
         hostname: 'https://alt-gnome.wiki/'

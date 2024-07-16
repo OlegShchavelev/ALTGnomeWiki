@@ -67,7 +67,7 @@ export const contributions = [
   {
     avatar: 'https://github.com/Armatik.png',
     name: 'Семён Фомченков',
-    mapByNameAliases: ['Semen Fomchenkov', 'Armatik', 'armatik'],
+    mapByNameAliases: ['Semen Fomchenkov', 'Armatik', 'armatik', 'Семен Васильевич Фомченков'],
     title: 'Участник',
     links: [
       { icon: 'github', link: 'https://github.com/Armatik' },

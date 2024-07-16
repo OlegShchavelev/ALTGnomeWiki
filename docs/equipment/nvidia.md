@@ -1245,16 +1245,16 @@ epm -i kernel-modules-drm-nouveau-un-def
 
 :::
 
-- Опционально можно переустановить обвязку Xorg:
+- Если у Вас видеокарта **Curie** или старше, удостоверьтесь, что у вас установлен пакет с Xf86-video-nouveau:
 
 ::: code-group
 
 ```shell[apt-get]
-apt-get install --reinstall xorg-dri-nouveau xorg-drv-nouveau
+apt-get install xorg-drv-nouveau
 ```
 
 ```shell[epm]
-epm reinstall xorg-dri-nouveau xorg-drv-nouveau
+epm -i xorg-drv-nouveau
 ```
 
 :::

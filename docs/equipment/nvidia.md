@@ -1303,6 +1303,20 @@ grub-mkconfig -o /boot/grub/grub.cfg
 Видеочипы Kepler и Maxwell для их нормальной загрузки обязательно требуют внедрение прошивки. Если при первой установке или запуске системы на устройствах с видеочипом одной из этих архитектур наблюдаются проблемы, можно временно перейти на [другой видеорежим](#если-при-установке-или-первом-запуске-черныи-экран-артефакты-или-другие-проблемы)
 :::
 
+::: code-group
+
+```shell[apt-get]
+apt-get install firmware-nouveau
+```
+
+```shell[epm]
+epm -i firmware-nouveau
+```
+
+:::
+
+::: details Ручная установка прошивки
+
 - Распакуйте прошивку:
 
 ```shell
@@ -1321,6 +1335,8 @@ cd /tmp/nouveau
 mkdir /lib/firmware/nouveau
 cp -d nv* vuc-* /lib/firmware/nouveau/
 ```
+
+:::
 
 ### Reclocking (от Celsius до Fermi)
 

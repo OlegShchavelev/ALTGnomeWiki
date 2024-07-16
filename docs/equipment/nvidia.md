@@ -1183,7 +1183,7 @@ _EOF_
 
 - Перейдите в режим root:
 
-```
+```shell
 su -
 ```
 
@@ -1203,31 +1203,31 @@ epm -e nvidia_glx_common
 
 - Удалите `initcall_blacklist` и `nvidia-drm.modeset`, если они есть:
 
-```
+```shell
 mcedit /etc/sysconfig/grub2
 ```
 
 - Сгенерируйте `grub.cfg`
 
-```
+```shell
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 - Удалите ссылку на `61-gdm.rules`, если она есть
 
-```
+```shell
 rm /etc/udev/rules.d/61-gdm.rules
 ```
 
 - Удалите правила, запрещающие Nouveau, если они есть:
 
-```
+```shell
 rm /etc/modprobe.d/blacklist-nvidia-x11.conf
 ```
 
 - Удалите изменение размещения видеопамяти, если оно есть:
 
-```
+```shell
 rm /etc/modprobe.d/nvidia_videomemory_allocation.conf
 ```
 
@@ -1245,16 +1245,16 @@ epm -i kernel-modules-drm-nouveau-un-def
 
 :::
 
-- Опционально можно переустановить обвязку Xorg:
+- Если у Вас видеокарта **Curie** или старше, удостоверьтесь, что у вас установлен пакет с Xf86-video-nouveau:
 
 ::: code-group
 
 ```shell[apt-get]
-apt-get install --reinstall xorg-dri-nouveau xorg-drv-nouveau
+apt-get install xorg-drv-nouveau
 ```
 
 ```shell[epm]
-epm reinstall xorg-dri-nouveau xorg-drv-nouveau
+epm -i xorg-drv-nouveau
 ```
 
 :::
@@ -1303,6 +1303,22 @@ grub-mkconfig -o /boot/grub/grub.cfg
 Видеочипы Kepler и Maxwell для их нормальной загрузки обязательно требуют внедрение прошивки. Если при первой установке или запуске системы на устройствах с видеочипом одной из этих архитектур наблюдаются проблемы, можно временно перейти на [другой видеорежим](#если-при-установке-или-первом-запуске-черныи-экран-артефакты-или-другие-проблемы)
 :::
 
+- Установка прошивки:
+
+::: code-group
+
+```shell[apt-get]
+apt-get install firmware-nouveau
+```
+
+```shell[epm]
+epm -i firmware-nouveau
+```
+
+:::
+
+::: details Ручная установка прошивки
+
 - Распакуйте прошивку:
 
 ```shell
@@ -1321,6 +1337,8 @@ cd /tmp/nouveau
 mkdir /lib/firmware/nouveau
 cp -d nv* vuc-* /lib/firmware/nouveau/
 ```
+
+:::
 
 ### Reclocking (от Celsius до Fermi)
 

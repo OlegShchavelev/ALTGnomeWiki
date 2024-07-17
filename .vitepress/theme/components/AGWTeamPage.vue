@@ -2,8 +2,8 @@
 import { VPTeamPage, VPTeamPageTitle, VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
 
 import { data as gitOnline } from '../loaders/gitlogDataLoader.data.ts'
-import { developersSection, membersSection, teamSorting, contributions } from '../../../_data/team'
-import { sortMembers } from '../composables/sorters'
+import { developersSection, membersSection, teamSorting, contributions } from '../../../_data/team.ts'
+import { sortMembers } from '../composables/sorters.ts'
 
 import { useData } from 'vitepress'
 const { frontmatter } = useData()

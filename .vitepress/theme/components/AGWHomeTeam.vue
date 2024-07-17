@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { VPTeamPage, VPTeamPageTitle, VPButton, VPTeamMembers } from 'vitepress/theme'
 
-import { sortMembers } from '../composables/sorters'
-import { homeSorting, limit, contributions } from '../../../_data/team'
+import { sortMembers } from '../composables/sorters.ts'
+import { homeSorting, limit, contributions } from '../../../_data/team.ts'
 import { data as gitOnline } from '../loaders/gitlogDataLoader.data.ts'
 </script>
 

@@ -7,7 +7,14 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import imageViewer from 'vitepress-plugin-image-viewer'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
-import * as config from '../config.json'
+
+/* Plugins options */
+import {
+  nolebaseEnhancedReadabilitiesOptions,
+  nolebaseGitChangelogOptions,
+  nolebasePageProperties,
+  yandexMetrikaOptions
+} from '../config/plugins/index.ts'
 
 /* AGW */
 import AGWTeamPage from './components/AGWTeamPage.vue'
@@ -30,8 +37,6 @@ import {
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
-
-import { ERlocales, GitLocales, PPLocales, PPMarkdown } from '../../_data/lexicon.ts'
 
 /* Nolebase PP */
 
@@ -70,26 +75,16 @@ export default {
   },
 
   enhanceApp(ctx) {
-    yandexMetrika(ctx, {
-      counter: {
-        id: config.yaMetrikaId,
-        initParams: {
-          webvisor: true
-        }
-      }
-    })
+    yandexMetrika(ctx, yandexMetrikaOptions.metrica )
     ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('contribution', AGWTeamPage)
     ctx.app.component('GnomeAppsList', AGWGnomeAppsList)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
-    ctx.app.provide(NolebasePagePropertiesInjectionKey, {
-      locales: PPLocales,
-      properties: PPMarkdown
-    } as NEROptions)
-    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, { locales: ERlocales } as Options)
+    ctx.app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
+    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, nolebaseEnhancedReadabilitiesOptions as Options)
     ctx.app.use(NolebaseGitChangelogPlugin, {
-      locales: GitLocales,
+      locales: nolebaseGitChangelogOptions.locales,
       mapAuthors: gitOnline.length ? gitOnline : contributions
     })
 

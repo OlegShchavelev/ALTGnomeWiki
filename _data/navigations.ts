@@ -168,6 +168,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Консоль', link: '/console' },
               { text: 'Контакты', link: '/gnome-contacts' },
               { text: 'КуМир', link: '/kumir' },
+              { text: 'Менеджер расширений', link: '/gnome-extension-manager' },
               { text: 'Мой офис', link: '/my-office' },
               { text: 'Музыка', link: '/gnome-music' },
               { text: 'МТС Линк', link: '/mts-link' },

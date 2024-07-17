@@ -1,6 +1,6 @@
 ---
 aggregation:
-  sisyphus: cassette
+  sisyphus: nautilus-backspace
 appstream:
   name: Nautilus Backspace Back
   summary: Возврат к папкам в Nautilus по одной клавише

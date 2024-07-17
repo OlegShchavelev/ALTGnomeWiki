@@ -1,8 +1,4 @@
 export const nolebasePageProperties = {
-  locales: {
-
-  },
-  properties: {
-
-  }
+  locales: {},
+  properties: {}
 }

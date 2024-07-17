@@ -2,6 +2,7 @@
   "format": "plain",
   "checkYo": true,
   "fileExtensions": [".md"],
+  "excludeFiles": ["docs/equipment/hardware-compatibility.md"],
   "lang": "ru,en",
   "ignoreText": [
     ["```.+```", "gsm"],

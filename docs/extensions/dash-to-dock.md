@@ -1,7 +1,20 @@
 ---
-title: Dash to Dock
-pluginID: 307
-packageName: gnome-shell-extension-dash-to-dock
+aggregation:
+  extension:
+    id: 307
+    uuid: dash-to-dock@micxgx.gmail.com
+  sisyphus: gnome-shell-extension-dash-to-dock
+appstream:
+  id: 307
+  name: Dash to Dock
+  summary: Панель приложений для Gnome Shell
+  icon: https://extensions.gnome.org/extension-data/icons/icon_307_2.png
+  developer:
+    name: michele_g
+    avatar: https://secure.gravatar.com/avatar/df34c45557172933c5f139186b137efa?d=mm&s=128
+  url:
+    homepage: https://micheleg.github.io/dash-to-dock/
+    bugtracker: https://github.com/micheleg/dash-to-dock/issues
 ---
 
 # Dash to Dock
@@ -15,23 +28,4 @@ packageName: gnome-shell-extension-dash-to-dock
 ![dash-to-dock-2](/extensions/dash-to-dock/dash-to-dock-2.png)
 
 <!--@include: ./parts/show-install-steps.md-->
-
-## Установка {{ $frontmatter.title }} из репозитория
-
-Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-shell-extension-dash-to-dock
-```
-
-```shell[epm]
-epm -i gnome-shell-extension-dash-to-dock
-```
-
-:::
-
 <!--@include: ./parts/install-from-repository.md-->

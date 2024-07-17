@@ -26,14 +26,17 @@ import languages from '../theme/syntaxes'
 import UnoCSS from 'unocss/vite'
 import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
-
 /* PagePropierties */
 import {
   PageProperties,
   PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
-import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions, vitepressSearchOptions } from './plugins'
-
+import {
+  alignmentContainers,
+  headTransformer,
+  nolebaseGitChangelogOptions,
+  vitepressSearchOptions
+} from './plugins'
 
 export const shared = defineConfig({
   title: 'ALT Gnome Wiki',
@@ -59,7 +62,7 @@ export const shared = defineConfig({
       PagePropertiesMarkdownSection({
         excludes: [],
         exclude: (_, { helpers }): boolean => {
-          for (let page of ["index.md", "wiki.md", "contributions.md", "about.md", "games.md"]) {
+          for (let page of ['index.md', 'wiki.md', 'contributions.md', 'about.md', 'games.md']) {
             if (helpers.idEndsWith(page)) return true
           }
           return false
@@ -108,11 +111,11 @@ export const shared = defineConfig({
       }
     ],
     editLink: {
-      pattern: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki/edit/main/docs/:path',
+      pattern: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki/edit/main/docs/:path'
     },
     outline: {
       level: [2, 3]
-    },
+    }
   },
   rewrites: rewrites,
   markdown: {

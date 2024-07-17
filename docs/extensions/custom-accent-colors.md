@@ -1,6 +1,19 @@
 ---
-title: Custom Accent Colors
-pluginID: 5547
+aggregation:
+  extension:
+    id: 5547
+    uuid: custom-accent-colors@demiskp
+appstream:
+  id: 5547
+  name: Custom Accent Colors
+  summary: 7 пользовательских цветов акцента. Выбранный цвет акцента может быть применён к приложениям GTK4/GTK3 и Gnome Shell.
+  icon: /extensions/default-logo.png
+  developer:
+    name: demiskp
+    avatar: /extensions/default-avatar.png
+  url:
+    homepage: https://github.com/demetrisk03/custom-accent-colors
+    bugtracker: https://github.com/demetrisk03/custom-accent-colors/issues
 ---
 
 # Custom Accent Colors

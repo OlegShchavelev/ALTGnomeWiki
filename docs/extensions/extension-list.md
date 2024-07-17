@@ -1,7 +1,20 @@
 ---
-title: Extension List
-pluginID: 3088
-packageName: gnome-shell-extension-extension-list
+aggregation:
+  extension:
+    id: 3088
+    uuid: extension-list@tu.berry
+  sisyphus: gnome-shell-extension-extension-list
+appstream:
+  id: 3088
+  name: Extension List
+  summary: Простой менеджер расширений GNOME Shell на верхней панели
+  icon: /extensions/default-logo.png
+  developer:
+    name: grroot
+    avatar: /extensions/default-avatar.png
+  url:
+    homepage: https://github.com/tuberry/extension-list
+    bugtracker: https://github.com/tuberry/extension-list/issues
 ---
 
 # Extension List
@@ -14,23 +27,4 @@ packageName: gnome-shell-extension-extension-list
 ![extension-list](/extensions/extension-list/extension-list-2.png)
 
 <!--@include: ./parts/show-install-steps.md-->
-
-## Установка {{ $frontmatter.title }} из репозитория
-
-Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-shell-extension-extension-list
-```
-
-```shell[epm]
-epm -i gnome-shell-extension-extension-list
-```
-
-:::
-
 <!--@include: ./parts/install-from-repository.md-->

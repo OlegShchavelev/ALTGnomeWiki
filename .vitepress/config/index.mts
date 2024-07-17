@@ -5,6 +5,6 @@ import { ru } from './ru'
 export default defineConfig({
   ...shared,
   locales: {
-    root: { label: 'Русский', ...ru },
+    root: { label: 'Русский', ...ru }
   }
 })

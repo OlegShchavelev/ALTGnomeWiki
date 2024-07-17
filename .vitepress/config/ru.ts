@@ -1,7 +1,7 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { nav, sidebar } from '../../_data/navigations'
 import { packages } from '../../package-lock.json'
-import { normalize } from '../utils'
+
 
 export const ru = defineConfigWithTheme({
     lang: 'ru-RU',
@@ -122,25 +122,6 @@ export const ru = defineConfigWithTheme({
                     style:
                         '--agw-btn-bg: var(--vp-c-green-dimm-1); --agw-btn-color: var(--vp-c-green-darker); --agw-btn-hover-bg:var(--vp-c-green-dark); --agw-btn-hover-color: var(--vp-c-white);'
                 }
-            }
-        },
-        transformPageData: (pageData: normalize) => {
-
-            pageData.frontmatter.head ??= []
-            pageData.frontmatter.head.push(
-                ['meta', { name: 'og:title', content: pageData.title + ' — ALT Gnome Wiki' }],
-                ['meta', { name: 'og:type', content: 'website' }],
-                ['meta', { name: 'og:locale', content: 'ru-RU' }],
-                ['meta', { name: 'og:url', content: `${'https://alt-gnome.wiki/' + normalize(pageData.relativePath)}.html` }],
-                ['meta', { name: 'og:site_name', content: 'ALT Gnome Wiki' }],
-                ['meta', { name: 'og:image', content: 'https://alt-gnome.wiki/og-alt-wiki.jpg' }],
-                ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-                ['meta', { name: 'twitter:image', content: 'https://alt-gnome.wiki/og-alt-wiki.jpg' }]
-            )
-
-            if (pageData.frontmatter.layout !== 'home') {
-                pageData.frontmatter.head.push(['link', { rel: 'canonical', href: `${url}.html` }])
-                pageData.description = `Cтатья написанная простым языком: «${pageData.title}» для ALT Regular Gnome. Последнее обновление ALT Gnome Wiki: ${new Date(pageData.lastUpdated).toLocaleString('ru-RU')}`
             }
         }
     }

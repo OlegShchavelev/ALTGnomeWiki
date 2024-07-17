@@ -1,4 +1,4 @@
-import { telegram, gitflic, gitverse, gitlab, vk } from '../.vitepress/icons.js'
+import { telegram, gitflic, gitverse, gitlab, vk } from '../.vitepress/support/icons.js'
 
 /* Параметры страницы участников */
 
@@ -41,6 +41,7 @@ export const contributions = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/44705058?v=4',
     name: 'Антон Политов',
+    mapByNameAliases: ['Ampernic', 'Anton Politov'],
     title: 'Разработчик, Участник',
     links: [{ icon: 'github', link: 'https://github.com/Ampernic' }],
     actionText: 'Поддержать',
@@ -118,6 +119,7 @@ export const contributions = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/1893474?v=4',
     name: 'Keleth',
+    mapByNameAliases: ['Keleth'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/Keleth' }]
   },
@@ -188,6 +190,7 @@ export const contributions = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/156944896?v=4',
     name: 'konoos56',
+    mapByNameAliases: ['konoos56'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/konoos56' }]
   },

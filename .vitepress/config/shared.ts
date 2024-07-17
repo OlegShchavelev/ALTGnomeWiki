@@ -38,7 +38,7 @@ import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions, vite
 export const shared = defineConfig({
   title: 'ALT Gnome Wiki',
   titleTemplate: ':title — ALT Gnome Wiki',
-  base: '/ALTGnomeWiki/',
+  base: '',
   srcDir: './docs',
   sitemap: {
     hostname: 'https://alt-gnome.wiki/'

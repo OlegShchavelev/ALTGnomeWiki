@@ -122,6 +122,7 @@ gsettings set org.gnome.desktop.privacy usb-protection true
 ### Теперь во вкладке Конфиденциальность будет дополнительная опция, связанная с usbguard.
 
 **Вкладка конфиденциальности до:**
+
 ![Вкладка конфиденциальности до](/usbguard/usbguard_gnome-settings_before.jpg)
 
 **Вкладка конфиденциальности после:**

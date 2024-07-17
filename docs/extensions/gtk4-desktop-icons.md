@@ -1,6 +1,19 @@
 ---
-title: Gtk4 Desktop Icons NG (DING)
-pluginID: 5263
+aggregation:
+  extension:
+    id: 5263
+    uuid: gtk4-ding@smedius.gitlab.com
+appstream:
+  id: 5263
+  name: Gtk4 Desktop Icons NG (DING)
+  summary: Порт значков рабочего стола Libadwaita/Gtk4 с многочисленными исправлениями и новыми функциями.
+  icon: https://extensions.gnome.org/extension-data/icons/icon_5263_Pz3Rrbn.png
+  developer:
+    name: smedius
+    avatar: https://secure.gravatar.com/avatar/7f2ed63241e9d4c7b94556437ef79561?d=mm&s=128
+  url:
+    homepage: https://gitlab.com/smedius/desktop-icons-ng
+    bugtracker: https://gitlab.com/smedius/desktop-icons-ng/issues
 ---
 
 # Gtk4 Desktop Icons NG (DING)

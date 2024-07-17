@@ -12,17 +12,17 @@ export const nolebaseGitChangelogOptions = {
   locales: {
     'ru-RU': {
       changelog: {
-          title: 'История изменений',
-          noData: 'Нет изменений',
-          lastEdited: 'Последнее редактирование: {{daysAgo}}',
-          lastEditedDateFnsLocaleName: 'ru',
-          viewFullHistory: 'Показать историю',
-          committedOn: ' от {{date}}'
-        },
-        contributors: {
+        title: 'История изменений',
+        noData: 'Нет изменений',
+        lastEdited: 'Последнее редактирование: {{daysAgo}}',
+        lastEditedDateFnsLocaleName: 'ru',
+        viewFullHistory: 'Показать историю',
+        committedOn: ' от {{date}}'
+      },
+      contributors: {
         title: 'Авторы',
         noData: 'Нет информации'
       }
     }
-  },
+  }
 }

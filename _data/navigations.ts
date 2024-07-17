@@ -13,7 +13,7 @@ export const nav: Record<string, Array<DefaultTheme.NavItem>> = {
         { text: 'Участники', link: 'contributions' }
       ]
     }
-  ],
+  ]
 }
 
 export const sidebar: Record<string, DefaultTheme.Sidebar> = {
@@ -206,7 +206,10 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
                   { text: 'Быстрое переключение между окнами', link: '/switching-apps' },
                   { text: 'Уведомления и список уведомлений', link: '/notifications' },
                   { text: 'Удаленный рабочий стол', link: '/gnome-remote-desktop' },
-                  { text: 'Создание пустого файла в файловом менеджере', link: '/add-empty-file-to-nautilus' },
+                  {
+                    text: 'Создание пустого файла в файловом менеджере',
+                    link: '/add-empty-file-to-nautilus'
+                  },
                   { text: 'Экран блокировки', link: '/lock-screen' }
                 ],
                 collapsed: true
@@ -227,7 +230,9 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
                   },
                   {
                     text: 'Веб-браузеры',
-                    items: [{ text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }],
+                    items: [
+                      { text: 'Изменение используемого по умолчанию веб-браузера', link: '/net-browser' }
+                    ],
                     collapsed: true
                   }
                 ],
@@ -276,24 +281,27 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
             text: 'Расширения рабочего окружения GNOME',
             link: '/extensions',
             items: [
-              { text: 'OpenWeather', link: '/openweather' },
-              { text: 'AppIndicator/KStatusNotifierItem', link: '/appindicator-kstatus-notifier-item' },
-              { text: 'Extension List', link: '/extension-list' },
-              { text: 'UPower Battery', link: '/upower-battery' },
-              { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktop-icons' },
+              { text: 'Add to Desktop', link: '/add-to-desktop' },
               { text: 'App menu is back', link: '/app-menu-is-back' },
-              { text: 'Add to desktop', link: '/add-to-desktop' },
-              { text: 'Fullscreen Avoider', link: '/fullscreen-avoider' },
-              { text: 'Just Perfection', link: '/just-perfection' },
-              { text: 'OSD Volume Number', link: '/osd-volume-number' },
+              {
+                text: 'AppIndicator and KStatusNotifierItem Support',
+                link: '/appindicator-kstatus-notifier-item'
+              },
+              { text: 'Blur my Shell', link: '/blur-my-shell' },
+              { text: 'Custom Accent Colors', link: '/custom-accent-colors' },
               { text: 'Dash to Dock', link: '/dash-to-dock' },
               { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' },
+              { text: 'Extension List', link: '/extension-list' },
+              { text: 'Fullscreen Avoider', link: '/fullscreen-avoider' },
               { text: 'GSConnect', link: '/gsconnect' },
+              { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktop-icons' },
+              { text: 'Just Perfection', link: '/just-perfection' },
               { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher' },
               { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
-              { text: 'Custom Accent Colors', link: '/custom-accent-colors' },
-              { text: 'Blur my Shell', link: '/blur-my-shell' },
+              { text: 'OpenWeather Refined', link: '/openweather' },
+              { text: 'OSD Volume Number', link: '/osd-volume-number' },
               { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' },
+              { text: 'UPower Battery', link: '/upower-battery' },
               { text: 'USBGuard', link: '/usbguard' }
             ],
             collapsed: true

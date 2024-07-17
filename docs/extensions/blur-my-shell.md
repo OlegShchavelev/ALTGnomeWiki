@@ -1,7 +1,22 @@
 ---
-title: Blur my Shell
-pluginID: 3193
-packageName: gnome-shell-extension-blur-my-shell
+aggregation:
+  extension:
+    id: 3193
+    uuid: blur-my-shell@aunetx
+  sisyphus: gnome-shell-extension-blur-my-shell
+appstream:
+  id: 3193
+  name: Blur my Shell
+  summary: Добавление размытый вид различным частям оболочки GNOME, включая верхнюю панель, док и Обзор.
+  icon: https://extensions.gnome.org/extension-data/icons/icon_3193_QedHJZY.png
+  developer:
+    name: Aurélien Hamy
+    nickname: aunetx
+    avatar: https://secure.gravatar.com/avatar/0b381639d3c7b921ce3ea4a60bb79958?d=mm&s=128
+  url:
+    homepage: https://github.com/aunetx/blur-my-shell
+    bugtracker: https://github.com/aunetx/blur-my-shell/issues
+    donation: https://github.com/sponsors/aunetx
 ---
 
 # Blur my Shell
@@ -14,25 +29,6 @@ packageName: gnome-shell-extension-blur-my-shell
 ![Настройки Blur my Shell](/blur-my-shell/settings.png)
 
 <!--@include: ./parts/show-install-steps.md-->
-
-## Установка {{ $frontmatter.title }} из репозитория
-
-Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-shell-extension-blur-my-shell
-```
-
-```shell[epm]
-epm -i gnome-shell-extension-blur-my-shell
-```
-
-:::
-
 <!--@include: ./parts/install-from-repository.md-->
 
 ## Известные проблемы

@@ -11,7 +11,6 @@ export interface Links {
 const props = defineProps<{
   links: Links
 }>()
-console.log(props)
 </script>
 
 <template>
@@ -21,7 +20,7 @@ console.log(props)
         :href="
           (link.baseUrl ?? '') + (link.anchor == 'Сизиф' ? link.url ?? 'sisyphus/srpms/' + link.id : link.id)
         "
-        :target="link.blank"
+        target="link.blank"
         class="btn"
         :style="link.style"
         >{{ link.anchor }}</a

@@ -1,4 +1,4 @@
-export { headTransformer } from './head-trasformer';
+export { headTransformer } from './head-trasformer'
 export { alignmentContainers } from './alignment-containers'
 export { vitepressSearchOptions } from './vitepress-search'
 export { yandexMetrikaOptions } from './yandex-metrika'

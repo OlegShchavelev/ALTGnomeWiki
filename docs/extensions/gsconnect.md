@@ -1,7 +1,20 @@
 ---
-title: GSConnect
-pluginID: 1319
-packageName: gnome-shell-extension-gsconnect
+aggregation:
+  extension:
+    id: 1319
+    uuid: gsconnect@andyholmes.github.io
+  sisyphus: gnome-shell-extension-gsconnect
+appstream:
+  id: 1319
+  name: GSConnect
+  summary: Полная реализация KDE Connect специально для GNOME Shell с интеграцией Nautilus, Chrome и Firefox
+  icon: https://extensions.gnome.org/extension-data/icons/icon_1319_VlYFTP0.png
+  developer:
+    name: dlandau
+    avatar: https://secure.gravatar.com/avatar/001e78f5ab1d234afa671f36475fcef3?d=mm&s=128
+  url:
+    homepage: https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki
+    bugtracker: https://github.com/GSConnect/gnome-shell-extension-gsconnect/issues
 ---
 
 # GSConnect
@@ -13,23 +26,4 @@ GSConnect — расширение, которое включает в себя 
 Для подключения устройства необходимо приложение, которое доступно для Android, iOS, Windows, macOS и других платформ.
 
 <!--@include: ./parts/show-install-steps.md-->
-
-## Установка {{ $frontmatter.title }} из репозитория
-
-Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-shell-extension-gsconnect
-```
-
-```shell[epm]
-epm -i gnome-shell-extension-gsconnect
-```
-
-:::
-
 <!--@include: ./parts/install-from-repository.md-->

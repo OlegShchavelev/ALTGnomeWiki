@@ -66,5 +66,6 @@
     "terms",
     "simple words"
   ],
-  "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
+  "import": ["@cspell/dict-ru_ru/cspell-ext.json"],
+  "ignorePaths": ["docs/equipment/hardware-compatibility.md"]
 }

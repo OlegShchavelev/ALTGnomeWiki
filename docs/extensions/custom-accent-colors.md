@@ -6,7 +6,7 @@ aggregation:
 appstream:
   id: 5547
   name: Custom Accent Colors
-  summary: 7 пользовательских цветов акцента. Выбранный цвет акцента может быть применен к приложениям GTK4/GTK3 и Gnome Shell.
+  summary: 7 пользовательских цветов акцента. Выбранный цвет акцента может быть применён к приложениям GTK4/GTK3 и Gnome Shell.
   icon: /extensions/default-logo.png
   developer:
     name: demiskp

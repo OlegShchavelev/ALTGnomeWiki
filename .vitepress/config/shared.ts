@@ -43,6 +43,12 @@ export const shared = defineConfig({
   sitemap: {
     hostname: 'https://alt-gnome.wiki/'
   },
+  head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['meta', { name: 'theme-color', content: '#62a0ea' }],
+    ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }]
+  ],
   vite: {
     plugins: [
       vueDevTools(),
@@ -112,11 +118,11 @@ export const shared = defineConfig({
   markdown: {
     languages,
     container: {
-      tipLabel: 'TIPS',
-      warningLabel: 'WARNING',
-      dangerLabel: 'CAUTION',
-      infoLabel: 'NOTE',
-      detailsLabel: 'DETAILS'
+      tipLabel: 'Подсказка',
+      warningLabel: 'Внимание',
+      dangerLabel: 'Осторожно',
+      infoLabel: 'Информация',
+      detailsLabel: 'Подробнее'
     },
     config: (md) => {
       for (const [name, opts] of alignmentContainers) {

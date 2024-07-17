@@ -5,14 +5,7 @@ import { packages } from '../../package-lock.json'
 
 export const ru = defineConfigWithTheme({
     lang: 'ru-RU',
-    title: 'ALT Gnome Wiki',
     description: 'Свободная WIKI по операционной системе ALT Regular Gnome',
-    head: [
-        ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-        ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
-        ['meta', { name: 'theme-color', content: '#62a0ea' }],
-        ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }]
-    ],
     themeConfig: {
         nav: nav['ru-RU'],
         sidebar: sidebar['ru-RU'],

@@ -1,9 +1,9 @@
 /* System */
 import { defineConfig } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
-import { telegram, vk } from '../icons'
-import { rewrites } from '../paths'
-import { normalize } from '../utils'
+import { telegram, vk } from '../support/icons'
+import { rewrites } from '../support/paths'
+import { normalize } from '../support/utils'
 
 /* Tools */
 

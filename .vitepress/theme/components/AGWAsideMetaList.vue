@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
-import { getDomainName } from './../composables/link'
+import { getDomainName } from '../composables/link'
 
 export interface Lists {
   label?: string

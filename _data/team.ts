@@ -1,4 +1,4 @@
-import { telegram, gitflic, gitverse, gitlab, vk } from '../.vitepress/icons.js'
+import { telegram, gitflic, gitverse, gitlab, vk } from '../.vitepress/support/icons.js'
 
 /* Параметры страницы участников */
 

@@ -89,6 +89,11 @@ archs3:
 
 <DownloadList3 />
 
+<hr />
+<hr />
+
+<DownloadListAmper/>
+
 ## Запись на DVD и USB Flash
 
 [ALT Media Writer](https://www.altlinux.org/Запись_образов_на_DVD_и_USB_Flash)

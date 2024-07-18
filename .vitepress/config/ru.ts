@@ -120,6 +120,18 @@ export const ru = defineConfigWithTheme({
           target: '_blank',
           style:
             '--agw-btn-bg: var(--vp-c-green-dimm-1); --agw-btn-color: var(--vp-c-green-darker); --agw-btn-hover-bg:var(--vp-c-green-dark); --agw-btn-hover-color: var(--vp-c-white);'
+        },
+        alt_download: {
+          anchor: 'Репозиторий ALT',
+          target: '_blank',
+          style:
+            '--agw-btn-bg: var(--vp-c-yellow-dimm-1); --agw-btn-color: var(--vp-c-yellow-darker); --agw-btn-hover-bg:var(--vp-c-yellow-dark); --agw-btn-hover-color: var(--vp-c-white);'
+        },
+        yandex_download: {
+          anchor: 'Зеркало Яндекс',
+          target: '_blank',
+          style:
+            '--agw-btn-bg: var(--vp-c-orange-dimm-1); --agw-btn-color: var(--vp-c-orange-darker); --agw-btn-hover-bg:var(--vp-c-orange-dark); --agw-btn-hover-color: var(--vp-c-white);'
         }
       }
     }

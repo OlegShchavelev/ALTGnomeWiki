@@ -23,10 +23,12 @@ import AGWHomeSponsors from './components/AGWHomeSponsors.vue'
 import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
+
 import AGWGnomeAppsList from './components/AGWGnomeApps/AGWGnomeAppsList.vue'
 import AGWDownloadList1 from './components/AGWDownload1/AGWDownloadList.vue'
 import AGWDownloadList2 from './components/AGWDownload2/AGWDownloadList.vue'
 import AGWDownloadList3 from './components/AGWDownload3/AGWDownloadList.vue'
+import AGWDownloadListAmper from './components/AGWDownloadAmper/AGWDownloadList.vue'
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
@@ -86,6 +88,7 @@ export default {
     ctx.app.component('DownloadList1', AGWDownloadList1)
     ctx.app.component('DownloadList2', AGWDownloadList2)
     ctx.app.component('DownloadList3', AGWDownloadList3)
+    ctx.app.component('DownloadListAmper', AGWDownloadListAmper)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, nolebaseEnhancedReadabilitiesOptions as Options)

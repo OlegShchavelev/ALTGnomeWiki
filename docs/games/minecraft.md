@@ -5,7 +5,7 @@ aggregation:
     build: unofficial 
   epm:
     play:
-      id: minecraft
+      id: minecraft-launcher
       build: unofficial
 appstream:
     id: com.mojang.Minecraft

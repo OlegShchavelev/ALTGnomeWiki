@@ -19,7 +19,8 @@ appstream:
       name: Собственная
       link: https://www.minecraft.net/ru-ru/eula
     developer:
-      name: Mojang AB
+      name: Mojang Studios
+      avatar: https://wholesgame.com/wp-content/uploads/Mojang-Studios-Logo-Thumb-Square-PNG.png 
     url:
       homepage: https://www.minecraft.net/ru-ru
 ---
@@ -65,4 +66,4 @@ epm -i java-17-openjdk
 ```
 После этих действий лаунчер запустился
 
-![Окно входа официального лаунчера Minecraft](/minecraft/launcher.png)
+![Окно входа в аккаунт Microsoft официального лаунчера Minecraft](/minecraft/launcher.png)

@@ -403,6 +403,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
             items: [
               { text: 'Изменение clearcpuid', link: '/clearcpuid' },
               { text: 'Mindustry', link: '/mindustry' },
+              { text: 'Minecraft', link: '/minecraft' },
               { text: 'Sonic 3 A.I.R', link: '/sonic3-a.i.r' },
               { text: 'Sonic Robo Blast 2', link: '/sonic-robo-blast2' },
               { text: 'Space Station-14', link: '/space-station-14' }

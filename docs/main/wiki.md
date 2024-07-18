@@ -55,6 +55,8 @@ docs:
         apps:
           - name: Steam
             link: steam
+          - name: Minecraft
+            link: minecraft
           - name: PortProton
             link: port-proton
           - name: Space Station 14

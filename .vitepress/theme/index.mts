@@ -24,6 +24,9 @@ import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
 import AGWGnomeAppsList from './components/AGWGnomeApps/AGWGnomeAppsList.vue'
+import AGWDownloadList1 from './components/AGWDownload1/AGWDownloadList.vue'
+import AGWDownloadList2 from './components/AGWDownload2/AGWDownloadList.vue'
+import AGWDownloadList3 from './components/AGWDownload3/AGWDownloadList.vue'
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
@@ -75,11 +78,14 @@ export default {
   },
 
   enhanceApp(ctx) {
-    yandexMetrika(ctx, yandexMetrikaOptions.metrica )
+    yandexMetrika(ctx, yandexMetrikaOptions.metrica)
     ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('contribution', AGWTeamPage)
     ctx.app.component('GnomeAppsList', AGWGnomeAppsList)
+    ctx.app.component('DownloadList1', AGWDownloadList1)
+    ctx.app.component('DownloadList2', AGWDownloadList2)
+    ctx.app.component('DownloadList3', AGWDownloadList3)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, nolebaseEnhancedReadabilitiesOptions as Options)

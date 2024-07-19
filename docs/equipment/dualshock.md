@@ -18,7 +18,7 @@ progress: 70
 Данная функция включена по умолчанию для обеспечения безопасности сопряжения HID устройств [(CVE-2023-45866)](https://security-tracker.debian.org/tracker/CVE-2023-45866), но геймпад не поддерживает работу с шифрованием. Для совместимости её нужно отключить.
 :::
 
-Для отключения данной функции необходмио в файле `/etc/bluetooth/input.conf` в разделе `[General]` добавить `ClassicBondedOnly=false`:
+Для отключения данной функции необходимо в файле `/etc/bluetooth/input.conf` в разделе `[General]` добавить `ClassicBondedOnly=false`:
 
 ```shell
 sudo sed "s/\[General\]/\0\nClassicBondedOnly=false/" -i /etc/bluetooth/input.conf

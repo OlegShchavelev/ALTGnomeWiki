@@ -42,8 +42,8 @@ import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 /* Nolebase PP */
 
 import {
-  NolebasePagePropertiesEditor,
-  InjectionKey as NolebasePagePropertiesInjectionKey
+    NolebasePagePropertiesEditor,
+    InjectionKey as NolebasePagePropertiesInjectionKey
 } from '@nolebase/vitepress-plugin-page-properties/client'
 import type { Options as NEROptions } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 

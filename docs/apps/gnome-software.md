@@ -1,23 +1,24 @@
 ---
 aggregation:
-    sisyphus: gnome-software
+  sisyphus: gnome-software
 appstream:
-    id: gnome-software.desktop
-    name: GNOME Software
-    icon: /gnome-software/gnome-software-logo.svg
-    summary: Официальная утилита управления приложениями для рабочего окружения GNOME
-    keywords:
-        - adaptive
-        - oobe
-    developer:
-        name: GNOME
-        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license:
-        name: GNU GPLv2
-        link: https://choosealicense.com/licenses/gpl-2.0/
-    url:
-        homepage: https://apps.gnome.org/Software/
-        bugtracker: https://gitlab.gnome.org/GNOME/gnome-software/issues
+  id: org.gnome.Software.desktop
+  name: GNOME Software
+  icon: /gnome-software/gnome-software-logo.svg
+  summary: Официальная утилита управления приложениями для рабочего окружения GNOME
+  keywords:
+    - adaptive
+    - core
+    - oobe
+  developer:
+    name: GNOME
+    avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+  metadata_license:
+    name: GNU GPLv2
+    link: https://choosealicense.com/licenses/gpl-2.0/
+  url:
+    homepage: https://apps.gnome.org/Software/
+    bugtracker: https://gitlab.gnome.org/GNOME/gnome-software/issues
 ---
 
 # Центр приложений

@@ -23,16 +23,16 @@ epm -i gnome-remote-desktop
 
 ### Из графической оболочки
 
--   Открыть приложение настройки
--   Открыть группу настроек «Общий доступ»\
-    ![gnome-remote-desktop-1](/gnome-remote-desktop/open-settings.gif)
+- Открыть приложение настройки
+- Открыть группу настроек «Общий доступ»\
+  ![gnome-remote-desktop-1](/gnome-remote-desktop/open-settings.gif)
 
--   Изменить состояние переключателя «Удалённый рабочий стол» на - включено
--   Переключатель «Удалённое управление» управляет режимами «просмотр» / «управление»\
-    ![gnome-remote-desktop-2](/gnome-remote-desktop/enable-service.gif)
+- Изменить состояние переключателя «Удалённый рабочий стол» на - включено
+- Переключатель «Удалённое управление» управляет режимами «просмотр» / «управление»\
+  ![gnome-remote-desktop-2](/gnome-remote-desktop/enable-service.gif)
 
--   Задать пароль пользователя (установить новый)\
-    ![gnome-remote-desktop-3](/gnome-remote-desktop/set-user-password.gif)
+- Задать пароль пользователя (установить новый)\
+  ![gnome-remote-desktop-3](/gnome-remote-desktop/set-user-password.gif)
 
 ### Из командной строки
 

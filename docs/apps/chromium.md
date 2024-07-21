@@ -3,28 +3,28 @@ title: Chromium
 appstreamFlatpak: org.chromium.Chromium
 appstreamRepo: org.chromium.Chromium
 aggregation:
-    flatpak:
-        id: org.chromium.Chromium
-        build: unoffical
-    sisyphus: chromium
-appstream:
+  flatpak:
     id: org.chromium.Chromium
-    name: Chromium
-    icon: /chromium/chromium-logo.svg
-    summary: Веб-браузер от Chromium Project
-    metadata_license:
-        name: BSD 3-Clause
-        link: https://github.com/chromium/chromium/blob/main/LICENSE
-    developer:
-        name: The Chromium Authors
-    url:
-        homepage: https://www.chromium.org/Home
+    build: unofficial
+  sisyphus: chromium
+appstream:
+  id: org.chromium.Chromium
+  name: Chromium
+  icon: /chromium/chromium-logo.svg
+  summary: Веб-браузер от Chromium Project
+  metadata_license:
+    name: BSD 3-Clause
+    link: https://github.com/chromium/chromium/blob/main/LICENSE
+  developer:
+    name: The Chromium Authors
+  url:
+    homepage: https://www.chromium.org/Home
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /chromium/chromium-1.png
-        - src: /chromium/chromium-2.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /chromium/chromium-1.png
+    - src: /chromium/chromium-2.png
 ---
 
 # Chromium

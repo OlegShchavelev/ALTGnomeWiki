@@ -1,26 +1,26 @@
 ---
 aggregation:
-    flatpak:
-        id: com.getpostman.Postman
-        build: offical
-    epm:
-        play:
-            id: postaman
-            build: unoffical
-appstream:
+  flatpak:
     id: com.getpostman.Postman
-    name: Postman
-    icon: /postman/postman-logo.png
-    summary: Платформа для тестирования ваших собственных API
-    keywords:
-        - proprietary
-    developer:
-        name: Postman Inc.
-    metadata_license:
-        name: Собственная
-        link: https://www.postman.com/legal/terms/
-    url:
-        homepage: https://www.postman.com/
+    build: official
+  epm:
+    play:
+      id: postman
+      build: unofficial
+appstream:
+  id: com.getpostman.Postman
+  name: Postman
+  icon: /postman/postman-logo.png
+  summary: Платформа для тестирования ваших собственных API
+  keywords:
+    - proprietary
+  developer:
+    name: Postman Inc.
+  metadata_license:
+    name: Собственная
+    link: https://www.postman.com/legal/terms/
+  url:
+    homepage: https://www.postman.com/
 ---
 
 # Postman

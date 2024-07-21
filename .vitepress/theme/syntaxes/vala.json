@@ -1,11 +1,7 @@
 {
   "name": "Vala",
   "scopeName": "source.vala",
-  "fileTypes": [
-    "vala",
-    "vapi",
-    "gs"
-  ],
+  "fileTypes": ["vala", "vapi", "gs"],
   "uuid": "5fbc8212-3c2f-45ac-83d2-0c9195878913",
   "patterns": [
     {

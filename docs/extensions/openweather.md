@@ -1,33 +1,27 @@
 ---
-title: OpenWeather
-pluginID: 6655
-packageName: gnome-shell-extension-openweather
+aggregation:
+  extension:
+    id: 6655
+    uuid: openweather-extension@penguin-teal.github.io
+  sisyphus: gnome-shell-extension-openweather
+appstream:
+  id: 6655
+  name: OpenWeather Refined
+  summary: Отображение погоды для текущего или заданного местоположения
+  icon: https://extensions.gnome.org/extension-data/icons/icon_6655.png
+  developer:
+    name: tealpenguin
+    avatar: /extensions/default-avatar.png
+  url:
+    homepage: https://github.com/penguin-teal/gnome-openweather
+    bugtracker: https://github.com/penguin-teal/gnome-openweather/issues
 ---
 
-# OpenWeather
+# OpenWeather Refined
 
 Расширение GNOME Shell добавляющее пункт прогноза погоды в верхнем док меню.
 
-![Демонстрация интерфейса open weather](/openweather/openweather.png)
+![Демонстрация интерфейса OpenWeather Refined](/openweather/openweather.png)
 
 <!--@include: ./parts/show-install-steps.md-->
-
-## Установка {{ $frontmatter.title }} из репозитория
-
-Данный способ установки расширений крайне **не рекомендуется**, но имеет право на жизнь:
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install gnome-shell-extension-openweather
-```
-
-```shell[epm]
-epm -i gnome-shell-extension-openweather
-```
-
-:::
-
 <!--@include: ./parts/install-from-repository.md-->

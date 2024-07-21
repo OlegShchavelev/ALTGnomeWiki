@@ -1,23 +1,24 @@
 ---
 aggregation:
-    flatpak: org.gnome.font-viewer
-    sisyphus: gnome-font-viewer
+  flatpak: org.gnome.font-viewer
+  sisyphus: gnome-font-viewer
 appstream:
-    id: org.gnome.font-viewer
-    name: Шрифты
-    icon: /font-viewer/font-viewer-logo.svg
-    summary: Просмотр шрифтов, доступных в системе
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords:
-        - core
-    developer:
-        name: GNOME
-        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    url:
-        homepage: https://apps.gnome.org/ru/FontViewer/
-        bugtracker: https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/issues/
+  id: org.gnome.font-viewer
+  name: Шрифты
+  icon: /font-viewer/font-viewer-logo.svg
+  summary: Просмотр шрифтов, доступных в системе
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  keywords:
+    - core
+    - adaptive
+  developer:
+    name: GNOME
+    avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+  url:
+    homepage: https://apps.gnome.org/ru/FontViewer/
+    bugtracker: https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/issues/
 ---
 
 # Шрифты

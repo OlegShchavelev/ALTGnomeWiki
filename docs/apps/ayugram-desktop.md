@@ -1,17 +1,17 @@
 ---
 aggregation:
-    sisyphus: ayugram-desktop
+  sisyphus: ayugram-desktop
 appstream:
-    name: ayugram-desktop
-    icon: /ayugram-desktop/ayugram-logo.png
-    summary: Телеграм клиент с хорошей кастомизацией
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    developer:
-        name: Radolyn Labs
-    url:
-        homepage: https://github.com/AyuGram/AyuGramDesktop?tab=readme-ov-file
+  name: ayugram-desktop
+  icon: /ayugram-desktop/ayugram-logo.png
+  summary: Клиент Telegram с хорошей кастомизацией
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  developer:
+    name: Radolyn Labs
+  url:
+    homepage: https://github.com/AyuGram/AyuGramDesktop?tab=readme-ov-file
 ---
 
 # Ayugram
@@ -36,13 +36,13 @@ epm -i ayugram-desktop
 
 ## Фишки Ayugram
 
--   Отключение похожих каналов
+- Отключение похожих каналов
 
 По умолчанию в Ayugram отключается раздел "Похожие каналы"
 
 ![Пример Функции](/ayugram-desktop/ayugram-1.png)
 
--   Отключение задержки уведомлений
+- Отключение задержки уведомлений
 
 Задержка уведомлений — это встроенная функция [Telegram](/telegram), которая задерживает уведомления в сеансе текущего клиента, если вы находитесь в сети с другого
 

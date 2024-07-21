@@ -1,77 +1,79 @@
-ву<script setup lang="ts">
-import {
-  VPTeamPage,
-  VPTeamPageTitle,
-  VPTeamPageSection,
-  VPTeamMembers,
-} from 'vitepress/theme'
+<script setup lang="ts">
+import { VPTeamPage, VPTeamPageTitle, VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
 
-import { data as gitOnline } from '../../../_data/gitlog-loader.data.ts'
-import { developersSection, membersSection, teamSorting, contributions } from '../../../_data/team';
-import { sortMembers } from '../composables/sorters';
-
-console.log(gitOnline.length)
+import { data as gitOnline } from '../loaders/gitlogDataLoader.data.ts'
+import { developersSection, membersSection, teamSorting, contributions } from '../../../_data/team.ts'
+import { sortMembers } from '../composables/sorters.ts'
 
 import { useData } from 'vitepress'
-const { frontmatter } = useData();
-
+const { frontmatter } = useData()
 </script>
 
 <template>
-    <ClientOnly>
+  <ClientOnly>
     <VPTeamPage v-if="gitOnline.length">
-        <VPTeamPageTitle>
-            <template v-if="frontmatter.longtitle" #title>
-                {{ frontmatter.longtitle }}
-            </template>
-        </VPTeamPageTitle>
-        
-        <div v-if="teamSorting.includes('role')">
-            <VPTeamPageSection class="team">
-                <template #title>
-                    {{ developersSection.title }}
-                </template>
-                <template #lead>
-                    {{ developersSection.description }}
-                </template>
-                <template #members>
-                    <VPTeamMembers :members="sortMembers(gitOnline, teamSorting).filter( member => member.title.includes('Разработчик'))" />
-                </template>
-            </VPTeamPageSection>
+      <VPTeamPageTitle>
+        <template v-if="frontmatter.longtitle" #title>
+          {{ frontmatter.longtitle }}
+        </template>
+      </VPTeamPageTitle>
 
-            <VPTeamPageSection class="team">
-                <template #title>
-                    {{ membersSection.title }}
-                </template>
-                <template #lead>
-                    {{ membersSection.description }}
-                </template>
-                <template #members>
-                    <VPTeamMembers :members="sortMembers(gitOnline, teamSorting).filter( member => !member.title.includes('Разработчик'))" />
-                </template>
-            </VPTeamPageSection>
-        </div>
+      <div v-if="teamSorting.includes('role')">
+        <VPTeamPageSection class="team">
+          <template #title>
+            {{ developersSection.title }}
+          </template>
+          <template #lead>
+            {{ developersSection.description }}
+          </template>
+          <template #members>
+            <VPTeamMembers
+              :members="
+                sortMembers(gitOnline, teamSorting).filter((member) => member.title.includes('Разработчик'))
+              "
+            />
+          </template>
+        </VPTeamPageSection>
 
-        <div v-if="!teamSorting.includes('role')">
-            <VPTeamMembers :members="sortMembers(gitOnline, teamSorting)" />
-        </div>
+        <VPTeamPageSection class="team">
+          <template #title>
+            {{ membersSection.title }}
+          </template>
+          <template #lead>
+            {{ membersSection.description }}
+          </template>
+          <template #members>
+            <VPTeamMembers
+              :members="
+                sortMembers(gitOnline, teamSorting).filter((member) => !member.title.includes('Разработчик'))
+              "
+            />
+          </template>
+        </VPTeamPageSection>
+      </div>
 
+      <div v-if="!teamSorting.includes('role')">
+        <VPTeamMembers :members="sortMembers(gitOnline, teamSorting)" />
+      </div>
+
+      <Content class="container" />
     </VPTeamPage>
 
-    <VPTeamPage v-if="!gitOnline.length">
-        <VPTeamPageTitle>
-            <template v-if="frontmatter.longtitle" #title>
-                {{ frontmatter.longtitle }}
-            </template>
-        </VPTeamPageTitle>
-        <VPTeamMembers :members="contributions" />
+    <VPTeamPage v-else>
+      <VPTeamPageTitle>
+        <template v-if="frontmatter.longtitle" #title>
+          {{ frontmatter.longtitle }}
+        </template>
+      </VPTeamPageTitle>
+      <VPTeamMembers :members="contributions" />
+      <Content class="container" />
     </VPTeamPage>
-</ClientOnly>
+  </ClientOnly>
 </template>
 
 <style scoped>
 .VPTeamPage {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .title {
@@ -86,6 +88,23 @@ const { frontmatter } = useData();
 }
 
 .team {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 40px auto;
+  max-width: 1152px;
+  padding: 0 64px;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    padding: 0;
+  }
+}
+@media (max-width: 960px) {
+  .container {
+    padding: 0 48px;
+  }
 }
 </style>

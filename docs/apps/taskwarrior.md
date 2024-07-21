@@ -1,17 +1,17 @@
 ---
 aggregation:
-    sisyphus: task
+  sisyphus: task
 appstream:
-    name: Taskwarrior
-    summary: инструмент управления задачами
-    developer:
-        name: Gothenburg Bit Factory
-        avatar: https://avatars.githubusercontent.com/u/36100920?s=200&v=4
-    metadata_license:
-        name: MIT
-        link: https://opensource.org/license/mit
-    url:
-        homepage: https://taskwarrior.org/
+  name: Taskwarrior
+  summary: инструмент управления задачами
+  developer:
+    name: Gothenburg Bit Factory
+    avatar: https://avatars.githubusercontent.com/u/36100920?s=200&v=4
+  metadata_license:
+    name: MIT License
+    link: https://opensource.org/license/mit
+  url:
+    homepage: https://taskwarrior.org/
 ---
 
 # Taskwarrior

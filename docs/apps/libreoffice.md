@@ -1,26 +1,26 @@
 ---
 aggregation:
-    sisyphus: LibreOffice-still
-    flatpak:
-        id: org.libreoffice.LibreOffice
-        build: offical
-appstream:
+  sisyphus: LibreOffice-still
+  flatpak:
     id: org.libreoffice.LibreOffice
-    name: LibreOffice
-    icon: /libreoffice/libreoffice-logo.png
-    summary: Мощный офисный пакет LibreOffice
-    metadata_license:
-        name: MPL-v2.0
-        link: https://www.mozilla.org/en-US/MPL/2.0/
-    developer:
-        name: The Document Foundation
-    url:
-        homepage: https://www.libreoffice.org/
-        bugtracker:
-            name: documentfoundation.org
-            link: https://bugs.documentfoundation.org/
-        donation: https://www.libreoffice.org/donate/
-        translate: https://www.libreoffice.org/community/localization/
+    build: official
+appstream:
+  id: org.libreoffice.LibreOffice
+  name: LibreOffice
+  icon: /libreoffice/libreoffice-logo.png
+  summary: Мощный офисный пакет LibreOffice
+  metadata_license:
+    name: MPL-v2.0
+    link: https://www.mozilla.org/en-US/MPL/2.0/
+  developer:
+    name: The Document Foundation
+  url:
+    homepage: https://www.libreoffice.org/
+    bugtracker:
+      name: documentfoundation.org
+      link: https://bugs.documentfoundation.org/
+    donation: https://www.libreoffice.org/donate/
+    translate: https://www.libreoffice.org/community/localization/
 ---
 
 # LibreOffice
@@ -31,8 +31,8 @@ LibreOffice — мощный офисный пакет, полностью со�
 
 В репозитории Сизиф есть две версии **LibreOffice**, а именно:
 
--   **LibreOffice** — стабильная версия с передовыми нововведениями (Fresh-версия)
--   **LibreOffice (Still version)** — стабильная версия, прошедшая длительное тестирование
+- **LibreOffice** — стабильная версия с передовыми нововведениями (Fresh-версия)
+- **LibreOffice (Still version)** — стабильная версия, прошедшая длительное тестирование
 
 Установить любую из версий **LibreOffice** можно любым привычным и удобным способом:
 

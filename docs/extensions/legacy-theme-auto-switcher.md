@@ -1,6 +1,19 @@
 ---
-title: Legacy (GTK3) Theme Scheme Auto Switcher
-pluginID: 4998
+aggregation:
+  extension:
+    id: 4998
+    uuid: legacyschemeautoswitcher@joshimukul29.gmail.com
+appstream:
+  id: 4998
+  name: Legacy (GTK3) Theme Scheme Auto Switcher
+  summary: Измените тему GTK3 на светлую/тёмную в зависимости от цветовой схемы системы
+  icon: /extensions/default-logo.png
+  developer:
+    name: mukul29
+    avatar: /extensions/default-avatar.png
+  url:
+    homepage: https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension
+    bugtracker: https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension/issues
 ---
 
 # Legacy (GTK3) Theme Scheme Auto Switcher

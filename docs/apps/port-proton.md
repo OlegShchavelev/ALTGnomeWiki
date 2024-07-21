@@ -1,28 +1,28 @@
 ---
 aggregation:
-    sisyphus: portproton
-    flatpak:
-        id: ru.linux_gaming.PortProton
-        build: offical
-    epm:
-        play:
-            id: portproton
-            build: offical
+  sisyphus: portproton
+  flatpak:
+    id: ru.linux_gaming.PortProton
+    build: official
+  epm:
+    play:
+      id: portproton
+      build: official
 appstream:
-    id: portproton
-    name: PortProton
-    icon: /port-proton/port-proton-logo.svg
-    summary: Проект, разработанный командой linux-gaming.ru для того, чтобы сделать лёгким и удобным запуск Windows игр.
-    developer:
-        name: Mikhail Tergoev & Linux Gaming Community
-        nickname: Castro-Fidel
-        avatar: /port-proton/port-proton-avatar.png
-    metadata_license:
-        name: MIT License
-        link: https://choosealicense.com/licenses/mit/
-    url:
-        homepage: https://linux-gaming.ru/
-        bugtracker: https://discord.com/invite/SFc65A2FJ6
+  id: portproton
+  name: PortProton
+  icon: /port-proton/port-proton-logo.svg
+  summary: Проект, разработанный командой linux-gaming.ru для того, чтобы сделать лёгким и удобным запуск Windows игр.
+  developer:
+    name: Mikhail Tergoev & Linux Gaming Community
+    nickname: Castro-Fidel
+    avatar: /port-proton/port-proton-avatar.png
+  metadata_license:
+    name: MIT License
+    link: https://choosealicense.com/licenses/mit/
+  url:
+    homepage: https://linux-gaming.ru/
+    bugtracker: https://discord.com/invite/SFc65A2FJ6
 ---
 
 # PortProton

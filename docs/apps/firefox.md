@@ -1,35 +1,35 @@
 ---
 aggregation:
-    sisyphus: firefox
-    flatpak:
-        id: org.mozilla.firefox
-        build: offical
-    snap:
-        id: firefox
-        build: offical
-appstream:
+  sisyphus: firefox
+  flatpak:
     id: org.mozilla.firefox
-    name: Firefox
-    icon: /firefox/firefox-logo.svg
-    summary: Популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
-    metadata_license:
-        name: MPL-2.0 licence
-        link: https://choosealicense.com/licenses/mpl-2.0/
-    developer:
-        name: Mozilla Foundation
-        avatar: /firefox/firefox-avatar.png
-    url:
-        homepage: https://www.mozilla.org/en-US/firefox/
-        bugtracker: https://bugzilla.mozilla.org/home
-        translate: https://pontoon.mozilla.org/
-        donation: https://foundation.mozilla.org/en/?form=donate
+    build: official
+  snap:
+    id: firefox
+    build: official
+appstream:
+  id: org.mozilla.firefox
+  name: Firefox
+  icon: /firefox/firefox-logo.svg
+  summary: Популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
+  metadata_license:
+    name: MPLv2
+    link: https://choosealicense.com/licenses/mpl-2.0/
+  developer:
+    name: Mozilla Foundation
+    avatar: /firefox/firefox-avatar.png
+  url:
+    homepage: https://www.mozilla.org/en-US/firefox/
+    bugtracker: https://bugzilla.mozilla.org/home
+    translate: https://pontoon.mozilla.org/
+    donation: https://foundation.mozilla.org/en/?form=donate
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /firefox/firefox-1.png
-        - src: /firefox/firefox-2.png
-        - src: /firefox/firefox-3.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /firefox/firefox-1.png
+    - src: /firefox/firefox-2.png
+    - src: /firefox/firefox-3.png
 ---
 
 # Firefox

@@ -1,20 +1,22 @@
 ---
 aggregation:
-    flatpak: org.gaphor.Gaphor
+  flatpak: org.gaphor.Gaphor
 appstream:
-    id: corg.gaphor.Gaphor
+  id: org.gaphor.Gaphor
+  name: Gaphor
+  icon: /gaphor/gaphor-logo.png
+  summary: Простой инструмент моделирования на UML и SysML
+  keywords:
+    - circle
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  developer:
     name: Gaphor
-    icon: /gaphor/gaphor-logo.png
-    summary: Элегантное воспроизведение вашей музыки
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    developer:
-        name: Gaphor
-    url:
-        homepage: https://gaphor.org/
-        translate: https://hosted.weblate.org/projects/gaphor/gaphor/
-        bugtracker: https://github.com/gaphor/gaphor/issues/
+  url:
+    homepage: https://gaphor.org/
+    translate: https://hosted.weblate.org/projects/gaphor/gaphor/
+    bugtracker: https://github.com/gaphor/gaphor/issues/
 ---
 
 # Gaphor

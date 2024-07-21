@@ -1,30 +1,30 @@
 ---
 aggregation:
-    sisyphus: steam
-    flatpak:
-        id: com.valvesoftware.Steam
-        build: unoffical
-    epm:
-        play:
-            id: steam
-            build: unoffical
+  sisyphus: steam
+  flatpak:
+    id: com.valvesoftware.Steam
+    build: unofficial
+  epm:
+    play:
+      id: steam
+      build: unofficial
 appstream:
-    id: steam.desktop
-    name: Steam
-    icon: /steam/steam-logo.svg
-    summary: Клиент для платформы Steam
-    keywords:
-        - proprietary
-        - restrictions
-    developer:
-        name: Valve Software
-        avatar: https://avatars.githubusercontent.com/u/3082775?s=200&v=4
-    metadata_license:
-        name: Собственная
-        link: https://store.steampowered.com/eula/243950_eula_0
-    url:
-        homepage: https://store.steampowered.com/
-        bugtracker: https://github.com/ValveSoftware/steam-for-linux/issues
+  id: com.valvesoftware.Steam
+  name: Steam
+  icon: /steam/steam-logo.svg
+  summary: Клиент для платформы Steam
+  keywords:
+    - proprietary
+    - restrictions
+  developer:
+    name: Valve Software
+    avatar: https://avatars.githubusercontent.com/u/3082775?s=200&v=4
+  metadata_license:
+    name: Собственная
+    link: https://store.steampowered.com/eula/243950_eula_0
+  url:
+    homepage: https://store.steampowered.com/
+    bugtracker: https://github.com/ValveSoftware/steam-for-linux/issues
 ---
 
 # Steam
@@ -51,9 +51,9 @@ Proton — инструмент, выпущенный Valve Software, котор
 
 Запустите клиент и найдите в верхней части приложения надпись Steam. При нажатии на неё откроется контекстное меню, выберите пункт Настройки. В настройках перейдите в раздел совместимость и выберите:
 
--   Включить Steam Play, для поддерживаемых продуктов
--   Включить Steam Play для других продуктов
--   Включить другие игры с помощью `Proton 8.x.x`
+- Включить Steam Play, для поддерживаемых продуктов
+- Включить Steam Play для других продуктов
+- Включить другие игры с помощью `Proton 8.x.x`
 
 Включить поддержку Steam Play возможно и для конкретной игры. В разделе **БИБЛИОТЕКА** в перечне с играми выберите из списка игру, вызовите контекстное меню ПКМ и выберите пункт свойства. В окне настроек в разделе **Совместимость**, активируйте опции **Принудительно использовать выбранный инструмент совместимости Steam Play** и выберите ветку **Proton**
 

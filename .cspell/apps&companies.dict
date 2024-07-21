@@ -31,6 +31,7 @@ audiosharing
 auonmb
 autoremove
 ayugram
+balena
 barinfo
 bcmwl
 betterdiscord
@@ -253,6 +254,7 @@ urpm
 usbguard
 vala
 vencord
+ventoy
 venv
 verilus
 vesktop
@@ -260,6 +262,7 @@ vimscript
 virtualenvs
 vulkan
 vulkaninfo
+waterfox
 wike
 wireplumber
 wpctl

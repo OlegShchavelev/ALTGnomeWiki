@@ -1,22 +1,22 @@
 ---
 aggregation:
-    epm:
-        play:
-            id: r7-office
-            build: unoffical
+  epm:
+    play:
+      id: r7-office
+      build: unofficial
 appstream:
-    name: Р7-Офис
-    icon: /r7-office/r7-office-logo.png
-    summary: Российский кроссплатформенный пакет приложений для совместной работы с офисными документами.
-    keywords:
-        - proprietary
-    developer:
-        name: АО «Р7»
-    metadata_license:
-        name: Собственная
-        link: https://r7-office.ru/license-agreement
-    url:
-        homepage: https://r7-office.ru/
+  name: Р7-Офис
+  icon: /r7-office/r7-office-logo.png
+  summary: Российский кроссплатформенный пакет приложений для совместной работы с офисными документами.
+  keywords:
+    - proprietary
+  developer:
+    name: АО «Р7»
+  metadata_license:
+    name: Собственная
+    link: https://r7-office.ru/license-agreement
+  url:
+    homepage: https://r7-office.ru/
 ---
 
 # Р7-Офис

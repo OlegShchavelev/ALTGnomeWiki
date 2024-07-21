@@ -1,6 +1,19 @@
 ---
-title: OSD Volume Number
-pluginID: 5461
+aggregation:
+  extension:
+    id: 5461
+    uuid: osd-volume-number@deminder
+appstream:
+  id: 5461
+  name: OSD Volume Number
+  summary: Замените значок уровня громкости на экране цифрой
+  icon: /extensions/default-logo.png
+  developer:
+    name: Deminder
+    avatar: /extensions/default-avatar.png
+  url:
+    homepage: https://github.com/Deminder/osd-volume-number
+    bugtracker: https://github.com/Deminder/osd-volume-number/issues
 ---
 
 # OSD Volume Number

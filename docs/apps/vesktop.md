@@ -1,42 +1,42 @@
 ---
 title: Vesktop
 aggregation:
-    flatpak:
-        id: dev.vencord.Vesktop
-        build: offical
-    epm:
-        play:
-            id: vesktop
-            build: unoffical
-appstream:
+  flatpak:
     id: dev.vencord.Vesktop
-    name: Vesktop
-    icon: /vesktop/vesktop-logo.png
-    summary: Альтернативный клиент Discord
-    developer:
-        name: Vencord Contributors
-    metadata_license:
-        name: GNU GPLv3.0
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    url:
-        homepage: https://vencord.dev/
-        bugtracker: https://github.com/Vencord/Vesktop/issues
+    build: official
+  epm:
+    play:
+      id: vesktop
+      build: unofficial
+appstream:
+  id: dev.vencord.Vesktop
+  name: Vesktop
+  icon: /vesktop/vesktop-logo.png
+  summary: Альтернативный клиент Discord
+  developer:
+    name: Vencord Contributors
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  url:
+    homepage: https://vencord.dev/
+    bugtracker: https://github.com/Vencord/Vesktop/issues
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /vesktop/vesktop-1.png
-        - src: /vesktop/vesktop-2.png
-        - src: /vesktop/vesktop-3.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /vesktop/vesktop-1.png
+    - src: /vesktop/vesktop-2.png
+    - src: /vesktop/vesktop-3.png
 ---
 
 # Vesktop
 
 Vesktop — альтернативный клиент Discord c множеством встроенного дополнительного функционала, например
 
--   Демонстрация всего экрана в Wayland сразу после установки
--   Работа захвата звука как окон, так и всей системы
--   Установка тем или создание своих
+- Демонстрация всего экрана в Wayland сразу после установки
+- Работа захвата звука как окон, так и всей системы
+- Установка тем или создание своих
 
 И множество как встроенных, так и устанавливаемых аддонов.
 

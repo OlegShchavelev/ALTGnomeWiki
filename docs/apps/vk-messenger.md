@@ -1,23 +1,23 @@
 ---
 aggregation:
-    epm:
-        play:
-            id: vk-messenger
-            build: unoffical
+  epm:
+    play:
+      id: vk-messenger
+      build: unofficial
 appstream:
-    name: VK Мессенджер
-    icon: /vk-messenger/vk-messenger-logo.svg
-    summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
-    keywords:
-        - proprietary
-    developer:
-        name: VK Company Limited
-        avatar: /vk-messenger/vk-messenger-avatar.svg
-    metadata_license:
-        name: Собственная
-        link: https://vk.com/terms
-    url:
-        homepage: https://vk.me/app
+  name: VK Мессенджер
+  icon: /vk-messenger/vk-messenger-logo.svg
+  summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+  keywords:
+    - proprietary
+  developer:
+    name: VK Company Limited
+    avatar: /vk-messenger/vk-messenger-avatar.svg
+  metadata_license:
+    name: Собственная
+    link: https://vk.com/terms
+  url:
+    homepage: https://vk.me/app
 ---
 
 # VK Мессенджер

@@ -1,23 +1,23 @@
 ---
 aggregation:
-    flatpak:
-        id: fm.reaper.Reaper
-appstream:
+  flatpak:
     id: fm.reaper.Reaper
-    name: Reaper
-    icon: /reaper/reaper-logo.svg
-    summary: Программная среда для создания, обработки, мастеринга аудио.
-    keywords:
-        - proprietary
-    developer:
-        name: Cockos
-        avatar: https://www.cockos.com/images/rooster.gif
-    metadata_license:
-        name: Собственная
-        link: https://www.reaper.fm/dist-agreement.php
-    url:
-        homepage: https://www.reaper.fm/index.php
-        bugtracker: https://forum.cockos.com/forumdisplay.php?f=22
+appstream:
+  id: fm.reaper.Reaper
+  name: Reaper
+  icon: /reaper/reaper-logo.svg
+  summary: Программная среда для создания, обработки, мастеринга аудио.
+  keywords:
+    - proprietary
+  developer:
+    name: Cockos
+    avatar: https://www.cockos.com/images/rooster.gif
+  metadata_license:
+    name: Собственная
+    link: https://www.reaper.fm/dist-agreement.php
+  url:
+    homepage: https://www.reaper.fm/index.php
+    bugtracker: https://forum.cockos.com/forumdisplay.php?f=22
 ---
 
 # Reaper

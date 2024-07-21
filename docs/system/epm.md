@@ -1,19 +1,19 @@
 ---
 title: EPM
 aggregation:
-    sisyphus: eepm
+  sisyphus: eepm
 appstream:
-    name: EPM
-    icon: /epm/etersoft.png
-    summary: Единая система управления пакетами.
-    developer:
-        name: Этерсофт
-    metadata_license:
-        name: GNU AGPLv3
-        link: https://choosealicense.com/licenses/agpl-3.0/
-    url:
-        homepage: https://github.com/Etersoft/eepm
-        bugtracker: https://github.com/Etersoft/eepm/issues
+  name: EPM
+  icon: /epm/etersoft.png
+  summary: Единая система управления пакетами.
+  developer:
+    name: Этерсофт
+  metadata_license:
+    name: GNU AGPLv3
+    link: https://choosealicense.com/licenses/agpl-3.0/
+  url:
+    homepage: https://github.com/Etersoft/eepm
+    bugtracker: https://github.com/Etersoft/eepm/issues
 ---
 
 # Единая команда управления пакетами (epm)
@@ -91,6 +91,10 @@ epm play [options] [argument]
 epm play telegram
 ```
 
+:::info
+Чтобы получить актуальный список приложений, воспользуйтесь командой `epm play` в терминале или [посетите сайт](https://download.etersoft.ru/pub/download/epm-app-versions/epm-play-list.txt)
+:::
+
 Для установки альтернативной версии приложения:
 
 ```shell
@@ -147,6 +151,12 @@ epm play telegram
 ```
 
 ### Работа со списком приложений
+
+Получить список доступных к установке приложений:
+
+```shell
+epm play
+```
 
 Получить список установленных приложений:
 

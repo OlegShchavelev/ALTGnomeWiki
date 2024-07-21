@@ -1,28 +1,28 @@
 ---
 aggregation:
-    flatpak:
-        id: com.skype.Client
-        build: unoffical
-    epm:
-        play:
-            id: skype
-            build: unoffical
-appstream:
+  flatpak:
     id: com.skype.Client
-    name: Skype
-    icon: /skype/skype-logo.svg
-    summary: Платформа для бесплатных видеозвонков, обмена сообщениями и файлами
-    keywords:
-        - proprietary
-        - restrictions
-    developer:
-        name: Microsoft Corporation
-        avatar: /skype/skype-avatar.svg
-    metadata_license:
-        name: Собственная
-        link: https://www.microsoft.com/en-us/servicesagreement/
-    url:
-        homepage: https://www.skype.com/
+    build: unofficial
+  epm:
+    play:
+      id: skype
+      build: unofficial
+appstream:
+  id: com.skype.Client
+  name: Skype
+  icon: /skype/skype-logo.svg
+  summary: Платформа для бесплатных видеозвонков, обмена сообщениями и файлами
+  keywords:
+    - proprietary
+    - restrictions
+  developer:
+    name: Microsoft Corporation
+    avatar: /skype/skype-avatar.svg
+  metadata_license:
+    name: Собственная
+    link: https://www.microsoft.com/en-us/servicesagreement/
+  url:
+    homepage: https://www.skype.com/
 ---
 
 # Skype

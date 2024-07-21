@@ -237,14 +237,14 @@ index 31e1982..77b4d5d 100644
 
 Далее надо подключить этот модуль
 
--   Копируем
+- Копируем
 
 ```bash
 mkdir /boot/efi/EFI/custom
 cp apple_set_os.efi /boot/efi/EFI/custom
 ```
 
--   Включаем модуль
+- Включаем модуль
 
 ```bash
 nano -w /etc/grub.d/40_custom
@@ -255,7 +255,7 @@ nano -w /etc/grub.d/40_custom
 # сохраняем и выходим из редактора
 ```
 
--   Обновляем конфигурацию
+- Обновляем конфигурацию
 
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -279,15 +279,15 @@ inxi -G
 
 ## Полезные ссылки:
 
--   https://github.com/Dunedan/mbp-2016-linux большой репозиторий для макбуков 2016 год+
--   https://wiki.archlinux.org/title/Mac/Troubleshooting# - решение проблем с маком
--   https://github.com/0xbb/gpu-switch GPU переключатель на Mac
--   https://nixaid.com/linux-on-macbookpro-old/ неплохая статья можно почерпнуть что-то полезное
--   http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1 кастомизации для бука 2013 16" 11.3
--   https://github.com/patjak/facetimehd/issues/196 Вопрос про камеру и почему не работает драйвер из статьи
+- https://github.com/Dunedan/mbp-2016-linux большой репозиторий для макбуков 2016 год+
+- https://wiki.archlinux.org/title/Mac/Troubleshooting# - решение проблем с маком
+- https://github.com/0xbb/gpu-switch GPU переключатель на Mac
+- https://nixaid.com/linux-on-macbookpro-old/ неплохая статья можно почерпнуть что-то полезное
+- http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1 кастомизации для бука 2013 16" 11.3
+- https://github.com/patjak/facetimehd/issues/196 Вопрос про камеру и почему не работает драйвер из статьи
 
 ## ToDo
 
--   [ ] Табличку поддержки может добавить, что работает, а что нет
--   [ ] ToDo tune kernel - стабильно дойти до PC7
--   [ ] ToDo tune планировщиков для улучшения жизни от батареи
+- [ ] Табличку поддержки может добавить, что работает, а что нет
+- [ ] ToDo tune kernel - стабильно дойти до PC7
+- [ ] ToDo tune планировщиков для улучшения жизни от батареи

@@ -1,24 +1,24 @@
 ---
 aggregation:
-    flatpak: org.libretro.RetroArch
-    sisyphus: retroarch
+  flatpak: org.libretro.RetroArch
+  sisyphus: retroarch
 appstream:
-    id: org.libretro.RetroArch
-    name: RetroArch
-    icon: /retroarch/org.libretro.RetroArch.png
-    summary: Интерфейс для эмуляторов, игровых движков и медиаплееров
-    keywords:
-        - adaptive
-    developer:
-        name: libretro
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    url:
-        homepage: https://www.retroarch.com/
-        help: https://docs.libretro.com/
-        faq: https://retroarch.com/?page=faq
-        bugtracker: https://github.com/libretro/RetroArch/issues
+  id: org.libretro.RetroArch
+  name: RetroArch
+  icon: /retroarch/org.libretro.RetroArch.png
+  summary: Интерфейс для эмуляторов, игровых движков и медиаплееров
+  keywords:
+    - adaptive
+  developer:
+    name: libretro
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  url:
+    homepage: https://www.retroarch.com/
+    help: https://docs.libretro.com/
+    faq: https://retroarch.com/?page=faq
+    bugtracker: https://github.com/libretro/RetroArch/issues
 ---
 
 # RetroArch

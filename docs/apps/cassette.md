@@ -1,33 +1,33 @@
 ---
 aggregation:
-    sisyphus: cassette
-    flatpak:
-        id: io.github.Rirusha.Cassette
-        build: offical
-appstream:
+  sisyphus: cassette
+  flatpak:
     id: io.github.Rirusha.Cassette
-    name: Кассета
-    icon: /cassette/cassette-logo.svg
-    summary: Неофициальный клиент Яндекс Музыки
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords:
-        - dontthemes
-    developer:
-        name: Владимир Васьков
-        nickname: Rirusha
-        avatar: https://avatars.githubusercontent.com/u/95986183?v=4
-    url:
-        homepage: https://github.com/Rirusha/Cassette
-        bugtracker: https://github.com/Rirusha/Cassette/issues
-        donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
+    build: official
+appstream:
+  id: io.github.Rirusha.Cassette
+  name: Кассета
+  icon: /cassette/cassette-logo.svg
+  summary: Неофициальный клиент Яндекс Музыки
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  keywords:
+    - dontthemes
+  developer:
+    name: Владимир Васьков
+    nickname: Rirusha
+    avatar: https://avatars.githubusercontent.com/u/95986183?v=4
+  url:
+    homepage: https://github.com/Rirusha/Cassette
+    bugtracker: https://github.com/Rirusha/Cassette/issues
+    donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /cassette/cassette-1.png
-        - src: /cassette/cassette-2.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /cassette/cassette-1.png
+    - src: /cassette/cassette-2.png
 ---
 
 # Кассета
@@ -63,9 +63,9 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 
 Доступна авторизация по:
 
--   логину и паролю;
--   логину и коду из приложения Я.Ключ;
--   QR-коду;
+- логину и паролю;
+- логину и коду из приложения Я.Ключ;
+- QR-коду;
 
 ## План обновлений
 
@@ -89,10 +89,10 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 
 ## Как помочь Кассете
 
--   Создать [Issue](https://github.com/Rirusha/Cassette/issues) с проблемой или предложением по улучшению;
--   Сделать [Pull Request](https://github.com/Rirusha/Cassette/pulls) с фиксом или добавлением функционала;
--   [Поддержать рублём](https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460). Просьба указывать в «Сообщении получателю» свой ник, иначе автор проекта не сможет добавить вас в соответствующий блок окна `About` (система Тинькофф, к сожалению, не указывает имя отправителя);
--   Написать отзыв в [Центре Приложений](/gnome-software) о Кассете.
+- Создать [Issue](https://github.com/Rirusha/Cassette/issues) с проблемой или предложением по улучшению;
+- Сделать [Pull Request](https://github.com/Rirusha/Cassette/pulls) с фиксом или добавлением функционала;
+- [Поддержать рублём](https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460). Просьба указывать в «Сообщении получателю» свой ник, иначе автор проекта не сможет добавить вас в соответствующий блок окна `About` (система Тинькофф, к сожалению, не указывает имя отправителя);
+- Написать отзыв в [Центре Приложений](/gnome-software) о Кассете.
 
 ## Решение проблем
 

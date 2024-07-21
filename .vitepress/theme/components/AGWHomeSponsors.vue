@@ -1,31 +1,29 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useData } from 'vitepress'
 import { VPHomeSponsors } from 'vitepress/theme'
-import { sponsors } from '../../../_data/sponsors';
 
-const { message, actionLink, actionText, data } = defineProps({
-  message: {
-    type: String,
-    default: 'Данный сервис является Open-Source проектом и его поддержка и развитие зависит только от нашей совместной активности.'
-  },
-  actionText: {
-    type: String,
-    default: 'Поддержать проект ALT Gnome'
-  },
-  actionLink: {
-    type: String,
-    default: 'https://boosty.to/alt_gnome'
-  },
-  data: {
-    type: Object,
-    default: () => {
-      return sponsors ?? [];
-    },
-  },
-});
-
+const { frontmatter } = useData()
+const props = computed(() => frontmatter.value.sponsors ?? {})
 </script>
 
 <template>
-  <VPHomeSponsors v-if="sponsors" :message="message" :actionText="actionText" :actionLink="actionLink"
-    :data="sponsors" />
+  <VPHomeSponsors class="VPHomeSponsors" v-if="props.collections" :actionText="props.donationtext"
+    :actionLink="props.donationlink" :message="props.introtext" :data="props.collections" />
 </template>
+
+<style scoped>
+
+.VPHomeSponsors {
+  margin-top: 0;
+}
+
+.VPHomeSponsors:deep(.message) {
+  max-width: 800px;
+}
+
+.VPHomeSponsors:deep(.VPSponsorsGrid.big .vp-sponsor-grid-image) {
+  max-width: 170px;
+  max-height: 120px;
+}
+</style>

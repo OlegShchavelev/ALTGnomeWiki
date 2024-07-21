@@ -1,32 +1,32 @@
 ---
 aggregation:
-    sisyphus: telegram-desktop
-    flatpak: org.telegram.desktop
-    epm:
-        play:
-            id: telegram
-            build: unoffical
+  sisyphus: telegram-desktop
+  flatpak: org.telegram.desktop
+  epm:
+    play:
+      id: telegram
+      build: unofficial
 appstream:
-    id: org.telegram.desktop
-    name: Telegram
-    icon: /telegram/telegram-logo.svg
-    summary: Кроссплатформенная система мгновенного обмена сообщениями
-    developer:
-        name: John Preston & Community
-        nickname: john-preston
-        avatar: /telegram/telegram-avatar.png
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    url:
-        homepage: https://desktop.telegram.org/
-        bugtracker: https://github.com/telegramdesktop/tdesktop/issues
+  id: org.telegram.desktop
+  name: Telegram
+  icon: /telegram/telegram-logo.svg
+  summary: Кроссплатформенная система мгновенного обмена сообщениями
+  developer:
+    name: John Preston & Community
+    nickname: john-preston
+    avatar: /telegram/telegram-avatar.png
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  url:
+    homepage: https://desktop.telegram.org/
+    bugtracker: https://github.com/telegramdesktop/tdesktop/issues
 gallery:
-    type: slider
-    items:
-        - src: /telegram/telegram-6.png
-        - src: /telegram/telegram-7.png
-        - src: /telegram/telegram-8.png
+  type: slider
+  items:
+    - src: /telegram/telegram-6.png
+    - src: /telegram/telegram-7.png
+    - src: /telegram/telegram-8.png
 ---
 
 # Telegram
@@ -41,9 +41,9 @@ Telegram — кроссплатформенная система мгновен�
 
 Мессенджер информирует пользователя об активном чате путём отправки уведомления. Вы можете отключить опцию перейдя в:
 
--   Настройки
--   Уведомления и звуки
--   Отключите опцию подсветка окна (Draw attention to the window)
+- Настройки
+- Уведомления и звуки
+- Отключите опцию подсветка окна (Draw attention to the window)
 
 ![Draw attention to the window](/telegram/telegram_1.png)
 
@@ -58,9 +58,9 @@ Telegram — кроссплатформенная система мгновен�
 
 Включите системную рамку следующим образом:
 
--   Откройте Telegram Desktop
--   Настройки -> Продвинутые настройки
--   Снимите флажок «Рамка окна QT»
+- Откройте Telegram Desktop
+- Настройки -> Продвинутые настройки
+- Снимите флажок «Рамка окна QT»
 
 <AGWGallery />
 
@@ -79,21 +79,32 @@ Telegram — кроссплатформенная система мгновен�
 
 Настроить счётчик уведомлений:
 
--   Перейдите в Настройки -> Уведомления и звуки
--   Отключите настройку «Учитывать чаты без звука»
+- Перейдите в Настройки -> Уведомления и звуки
+- Отключите настройку «Учитывать чаты без звука»
 
 ![Не учитывать отключённые чаты и каналы в счётчике уведомлений](/telegram/telegram-9.png)
 
-## Как сбросить настройки
+## Не работает дополнения WebApp в Telegram версии «Сизиф» в сессии Wayland
+
+Если вы столкнулись с ошибкой `Error: Could not initalize WebView`, есть несколько способов её исправить:
+
+- Изменить параметры запуска приложения Telegram: запустить приложение в оконном интерфейсе X11.
+- Выбрать другой тип установки мессенджера Telegram.
+
+:::info
+Сообщество уже зарегистрировало репорт [BZ49324](https://bugzilla.altlinux.org/49324), описывающую проблему.
+:::
+
+## Сброс настроек
 
 Telegram Desktop <Badge type="warning" text="Sisyphus" />
 
 ```shell
-rm -rfv .local/share/TelegramDesktop
+rm -rfv ~/.local/share/TelegramDesktop
 ```
 
 Telegram Desktop <Badge type="tip" text="Flatpak" />
 
 ```shell
-rm -rfv .var/app/org.telegram.desktop/config
+rm -rfv ~/.var/app/org.telegram.desktop/config
 ```

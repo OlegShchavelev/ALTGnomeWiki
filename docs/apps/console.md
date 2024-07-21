@@ -1,32 +1,32 @@
 ---
 aggregation:
-    flatpak: org.gnome.Console
-    sisyphus: gnome-console
+  flatpak: org.gnome.Console
+  sisyphus: gnome-console
 appstream:
-    id: org.gnome.Console
-    name: Консоль
-    icon: /console/console-logo.svg
-    summary: Простой и удобный эмулятор терминала для рабочего стола GNOME.
-    developer:
-        name: GNOME
-        avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords:
-        - core
-        - adaptive
-    url:
-        homepage: https://apps.gnome.org/Console/
-        bugtracker: https://gitlab.gnome.org/GNOME/console/-/issues
-        translate: https://l10n.gnome.org/module/console/
-        donation: https://www.gnome.org/donate/
+  id: org.gnome.Console
+  name: Консоль
+  icon: /console/console-logo.svg
+  summary: Простой и удобный эмулятор терминала для рабочего стола GNOME.
+  developer:
+    name: GNOME
+    avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  keywords:
+    - core
+    - adaptive
+  url:
+    homepage: https://apps.gnome.org/Console/
+    bugtracker: https://gitlab.gnome.org/GNOME/console/-/issues
+    translate: https://l10n.gnome.org/module/console/
+    donation: https://www.gnome.org/donate/
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /console/console-1.png
-        - src: /console/console-2.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /console/console-1.png
+    - src: /console/console-2.png
 ---
 
 # Консоль
@@ -74,8 +74,8 @@ gallery:
 
 В окне `Установить пользовательскую комбинацию клавиш` введите:
 
--   Имя: Консоль
--   Команда: kgx
--   Комбинация: [[Ctrl]] + [[Alt]] + [[T]]
+- Имя: Консоль
+- Команда: kgx
+- Комбинация: [[Ctrl]] + [[Alt]] + [[T]]
 
 ![console_1](/console/console_1.gif)

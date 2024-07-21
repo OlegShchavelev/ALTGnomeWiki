@@ -1,28 +1,28 @@
 ---
 aggregation:
-    flatpak:
-        id: com.anydesk.Anydesk
-        build: unoffical
-    epm:
-        play:
-            id: anydesk
-            build: unoffical
-appstream:
+  flatpak:
     id: com.anydesk.Anydesk
-    name: AnyDesk
-    icon: /anydesk/anydesk-logo.svg
-    summary: Удалённое подключение к компьютеру с AnyDesk
-    keywords:
-        - proprietary
-        - restrictions
-    developer:
-        name: AnyDesk Software GmbH
-    metadata_license:
-        name: Собственная
-        link: https://anydesk.com/ru/terms
-    url:
-        homepage: https://anydesk.com/
-        bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
+    build: unofficial
+  epm:
+    play:
+      id: anydesk
+      build: unofficial
+appstream:
+  id: com.anydesk.Anydesk
+  name: AnyDesk
+  icon: /anydesk/anydesk-logo.svg
+  summary: Удалённое подключение к компьютеру с AnyDesk
+  keywords:
+    - proprietary
+    - restrictions
+  developer:
+    name: AnyDesk Software GmbH
+  metadata_license:
+    name: Собственная
+    link: https://anydesk.com/ru/terms
+  url:
+    homepage: https://anydesk.com/
+    bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
 ---
 
 # AnyDesk

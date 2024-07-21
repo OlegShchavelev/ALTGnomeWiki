@@ -1,29 +1,29 @@
 ---
 aggregation:
-    sisyphus: yandex-browser-stable
-    flatpak:
-        id: ru.yandex.Browser
-        build: unoffical
-    epm:
-        play:
-            id: yandex-browser
-            build: unoffical
+  sisyphus: yandex-browser-stable
+  flatpak:
+    id: ru.yandex.Browser
+    build: unofficial
+  epm:
+    play:
+      id: yandex-browser
+      build: unofficial
 appstream:
-    id: yandex-browser.desktop
-    name: Яндекс Браузер
-    icon: /yandex-browser/yandex-browser-logo.svg
-    summary: Быстрый и безопасный браузер Яндекса для компьютера.
-    keywords:
-        - proprietary
-    developer:
-        name: Yandex
-        avatar: /yandex-browser/yandex-browser-avatar.png
-    metadata_license:
-        name: Собственная
-        link: https://yandex.ru/legal/browser_agreement/
-    url:
-        homepage: https://browser.yandex.ru/
-        bugtracker: https://browser.yandex.ru/feedback/
+  id: yandex-browser.desktop
+  name: Яндекс Браузер
+  icon: /yandex-browser/yandex-browser-logo.svg
+  summary: Быстрый и безопасный браузер Яндекса для компьютера.
+  keywords:
+    - proprietary
+  developer:
+    name: Yandex
+    avatar: /yandex-browser/yandex-browser-avatar.png
+  metadata_license:
+    name: Собственная
+    link: https://yandex.ru/legal/browser_agreement/
+  url:
+    homepage: https://browser.yandex.ru/
+    bugtracker: https://browser.yandex.ru/feedback/
 ---
 
 # Яндекс Браузер
@@ -70,8 +70,8 @@ yandex-browser-stable --ozone-platform-hint=auto
 :::tip
 Для запуска Яндекс Браузера версии Flatpak, необходимо разрешить список сокетов:
 
--   Оконная система Wayland
--   Возврат к оконной системе X11
+- Оконная система Wayland
+- Возврат к оконной системе X11
 
 :::info
 Удобным способом управления Flatpak-приложений является приложение [Flatseal](flatseal)

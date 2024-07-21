@@ -1,37 +1,37 @@
 ---
 aggregation:
-    sisyphus: dialect
-    flatpak:
-        id: app.drey.Dialect
-        build: offical
-appstream:
+  sisyphus: dialect
+  flatpak:
     id: app.drey.Dialect
-    name: Dialect
-    icon: /dialect/dialect-logo.svg
-    summary: Простое приложение для перевода с различными дополнениями для улучшения процесса.
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    keywords:
-        - dontthemes
-        - adaptive
-        - circle
-    developer:
-        name: The Dialect Authors
-    url:
-        homepage: https://github.com/dialect-app/dialect
-        bugtracker:
-            name: github.com
-            link: https://github.com/dialect-app/dialect/issues
-        translate: https://hosted.weblate.org/engage/dialect/
-        donation: https://opencollective.com/dialect
+    build: official
+appstream:
+  id: app.drey.Dialect
+  name: Dialect
+  icon: /dialect/dialect-logo.svg
+  summary: Простое приложение для перевода с различными дополнениями для улучшения процесса.
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  keywords:
+    - donttheme
+    - adaptive
+    - circle
+  developer:
+    name: The Dialect Authors
+  url:
+    homepage: https://github.com/dialect-app/dialect
+    bugtracker:
+      name: github.com
+      link: https://github.com/dialect-app/dialect/issues
+    translate: https://hosted.weblate.org/engage/dialect/
+    donation: https://opencollective.com/dialect
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /dialect/dialect-1.png
-        - src: /dialect/dialect-3.png
-        - src: /dialect/dialect-2.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /dialect/dialect-1.png
+    - src: /dialect/dialect-3.png
+    - src: /dialect/dialect-2.png
 ---
 
 # Dialect

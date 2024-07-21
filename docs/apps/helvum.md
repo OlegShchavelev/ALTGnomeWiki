@@ -1,24 +1,24 @@
 ---
 aggregation:
-    sisyphus: helvum
-    flatpak:
-        id: org.pipewire.Helvum
-        build: offical
-appstream:
+  sisyphus: helvum
+  flatpak:
     id: org.pipewire.Helvum
-    name: Helvum
-    icon: /helvum/helvum-logo.svg
-    summary: Патчбай для PipeWire
-    developer:
-        name: Tom Wagner
-        nickname: ryuukyu
-        avatar: /helvum/helvum-avatar.png
-    metadata_license:
-        name: GNU GPLv3
-        link: https://choosealicense.com/licenses/gpl-3.0/
-    url:
-        homepage: https://gitlab.freedesktop.org/pipewire/helvum
-        bugtracker: https://gitlab.freedesktop.org/pipewire/helvum/-/issues
+    build: official
+appstream:
+  id: org.pipewire.Helvum
+  name: Helvum
+  icon: /helvum/helvum-logo.svg
+  summary: Патчбай для PipeWire
+  developer:
+    name: Tom Wagner
+    nickname: ryuukyu
+    avatar: /helvum/helvum-avatar.png
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  url:
+    homepage: https://gitlab.freedesktop.org/pipewire/helvum
+    bugtracker: https://gitlab.freedesktop.org/pipewire/helvum/-/issues
 ---
 
 # Helvum

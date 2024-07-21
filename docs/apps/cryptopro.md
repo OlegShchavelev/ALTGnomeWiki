@@ -53,7 +53,7 @@ sudo ./install_gui.sh
 
 Источники:
 
--   https://support.kontur.ru/ca/38813-ustanovka_kriptopro_csp_na_altlinux
+- https://support.kontur.ru/ca/38813-ustanovka_kriptopro_csp_na_altlinux
 
 ## Вход с помощью токена на Госуслугах
 
@@ -77,10 +77,10 @@ sudo cp ~/ifcx86.cfg /etc/ifc.cfg
 
 6. Вход можно проверить на Госуслугах с помощью вашего токена на [странице входа](https://esia.gosuslugi.ru/login):
 
-    - Нажмите на пункт `Войти с электронной подписью` и `Готово`
-    - Выберите нужный сертификат электронной подписи
-    - В окне `Ввод пин-кода`, введите любое значение (оно на данном этапе не проверяется) и нажмите `Продолжить`
-    - При возникновении окна КриптоПро CSP, введите пин-код для ключевого контейнера в поле `Пароль` и нажать `OK`.
+   - Нажмите на пункт `Войти с электронной подписью` и `Готово`
+   - Выберите нужный сертификат электронной подписи
+   - В окне `Ввод пин-кода`, введите любое значение (оно на данном этапе не проверяется) и нажмите `Продолжить`
+   - При возникновении окна КриптоПро CSP, введите пин-код для ключевого контейнера в поле `Пароль` и нажать `OK`.
 
 7. При возникновении проблем для браузеров на основе [Chromium](/chromium), выполните следующую команду:
 
@@ -96,5 +96,5 @@ sudo cp /etc/opt/chrome/native-messaging-hosts/ru.rtlabs.ifcplugin.json /etc/chr
 
 Источники:
 
--   [Сайт КриптоПро](https://support.cryptopro.ru/index.php?/Knowledgebase/Article/View/275)
--   [Госуслуги](https://ds-plugin.gosuslugi.ru/plugin/upload/Index.spr)
+- [Сайт КриптоПро](https://support.cryptopro.ru/index.php?/Knowledgebase/Article/View/275)
+- [Госуслуги](https://ds-plugin.gosuslugi.ru/plugin/upload/Index.spr)

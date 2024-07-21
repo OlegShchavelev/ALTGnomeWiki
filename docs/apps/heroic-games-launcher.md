@@ -1,34 +1,34 @@
 ---
 aggregation:
-    flatpak:
-        id: com.heroicgameslauncher.hgl
-        build: offical
-    snap:
-        id: heroic
-        build: unoffical
+  flatpak:
+    id: com.heroicgameslauncher.hgl
+    build: official
+  snap:
+    id: heroic
+    build: unofficial
 appstream:
+  name: Heroic Games Launcher
+  icon: /heroic/heroic-logo.png
+  summary: Бесплатный лаунчер с открытым исходным кодом для Epic, GOG и Amazon Prime Games
+  metadata_license:
+    name: GNU GPLv3
+    link: https://heroicgameslauncher.com/cla
+  developer:
     name: Heroic Games Launcher
-    icon: /heroic/heroic-logo.png
-    summary: Бесплатный лаунчер с открытым исходным кодом для Epic, GOG и Amazon Prime Games
-    metadata_license:
-        name: GNU GPLv3
-        link: https://heroicgameslauncher.com/cla
-    developer:
-        name: Heroic Games Launcher
-    url:
-        homepage: https://heroicgameslauncher.com/
-        bugtracker: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues
-        donation: https://heroicgameslauncher.com/donate
+  url:
+    homepage: https://heroicgameslauncher.com/
+    bugtracker: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues
+    donation: https://heroicgameslauncher.com/donate
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /heroic/heroic1.png
-        - src: /heroic/heroic2.png
-        - src: /heroic/heroic3.png
-        - src: /heroic/heroic4.png
-        - src: /heroic/heroic5.png
-        - src: /heroic/heroic6.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /heroic/heroic1.png
+    - src: /heroic/heroic2.png
+    - src: /heroic/heroic3.png
+    - src: /heroic/heroic4.png
+    - src: /heroic/heroic5.png
+    - src: /heroic/heroic6.png
 ---
 
 # Heroic Games Launcher
@@ -42,9 +42,9 @@ Heroic — игровой лаунчер с открытым исходным к
 
 ## Установка версии AppImage
 
--   Скачайте дистрибутив с [официального сайта](https://heroicgameslauncher.com/downloads) по кнопке `AppImage`
+- Скачайте дистрибутив с [официального сайта](https://heroicgameslauncher.com/downloads) по кнопке `AppImage`
 
--   Откройте терминал и выполняем
+- Откройте терминал и выполняем
 
 ```shell
 su -
@@ -52,5 +52,5 @@ cd $HOME/Downloads/
 epm install Heroic-2.14.1.AppImage
 ```
 
--   Следуйте инструкциям в установщике
--   Готово, приложение установлено.
+- Следуйте инструкциям в установщике
+- Готово, приложение установлено.

@@ -1,25 +1,25 @@
 ---
 aggregation:
-    flatpak:
-        id: cc.arduino.arduinoide
-        build: offical
-    sisyphus: arduino
+  flatpak:
+    id: cc.arduino.arduinoide
+    build: official
+  sisyphus: arduino
 appstream:
-    id: cc.arduino.arduinoide.desktop
-    name: Arduino IDE
-    icon: /arduino-ide/arduino-ide-logo.png
-    summary: IDE для разработки программ для Arduino-совместимых плат
-    developer:
-        name: Arduino LLC
-    metadata_license:
-        name: GNU LGPLv2.1
-        link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
-    url:
-        homepage: https://arduino.cc/
-        bugtracker: https://github.com/arduino/Arduino/issues/
-        translate: https://github.com/arduino/Arduino/tree/master/arduino-core/src/processing/app/i18n/
-        help: https://www.arduino.cc/en/Guide/
-        donation: https://github.com/sponsors/arduino
+  id: cc.arduino.arduinoide.desktop
+  name: Arduino IDE
+  icon: /arduino-ide/arduino-ide-logo.png
+  summary: IDE для разработки программ для Arduino-совместимых плат
+  developer:
+    name: Arduino LLC
+  metadata_license:
+    name: GNU LGPLv2.1
+    link: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
+  url:
+    homepage: https://arduino.cc/
+    bugtracker: https://github.com/arduino/Arduino/issues/
+    translate: https://github.com/arduino/Arduino/tree/master/arduino-core/src/processing/app/i18n/
+    help: https://www.arduino.cc/en/Guide/
+    donation: https://github.com/sponsors/arduino
 ---
 
 # Arduino IDE

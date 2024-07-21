@@ -9,40 +9,40 @@
 ```markdown
 ---
 aggregation:
-    sisyphus: # название в репозитории
-    flatpak:
-        id: # flatpak id
-        build: # сборка offical/unoffical
-    snap:
-        id: # название на snapcraft
-        build: # сборка offical/unoffical
-    epm:
-        play:
-            id: # название в epm play
-            build: # сборка offical/unoffical
+  sisyphus: # название в репозитории
+  flatpak:
+    id: # flatpak id
+    build: # сборка official/unofficial
+  snap:
+    id: # название на snapcraft
+    build: # сборка official/unofficial
+  epm:
+    play:
+      id: # название в epm play
+      build: # сборка official/unofficial
 appstream:
-    id: # appstream id приложения
-    name: # Название приложения
-    icon: # путь к логотипу приложения
-    summary: # краткое описание
-    metadata_license:
-        name: # лицензия
-        link: # ссылка на лицензию
-    keywords: # список бейджей (подробнее ниже)
-    developer:
-        name: # имя разработчика
-        nickname: # nickname разработчика
-        avatar: # ссылка или путь на аватар разработчика
-    url:
-        homepage: # ссылка на страницу проекта
-        bugtracker: # ссылка на багтрекер (например, github issue)
-        translate: # ссылка на помощь с переводом
-        help: # ссылка на гайд по использованию
-        donation: # ссылка на донаты
+  id: # appstream id приложения
+  name: # Название приложения
+  icon: # путь к логотипу приложения
+  summary: # краткое описание
+  metadata_license:
+    name: # лицензия
+    link: # ссылка на лицензию
+  keywords: # список бейджей (подробнее ниже)
+  developer:
+    name: # имя разработчика
+    nickname: # nickname разработчика
+    avatar: # ссылка или путь на аватар разработчика
+  url:
+    homepage: # ссылка на страницу проекта
+    bugtracker: # ссылка на багтрекер (например, github issue)
+    translate: # ссылка на помощь с переводом
+    help: # ссылка на гайд по использованию
+    donation: # ссылка на донаты
 gallery:
-    title: # заголовок галереи (рекомендуется, просто "Галерея")
-    type: # тип галереи slider/carousel (рекомендуется slider)
-    items: # список фотографий (подробнее ниже)
+  title: # заголовок галереи (рекомендуется, просто "Галерея")
+  type: # тип галереи slider/carousel (рекомендуется slider)
+  items: # список фотографий (подробнее ниже)
 ---
 ```
 
@@ -53,12 +53,14 @@ gallery:
 ```markdown
 ---
 keywords:
-    - core # GNOME Core
-    - circle # GNOME Circle
-    - adaptive # Адаптивное
-    - proprietary # Проприетарное
-    - restrictions # Региональные ограничения
-    - dontthemes # Please don’t theme
+  - core # GNOME Core
+  - circle # GNOME Circle
+  - dev # GNOME Development
+  - oobe # Предустановлено
+  - adaptive # Адаптивное
+  - proprietary # Проприетарное
+  - restrictions # Региональные ограничения
+  - dontthemes # Please don’t theme
 ---
 ```
 
@@ -71,12 +73,12 @@ keywords:
 ```markdown
 ---
 gallery:
-    title: Галерея
-    type: slider
-    items:
-        - src: /amberol/amberol-1.png
-        - src: /amberol/amberol-2.png
-        - src: /amberol/amberol-3.png
+  title: Галерея
+  type: slider
+  items:
+    - src: /amberol/amberol-1.png
+    - src: /amberol/amberol-2.png
+    - src: /amberol/amberol-3.png
 ---
 ```
 

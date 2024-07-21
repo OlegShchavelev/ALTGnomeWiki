@@ -1,11 +1,11 @@
 ---
 aggregation:
   flatpak:
-    id: hu.kramo.Cartridges
+    id: page.kramo.Cartridges
     build: official
   sisyphus: cartridges
 appstream:
-  id: hu.kramo.Cartridges
+  id: page.kramo.Cartridges
   name: Картриджи
   icon: /cartridges/cartridges-logo.svg
   summary: Запускайте все свои игры
@@ -23,7 +23,6 @@ appstream:
     bugtracker: https://github.com/kra-mo/cartridges/issues
     translate: https://hosted.weblate.org/engage/cartridges/
     donation: https://github.com/sponsors/kra-mo
-
 gallery:
   title: Галерея
   type: slider

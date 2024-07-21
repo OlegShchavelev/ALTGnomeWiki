@@ -23,6 +23,7 @@ import AGWHomeSponsors from './components/AGWHomeSponsors.vue'
 import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
+import AGWSisyphusStats from './components/AGWSisyphusStats.vue'
 import AGWGnomeAppsList from './components/AGWGnomeApps/AGWGnomeAppsList.vue'
 
 /* Metrics */
@@ -75,7 +76,8 @@ export default {
   },
 
   enhanceApp(ctx) {
-    yandexMetrika(ctx, yandexMetrikaOptions.metrica )
+    yandexMetrika(ctx, yandexMetrikaOptions.metrica)
+    ctx.app.component('AGWSisyphusStats', AGWSisyphusStats)
     ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('contribution', AGWTeamPage)

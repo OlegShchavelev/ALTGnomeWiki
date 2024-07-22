@@ -90,6 +90,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'IP Lookup', link: '/ip-lookup' },
               { text: 'Kooha', link: '/kooha' },
               { text: 'Krita', link: '/krita' },
+              { text: 'Kega Fusion', link: '/kega-fusion' },
               { text: 'Lazarus', link: '/lazarus' },
               { text: 'LibreOffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },

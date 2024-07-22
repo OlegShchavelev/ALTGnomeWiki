@@ -194,7 +194,7 @@
 | Broadcom | BCM43225 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
 | Broadcom | BCM43227 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
 | Broadcom | BCM43228 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM4360 (14e4:43a0) | kernel-modules-bcmwl-* | :green_circle: | :green_circle: | - |
+| Broadcom | BCM4360 (14e4:43a0) | kernel-modules-bcmwl-* | :green_circle: | :green_circle: | [установка](https://alt-gnome.wiki/macbook.html#wi-fi) |
 | MEDIATEK | MT7921K (RZ608) Wi-Fi 6E 80MHz (14c3:0608) | - | :green_circle: | :green_circle: | - |
 | Realtek | RTL8188EU | kernel-modules-rtl8188eu-* | :large_blue_circle: | - | - |
 | Realtek | RTL8192EU | kernel-modules-rtl8192eu-* | :large_blue_circle: | - | - |

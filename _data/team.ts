@@ -309,5 +309,14 @@ export const contributions = [
     mapByNameAliases: ['Rirusha', 'Vladimir Vaskov'],
     avatar: 'https://github.com/Rirusha.png',
     links: [{ icon: 'github', link: 'https://github.com/Rirusha'}]
+  },
+  {
+    name: 'AL-S?',
+    mapByNameAliases: ['cryals'],
+    avatar: 'https://avatars.githubusercontent.com/u/99600368?v=4',
+    links: [{ icon: 'github', link: 'https://github.com/cryals'}],
+    actionText: 'Поддержать',
+    sponsor:
+      'https://www.tinkoff.ru/collectmoney/crowd/tonikyan.khachatur1/4ijqV39898/?short_link=93LEZqrEeY7&httpMethod=GET'
   }
 ]

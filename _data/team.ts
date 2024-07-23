@@ -317,6 +317,6 @@ export const contributions = [
     links: [{ icon: 'github', link: 'https://github.com/cryals'}],
     actionText: 'Поддержать',
     sponsor:
-      'https://www.tinkoff.ru/collectmoney/crowd/tonikyan.khachatur1/4ijqV39898/?short_link=93LEZqrEeY7&httpMethod=GET'
+      'https://yoomoney.ru/to/4100118730672586'
   }
 ]

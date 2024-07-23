@@ -3,7 +3,7 @@ aggregation:
   sisyphus: gnome-software
 appstream:
   id: org.gnome.Software.desktop
-  name: GNOME Software
+  name: Центр приложений
   icon: /gnome-software/gnome-software-logo.svg
   summary: Официальная утилита управления приложениями для рабочего окружения GNOME
   keywords:

@@ -18,6 +18,7 @@ import markdownItImplicitFigures from 'markdown-it-implicit-figures'
 import markdownItEmbed from 'markdown-it-html5-embed'
 import markdownItConditionalRender from 'markdown-it-conditional-render'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import linkBlock from '../theme/composables/linkBlock'
 
 /* Syntaxises */
 import languages from '../theme/syntaxes'
@@ -145,6 +146,8 @@ export const shared = defineConfig({
       })
       md.use(markdownItConditionalRender)
       md.use(tabsMarkdownPlugin)
+
+      md.use(linkBlock)
     }
   },
   transformPageData: (pageData) => {

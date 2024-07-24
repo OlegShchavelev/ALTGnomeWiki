@@ -28,7 +28,7 @@ appstream:
     name: GNOME
     avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
   url:
-    homepage: https://apps.gnome.org/Apostrophe
+    homepage: https://apps.gnome.org/WebfontKitGenerator
     bugtracker: https://gitlab.gnome.org/World/webfont-kit-generator/-/issues
 ---
 

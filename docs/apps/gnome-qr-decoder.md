@@ -1,22 +1,22 @@
 ---
-appstreamFlatpak: com.belmoussaoui.Authenticator
-nameRepo: authenticator
+appstreamFlatpak: com.belmoussaoui.Decoder
+nameRepo: gnome-qr-decoder
 gallery:
   title: Галерея
   type: slider
   items:
-    - src: /authenticator/sc-1.png
-    - src: /authenticator/sc-2.png
-    - src: /authenticator/sc-3.png
-    - src: /authenticator/sc-4.png
-    - src: /authenticator/sc-5.png
+    - src: /gnome-qr-decoder/sc-1.png
+    - src: /gnome-qr-decoder/sc-2.png
+    - src: /gnome-qr-decoder/sc-3.png
+    - src: /gnome-qr-decoder/sc-4.png
+    - src: /gnome-qr-decoder/sc-5.png
 aggregation:
-  flatpak: com.belmoussaoui.Authenticator
-  sisyphus: authenticator
+  flatpak: com.belmoussaoui.Decoder
+  sisyphus: gnome-qr-decoder
 appstream:
-  id: com.belmoussaoui.Authenticator
+  id: com.belmoussaoui.Decoder
   name: Аутентификатор
-  icon: /authenticator/logo.svg
+  icon: /gnome-qr-decoder/logo.svg
   summary: Создание двухфакторных кодов
   keywords:
     - circle
@@ -28,8 +28,8 @@ appstream:
     name: GNOME
     avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
   url:
-    homepage: https://apps.gnome.org/Authenticator
-    bugtracker: https://gitlab.gnome.org/World/authenticator/-/issues
+    homepage: https://apps.gnome.org/Decoder
+    bugtracker: https://gitlab.gnome.org/World/decoder/-/issues
 ---
 
 # Аутентификатор

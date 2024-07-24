@@ -36,8 +36,9 @@ apt-get install bcmwl-kernel-conf
 reboot
 ```
 
+[Источник](https://www.altlinux.org/Wi-fi_Broadcom)
+
 ::: warning
-Источник: https://www.altlinux.org/Wi-fi_Broadcom
 Данные по поддержке в таблице устарели, не смотрите туда
 :::
 
@@ -60,7 +61,7 @@ mcedit /etc/sysconfig/grub2
 
 `grub-mkconfig -o /boot/grub/grub.cfg` обновляем GRUB с новой конфигурацией и перезагружаемся
 
-Источник: https://www.jonayling.net/battery-life-under-linux/
+[Источник](https://www.jonayling.net/battery-life-under-linux/)
 
 2. Powertop нам друг
 
@@ -142,9 +143,9 @@ echo "Install complete"
 
 Ну всё, вот камера и работает :)
 
-Источник: https://gist.github.com/ukn/a2f85e3420ae7d0f64db2274a9bc106b
+[Источник](https://gist.github.com/ukn/a2f85e3420ae7d0f64db2274a9bc106b)
 
-Можно попробовать с калибровкой цветов отсюда: https://gist.github.com/xyb/879f3bdf93cb5e8fc3d9d9675ae272cb
+[Можно попробовать с калибровкой цветов отсюда](https://gist.github.com/xyb/879f3bdf93cb5e8fc3d9d9675ae272cb)
 
 ## Включаем двойную графику и собираем GPU-Switch
 
@@ -158,7 +159,7 @@ echo "Install complete"
 
 Для переключения режима достаточно скачать приложение gpu-switch с репозитория
 
-https://github.com/0xbb/gpu-switch.git
+[](https://github.com/0xbb/gpu-switch.git)
 
 Эта программа позволяет переключить видеокарту на требуемую.
 

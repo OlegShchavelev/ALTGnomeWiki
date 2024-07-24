@@ -20,6 +20,7 @@ appstream:
   summary: Легко создавайте наборы @font-face
   keywords:
     - circle
+    - adaptive
   metadata_license:
     name: GPL-3.0-or-later
     link: https://packages.altlinux.org/license/GPL-3.0-or-later

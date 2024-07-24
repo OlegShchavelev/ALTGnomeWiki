@@ -156,6 +156,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Zoom', link: '/zoom' },
               { text: 'Zsh', link: '/zsh' },
               { text: 'Анализатор использования дисков', link: '/baobab' },
+              { text: 'Апостроф', link: '/apostrophe' },
               { text: 'Веб-браузер Epiphany', link: '/epiphany' },
               { text: 'Глаз GNOME', link: '/eog' },
               { text: 'Дела', link: '/errands' },

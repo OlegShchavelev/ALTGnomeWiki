@@ -20,7 +20,6 @@ appstream:
   summary: Редактировать в стиле Markdown
   keywords:
     - circle
-    - adaptive
   metadata_license:
     name: GPL-3.0-or-later
     link: https://packages.altlinux.org/license/GPL-3.0-or-later

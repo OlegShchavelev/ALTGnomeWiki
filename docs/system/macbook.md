@@ -280,11 +280,16 @@ inxi -G
 
 ## Полезные ссылки:
 
-[большой репозиторий для макбуков 2016 год+](https://github.com/Dunedan/mbp-2016-linux)
-[- решение проблем с маком](https://wiki.archlinux.org/title/Mac/Troubleshooting#)
+[Большой репозиторий для Макбуков 2016 год+](https://github.com/Dunedan/mbp-2016-linux)
+
+[Решение проблем с Маком](https://wiki.archlinux.org/title/Mac/Troubleshooting#)
+
 [GPU переключатель на Mac](https://github.com/0xbb/gpu-switch)
-[неплохая статья можно почерпнуть что-то полезное](https://nixaid.com/linux-on-macbookpro-old/)
-[кастомизации для бука 2013 16" 11.3](http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1)
+
+[Неплохая статья можно почерпнуть что-то полезное](https://nixaid.com/linux-on-macbookpro-old/)
+
+[Кастомизации для бука 2013 16" 11.3](http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1)
+
 [Вопрос про камеру и почему не работает драйвер из статьи](https://github.com/patjak/facetimehd/issues/196)
 
 ## ToDo

@@ -1,5 +1,5 @@
 ---
-appstreamFlatpak: decibels
+appstreamFlatpak: org.gnome.Decibels
 nameRepo: decibels
 gallery:
   title: Галерея
@@ -11,7 +11,7 @@ gallery:
     - src: /decibels/sc-4.png
     - src: /decibels/sc-5.png
 aggregation:
-  flatpak: decibels
+  flatpak: org.gnome.Decibels
   sisyphus: decibels
 appstream:
   id: decibels

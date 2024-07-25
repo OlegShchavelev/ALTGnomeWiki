@@ -1,62 +1,45 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue'
+import { homepage } from '../../../package.json'
 
-const props = defineProps<{ href: string }>()
+const { href, title } = defineProps<{ href: string; title: string }>()
 
-const isExternal = computed(() => /https?:\/\//.test(props.href))
-
-const domain = window.location.hostname
-
-const title = ref<string>('')
-
-const fetchTitle = async (url: string) => {
-  try {
-    const response = await fetch(url)
-    if (!response.ok) {
-      throw new Error('Не удалось получить ответ от страницы')
-    }
-    const text = await response.text()
-    const parser = new DOMParser()
-    const doc = parser.parseFromString(text, 'text/html')
-    const pageTitle = doc.querySelector('title')?.textContent || 'Заголовок страницы не найден'
-    title.value = pageTitle
-  } catch (error) {
-    console.error('Не удалось загрузить заголовок:', error)
-    title.value = 'Не удалось загрузить заголовок'
-  }
-}
-
-onMounted(() => {
-  fetchTitle(props.href)
-})
+const isExternal = /https?:\/\//.test(href)
 </script>
 
 <template>
-  <a :href="props.href" :target="isExternal ? '_blank' : undefined">
-    <div class="custom-block link-block">
-      <p class="custom-block-title">
-        {{ title }}
-      </p>
-      <div class="content">
-        <p class="href">
-          <img style="height: 24px; width: 24px" :src="isExternal
-            ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${props.href}&sz=96`
-            : `favicon.png`
-            " />
-          &nbsp;
-          {{ props.href }}
+  <ClientOnly>
+    <a :href="href" :target="isExternal ? '_blank' : undefined">
+      <div class="custom-block link-block">
+        <p class="custom-block-title">
+          <slot />
         </p>
-        <p>{{ domain }}</p>
+        <p>
+          {{ title }}
+        </p>
+        <div class="footer">
+          <div class="domain">
+            <img
+              class="icon"
+              :src="
+                isExternal
+                  ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${href}&sz=96`
+                  : `favicon.png`
+              "
+            />
+            {{ href }}
+          </div>
+          {{ homepage.replace(/https?:/, '').replaceAll('/', '') }}
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
+  </ClientOnly>
 </template>
 
 <style scoped>
 .link-block {
   background-color: var(--vp-c-bg-soft);
-  transition-duration: .25s;
-  color: var(--vp-custom-block-info-text)
+  transition-duration: 0.25s;
+  color: var(--vp-custom-block-info-text);
 }
 
 .link-block:hover {
@@ -69,14 +52,19 @@ a:active {
   text-decoration: none;
 }
 
-.content {
+.footer {
+  margin: 8px 0;
   display: flex;
-  gap: 10px;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-.href {
+.domain {
   display: flex;
-  align-items: center
+  gap: 12px;
+  align-items: center;
 }
-</style
+
+.icon {
+  height: 24px;
+}
+</style>

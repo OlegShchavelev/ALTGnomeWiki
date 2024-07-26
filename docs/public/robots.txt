@@ -3,4 +3,5 @@ User-agent: *
 Host: https://alt-gnome.wiki
 Disallow: /apps/_parts/*
 Disallow: /tests/*
+Disallow: /docs/main/congrats.md
 Sitemap: https://alt-gnome.wiki/sitemap.xml

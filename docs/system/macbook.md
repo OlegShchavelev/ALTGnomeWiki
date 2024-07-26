@@ -11,7 +11,7 @@
 
 0. Качаем образ и пишем на флешку
 1. Выключаем мак и подключаем флешку
-2. Включаем мак с зажатой клавишей [alt/option]
+2. Включаем мак с зажатой клавишей [[Alt]]/[[Option]]
 3. На этапе выбора нам нужен жёлтый диск со странным названием EFI, это наш
 4. Далее устанавливаем, как на обычным PC, никакой разницы.
 
@@ -20,7 +20,7 @@
 Настраивать нам нужно многое, но всё не так страшно. Нам понадобится доступ в сеть.
 Перед всеми манипуляциями обнови систему:
 
-```bash
+```shell
 su -
 apt-get update && apt-get dist-upgrade
 ```
@@ -81,7 +81,7 @@ powertop
 
 0. Установка всего необходимого
 
-```bash
+```shell
 su -
 apt-get install git kernel-headers-un-def kernel-headers-modules-un-def
 ```
@@ -159,7 +159,7 @@ echo "Install complete"
 
 Для переключения режима достаточно скачать приложение gpu-switch с репозитория
 
-[](https://github.com/0xbb/gpu-switch.git)
+[gpu-switch](https://github.com/0xbb/gpu-switch.git)
 
 Эта программа позволяет переключить видеокарту на требуемую.
 
@@ -280,12 +280,17 @@ inxi -G
 
 ## Полезные ссылки:
 
-- https://github.com/Dunedan/mbp-2016-linux большой репозиторий для макбуков 2016 год+
-- https://wiki.archlinux.org/title/Mac/Troubleshooting# - решение проблем с маком
-- https://github.com/0xbb/gpu-switch GPU переключатель на Mac
-- https://nixaid.com/linux-on-macbookpro-old/ неплохая статья можно почерпнуть что-то полезное
-- http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1 кастомизации для бука 2013 16" 11.3
-- https://github.com/patjak/facetimehd/issues/196 Вопрос про камеру и почему не работает драйвер из статьи
+[Большой репозиторий для Макбуков 2016 год+](https://github.com/Dunedan/mbp-2016-linux)
+
+[Решение проблем с Маком](https://wiki.archlinux.org/title/Mac/Troubleshooting#)
+
+[GPU переключатель на Mac](https://github.com/0xbb/gpu-switch)
+
+[Неплохая статья можно почерпнуть что-то полезное](https://nixaid.com/linux-on-macbookpro-old/)
+
+[Кастомизации для бука 2013 16" 11.3](http://lukeluo.blogspot.com/2014/04/mac-book-pro-113-linux-customization-7_21.html?m=1)
+
+[Вопрос про камеру и почему не работает драйвер из статьи](https://github.com/patjak/facetimehd/issues/196)
 
 ## ToDo
 

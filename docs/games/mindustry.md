@@ -24,16 +24,28 @@ appstream:
     bugtracker: https://github.com/Anuken/Mindustry/issues
     help: https://mindustrygame.github.io/wiki/
 gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /mindustry/mindustry-menu.png
-    - src: /mindustry/mindustry-serpulo-1.png
-    - src: /mindustry/mindustry-serpulo-2.png
-    - src: /mindustry/mindustry-serpulo-3.png
-    - src: /mindustry/mindustry-erekir-1.png
-    - src: /mindustry/mindustry-erekir-2.png
-    - src: /mindustry/mindustry-erekir-3.png
+  - title: Галерея
+    type: slider
+    items:
+      - src: /mindustry/mindustry-menu.png
+      - src: /mindustry/mindustry-serpulo-1.png
+      - src: /mindustry/mindustry-serpulo-2.png
+      - src: /mindustry/mindustry-serpulo-3.png
+      - src: /mindustry/mindustry-erekir-1.png
+      - src: /mindustry/mindustry-erekir-2.png
+      - src: /mindustry/mindustry-erekir-3.png
+  - type: slider
+    items:
+      - src: /mindustry/mindustry-gier-1.png
+      - src: /mindustry/mindustry-gier-2.png
+  - type: slider
+    items:
+      - src: /mindustry/mindustry-notva-1.png
+      - src: /mindustry/mindustry-notva-2.png
+  - type: slider
+    items:
+      - src: /mindustry/mindustry-verilus-1.png
+      - src: /mindustry/mindustry-verilus-2.png
 ---
 
 # Mindustry
@@ -61,7 +73,7 @@ Erekir — это планета с уникальными природными 
 
 Всего в игру добавлено 3 планеты и 3 астероида, официально доступны лишь 2 планеты. Но взглянуть вы сможете лишь на три астероида, так как третья планета удалена полностью.
 
-::: warning
+::: warning/mindustry/mindustry-gier-1.png
 Включить весь скрытый контент можно через консоль, мы не гарантируем правильную его работу.
 
 Включить консоль можно в настройках, вкладка `игра`, пункт `включить консоль`.
@@ -89,9 +101,8 @@ Planets.tantros.alwaysUnlocked = true
 Planets.gier.alwaysUnlocked = true
 ```
 
-![gier](/mindustry/mindustry-gier-1.png)
+<AGWGallery id=1 />
 
-![gier](/mindustry/mindustry-gier-2.png)
 
 ### Notva
 
@@ -103,9 +114,7 @@ Planets.gier.alwaysUnlocked = true
 Planets.notva.alwaysUnlocked = true
 ```
 
-![notva](/mindustry/mindustry-notva-1.png)
-
-![notva](/mindustry/mindustry-notva-2.png)
+<AGWGallery id=2 />
 
 ### Verilus
 
@@ -117,6 +126,5 @@ Planets.notva.alwaysUnlocked = true
 Planets.verilus.alwaysUnlocked = true
 ```
 
-![verilus](/mindustry/mindustry-verilus-1.png)
+<AGWGallery id=3 />
 
-![verilus](/mindustry/mindustry-verilus-2.png)

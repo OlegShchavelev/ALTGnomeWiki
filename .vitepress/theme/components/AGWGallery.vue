@@ -9,13 +9,24 @@ import { Pagination } from 'swiper/modules'
 import setViewer from 'vitepress-plugin-image-viewer/lib/viewer'
 
 const { theme, frontmatter } = useData()
-const galleries = frontmatter.value.gallery ?? theme.value.gallery ?? []
+
+const props = defineProps({
+  id: Number
+})
+
+
+const galleries = props.id && frontmatter.value.gallery[props.id] ? frontmatter.value.gallery[props.id] : frontmatter.value.gallery[0] ?? frontmatter.value.gallery ?? theme.value.gallery ?? []
+
+console.log(props.id, galleries)
 
 const onSwiper = (swiper: any) => console.log(swiper)
 const onSlideChange = () => console.log('slide change')
 
 import 'swiper/css'
 import 'swiper/css/pagination'
+
+console.log(props)
+
 </script>
 
 <template>

@@ -17,8 +17,6 @@ const props = defineProps({
 
 const galleries = props.id && frontmatter.value.gallery[props.id] ? frontmatter.value.gallery[props.id] : frontmatter.value.gallery[0] ?? frontmatter.value.gallery ?? theme.value.gallery ?? []
 
-console.log(props.id, galleries)
-
 const onSwiper = (swiper: any) => console.log(swiper)
 const onSlideChange = () => console.log('slide change')
 

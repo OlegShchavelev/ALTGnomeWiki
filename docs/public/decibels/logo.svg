@@ -1,0 +1,37 @@
+<svg fill="none" height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="20" x2="90" y1="120" y2="120">
+        <stop offset="0" stop-color="#c64600"/>
+        <stop offset="0.057" stop-color="#ff7800"/>
+        <stop offset="0.145" stop-color="#c64600"/>
+    </linearGradient>
+    <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="108" x2="90" y1="120" y2="120">
+        <stop offset="0" stop-color="#c0bfbc"/>
+        <stop offset="0.333" stop-color="#deddda"/>
+        <stop offset="1" stop-color="#9a9996"/>
+    </linearGradient>
+    <path d="m 20 17 a 9 9 0 0 1 9 -9 h 61 v 112 h -61 a 9 9 0 0 1 -9 -9 z" fill="url(#a)"/>
+    <path d="m 20 17 a 9 9 0 0 1 9 -9 h 61 v 100 h -61 a 9 9 0 0 1 -9 -9 z" fill="#ff7800"/>
+    <path d="m 90 87 h 18 v 24 a 9 9 0 0 1 -9 9 h -9 z" fill="url(#b)"/>
+    <rect fill="#5e5c64" height="19" rx="3" width="9" x="104" y="51"/>
+    <rect fill="#9a9996" height="15" rx="3" width="9" x="104" y="51"/>
+    <rect fill="#5e5c64" height="13" rx="3" width="9" x="104" y="19"/>
+    <rect fill="#9a9996" height="9" rx="3" width="9" x="104" y="19"/>
+    <rect fill="#5e5c64" height="13" rx="3" width="9" x="104" y="35"/>
+    <rect fill="#9a9996" height="9" rx="3" width="9" x="104" y="35"/>
+    <path d="m 90 8 h 9 a 9 9 0 0 1 9 9 v 82 a 9 9 0 0 1 -9 9 h -9 z" fill="#deddda"/>
+    <rect fill="#241f31" height="60" rx="3" width="38" x="38" y="30"/>
+    <rect fill="#77767b" height="45" rx="8" width="16" x="52" y="37"/>
+    <g fill="#000000">
+        <circle cx="60" cy="74" r="4"/>
+        <circle cx="60" cy="45" r="4"/>
+        <path d="m 57 53 h 6 v 13 h -6 z"/>
+    </g>
+    <path d="m 38 33 h 7 v 57 h -5 a 2 2 0 0 1 -2 -2 z" fill="#77767b"/>
+    <path d="m 38 33 a 3 3 0 0 1 3 -3 h 32 a 3 3 0 0 1 3 3 z" fill="#000000"/>
+    <path d="m 38 33 a 3 3 0 0 1 3 -3 h 4 v 3 z" fill="#5e5c64"/>
+    <rect fill="#ff7800" height="8" rx="4" width="8" x="79" y="110"/>
+    <rect fill="#241f31" height="4" rx="2" width="4" x="81" y="112"/>
+    <rect fill="#ff7800" height="8" rx="4" width="8" x="68" y="110"/>
+    <rect fill="#241f31" height="4" rx="2" width="4" x="70" y="112"/>
+    <path d="m 90 20 h -70" stroke="#e66100" stroke-width="4"/>
+</svg>

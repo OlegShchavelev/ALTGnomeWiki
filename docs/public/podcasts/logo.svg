@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:export-ydpi="96" inkscape:export-xdpi="96" inkscape:export-filename="Template.png" sodipodi:version="0.32" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="org.gnome.Podcasts_clean.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape">
+    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="8" x2="120" y1="275.999989" y2="275.999989" inkscape:collect="always">
+        <stop offset="0" stop-color="#a51d2d"/>
+        <stop offset="0.03432177" stop-color="#ed333b"/>
+        <stop offset="0.07062413" stop-color="#c01c28"/>
+        <stop offset="0.92767543" stop-color="#c01c28"/>
+        <stop offset="0.96428573" stop-color="#ed333b"/>
+        <stop offset="1" stop-color="#c01c28"/>
+    </linearGradient>
+    <clipPath id="b">
+        <rect height="48" width="96" x="208" y="4"/>
+    </clipPath>
+    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="0.25490196" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.99999999" inkscape:cx="-59.599388" inkscape:cy="168.31056" inkscape:current-layer="layer9" showgrid="false" inkscape:grid-bbox="true" inkscape:document-units="px" inkscape:showpageshadow="false" inkscape:window-width="1920" inkscape:window-height="1016" inkscape:window-x="1600" inkscape:window-y="27" inkscape:snap-nodes="true" inkscape:snap-bbox="true" objecttolerance="7" gridtolerance="12" guidetolerance="13" inkscape:window-maximized="1" inkscape:pagecheckerboard="false" showguides="false" inkscape:guide-bbox="true" inkscape:locked="false" inkscape:measure-start="0,0" inkscape:measure-end="0,0" inkscape:object-nodes="true" inkscape:bbox-nodes="true" inkscape:snap-global="true" inkscape:object-paths="true" inkscape:snap-intersection-paths="true" inkscape:snap-bbox-edge-midpoints="true" inkscape:snap-bbox-midpoints="true" showborder="false" inkscape:snap-center="true" inkscape:snap-object-midpoints="true" inkscape:snap-midpoints="true" inkscape:snap-smooth-nodes="true" inkscape:snap-text-baseline="true">
+        <inkscape:grid spacingx="2" spacingy="2" enabled="true" visible="true" empspacing="4" originx="0" originy="0"/>
+        <sodipodi:guide position="64,8" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="12,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="64,104" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="64,128" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="104,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="9.2651362e-08,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="120,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="64,116" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <inkscape:grid spacingx="1" spacingy="1" empspacing="8" empcolor="#000000" empopacity="0.08627451" dotted="true"/>
+        <sodipodi:guide position="24,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="116,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="64,120" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="64,12" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="8,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="128,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="64,0" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="64,24" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="256,256" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+        <sodipodi:guide position="64,64" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)"/>
+    </sodipodi:namedview>
+    <g transform="matrix(1 0 0 1 0 -172)">
+        <rect fill="url(#a)" height="24" rx="8" width="112" x="8" y="264"/>
+        <rect fill="#ed333b" height="83.999992" rx="8" ry="8.842106" width="112" x="8" y="200"/>
+        <path d="m 36 281.99999 h 56 l -4 -10 h -48 z" fill="#5e5c64" stroke="#5e5c64" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0"/>
+        <rect fill="#424048" height="6.000008" width="64" x="32" y="282"/>
+        <path d="m 24 207.99999 h 80 l 8 8 v 52.00001 h -96 v -52.00001 z" fill="#f6f5f4" sodipodi:nodetypes="ccccccc" inkscape:connector-curvature="0"/>
+        <g enable-background="new" transform="matrix(1 0 0 1 0 7.999989)">
+            <rect fill="#424048" height="31.999985" width="96" x="16" y="216.00002"/>
+            <circle cx="39.999992" cy="232" fill="#f6f5f4" r="6"/>
+            <circle cx="87.999992" cy="232" fill="#f6f5f4" r="6"/>
+            <rect fill="#949390" height="12" width="24" x="51.999992" y="226"/>
+            <path clip-path="url(#b)" d="m 272 28 c 0 61.855892 -50.14411 112 -112 112 c -61.855892 0 -112 -50.144108 -112 -112 s 50.144108 -112 112 -112 c 61.85589 0 112 50.144108 112 112 z" fill="#424048" opacity="0.5" transform="matrix(0.25 0 0 0.25 -0.000005 225.00001)" inkscape:connector-curvature="0" sodipodi:nodetypes="sssss"/>
+        </g>
+    </g>
+</svg>

@@ -1,11 +1,15 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { nav, sidebar } from '../../_data/navigations'
 import { packages } from '../../package-lock.json'
+import { vitepressSearchOptions } from './plugins'
 
 export const ru = defineConfigWithTheme({
   lang: 'ru-RU',
   description: 'Свободная WIKI по операционной системе ALT Regular Gnome',
   themeConfig: {
+    search: {
+      options: vitepressSearchOptions
+    },
     nav: nav['ru-RU'],
     sidebar: sidebar['ru-RU'],
     editLink: {

@@ -36,7 +36,6 @@ import {
   alignmentContainers,
   headTransformer,
   nolebaseGitChangelogOptions,
-  vitepressSearchOptions
 } from './plugins'
 
 export const shared = defineConfig({
@@ -90,7 +89,6 @@ export const shared = defineConfig({
   themeConfig: {
     search: {
       provider: 'local',
-      options: vitepressSearchOptions
     },
     logo: { src: '/logo.png', width: 36, height: 36, alt: 'ALT Gnome Wiki' },
     socialLinks: [

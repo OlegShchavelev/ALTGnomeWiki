@@ -38,6 +38,7 @@ import {
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
 /* Nolebase PP */
 

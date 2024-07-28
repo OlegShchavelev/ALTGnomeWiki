@@ -23,10 +23,10 @@ const isExternal = /https?:\/\//.test(href)
               :src="
                 isExternal
                   ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${href}&sz=96`
-                  : `favicon.png`
+                  : `/favicon.png`
               "
             />
-            {{ href }}
+            {{ (isExternal ? '' : homepage.slice(0, -1)) + href }}
           </div>
           {{ homepage.replace(/https?:/, '').replaceAll('/', '') }}
         </div>

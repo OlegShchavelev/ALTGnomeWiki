@@ -11,38 +11,42 @@
 aggregation:
   sisyphus: # название в репозитории
   flatpak:
-    id: # flatpak id
+    id:    # flatpak id
     build: # сборка official/unofficial
   snap:
-    id: # название на snapcraft
+    id:    # название на snapcraft
     build: # сборка official/unofficial
   epm:
     play:
-      id: # название в epm play
+      id:    # название в epm play
       build: # сборка official/unofficial
 appstream:
-  id: # appstream id приложения
+  id:   # appstream id приложения
   name: # Название приложения
   icon: # путь к логотипу приложения
   summary: # краткое описание
+  keywords: # список бейджей (подробнее ниже)
   metadata_license:
     name: # лицензия
     link: # ссылка на лицензию
-  keywords: # список бейджей (подробнее ниже)
   developer:
-    name: # имя разработчика
+    name:     # имя разработчика
     nickname: # nickname разработчика
-    avatar: # ссылка или путь на аватар разработчика
+    avatar:   # ссылка или путь на аватар разработчика
   url:
-    homepage: # ссылка на страницу проекта
+    homepage:   # ссылка на страницу проекта
     bugtracker: # ссылка на багтрекер (например, github issue)
-    translate: # ссылка на помощь с переводом
-    help: # ссылка на гайд по использованию
-    donation: # ссылка на донаты
+    translate:  # ссылка на помощь с переводом
+    help:       # ссылка на гайд по использованию
+    donation:   # ссылка на донаты
 gallery:
   title: # заголовок галереи (рекомендуется, просто "Галерея")
-  type: # тип галереи slider/carousel (рекомендуется slider)
+  type:  # тип галереи slider/carousel (рекомендуется slider)
   items: # список фотографий (подробнее ниже)
+analogues: # список аналогичных приложений (подробнее ниже)
+  - title:       # название (необязательно)
+    description: # описание (необязательно)
+    link:        # ссылка
 ---
 ```
 
@@ -53,14 +57,14 @@ gallery:
 ```markdown
 ---
 keywords:
-  - core # GNOME Core
-  - circle # GNOME Circle
-  - dev # GNOME Development
-  - oobe # Предустановлено
-  - adaptive # Адаптивное
-  - proprietary # Проприетарное
+  - core         # GNOME Core
+  - circle       # GNOME Circle
+  - dev          # GNOME Development
+  - oobe         # Предустановлено
+  - adaptive     # Адаптивное
+  - proprietary  # Проприетарное
   - restrictions # Региональные ограничения
-  - dontthemes # Please don’t theme
+  - dontthemes   # Please don’t theme
 ---
 ```
 
@@ -82,6 +86,25 @@ gallery:
 ---
 ```
 
+
+### Список похожих приложений
+
+Можно использовать как внешние (https://alt-gnome.wiki/amberol), так и внутренние ссылки (/amberol)
+
+```markdown
+---
+analogues:
+  - title: Первое приложение
+    description: Описание первого приложения
+    link: /
+  - title: Второе приложение
+    link: /
+  - description: Описание третьего приложения
+    link: /
+  - link: /
+---
+```
+
 ## 2. Название и описание
 
 Замените `NAME` на название приложения и допишите описание.
@@ -92,19 +115,21 @@ gallery:
 NAME — ...
 ```
 
-## 3. Галерея
+## 3. Галерея и похожие приложения
 
-Для отображения галереи в нужном месте, необходимо вызвать виджет.
+Для отображения виджета в нужном месте, необходимо вызвать компоненет.
 
 ```markdown-vue
 Amberol воспроизводит музыку, и ничего больше.
 
+<AGWAnalogues /> <!-- [!code focus] -->
+
 <AGWGallery /> <!-- [!code focus] -->
 
-<!--{{`@inc${''}lude: @apps/_parts/install/content-repo.md`}}-->
+<!--{{`@include: @apps/_parts/install/content-repo.md`}}-->
 ```
 
-## 4. Установка
+## 5. Установка
 
 Блоки установки построятся автоматически, необходимо лишь заполнить Frontmatter переменные и подключить шаблоны.
 

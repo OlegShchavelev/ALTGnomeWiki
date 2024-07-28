@@ -24,6 +24,7 @@ import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
 import AGWCategories from './components/AGWDocsCategories.vue'
 import AGWGallery from './components/AGWGallery.vue'
 import AGWLinkBlock from './components/AGWLinkBlock.vue'
+import AGWAnalogues from './components/AGWAnalogues.vue'
 import AGWGnomeAppsList from './components/AGWGnomeApps/AGWGnomeAppsList.vue'
 
 /* Metrics */
@@ -80,6 +81,7 @@ export default {
     yandexMetrika(ctx, yandexMetrikaOptions.metrica)
     ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWLinkBlock', AGWLinkBlock)
+    ctx.app.component('AGWAnalogues', AGWAnalogues)
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('contribution', AGWTeamPage)
     ctx.app.component('GnomeAppsList', AGWGnomeAppsList)

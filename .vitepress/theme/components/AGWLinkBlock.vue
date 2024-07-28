@@ -8,7 +8,7 @@ const isExternal = /https?:\/\//.test(href)
 
 <template>
   <ClientOnly>
-    <a :href="href" :target="isExternal ? '_blank' : undefined">
+    <a v-if="href" :href :target="isExternal ? '_blank' : undefined">
       <div class="custom-block link-block">
         <p class="custom-block-title">
           <slot />
@@ -18,14 +18,10 @@ const isExternal = /https?:\/\//.test(href)
         </p>
         <div class="footer">
           <div class="domain">
-            <img
-              class="icon"
-              :src="
-                isExternal
-                  ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${href}&sz=96`
-                  : `/favicon.png`
-              "
-            />
+            <img class="icon" :src="isExternal
+                ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${href}&sz=96`
+                : `/favicon.png`
+              " />
             {{ (isExternal ? '' : homepage.slice(0, -1)) + href }}
           </div>
           {{ homepage.replace(/https?:/, '').replaceAll('/', '') }}

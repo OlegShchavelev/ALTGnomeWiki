@@ -7,15 +7,19 @@
 
 ## Скачать ALT Regular Gnome из Яндекс Зеркало
 
-- [ALT Regular Gnome <Badge type="info" text="tested" /><Badge type="tip" text="x86_64" /><Badge type="tip" text="Рекомендуемый" />](https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso)
-- [ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="x86_64" />](https://mirror.yandex.ru/altlinux-nightly/current/regular-gnome-latest-x86_64.iso)
+[ALT Regular Gnome <Badge type="info" text="tested" /><Badge type="tip" text="x86_64" /><Badge type="tip" text="Рекомендуемый" />](https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso)
+
+[ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="x86_64" />](https://mirror.yandex.ru/altlinux-nightly/current/regular-gnome-latest-x86_64.iso)
 
 ## Скачать ALT Regular Gnome из репозитория производителя Альт
 
-- [ALT Regular Gnome <Badge type="info" text="tested" /><Badge type="tip" text="x86_64" /><Badge type="tip" text="Рекомендуемый" />](https://nightly.altlinux.org/sisyphus/tested/regular-gnome-latest-x86_64.iso)
-- [ALT Regular Gnome <Badge type="info" text="tested" /><Badge type="tip" text="aarch64" /><Badge type="tip" text="Рекомендуемый" />](https://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso)
-- [ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="x86_64" />](https://nightly.altlinux.org/sisyphus/current/regular-gnome-latest-x86_64.iso)
-- [ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="aarch64" />](https://nightly.altlinux.org/sisyphus-aarch64/current/regular-gnome-latest-aarch64.iso)
+[ALT Regular Gnome <Badge type="info" text="tested" /><Badge type="tip" text="x86_64" /><Badge type="tip" text="Рекомендуемый" />](https://nightly.altlinux.org/sisyphus/tested/regular-gnome-latest-x86_64.iso)
+
+[ALT Regular Gnome <Badge type="info" text="tested" /><Badge type="tip" text="aarch64" /><Badge type="tip" text="Рекомендуемый" />](https://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso)
+
+[ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="x86_64" />](https://nightly.altlinux.org/sisyphus/current/regular-gnome-latest-x86_64.iso)
+
+[ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="aarch64" />](https://nightly.altlinux.org/sisyphus-aarch64/current/regular-gnome-latest-aarch64.iso)
 
 ## Запись на DVD и USB Flash
 

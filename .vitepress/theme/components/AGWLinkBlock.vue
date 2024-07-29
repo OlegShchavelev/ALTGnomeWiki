@@ -17,14 +17,18 @@ const isExternal = /https?:\/\//.test(href)
           {{ title }}
         </p>
         <div class="footer">
-          <div class="domain">
+          <div class="link">
             <img class="icon" :src="isExternal
                 ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${href}&sz=96`
                 : `/favicon.png`
               " />
-            {{ (isExternal ? '' : homepage.slice(0, -1)) + href }}
+            <div class="domain">
+              {{ decodeURI((isExternal ? '' : homepage.slice(0, -1)) + href) }}
+            </div>
           </div>
-          {{ homepage.replace(/https?:/, '').replaceAll('/', '') }}
+          <div>
+            {{ homepage.replace(/https?:/, '').replaceAll('/', '') }}
+          </div>
         </div>
       </div>
     </a>
@@ -54,10 +58,17 @@ a:active {
   justify-content: space-between;
 }
 
-.domain {
+.link {
+  max-width: 75%;
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+.domain {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .icon {

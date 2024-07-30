@@ -305,14 +305,9 @@ export const contributions = [
     links: [{ icon: 'github', link: 'https://github.com/Cyber-X-Code' }]
   },
   {
-    name: 'Владимир Васьков',
-    mapByNameAliases: ['Rirusha', 'Vladimir Vaskov'],
-    avatar: 'https://github.com/Rirusha.png',
-    links: [{ icon: 'github', link: 'https://github.com/Rirusha'}]
-  },
-  {
     name: 'AL-S?',
     mapByNameAliases: ['cryals'],
+    title: 'Участник',
     avatar: 'https://avatars.githubusercontent.com/u/99600368?v=4',
     links: [{ icon: 'github', link: 'https://github.com/cryals'}],
     actionText: 'Поддержать',

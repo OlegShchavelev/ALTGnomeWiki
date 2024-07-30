@@ -10,8 +10,6 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 /* Plugins options */
 import {
-  nolebaseEnhancedReadabilitiesOptions,
-  nolebaseGitChangelogOptions,
   nolebasePageProperties,
   yandexMetrikaOptions
 } from '../config/plugins/index.ts'
@@ -36,7 +34,6 @@ import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
@@ -52,10 +49,6 @@ import type { Options as NEROptions } from '@nolebase/vitepress-plugin-enhanced-
 /* Nolebase Gitlog */
 
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
-
-import { contributions } from '../../_data/team.ts'
-
-import { data as gitOnline } from './loaders/gitlogDataLoader.data.ts'
 
 /* Stylesheets */
 import 'uno.css'
@@ -87,11 +80,8 @@ export default {
     ctx.app.component('GnomeAppsList', AGWGnomeAppsList)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
-    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin, nolebaseEnhancedReadabilitiesOptions as Options)
-    ctx.app.use(NolebaseGitChangelogPlugin, {
-      locales: nolebaseGitChangelogOptions.locales,
-      mapAuthors: gitOnline.length ? gitOnline : contributions
-    })
+    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
+    ctx.app.use(NolebaseGitChangelogPlugin)
 
     enhanceAppWithTabs(ctx.app)
   },

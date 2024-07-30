@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { VPTeamPage, VPTeamPageTitle, VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
 
-import { data as gitOnline } from '../loaders/gitlogDataLoader.data.ts'
-import { developersSection, membersSection, teamSorting, contributions } from '../../../_data/team.ts'
+import { developersSection, membersSection, teamSorting } from '../../../_data/team.ts'
+import {default as map} from '../../../_data/fullteam.json'
 import { sortMembers } from '../composables/sorters.ts'
 
 import { useData } from 'vitepress'
@@ -11,7 +11,7 @@ const { frontmatter } = useData()
 
 <template>
   <ClientOnly>
-    <VPTeamPage v-if="gitOnline.length">
+    <VPTeamPage>
       <VPTeamPageTitle>
         <template v-if="frontmatter.longtitle" #title>
           {{ frontmatter.longtitle }}
@@ -29,7 +29,7 @@ const { frontmatter } = useData()
           <template #members>
             <VPTeamMembers
               :members="
-                sortMembers(gitOnline, teamSorting).filter((member) => member.title.includes('Разработчик'))
+                sortMembers(map, teamSorting).filter((member) => member.title.includes('Разработчик'))
               "
             />
           </template>
@@ -45,7 +45,7 @@ const { frontmatter } = useData()
           <template #members>
             <VPTeamMembers
               :members="
-                sortMembers(gitOnline, teamSorting).filter((member) => !member.title.includes('Разработчик'))
+                sortMembers(map, teamSorting).filter((member) => !member.title.includes('Разработчик'))
               "
             />
           </template>
@@ -53,19 +53,9 @@ const { frontmatter } = useData()
       </div>
 
       <div v-if="!teamSorting.includes('role')">
-        <VPTeamMembers :members="sortMembers(gitOnline, teamSorting)" />
+        <VPTeamMembers :members="sortMembers(map, teamSorting)" />
       </div>
 
-      <Content class="container" />
-    </VPTeamPage>
-
-    <VPTeamPage v-else>
-      <VPTeamPageTitle>
-        <template v-if="frontmatter.longtitle" #title>
-          {{ frontmatter.longtitle }}
-        </template>
-      </VPTeamPageTitle>
-      <VPTeamMembers :members="contributions" />
       <Content class="container" />
     </VPTeamPage>
   </ClientOnly>

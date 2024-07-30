@@ -1,14 +1,6 @@
 ---
-gallery:
-  title: Галерея Погоды
-  type: slider
-  items:
-    - src: /gnome-weather/sc-1.webp
-    - src: /gnome-weather/sc-2.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Weather
-    build: official
+  flatpak: org.gnome.Weather
   sisyphus: gnome-weather
 appstream:
   id: org.gnome.Weather
@@ -27,9 +19,16 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Weather/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-weather/-/issues
+gallery:
+  title: Галерея Погоды
+  type: slider
+  items:
+    - src: /gnome-weather/sc-1.webp
+    - src: /gnome-weather/sc-2.webp
 ---
 
 # Погода
+
 Небольшое приложение, которое позволяет отслеживать текущее состояние погоды для вашего города или любой точки мира.
 
 Оно также предоставляет доступ к подробному прогнозу погоды (до 7 дней) от различных Интернет-служб.

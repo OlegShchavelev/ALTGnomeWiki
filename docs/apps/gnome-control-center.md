@@ -1,12 +1,4 @@
 ---
-gallery:
-  title: Галерея Настроек
-  type: slider
-  items:
-    - src: /gnome-control-center/sc-1.png
-    - src: /gnome-control-center/sc-2.png
-    - src: /gnome-control-center/sc-3.png
-    - src: /gnome-control-center/sc-4.png
 aggregation:
   sisyphus: gnome-control-center
 appstream:
@@ -27,6 +19,14 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Settings/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-control-center/-/issues
+gallery:
+  title: Галерея Настроек
+  type: slider
+  items:
+    - src: /gnome-control-center/sc-1.png
+    - src: /gnome-control-center/sc-2.png
+    - src: /gnome-control-center/sc-3.png
+    - src: /gnome-control-center/sc-4.png
 ---
 
 # Настройки

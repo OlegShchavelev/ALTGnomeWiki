@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: com.discordapp.Discord
-    build: official
+  flatpak: com.discordapp.Discord
   epm:
     play:
       id: discord

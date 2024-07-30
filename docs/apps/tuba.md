@@ -1,12 +1,8 @@
 ---
 aggregation:
   sisyphus: tuba
-  flatpak:
-    id: dev.geopjr.Tuba
-    build: official
-  snap:
-    id: tuba
-    build: official
+  flatpak: dev.geopjr.Tuba
+  snap: tuba
 appstream:
   id: dev.geopjr.Tuba
   name: Tuba

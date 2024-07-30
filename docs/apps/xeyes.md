@@ -1,6 +1,4 @@
 ---
-title: Xeyes
-appstreamRepo: xeyes.desktop
 aggregation:
   sisyphus: xeyes
 appstream:

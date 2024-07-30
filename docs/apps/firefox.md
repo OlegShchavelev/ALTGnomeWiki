@@ -1,12 +1,8 @@
 ---
 aggregation:
   sisyphus: firefox
-  flatpak:
-    id: org.mozilla.firefox
-    build: official
-  snap:
-    id: firefox
-    build: official
+  flatpak: org.mozilla.firefox
+  snap: firefox
 appstream:
   id: org.mozilla.firefox
   name: Firefox

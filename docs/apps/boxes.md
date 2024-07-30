@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: org.gnome.Boxes
-    build: official
+  flatpak: org.gnome.Boxes
   sisyphus: gnome-boxes
 appstream:
   id: org.gnome.Boxes

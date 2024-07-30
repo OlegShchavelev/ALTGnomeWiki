@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: com.usebottles.bottles
-    build: official
+  flatpak: com.usebottles.bottles
   sisyphus: bottles
 appstream:
   id: com.usebottles.bottles

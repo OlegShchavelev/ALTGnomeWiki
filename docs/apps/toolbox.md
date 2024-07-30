@@ -1,5 +1,4 @@
 ---
-title: Toolbox
 appstream:
   name: Toolbox
   icon: /toolbox/toolbox-logo.svg

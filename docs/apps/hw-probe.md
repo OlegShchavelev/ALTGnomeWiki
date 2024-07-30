@@ -1,18 +1,7 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /hw-probe/hw-probe1.png
-    - src: /hw-probe/hw-probe2.png
-    - src: /hw-probe/hw-probe3.png
 aggregation:
-  snap:
-    id: hw-probe
-    build: official
-  flatpak:
-    id: org.linux_hardware.hw-probe
-    build: official
+  snap: hw-probe
+  flatpak: org.linux_hardware.hw-probe
   sisyphus: hw-probe
 appstream:
   id: org.linux_hardware.hw-probe
@@ -27,6 +16,13 @@ appstream:
   url:
     homepage: https://linux-hardware.org/
     bugtracker: https://github.com/linuxhw/hw-probe/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /hw-probe/hw-probe1.png
+    - src: /hw-probe/hw-probe2.png
+    - src: /hw-probe/hw-probe3.png
 ---
 
 # Hardware Probe (hw-probe)

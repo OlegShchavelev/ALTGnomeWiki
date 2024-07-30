@@ -1,17 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-contacts/sc-1.webp
-    - src: /gnome-contacts/sc-2.webp
-    - src: /gnome-contacts/sc-3.webp
-    - src: /gnome-contacts/sc-4.webp
-    - src: /gnome-contacts/sc-5.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Contacts
-    build: official
+  flatpak: org.gnome.Contacts
   sisyphus: gnome-Contacts
 appstream:
   id: org.gnome.Contacts
@@ -31,6 +20,15 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Contacts/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-contacts/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-contacts/sc-1.webp
+    - src: /gnome-contacts/sc-2.webp
+    - src: /gnome-contacts/sc-3.webp
+    - src: /gnome-contacts/sc-4.webp
+    - src: /gnome-contacts/sc-5.webp
 ---
 
 # Контакты

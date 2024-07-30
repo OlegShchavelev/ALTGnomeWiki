@@ -1,15 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-calendar/sc-1.webp
-    - src: /gnome-calendar/sc-2.webp
-    - src: /gnome-calendar/sc-3.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Calendar
-    build: official
+  flatpak: org.gnome.Calendar
   sisyphus: gnome-calendar
 appstream:
   id: org.gnome.Calendar
@@ -29,6 +20,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Calendar/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-calendar/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-calendar/sc-1.webp
+    - src: /gnome-calendar/sc-2.webp
+    - src: /gnome-calendar/sc-3.webp
 ---
 
 # Календарь

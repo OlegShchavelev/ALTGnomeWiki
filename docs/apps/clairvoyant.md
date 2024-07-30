@@ -1,16 +1,4 @@
 ---
-appstreamFlatpak: com.github.cassidyjames.clairvoyant
-nameRepo: clairvoyant
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /clairvoyant/sc-1.png
-    - src: /clairvoyant/sc-2.png
-    - src: /clairvoyant/sc-3.png
-    - src: /clairvoyant/sc-4.png
-    - src: /clairvoyant/sc-5.png
-    - src: /clairvoyant/sc-6.png
 aggregation:
   flatpak: com.github.cassidyjames.clairvoyant
 appstream:
@@ -29,15 +17,25 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Clairvoyant
     bugtracker: https://github.com/cassidyjames/clairvoyant/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /clairvoyant/sc-1.png
+    - src: /clairvoyant/sc-2.png
+    - src: /clairvoyant/sc-3.png
+    - src: /clairvoyant/sc-4.png
+    - src: /clairvoyant/sc-5.png
+    - src: /clairvoyant/sc-6.png
 ---
 
 # Провидец
 
 Любит ли он тебя? Стоит ли вам заказать пиццу на ужин? Существует ли такая вещь, как глупый вопрос? Узнайте ответы на эти и многие другие вопросы вместе с «Провидцем», вдохновленным «Magic 8 ball».
 
-* Задайте вопрос, затем откройте «Провидец» для получения ответа.
-* Не удовлетворены? Задайте вопрос ещё раз, затем нажмите «Спросить ещё раз».
-* Делайте с ответами всё, что хотите — только не стреляйте в посланника!
+- Задайте вопрос, затем откройте «Провидец» для получения ответа.
+- Не удовлетворены? Задайте вопрос ещё раз, затем нажмите «Спросить ещё раз».
+- Делайте с ответами всё, что хотите — только не стреляйте в посланника!
 
 <AGWGallery />
 

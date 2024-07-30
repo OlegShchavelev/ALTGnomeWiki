@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: com.brave.Browser
-    build: official
+  flatpak: com.brave.Browser
   epm:
     play:
       id: brave

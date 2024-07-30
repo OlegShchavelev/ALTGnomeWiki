@@ -1,13 +1,4 @@
 ---
-appstreamFlatpak: com.rafaelmardojai.SharePreview
-nameRepo: share-preview
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /share-preview/sc-1.png
-    - src: /share-preview/sc-2.png
-    - src: /share-preview/sc-3.png
 aggregation:
   flatpak: com.rafaelmardojai.SharePreview
   sisyphus: share-preview
@@ -27,6 +18,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/SharePreview
     bugtracker: https://github.com/rafaelmardojai/share-preview/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /share-preview/sc-1.png
+    - src: /share-preview/sc-2.png
+    - src: /share-preview/sc-3.png
 ---
 
 # Поделиться превью

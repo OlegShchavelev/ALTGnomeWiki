@@ -1,9 +1,6 @@
 ---
-title: Vesktop
 aggregation:
-  flatpak:
-    id: dev.vencord.Vesktop
-    build: official
+  flatpak: dev.vencord.Vesktop
   epm:
     play:
       id: vesktop

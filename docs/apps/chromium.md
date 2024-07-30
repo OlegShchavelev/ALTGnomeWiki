@@ -1,7 +1,4 @@
 ---
-title: Chromium
-appstreamFlatpak: org.chromium.Chromium
-appstreamRepo: org.chromium.Chromium
 aggregation:
   flatpak:
     id: org.chromium.Chromium

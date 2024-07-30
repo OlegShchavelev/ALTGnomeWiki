@@ -1,7 +1,4 @@
 ---
-title: Transmission
-appstreamRepo: com.transmissionbt.Transmission
-appstreamFlatpak: com.transmissionbt.Transmission
 aggregation:
   sisyphus: transmission
   flatpak: com.transmissionbt.Transmission

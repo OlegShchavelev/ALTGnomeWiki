@@ -1,8 +1,3 @@
----
-title: Podman Desktop
-appstreamFlatpak: io.podman_desktop.PodmanDesktop
----
-
 # Podman
 
 ![podman-desktop](/podman/from-docker-to-podman.png)

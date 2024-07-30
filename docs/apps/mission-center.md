@@ -1,9 +1,7 @@
 ---
 aggregation:
   sisyphus: mission-center
-  flatpak:
-    id: io.missioncenter.MissionCenter
-    build: official
+  flatpak: io.missioncenter.MissionCenter
 appstream:
   id: io.missioncenter.MissionCenter
   name: Mission Center

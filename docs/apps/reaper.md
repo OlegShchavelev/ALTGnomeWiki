@@ -1,7 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: fm.reaper.Reaper
+  flatpak: fm.reaper.Reaper
 appstream:
   id: fm.reaper.Reaper
   name: Reaper

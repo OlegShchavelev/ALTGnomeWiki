@@ -1,14 +1,4 @@
 ---
-appstreamFlatpak: org.gnome.gitlab.YaLTeR.Identity
-nameRepo: identity
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /identity/sc-1.png
-    - src: /identity/sc-2.png
-    - src: /identity/sc-3.png
-    - src: /identity/sc-4.png
 aggregation:
   flatpak: org.gnome.gitlab.YaLTeR.Identity
   sisyphus: identity
@@ -28,6 +18,14 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Identity
     bugtracker: https://gitlab.gnome.org/YaLTeR/identity/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /identity/sc-1.png
+    - src: /identity/sc-2.png
+    - src: /identity/sc-3.png
+    - src: /identity/sc-4.png
 ---
 
 # Идентичность

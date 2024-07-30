@@ -1,9 +1,4 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-extension-manager/gnome-extension-manager-1.gif
 aggregation:
   flatpak: com.mattjakeman.ExtensionManager
   sisyphus: gnome-extension-manager
@@ -22,6 +17,11 @@ appstream:
   url:
     homepage: https://github.com/mjakeman/extension-manager
     bugtracker: https://github.com/mjakeman/extension-manager/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-extension-manager/gnome-extension-manager-1.gif
 ---
 
 # Менеджер расширений

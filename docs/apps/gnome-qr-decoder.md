@@ -1,15 +1,4 @@
 ---
-appstreamFlatpak: com.belmoussaoui.Decoder
-nameRepo: gnome-qr-decoder
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-qr-decoder/sc-1.png
-    - src: /gnome-qr-decoder/sc-2.png
-    - src: /gnome-qr-decoder/sc-3.png
-    - src: /gnome-qr-decoder/sc-4.png
-    - src: /gnome-qr-decoder/sc-5.png
 aggregation:
   flatpak: com.belmoussaoui.Decoder
   sisyphus: gnome-qr-decoder
@@ -30,6 +19,15 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Decoder
     bugtracker: https://gitlab.gnome.org/World/decoder/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-qr-decoder/sc-1.png
+    - src: /gnome-qr-decoder/sc-2.png
+    - src: /gnome-qr-decoder/sc-3.png
+    - src: /gnome-qr-decoder/sc-4.png
+    - src: /gnome-qr-decoder/sc-5.png
 ---
 
 # Декодер
@@ -38,10 +36,10 @@ appstream:
 
 Функции:
 
-* Генерация QR-кода
-* Сканирование с помощью камеры
-* Сканирование со снимка экрана
-* Разбор и отображение содержимого QR-кода, когда это возможно
+- Генерация QR-кода
+- Сканирование с помощью камеры
+- Сканирование со снимка экрана
+- Разбор и отображение содержимого QR-кода, когда это возможно
 
 <AGWGallery />
 

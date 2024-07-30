@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: org.blender.Blender
-    build: official
+  flatpak: org.blender.Blender
   sisyphus: blender
 appstream:
   id: org.blender.Blender

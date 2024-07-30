@@ -1,15 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /baobab/baobab-1.png
-    - src: /baobab/baobab-2.png
-    - src: /baobab/baobab-3.png
 aggregation:
-  flatpak:
-    id: org.gnome.baobab
-    build: official
+  flatpak: org.gnome.baobab
   sisyphus: gnome-disk-usage
 appstream:
   id: org.gnome.baobab
@@ -27,6 +18,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Baobab/
     bugtracker: https://gitlab.gnome.org/GNOME/baobab/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /baobab/baobab-1.png
+    - src: /baobab/baobab-2.png
+    - src: /baobab/baobab-3.png
 ---
 
 # Анализатор использования дисков

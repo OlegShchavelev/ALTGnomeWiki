@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: com.heroicgameslauncher.hgl
-    build: official
+  flatpak: com.heroicgameslauncher.hgl
   snap:
     id: heroic
     build: unofficial

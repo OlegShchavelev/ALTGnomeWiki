@@ -1,6 +1,4 @@
 ---
-title: XLSCLIENTS
-appstreamRepo: alacarte.desktop
 aggregation:
   sisyphus: xlsclients
 appstream:

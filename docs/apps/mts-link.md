@@ -18,7 +18,6 @@ appstream:
     link: https://mts-link.ru/legal/license-agreement.pdf
   url:
     homepage: https://mts-link.ru/application/
-
 gallery:
   title: Галерея
   type: slider

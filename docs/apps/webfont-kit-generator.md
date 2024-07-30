@@ -1,15 +1,4 @@
 ---
-appstreamFlatpak: com.rafaelmardojai.WebfontKitGenerator
-nameRepo: webfont-kit-generator
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /webfont-kit-generator/sc-1.png
-    - src: /webfont-kit-generator/sc-2.png
-    - src: /webfont-kit-generator/sc-3.png
-    - src: /webfont-kit-generator/sc-4.png
-    - src: /webfont-kit-generator/sc-5.png
 aggregation:
   flatpak: com.rafaelmardojai.WebfontKitGenerator
   sisyphus: webfont-kit-generator
@@ -30,6 +19,15 @@ appstream:
   url:
     homepage: https://apps.gnome.org/WebfontKitGenerator
     bugtracker: https://gitlab.gnome.org/World/webfont-kit-generator/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /webfont-kit-generator/sc-1.png
+    - src: /webfont-kit-generator/sc-2.png
+    - src: /webfont-kit-generator/sc-3.png
+    - src: /webfont-kit-generator/sc-4.png
+    - src: /webfont-kit-generator/sc-5.png
 ---
 
 # Генератор набора веб-шрифтов

@@ -1,11 +1,4 @@
 ---
-appstreamFlatpak: org.gnome.gitlab.YaLTeR.VideoTrimmer
-nameRepo: gnome-video-trimmer
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-video-trimmer/sc-1.png
 aggregation:
   flatpak: org.gnome.gitlab.YaLTeR.VideoTrimmer
   sisyphus: gnome-video-trimmer
@@ -25,6 +18,11 @@ appstream:
   url:
     homepage: https://apps.gnome.org/VideoTrimmer
     bugtracker: https://gitlab.gnome.org/YaLTeR/video-trimmer/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-video-trimmer/sc-1.png
 ---
 
 # Видеотриммер

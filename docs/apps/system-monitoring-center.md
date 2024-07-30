@@ -1,9 +1,7 @@
 ---
 aggregation:
   sisyphus: system-monitoring-center
-  flatpak:
-    id: io.github.hakandundar34coding.system-monitoring-center
-    build: official
+  flatpak: io.github.hakandundar34coding.system-monitoring-center
 appstream:
   id: io.github.hakandundar34coding.system-monitoring-center.desktop
   name: Центр мониторинга системы

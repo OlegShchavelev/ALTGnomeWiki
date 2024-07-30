@@ -1,14 +1,4 @@
 ---
-appstreamFlatpak: fr.romainvigier.MetadataCleaner
-nameRepo: metadatacleaner
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /metadatacleaner/sc-1.png
-    - src: /metadatacleaner/sc-2.png
-    - src: /metadatacleaner/sc-3.png
-    - src: /metadatacleaner/sc-4.png
 aggregation:
   flatpak: fr.romainvigier.MetadataCleaner
 appstream:
@@ -28,6 +18,14 @@ appstream:
   url:
     homepage: https://apps.gnome.org/MetadataCleaner
     bugtracker: https://gitlab.com/rmnvgr/metadata-cleaner/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /metadatacleaner/sc-1.png
+    - src: /metadatacleaner/sc-2.png
+    - src: /metadatacleaner/sc-3.png
+    - src: /metadatacleaner/sc-4.png
 ---
 
 # Очиститель метаданных

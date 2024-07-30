@@ -1,9 +1,7 @@
 ---
 aggregation:
   sisyphus: loupe
-  flatpak:
-    id: org.gnome.Loupe
-    build: official
+  flatpak: org.gnome.Loupe
 appstream:
   id: org.gnome.Loupe
   name: Просмотрщик изображений

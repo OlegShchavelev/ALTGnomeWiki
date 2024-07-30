@@ -1,12 +1,8 @@
 ---
 aggregation:
   sisyphus: thunderbird
-  flatpak:
-    id: org.mozilla.Thunderbird
-    build: official
-  snap:
-    id: thunderbird
-    build: official
+  flatpak: org.mozilla.Thunderbird
+  snap: thunderbird
 appstream:
   id: org.mozilla.Thunderbird
   name: Thunderbird

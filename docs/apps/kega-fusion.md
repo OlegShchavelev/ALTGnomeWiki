@@ -1,15 +1,13 @@
 ---
 aggregation:
-  flatpak:
-    id: com.carpeludum.KegaFusion
-    build: official
+  flatpak: com.carpeludum.KegaFusion
 appstream:
   id: com.carpeludum.KegaFusion
   name: Kega Fusion
   icon: /kega-fusion/kega-fusion.png
   summary: Эмулятор 8-битных, 16-битных консолей Sega.
   keywords:
-      - proprietary
+    - proprietary
   developer:
     name: Steve Snake
   url:

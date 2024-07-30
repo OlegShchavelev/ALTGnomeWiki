@@ -1,10 +1,4 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-tour/sc-1.png
-    - src: /gnome-tour/sc-2.png
 aggregation:
   sisyphus: gnome-tour
 appstream:
@@ -24,6 +18,12 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Tour/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-tour/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-tour/sc-1.png
+    - src: /gnome-tour/sc-2.png
 ---
 
 # Экскурсия

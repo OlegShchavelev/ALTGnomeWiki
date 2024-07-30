@@ -1,11 +1,4 @@
 ---
-appstreamFlatpak: de.haeckerfelix.AudioSharing
-nameRepo: audiosharing
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /audiosharing/sc-1.png
 aggregation:
   flatpak: de.haeckerfelix.AudioSharing
   sisyphus: audiosharing
@@ -26,6 +19,11 @@ appstream:
   url:
     homepage: https://apps.gnome.org/AudioSharing
     bugtracker: https://gitlab.gnome.org/World/AudioSharing/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /audiosharing/sc-1.png
 ---
 
 # Audio Sharing

@@ -1,15 +1,4 @@
 ---
-appstreamFlatpak: org.gnome.gitlab.somas.Apostrophe
-nameRepo: apostrophe
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /apostrophe/sc-1.png
-    - src: /apostrophe/sc-2.png
-    - src: /apostrophe/sc-3.png
-    - src: /apostrophe/sc-4.png
-    - src: /apostrophe/sc-5.png
 aggregation:
   flatpak: org.gnome.gitlab.somas.Apostrophe
   sisyphus: apostrophe
@@ -29,6 +18,15 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Apostrophe
     bugtracker: https://gitlab.gnome.org/World/apostrophe/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /apostrophe/sc-1.png
+    - src: /apostrophe/sc-2.png
+    - src: /apostrophe/sc-3.png
+    - src: /apostrophe/sc-4.png
+    - src: /apostrophe/sc-5.png
 ---
 
 # Апостроф
@@ -37,12 +35,12 @@ appstream:
 
 Возможности:
 
-* Пользовательский интерфейс, адаптированный для комфортного письма
-* Режим, не отвлекающий от работы
-* Тёмная, светлая и «сепия» темы
-* Всё, что вы ожидаете от текстового редактора, например, проверка орфографии или статистика документов
-* Предварительный просмотр написанного в режиме реального времени
-* Экспорт во всевозможные форматы: PDF, Word/Libreoffice, LaTeX или даже слайд-шоу HTML
+- Пользовательский интерфейс, адаптированный для комфортного письма
+- Режим, не отвлекающий от работы
+- Тёмная, светлая и «сепия» темы
+- Всё, что вы ожидаете от текстового редактора, например, проверка орфографии или статистика документов
+- Предварительный просмотр написанного в режиме реального времени
+- Экспорт во всевозможные форматы: PDF, Word/Libreoffice, LaTeX или даже слайд-шоу HTML
 
 <AGWGallery />
 

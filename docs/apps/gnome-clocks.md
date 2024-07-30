@@ -1,16 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-clocks/sc-1.png
-    - src: /gnome-clocks/sc-2.png
-    - src: /gnome-clocks/sc-3.png
-    - src: /gnome-clocks/sc-4.png
 aggregation:
-  flatpak:
-    id: org.gnome.Clocks
-    build: official
+  flatpak: org.gnome.Clocks
   sisyphus: gnome-clocks
 appstream:
   id: org.gnome.Clocks
@@ -30,17 +20,25 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Clocks/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-clocks/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-clocks/sc-1.png
+    - src: /gnome-clocks/sc-2.png
+    - src: /gnome-clocks/sc-3.png
+    - src: /gnome-clocks/sc-4.png
 ---
 
 # Часы
 
 Простое и элегантное приложение-часы. Включает в себя мировые часы, будильники, секундомер и таймеры.
 
-* Показывать время в различных городах мира
-* Устанавливать будильники для подъёма
-* Замерять время с помощью точного секундомера
-* Устанавливать таймеры для приготовления еды
-<AGWGallery />
+- Показывать время в различных городах мира
+- Устанавливать будильники для подъёма
+- Замерять время с помощью точного секундомера
+- Устанавливать таймеры для приготовления еды
+  <AGWGallery />
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

@@ -1,15 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /logs/sc-1.png
-    - src: /logs/sc-2.png
-    - src: /logs/sc-3.png
 aggregation:
-  flatpak:
-    id: org.gnome.Logs
-    build: official
+  flatpak: org.gnome.Logs
   sisyphus: gnome-logs
 appstream:
   id: org.gnome.Logs
@@ -28,6 +19,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Logs/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-logs/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /logs/sc-1.png
+    - src: /logs/sc-2.png
+    - src: /logs/sc-3.png
 ---
 
 # Журналы

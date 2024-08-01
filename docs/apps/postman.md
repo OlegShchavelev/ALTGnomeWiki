@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: com.getpostman.Postman
-    build: official
+  flatpak: com.getpostman.Postman
   epm:
     play:
       id: postman

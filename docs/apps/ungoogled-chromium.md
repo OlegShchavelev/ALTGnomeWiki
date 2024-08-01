@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: io.github.ungoogled_software.ungoogled_chromium
-    build: official
+  flatpak: io.github.ungoogled_software.ungoogled_chromium
 appstream:
   id: io.github.ungoogled_software.ungoogled_chromium
   name: Ungoogled Chromium

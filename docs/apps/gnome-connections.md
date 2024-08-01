@@ -1,16 +1,6 @@
 ---
-gallery:
-  title: Галерея Подключения
-  type: slider
-  items:
-    - src: /gnome-connections/sc-1.webp
-    - src: /gnome-connections/sc-2.webp
-    - src: /gnome-connections/sc-3.webp
-    - src: /gnome-connections/sc-4.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Connections
-    build: official
+  flatpak: org.gnome.Connections
   sisyphus: gnome-connections
 appstream:
   id: org.gnome.Connections
@@ -29,9 +19,18 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Connections/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-connections/-/issues
+gallery:
+  title: Галерея Подключения
+  type: slider
+  items:
+    - src: /gnome-connections/sc-1.webp
+    - src: /gnome-connections/sc-2.webp
+    - src: /gnome-connections/sc-3.webp
+    - src: /gnome-connections/sc-4.webp
 ---
 
 # Подключения
+
 Подключения позволяют подключаться к другим рабочим столам и использовать их. Это может быть отличным способом доступа к содержимому или программному обеспечению на другой операционной системе рабочего стола. Это также может быть использовано как способ оказания поддержки пользователям, которым может понадобиться помощь.
 
 Можно подключаться к различным операционным системам, включая настольные компьютеры Linux и Windows. Можно также подключаться к виртуальным машинам.

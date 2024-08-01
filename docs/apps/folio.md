@@ -1,5 +1,4 @@
 ---
-title: Folio
 aggregation:
   flatpak: com.toolstack.Folio
 appstream:

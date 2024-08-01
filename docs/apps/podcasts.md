@@ -1,14 +1,4 @@
 ---
-appstreamFlatpak: org.gnome.Podcasts
-nameRepo: podcasts
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /podcasts/sc-1.png
-    - src: /podcasts/sc-2.png
-    - src: /podcasts/sc-3.png
-    - src: /podcasts/sc-4.png
 aggregation:
   flatpak: org.gnome.Podcasts
 appstream:
@@ -28,6 +18,14 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Podcasts
     bugtracker: https://gitlab.gnome.org/World/podcasts/issues/
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /podcasts/sc-1.png
+    - src: /podcasts/sc-2.png
+    - src: /podcasts/sc-3.png
+    - src: /podcasts/sc-4.png
 ---
 
 # Подкасты

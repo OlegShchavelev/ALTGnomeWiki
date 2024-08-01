@@ -1,9 +1,6 @@
 ---
-title: Turtle
 aggregation:
-  flatpak:
-    id: de.philippun1.turtle
-    build: official
+  flatpak: de.philippun1.turtle
 appstream:
   id: de.philippun1.turtle
   name: Turtle

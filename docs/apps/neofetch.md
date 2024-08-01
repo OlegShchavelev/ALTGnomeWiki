@@ -1,5 +1,4 @@
 ---
-title: Neofetch
 aggregation:
   sisyphus: neofetch
 appstream:

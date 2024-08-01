@@ -1,11 +1,4 @@
 ---
-gallery:
-  title: Галерея DiskUtility
-  type: slider
-  items:
-    - src: /diskutility/sc-1.png
-    - src: /diskutility/sc-2.png
-    - src: /diskutility/sc-3.png
 aggregation:
   sisyphus: gnome-disk-utility
 appstream:
@@ -26,6 +19,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/DiskUtility/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-disk-utility/-/issues
+gallery:
+  title: Галерея DiskUtility
+  type: slider
+  items:
+    - src: /diskutility/sc-1.png
+    - src: /diskutility/sc-2.png
+    - src: /diskutility/sc-3.png
 ---
 
 # Диски

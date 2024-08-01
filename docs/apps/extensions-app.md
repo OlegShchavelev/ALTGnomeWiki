@@ -1,16 +1,7 @@
 ---
-gallery:
-  title: Галерея GNOME Extensions
-  type: slider
-  items:
-    - src: /gnome-shell-extensions/sc-1.webp
-    - src: /gnome-shell-extensions/sc-2.webp
-    - src: /gnome-shell-extensions/sc-3.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Extensions
-    build: official
-  sisyphus: 
+  flatpak: org.gnome.Extensions
+  sisyphus:
     id: gnome-extensions-app
     url: sisyphus/srpms/gnome-shell
 appstream:
@@ -30,12 +21,18 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Extensions/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-shell-extensions/-/issues
+gallery:
+  title: Галерея GNOME Extensions
+  type: slider
+  items:
+    - src: /gnome-shell-extensions/sc-1.webp
+    - src: /gnome-shell-extensions/sc-2.webp
+    - src: /gnome-shell-extensions/sc-3.webp
 ---
 
 # Расширения
 
 GNOME Extensions занимается обновлением расширений, настройкой параметров расширений и удалением или отключением нежелательных расширений.
-
 
 <AGWGallery />
 

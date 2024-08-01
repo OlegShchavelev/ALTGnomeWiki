@@ -1,5 +1,4 @@
 ---
-title: Fastfetch
 aggregation:
   sisyphus: fastfetch
 appstream:

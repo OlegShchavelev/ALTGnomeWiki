@@ -1,17 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-calculator/sc-1.webp
-    - src: /gnome-calculator/sc-2.webp
-    - src: /gnome-calculator/sc-3.webp
-    - src: /gnome-calculator/sc-4.webp
-    - src: /gnome-calculator/sc-5.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Calculator
-    build: official
+  flatpak: org.gnome.Calculator
   sisyphus: gnome-calculator
 appstream:
   id: org.gnome.Calculator
@@ -31,6 +20,15 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Calculator/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-calculator/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-calculator/sc-1.webp
+    - src: /gnome-calculator/sc-2.webp
+    - src: /gnome-calculator/sc-3.webp
+    - src: /gnome-calculator/sc-4.webp
+    - src: /gnome-calculator/sc-5.webp
 ---
 
 # Калькулятор

@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: org.audacityteam.Audacity
-    build: official
+  flatpak: org.audacityteam.Audacity
   sisyphus: audacity
 appstream:
   id: org.audacityteam.Audacity

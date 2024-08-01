@@ -1,5 +1,4 @@
 ---
-title: Radio
 aggregation:
   flatpak: io.github.alexkdeveloper.radio
 appstream:

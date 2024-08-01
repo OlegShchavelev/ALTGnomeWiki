@@ -1,10 +1,6 @@
 ---
-title: Xmind
-appstreamFlatpak: net.xmind.XMind
 aggregation:
-  flatpak:
-    id: net.xmind.XMind
-    build: official
+  flatpak: net.xmind.XMind
 appstream:
   id: net.xmind.XMind
   name: Xmind

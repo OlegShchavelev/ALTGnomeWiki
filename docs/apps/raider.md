@@ -1,11 +1,4 @@
 ---
-appstreamFlatpak: com.github.ADBeveridge.Raider
-nameRepo: raider
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /raider/sc-1.png
 aggregation:
   flatpak: com.github.ADBeveridge.Raider
 appstream:
@@ -25,6 +18,11 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Raider
     bugtracker: https://github.com/ADBeveridge/raider/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /raider/sc-1.png
 ---
 
 # Файловый шредер

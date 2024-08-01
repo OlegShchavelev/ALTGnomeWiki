@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: com.github.alexkdeveloper.notepad
-    build: official
+  flatpak: com.github.alexkdeveloper.notepad
 appstream:
   id: com.github.alexkdeveloper.notepad
   name: Notepad

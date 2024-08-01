@@ -1,9 +1,7 @@
 ---
 aggregation:
   sisyphus: wike
-  flatpak:
-    id: com.github.hugolabe.Wike
-    build: official
+  flatpak: com.github.hugolabe.Wike
   snap:
     id: wike
     build: unofficial

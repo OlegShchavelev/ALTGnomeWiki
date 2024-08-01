@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: app.fotema.Fotema
-    build: official
+  flatpak: app.fotema.Fotema
 appstream:
   id: app.fotema.Fotema
   name: Fotema

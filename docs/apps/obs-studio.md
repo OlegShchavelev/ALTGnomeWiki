@@ -1,13 +1,10 @@
 ---
 aggregation:
   sisyphus: obs-studio
-  flatpak:
-    id: com.obsproject.Studio
-    build: official
+  flatpak: com.obsproject.Studio
   snap:
     id: obs-studio
     build: unofficial
-
 appstream:
   id: com.obsproject.Studio
   name: OBS Studio

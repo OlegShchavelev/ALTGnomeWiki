@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: io.gitlab.librewolf-community
-    build: official
+  flatpak: io.gitlab.librewolf-community
 appstream:
   id: io.gitlab.librewolf-community
   name: LibreWolf

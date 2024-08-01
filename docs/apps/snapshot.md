@@ -1,14 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /snapshot/sc-1.webp
-    - src: /snapshot/sc-2.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Snapshot
-    build: official
+  flatpak: org.gnome.Snapshot
   sisyphus: snapshot
 appstream:
   id: org.gnome.Snapshot
@@ -28,6 +20,12 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Snapshot/
     bugtracker: https://gitlab.gnome.org/GNOME/snapshot/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /snapshot/sc-1.webp
+    - src: /snapshot/sc-2.webp
 ---
 
 # Камера

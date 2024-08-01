@@ -4,9 +4,7 @@ aggregation:
   flatpak:
     id: org.videolan.VLC
     build: unofficial
-  snap:
-    id: vlc
-    build: official
+  snap: vlc
 appstream:
   id: org.videolan.VLC
   name: VLC

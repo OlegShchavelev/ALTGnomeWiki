@@ -1,17 +1,9 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /rnote/rnote-1.png
-    - src: /rnote/rnote-2.png
 aggregation:
   snap:
     id: rnote
     build: unofficial
-  flatpak:
-    id: com.github.flxzt.rnote
-    build: official
+  flatpak: com.github.flxzt.rnote
 appstream:
   id: com.github.flxzt.rnote
   name: Rnote
@@ -25,6 +17,12 @@ appstream:
   url:
     homepage: https://rnote.flxzt.net/
     bugtracker: https://github.com/flxzt/rnote/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /rnote/rnote-1.png
+    - src: /rnote/rnote-2.png
 ---
 
 # Rnote

@@ -1,14 +1,4 @@
 ---
-appstreamFlatpak: dev.Cogitri.Health
-nameRepo: gnome-health
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-health/sc-1.png
-    - src: /gnome-health/sc-2.png
-    - src: /gnome-health/sc-3.png
-    - src: /gnome-health/sc-4.png
 aggregation:
   flatpak: dev.Cogitri.Health
   sisyphus: gnome-health
@@ -28,6 +18,14 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Health
     bugtracker: https://gitlab.gnome.org/World/Health/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-health/sc-1.png
+    - src: /gnome-health/sc-2.png
+    - src: /gnome-health/sc-3.png
+    - src: /gnome-health/sc-4.png
 ---
 
 # Здоровье

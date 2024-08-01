@@ -1,11 +1,4 @@
 ---
-appstreamFlatpak: org.gnome.design.Emblem
-nameRepo: emblem
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /emblem/sc-1.png
 aggregation:
   flatpak: org.gnome.design.Emblem
   sisyphus: emblem
@@ -25,6 +18,11 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Emblem
     bugtracker: https://gitlab.gnome.org/World/design/emblem/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /emblem/sc-1.png
 ---
 
 # Эмблема

@@ -1,9 +1,4 @@
 ---
-gallery:
-  title: Галерея Справки GNOME
-  type: slider
-  items:
-    - src: /yelp/sc-1.png
 aggregation:
   sisyphus: yelp
 appstream:
@@ -23,6 +18,11 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Yelp/
     bugtracker: https://gitlab.gnome.org/GNOME/yelp/-/issues
+gallery:
+  title: Галерея Справки GNOME
+  type: slider
+  items:
+    - src: /yelp/sc-1.png
 ---
 
 # Справка

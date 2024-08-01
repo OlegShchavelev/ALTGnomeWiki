@@ -1,11 +1,7 @@
 ---
 aggregation:
-  flatpak:
-    id: org.gimp.GIMP
-    build: official
-  snap:
-    id: gimp
-    build: official
+  flatpak: org.gimp.GIMP
+  snap: gimp
   sisyphus: gimp
 appstream:
   id: org.gimp.GIMP

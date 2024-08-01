@@ -1,15 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /epiphany/sc-1.png
-    - src: /epiphany/sc-2.png
-    - src: /epiphany/sc-3.png
 aggregation:
-  flatpak:
-    id: org.gnome.Epiphany
-    build: official
+  flatpak: org.gnome.Epiphany
   sisyphus: epiphany
 appstream:
   id: org.gnome.Epiphany
@@ -28,6 +19,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Epiphany/
     bugtracker: https://gitlab.gnome.org/GNOME/epiphany/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /epiphany/sc-1.png
+    - src: /epiphany/sc-2.png
+    - src: /epiphany/sc-3.png
 ---
 
 # Веб-браузер

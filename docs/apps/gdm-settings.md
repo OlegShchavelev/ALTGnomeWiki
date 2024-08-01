@@ -1,9 +1,7 @@
 ---
 aggregation:
   sisyphus: gdm-settings
-  flatpak:
-    id: io.github.realmazharhussain.GdmSettings
-    build: official
+  flatpak: io.github.realmazharhussain.GdmSettings
 appstream:
   id: io.github.realmazharhussain.GdmSettings
   name: GDM Settings

@@ -1,15 +1,6 @@
 ---
-gallery:
-  title: Галерея Символов
-  type: slider
-  items:
-    - src: /gnome-characters/sc-1.webp
-    - src: /gnome-characters/sc-2.webp
-    - src: /gnome-characters/sc-3.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Characters
-    build: official
+  flatpak: org.gnome.Characters
   sisyphus: gnome-characters
 appstream:
   id: gnome-characters
@@ -29,6 +20,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Characters/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-characters/-/issues
+gallery:
+  title: Галерея Символов
+  type: slider
+  items:
+    - src: /gnome-characters/sc-1.webp
+    - src: /gnome-characters/sc-2.webp
+    - src: /gnome-characters/sc-3.webp
 ---
 
 # Символы

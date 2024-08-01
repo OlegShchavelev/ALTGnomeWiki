@@ -1,13 +1,9 @@
 ---
 aggregation:
   sisyphus: portproton
-  flatpak:
-    id: ru.linux_gaming.PortProton
-    build: official
+  flatpak: ru.linux_gaming.PortProton
   epm:
-    play:
-      id: portproton
-      build: official
+    play: portproton
 appstream:
   id: portproton
   name: PortProton

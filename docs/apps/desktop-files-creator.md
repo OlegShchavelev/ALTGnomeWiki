@@ -1,5 +1,4 @@
 ---
-title: Desktop Files Creator
 aggregation:
   flatpak: com.github.alexkdeveloper.desktop-files-creator
 appstream:

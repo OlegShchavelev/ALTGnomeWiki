@@ -1,11 +1,4 @@
 ---
-appstreamFlatpak: app.drey.Biblioteca
-nameRepo: biblioteca
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /biblioteca/sc-1.png
 aggregation:
   flatpak: app.drey.Biblioteca
   sisyphus: biblioteca
@@ -26,19 +19,24 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Biblioteca
     bugtracker: https://github.com/workbenchdev/Biblioteca/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /biblioteca/sc-1.png
 ---
 
 # Biblioteca
 
 Biblioteca позволяет просматривать и читать документацию GNOME. Среди прочего, Biblioteca поставляется с
 
-* Оффлайн документация
-* Просмотр веб-страниц
-* Вкладки
-* Поддержка темного режима
-* Нечеткий поиск
-* Мобильный/адаптивный
-<AGWGallery />
+- Оффлайн документация
+- Просмотр веб-страниц
+- Вкладки
+- Поддержка темного режима
+- Нечеткий поиск
+- Мобильный/адаптивный
+  <AGWGallery />
 
 <!--@include: @apps/_parts/install/content-repo.md-->
 <!--@include: @apps/_parts/install/content-flatpak.md-->

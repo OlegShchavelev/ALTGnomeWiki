@@ -1,15 +1,4 @@
 ---
-appstreamFlatpak: org.gnome.Decibels
-nameRepo: decibels
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /decibels/sc-1.png
-    - src: /decibels/sc-2.png
-    - src: /decibels/sc-3.png
-    - src: /decibels/sc-4.png
-    - src: /decibels/sc-5.png
 aggregation:
   flatpak: org.gnome.Decibels
   sisyphus: decibels
@@ -30,6 +19,15 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Decibels
     bugtracker: https://gitlab.gnome.org/GNOME/Incubator/decibels
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /decibels/sc-1.png
+    - src: /decibels/sc-2.png
+    - src: /decibels/sc-3.png
+    - src: /decibels/sc-4.png
+    - src: /decibels/sc-5.png
 ---
 
 # Децибелы
@@ -38,10 +36,10 @@ appstream:
 
 Возможности:
 
-* Отображение волновой формы трека
-* Регулировка скорости воспроизведения
-* Лёгкое управление перемоткой
-* Интуитивный интерфейс
+- Отображение волновой формы трека
+- Регулировка скорости воспроизведения
+- Лёгкое управление перемоткой
+- Интуитивный интерфейс
 
 <AGWGallery />
 

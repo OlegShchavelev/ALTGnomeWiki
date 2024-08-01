@@ -1,11 +1,4 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /nautilus/sc-1.png
-    - src: /nautilus/sc-2.png
-    - src: /nautilus/sc-3.png
 aggregation:
   sisyphus: nautilus
 appstream:
@@ -26,6 +19,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Nautilus/
     bugtracker: https://gitlab.gnome.org/GNOME/nautilus/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /nautilus/sc-1.png
+    - src: /nautilus/sc-2.png
+    - src: /nautilus/sc-3.png
 ---
 
 # Файлы

@@ -5,219 +5,250 @@
 Все данные взяты из открытых источников и могут быть неполными или устаревшими. Если у вас есть информация о совместимости вашего оборудования, которого нет в этом разделе, пожалуйста, добавьте её.
 
 ## Периферия
+
 ### Мышки
-| Производитель | Модель | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| Logitech | [G102](https://www.logitechg.com/en-my/products/gaming-mice/g102-prodigy-gaming-mouse.910-004846.html) | :green_circle: | [`piper`](piper.md) | - |
-| Logitech | M705 | :green_circle: | - | - |
-| Logitech | MX Master 3 | :green_circle: | [`piper`](piper.md), [`Solaar`](https://pwr-solaar.github.io/Solaar/) | - |
-| Xiaomi | [Dual Mode Wireless Mouse Silent Edition](https://www.mi.com/ru/product/mi-dual-mode-wireless-mouse/) | :green_circle: | - | - |
+
+| Производитель |                                                 Модель                                                 |   Состояние    |                                  ПО                                   | Примечание |
+| :-----------: | :----------------------------------------------------------------------------------------------------: | :------------: | :-------------------------------------------------------------------: | :--------: |
+|   Logitech    | [G102](https://www.logitechg.com/en-my/products/gaming-mice/g102-prodigy-gaming-mouse.910-004846.html) | :green_circle: |                          [`piper`](piper.md)                          |     -      |
+|   Logitech    |                                                  M705                                                  | :green_circle: |                                   -                                   |     -      |
+|   Logitech    |                                              MX Master 3                                               | :green_circle: | [`piper`](piper.md), [`Solaar`](https://pwr-solaar.github.io/Solaar/) |     -      |
+|    Xiaomi     | [Dual Mode Wireless Mouse Silent Edition](https://www.mi.com/ru/product/mi-dual-mode-wireless-mouse/)  | :green_circle: |                                   -                                   |     -      |
 
 ### Клавиатуры
-| Производитель | Модель | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| Дарк Проджект | KD98 | :green_circle: | - | [Работа клавиш Fn в функциональном режиме](dark-project-keyboard-on-linux.md), Раскладка Win |
-| Дарк Проджект | KD85 | :green_circle: | - | Раскладка Win |
-| Logitech | MX Keys | :green_circle: | [`Solaar`](https://pwr-solaar.github.io/Solaar/) | - |
-| Кeychron | K3D1 | :green_circle: | - | Раскладка Win, BT+Cable |
+
+| Производитель | Модель  |   Состояние    |                        ПО                        |                                          Примечание                                          |
+| :-----------: | :-----: | :------------: | :----------------------------------------------: | :------------------------------------------------------------------------------------------: |
+| Дарк Проджект |  KD98   | :green_circle: |                        -                         | [Работа клавиш Fn в функциональном режиме](dark-project-keyboard-on-linux.md), Раскладка Win |
+| Дарк Проджект |  KD85   | :green_circle: |                        -                         |                                        Раскладка Win                                         |
+|   Logitech    | MX Keys | :green_circle: | [`Solaar`](https://pwr-solaar.github.io/Solaar/) |                                              -                                               |
+|   Кeychron    |  K3D1   | :green_circle: |                        -                         |                                   Раскладка Win, BT+Cable                                    |
 
 ### Коврики
-| Производитель | Модель | Состояние | Примечание |
-| :---: | :---: | :---: | :---: |
-| Дарк Проджект | MD3a | :green_circle: | - |
-| СustomMade | CM x Fispeckt Katana Dark | :green_circle: | Размер XXL |
-| Logitech | Desk Mat | :green_circle: | - |
+
+| Производитель |          Модель           |   Состояние    | Примечание |
+| :-----------: | :-----------------------: | :------------: | :--------: |
+| Дарк Проджект |           MD3a            | :green_circle: |     -      |
+|  СustomMade   | CM x Fispeckt Katana Dark | :green_circle: | Размер XXL |
+|   Logitech    |         Desk Mat          | :green_circle: |     -      |
 
 ### Геймпады / Джойстики
-| Производитель | Модель | BT | Радио | Провод | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Logitech | F710 | - | :green_circle: | - | - | - |
-| Microsoft | Xbox 360 | :red_circle: | :large_blue_circle: | :large_blue_circle: | - | - |
-| Microsoft | Xbox One | :yellow_circle: | :large_blue_circle: | :green_circle: | bluez | - |
-| Microsoft | Xbox Series | :yellow_circle: | :large_blue_circle: | :green_circle: | bluez | - |
-| Sony | DualSense | :green_circle: | - | :green_circle: | bluez | - |
-| Sony | DualShock 3 | :red_circle: | - | :large_blue_circle: | - | - |
-| Sony | DualShock 4 | :yellow_circle: | - | :green_circle: | bluez | - |
+
+| Производитель |   Модель    |       BT        |        Радио        |       Провод        |  ПО   | Примечание |
+| :-----------: | :---------: | :-------------: | :-----------------: | :-----------------: | :---: | :--------: |
+|   Logitech    |    F710     |        -        |   :green_circle:    |          -          |   -   |     -      |
+|   Microsoft   |  Xbox 360   |  :red_circle:   | :large_blue_circle: | :large_blue_circle: |   -   |     -      |
+|   Microsoft   |  Xbox One   | :yellow_circle: | :large_blue_circle: |   :green_circle:    | bluez |     -      |
+|   Microsoft   | Xbox Series | :yellow_circle: | :large_blue_circle: |   :green_circle:    | bluez |     -      |
+|     Sony      |  DualSense  | :green_circle:  |          -          |   :green_circle:    | bluez |     -      |
+|     Sony      | DualShock 3 |  :red_circle:   |          -          | :large_blue_circle: |   -   |     -      |
+|     Sony      | DualShock 4 | :yellow_circle: |          -          |   :green_circle:    | bluez |     -      |
 
 ### Микрофоны
-| Производитель | Модель | Тип подключения | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| FIFIEN | AM8 | USB | :green_circle: | - | - |
-| FIFINE | K669 | USB | :green_circle: | - | - |
-| FIFINE | K670 | USB | :green_circle: | - | - |
-| FIFINE | K688 | USB | :green_circle: | - | - |
-| FIFINE | K688 | XLR | :large_blue_circle: | - | - |
+
+| Производитель | Модель | Тип подключения |      Состояние      | ПО  | Примечание |
+| :-----------: | :----: | :-------------: | :-----------------: | :-: | :--------: |
+|    FIFIEN     |  AM8   |       USB       |   :green_circle:    |  -  |     -      |
+|    FIFINE     |  K669  |       USB       |   :green_circle:    |  -  |     -      |
+|    FIFINE     |  K670  |       USB       |   :green_circle:    |  -  |     -      |
+|    FIFINE     |  K688  |       USB       |   :green_circle:    |  -  |     -      |
+|    FIFINE     |  K688  |       XLR       | :large_blue_circle: |  -  |     -      |
 
 ### Колонки
-| Производитель | Модель | Тип подключения | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| Edifier | R2800 | Jack3.5 | :green_circle: | - | - |
-| Edifier | R2800 | TOS(HDMI) | :green_circle: | - | - |
-| Logitech | Z270 | - | :green_circle: | - | - |
+
+| Производитель | Модель | Тип подключения |   Состояние    | ПО  | Примечание |
+| :-----------: | :----: | :-------------: | :------------: | :-: | :--------: |
+|    Edifier    | R2800  |     Jack3.5     | :green_circle: |  -  |     -      |
+|    Edifier    | R2800  |    TOS(HDMI)    | :green_circle: |  -  |     -      |
+|   Logitech    |  Z270  |        -        | :green_circle: |  -  |     -      |
 
 ### Наушники / Гарнитуры
-| Производитель | Модель | Тип подключения | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| COMMO | One | 3.5mm | :green_circle: | - | - |
-| COMMO | One | Bluetooth | :green_circle: | - | - |
-| FIFINE | H8 | 3.5mm | :green_circle: | - | - |
-| SENNHEISER | HD458BT | Bluetooth | :green_circle: | - | - |
+
+| Производитель | Модель  | Тип подключения |   Состояние    | ПО  | Примечание |
+| :-----------: | :-----: | :-------------: | :------------: | :-: | :--------: |
+|     COMMO     |   One   |      3.5mm      | :green_circle: |  -  |     -      |
+|     COMMO     |   One   |    Bluetooth    | :green_circle: |  -  |     -      |
+|    FIFINE     |   H8    |      3.5mm      | :green_circle: |  -  |     -      |
+|  SENNHEISER   | HD458BT |    Bluetooth    | :green_circle: |  -  |     -      |
 
 ### Веб-камеры
-| Производитель | Модель | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| Broadcom | 720p FaceTime HD Camera (14e4:1570) | :red_circle: | - | - |
-| Logitech | BRIO (046d:085e) | :green_circle: | - | 1080HD |
-| Microsoft | LifeCam HD-3000 | :green_circle: | - | 720HD |
+
+| Производитель |               Модель                |   Состояние    | ПО  | Примечание |
+| :-----------: | :---------------------------------: | :------------: | :-: | :--------: |
+|   Broadcom    | 720p FaceTime HD Camera (14e4:1570) |  :red_circle:  |  -  |     -      |
+|   Logitech    |          BRIO (046d:085e)           | :green_circle: |  -  |   1080HD   |
+|   Microsoft   |           LifeCam HD-3000           | :green_circle: |  -  |   720HD    |
 
 ### Внешние звуковые карты
-| Производитель | Модель | Тип подключения | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| FIFINE | K688 | USB | :green_circle: | - | - |
+
+| Производитель | Модель | Тип подключения |   Состояние    | ПО  | Примечание |
+| :-----------: | :----: | :-------------: | :------------: | :-: | :--------: |
+|    FIFINE     |  K688  |       USB       | :green_circle: |  -  |     -      |
 
 ### Внешние сетевые карты
-| Производитель | Модель | WiFi | Bluetooth | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| Buro | BU-BT40A | - | :green_circle: | - | - |
-| Realtek | RTL8811CE USB | :large_blue_circle: | - | kernel-modules-rtl8821cu-* | - |
-| Realtek | RTL8821CU USB |  :large_blue_circle: | - | kernel-modules-rtl8821cu-* | - |
-| TP-Link | TL-WN725N | :green_circle: | - | - | - |
-| TP-Link | UB500 | - | :green_circle: | - | - |
+
+| Производитель |    Модель     |        WiFi         |   Bluetooth    |             ПО              | Примечание |
+| :-----------: | :-----------: | :-----------------: | :------------: | :-------------------------: | :--------: |
+|     Buro      |   BU-BT40A    |          -          | :green_circle: |              -              |     -      |
+|    Realtek    | RTL8811CE USB | :large_blue_circle: |       -        | kernel-modules-rtl8821cu-\* |     -      |
+|    Realtek    | RTL8821CU USB | :large_blue_circle: |       -        | kernel-modules-rtl8821cu-\* |     -      |
+|    TP-Link    |   TL-WN725N   |   :green_circle:    |       -        |              -              |     -      |
+|    TP-Link    |     UB500     |          -          | :green_circle: |              -              |     -      |
 
 ### Мониторы
-| Производитель | Модель | Тип подключения | Состояние | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| Бештау | M27/2KP | HDMI/DP | :green_circle: | QHD165HZ(HDMI,DP) |
-| IIYAMA | PL2792Q | HDMI/DP | :green_circle: | QHD60HZ(HDMI), QHD70HZ(DP) |
-| LG | 24MK430H | HDMI | :green_circle: | FHD75HZ |
-| Xiaomi | Redmi Display 27 | HDMI | :green_circle: | FHD75HZ |
+
+| Производитель |      Модель      | Тип подключения |   Состояние    |         Примечание         |
+| :-----------: | :--------------: | :-------------: | :------------: | :------------------------: |
+|    Бештау     |     M27/2KP      |     HDMI/DP     | :green_circle: |     QHD165HZ(HDMI,DP)      |
+|    IIYAMA     |     PL2792Q      |     HDMI/DP     | :green_circle: | QHD60HZ(HDMI), QHD70HZ(DP) |
+|      LG       |     24MK430H     |      HDMI       | :green_circle: |          FHD75HZ           |
+|    Xiaomi     | Redmi Display 27 |      HDMI       | :green_circle: |          FHD75HZ           |
 
 ### Графические планшеты
-| Производитель | Модель | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| Wacom | Intuos | :green_circle: | - | - |
+
+| Производитель | Модель |   Состояние    | ПО  | Примечание |
+| :-----------: | :----: | :------------: | :-: | :--------: |
+|     Wacom     | Intuos | :green_circle: |  -  |     -      |
 
 ### Принтеры
-| Производитель | Модель | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| - | - | - | - | - |
+
+| Производитель | Модель | Состояние | ПО  | Примечание |
+| :-----------: | :----: | :-------: | :-: | :--------: |
+|       -       |   -    |     -     |  -  |     -      |
 
 ### Сканеры
-| Производитель | Модель | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| - | - | - | - | - |
+
+| Производитель | Модель | Состояние | ПО  | Примечание |
+| :-----------: | :----: | :-------: | :-: | :--------: |
+|       -       |   -    |     -     |  -  |     -      |
 
 ### Прочее
-| Производитель | Модель | Состояние | ПО | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| Display Link | (EVDI) | :large_blue_circle: | kernel-modules-evdi-* | - | - |
-| WinChipHead | CH341 USB-COM (i2c/spi/gpio)  | :large_blue_circle: | kernel-modules-ch341-* | - | - |
+
+| Производитель |            Модель            |      Состояние      |           ПО            | Примечание |     |
+| :-----------: | :--------------------------: | :-----------------: | :---------------------: | :--------: | --- |
+| Display Link  |            (EVDI)            | :large_blue_circle: | kernel-modules-evdi-\*  |     -      | -   |
+|  WinChipHead  | CH341 USB-COM (i2c/spi/gpio) | :large_blue_circle: | kernel-modules-ch341-\* |     -      | -   |
 
 ## Системные компоненты
+
 ### Центральные процессоры
+
 #### AMD
-| Модель | Состояние | Примечание |
-| :---: | :---: | :---: |
-| Ryzen 5 3600 | :green_circle: | - |
-| Ryzen 7 3700X | :green_circle: | - |
-| Ryzen 7 4800HS | :green_circle: | - |
-| Ryzen 7 5800H | :green_circle: | - |
-| Ryzen 7 5800HS | :green_circle: | - |
-| Ryzen 7 7800X3D | :green_circle: | - |
+
+|     Модель      |   Состояние    | Примечание |
+| :-------------: | :------------: | :--------: |
+|  Ryzen 5 3600   | :green_circle: |     -      |
+|  Ryzen 7 3700X  | :green_circle: |     -      |
+| Ryzen 7 4800HS  | :green_circle: |     -      |
+|  Ryzen 7 5800H  | :green_circle: |     -      |
+| Ryzen 7 5800HS  | :green_circle: |     -      |
+| Ryzen 7 7800X3D | :green_circle: |     -      |
 
 #### Intel
+
 | Модель | Состояние | Примечание |
-| :---: | :---: | :---: |
-| - | - | - |
+| :----: | :-------: | :--------: |
+|   -    |     -     |     -      |
 
 #### AARCH64 (ARM64)
-| Производитель | Модель | Состояние | Примечание |
-| :---: | :---: | :---: | :---: |
-| Apple | M1Pro | :yellow_circle: | Parallels (нет драйвера), UTM |
-| Apple | iPhone/iPad | :large_blue_circle: | UTM SE (?) |
+
+| Производитель |   Модель    |      Состояние      |          Примечание           |
+| :-----------: | :---------: | :-----------------: | :---------------------------: |
+|     Apple     |    M1Pro    |   :yellow_circle:   | Parallels (нет драйвера), UTM |
+|     Apple     | iPhone/iPad | :large_blue_circle: |          UTM SE (?)           |
 
 ### Графические адаптеры
+
 #### AMD
-| Вендор | Модель | Драйвер | Состояние | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| ASRock | Radeon RX 6400 | AMDGPU | :green_circle: | - |
-| Sapphire | Radeon RX570 | AMDGPU | :green_circle: | - |
+
+|  Вендор  |     Модель     | Драйвер |   Состояние    | Примечание |
+| :------: | :------------: | :-----: | :------------: | :--------: |
+|  ASRock  | Radeon RX 6400 | AMDGPU  | :green_circle: |     -      |
+| Sapphire |  Radeon RX570  | AMDGPU  | :green_circle: |     -      |
 
 #### NVIDIA
-| Производитель | Модель | Драйвер | Состояние | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| Apple | GeForce GT 750M Mac (10de:0fe9) | NOUVEAU | :green_circle: | firmware-nouveau-340.108-alt1 |
-| ASUS | GeForce GTX 1660 Super TUF Gaming (10de:21c4) | NOUVEAU | :green_circle: | - |
-| ASUS | GeForce GTX 1660 Super TUF Gaming (10de:21c4) | NVIDIA | :green_circle: | - |
-| GYGABYTE | GeForce RTX 3070 TI (GV-N307TGAMING OC-8GD) (10de:2482) | NVIDIA | :green_circle: | Wayland работает |
-| Palit | GeForce RTX 4080 Plus OC () | NOUVEAU | :yellow_circle: | 550x не работают |
+
+| Производитель |                         Модель                          | Драйвер |    Состояние    |          Примечание           |
+| :-----------: | :-----------------------------------------------------: | :-----: | :-------------: | :---------------------------: |
+|     Apple     |             GeForce GT 750M Mac (10de:0fe9)             | NOUVEAU | :green_circle:  | firmware-nouveau-340.108-alt1 |
+|     ASUS      |      GeForce GTX 1660 Super TUF Gaming (10de:21c4)      | NOUVEAU | :green_circle:  |               -               |
+|     ASUS      |      GeForce GTX 1660 Super TUF Gaming (10de:21c4)      | NVIDIA  | :green_circle:  |               -               |
+|   GYGABYTE    | GeForce RTX 3070 TI (GV-N307TGAMING OC-8GD) (10de:2482) | NVIDIA  | :green_circle:  |       Wayland работает        |
+|     Palit     |               GeForce RTX 4080 Plus OC ()               | NOUVEAU | :yellow_circle: |       550x не работают        |
 
 #### Intel
+
 | Модель | Драйвер | Состояние | Примечание |
-| :---: | :---: | :---: | :---: |
-| - | - | - | - |
+| :----: | :-----: | :-------: | :--------: |
+|   -    |    -    |     -     |     -      |
 
 ### Звуковые адаптеры
-| Производитель | Модель | Драйвер | Состояние | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| INTEL | 8 Series/C220 Series (8086:8c22) | snd_hda_intel | :green_circle: | - |
-| NVIDIA | GK107 HDMI Audio (10de:0e1b) | snd_hda_intel | :green_circle: | - |
+
+| Производитель |              Модель              |    Драйвер    |   Состояние    | Примечание |
+| :-----------: | :------------------------------: | :-----------: | :------------: | :--------: |
+|     INTEL     | 8 Series/C220 Series (8086:8c22) | snd_hda_intel | :green_circle: |     -      |
+|    NVIDIA     |   GK107 HDMI Audio (10de:0e1b)   | snd_hda_intel | :green_circle: |     -      |
 
 ### Сетевые адаптеры Ethernet
-| Производитель | Модель | Драйвер | Состояние | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| INTEL | 10GbE PCI Express | kernel-modules-i40e | :large_blue_circle: | - |
-| Realtek | R8125 | kernel-modules-r8125-* | :large_blue_circle: | - |
-| Realtek | RTL8111B | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8111C | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8111CP | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8111D | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8111DP | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8111H | kernel-modules-r8169-* | :green_circle: | - |
-| Realtek | RTL8125 2.5GbE (10ec:8125) | kernel-modules-r8169 | :green_circle: | - | - |
-| Realtek | RTL8168 | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8168B | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8168C | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8168CP | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8168D | kernel-modules-r8168-* | :green_circle: | - |
-| Realtek | RTL8168DP | kernel-modules-r8168-* | :green_circle: | - |
+
+| Производитель |           Модель           |         Драйвер         |      Состояние      | Примечание |
+| :-----------: | :------------------------: | :---------------------: | :-----------------: | :--------: |
+|     INTEL     |     10GbE PCI Express      |   kernel-modules-i40e   | :large_blue_circle: |     -      |
+|    Realtek    |           R8125            | kernel-modules-r8125-\* | :large_blue_circle: |     -      |
+|    Realtek    |          RTL8111B          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |          RTL8111C          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |         RTL8111CP          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |          RTL8111D          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |         RTL8111DP          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |          RTL8111H          | kernel-modules-r8169-\* |   :green_circle:    |     -      |
+|    Realtek    | RTL8125 2.5GbE (10ec:8125) |  kernel-modules-r8169   |   :green_circle:    |     -      |
+|    Realtek    |          RTL8168           | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |          RTL8168B          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |          RTL8168C          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |         RTL8168CP          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |          RTL8168D          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
+|    Realtek    |         RTL8168DP          | kernel-modules-r8168-\* |   :green_circle:    |     -      |
 
 ### Сетевые адаптеры WiFi / Bluetooth
-| Производитель | Модель | Драйвер | WiFi | Bluetooth | Примечание |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| Broadcom | BCM4311 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM4312 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM4313 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM4321 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM4322 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM43224 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM43225 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM43227 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM43228 () | kernel-modules-bcmwl-* | :large_blue_circle: | :large_blue_circle: | - |
-| Broadcom | BCM4360 (14e4:43a0) | kernel-modules-bcmwl-* | :green_circle: | :green_circle: | [установка](https://alt-gnome.wiki/macbook.html#wi-fi) |
-| MEDIATEK | MT7921K (RZ608) Wi-Fi 6E 80MHz (14c3:0608) | - | :green_circle: | :green_circle: | - |
-| Realtek | RTL8188EU | kernel-modules-rtl8188eu-* | :large_blue_circle: | - | - |
-| Realtek | RTL8192EU | kernel-modules-rtl8192eu-* | :large_blue_circle: | - | - |
-| Realtek | RTL8812AU | kernel-modules-rlt8812au-* | :large_blue_circle: | - | - |
-| Realtek | RTL8812CE | kernel-modules-rlt8812au-* | :large_blue_circle: | - | - |
-| Realtek | RTL8821CE | kernel-modules-rlt8821ce-* | :large_blue_circle: | :large_blue_circle: | - |
-| Realtek | RTL8852AE | kernel-modules-rtw89-* | :large_blue_circle: | - | - |
+
+| Производитель |                   Модель                   |           Драйвер           |        WiFi         |      Bluetooth      |                       Примечание                       |
+| :-----------: | :----------------------------------------: | :-------------------------: | :-----------------: | :-----------------: | :----------------------------------------------------: |
+|   Broadcom    |                 BCM4311 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |                 BCM4312 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |                 BCM4313 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |                 BCM4321 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |                 BCM4322 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |                BCM43224 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |                BCM43225 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |                BCM43227 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |                BCM43228 ()                 |   kernel-modules-bcmwl-\*   | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|   Broadcom    |            BCM4360 (14e4:43a0)             |   kernel-modules-bcmwl-\*   |   :green_circle:    |   :green_circle:    | [установка](https://alt-gnome.wiki/macbook.html#wi-fi) |
+|   MEDIATEK    | MT7921K (RZ608) Wi-Fi 6E 80MHz (14c3:0608) |              -              |   :green_circle:    |   :green_circle:    |                           -                            |
+|    Realtek    |                 RTL8188EU                  | kernel-modules-rtl8188eu-\* | :large_blue_circle: |          -          |                           -                            |
+|    Realtek    |                 RTL8192EU                  | kernel-modules-rtl8192eu-\* | :large_blue_circle: |          -          |                           -                            |
+|    Realtek    |                 RTL8812AU                  | kernel-modules-rlt8812au-\* | :large_blue_circle: |          -          |                           -                            |
+|    Realtek    |                 RTL8812CE                  | kernel-modules-rlt8812au-\* | :large_blue_circle: |          -          |                           -                            |
+|    Realtek    |                 RTL8821CE                  | kernel-modules-rlt8821ce-\* | :large_blue_circle: | :large_blue_circle: |                           -                            |
+|    Realtek    |                 RTL8852AE                  |   kernel-modules-rtw89-\*   | :large_blue_circle: |          -          |                           -                            |
 
 ### Контроллеры запоминающих устройств
-| Производитель | Модель  | Драйвер | Состояние | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| - | - | - | - | - |
-| GIGABYTE | B550 Aorus Elite AX, 500 Series Chipset SATA Controller (1022:43eb) | SATA | :green_circle: | - |
-| GIGABYTE | B550 Aorus Elite AX, 500 Series Chipset USB 3.1 XHCI Controller  (1022:43ee) | USB | :green_circle: | - |
-| Realtek | RTS5762 NVMe SSD Controller (10ec:5762) | NVMe | :green_circle: | - |
+
+| Производитель |                                   Модель                                    | Драйвер |   Состояние    | Примечание |
+| :-----------: | :-------------------------------------------------------------------------: | :-----: | :------------: | :--------: |
+|       -       |                                      -                                      |    -    |       -        |     -      |
+|   GIGABYTE    |     B550 Aorus Elite AX, 500 Series Chipset SATA Controller (1022:43eb)     |  SATA   | :green_circle: |     -      |
+|   GIGABYTE    | B550 Aorus Elite AX, 500 Series Chipset USB 3.1 XHCI Controller (1022:43ee) |   USB   | :green_circle: |     -      |
+|    Realtek    |                   RTS5762 NVMe SSD Controller (10ec:5762)                   |  NVMe   | :green_circle: |     -      |
 
 ### Запоминающие устройства
-| Производитель | Модель | Тип подключения | Состояние | Примечание |
-| :---: | :---: | :---: | :---: | :---: |
-| ADATA | LEGEND 960 NVMe SSD (1cc1:622a) | NVMe | :green_circle: | - |
-| Kingston | NV2 (SNV2S) | NVMe | :green_circle: | - |
+
+| Производитель |             Модель              | Тип подключения |   Состояние    | Примечание |
+| :-----------: | :-----------------------------: | :-------------: | :------------: | :--------: |
+|     ADATA     | LEGEND 960 NVMe SSD (1cc1:622a) |      NVMe       | :green_circle: |     -      |
+|   Kingston    |           NV2 (SNV2S)           |      NVMe       | :green_circle: |     -      |
 
 ## Правила добавления/оформления данных в таблицах
+
 1. Все данные должны быть структурированы в таблицы.
 2. Все таблицы должны быть оформлены в формате Markdown и отсортированы по возрастанию согласно стандарту сортировки (Кириллица первая).
 3. Все таблицы должны содержать следующие столбцы:
@@ -231,6 +262,7 @@
 5. По возможности в скобках указывать VID:PID устройства. Получить его можно с помощью команды `lsusb` или `lspci -vnn`.
 
 ### Стандартные значения столбцов и их описание
+
 #### Производитель
 
 Название компании-производителя устройства.
@@ -247,13 +279,13 @@
 
 Состояние устройства характеризует его работоспособность. В приоритете использовать эмодзи для обозначения состояния устройства.
 
-  * :green_circle: - `Работает` - устройство работает в полном объеме. `:green_circle:`
+- :green_circle: - `Работает` - устройство работает в полном объеме. `:green_circle:`
 
-  * :yellow_circle: - `Частично` - устройство работает, но не все функции доступны. `:yellow_circle:`
+- :yellow_circle: - `Частично` - устройство работает, но не все функции доступны. `:yellow_circle:`
 
-  * :red_circle: - `Не работает` - устройство не работает. `:red_circle:`
+- :red_circle: - `Не работает` - устройство не работает. `:red_circle:`
 
-  * :large_blue_circle: - `Не проверено` - состояние устройства не проверено. `:large_blue_circle:`
+- :large_blue_circle: - `Не проверено` - состояние устройства не проверено. `:large_blue_circle:`
 
 #### ПО/Драйвер
 
@@ -267,33 +299,33 @@
 
 #### Тип подключения
 
-
 Тип подключения устройства к компьютеру.
 
 **Примеры:**
-  * `PCIe` - устройство подключается через интерфейс PCI-Express.
-  * `USB` - устройство подключается через интерфейс USB.
-  * `PS/2` - устройство подключается через интерфейс PS/2.
-  * `Thunderbolt` - устройство подключается через интерфейс Thunderbolt.
-  * `FireWire` - устройство подключается через интерфейс FireWire.
-  * `XLR` - устройство подключается через интерфейс XLR.
-  * `3.5mm` - устройство подключается через интерфейс 3.5mm.
-  * `SATA` - устройство подключается через интерфейс SATA.
-  * `M.2` - устройство подключается через интерфейс M.2.
-  * `NVMe` - устройство подключается через интерфейс NVMe.
-  * `HDMI` - устройство подключается через интерфейс HDMI.
-  * `DisplayPort` - устройство подключается через интерфейс DisplayPort.
-  * `RJ45` - устройство подключается через интерфейс RJ45.
-  * `WiFi` - устройство подключается через интерфейс Wi-Fi.
-  * `Bluetooth` - устройство подключается через интерфейс Bluetooth.
-  * `SD` - устройство подключается через интерфейс SD.
-  * `microSD` - устройство подключается через интерфейс microSD.
-  * `eMMC` - устройство подключается через интерфейс eMMC.
-  * `SPI` - устройство подключается через интерфейс SPI.
-  * `I2C` - устройство подключается через интерфейс I2C.
-  * `UART` - устройство подключается через интерфейс UART.
-  * `JTAG` - устройство подключается через интерфейс JTAG.
-  * `GPIO` - устройство подключается через интерфейс GPIO.
-  * `PWM` - устройство подключается через интерфейс PWM.
-  * `IR` - устройство подключается через интерфейс IR.
-  * `Ethernet` - устройство подключается через интерфейс Ethernet.
+
+- `PCIe` — устройство подключается через интерфейс PCI-Express.
+- `USB` — устройство подключается через интерфейс USB.
+- `PS/2` — устройство подключается через интерфейс PS/2.
+- `Thunderbolt` — устройство подключается через интерфейс Thunderbolt.
+- `FireWire` — устройство подключается через интерфейс FireWire.
+- `XLR` — устройство подключается через интерфейс XLR.
+- `3.5mm` — устройство подключается через интерфейс 3.5mm.
+- `SATA` — устройство подключается через интерфейс SATA.
+- `M.2` — устройство подключается через интерфейс M.2.
+- `NVMe` — устройство подключается через интерфейс NVMe.
+- `HDMI` — устройство подключается через интерфейс HDMI.
+- `DisplayPort` — устройство подключается через интерфейс DisplayPort.
+- `RJ45` — устройство подключается через интерфейс RJ45.
+- `WiFi` — устройство подключается через интерфейс Wi-Fi.
+- `Bluetooth` — устройство подключается через интерфейс Bluetooth.
+- `SD` — устройство подключается через интерфейс SD.
+- `microSD` — устройство подключается через интерфейс microSD.
+- `eMMC` — устройство подключается через интерфейс eMMC.
+- `SPI` — устройство подключается через интерфейс SPI.
+- `I2C` — устройство подключается через интерфейс I2C.
+- `UART` — устройство подключается через интерфейс UART.
+- `JTAG` — устройство подключается через интерфейс JTAG.
+- `GPIO` — устройство подключается через интерфейс GPIO.
+- `PWM` — устройство подключается через интерфейс PWM.
+- `IR` — устройство подключается через интерфейс IR.
+- `Ethernet` — устройство подключается через интерфейс Ethernet.

@@ -179,7 +179,7 @@ epm search telegram
 ::: details Нажмите для отображения кода
 ::: code-group
 
-```shell [apt-get]
+```shell[apt-get]
 cutegram - Cutegram is a telegram client by Aseman Land
 libqtelegram-ae - Most powerfull telegram library that created using C++ and Qt.
 libqtelegram-ae-devel - Development files for libqtelegram-ae
@@ -217,7 +217,7 @@ python3-module-yt_dlp - Python 3 module for yt-dlp
 zabbix-in-telegram - Zabbix Notifications with graphs in Telegram
 ```
 
-```shell [epm]
+```shell[epm]
 cutegram - Cutegram is a telegram client by Aseman Land
 libqtelegram-ae - Most powerfull telegram library that created using C++ and Qt.
 libqtelegram-ae-devel - Development files for libqtelegram-ae
@@ -271,44 +271,70 @@ apt-repo — утилита для управления списком репо�
 
 Вывод текущих репозиториев:
 
-```shell
+::: code-group
+
+```shell[apt-get]
 apt-repo
 ```
 
+```shell[epm]
+epm repo
+```
+
+:::
+
 ::: details Нажмите для отображения кода
 
-```shell
+::: code-group
+
+```shell[apt-get]
 rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/x86_64 classic
 rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/x86_64-i586 classic
 rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/noarch classic
 ```
 
+```shell[epm]
+/etc/apt/sources.list.d/alt.list:
+    rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/x86_64 classic
+    rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/x86_64-i586 classic
+    rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/noarch classic
+```
+
 :::
 
-Чтобы добавить репозитории конкретной pflfxb, выполните следующую команду:
+Чтобы добавить репозитории конкретной задачи, выполните следующую команду:
 
 ::: code-group
 
 ```shell[apt-get]
 su -
-apt-repo add task 329850
+apt-repo add 329850
 ```
 
 ```shell[epm]
-epm install 329850
+epm repo add 329850
 ```
 
 :::
 
-:::info
-Если вы используйте epm, программа установит или обновит пакет находящейся в задании. Если вы используйте apt-repo необходимо установить пакет.
+<!--
 
-```shell
+Установка всех доступных пакетов (`*-devel`, `*-checkinstall`, `*-debuginfo`), связанных с задачей
+
+::: code-group
+
+```shell[apt-get]
 su -
-apt-get install 0ag
+apt-repo test task 329850
+```
+
+```shell[epm]
+epm install task 329850
 ```
 
 :::
+
+-->
 
 Удалить все задания из репозитория:
 

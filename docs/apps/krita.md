@@ -1,9 +1,7 @@
 ---
 aggregation:
   sisyphus: krita
-  flatpak:
-    id: org.kde.krita
-    build: official
+  flatpak: org.kde.krita
 appstream:
   id: org.kde.krita
   name: Krita

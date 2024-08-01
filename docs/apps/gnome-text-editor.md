@@ -1,14 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /gnome-text-editor/sc-1.png
-    - src: /gnome-text-editor/sc-2.png
 aggregation:
-  flatpak:
-    id: org.gnome.TextEditor
-    build: official
+  flatpak: org.gnome.TextEditor
   sisyphus: gnome-text-editor
 appstream:
   id: org.gnome.TextEditor
@@ -27,6 +19,12 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/TextEditor/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-text-editor/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /gnome-text-editor/sc-1.png
+    - src: /gnome-text-editor/sc-2.png
 ---
 
 # Текстовый редактор

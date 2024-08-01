@@ -1,11 +1,4 @@
 ---
-appstreamFlatpak: org.gnome.World.Citations
-nameRepo: citations
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /citations/sc-1.png
 aggregation:
   flatpak: org.gnome.World.Citations
 appstream:
@@ -25,6 +18,11 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Citations
     bugtracker: https://gitlab.gnome.org/World/citations/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /citations/sc-1.png
 ---
 
 # Цитаты

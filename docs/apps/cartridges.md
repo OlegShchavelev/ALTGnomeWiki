@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: page.kramo.Cartridges
-    build: official
+  flatpak: page.kramo.Cartridges
   sisyphus: cartridges
 appstream:
   id: page.kramo.Cartridges

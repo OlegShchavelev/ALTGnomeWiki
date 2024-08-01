@@ -1,5 +1,4 @@
 ---
-title: Emulsion
 aggregation:
   flatpak: io.github.lainsce.Emulsion
 appstream:

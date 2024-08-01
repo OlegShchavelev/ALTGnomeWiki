@@ -18,10 +18,14 @@ const isExternal = /https?:\/\//.test(href)
         </p>
         <div class="footer">
           <div class="link">
-            <img class="icon" :src="isExternal
-                ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${href}&sz=96`
-                : `/favicon.png`
-              " />
+            <img
+              class="icon"
+              :src="
+                isExternal
+                  ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${href}&sz=96`
+                  : `/favicon.png`
+              "
+            />
             <div class="domain">
               {{ decodeURI((isExternal ? '' : homepage.slice(0, -1)) + href) }}
             </div>
@@ -63,6 +67,12 @@ a:active {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+@media (max-width: 960px) {
+  .link {
+    max-width: 50%;
+  }
 }
 
 .domain {

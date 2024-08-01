@@ -1,8 +1,6 @@
 ---
 aggregation:
-  flatpak:
-    id: io.github.flattool.Warehouse
-    build: official
+  flatpak: io.github.flattool.Warehouse
 appstream:
   id: io.github.flattool.Warehouse
   name: Warehouse

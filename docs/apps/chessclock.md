@@ -1,13 +1,4 @@
 ---
-appstreamFlatpak: com.clarahobbs.chessclock
-nameRepo: chessclock
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /chessclock/sc-1.png
-    - src: /chessclock/sc-2.png
-    - src: /chessclock/sc-3.png
 aggregation:
   flatpak: com.clarahobbs.chessclock
 appstream:
@@ -27,6 +18,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/Chessclock
     bugtracker: https://gitlab.gnome.org/World/chess-clock/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /chessclock/sc-1.png
+    - src: /chessclock/sc-2.png
+    - src: /chessclock/sc-3.png
 ---
 
 # Шахматные часы

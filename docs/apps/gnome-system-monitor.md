@@ -1,11 +1,4 @@
 ---
-gallery:
-  title: Галерея GNOME System Monitor
-  type: slider
-  items:
-    - src: /gnome-system-monitor/sc-1.png
-    - src: /gnome-system-monitor/sc-2.png
-    - src: /gnome-system-monitor/sc-3.png
 aggregation:
   sisyphus: gnome-system-monitor
 appstream:
@@ -25,6 +18,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/SystemMonitor/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-system-monitor/-/issues
+gallery:
+  title: Галерея GNOME System Monitor
+  type: slider
+  items:
+    - src: /gnome-system-monitor/sc-1.png
+    - src: /gnome-system-monitor/sc-2.png
+    - src: /gnome-system-monitor/sc-3.png
 ---
 
 # Системный монитор

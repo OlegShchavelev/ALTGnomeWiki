@@ -1,12 +1,4 @@
 ---
-appstreamFlatpak: io.github.mrvladus.List
-nameRepo: errands
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /errands/errands-1.png
-    - src: /errands/errands-2.png
 aggregation:
   flatpak: io.github.mrvladus.List
   sisyphus: errands
@@ -28,6 +20,12 @@ appstream:
     homepage: https://apps.gnome.org/ru/List/
     translate: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
     bugtracker: https://github.com/mrvladus/Errands/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /errands/errands-1.png
+    - src: /errands/errands-2.png
 ---
 
 # Дела

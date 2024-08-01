@@ -1,9 +1,7 @@
 ---
 aggregation:
   sisyphus: qbittorrent
-  flatpak:
-    id: org.qbittorrent.qBittorrent
-    build: official
+  flatpak: org.qbittorrent.qBittorrent
 appstream:
   id: org.qbittorrent.qBittorrent
   name: qBittorrent

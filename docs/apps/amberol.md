@@ -1,11 +1,4 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /amberol/amberol-1.png
-    - src: /amberol/amberol-2.png
-    - src: /amberol/amberol-3.png
 aggregation:
   snap:
     id: amberol
@@ -28,6 +21,13 @@ appstream:
   url:
     homepage: https://gitlab.gnome.org/World/amberol/
     bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /amberol/amberol-1.png
+    - src: /amberol/amberol-2.png
+    - src: /amberol/amberol-3.png
 ---
 
 # Amberol

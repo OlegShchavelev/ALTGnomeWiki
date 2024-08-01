@@ -1,15 +1,6 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /maps/sc-1.webp
-    - src: /maps/sc-2.webp
-    - src: /maps/sc-3.webp
 aggregation:
-  flatpak:
-    id: org.gnome.Maps
-    build: official
+  flatpak: org.gnome.Maps
   sisyphus: gnome-maps
 appstream:
   id: org.gnome.Maps
@@ -29,6 +20,13 @@ appstream:
   url:
     homepage: https://apps.gnome.org/ru/Maps/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-maps/-/issues
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /maps/sc-1.webp
+    - src: /maps/sc-2.webp
+    - src: /maps/sc-3.webp
 ---
 
 # Карты

@@ -1,9 +1,7 @@
 ---
 aggregation:
   sisyphus: totem
-  flatpak:
-    id: org.gnome.Totem
-    build: official
+  flatpak: org.gnome.Totem
 appstream:
   id: org.gnome.Totem
   name: Видео

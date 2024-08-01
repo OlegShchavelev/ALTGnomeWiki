@@ -1,13 +1,4 @@
 ---
-gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /space-station-14/sc-1.png
-    - src: /space-station-14/sc-2.png
-    - src: /space-station-14/sc-3.png
-    - src: /space-station-14/sc-4.png
-    - src: /space-station-14/sc-5.png
 aggregation:
   flatpak:
     id: com.spacestation14.Launcher
@@ -26,6 +17,15 @@ appstream:
   url:
     homepage: https://spacestation14.com/
     bugtracker: https://github.com/space-wizards/space-station-14
+gallery:
+  title: Галерея
+  type: slider
+  items:
+    - src: /space-station-14/sc-1.png
+    - src: /space-station-14/sc-2.png
+    - src: /space-station-14/sc-3.png
+    - src: /space-station-14/sc-4.png
+    - src: /space-station-14/sc-5.png
 ---
 
 # Space Station 14

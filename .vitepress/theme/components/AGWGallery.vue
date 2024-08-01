@@ -5,7 +5,7 @@ import { DefaultTheme, useData, useRoute } from 'vitepress'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Pagination } from 'swiper/modules'
+import { Pagination, Grid } from 'swiper/modules'
 import setViewer from 'vitepress-plugin-image-viewer/lib/viewer'
 
 const { theme, frontmatter } = useData()
@@ -14,7 +14,6 @@ const props = defineProps({
   id: Number
 })
 
-
 const galleries = props.id && frontmatter.value.gallery[props.id] ? frontmatter.value.gallery[props.id] : frontmatter.value.gallery[0] ?? frontmatter.value.gallery ?? theme.value.gallery ?? []
 
 const onSwiper = (swiper: any) => console.log(swiper)
@@ -22,6 +21,8 @@ const onSlideChange = () => console.log('slide change')
 
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'swiper/css/grid'
+
 
 console.log(props)
 
@@ -30,6 +31,35 @@ console.log(props)
 <template>
   <div class="galleries">
     <h3 v-if="galleries.title" v-html="galleries.title"></h3>
+    <div v-if="galleries.type == 'grid'">
+      <swiper
+        :modules="[Grid]"
+        :slides-per-view="1.1"
+        :breakpoints="{ 
+          767: { slidesPerView: 2 },
+          1024: { 
+            slidesPerView: galleries.col,
+            slidesPerColumn: galleries.col,
+            grid: {
+              fill: 'row',
+              rows: galleries.row
+            }
+          } 
+        }"
+        :space-between="20"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+      >
+        <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
+          <figure class="figure">
+              <figure class="figure ratio ratio-1x1">
+                <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
+              </figure>
+              <figcaption>{{ file.text }}</figcaption>
+          </figure>
+        </swiper-slide>
+      </swiper>
+    </div>
     <div v-if="galleries.type == 'carousel'">
       <swiper
         :slides-per-view="1.1"
@@ -39,8 +69,11 @@ console.log(props)
         @slideChange="onSlideChange"
       >
         <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
-          <figure class="figure ratio ratio-1x1">
-            <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
+          <figure class="figure">
+              <figure class="figure ratio ratio-1x1">
+                <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
+              </figure>
+              <figcaption>{{ file.text }}</figcaption>
           </figure>
         </swiper-slide>
       </swiper>
@@ -48,8 +81,11 @@ console.log(props)
     <div v-if="galleries.type == 'slider'">
       <swiper :slides-per-view="1.05" :space-between="20" @swiper="onSwiper" @slideChange="onSlideChange">
         <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
-          <figure class="figure ratio ratio-16x9">
-            <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
+          <figure class="figure">
+              <figure class="figure ratio ratio-16x9">
+                <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
+              </figure>
+              <figcaption>{{ file.text }}</figcaption>
           </figure>
         </swiper-slide>
       </swiper>
@@ -58,6 +94,10 @@ console.log(props)
 </template>
 
 <style scoped>
+figcaption {
+  color: var(--vp-c-text-2);
+}
+
 .swiper {
   margin-top: 24px;
 }

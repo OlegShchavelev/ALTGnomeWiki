@@ -20,10 +20,12 @@ appstream:
     bugtracker: https://github.com/alexkdeveloper/desktop-files-creator/issues
     translate: https://github.com/alexkdeveloper/desktop-files-creator/tree/main/po
 gallery:
-  title: Галерея
-  type: carousel
+  type: grid
+  col: 3
+  row: 3
   items:
     - src: /desktop-files-creator/desktop-files-creator-1.png
+      text: Главная страница
 ---
 
 # Desktop Files Creator

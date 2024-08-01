@@ -20,9 +20,7 @@ appstream:
     bugtracker: https://github.com/alexkdeveloper/desktop-files-creator/issues
     translate: https://github.com/alexkdeveloper/desktop-files-creator/tree/main/po
 gallery:
-  type: grid
-  col: 3
-  row: 3
+  type: carousel
   items:
     - src: /desktop-files-creator/desktop-files-creator-1.png
       text: Главная страница

@@ -1262,7 +1262,7 @@ epm -i xorg-drv-nouveau
 - Перезагрузите систему
 
 ```shell
-su-
+su -
 reboot
 ```
 

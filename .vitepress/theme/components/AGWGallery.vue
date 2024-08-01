@@ -31,10 +31,10 @@ console.log(props)
 <template>
   <div class="galleries">
     <h3 v-if="galleries.title" v-html="galleries.title"></h3>
-    <div v-if="galleries.type == 'grid'">
+    <div v-if="galleries.type == 'grid'" class="grid-container">
       <swiper
         :modules="[Grid]"
-        :slides-per-view="1.1"
+        :slides-per-view="galleries.col"
         :breakpoints="{ 
           767: { slidesPerView: 2 },
           1024: { 
@@ -94,12 +94,16 @@ console.log(props)
 </template>
 
 <style scoped>
+
 figcaption {
   color: var(--vp-c-text-2);
 }
 
 .swiper {
   margin-top: 24px;
+}
+.grid-container {
+  max-width: 800px;
 }
 
 .figure {

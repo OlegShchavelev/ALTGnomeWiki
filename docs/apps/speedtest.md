@@ -18,10 +18,14 @@ appstream:
     bugtracker: https://github.com/Ketok4321/speedtest/issues
 gallery:
   title: Галерея
-  type: carousel
+  type: grid
+  col: 2
+  row: 2
   items:
     - src: /speedtest/speedtest-1.png
+      text: Главная
     - src: /speedtest/speedtest-2.png
+      text: Главная
     - src: /speedtest/speedtest-3.png
     - src: /speedtest/speedtest-4.png
 ---

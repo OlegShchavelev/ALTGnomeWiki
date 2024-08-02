@@ -1261,9 +1261,10 @@ epm -i xorg-drv-nouveau
 
 ::: info
 
- **Xf86-video-nouveau** — это DDX-драйвер для Xorg, необходимый для поддержки 2D и 3D-ускорения на старый видеокартах.
+**Xf86-video-nouveau** — это [DDX-драйвер](https://dri.freedesktop.org/wiki/DDX/) для Xorg, необходимый для поддержки 2D и 3D-ускорения на старых видеокартах.
 
-Для новых видеокарт существует универсальный modesetting драйвер **Xf86-video-modesetting**, который уже входит в пакет Mesa и не нуждается в установке.
+Для новых видеокарт существует универсальный [modesetting-драйвер](https://www.x.org/wiki/ModeSetting/) **Xf86-video-modesetting**, который уже входит в пакет Mesa и не нуждается в установке.
+
 :::
 
 - Перезагрузите систему

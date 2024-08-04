@@ -10,6 +10,7 @@
 
 | Производитель |                                                 Модель                                                 |   Состояние    |                                  ПО                                   | Примечание |
 | :-----------: | :----------------------------------------------------------------------------------------------------: | :------------: | :-------------------------------------------------------------------: | :--------: |
+|   Defender    |                                            Warhead GM-1780                                             | :green_circle: |                                   -                                   |     -      |
 |   Logitech    | [G102](https://www.logitechg.com/en-my/products/gaming-mice/g102-prodigy-gaming-mouse.910-004846.html) | :green_circle: |                          [`piper`](piper.md)                          |     -      |
 |   Logitech    |                                                  M705                                                  | :green_circle: |                                   -                                   |     -      |
 |   Logitech    |                                              MX Master 3                                               | :green_circle: | [`piper`](piper.md), [`Solaar`](https://pwr-solaar.github.io/Solaar/) |     -      |
@@ -23,6 +24,7 @@
 | Дарк Проджект |  KD85   | :green_circle: |                        -                         |                                        Раскладка Win                                         |
 |   Logitech    | MX Keys | :green_circle: | [`Solaar`](https://pwr-solaar.github.io/Solaar/) |                                              -                                               |
 |   Кeychron    |  K3D1   | :green_circle: |                        -                         |                                   Раскладка Win, BT+Cable                                    |
+|   Кeychron    | K8 Pro  | :green_circle: |                        -                         |                                   Раскладка Win, BT+Cable                                    |
 
 ### Коврики
 
@@ -46,13 +48,14 @@
 
 ### Микрофоны
 
-| Производитель | Модель | Тип подключения |      Состояние      | ПО  | Примечание |
-| :-----------: | :----: | :-------------: | :-----------------: | :-: | :--------: |
-|    FIFIEN     |  AM8   |       USB       |   :green_circle:    |  -  |     -      |
-|    FIFINE     |  K669  |       USB       |   :green_circle:    |  -  |     -      |
-|    FIFINE     |  K670  |       USB       |   :green_circle:    |  -  |     -      |
-|    FIFINE     |  K688  |       USB       |   :green_circle:    |  -  |     -      |
-|    FIFINE     |  K688  |       XLR       | :large_blue_circle: |  -  |     -      |
+| Производитель |  Модель  | Тип подключения |      Состояние      | ПО  | Примечание |
+| :-----------: | :------: | :-------------: | :-----------------: | :-: | :--------: |
+|    FIFIEN     |   AM8    |       USB       |   :green_circle:    |  -  |     -      |
+|    FIFINE     |   K669   |       USB       |   :green_circle:    |  -  |     -      |
+|    FIFINE     |   K670   |       USB       |   :green_circle:    |  -  |     -      |
+|    FIFINE     |   K688   |       USB       |   :green_circle:    |  -  |     -      |
+|    FIFINE     |   K688   |       XLR       | :large_blue_circle: |  -  |     -      |
+|    Trust      | 20378-02 |       USB       |   :green_circle:    |  -  |     -      |
 
 ### Колонки
 
@@ -64,12 +67,13 @@
 
 ### Наушники / Гарнитуры
 
-| Производитель | Модель  | Тип подключения |   Состояние    | ПО  | Примечание |
-| :-----------: | :-----: | :-------------: | :------------: | :-: | :--------: |
-|     COMMO     |   One   |      3.5mm      | :green_circle: |  -  |     -      |
-|     COMMO     |   One   |    Bluetooth    | :green_circle: |  -  |     -      |
-|    FIFINE     |   H8    |      3.5mm      | :green_circle: |  -  |     -      |
-|  SENNHEISER   | HD458BT |    Bluetooth    | :green_circle: |  -  |     -      |
+| Производитель |   Модель   | Тип подключения  |   Состояние    | ПО  | Примечание |
+| :-----------: | :--------: | :--------------: | :------------: | :-: | :--------: |
+|     COMMO     |    One     |      3.5mm       | :green_circle: |  -  |     -      |
+|     COMMO     |    One     |    Bluetooth     | :green_circle: |  -  |     -      |
+|    FIFINE     |    H8      |      3.5mm       | :green_circle: |  -  |     -      |
+|    Pioneer    | SE-MS7BT-S | 3.5mm, Bluetooth | :green_circle: |  -  |     -      |
+|  SENNHEISER   |  HD458BT   |    Bluetooth     | :green_circle: |  -  |     -      |
 
 ### Веб-камеры
 
@@ -139,6 +143,7 @@
 | :-------------: | :------------: | :--------: |
 |  Ryzen 5 3600   | :green_circle: |     -      |
 |  Ryzen 7 3700X  | :green_circle: |     -      |
+|  Ryzen 7 2700X  | :green_circle: |     -      |
 | Ryzen 7 4800HS  | :green_circle: |     -      |
 |  Ryzen 7 5800H  | :green_circle: |     -      |
 | Ryzen 7 5800HS  | :green_circle: |     -      |

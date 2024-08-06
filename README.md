@@ -42,7 +42,8 @@ npm i
 npm run docs:dev
 ```
 
-> [!NOTE] > `{USER}` — имя пользователя GitHub.
+> [!NOTE]
+> Замените `{USER}` на имя пользователя GitHub.
 
 ### :pencil: Внесение изменений
 

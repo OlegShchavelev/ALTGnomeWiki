@@ -18,6 +18,8 @@ framebuffer
 fullscreen
 GART
 instdebug
+modesetting
+MPRIS
 MTRR
 noarch
 nomodeset
@@ -26,6 +28,7 @@ PCIROM
 POSIX
 PRAMIN
 Quadro
+RTSP
 simpledrm
 taskrc
 TMDS

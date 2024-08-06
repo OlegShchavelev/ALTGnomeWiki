@@ -12,7 +12,7 @@ appstream:
     name: Space Wizards Federation
     avatar: https://avatars.githubusercontent.com/u/10567778?s=200&v=4
   metadata_license:
-    name: MIT
+    name: MIT License
     link: https://mit-license.org/
   url:
     homepage: https://spacestation14.com/

@@ -6,7 +6,7 @@ appstream:
   id: com.mattjakeman.ExtensionManager
   name: Менеджер расширений
   icon: /gnome-extension-manager/gnome-extension-manager-logo.svg
-  summary: Простой способ управления раширениями
+  summary: Простой способ управления расширениями
   developer:
     name: Matt Jakeman
     nickname: mjakeman

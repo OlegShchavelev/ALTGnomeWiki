@@ -152,6 +152,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Xeyes', link: '/xeyes' },
               { text: 'XLSCLIENTS', link: '/xlsclients' },
               { text: 'Xmind', link: '/xmind' },
+              { text: 'Zed', link: '/zed' },
               { text: 'ZeroTierOne', link: '/zerotier' },
               { text: 'Zoom', link: '/zoom' },
               { text: 'Zsh', link: '/zsh' },

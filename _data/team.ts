@@ -295,7 +295,9 @@ export const contributions = [
     avatar: 'https://avatars.githubusercontent.com/u/159694894?v=4',
     name: 'Максим Остапенко',
     title: 'Участник',
-    links: [{ icon: 'github', link: 'https://github.com/Krator3' }]
+    links: [{ icon: 'github', link: 'https://github.com/Krator3' }],
+    actionText: 'Поддержать',
+    sponsor: 'https://www.tinkoff.ru/cf/5Jo6TxAo9Un'
   },
   {
     avatar: 'https://github.com/Cyber-X-Code.png',

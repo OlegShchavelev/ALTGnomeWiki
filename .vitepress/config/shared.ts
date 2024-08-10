@@ -32,11 +32,7 @@ import {
   PageProperties,
   PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
-import {
-  alignmentContainers,
-  headTransformer,
-  nolebaseGitChangelogOptions,
-} from './plugins'
+import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions } from './plugins'
 
 export const shared = defineConfig({
   title: 'ALT Gnome Wiki',
@@ -88,7 +84,7 @@ export const shared = defineConfig({
   },
   themeConfig: {
     search: {
-      provider: 'local',
+      provider: 'local'
     },
     logo: { src: '/logo.png', width: 36, height: 36, alt: 'ALT Gnome Wiki' },
     socialLinks: [

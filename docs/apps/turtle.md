@@ -63,7 +63,7 @@ epm -i python3-module-pygit2 nautilus-python meld libcryptui
 git clone https://gitlab.gnome.org/philippun1/turtle.git .turtle
 ```
 
-Установите дополнение используя установочный скрипт:
+Установите дополнение используя установочный скрипт предназначенный для установленного turtle с flathub:
 
 ```shell
 su -

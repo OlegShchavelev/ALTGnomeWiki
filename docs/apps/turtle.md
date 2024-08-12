@@ -47,12 +47,12 @@ gallery:
 ```shell-vue[apt-get]
 su -
 apt-get update
-apt-get install python3-module-pygit2 nautilus-python meld
+apt-get install python3-module-pygit2 nautilus-python meld libcryptui
 
 ```
 
 ```shell-vue[epm]
-epm -i python3-module-pygit2 nautilus-python meld
+epm -i python3-module-pygit2 nautilus-python meld libcryptui
 ```
 
 :::

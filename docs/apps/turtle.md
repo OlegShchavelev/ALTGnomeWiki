@@ -47,12 +47,12 @@ gallery:
 ```shell-vue[apt-get]
 su -
 apt-get update
-apt-get install python3-module-pygit2 nautilus-python meld
+apt-get install python3-module-pygit2 nautilus-python meld libcryptui
 
 ```
 
 ```shell-vue[epm]
-epm -i python3-module-pygit2 nautilus-python meld
+epm -i python3-module-pygit2 nautilus-python meld libcryptui
 ```
 
 :::
@@ -63,7 +63,7 @@ epm -i python3-module-pygit2 nautilus-python meld
 git clone https://gitlab.gnome.org/philippun1/turtle.git .turtle
 ```
 
-Установите дополнение используя установочный скрипт:
+Установите дополнение используя установочный скрипт предназначенный для установленного turtle с flathub:
 
 ```shell
 su -

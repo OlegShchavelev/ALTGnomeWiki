@@ -615,8 +615,6 @@ systemctl enable nvidia-suspend.service nvidia-resume.service nvidia-hibernate.s
 
 - В опциях драйвера NVIDIA измените способ сохранения ресурсов видеопамяти:
 
-Зайдите в root:
-
 ```shell
 su -
 cat << _EOF_ > /etc/modprobe.d/nvidia_videomemory_allocation.conf

@@ -37,6 +37,15 @@ epm -i whatsapp-for-linux
 flatpak install flathub com.github.eneshecan.WhatsAppForLinux
 ```
 
+### Установка с помощью Snap
+
+При наличии пакета [Snap](/snap), можно установить **WhatsApp for Linux** одной командой:
+
+```shell
+su -
+snap install whatsapp-for-linux
+```
+
 ## WhatsApp Desktop
 
 WhatsApp Desktop — неофициальный клиент WhatsApp для операционных систем Linux использующий WhatsApp Web.

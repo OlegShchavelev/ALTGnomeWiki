@@ -38,6 +38,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Alacarte', link: '/alacarte' },
               { text: 'Amberol', link: '/amberol' },
               { text: 'AniLibrix', link: '/anilibrix' },
+              { text: 'AniLibrix Plus', link: '/anilibrix-plus' },
               { text: 'AnyDesk', link: '/anydesk' },
               { text: 'Arduino IDE', link: '/arduino-ide' },
               { text: 'AsusCtl', link: '/asusctl' },

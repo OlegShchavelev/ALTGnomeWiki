@@ -5,7 +5,7 @@ aggregation:
     build: unofficial
 appstream:
   id: anilibrix-plus
-  name: AniLibrix-plus
+  name: AniLibrix Plus
   icon: /anilibrix/anilibria.webp
   summary: Аниме-кинотеатр Анилибрии для любого вашего компьютера
   metadata_license:

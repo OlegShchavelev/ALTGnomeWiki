@@ -21,7 +21,8 @@
   "type": "module",
   "remarkConfig": {
     "plugins": [
-      "remark-lint-no-multiple-toplevel-headings"
+      "remark-lint-no-multiple-toplevel-headings",
+      "@ampernic/remark-lint-shiki-code-block-syntax-exist"
     ]
   },
   "scripts": {
@@ -68,6 +69,7 @@
     "yaspeller": "^10.0.1"
   },
   "dependencies": {
+    "@ampernic/remark-lint-shiki-code-block-syntax-exist": "^1.0.8-rc1",
     "@cspell/dict-ru_ru": "^2.2.1",
     "@digitak/esrun": "^3.2.26",
     "@octokit/core": "^6.1.2",

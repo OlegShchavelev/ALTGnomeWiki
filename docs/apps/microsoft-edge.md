@@ -30,6 +30,6 @@ appstream:
 
 Microsoft Edge — браузер, выпущенный в 2015 году Microsoft, замена Internet Explorer, основан на [Chromium](/chromium).
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->

@@ -35,4 +35,4 @@ Boxy SVG — простой редактор векторных изображе
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

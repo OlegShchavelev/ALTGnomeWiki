@@ -25,5 +25,5 @@ appstream:
 Сканер документов — официальная утилита для рабочего окружения GNOME, которая позволяет вам захватывать изображения с
 помощью сканеров, для которых установлены подходящие драйверы.
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

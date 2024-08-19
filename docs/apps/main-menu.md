@@ -23,5 +23,5 @@ Main Menu — программа для настройки главного ме
 
 ![Интерфейс Main Menu](/main-menu/main-menu-1.png)
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->

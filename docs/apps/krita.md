@@ -21,5 +21,5 @@ appstream:
 
 Krita — свободный и открытый растровый графический редактор. Программное обеспечение, входящее в состав KDE. Ранее распространялся как часть офисного пакета Calligra Suite, но впоследствии отделился от проекта и стал развиваться самостоятельно.
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

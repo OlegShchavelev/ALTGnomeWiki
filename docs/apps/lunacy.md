@@ -34,5 +34,5 @@ Lunacy — программа для векторной графики ново�
 
 Эта оболочка не проверена, не связана и не поддерживается Icons8 LLC.
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->

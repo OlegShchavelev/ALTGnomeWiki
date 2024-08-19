@@ -38,15 +38,15 @@ appstream:
 
 **Яндекс Браузер Бета-версия** — Все новые возможности Яндекс Браузера, отзывы о последних версиях и общение с разработчиками в [блоге Яндекс Браузера](https://dzen.ru/yandexbrowser).
 
-<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
 
 ::: info
 C версии `23.5.1.753`, устанавливается **Яндекс Браузер для организаций** — специальная сборка, поддерживающая корпоративные функции, например, управление при помощи групповых политик. Однако её можно использовать и на домашних компьютерах.
 :::
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->
 
 ## Полезные советы и дополнения
 

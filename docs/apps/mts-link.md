@@ -33,7 +33,7 @@ gallery:
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->
 
 ## Установка с официального сайта
 

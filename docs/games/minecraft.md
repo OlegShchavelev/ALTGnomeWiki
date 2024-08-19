@@ -29,8 +29,8 @@ appstream:
 
 Minecraft — это игра-песочница с элементами выживания, в которой игроки исследуют и осваивают процедурно сгенерированные миры, собранные из кубических блоков.
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->
 
 ## Установка Java
 

@@ -24,7 +24,7 @@ appstream:
 
 VK Мессенджер — бесплатное и быстрое приложение для общения. Будьте на связи с друзьями и знакомыми в чатах и звонка.
 
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->
 
 :::info
 Если ваш [eepm](/epm) ниже версии `3.60.8` установите **VK Мессенджер** версии `5.3.2`:

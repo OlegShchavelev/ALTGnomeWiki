@@ -24,5 +24,5 @@ appstream:
 
 GNOME Music — лёгкий и приятный способ прослушивания музыки. Поиск треков в коллекции, автоматические списки воспроизведения или сборка своего списка.
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

@@ -31,8 +31,8 @@ Flatseal — графическая утилита для просмотра и 
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
 
 ## Настройки
 

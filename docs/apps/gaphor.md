@@ -27,4 +27,4 @@ Gaphor предоставляет четыре языка моделирован
 
 ![gaphor](/gaphor/gaphor-1.png)
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

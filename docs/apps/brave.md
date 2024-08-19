@@ -32,6 +32,6 @@ Brave — веб-браузер с открытым исходным кодом 
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/warns/unprivileged-spaces.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->

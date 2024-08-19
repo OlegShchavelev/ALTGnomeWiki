@@ -33,7 +33,7 @@ AniLibrix Plus — Доработанный форк от AniLibrix, дескт�
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-snap.md-->
+<!--@include: @apps/.parts/install/content-snap.md-->
 
 Либо можно скачать Appimage актуальной версии 
 

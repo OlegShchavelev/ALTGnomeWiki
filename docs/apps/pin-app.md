@@ -37,7 +37,7 @@ PinApp позволяет закреплять изменённые прилож
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
 
 ## Управление классическими приложениями из Сизифа
 

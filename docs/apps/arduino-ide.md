@@ -28,8 +28,8 @@ Arduino IDE — интегрированная среда разработки �
 
 ![Arduino IDE](/arduino-ide/arduino-ide-1.png)
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
 
 ## Издания Arduino IDE
 

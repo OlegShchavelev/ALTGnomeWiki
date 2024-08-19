@@ -24,5 +24,5 @@ appstream:
 
 IP Lookup — приложение, позволяющие просмотреть информацию об IP-адресе. Можно узнать сеть, организацию, адрес и многое другое.
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

@@ -26,8 +26,8 @@ appstream:
 
 Viber — кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->
 
 ## Установка с официального сайта
 

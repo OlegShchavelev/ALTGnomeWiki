@@ -73,7 +73,7 @@ epm -i LibreOffice
 устанавливаются пакеты также как и сам Libreoffice
 :::
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
 
 ## Шрифты в LibreOffice
 

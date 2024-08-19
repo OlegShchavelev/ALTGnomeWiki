@@ -27,8 +27,8 @@ appstream:
 
 Obsidian — персональная база знаний и программа для создания заметок, работающая с Markdown-файлами. Пользователи могут создавать внутренние ссылки на заметки и визуализировать эти связи в виде графа. Obsidian спроектирован так, чтобы помочь пользователю организовать и структурировать мысли и знания в гибком, нелинейном виде. Obsidian поддерживает CommonMark и GitHub Flavored Markdown (GFM), а также другие полезные функции: теги, математические выражения LaTeX, диаграммы mermaid, сноски, внутренние ссылки и встраивание заметок или внешних файлов. Obsidian имеет систему плагинов для расширения функционала.
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->
 
 ## Запуск Obsidian в оконном интерфейсе Wayland
 

@@ -33,8 +33,8 @@ Boxes — официальная утилита для рабочего окру
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
 
 ## 3D-ускорение
 

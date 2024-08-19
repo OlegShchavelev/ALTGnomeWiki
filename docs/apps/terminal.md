@@ -33,7 +33,7 @@ gallery:
 Терминал поддерживает несколько профилей и вкладок, а также реализует различные сочетания клавиш, что делает удобным для использования.
 
 <AGWGallery />
-<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
 
 ## Дополнение для Файлов (Nautilus)
 

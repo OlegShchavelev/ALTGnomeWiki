@@ -30,7 +30,7 @@ VLC — бесплатный и свободный кросс-платформе
 
 **VLC** можно установить любым привычным и удобным способом:
 
-<!--@include: @apps/_parts/install/software-repo.md-->
+<!--@include: @apps/.parts/install/software-repo.md-->
 
 ::: warning
 Мы не рекомендуем данный способ установки, так как в «Центр приложений» устанавливает пакет `vlc-mini`, в данном пакете содержится минимальный набор зависимостей. К примеру, после установки приложения не будет создан ярлык на экране «Приложений».
@@ -52,5 +52,5 @@ epm -i vlc
 
 :::
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-snap.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-snap.md-->

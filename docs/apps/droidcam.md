@@ -23,7 +23,7 @@ DroidCam — приложение, позволяющее превратить �
 
 ![Droidcam](/droidcam/droidcam-1.png)
 
-<!--@include: @apps/_parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
 
 ## Настройка DroidCam
 

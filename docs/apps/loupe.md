@@ -26,5 +26,5 @@ appstream:
 
 Просмотрщик изображений (Loupe) — приложение для просмотра изображений, написанное на GTK4, Libadwaita и Rust.
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

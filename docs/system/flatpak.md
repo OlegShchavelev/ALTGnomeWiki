@@ -59,7 +59,7 @@ epm -i flatpak-repo-flathub
 В процессе установки пакета `flatpak-repo-flathub` произойдёт подключение репозитория `flathub`
 :::
 
-## Установка с помощью EPM
+## Установка с помощью epm play
 
 При установке через epm сразу установится flathub, а так же применится исправление для исправления ошибки: «enabling unprivileged user namespaces»
 

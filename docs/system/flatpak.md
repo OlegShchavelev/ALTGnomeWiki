@@ -171,18 +171,18 @@ flatpak run org.gimp.GIMP
 su -
 apt-get update
 apt-get install sysctl-conf-userns
+chmod 775 /usr/bin/bwrap
+exit
 ```
 
 ```shell[epm]
 epm -i sysctl-conf-userns
-```
-
-:::
-
-```shell
+su -
 chmod 775 /usr/bin/bwrap
 exit
 ```
+
+:::
 
 Перезагрузите операционную систему или введите следующую команду в терминале:
 
@@ -194,6 +194,8 @@ systemctl --user restart flatpak-portal.service
 Включение непривилегированных пользовательских пространств может значительно упростить использование серьёзных уязвимостей в ядре Linux. Многочисленные уязвимости, которые обнаруживаются регулярно, часто могут быть использованы только непривилегированными пользователями, при условии что непривилегированные пользовательские пространства имён поддерживаются и разрешаются ядром.
 :::
 
+![Пример ошибки enabling unprivileged user namespaces](/flatpak/flatpak-1.jpg 'Пример ошибки «enabling unprivileged user namespaces», на примере Яндекс Браузера (Flatpak-версия)')
+
 Отключение непривилегированных пользователей:
 
 ::: code-group
@@ -202,21 +204,17 @@ systemctl --user restart flatpak-portal.service
 su -
 apt-get update
 apt-get remove sysctl-conf-userns
+chmod 4511 /usr/bin/bwrap
 ```
 
 ```shell[epm]
 epm -e sysctl-conf-userns
-```
-
-:::
-
-```shell
 su -
 chmod 4511 /usr/bin/bwrap
-exit
 ```
-
-![Пример ошибки enabling unprivileged user namespaces](/flatpak/flatpak-1.jpg 'Пример ошибки «enabling unprivileged user namespaces», на примере Яндекс Браузера (Flatpak-версия)')
+:::warning
+Прежде чем ограничить доступ непривилегированных пользователей к системе, убедитесь, что вы не используете приложения, которым требуются расширенные права. К таким приложениям относятся программы, установленные через Flatpak или AppImage, как правила браузеры или программы с функциями браузера, например, Steam.
+:::
 
 ### Удаление приложений
 

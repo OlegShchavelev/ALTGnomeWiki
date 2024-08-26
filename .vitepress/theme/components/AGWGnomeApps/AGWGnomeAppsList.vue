@@ -47,6 +47,6 @@ const appsByCategory = getAppsList().sort((app1, app2) => {
   gap: 24px;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
-  max-width: calc(276px * 3 + 24px * 2);
+  max-width: calc(276px * 4 + 24px * 2) !important;
 }
 </style>

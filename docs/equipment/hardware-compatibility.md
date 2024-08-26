@@ -23,8 +23,8 @@
 | Дарк Проджект |  KD98   | :green_circle: |                        -                         | [Работа клавиш Fn в функциональном режиме](/dark-project-keyboard-on-linux), Раскладка Win |
 | Дарк Проджект |  KD85   | :green_circle: |                        -                         |                                       Раскладка Win                                        |
 |   Logitech    | MX Keys | :green_circle: | [`Solaar`](https://pwr-solaar.github.io/Solaar/) |                                             -                                              |
-|   Keychron    |  K3-D1  | :green_circle: |                        -                         |                            Раскладка Win, Bluetooth, USB type-C                            |
-|   Keychron    | K8 Pro  | :green_circle: |                        -                         |                            Раскладка Win, Bluetooth, USB type-C                            |
+|   Keychron    |  K3-D1  | :green_circle: |                        -                         |                            Раскладка Win, Bluetooth, USB                            |
+|   Keychron    | K8 Pro  | :green_circle: |                        -                         |                            Раскладка Win, Bluetooth, USB                            |
 
 ### Коврики
 
@@ -235,18 +235,18 @@
 
 ### Контроллеры запоминающих устройств
 
-| Производитель |                  Модель                   | Драйвер |   Состояние    |                 Примечание                 |
-| :-----------: | :---------------------------------------: | :-----: | :------------: | :----------------------------------------: |
-|   GIGABYTE    |     B550 Aorus Elite AX (`1022:43eb`)     |  SATA   | :green_circle: |     500 Series Chipset SATA Controller     |
-|   GIGABYTE    |     B550 Aorus Elite AX (`1022:43ee`)     |   USB   | :green_circle: | 500 Series Chipset USB 3.1 XHCI Controller |
-|    Realtek    | RTS5762 NVMe SSD Controller (`10ec:5762`) |  NVMe   | :green_circle: |                     -                      |
+| Производитель |                                    Модель                                    | Драйвер |   Состояние    | Примечание |
+| :-----------: | :--------------------------------------------------------------------------: | :-----: | :------------: | :--------: |
+|   GIGABYTE    |     B550 Aorus Elite AX 500 Series Chipset SATA Controller (`1022:43eb`)     |  SATA   | :green_circle: |     -      |
+|   GIGABYTE    | B550 Aorus Elite AX 500 Series Chipset USB 3.1 XHCI Controller (`1022:43ee`) |   USB   | :green_circle: |     -      |
+|    Realtek    |                  RTS5762 NVMe SSD Controller (`10ec:5762`)                   |  NVMe   | :green_circle: |     -      |
 
 ### Запоминающие устройства
 
-| Производитель |                Модель                 | Тип подключения |   Состояние    | Примечание |
-| :-----------: | :-----------------------------------: | :-------------: | :------------: | :--------: |
-|     ADATA     | LEGEND 960 PCIe M.2 SSD (`1cc1:622a`) |    PCIe Gen4    | :green_circle: |     -      |
-|   Kingston    |              NV2 (SNV2S)              |      NVMe       | :green_circle: |     -      |
+| Производитель |                Модель                 |   Тип подключения   |   Состояние    | Примечание |
+| :-----------: | :-----------------------------------: | :-----------------: | :------------: | :--------: |
+|     ADATA     | LEGEND 960 PCIe M.2 SSD (`1cc1:622a`) | NVMe (PCIe Gen4 x4) | :green_circle: |     -      |
+|   Kingston    |              NV2 (SNV2S)              | NVMe (PCIe Gen4 x4) | :green_circle: |     -      |
 
 ## Правила добавления/оформления данных в таблицах
 

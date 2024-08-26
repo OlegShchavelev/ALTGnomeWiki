@@ -2,6 +2,10 @@
 title: Приложения для GNOME
 sidebar: false
 aside: false
+prev: false
+next: false
+gitChangelog: false
+editLink: false
 apps:
   core:
     'Calendar':
@@ -755,3 +759,13 @@ GNOME Circle содержит приложения, расширяющие эк�
 Инструменты для разработки в среде GNOME помогают разрабатывать и проектировать новые приложения и упрощают внесение вклада в существующие.
 
 <GnomeAppsList category="dev"/>
+
+<style>
+  .container {
+    max-width: 1152px !important;
+  }
+  
+  .edit-info {
+    visibility: hidden;
+  }
+</style>

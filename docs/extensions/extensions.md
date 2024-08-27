@@ -59,12 +59,21 @@ gallery:
 Приложение «Расширение» не содержит функций установки приложения, в отличие от приложения «Менеджер расширений». Установка приложения в системе реализована:
 
 - С помощью веб-интерфейса [GNOME Extensions](https://extensions.gnome.org).
-- Устоновить пакет с расширением, к примеру:
-```shell
+- Установить пакет с расширением, к примеру:
+::: code-group
+
+```shell[apt-get]
 su -
 apt-get update
 apt-get install gnome-shell-extension-caffeine
 ```
+
+```shell[epm]
+epm -i gnome-shell-extension-caffeine
+```
+
+:::
+
 - Установить расширение локально
 
 ## Менеджер расширений
@@ -135,11 +144,71 @@ gnome-extensions disable caffeine@patapon.info
 gnome-extensions prefs caffeine@patapon.info
 ```
 
+Установить расширение:
+
+```shell
+gnome-extensions caffeine@patapon.info
+```
+
 Удалить расширение:
 
 ```shell
 gnome-extensions uninstall caffeine@patapon.info
 ```
+
+## Локальная установка расширений с использованием исходников релиза сайта GNOME Extensions или GitHub
+
+Иногда может возникнуть необходимость поставить расширение вручную без коннектора и менеджера расширений (например, если версия GNOME значительно отстает от upstream) или потребовалось установить расширение с GitHub.
+Для ручной установки с официального сайта расширений [GNOME Extensions](https://extensions.gnome.org) идем на сайт выбираем понравившееся нам расширение (в примере ddterm) и выбираем текущую версию `gnome-shell` и подходящую версию расширения, после произойдет загрузка.
+
+Для установки [с GitHub](https://github.com/ddterm/gnome-shell-extension-ddterm/releases/tag/v54) или ресурса [GNOME Extensions](https://extensions.gnome.org/extension/3780/ddterm/), скачайте расширение в формате архива.
+
+Для установки расширение в формате архива воспользуйтесь терминальной командой `gnome-extensions install`, где укажите аргументом путь до архива с расширением:
+
+```shell
+gnome-extensions install ~/Загрузки/ddterm@amezin.github.com.shell-extension.zip
+```
+
+:::info
+Если расширение уже установлено, но вы хотите обновить его до более новой версии, воспользуйтесь параметром (флагом) `-f`. При этом приложение будет переустановлено.
+
+```shell
+gnome-extensions install -f ~/Загрузки/ddterm@amezin.github.com.shell-extension.zip
+```
+
+:::
+
+Перезагрузите операционную систему. После перезапуска установленное расширение появится в списке доступных. После перезагрузки зайдите в приложение «Расширения» или введите в терминале:
+
+```shell
+gnome-extensions list
+```
+
+В случае, если по какой-то причине установка с помощью gnome-extensions невозможна, то расширение можно установить следующим образом:
+
+Распаковываем архив с расширением, если вы используете терминал:
+
+```shell
+cd ~/Загрузки
+mkdir ddterm@amezin.github.com.shell-extension
+unzip ddterm@amezin.github.com.shell-extension.zip -d ddterm@amezin.github.com.shell-extension
+```
+
+В распакованной папке находим файл `metadata.json` и открываем его. В файле находим строку uuid и копируем uuid расширения без кавычек. Альтернативный вариант, воспользуемся терминалом:
+
+```shell
+cat ddterm@amezin.github.com.shell-extension/metadata.json | grep uuid
+```
+
+Переместим файлы расширения, используя приложение «Файлы» из директории `~/Загрузки/ddterm@amezin.github.com.shell-extension/` в директорию `~/.local/share/gnome-shell/extensions/ddterm@amezin.github.com` (папок может не существовать, их нужно создать) или воспользуйтесь терминалом:
+
+```shell
+mkdir -p ~/.local/share/gnome-shell/extensions/ddterm@amezin.github.com
+cp -rf ~/Загрузки/ddterm@amezin.github.com.shell-extension/** ~/.local/share/gnome-shell/extensions/ddterm@amezin.github.com
+```
+
+Перезапускаем операционную систему, расширение появится в списке доступных `gnome-extensions list` или в приложение «Расширения» после перезапуска рабочего окружения.
+
 
 ## Системные расширения
 

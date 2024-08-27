@@ -41,3 +41,8 @@ vesafb
 weekstart
 xoffset
 yoffset
+UART
+GPIO
+AMDGPU
+Chipset
+XHCI

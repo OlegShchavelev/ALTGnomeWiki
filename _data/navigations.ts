@@ -303,6 +303,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Blur my Shell', link: '/blur-my-shell' },
               { text: 'Custom Accent Colors', link: '/custom-accent-colors' },
               { text: 'Dash to Dock', link: '/dash-to-dock' },
+              { text: 'ddterm', link: '/ddterm' },
               { text: 'EasyEffects Preset Selector', link: '/easyeffects-preset-selector' },
               { text: 'Extension List', link: '/extension-list' },
               { text: 'Fullscreen Avoider', link: '/fullscreen-avoider' },

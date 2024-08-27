@@ -63,7 +63,6 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'home-features-after': () => [h(AGWHomeTeam), h(AGWHomeSponsors)],
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AGWDocsAsideMeta)
@@ -73,6 +72,8 @@ export default {
   enhanceApp(ctx) {
     yandexMetrika(ctx, yandexMetrikaOptions.metrica)
     ctx.app.component('AGWGallery', AGWGallery)
+    ctx.app.component('AGWHomeTeam', AGWHomeTeam)
+    ctx.app.component('AGWHomeSponsors', AGWHomeSponsors)
     ctx.app.component('AGWLinkBlock', AGWLinkBlock)
     ctx.app.component('AGWAnalogues', AGWAnalogues)
     ctx.app.component('AGWCategories', AGWCategories)

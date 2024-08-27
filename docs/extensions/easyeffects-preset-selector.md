@@ -22,4 +22,4 @@ appstream:
 
 ![easyeffects-preset-selector-1](/extensions/easyeffects-preset-selector/easyeffects-preset-selector-1.png)
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

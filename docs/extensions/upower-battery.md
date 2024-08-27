@@ -23,4 +23,4 @@ appstream:
 
 ![u-power](/extensions/u-power/u-power-1.png)
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

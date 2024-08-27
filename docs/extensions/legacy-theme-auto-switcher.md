@@ -22,4 +22,4 @@ appstream:
 
 Расширение не имеет настроек.
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

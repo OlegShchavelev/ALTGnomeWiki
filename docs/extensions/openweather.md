@@ -23,5 +23,5 @@ appstream:
 
 ![Демонстрация интерфейса OpenWeather Refined](/openweather/openweather.png)
 
-<!--@include: ./parts/show-install-steps.md-->
-<!--@include: ./parts/install-from-repository.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/install-from-repository.md-->

@@ -26,4 +26,4 @@ appstream:
 
 ![osd-volume-number-2](/extensions/osd-volume-number/osd-volume-number-2.png)
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

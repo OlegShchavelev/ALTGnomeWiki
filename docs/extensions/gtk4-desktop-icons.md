@@ -26,4 +26,4 @@ appstream:
 
 ![Главная страница настроек расширения Gtk4 Desktop Icons NG (DING)](/extensions/gtk4-desktopicons/gtk4-desktopicons-2.png)
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

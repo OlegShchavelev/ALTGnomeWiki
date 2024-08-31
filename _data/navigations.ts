@@ -98,6 +98,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Lunacy', link: '/lunacy' },
               { text: 'Lutris', link: '/lutris' },
               { text: 'LibreWolf', link: '/librewolf' },
+              { text: 'Meridius', link: '/meridius' },
               { text: 'Microsoft Edge', link: '/microsoft-edge' },
               { text: 'Mission Center', link: '/mission-center' },
               { text: 'Мpich', link: '/mpich' },

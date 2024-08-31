@@ -23,8 +23,8 @@
 | Дарк Проджект |  KD98   | :green_circle: |                        -                         | [Работа клавиш Fn в функциональном режиме](/dark-project-keyboard-on-linux), Раскладка Win |
 | Дарк Проджект |  KD85   | :green_circle: |                        -                         |                                       Раскладка Win                                        |
 |   Logitech    | MX Keys | :green_circle: | [`Solaar`](https://pwr-solaar.github.io/Solaar/) |                                             -                                              |
-|   Keychron    |  K3-D1  | :green_circle: |                        -                         |                            Раскладка Win, Bluetooth, USB                            |
-|   Keychron    | K8 Pro  | :green_circle: |                        -                         |                            Раскладка Win, Bluetooth, USB                            |
+|   Keychron    |  K3-D1  | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB                                |
+|   Keychron    | K8 Pro  | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB                                |
 
 ### Коврики
 

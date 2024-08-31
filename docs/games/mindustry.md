@@ -103,7 +103,6 @@ Planets.gier.alwaysUnlocked = true
 
 <AGWGallery id=1 />
 
-
 ### Notva
 
 Вторые астероиды.
@@ -127,4 +126,3 @@ Planets.verilus.alwaysUnlocked = true
 ```
 
 <AGWGallery id=3 />
-

@@ -95,7 +95,7 @@ su -
 ```
 
 - Установите `nvidia_glx_common`:
-::: code-group
+  ::: code-group
 
 ```shell[apt-get]
 apt-get install nvidia_glx_common
@@ -1284,7 +1284,6 @@ reboot
 mcedit ~/.bashrc
 ```
 
-
 ::: warning
 
 Zink, как говорилось выше, нестабильный, и может ухудшить опыт работы с системой. Если наблюдаются вылеты приложений или иные проблемы, рекомендуется убрать параметр.
@@ -1415,6 +1414,7 @@ echo pstate > /sys/kernel/debug/dri/0/pstate
 Можно прописать в параметр `GRUB_CMDLINE_LINUX_DEFAULT` и сгенерировать новый `grub.cfg`, либо прописать в файле /etc/modprobe.conf.
 
 Пример записи в /etc/modprobe.conf:
+
 ```shell
 su -
 cat << _EOF_ > /etc/modprobe.d/nouveau_recloking.conf
@@ -1435,11 +1435,11 @@ make-initrd
 
 Для **Fermi**, **Kepler**, **Maxwell**, **Pascal** и **Volta** существует способ управления частотами через 3 режима:
 
-| Режим | Описание                               |
-| ----- | ---------------------------------------|
-| `0`   | Базовые тактовые частоты (по умолчанию)|
-| `1`   | Тактовые частоты в режиме `Boost`      |
-| `2`   | Максимальные тактовые частоты          |
+| Режим | Описание                                |
+| ----- | --------------------------------------- |
+| `0`   | Базовые тактовые частоты (по умолчанию) |
+| `1`   | Тактовые частоты в режиме `Boost`       |
+| `2`   | Максимальные тактовые частоты           |
 
 Управление происходит через параметр `config.NvBoost`.
 
@@ -1448,6 +1448,7 @@ make-initrd
 Можно прописать это в параметр `GRUB_CMDLINE_LINUX_DEFAULT` и сгенерировать новый `grub.cfg`, либо прописать в файле /etc/modprobe.conf.
 
 Пример записи в /etc/modprobe.conf:
+
 ```shell
 su -
 cat << _EOF_ > /etc/modprobe.d/nouveau_nvboost.conf

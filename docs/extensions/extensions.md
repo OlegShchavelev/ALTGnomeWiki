@@ -60,7 +60,7 @@ gallery:
 
 - С помощью веб-интерфейса [GNOME Extensions](https://extensions.gnome.org).
 - Установить пакет с расширением, к примеру:
-::: code-group
+  ::: code-group
 
 ```shell[apt-get]
 su -
@@ -208,7 +208,6 @@ cp -rf ~/Загрузки/ddterm@amezin.github.com.shell-extension/** ~/.local/s
 ```
 
 Перезапускаем операционную систему, расширение появится в списке доступных `gnome-extensions list` или в приложение «Расширения» после перезапуска рабочего окружения.
-
 
 ## Системные расширения
 

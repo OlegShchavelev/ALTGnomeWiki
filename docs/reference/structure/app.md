@@ -6,6 +6,7 @@
 
 Используются такие блоки метаданных [Frontmatter](/reference/pages/vitepress#frontmatter):
 
+<!-- prettier-ignore -->
 ```markdown
 ---
 aggregation:
@@ -54,6 +55,7 @@ analogues: # список аналогичных приложений (подр�
 
 Можно добавить такие бейджи
 
+<!-- prettier-ignore -->
 ```markdown
 ---
 keywords:
@@ -85,7 +87,6 @@ gallery:
     - src: /amberol/amberol-3.png
 ---
 ```
-
 
 ### Список похожих приложений
 

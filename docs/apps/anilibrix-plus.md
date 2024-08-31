@@ -29,13 +29,13 @@ gallery:
 
 # AniLibrix Plus
 
-AniLibrix Plus — Доработанный форк от AniLibrix, десктопного аниме-кинотеатра Анилибрии для любого вашего компьютера. 
+AniLibrix Plus — доработанный форк от AniLibrix, десктопного аниме-кинотеатра Анилибрии для любого вашего компьютера.
 
 <AGWGallery />
 
 <!--@include: @apps/.parts/install/content-snap.md-->
 
-Либо можно скачать Appimage актуальной версии 
+Либо можно скачать Appimage актуальной версии
 
 ```
 https://github.com/AnimeHaze/anilibrix-plus/releases

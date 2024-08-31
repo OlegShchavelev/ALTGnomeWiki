@@ -311,9 +311,8 @@ export const contributions = [
     mapByNameAliases: ['cryals'],
     title: 'Участник',
     avatar: 'https://avatars.githubusercontent.com/u/99600368?v=4',
-    links: [{ icon: 'github', link: 'https://github.com/cryals'}],
+    links: [{ icon: 'github', link: 'https://github.com/cryals' }],
     actionText: 'Поддержать',
-    sponsor:
-      'https://yoomoney.ru/to/4100118730672586'
+    sponsor: 'https://yoomoney.ru/to/4100118730672586'
   }
 ]

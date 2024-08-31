@@ -16,15 +16,15 @@ const props = defineProps({
 
 const galleries = props.id && frontmatter.value.gallery[props.id] ? frontmatter.value.gallery[props.id] : frontmatter.value.gallery[0] ?? frontmatter.value.gallery ?? theme.value.gallery ?? []
 
-const onSwiper = (swiper: any) => console.log(swiper)
-const onSlideChange = () => console.log('slide change')
+//const onSwiper = (swiper: any) => console.log(swiper)
+//const onSlideChange = () => console.log('slide change')
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/grid'
 
 
-console.log(props)
+//console.log(props)
 
 </script>
 

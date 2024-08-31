@@ -69,5 +69,6 @@ sponsors:
           url: https://nolebase.ayaka.io/
 ---
 
+<AGWHomeEngagement/>
 <AGWHomeTeam/>
 <AGWHomeSponsors/>

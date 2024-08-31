@@ -24,6 +24,7 @@ import AGWGallery from './components/AGWGallery.vue'
 import AGWLinkBlock from './components/AGWLinkBlock.vue'
 import AGWAnalogues from './components/AGWAnalogues.vue'
 import AGWGnomeAppsList from './components/AGWGnomeApps/AGWGnomeAppsList.vue'
+import AGWHomeEngagement from './components/AGWHomeEngagement/AGWHomeEngagementSection.vue'
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
@@ -74,6 +75,7 @@ export default {
     ctx.app.component('AGWGallery', AGWGallery)
     ctx.app.component('AGWHomeTeam', AGWHomeTeam)
     ctx.app.component('AGWHomeSponsors', AGWHomeSponsors)
+    ctx.app.component('AGWHomeEngagement', AGWHomeEngagement)
     ctx.app.component('AGWLinkBlock', AGWLinkBlock)
     ctx.app.component('AGWAnalogues', AGWAnalogues)
     ctx.app.component('AGWCategories', AGWCategories)

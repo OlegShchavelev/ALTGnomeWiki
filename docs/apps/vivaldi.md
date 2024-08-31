@@ -28,5 +28,5 @@ appstream:
 
 Vivaldi — это быстрый, удобный и многофункциональный браузер, основанный на движке Blink и развивающий идеи Opera. Он поддерживает расширения для Chrome, имеет встроенный блокировщик рекламы, собственную систему синхронизации и удобный менеджер паролей.
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->

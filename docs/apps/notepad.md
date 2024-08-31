@@ -24,4 +24,4 @@ appstream:
 
 Notepad — программа для простого создания текстовых заметок.
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

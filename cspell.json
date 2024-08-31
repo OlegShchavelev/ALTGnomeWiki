@@ -67,5 +67,5 @@
     "simple words"
   ],
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"],
-  "ignorePaths": ["docs/equipment/hardware-compatibility.md", "docs/main/congrats.md"]
+  "ignorePaths": ["docs/main/congrats.md"]
 }

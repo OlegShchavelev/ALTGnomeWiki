@@ -29,5 +29,5 @@ appstream:
 
 Skype — платформа для бесплатных видеозвонков, обмена сообщениями и файлами, которая позволяет пользователям общаться с друзьями и близкими в реальном времени на любых устройствах.
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->

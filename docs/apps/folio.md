@@ -30,4 +30,4 @@ Folio - приложение для создания Markdown-заметок в 
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

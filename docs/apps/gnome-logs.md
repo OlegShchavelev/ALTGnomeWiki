@@ -35,5 +35,5 @@ gallery:
 С помощью приложения «Журналы» вы можете выполнять поиск по журналам и просматривать подробную информацию о событиях.
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

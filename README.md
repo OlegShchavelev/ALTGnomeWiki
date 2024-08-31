@@ -10,6 +10,9 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/OlegShchavelev/ALTGnomeWiki)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/OlegShchavelev/ALTGnomeWiki)
 ![GitHub deployments](https://img.shields.io/github/deployments/OlegShchavelev/ALTGnomeWiki/github-pages?label=Last%20Deploy)
+![Status](https://status.alt-gnome.ru/api/badge/13/status)
+![Uptime](https://status.alt-gnome.ru/api/badge/13/uptime)
+
 
 [![Telegram](https://img.shields.io/badge/Group-%235AA9E6?logo=telegram&label=Telegram)](https://t.me/alt_gnome)
 [![Rutube](https://badgen.net/static/Rutube/Chanel/cyan?icon=https://static.rutube.ru/static/img/favicon-icons/icon.svg")](https://rutube.ru/channel/32425669/)

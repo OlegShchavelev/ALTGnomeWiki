@@ -33,5 +33,5 @@ Rnote - приложение для векторной графики с отк�
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-snap.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-snap.md-->

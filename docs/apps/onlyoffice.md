@@ -27,5 +27,5 @@ appstream:
 
 OnlyOffice — офисный пакет с открытым исходным кодом, разработанный компанией Ascensio System SIA с головным офисом в Риге (Латвия). Объединяет редакторы текста, электронных таблиц и презентаций, позволяющие создавать, просматривать и редактировать документы без подключения к Интернету. OnlyOffice полностью совместим с форматами Office Open XML: DOCX, XLSX, PPTX.
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->

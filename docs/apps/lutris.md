@@ -23,5 +23,5 @@ appstream:
 
 Lutris — платформа для игр на компьютерах с операционных систем на базе ядра GNU/Linux.
 
-<!--@include: @apps/_parts/install/content-repo.md-->
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

@@ -24,4 +24,4 @@ appstream:
 
 ![custom-accent-colors-1](/extensions/custom-accent-colors/custom-accent-colors-1.png)
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

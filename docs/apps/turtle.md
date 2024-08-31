@@ -36,7 +36,7 @@ gallery:
 - `log`, `diff`
 
 <AGWGallery />
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
 
 ## Установить дополнение для Файлов (Nautilus)
 

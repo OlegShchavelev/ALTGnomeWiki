@@ -1,7 +1,7 @@
 ---
+layout: home
 title: Приложения для GNOME
-sidebar: false
-aside: false
+gitChangelog: false
 apps:
   core:
     'Calendar':

@@ -14,7 +14,7 @@ const args = yargs(process.argv)
     key: { type: 'string', default: '' },
     repoUrl: { type: 'string', default: 'https://github.com/OlegShchavelev/ALTGnomeWiki' },
     debug: { type: 'boolean', default: false },
-    dev: { type: 'boolean', default: false },
+    dev: { type: 'boolean', default: false }
   })
   .parse()
 
@@ -25,8 +25,7 @@ const spiner = ora({ discardStdin: false })
 /*
     Net + Local Mapping
 */
-if (!args.dev){
-
+if (!args.dev) {
   const spiner = ora({ discardStdin: false })
   spiner.start(`${toolname} Читаем данные с гита...\n`)
 
@@ -124,8 +123,8 @@ if (!args.dev){
         Object.keys(memberRaw).forEach((key) => {
           key == 'mapByNameAliases'
             ? memberRaw[key].forEach((alias) => {
-              author[key].push(alias)
-            })
+                author[key].push(alias)
+              })
             : (author[key] = memberRaw[key])
         })
       }
@@ -142,7 +141,7 @@ if (!args.dev){
 
   spiner.succeed(`${toolname} Список успешно сгенерирован!\n`)
 } else {
-  spiner.warn(`${toolname} Активен режим разработки. Создаем пустышку...\n`)
+  spiner.warn(`${toolname} Активен режим разработки. Создаём пустышку...\n`)
   fs.writeFile(
     path.join(__dirname, '../_data/fullteam.json'),
     JSON.stringify(contributions),
@@ -150,4 +149,3 @@ if (!args.dev){
   )
   spiner.warn(`${toolname} Создана пустышка с содержимым team.ts\n`)
 }
-

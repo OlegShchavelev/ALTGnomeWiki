@@ -24,4 +24,4 @@ appstream:
 
 ![fullscreen-avoider-1](/extensions/fullscreen-avoider/fullscreen-avoider-1.png)
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

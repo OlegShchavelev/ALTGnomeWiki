@@ -126,7 +126,7 @@ Amberol воспроизводит музыку, и ничего больше.
 
 <AGWGallery /> <!-- [!code focus] -->
 
-<!--{{`@include: @apps/_parts/install/content-repo.md`}}-->
+<!--{{`@include: @apps/.parts/install/content-repo.md`}}-->
 ```
 
 ## 5. Установка
@@ -137,25 +137,25 @@ Amberol воспроизводит музыку, и ничего больше.
 == Репозиторий
 
 ```markdown-vue
-<!--{{`@include: @apps/_parts/install/content-repo.md`}}-->
+<!--{{`@include: @apps/.parts/install/content-repo.md`}}-->
 ```
 
 == Flatpak
 
 ```markdown-vue
-<!--{{`@include: @apps/_parts/install/content-flatpak.md`}}-->
+<!--{{`@include: @apps/.parts/install/content-flatpak.md`}}-->
 ```
 
 == Snap
 
 ```markdown-vue
-<!--{{`@include: @apps/_parts/install/content-snap.md`}}-->
+<!--{{`@include: @apps/.parts/install/content-snap.md`}}-->
 ```
 
 == EPM Play
 
 ```markdown-vue
-<!--{{`@include: @apps/_parts/install/content-epm-play.md`}}-->
+<!--{{`@include: @apps/.parts/install/content-epm-play.md`}}-->
 ```
 
 :::

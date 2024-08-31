@@ -54,8 +54,8 @@ Mindustry — Песочница в жанре tower-defense. Создавайт
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-snap.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-snap.md-->
 
 ## Serpulo
 

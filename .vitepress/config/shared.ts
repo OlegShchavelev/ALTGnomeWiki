@@ -144,6 +144,7 @@ export const shared = defineConfig({
       md.use(linkBlock)
     }
   },
+  lastUpdated: true,
   transformPageData: (pageData) => {
     if (pageData.filePath.split('/')[0] in Object.keys(headTransformer)) {
       pageData.frontmatter.head ??= []

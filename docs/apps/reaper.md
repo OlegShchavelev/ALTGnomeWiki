@@ -25,4 +25,4 @@ Reaper — программная среда для аудио производ�
 
 ![Reaper](/reaper/reaper-1.png)
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

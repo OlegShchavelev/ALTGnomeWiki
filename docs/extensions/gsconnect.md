@@ -25,5 +25,5 @@ GSConnect — расширение, которое включает в себя 
 
 Для подключения устройства необходимо приложение, которое доступно для Android, iOS, Windows, macOS и других платформ.
 
-<!--@include: ./parts/show-install-steps.md-->
-<!--@include: ./parts/install-from-repository.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/install-from-repository.md-->

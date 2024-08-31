@@ -1,6 +1,7 @@
 ---
 aggregation:
   flatpak: net.codelogistics.webapps
+  sisyphus: webapps
 appstream:
   id: net.codelogistics.webapps
   name: Web Apps
@@ -22,4 +23,5 @@ Web Apps — приложение с открытым исходным кодо�
 
 ![Интерфейс Web Apps](/web-apps/preview.png)
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->

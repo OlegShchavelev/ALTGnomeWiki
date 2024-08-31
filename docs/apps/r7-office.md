@@ -25,4 +25,4 @@ appstream:
 
 ![Р7 Офис](/r7-office/r7-office-1.png)
 
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->

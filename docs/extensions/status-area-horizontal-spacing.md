@@ -22,4 +22,4 @@ appstream:
 
 ![Демонстрация настроек расширения](/status-area-horizontal-spacing/demo.gif)
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

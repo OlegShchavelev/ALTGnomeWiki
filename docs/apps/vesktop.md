@@ -39,8 +39,8 @@ Vesktop — альтернативный клиент Discord c множеств
 
 <AGWGallery />
 
-<!--@include: @apps/_parts/install/content-flatpak.md-->
-<!--@include: @apps/_parts/install/content-epm-play.md-->
+<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-epm-play.md-->
 
 ## Демонстрация экрана в Wayland со звуком
 

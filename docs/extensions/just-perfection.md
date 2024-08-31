@@ -27,4 +27,4 @@ gallery:
 
 <AGWGallery/>
 
-<!--@include: ./parts/show-install-steps.md-->
+<!--@include: @extensions/.parts/show-install-steps.md-->

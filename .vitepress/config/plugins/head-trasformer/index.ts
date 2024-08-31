@@ -1,5 +1,5 @@
 /*------------------------------------------------
-|                ALT GNOME Wiki          <:0)~~~  |
+|                ALT Gnome Wiki          <:0)~~~  |
 |  <:0)~~~ MultiLang head configuration           |
 |-------------------------------------------------|
 |          Published under MIT Licence            |

@@ -10,4 +10,4 @@ search: false
 snap install {{ $frontmatter?.aggregation?.snap?.id ?? $frontmatter?.aggregation?.snap }}
 ```
 
-<!--@include: @apps/parts/install/software-snap.md-->
+<!--@include: @apps/.parts/install/software-snap.md-->

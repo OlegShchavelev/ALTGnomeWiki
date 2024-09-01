@@ -113,6 +113,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'OnlyOffice', link: '/onlyoffice' },
               { text: 'OpenRazer', link: '/openrazer' },
               { text: 'Opera', link: '/opera' },
+              { text: 'Orca', link: '/orca' },
               { text: 'Penpot Desktop', link: '/penpot-desktop' },
               { text: 'PortProton', link: '/port-proton' },
               { text: 'Postman', link: '/postman' },

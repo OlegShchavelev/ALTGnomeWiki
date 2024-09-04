@@ -19,6 +19,7 @@ appstream:
   url:
     homepage: https://github.com/Rirusha/Cassette
     bugtracker: https://github.com/Rirusha/Cassette/issues
+    translate: https://l10n.gnome.org/module/cassette/
     donation: https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460/
 gallery:
   title: Галерея
@@ -67,12 +68,6 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 
 ## План обновлений
 
-::: timeline 0.1
-Реализовать работу с плейлистами, проигрывание музыки, работу с очередью воспроизведения
-:::
-::: timeline 0.2
-Крупный релиз. Намечается работа с радио и всё из этого вытекающее
-:::
 ::: timeline 0.3
 Оптимизация работы клиента и приложения в целом. Изменение логики работы виджетов списков треков. Добавление view виджетов для альбомов и исполнителей.
 :::

@@ -22,8 +22,6 @@ Waterfox — это независимый браузер, основанный 
 
 ![Интерфейс Waterfox](https://dl.flathub.org/media/net/waterfox/waterfox/a3eb059438f1e389a3c00a8cf5bf8f9a/screenshots/image-1_orig.webp)
 
-<AGWGallery />
-
 <!--@include: @apps/.parts/install/content-flatpak.md-->
 
 ## Основные принципы и особенности Waterfox:

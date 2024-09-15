@@ -23,5 +23,4 @@ Sonic Robo Blast 2 — это фанатская 3D-игра про ёжика �
 
 ![Геймплей Sonic Robo Blast 2](/sonic-robo-blast2/greenflower-zone.png)
 
-<AGWGallery />
 <!--@include: @apps/.parts/install/content-flatpak.md-->

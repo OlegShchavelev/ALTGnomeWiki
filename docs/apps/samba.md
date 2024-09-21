@@ -48,13 +48,13 @@ su -
 systemctl enable --now smb
 ```
 
-3. Установить пакеты `avahi-daemon` и `natuilus-share`:
+3. Установить пакеты `avahi-daemon` и `nautilus-share`:
 
 ::: code-group
 
 ```shell[apt-get]
 su -
-apt-get install avahi-daemon natuilus-share
+apt-get install avahi-daemon nautilus-share
 ```
 
 ```shell[epm]

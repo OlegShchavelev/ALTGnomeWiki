@@ -95,6 +95,10 @@ export const shared = defineConfig({
         link: 'https://t.me/alt_gnome'
       },
       {
+        icon: 'mastodon',
+        link: 'https://mastodon.ml/@alt_gnome/'
+      },
+      {
         icon: {
           svg: vk
         },

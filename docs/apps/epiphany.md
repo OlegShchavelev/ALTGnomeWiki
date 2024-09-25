@@ -23,9 +23,14 @@ gallery:
   title: Галерея
   type: slider
   items:
-    - src: /epiphany/sc-1.png
-    - src: /epiphany/sc-2.png
-    - src: /epiphany/sc-3.png
+    - src: /epiphany/epiphany-1.png
+    - src: /epiphany/epiphany-2.png
+    - src: /epiphany/epiphany-3.png
+    - src: /epiphany/epiphany-4.png
+    - src: /epiphany/epiphany-5.png
+    - src: /epiphany/epiphany-6.png
+    - src: /epiphany/epiphany-7.png
+    - src: /epiphany/epiphany-8.png
 ---
 
 # Веб-браузер
@@ -36,3 +41,13 @@ gallery:
 
 <!--@include: @apps/.parts/install/content-repo.md-->
 <!--@include: @apps/.parts/install/content-flatpak.md-->
+
+## Выбор поисковой системы Яндекс
+
+Перейдите в Главное меню -> Параметры или с помощью комбинации клавиш [[ctrl]] + [[,]]. В блоке «Поисковые системы» добавьте поисковую систему Яндекс, заполнив следующие поля:
+
+- Имя: Яндекс
+- Адрес: https://www.ya.ru/search?text=%s
+- Комбинация клавиш: `!я`
+
+![Добавить поисковую систему Яндекс](/epiphany/epiphany-9.png)

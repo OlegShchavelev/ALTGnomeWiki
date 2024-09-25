@@ -46,7 +46,7 @@ epm -i kernel-modules-v4l2loopback-***
 `***` - версия ядра `un-def` или `std-def`. Узнать нужную версию через терминал
 
 ```shell
-uname -r`.
+uname -r
 ```
 
 Необходимо включить установленный модуль. Для этого нужно отредактируйте файл `/etc/modules-load.d/modules.conf`

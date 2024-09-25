@@ -22,8 +22,12 @@ gallery:
   title: Галерея
   type: slider
   items:
-    - src: /gnome-tour/sc-1.png
-    - src: /gnome-tour/sc-2.png
+    - src: /gnome-tour/gnome-tour-1.png
+    - src: /gnome-tour/gnome-tour-2.png
+    - src: /gnome-tour/gnome-tour-3.png
+    - src: /gnome-tour/gnome-tour-4.png
+    - src: /gnome-tour/gnome-tour-5.png
+    - src: /gnome-tour/gnome-tour-6.png
 ---
 
 # Экскурсия

@@ -285,6 +285,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
                     ],
                     collapsed: true
                   },
+                  { text: 'Настройка терминала', link: '/terminal_ch' },
                   { text: 'Установка шрифтов', link: '/add-fonts' }
                 ],
                 collapsed: true

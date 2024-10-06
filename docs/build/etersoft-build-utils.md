@@ -200,7 +200,7 @@ git commit --amend
 
 :::
 
-Если вы ещё не дошли до join 4.0 вам нужно получить approve от своего ментора чтобы пакет попал в Сизиф до этого его можно будет установить только через задание
+Если вы ещё не закончили join вам нужно получить approve от своего ментора чтобы пакет попал в Сизиф до этого его можно будет установить только через задание
 
 ::: code-group
 
@@ -258,7 +258,7 @@ rpmbsh
 ```
 %changelog
 * Wed Jun 19 2024 First and last name <example@altlinux.org> 1.1.0-alt1.1
-- NMU: add devel subpackage
+- NMU: example changelog
 ```
 
 :::info

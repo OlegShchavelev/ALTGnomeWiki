@@ -48,11 +48,12 @@ $ git add .gear/rules .gear/damask.spec
 Далее запускаем сборку
 
 ```
-$ gear-hsh --no-sisyphus-check=packager,gpg --commit -v
+$ gear-hsh --no-sisyphus-check=packager,gpg --commit -v --save-fakeroot --lazy-cleanup 
 ```
 
 :::info
 **--no-sisyphus-check=packager,gpg** - означает отключение проверки Сизиф только в части того кто упаковывает и его ключа.
+**--save-fakeroot** - позволяет оставить каталог fakeroot после выполнения сборки
 :::
 
 ## Vendoring - "вендоринг", распространение
@@ -213,7 +214,7 @@ git add --all -f КАТАЛОГ_С_МОДУЛЯМИ
 Далее просто запускаем сборку
 
 ```
-$ gear-hsh --no-sisyphus-check=packager,gpg --commit -v
+$ gear-hsh --no-sisyphus-check=packager,gpg --commit -v --save-fakeroot --lazy-cleanup 
 ```
 
 ## Сборка внутри хешера

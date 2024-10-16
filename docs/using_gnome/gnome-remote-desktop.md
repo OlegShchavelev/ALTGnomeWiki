@@ -41,7 +41,7 @@ epm -i gnome-remote-desktop
 grdctl rdp enable
 
 # Настроить авторизацию в RDP <username>, <password>
-grdctl rdp set-credential <username> <password>
+grdctl rdp set-credentials <username> <password>
 
 # Так-же из коммандной строки (терминала) доступно управление
 # другой системой удаленного доступа - VNC

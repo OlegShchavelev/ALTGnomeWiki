@@ -44,6 +44,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'AsusCtl', link: '/asusctl' },
               { text: 'Audacity', link: '/audacity' },
               { text: 'Ayugram', link: '/ayugram-desktop' },
+              { text: 'Binary', link: '/binary' },
               { text: 'Blender', link: '/blender' },
               { text: 'Bottles', link: '/bottle' },
               { text: 'Boxes', link: '/boxes' },

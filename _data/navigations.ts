@@ -107,6 +107,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Main-menu', link: '/main-menu' },
               { text: 'Neofetch', link: '/neofetch' },
               { text: 'Neovim', link: '/neovim' },
+              { text: 'Netsleuth', link: '/netsleuth' },
               { text: 'Nextcloud Desktop', link: '/nextcloud-desktop' },
               { text: 'Notepad', link: '/notepad' },
               { text: 'OBS Studio', link: '/obs-studio' },

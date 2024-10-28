@@ -1,12 +1,11 @@
 ---
 layout: home
 title: Главная
-titleTemplate: ALT Regular Gnome Community
+titleTemplate: ALT Gnome Wiki
 
 hero:
-  name: 'ALT Regular Gnome'
-  text: 'Community'
-  tagline: открытое сообщество пользователей операционной системы ALT Regular Gnome
+  name: 'ALT Gnome Wiki'
+  tagline: база знаний операционной системы ALT Regular Gnome
   image:
     src: /alt-gnome.png
     alt: GNOME

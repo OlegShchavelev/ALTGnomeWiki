@@ -1,6 +1,6 @@
 {
   "name": "@alt-gnome/alt-wiki-vitepress-gnome",
-  "description": "Библиотека знаний операционной системы ALT Regular Gnome",
+  "description": "База знаний операционной системы ALT Regular Gnome",
   "homepage": "https://alt-gnome.wiki/",
   "license": "MIT",
   "bugs": {

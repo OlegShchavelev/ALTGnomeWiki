@@ -1,8 +1,5 @@
 ---
 aggregation:
-  #flatpak:
-  #  id: com.sudovanilla.penpot-desktop
-  #  build: unofficial
   epm:
     play:
       id: penpot-desktop

@@ -35,68 +35,22 @@ gallery:
 - `remotes`, `submodules`
 - `log`, `diff`
 
-<AGWGallery />
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+## Установка из репозитория
 
-## Установить дополнение для Файлов (Nautilus)
-
-Чтобы использовать дополнение, необходимо установить необходимые библиотеки для его корректной работы:
+Turtle можно установить через терминал:
 
 ::: code-group
 
-```shell-vue[apt-get]
+```shell[apt-get]
 su -
 apt-get update
-apt-get install python3-module-pygit2 nautilus-python meld libcryptui
-
+apt-get install turtle nautilus-python
 ```
 
-```shell-vue[epm]
-epm -i python3-module-pygit2 nautilus-python meld libcryptui
-```
-
-:::
-
-Склонируйте репозиторий приложения Turtle использую команду [git clone](/git)
-
-```shell
-git clone https://gitlab.gnome.org/philippun1/turtle.git .turtle
-```
-
-Установите дополнение используя установочный скрипт предназначенный для установленного turtle с flathub:
-
-```shell
-su -
-cd /home/USER/.turtle
-python3 install.py install --flatpak
-```
-
-::: warning
-Замените переменную USER на ваше имя пользователя, например, в моём случае имя пользователя — oleg, а путь к директории:
-
-```shell
-cd /home/oleg/.turtle
+```shell[epm]
+epm -i turtle nautilus-python
 ```
 
 :::
 
-Чтобы начать работу с дополнением, вам нужно перезагрузить «Файлы». Для этого в терминале введите:
-
-```shell
-nautilus -q
-```
-
-## Обновить дополнение для Файлов (Nautilus)
-
-Для обновления дополнения необходимо открыть папку, в которую вы клонировали дополнение `~/.turtle` с помощью `Git`, и синхронизировать её с удалённым репозиторием.
-
-```shell
-git pull
-python3 install.py install --flatpak
-```
-
-После обновления дополнения Turtle необходимо перезагрузить «Файлы»:
-
-```shell
-nautilus -q
-```
+<!--@include: @apps/.parts/install/content-flatpak.md-->

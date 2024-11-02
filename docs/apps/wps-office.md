@@ -48,8 +48,9 @@ WPS Office включает следующие приложения:
 
 <!--@include: @apps/.parts/install/content-flatpak.md-->
 <!--@include: @apps/.parts/install/content-epm-play.md-->
+
 ::: warning
-На данный момент обноружена проблема c работой системы скинов после установки epm play.
+На данный момент обнаружена проблема c работой системы скинов после установки epm play.
 
 Подробнее: [[[Github [Etersoft/EEPM #266]](https://github.com/Etersoft/eepm/issues/266)]]
 :::

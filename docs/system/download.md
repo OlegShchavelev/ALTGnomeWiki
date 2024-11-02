@@ -21,6 +21,12 @@
 
 [ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="aarch64" />](https://nightly.altlinux.org/sisyphus-aarch64/current/regular-gnome-latest-aarch64.iso)
 
+## Скачать «Стартовый набор» со средой рабочего стола GNOME (репозиторий p11)
+
+[ALT Starterkit Gnome <Badge type="tip" text="x86_64" />](https://nightly.altlinux.org/p11/release/alt-p11-gnome-20240912-x86_64.iso)
+
+[ALT Starterkit Gnome <Badge type="tip" text="aarch64" />](https://nightly.altlinux.org/p11-aarch64/release/alt-p11-gnome-20240912-aarch64.iso)
+
 ## Запись на DVD и USB Flash
 
 [ALT Media Writer](https://www.altlinux.org/Запись_образов_на_DVD_и_USB_Flash)

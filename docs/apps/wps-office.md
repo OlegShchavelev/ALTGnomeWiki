@@ -52,5 +52,11 @@ WPS Office включает следующие приложения:
 ::: warning
 На данный момент обнаружена проблема c работой системы скинов после установки epm play.
 
+Для исправления можно воспользоваться командой:
+```shell
+rm /opt/kingsoft/wps-office/office6/libstdc++.so*
+```
+После обновления epm в ближайшее время ошибка будет исправлена.
+
 Подробнее: [[[Github [Etersoft/EEPM #266]](https://github.com/Etersoft/eepm/issues/266)]]
 :::

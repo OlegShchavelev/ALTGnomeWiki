@@ -316,7 +316,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Gtk4 Desktop Icons NG', link: '/gtk4-desktop-icons' },
               { text: 'Just Perfection', link: '/just-perfection' },
               { text: 'Legacy (GTK3) Theme Scheme Auto Switcher', link: '/legacy-theme-auto-switcher' },
-              { text: 'Nautilus Backspace Back', link: '/nautilus-backspace-back' },
+              { text: 'Nautilus Backspace', link: '/nautilus-backspace-back' },
               { text: 'OpenWeather Refined', link: '/openweather' },
               { text: 'OSD Volume Number', link: '/osd-volume-number' },
               { text: 'Status Area Horizontal Spacing', link: '/status-area-horizontal-spacing' },

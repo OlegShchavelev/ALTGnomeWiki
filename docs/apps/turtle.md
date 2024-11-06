@@ -44,13 +44,23 @@ Turtle можно установить через терминал:
 ```shell[apt-get]
 su -
 apt-get update
-apt-get install turtle nautilus-python
+apt-get install turtle-nautilus
 ```
 
 ```shell[epm]
-epm -i turtle nautilus-python
+epm -i turtle-nautilus
 ```
 
 :::
 
+Чтобы начать работу с дополнением, вам нужно перезагрузить «Файлы». Для этого в терминале введите:
+```shell
+nautilus -q
+```
+
 <!--@include: @apps/.parts/install/content-flatpak.md-->
+
+Чтобы начать работу с дополнением, вам нужно перезагрузить «Файлы». Для этого в терминале введите:
+```shell
+nautilus -q
+```

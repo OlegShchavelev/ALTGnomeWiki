@@ -5,7 +5,7 @@ titleTemplate: ALT Gnome Wiki
 
 hero:
   name: 'ALT Gnome Wiki'
-  tagline: база знаний операционной системы ALT Regular Gnome
+  tagline: база знаний операционных систем ALT Regular Gnome и ALT Starterkit Gnome
   image:
     src: /alt-gnome.png
     alt: GNOME

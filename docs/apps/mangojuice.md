@@ -5,7 +5,7 @@ appstream:
   id: io.github.radiolamp.mangojuice
   name: Mangojuice
   icon: /mangojuice/io.github.radiolamp.mangojuice.svg
-  summary: Удобной альтернативой Goverlay, для настройки Mangohud.
+  summary: Удобная альтернатива Goverlay, для настройки Mangohud.
   developer:
     nickname: Radiolamp
     avatar: https://avatars.githubusercontent.com/u/64334647?v=4&size=64

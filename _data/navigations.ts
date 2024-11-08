@@ -105,6 +105,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Мpich', link: '/mpich' },
               { text: 'МPV', link: '/mpv' },
               { text: 'Main-menu', link: '/main-menu' },
+              { text: 'Mangojuice', link: '/mangojuice' },
               { text: 'Neofetch', link: '/neofetch' },
               { text: 'Neovim', link: '/neovim' },
               { text: 'Netsleuth', link: '/netsleuth' },

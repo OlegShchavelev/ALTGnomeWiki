@@ -57,7 +57,7 @@ WPS Office включает следующие приложения:
 su -
 rm /opt/kingsoft/wps-office/office6/libstdc++.so*
 ```
-После обновления epm в ближайшее время ошибка будет исправлена.
+После обновления epm в ближайшее время ошибка будет исправлена. (Исправлено в версии 3.64.0)
 
 Подробнее: [[[Github [Etersoft/EEPM #266]](https://github.com/Etersoft/eepm/issues/266)]]
 :::

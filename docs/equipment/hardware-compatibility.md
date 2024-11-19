@@ -15,6 +15,7 @@
 |   Logitech    |                                                  M705                                                  | :green_circle: |                                   -                                   |     -      |
 |   Logitech    |                                              MX Master 3                                               | :green_circle: | [`piper`](piper.md), [`Solaar`](https://pwr-solaar.github.io/Solaar/) |     -      |
 |    Xiaomi     | [Dual Mode Wireless Mouse Silent Edition](https://www.mi.com/ru/product/mi-dual-mode-wireless-mouse/)  | :green_circle: |                                   -                                   |     -      |
+|  Дарк прожект x VXE | R1 PRO Max Grey | :green_circle: | - | - |
 
 ### Клавиатуры
 

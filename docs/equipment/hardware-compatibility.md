@@ -8,14 +8,14 @@
 
 ### Мышки
 
-| Производитель |                                                 Модель                                                 |   Состояние    |                                  ПО                                   | Примечание |
-| :-----------: | :----------------------------------------------------------------------------------------------------: | :------------: | :-------------------------------------------------------------------: | :--------: |
-|   Defender    |                                            Warhead GM-1780                                             | :green_circle: |                                   -                                   |     -      |
-|   Logitech    | [G102](https://www.logitechg.com/en-my/products/gaming-mice/g102-prodigy-gaming-mouse.910-004846.html) | :green_circle: |                          [`piper`](piper.md)                          |     -      |
-|   Logitech    |                                                  M705                                                  | :green_circle: |                                   -                                   |     -      |
-|   Logitech    |                                              MX Master 3                                               | :green_circle: | [`piper`](piper.md), [`Solaar`](https://pwr-solaar.github.io/Solaar/) |     -      |
-|    Xiaomi     | [Dual Mode Wireless Mouse Silent Edition](https://www.mi.com/ru/product/mi-dual-mode-wireless-mouse/)  | :green_circle: |                                   -                                   |     -      |
-|  Дарк прожект x VXE | R1 PRO Max Grey | :green_circle: | - | - |
+|    Производитель    |                                                 Модель                                                 |   Состояние    |                                  ПО                                   | Примечание |
+| :-----------------: | :----------------------------------------------------------------------------------------------------: | :------------: | :-------------------------------------------------------------------: | :--------: |
+|      Defender       |                                            Warhead GM-1780                                             | :green_circle: |                                   -                                   |     -      |
+|      Logitech       | [G102](https://www.logitechg.com/en-my/products/gaming-mice/g102-prodigy-gaming-mouse.910-004846.html) | :green_circle: |                          [`piper`](piper.md)                          |     -      |
+|      Logitech       |                                                  M705                                                  | :green_circle: |                                   -                                   |     -      |
+|      Logitech       |                                              MX Master 3                                               | :green_circle: | [`piper`](piper.md), [`Solaar`](https://pwr-solaar.github.io/Solaar/) |     -      |
+|       Xiaomi        | [Dual Mode Wireless Mouse Silent Edition](https://www.mi.com/ru/product/mi-dual-mode-wireless-mouse/)  | :green_circle: |                                   -                                   |     -      |
+| Дарк Проджект x VXE |                                            R1 PRO Max Grey                                             | :green_circle: |                                   -                                   |     -      |
 
 ### Клавиатуры
 

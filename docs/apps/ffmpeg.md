@@ -3,14 +3,14 @@ aggregation:
   sisyphus: ffmpeg
 appstream:
   id: ffmpeg
-  name: FFMPEG
+  name: FFmpeg
   icon: /ffmpeg/ffmpeg-logo.png
   summary: Утилита для обработки мультимедийного контента, такого как аудио, видео, субтитры и связанные с ними метаданные.
   metadata_license:
     name: LGPL v2.1+
     link: https://ffmpeg.org/legal.html
   developer:
-    name: FFMPEG Community
+    name: FFmpeg Community
   url:
     homepage: https://ffmpeg.org/
     bugtracker: https://trac.ffmpeg.org/

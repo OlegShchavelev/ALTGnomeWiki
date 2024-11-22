@@ -122,6 +122,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Postman', link: '/postman' },
               { text: 'PinApp', link: '/pin-app' },
               { text: 'Piper', link: '/piper' },
+              { text: 'PyRadio', link: '/pyradio' },
               { text: 'qBittorrent', link: '/q-bittorrent' },
               { text: 'Radio', link: '/radio' },
               { text: 'Reaper', link: '/reaper' },

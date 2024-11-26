@@ -65,6 +65,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'EasyEffects', link: '/easyeffects' },
               { text: 'Eclipse IDE', link: '/eclipse-ide' },
               { text: 'Emulsion', link: '/emulsion' },
+              { text: 'Enter-tex', link: '/enter-tex' },
               { text: 'Evince', link: '/evince' },
               { text: 'Fastfetch', link: '/fastfetch' },
               { text: 'FFmpeg', link: '/ffmpeg' },

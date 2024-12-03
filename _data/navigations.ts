@@ -83,6 +83,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'G4Music', link: '/g4music' },
               { text: 'Gaphor', link: '/gaphor' },
               { text: 'GDM Настройки', link: '/gdm-settings' },
+              { text: 'Gear Lever', link: '/gear-lever' },
               { text: 'Git', link: '/git' },
               { text: 'GitHub Desktop', link: '/github-desktop' },
               { text: 'Google Chrome', link: '/google-chrome' },

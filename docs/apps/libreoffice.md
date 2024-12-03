@@ -23,7 +23,7 @@ appstream:
 
 # LibreOffice
 
-LibreOffice — мощный офисный пакет, полностью совместимый с 32-64-битными системами. Переведён более чем на 30 языков. Поддерживает большинство популярных операционных систем, включая Windows, macOS и системы, основанные на ядре GNU/Linux,.
+LibreOffice — мощный офисный пакет, полностью совместимый с 32-х и 64-х битными системами. Переведён более чем на 30 языков. Поддерживает большинство популярных операционных систем, включая Windows, macOS и системы, основанные на ядре GNU/Linux.
 
 ## Установка из репозитория
 
@@ -68,16 +68,54 @@ epm -i LibreOffice
 :::info
 Для улучшенной интеграции с GNOME, можно использовать пакеты `LibreOffice-gtk3` и `LibreOffice-still-gtk3` соответственно.
 
-Однако стоит учитывать, что при **Тёмном стиле** оформления Gnome, возможно не читаемость интерфейса офисного пакета
+Однако стоит учитывать, что при **Тёмном стиле** оформления GNOME, возможно не читаемость интерфейса офисного пакета.
 
-устанавливаются пакеты также как и сам Libreoffice
+Устанавливаются пакеты также как и сам LibreOffice.
+
+:::
+
+::: warning
+Если у вас возникает ошибка `The user inteface language cannot be determined`, установите пакет локализации по инструкции в разделе [Локализация](#локализация)
 :::
 
 <!--@include: @apps/.parts/install/content-flatpak.md-->
 
-## Шрифты в LibreOffice
+## Локализация
 
-[В документации LibreOffice](https://wiki.documentfoundation.org/Fonts) перечисленны шрифты, идущие в комплекте из коробки. В ALT Regular Gnome вам может понадобиться установить дополнительные пакеты, к примеру для использования `Times New Roman` от Microsoft, установите в терминале следующий пакет:
+Для добавления локализации необходимо установить пакет соответствующий версии LibreOffice. Пример с русской локализацией:
+
+:::tabs
+== Still
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install LibreOffice-still-langpack-ru
+```
+
+```shell[epm]
+epm -i LibreOffice-still-langpack-ru
+```
+
+== Fresh
+::: code-group
+
+```shell[apt-get]
+su -
+apt-get update
+apt-get install LibreOffice-langpack-ru
+```
+
+```shell[epm]
+epm -i LibreOffice-langpack-ru
+```
+
+:::
+
+## Шрифты
+
+[В документации LibreOffice](https://wiki.documentfoundation.org/Fonts) перечислены шрифты, идущие в комплекте из коробки. В ALT Regular Gnome может понадобиться установить дополнительные пакеты, к примеру для использования `Times New Roman` от Microsoft, выполните следующую команду:
 
 ::: code-group
 
@@ -93,4 +131,4 @@ epm -i fonts-ttf-ms
 
 :::
 
-Если в LibreOffice отсутствует шрифт, который вы используйте, [установите дополнительный шрифт](/add-fonts) и он появится в списке.
+Если в LibreOffice отсутствует шрифт, который вы используйте, [установите дополнительный шрифт](/add-fonts), и он появится в списке.

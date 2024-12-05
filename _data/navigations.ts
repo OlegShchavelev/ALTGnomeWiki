@@ -35,6 +35,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
           {
             text: 'Установка и обновление программ',
             items: [
+              { text: 'Add-water', link: '/add-water' },
               { text: 'Alacarte', link: '/alacarte' },
               { text: 'Amberol', link: '/amberol' },
               { text: 'AniLibrix', link: '/anilibrix' },

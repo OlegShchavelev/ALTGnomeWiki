@@ -171,7 +171,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Апостроф', link: '/apostrophe' },
               { text: 'Аутентификатор', link: '/authenticator' },
               { text: 'Веб-браузер', link: '/epiphany' },
-              { text: 'Видеотриммер', link: '/videotrimmer' },
+              { text: 'Видеотриммер', link: '/gnome-video-trimmer' },
               { text: 'Глаз GNOME', link: '/eog' },
               { text: 'Генератор набора веб-шрифтов', link: '/webfont-kit-generator' },
               { text: 'Дела', link: '/errands' },

@@ -268,6 +268,7 @@ virtualenvs
 vulkan
 vulkaninfo
 waterfox
+wfica
 wike
 wireplumber
 wpctl
@@ -303,3 +304,4 @@ Palit
 Aorus
 ADATA
 JTAG
+

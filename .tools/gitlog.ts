@@ -87,7 +87,7 @@ if (!args.dev) {
 
     const author = {
       mapByNameAliases: [gitter.author.login],
-      name: userMore.name,
+      name: userMore.name ?? gitter.author.login,
       title: 'Участник',
       avatar: gitter.author.avatar_url,
       summary: {

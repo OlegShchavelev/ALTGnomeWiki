@@ -83,6 +83,21 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/2MA0Bm6ax63'
   },
   {
+    mapByNameAliases: [
+        "Labaman",
+        "Mikhail Velichko"
+    ],
+    name: "Labaman",
+    title: "Участник",
+    avatar: "https://github.com/Labaman.png",
+    links: [
+        {
+            icon: "github",
+            link: "https://github.com/Labaman"
+        }
+    ]
+  },
+  {
     avatar: 'https://github.com/Toxblh.png',
     name: 'Anton Palgunov',
     mapByNameAliases: ['Anton Palgunov', 'Toxblh'],

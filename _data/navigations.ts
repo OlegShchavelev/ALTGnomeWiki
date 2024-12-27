@@ -440,6 +440,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
       {
         text: 'Быстрые ссылки',
         items: [
+          { text: 'APA', link: '/apa' },
           { text: 'APT', link: '/apt-get' },
           { text: 'Сизиф', link: '/sisyphus' },
           { text: 'Sudo', link: '/sudo' },
@@ -447,7 +448,6 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
           { text: 'EPM', link: '/epm' },
           { text: 'Flatpak', link: '/flatpak' },
           { text: 'Snaps', link: '/snap' },
-          { text: 'Приложения для GNOME', link: '/apps-gnome' },
           { text: 'Samba', link: '/samba' }
         ]
       }

@@ -97,41 +97,44 @@ systemctl enable --now ds4drv
 
 Для китайских реплик **DualShock 4** необходимо будет собрать модуль ядра `hid-sony-fix-dkms`.
 
-Для установки необходимы: `dkms`, `kernel-headers`, `kernel-headers-modules` и [git](/git).
-
-Перед установкой нужно узнать свою [ветку ядра](/kernel#переключить-ветку-ядра).
-
 #### Установка зависимостей
 
 ::: code-group
 
-```shell[un-def]
+```shell[apt-get]
 su -
-apt-get install dkms kernel-headers-un-def kernel-headers-modules-un-def git
+apt-get update
+apt-get install dkms git update-kernel
 ```
 
-```shell[std-def]
+```shell[epm]
+epm -i dkms git update-kernel
+```
+
+:::
+
+
+### Установка заголовочных файлов ядра для сборки модуля
+
+```shell
 su -
-apt-get install dkms kernel-headers-std-def kernel-headers-modules-std-def git
+update-kernel -H
+reboot
 ```
 
 #### Установка модуля
-
-:::
 
 ```shell
 su -
 git clone https://github.com/ozz-is-here/hid-sony-fix-dkms.git /usr/src/hid-sony-fix-dkms-0.1
 dkms install -m hid-sony-fix-dkms -v 0.1
+reboot
 ```
 
-#### Запуск и использование
-
-После установки драйверов необходимо выполнить:
+### Удаление модуля
 
 ```shell
 su -
-echo 'blacklist hid_sony' >> /etc/modprobe.d/blacklist-hid_sony.conf
+dkms remove -m hid-sony-fix-dkms -v 0.1
+rm -rf /usr/src/hid-sony-fix-dkms-0.1
 ```
-
-После создания конфигурации необходимо перезапустить операционную систему.

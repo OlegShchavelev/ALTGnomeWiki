@@ -46,19 +46,18 @@ Figma — неофициальная версия Figma для Linux, постр
 
 ```shell[apt-get]
 su -
-cd /home/USER/Загрузки
+cd ~/Загрузки
 apt-get update
 apt-get install figma-linux-*.x86_64.rpm
 ```
 
 ```shell[epm]
-сd Загрузки
+сd ~/Загрузки
 epm -i figma-linux-*.x86_64.rpm
 ```
 
 :::
 
-`USER` — имя вашего пользователя.
 
 ## AppImage
 
@@ -66,9 +65,7 @@ epm -i figma-linux-*.x86_64.rpm
 
 ```shell
 su -
-cd /home/USER/Загрузки
+cd ~/Загрузки
 chmod +x figma-linux-*.AppImage
 ./figma-linux-*.AppImage -i
 ```
-
-`USER` — имя вашего пользователя.

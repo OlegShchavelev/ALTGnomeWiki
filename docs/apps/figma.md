@@ -3,6 +3,9 @@ aggregation:
   flatpak:
     id: io.github.Figma_Linux.figma_linux
     build: unofficial
+  snap: 
+     id: figma-linux
+     build: unofficial
   epm:
     play:
       id: figma
@@ -30,11 +33,14 @@ Figma — неофициальная версия Figma для Linux, постр
 
 <!--@include: @apps/.parts/install/content-flatpak.md-->
 <!--@include: @apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @apps/.parts/install/content-snap.md-->
 <!--@include: @apps/.parts/install/content-epm-play.md-->
 
-## Установка из репозитория GitHub
+### Установка из репозитория GitHub
 
-Загрузите пакет `.rpm` со страницы релизов приложения [`figma-linux` на Github](https://github.com/Figma-Linux/figma-linux/tree/master), затем установите через терминал:
+## RPM пакет
+
+Загрузите пакет `.rpm` со страницы релизов приложения [`figma-linux` на Github](https://github.com/Figma-Linux/figma-linux/releases), затем установите через терминал:
 
 ::: code-group
 
@@ -51,5 +57,18 @@ epm -i figma-linux-*.x86_64.rpm
 ```
 
 :::
+
+`USER` — имя вашего пользователя.
+
+## AppImage
+
+Загрузите пакет `.AppImage` со страницы релизов, потом откройте его через терминал:
+
+```shell
+su -
+cd /home/USER/Загрузки
+chmod +x figma-linux-*.AppImage
+./figma-linux-*.AppImage -i
+```
 
 `USER` — имя вашего пользователя.

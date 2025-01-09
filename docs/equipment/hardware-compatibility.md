@@ -84,7 +84,6 @@
 |        Apple       |    AirPods Pro 1    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
 |        Apple       |    AirPods Pro 2    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
 |        Sony        |     WH1000-XM3      | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
-|        Sony        |     WH1000-XM3      | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
 |        Anker       | Soundcore Space Q45 | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
 
 ### Веб-камеры

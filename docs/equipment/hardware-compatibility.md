@@ -27,7 +27,7 @@
 |   Logitech    | MX Keys | :green_circle: | [`Solaar`](https://pwr-solaar.github.io/Solaar/) |                                             -                                              |
 |   Keychron    |  K3-D1  | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB                                |
 |   Keychron    | K8 Pro  | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB                                |
-|   FreeWolf    |   K8    | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB, Radio2.4                      |
+|   FreeWolf    |   K8    | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB, Radio 2.4                      |
 
 ### Коврики
 
@@ -53,7 +53,7 @@
 ### VR шлемы
 | Производитель |     Модель     |   Тип подключения   |   Состояние    |  Примечание  |
 | :-----------: | :------------: | :-----------------: | :------------: | :----------: |
-|     M***      | Oculus Quest 3 |     Wi-Fi, USB3      | :green_circle: |     ALVR     |
+|     M***      | Oculus Quest 3 |    Wi-Fi, USB 3.2   | :green_circle: |     ALVR     |
 
 ### Микрофоны
 
@@ -85,7 +85,7 @@
 |        Apple       |    AirPods Pro 2    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
 |        Sony        |         XM3         | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
 |        Sony        |         XM3         | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
-|       Anker        | Soundcore Space Q45 | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
+|        Anker       | Soundcore Space Q45 | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
 
 ### Веб-камеры
 

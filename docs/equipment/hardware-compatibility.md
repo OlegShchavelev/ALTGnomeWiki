@@ -53,7 +53,7 @@
 ### VR шлемы
 | Производитель |     Модель     |   Тип подключения   |   Состояние    |  Примечание  |
 | :-----------: | :------------: | :-----------------: | :------------: | :----------: |
-|     M***      | Oculus Quest 3 |     WiFi, USB3      | :green_circle: |     alvr     |
+|     M***      | Oculus Quest 3 |     Wi-Fi, USB3      | :green_circle: |     ALVR     |
 
 ### Микрофоны
 
@@ -81,11 +81,11 @@
 |        FIFINE      |         H8          |      mini-jack       | :green_circle: |  -  |         -         |
 |       Pioneer      |      SE-MS7BT-S     | mini-jack, Bluetooth | :green_circle: |  -  |         -         |
 |      Sennheiser    |       HD458BT       |      Bluetooth       | :green_circle: |  -  |         -         |
-|        Apple       |    Airpods Pro 1    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
-|        Apple       |    Airpods Pro 2    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
-|        SONY        |         XM3         | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
-|        SONY        |         XM3         | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
-|       ANKER        | Soundcore Space Q45 | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
+|        Apple       |    AirPods Pro 1    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
+|        Apple       |    AirPods Pro 2    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
+|        Sony        |         XM3         | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
+|        Sony        |         XM3         | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
+|       Anker        | Soundcore Space Q45 | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
 
 ### Веб-камеры
 
@@ -191,7 +191,7 @@
 |     Apple     | GeForce GT 750M Mac (`10de:0fe9`)               |     Nouveau     | :green_circle:  |   `firmware-nouveau-340.108-alt1`  |
 |     ASUS      | TUF Gaming GeForce GTX 1660 Super (`10de:21c4`) | NVIDIA, Nouveau | :green_circle:  |                -                   |
 |   GIGABYTE    | GeForce RTX 3070 Ti GAMING OC 8G (`10de:2482`)  |     NVIDIA      | :green_circle:  |         Wayland работает           |
-|     Palit     | GeForce RTX 4080 GameRock OC (`10de:2702`)      | NVIDIA, Nouveau | :green_circle:  |      Nvidia 565.77 by lakostis     |
+|     Palit     | GeForce RTX 4080 GameRock OC (`10de:2702`)      | NVIDIA, Nouveau | :green_circle:  |      NVIDIA 565.77 by lakostis     |
 
 #### Intel
 

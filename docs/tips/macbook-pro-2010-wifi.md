@@ -5,9 +5,9 @@
 - Не работает Wi-Fi
 - Не подключается к сети
 
-### При использовании bcmwl драйвера
+### При использовании `bcmwl` драйвера
 
-- На драйверах kernel-modules-bcmwl-un-def не работает сканирование сети
+- На драйверах `kernel-modules-bcmwl-un-def` не работает сканирование сети
 - Ошибки в логах:
 
 ```shell
@@ -15,7 +15,7 @@ ERROR @wl_notify_scan_status :
 wlp2s0 Scan_results error (-22)
 ```
 
-### При использовании firmware установленного через b43-fwcutter
+### При использовании firmware установленного через `b43-fwcutter`
 
 ```shell
 b43-phy0 ERROR: DMA RX reset timed out

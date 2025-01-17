@@ -193,9 +193,9 @@ echo $XDG_SESSION_TYPE
 wayland
 ```
 
-== INXI
+== inxi
 
-Используйте утилиту INXI, введите в терминале используя опцию `-G`:
+Используйте утилиту `inxi` с опцией `-G`:
 
 ```shell
 inxi -G
@@ -204,17 +204,21 @@ inxi -G
 :::details Пример вывода команды:
 
 ```shell
-  Device-1: AMD Renoir [Radeon RX Vega 6 ] driver: amdgpu v: kernel
-  Device-2: Shine-optics USB2.0 HD UVC WebCam driver: uvcvideo type: USB
-  Display: wayland server: X.Org v: 1.24.1 with: Xwayland v: 24.1.0
-    compositor: gnome-shell v: 46.1 driver: X: loaded: amdgpu
+Graphics:
+  Device-1: Advanced Micro Devices [AMD/ATI] Phoenix3 driver: amdgpu v: kernel
+  Device-2: IMC Networks Integrated Camera driver: uvcvideo type: USB
+  Display: wayland server: X.org v: 1.21.1.15 with: Xwayland v: 24.1.4
+    compositor: gnome-shell v: 47.3 driver: X: loaded: amdgpu
     unloaded: fbdev,modesetting,radeon,vesa dri: radeonsi gpu: amdgpu
-    resolution: 1: 1920x1080~60Hz 2: 1280x720~60Hz
-  API: EGL v: 1.5 drivers: radeonsi,swrast
-    platforms: wayland,x11,surfaceless,device
-  API: OpenGL v: 4.6 compat-v: 4.5 vendor: amd mesa v: 24.0.7 renderer: AMD
-    Radeon Graphics (radeonsi renoir LLVM 18.1.5 DRM 3.54 6.6.30-un-def-alt2)
-  API: Vulkan v: 1.3.277 drivers: N/A surfaces: xcb,xlib,wayland
+    resolution: 1920x1200~60Hz
+  API: EGL v: 1.5 drivers: kms_swrast,radeonsi,swrast
+    platforms: gbm,wayland,x11,surfaceless,device
+  API: OpenGL v: 4.6 compat-v: 4.5 vendor: amd mesa v: 24.3.3 renderer: AMD
+    Radeon Graphics (radeonsi gfx1103_r1 LLVM 18.1.8 DRM 3.59
+    6.12.9-6.12-alt1)
+  API: Vulkan v: 1.3.296 drivers: N/A surfaces: xcb,xlib,wayland
+  Info: Tools: api: clinfo, eglinfo, glxinfo, vulkaninfo wl: wayland-info
+    x11: xdpyinfo, xprop, xrandr
 ```
 
 == Настройки

@@ -27,6 +27,7 @@ MTRR
 noarch
 nomodeset
 NTSC
+NVME
 PCIROM
 POSIX
 PRAMIN
@@ -35,6 +36,7 @@ RTSP
 simpledrm
 taskrc
 TMDS
+TOTP
 tmpfs
 UEFI
 vaapi

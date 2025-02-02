@@ -36,6 +36,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
           {
             text: 'Установка и обновление программ',
             items: [
+              { text: 'Add-water', link: '/add-water' },
               { text: 'Alacarte', link: '/alacarte' },
               { text: 'Amberol', link: '/amberol' },
               { text: 'AniLibrix', link: '/anilibrix' },
@@ -126,6 +127,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Postman', link: '/postman' },
               { text: 'PinApp', link: '/pin-app' },
               { text: 'Piper', link: '/piper' },
+              { text: 'PyRadio', link: '/pyradio' },
               { text: 'qBittorrent', link: '/q-bittorrent' },
               { text: 'Radio', link: '/radio' },
               { text: 'Reaper', link: '/reaper' },
@@ -170,7 +172,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Апостроф', link: '/apostrophe' },
               { text: 'Аутентификатор', link: '/authenticator' },
               { text: 'Веб-браузер', link: '/epiphany' },
-              { text: 'Видеотриммер', link: '/videotrimmer' },
+              { text: 'Видеотриммер', link: '/gnome-video-trimmer' },
               { text: 'Глаз GNOME', link: '/eog' },
               { text: 'Генератор набора веб-шрифтов', link: '/webfont-kit-generator' },
               { text: 'Дела', link: '/errands' },
@@ -439,6 +441,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
       {
         text: 'Быстрые ссылки',
         items: [
+          { text: 'APA', link: '/apa' },
           { text: 'APT', link: '/apt-get' },
           { text: 'Сизиф', link: '/sisyphus' },
           { text: 'Sudo', link: '/sudo' },
@@ -446,7 +449,6 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
           { text: 'EPM', link: '/epm' },
           { text: 'Flatpak', link: '/flatpak' },
           { text: 'Snaps', link: '/snap' },
-          { text: 'Приложения для GNOME', link: '/apps-gnome' },
           { text: 'Samba', link: '/samba' }
         ]
       }

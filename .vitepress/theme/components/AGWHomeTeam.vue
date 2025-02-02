@@ -21,6 +21,10 @@ import {default as map} from '../../../_data/fullteam.json'
 </template>
 
 <style scoped>
+.VPTeamPage {
+  margin-left:var(--vp-offset) !important;
+  margin-right:var(--vp-offset) !important;
+}
 .teamButton {
   margin-top: 40px;
   display: grid;

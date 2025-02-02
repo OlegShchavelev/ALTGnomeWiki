@@ -67,6 +67,91 @@ echo "ZSH_DISABLE_COMPFIX='true'" | cat - .zshrc > temp && mv temp .zshrc
 
 `USER` — имя вашего пользователя.
 
+## Плагины Oh My Zsh
+
+Oh My Zsh предлагает множество плагинов, которые вы можете использовать в своей работе. Чтобы ознакомиться с полным списком доступных плагинов, вы можете обратиться [к перечню плагинов](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins).
+
+### Включение плагинов
+
+Для использования плагинов в Oh My Zsh, вам нужно будет добавить их в файл.zshrc. Этот файл находится в вашем домашнем каталоге. Откройте его в вашем любимом текстовом редакторе.
+
+```shell
+vim ~/.zshrc
+```
+
+Например, добавим плагины `z`, `npm`:
+
+```
+plugins=(
+ git
+ z // [!code ++]
+ npm // [!code ++]
+)
+```
+
+:::warning
+Обратите внимание, что плагины разделяются пробелами (пробелами, табуляциями, новыми строками...). Не используйте запятые между ними, иначе это приведёт к сбою.
+:::
+
+### Внешние плагины
+
+Существуют плагины сторонних авторов. Чтобы их установить, потребуется [git](git). Давайте рассмотрим процесс установки на примере нескольких популярных плагинов.
+
+#### zsh-autosuggestions
+
+Плагин предлагает подсказки и интерфейс для быстрого ввода команд аналогично Fish
+
+1. Клонируем плагин в `$ZSH_CUSTOM/plugins` (по умолчанию `~/.oh-my-zsh/custom/plugins`)
+
+```shell
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+2. Добавьте плагин в список плагинов для Oh My Zsh (`~/.zshrc`):
+
+```
+plugins=(
+ git
+ z
+ npm
+ zsh-autosuggestions // [!code ++]
+)
+```
+
+3. Перезапустите shell
+
+```shell
+zsh
+```
+
+#### zsh-syntax-highlighting
+
+Этот плагин обеспечивает подсветку синтаксиса для оболочки zsh
+
+1. Клонируем плагин в `$ZSH_CUSTOM/plugins` (по умолчанию `~/.oh-my-zsh/custom/plugins`)
+
+```shell
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+2. Добавьте плагин в список плагинов для Oh My Zsh (`~/.zshrc`):
+
+```
+plugins=(
+ git
+ z
+ npm
+ zsh-autosuggestions
+ zsh-syntax-highlighting // [!code ++]
+)
+```
+
+3. Перезапустите shell
+
+```shell
+zsh
+```
+
 ## Установка темы для oh-my-zsh.
 
 В качестве примера возьмём тему [powerlevel10k](https://github.com/romkatv/powerlevel10k)
@@ -105,3 +190,19 @@ sudo ln -s /home/USER/powerlevel10k /root/powerlevel10k
 ```
 
 `USER` — имя вашего пользователя.
+
+## Решение проблем
+
+### Тестовые артефакты при использовании `git`
+
+После установки zsh в качестве shell при запросе `git log` вывод информации происходит с артефактами, как на изображении:
+
+![артефакты лога](/zsh/zsh-1.png)
+
+Чтобы настроить git для корректного отображения `git log`, добавьте новый параметр, введя следующую команду в консоли:
+
+```shell
+git config --global core.pager 'less -RX'
+```
+
+![вывод `git log` в zsh](/zsh/zsh-2.png)

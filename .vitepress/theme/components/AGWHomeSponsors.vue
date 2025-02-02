@@ -16,6 +16,8 @@ const props = computed(() => frontmatter.value.sponsors ?? {})
 
 .VPHomeSponsors {
   margin-top: 0;
+  margin-left:var(--vp-offset) !important;
+  margin-right:var(--vp-offset) !important;
 }
 
 .VPHomeSponsors:deep(.message) {

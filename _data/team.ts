@@ -83,6 +83,23 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/2MA0Bm6ax63'
   },
   {
+    mapByNameAliases: [
+        "Labaman",
+        "Mikhail Velichko"
+    ],
+    name: "Михаил Величко",
+    title: "Участник",
+    avatar: "https://github.com/Labaman.png",
+    links: [
+        {
+            icon: "github",
+            link: "https://github.com/Labaman"
+        }
+    ],
+    actionText: 'Поддержать',
+    sponsor: 'https://www.tbank.ru/cf/1Erc241qRhw'
+  },
+  {
     avatar: 'https://github.com/Toxblh.png',
     name: 'Anton Palgunov',
     mapByNameAliases: ['Anton Palgunov', 'Toxblh'],
@@ -314,5 +331,14 @@ export const contributions = [
     links: [{ icon: 'github', link: 'https://github.com/cryals' }],
     actionText: 'Поддержать',
     sponsor: 'https://yoomoney.ru/to/4100118730672586'
+  },
+  {
+    name: 'Radiolamp',
+    mapByNameAliases: ['Radiolamp', 'radiolamp'],
+    title: 'Участник',
+    avatar: 'https://github.com/radiolamp.png',
+    links: [{ icon: 'github', link: 'https://github.com/radiolamp' }],
+    actionText: 'Поддержать',
+    sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/osipov.anton16/uMOHe45333/?short_link=1J1DvYNesgD&referer=https%3A%2F%2Fgithub.com%2F&httpMethod=GET'
   }
 ]

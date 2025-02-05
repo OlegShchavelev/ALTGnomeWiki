@@ -31,7 +31,7 @@ apt-get update && apt-get dist-upgrade
 
 ```shell
 su -
-apt-get install kernel-modules-bcmwl-un-def
+apt-get install kernel-modules-bcmwl-{kflavor} // kflavor - версия ядра, например: 6.6, 6.12, 6.13
 apt-get install bcmwl-kernel-conf
 reboot
 ```

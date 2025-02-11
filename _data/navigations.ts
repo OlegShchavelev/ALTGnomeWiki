@@ -33,6 +33,11 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
             ],
             collapsed: true
           },
+	  {
+            text: 'Безопасность',
+            link: '/security',
+          },
+
           {
             text: 'Установка и обновление программ',
             items: [

@@ -90,13 +90,13 @@ epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 ```shell[Общесистемная]
 su -
 cd /home/`user`/Загрузки/CascadiaCode-2111.01/ttf
-cp *.ttf /usr/share/fonts/ttf/CascadiaCode/
+mkdir - p /usr/share/fonts/ttf/CascadiaCode/ && cp *.ttf /usr/share/fonts/ttf/CascadiaCode/
 ```
 
 ```shell[Пользовательская]
 cd ~/Загрузки/CascadiaCode-2111.01/ttf
-cp *.ttf ~/.local/share/fonts/ttf/CascadiaCode/
-```
+mkdir - p ~/.local/share/fonts/ttf/CascadiaCode/ && cp *.ttf ~/.local/share/fonts/ttf/CascadiaCode/
+``` 
 
 :::
 

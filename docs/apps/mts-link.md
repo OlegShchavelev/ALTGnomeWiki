@@ -2,7 +2,7 @@
 aggregation:
   epm:
     play:
-      id: mts-link-desktop
+      id: mts-link
       build: unofficial
 appstream:
   name: МТС Линк

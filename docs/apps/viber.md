@@ -13,6 +13,7 @@ appstream:
   summary: Кроссплатформенное приложение для обмена сообщениями и звонков, насчитывающее миллиард пользователей по всему миру.
   keywords:
     - proprietary
+    - restrictions
   developer:
     name: Viber Media
   metadata_license:

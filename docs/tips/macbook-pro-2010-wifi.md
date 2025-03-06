@@ -25,14 +25,15 @@ b43 ssb0:0: timeout waiting for bitmask 01800000 on register 0F90 to clear
 
 ## Обходное решение
 
-::: code-block
-
+1. Подготовка пакетов
+::: tabs
+==apt-get
 ```shell[apt-get]
 su -
 apt-get remove kernel-modules-bcmwl-un-def bcmwl-kernel-config
 apt-get install b43-fwcutter
 ```
-
+==epm
 ```shell[epm]
 su -
 epm remove kernel-modules-bcmwl-un-def bcmwl-kernel-config
@@ -40,6 +41,8 @@ epm install b43-fwcutter
 ```
 
 :::
+
+2. Установка firmware
 
 ```shell
 # скачать с этого ресурса или найти в другом месте

@@ -23,9 +23,9 @@
 
 ## Скачать «Стартовый набор» со средой рабочего стола GNOME (репозиторий p11)
 
-[ALT Starterkit Gnome <Badge type="tip" text="x86_64" />](https://nightly.altlinux.org/p11/release/alt-p11-gnome-20241212-x86_64.iso)
+[ALT Starterkit Gnome <Badge type="tip" text="x86_64" />](https://beta.altlinux.org/workstation/x86_64/alt-workstation-11.0rc0-x86_64.iso)
 
-[ALT Starterkit Gnome <Badge type="tip" text="aarch64" />](https://nightly.altlinux.org/p11-aarch64/release/alt-p11-gnome-20241212-aarch64.iso)
+[ALT Starterkit Gnome <Badge type="tip" text="aarch64" />](https://beta.altlinux.org/workstation/aarch64/alt-workstation-11.0rc0-aarch64.iso)
 
 ## Запись на DVD и USB Flash
 

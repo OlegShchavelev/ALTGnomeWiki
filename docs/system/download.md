@@ -17,15 +17,21 @@
 
 [ALT Regular Gnome <Badge type="info" text="tested" /><Badge type="tip" text="aarch64" /><Badge type="tip" text="Рекомендуемый" />](https://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso)
 
-[ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="x86_64" />](https://nightly.altlinux.org/sisyphus/current/regular-gnome-latest-x86_64.iso)
+[ALT Regular Gnome <Badge type="tip" text="aarch64" /> <Badge type="info" text="current" />](https://nightly.altlinux.org/sisyphus/current/regular-gnome-latest-x86_64.iso)
 
-[ALT Regular Gnome <Badge type="info" text="current" /><Badge type="tip" text="aarch64" />](https://nightly.altlinux.org/sisyphus-aarch64/current/regular-gnome-latest-aarch64.iso)
+[ALT Regular Gnome <Badge type="tip" text="aarch64" /> <Badge type="info" text="current" />](https://nightly.altlinux.org/sisyphus-aarch64/current/regular-gnome-latest-aarch64.iso)
+
+## Скачать «Рабочую станцию» со средой рабочего стола GNOME (репозиторий p11)
+
+[ALT Workstation Gnome <Badge type="tip" text="x86_64" /> <Badge type="danger" text="Релиз-кандидат 0" />](https://beta.altlinux.org/workstation/x86_64/alt-workstation-11.0rc0-x86_64.iso)
+
+[ALT Workstation Gnome <Badge type="tip" text="aarch64" /> <Badge type="danger" text="Релиз-кандидат 0" />](https://beta.altlinux.org/workstation/aarch64/alt-workstation-11.0rc0-aarch64.iso)
 
 ## Скачать «Стартовый набор» со средой рабочего стола GNOME (репозиторий p11)
 
-[ALT Starterkit Gnome <Badge type="tip" text="x86_64" />](https://beta.altlinux.org/workstation/x86_64/alt-workstation-11.0rc0-x86_64.iso)
+[ALT Starterkit Gnome <Badge type="tip" text="x86_64" />](https://nightly.altlinux.org/p11/release/alt-p11-gnome-20241212-x86_64.iso)
 
-[ALT Starterkit Gnome <Badge type="tip" text="aarch64" />](https://beta.altlinux.org/workstation/aarch64/alt-workstation-11.0rc0-aarch64.iso)
+[ALT Starterkit Gnome <Badge type="tip" text="aarch64" />](https://nightly.altlinux.org/p11-aarch64/release/alt-p11-gnome-20241212-aarch64.iso)
 
 ## Запись на DVD и USB Flash
 

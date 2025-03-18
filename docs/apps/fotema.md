@@ -1,5 +1,6 @@
 ---
 aggregation:
+  sisyphus: fotema
   flatpak: app.fotema.Fotema
 appstream:
   id: app.fotema.Fotema
@@ -31,4 +32,5 @@ Fotema — галерея для всех, кто хочет, чтобы их ф
 
 <AGWGallery />
 
+<!--@include: @apps/.parts/install/content-repo.md-->
 <!--@include: @apps/.parts/install/content-flatpak.md-->

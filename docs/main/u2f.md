@@ -86,7 +86,7 @@ echo -e >> /etc/U2F/keys
 ```sh
 su -
 chmod 755 /etc/U2F
-chmod 644 /etc/U2F/u2f_keys
+chmod 644 /etc/U2F/keys
 chown -R root:root /etc/U2F
 ```
 

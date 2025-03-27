@@ -1,6 +1,6 @@
 import yargs from 'yargs/yargs'
 import { Octokit } from '@octokit/core'
-import { contributions } from '../_data/team'
+import { contributions as RawContributors } from '../_data/team'
 import * as fs from 'fs'
 import * as path from 'path'
 import ora from 'ora'
@@ -9,142 +9,197 @@ import { cyan, gray, red } from 'colorette'
 /*
     CLI Arguments
 */
-const args = yargs(process.argv)
+const args = await yargs(process.argv)
   .options({
     key: { type: 'string', default: '' },
     repoUrl: { type: 'string', default: 'https://github.com/OlegShchavelev/ALTGnomeWiki' },
-    debug: { type: 'boolean', default: false },
     dev: { type: 'boolean', default: false }
   })
-  .parse()
+  .parseAsync()
 
-const authors = []
+const Authors: {
+  avatar?: string,
+  name?: string,
+  mapByNameAliases?: string[],
+  title?: string,
+  links?: object[],
+  actionText?: string,
+  sponsor?: string
+}[] = []
 const toolname = `${cyan(`[ @alt-gnome/alt-wiki-vitepress-gnome | Git Statistic ]`)}${gray(':')}`
 const spiner = ora({ discardStdin: false })
 
-/*
-    Net + Local Mapping
-*/
-if (!args.dev) {
-  const spiner = ora({ discardStdin: false })
+if (!args.key && !args.dev) {
+  spiner.fail(`${toolname} Не включен режим разработки или не введен ключ`)
+} else if (args.key) {
   spiner.start(`${toolname} Читаем данные с гита...\n`)
 
   const octokit = new Octokit({
     auth: args.key
   })
 
-  const contributorsRawBase = async () => {
-    let retryCount = 0
-    while (retryCount < 1000) {
-      const response = await octokit
-        .request('GET /repos/{owner}/{repo}/stats/contributors', {
-          owner: args.repoUrl.split('/')[3],
-          repo: args.repoUrl.split('/')[4],
-          headers: {
-            'X-GitHub-Api-Version': '2022-11-28'
-          }
-        })
-        .then((response) => response)
-        .catch((err) =>
-          spiner.fail(`${toolname} Не удалось получить данные:
-  \t\t\t\t\t\t\t     ${red(err.toString())}
-  \t\t\t\t\t\t\t   Проверьте соединение с интернетом и ключ или оставьте ISSUE.`)
-        )
+  const CalculateStats = (GithubContributor, RawContributor) => {
+    GithubContributor.weeks.forEach((week) => {
+      RawContributor.summary.add += week.a
+      RawContributor.summary.remove += week.d
+    })
 
-      if (response.status == 202) {
-        spiner.text = `${toolname} Ожидаем генерации статистики со стороны API GitHub... ${args.debug ? '( Попытка ' + retryCount + ' )' : ''}\n`
-        retryCount += 1
-      } else {
-        return response.data
-      }
-    }
+    GithubContributor.weeks.slice(-4).forEach((week) => {
+      RawContributor.lastMonthActive.add += week.a
+      RawContributor.lastMonthActive.remove += week.d
+      RawContributor.lastMonthActive.commits += week.c
+    })
   }
 
-  const userGetMore = async (user) => {
-    spiner.text = `${toolname} Получаем дополнительную о пользователях ${args.debug ? '( ' + user + ' )' : ''}...\n`
-    return await octokit
+  const getGithubStats = async () => {
+    let response: { status: number; data?: any }
+    response = {
+      status: 0
+    }
+    while (response?.status != 200 && response?.status != 500) {
+      response = await octokit.request(
+        'GET /repos/{owner}/{repo}/stats/contributors', 
+          {
+            owner: args.repoUrl.split('/')[3],
+            repo: args.repoUrl.split('/')[4],
+            headers: {
+              'X-GitHub-Api-Version': '2022-11-28'
+            }
+          }
+        )
+        .then((response) => response)
+        .catch((err)=>{
+          response = {
+            status: 500,
+            data: err.toString()
+          }
+          return response
+        })
+    }
+    return response
+  }
+  
+  const GetUserInfo = async (user: any) => {
+    let response: { status: number; data?: any }
+    response = await octokit
       .request('GET /users/{user}', {
         user: user,
         headers: {
           'X-GitHub-Api-Version': '2022-11-28'
         }
       })
-      .catch((err) =>
-        spiner.fail(`${toolname} Не удалось получить данные:
-  \t\t\t\t\t\t\t     ${red(err.toString())}
-  \t\t\t\t\t\t\t   Проверьте соединение с интернетом и ключ или оставьте ISSUE.`)
-      )
+      .catch((err)=>{
+        response = {
+          status: 500,
+          data: err.toString()
+        }
+        return response
+      })
+      .then((response) => response)
+
+    return response
   }
 
-  for await (const gitter of await contributorsRawBase().then((response) => response)) {
-    const userMore = await userGetMore(gitter.author.login)
-      .then((response) => response.data)
-      .catch((err) =>
-        spiner.fail(`${toolname} Не удалось получить данные:
-  \t\t\t\t\t\t\t     ${red(err.toString())}
-  \t\t\t\t\t\t\t   Проверьте соединение с интернетом и ключ или оставьте ISSUE.`)
-      )
+  const GithubContributors = await getGithubStats().then((response) => response)
 
-    const author = {
-      mapByNameAliases: [gitter.author.login],
-      name: userMore.name ?? gitter.author.login,
-      title: 'Участник',
-      avatar: gitter.author.avatar_url,
-      summary: {
-        commits: gitter.total,
-        add: 0,
-        remove: 0
-      },
-      lastMonthActive: {
-        commits: 0,
-        add: 0,
-        remove: 0
-      },
-      links: [{ icon: 'github', link: gitter.author.html_url }]
+  if (GithubContributors.status == 200) {
+    spiner.info(`${toolname} Данные получены.`)
+    for await (const Contributor of GithubContributors.data) {
+      spiner.info(`${toolname} Обрабатываем автора: ${Contributor.author.login}`)
+      
+      const ContributorProfileInfo = await GetUserInfo(Contributor.author.login).then((resp) => resp)
+      
+      const RawContributor = RawContributors.find(Author => Author.mapByNameAliases?.includes(Contributor.author.login))
+
+      if (RawContributor) {
+        let Author = {
+          ...RawContributor,
+          summary: {
+            commits: Contributor.total,
+            add: 0,
+            remove: 0
+          },
+          lastMonthActive: {
+            commits: 0,
+            add: 0,
+            remove: 0
+          },
+        } 
+        CalculateStats(Contributor, Author)
+        Authors.push(Author)
+      } else {
+        let Author = {
+          mapByNameAliases: [Contributor.author.login],
+          name: ContributorProfileInfo.data.name ?? Contributor.author.login,
+          title: 'Участник',
+          avatar: Contributor.author.avatar_url,
+          summary: {
+            commits: Contributor.total,
+            add: 0,
+            remove: 0
+          },
+          lastMonthActive: {
+            commits: 0,
+            add: 0,
+            remove: 0
+          },
+          links: [{ icon: 'github', link: Contributor.author.html_url }]
+        }
+        CalculateStats(Contributor, Author)
+        Authors.push(Author)
+      }
     }
 
-    gitter.weeks.forEach((week) => {
-      author.summary.add += week.a
-      author.summary.remove += week.d
-    })
-
-    gitter.weeks.slice(-4).forEach((week) => {
-      author.lastMonthActive.add += week.a
-      author.lastMonthActive.remove += week.d
-      author.lastMonthActive.commits += week.c
-    })
-
-    contributions.forEach((memberRaw) => {
-      if (
-        memberRaw.name == userMore.name ||
-        Object.values(memberRaw.links[0])[1] == Object.values(author.links[0])[1] ||
-        (memberRaw.nameAliases && memberRaw.nameAliases.includes(gitter.author.login))
-      ) {
-        Object.keys(memberRaw).forEach((key) => {
-          key == 'mapByNameAliases'
-            ? memberRaw[key].forEach((alias) => {
-                author[key].push(alias)
-              })
-            : (author[key] = memberRaw[key])
-        })
+    for (const RawContributor of RawContributors) {
+      let isGitContributed = false
+      for (const GitContributed of Authors){
+        if (RawContributor.mapByNameAliases){
+          for (const login of RawContributor?.mapByNameAliases){
+            if (GitContributed.mapByNameAliases?.includes(login)){
+              isGitContributed = true
+              break
+            }
+          }
+        }
+        if (isGitContributed) { 
+          break
+        }
       }
-    })
 
-    authors.push(author)
+      if (!isGitContributed) {
+        let Author = {
+          ...RawContributor,
+          summary: {
+            commits: 0,
+            add: 0,
+            remove: 0
+          },
+          lastMonthActive: {
+            commits: 0,
+            add: 0,
+            remove: 0
+          },
+        } 
+        Authors.push(Author)
+      }
+    }
+
+    fs.writeFile(
+      path.join(__dirname, '../_data/fullteam.json'),
+      JSON.stringify(Authors),
+      (err) => err && spiner.fail(err.toString())
+    )
+  
+    spiner.succeed(`${toolname} Список успешно сгенерирован!\n`)
+  } else {
+    spiner.fail(`${toolname} Неудалось получить данные с гита! (${GithubContributors.data})\n`)
   }
-
-  fs.writeFile(
-    path.join(__dirname, '../_data/fullteam.json'),
-    JSON.stringify(authors),
-    (err) => err && spiner.fail(err.toString())
-  )
-
-  spiner.succeed(`${toolname} Список успешно сгенерирован!\n`)
-} else {
+  console.log(Authors)
+} else if (args.dev) {
   spiner.warn(`${toolname} Активен режим разработки. Создаём пустышку...\n`)
   fs.writeFile(
     path.join(__dirname, '../_data/fullteam.json'),
-    JSON.stringify(contributions),
+    JSON.stringify(RawContributors),
     (err) => err && spiner.fail(err.toString())
   )
   spiner.warn(`${toolname} Создана пустышка с содержимым team.ts\n`)

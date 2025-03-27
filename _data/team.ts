@@ -261,9 +261,9 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/1qXUImsZFTN'
   },
   {
-    avatar: 'https://github.com/feyte11.png',
+    avatar: 'https://github.com/linecodesx.png',
     name: 'Хачатур Тоникян',
-    mapByNameAliases: ['Feytell228', 'feyte11', 'Khachatur Tonikyan'],
+    mapByNameAliases: ['Feytell228', 'feyte11', 'Khachatur Tonikyan', 'linecodesx'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/feyte11' }],
     actionText: 'Поддержать',
@@ -317,9 +317,9 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/5Jo6TxAo9Un'
   },
   {
-    avatar: 'https://github.com/Cyber-X-Code.png',
-    name: 'Cyber:X',
-    mapByNameAliases: ['Cyber-X', 'Cyber-X-Code'],
+    avatar: 'https://github.com/Cron-X.png',
+    name: '[Cron:X]',
+    mapByNameAliases: ['Cyber-X', 'Cyber-X-Code', 'Cron-X'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/Cyber-X-Code' }]
   },

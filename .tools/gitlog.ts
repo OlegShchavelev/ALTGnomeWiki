@@ -194,7 +194,7 @@ if (!args.key && !args.dev) {
   } else {
     spiner.fail(`${toolname} Неудалось получить данные с гита! (${GithubContributors.data})\n`)
   }
-  console.log(Authors)
+  //console.log(Authors) debug output
 } else if (args.dev) {
   spiner.warn(`${toolname} Активен режим разработки. Создаём пустышку...\n`)
   fs.writeFile(

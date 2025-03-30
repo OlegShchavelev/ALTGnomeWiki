@@ -8,6 +8,7 @@ import { normalize } from '../support/utils'
 /* Tools */
 
 import vueDevTools from 'vite-plugin-vue-devtools'
+import { visualizer } from "rollup-plugin-visualizer"
 
 /* Markdown */
 import { default as createContainer } from '../theme/composables/customContainers'
@@ -49,8 +50,16 @@ export const shared = defineConfig({
     ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }]
   ],
   vite: {
+    build: {
+      chunkSizeWarningLimit: 1600
+    },
     plugins: [
       vueDevTools(),
+      visualizer({
+        gzipSize: true,
+        brotliSize: true,
+        filename: "./.tools/chunk_analyse/stats.html",
+      }) as PluginOption,
       UnoCSS(),
       GitChangelog(nolebaseGitChangelogOptions.plugin),
       GitChangelogMarkdownSection(nolebaseGitChangelogOptions.pluginSections),

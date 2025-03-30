@@ -61,6 +61,7 @@
     "markdown-it-task-lists": "^2.1.1",
     "ora": "^8.2.0",
     "remark-cli": "^12.0.1",
+    "rollup-plugin-visualizer": "^5.14.0",
     "typescript": "^5.8.2",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vitepress": "^1.6.3",

@@ -15,7 +15,6 @@ export default defineConfig({
         'vertical-align': 'middle',
         'min-width': '1.2rem'
       },
-      warn: true
     })
   ]
 })

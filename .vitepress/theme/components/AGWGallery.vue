@@ -5,8 +5,7 @@ import { DefaultTheme, useData, useRoute } from 'vitepress'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Pagination, Grid } from 'swiper/modules'
-import setViewer from 'vitepress-plugin-image-viewer/lib/viewer'
+import { Grid } from 'swiper/modules'
 
 const { theme, frontmatter } = useData()
 
@@ -14,22 +13,18 @@ const props = defineProps({
   id: Number
 })
 
-const galleries = props.id && frontmatter.value.gallery[props.id] ? frontmatter.value.gallery[props.id] : frontmatter.value.gallery[0] ?? frontmatter.value.gallery ?? theme.value.gallery ?? []
+const galleries = frontmatter.value.gallery ? props.id && frontmatter.value.gallery[props.id] ? frontmatter.value.gallery[props.id] : frontmatter.value.gallery[0] ?? frontmatter.value.gallery ?? theme.value.gallery ?? [] : undefined
 
-//const onSwiper = (swiper: any) => console.log(swiper)
-//const onSlideChange = () => console.log('slide change')
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/grid'
 
 
-//console.log(props)
-
 </script>
 
 <template>
-  <div class="galleries">
+  <div class="galleries" v-if="galleries">
     <h3 v-if="galleries.title" v-html="galleries.title"></h3>
     <div v-if="galleries.type == 'grid'" class="grid-container">
       <swiper
@@ -39,7 +34,6 @@ import 'swiper/css/grid'
           767: { slidesPerView: 2 },
           1024: { 
             slidesPerView: galleries.col,
-            slidesPerColumn: galleries.col,
             grid: {
               fill: 'row',
               rows: galleries.row
@@ -47,8 +41,6 @@ import 'swiper/css/grid'
           } 
         }"
         :space-between="20"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
       >
         <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
           <figure class="figure">
@@ -65,8 +57,6 @@ import 'swiper/css/grid'
         :slides-per-view="1.1"
         :breakpoints="{ 767: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }"
         :space-between="20"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
       >
         <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
           <figure class="figure">
@@ -79,7 +69,7 @@ import 'swiper/css/grid'
       </swiper>
     </div>
     <div v-if="galleries.type == 'slider'">
-      <swiper :slides-per-view="1.05" :space-between="20" @swiper="onSwiper" @slideChange="onSlideChange">
+      <swiper :slides-per-view="1.05" :space-between="20">
         <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
           <figure class="figure">
               <figure class="figure ratio ratio-16x9">

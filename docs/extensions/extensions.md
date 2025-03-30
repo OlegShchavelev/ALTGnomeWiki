@@ -60,7 +60,8 @@ gallery:
 
 - С помощью веб-интерфейса [GNOME Extensions](https://extensions.gnome.org).
 - Установить пакет с расширением, к примеру:
-  ::: code-group
+
+::: code-group
 
 ```shell[apt-get]
 su -

@@ -39,15 +39,15 @@
 
 ### Геймпады / Джойстики
 
-| Производитель |   Модель    |       BT        |        Радио        |       Провод        |   ПО    | Примечание |
-| :-----------: | :---------: | :-------------: | :-----------------: | :-----------------: | :-----: | :--------: |
-|   Logitech    |    F710     |        -        |   :green_circle:    |          -          |    -    |     -      |
-|   Microsoft   |  Xbox 360   |  :red_circle:   | :large_blue_circle: | :large_blue_circle: |    -    |     -      |
-|   Microsoft   |  Xbox One   | :yellow_circle: | :large_blue_circle: |   :green_circle:    | `bluez` |     -      |
-|   Microsoft   | Xbox Series | :yellow_circle: | :large_blue_circle: |   :green_circle:    | `bluez` |     -      |
-|     Sony      |  DualSense  | :green_circle:  |          -          |   :green_circle:    | `bluez` |     -      |
-|     Sony      | DualShock 3 |  :red_circle:   |          -          | :large_blue_circle: |    -    |     -      |
-|     Sony      | DualShock 4 | :yellow_circle: |          -          |   :green_circle:    | `bluez` |     -      |
+| Производитель |   Модель    |       BT        |        Радио        |       Провод        |   ПО    |       Примечание        |
+| :-----------: | :---------: | :-------------: | :-----------------: | :-----------------: | :-----: | :---------------------: |
+|   Logitech    |    F710     |        -        |   :green_circle:    |          -          |    -    |            -            |
+|   Microsoft   |  Xbox 360   |  :red_circle:   | :large_blue_circle: | :large_blue_circle: |    -    |            -            |
+|   Microsoft   |  Xbox One   | :yellow_circle: | :large_blue_circle: |   :green_circle:    | `bluez` |            -            |
+|   Microsoft   | Xbox Series | :yellow_circle: | :large_blue_circle: |   :green_circle:    | `bluez` |            -            |
+|     Sony      |  DualSense  | :green_circle:  |          -          |   :green_circle:    | `bluez` |            -            |
+|     Sony      | DualShock 3 |  :red_circle:   |          -          |   :yellow_circle:   |    -    | Не работает виброотклик |
+|     Sony      | DualShock 4 | :yellow_circle: |          -          |   :green_circle:    | `bluez` |            -            |
 
 
 ### VR шлемы

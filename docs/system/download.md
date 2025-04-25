@@ -23,9 +23,9 @@
 
 ## Скачать «Рабочую станцию» со средой рабочего стола GNOME (репозиторий P11)
 
-[ALT Workstation Gnome<Badge type="tip" text="x86_64"  /><Badge type="danger" text="Релиз-кандидат 2" />](https://beta.altlinux.org/workstation/x86_64/alt-workstation-11.0rc2-20250414-x86_64.iso)
+[ALT Workstation Gnome<Badge type="tip" text="x86_64"  /><Badge type="danger" text="Релиз-кандидат 3" />](https://beta.altlinux.org/workstation/x86_64/alt-workstation-11.0rc3-20250419-x86_64.iso)
 
-[ALT Workstation Gnome<Badge type="tip" text="aarch64" /><Badge type="danger" text="Релиз-кандидат 2" />](https://beta.altlinux.org/workstation/aarch64/alt-workstation-11.0rc2-20250414-aarch64.iso)
+[ALT Workstation Gnome<Badge type="tip" text="aarch64" /><Badge type="danger" text="Релиз-кандидат 3" />](https://beta.altlinux.org/workstation/aarch64/alt-workstation-11.0rc3-20250419-aarch64.iso)
 
 ## Скачать «Стартовый набор» со средой рабочего стола GNOME (репозиторий P11)
 

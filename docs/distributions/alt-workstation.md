@@ -1,6 +1,22 @@
+---
+gallery:
+  title: Скриншоты операционной системы
+  type: slider
+  items:
+    - src: /alt-workstation/alt-workstation-screenshot-1.png
+    - src: /alt-workstation/alt-workstation-screenshot-2.png
+    - src: /alt-workstation/alt-workstation-screenshot-3.png
+    - src: /alt-workstation/alt-workstation-screenshot-4.png
+    - src: /alt-workstation/alt-workstation-screenshot-5.png
+---
+
 # Альт Рабочая станция (ALT Workstation)
 
-Дистрибутив семейства ОС «Альт», разрабатываемый и поддерживаемый Базальт СПО, который начиная с версии 11.0 использует графическое окружение GNOME
+<AGWGallery />
+
+Альта Рабочая станция — дистрибутив семейства ОС «Альт», разрабатываемый и поддерживаемый Базальт СПО.
+
+Альт Рабочая станция 11.0 является первым продуктом Базальт СПО на [одиннадцатой платформе](https://www.altlinux.org/Одиннадцатая_платформа) и первый дистрибутив компании на графическом окружении GNOME после долгого перерыва со времён [Альт Линукс 6 Кентавр](https://www.altlinux.org/Альт_Линукс_6.0_Кентавр).
 
 ## Хронология
 

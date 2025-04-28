@@ -3,15 +3,16 @@ import path from 'path'
 
 const paths = [
   'apps',
-  'system',
-  'main',
-  'tips',
-  'extensions',
+  'build',
   'developers',
+  'distributions',
   'equipment',
-  'using_gnome',
+  'extensions',
   'games',
-  'build'
+  'main',
+  'system',
+  'tips',
+  'using_gnome'
 ]
 const prefix = 'docs/'
 

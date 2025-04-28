@@ -16,7 +16,7 @@
 |      Logitech       |                                              MX Master 3                                               | :green_circle: | [`piper`](piper.md), [`Solaar`](https://pwr-solaar.github.io/Solaar/) |     -      |
 |       Xiaomi        | [Dual Mode Wireless Mouse Silent Edition](https://www.mi.com/ru/product/mi-dual-mode-wireless-mouse/)  | :green_circle: |                                   -                                   |     -      |
 | Дарк Проджект x VXE |                                            R1 PRO Max Grey                                             | :green_circle: |                                   -                                   |     -      |
-|        VXE          |                                                R1 SE+                                                  | :green_circle: |                                   -                                   |     -      |
+|         VXE         |                                                 R1 SE+                                                 | :green_circle: |                                   -                                   |     -      |
 
 ### Клавиатуры
 
@@ -27,7 +27,7 @@
 |   Logitech    | MX Keys | :green_circle: | [`Solaar`](https://pwr-solaar.github.io/Solaar/) |                                             -                                              |
 |   Keychron    |  K3-D1  | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB                                |
 |   Keychron    | K8 Pro  | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB                                |
-|   FreeWolf    |   K8    | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB, Radio 2.4                      |
+|   FreeWolf    |   K8    | :green_circle: |                        -                         |                          Раскладка Win, Bluetooth, USB, Radio 2.4                          |
 
 ### Коврики
 
@@ -39,21 +39,21 @@
 
 ### Геймпады / Джойстики
 
-| Производитель |   Модель    |       BT        |        Радио        |       Провод        |   ПО    |       Примечание        |
-| :-----------: | :---------: | :-------------: | :-----------------: | :-----------------: | :-----: | :---------------------: |
-|   Logitech    |    F710     |        -        |   :green_circle:    |          -          |    -    |            -            |
-|   Microsoft   |  Xbox 360   |  :red_circle:   | :large_blue_circle: | :large_blue_circle: |    -    |            -            |
-|   Microsoft   |  Xbox One   | :yellow_circle: | :large_blue_circle: |   :green_circle:    | `bluez` |            -            |
-|   Microsoft   | Xbox Series | :yellow_circle: | :large_blue_circle: |   :green_circle:    | `bluez` |            -            |
-|     Sony      |  DualSense  | :green_circle:  |          -          |   :green_circle:    | `bluez` |            -            |
-|     Sony      | DualShock 3 |  :red_circle:   |          -          |   :yellow_circle:   |    -    | Не работает виброотклик |
-|     Sony      | DualShock 4 | :yellow_circle: |          -          |   :green_circle:    | `bluez` |            -            |
-
+| Производитель |   Модель    |       BT        |        Радио        |       Провод        |   ПО    |          Примечание           |
+| :-----------: | :---------: | :-------------: | :-----------------: | :-----------------: | :-----: | :---------------------------: |
+|   Logitech    |    F710     |        -        |   :green_circle:    |          -          |    -    |               -               |
+|   Microsoft   |  Xbox 360   |  :red_circle:   | :large_blue_circle: | :large_blue_circle: |    -    |               -               |
+|   Microsoft   |  Xbox One   | :yellow_circle: | :large_blue_circle: |   :green_circle:    | `bluez` |               -               |
+|   Microsoft   | Xbox Series | :yellow_circle: | :large_blue_circle: |   :green_circle:    | `bluez` |               -               |
+|     Sony      |  DualSense  | :green_circle:  |          -          |   :green_circle:    | `bluez` |               -               |
+|     Sony      | DualShock 3 |  :red_circle:   |          -          |   :yellow_circle:   |    -    | Не работает тактильная отдача |
+|     Sony      | DualShock 4 | :yellow_circle: |          -          |   :green_circle:    | `bluez` |               -               |
 
 ### VR шлемы
-| Производитель |     Модель     |   Тип подключения   |   Состояние    |  Примечание  |
-| :-----------: | :------------: | :-----------------: | :------------: | :----------: |
-|     M***      | Oculus Quest 3 |    Wi-Fi, USB 3.2   | :green_circle: |     ALVR     |
+
+| Производитель |     Модель     | Тип подключения |   Состояние    | Примечание |
+| :-----------: | :------------: | :-------------: | :------------: | :--------: |
+|    M\*\*\*    | Oculus Quest 3 | Wi-Fi, USB 3.2  | :green_circle: |    ALVR    |
 
 ### Микрофоны
 
@@ -75,16 +75,16 @@
 
 ### Наушники / Гарнитуры
 
-| Производитель      |      Модель         |   Тип подключения    |   Состояние    | ПО  |     Примечание    |
-| :----------------: | :-----------------: | :------------------: | :------------: | :-: | :---------------: |
-|        COMMO       |         One         | mini-jack, Bluetooth | :green_circle: |  -  |         -         |
-|        FIFINE      |         H8          |      mini-jack       | :green_circle: |  -  |         -         |
-|       Pioneer      |      SE-MS7BT-S     | mini-jack, Bluetooth | :green_circle: |  -  |         -         |
-|      Sennheiser    |       HD458BT       |      Bluetooth       | :green_circle: |  -  |         -         |
-|        Apple       |    AirPods Pro 1    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
-|        Apple       |    AirPods Pro 2    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
-|        Sony        |     WH1000-XM3      | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
-|        Anker       | Soundcore Space Q45 | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
+| Производитель |       Модель        |   Тип подключения    |   Состояние    | ПО  |    Примечание     |
+| :-----------: | :-----------------: | :------------------: | :------------: | :-: | :---------------: |
+|     COMMO     |         One         | mini-jack, Bluetooth | :green_circle: |  -  |         -         |
+|    FIFINE     |         H8          |      mini-jack       | :green_circle: |  -  |         -         |
+|    Pioneer    |     SE-MS7BT-S      | mini-jack, Bluetooth | :green_circle: |  -  |         -         |
+|  Sennheiser   |       HD458BT       |      Bluetooth       | :green_circle: |  -  |         -         |
+|     Apple     |    AirPods Pro 1    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
+|     Apple     |    AirPods Pro 2    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
+|     Sony      |     WH1000-XM3      | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
+|     Anker     | Soundcore Space Q45 | mini-jack, Bluetooth | :green_circle: |  -  | HandsFree/Headset |
 
 ### Веб-камеры
 
@@ -104,7 +104,7 @@
 
 | Производитель |    Модель     |        Wi-Fi        |   Bluetooth    |              ПО              | Примечание |
 | :-----------: | :-----------: | :-----------------: | :------------: | :--------------------------: | :--------: |
-|     Buro      |    BU-BT40A   |          -          | :green_circle: |              -               |     -      |
+|     Buro      |   BU-BT40A    |          -          | :green_circle: |              -               |     -      |
 |    Realtek    | RTL8811CE USB | :large_blue_circle: |       -        | `kernel-modules-rtl8821cu-*` |     -      |
 |    Realtek    | RTL8821CU USB | :large_blue_circle: |       -        | `kernel-modules-rtl8821cu-*` |     -      |
 |    TP-Link    |   TL-WN725N   |   :green_circle:    |       -        |              -               |     -      |
@@ -152,11 +152,11 @@
 
 |     Модель      |   Состояние    | Примечание |
 | :-------------: | :------------: | :--------: |
-| Ryzen 5 3600    | :green_circle: |     -      |
-| Ryzen 7 3700X   | :green_circle: |     -      |
-| Ryzen 7 2700X   | :green_circle: |     -      |
+|  Ryzen 5 3600   | :green_circle: |     -      |
+|  Ryzen 7 3700X  | :green_circle: |     -      |
+|  Ryzen 7 2700X  | :green_circle: |     -      |
 | Ryzen 7 4800HS  | :green_circle: |     -      |
-| Ryzen 7 5800H   | :green_circle: |     -      |
+|  Ryzen 7 5800H  | :green_circle: |     -      |
 | Ryzen 7 5800HS  | :green_circle: |     -      |
 | Ryzen 7 7800X3D | :green_circle: |     -      |
 
@@ -171,7 +171,7 @@
 | Производитель |   Модель    |      Состояние      |          Примечание           |
 | :-----------: | :---------: | :-----------------: | :---------------------------: |
 |     Apple     |   M1 Pro    |   :yellow_circle:   | Parallels (нет драйвера), UTM |
-|     Apple     |   M3 Pro    |   :yellow_circle:   |          UTM                  |
+|     Apple     |   M3 Pro    |   :yellow_circle:   |              UTM              |
 |     Apple     | iPhone/iPad | :large_blue_circle: |          UTM SE (?)           |
 
 ### Графические адаптеры
@@ -185,12 +185,12 @@
 
 #### NVIDIA
 
-| Производитель |                     Модель                      |     Драйвер     |    Состояние    |              Примечание            |
-| :-----------: | :---------------------------------------------: | :-------------: | :-------------: | :--------------------------------: |
-|     Apple     | GeForce GT 750M Mac (`10de:0fe9`)               |     Nouveau     | :green_circle:  |   `firmware-nouveau-340.108-alt1`  |
-|     ASUS      | TUF Gaming GeForce GTX 1660 Super (`10de:21c4`) | NVIDIA, Nouveau | :green_circle:  |                -                   |
-|   GIGABYTE    | GeForce RTX 3070 Ti GAMING OC 8G (`10de:2482`)  |     NVIDIA      | :green_circle:  |         Wayland работает           |
-|     Palit     | GeForce RTX 4080 GameRock OC (`10de:2702`)      | NVIDIA, Nouveau | :green_circle:  |      NVIDIA 565.77 by lakostis     |
+| Производитель |                     Модель                      |     Драйвер     |   Состояние    |           Примечание            |
+| :-----------: | :---------------------------------------------: | :-------------: | :------------: | :-----------------------------: |
+|     Apple     |        GeForce GT 750M Mac (`10de:0fe9`)        |     Nouveau     | :green_circle: | `firmware-nouveau-340.108-alt1` |
+|     ASUS      | TUF Gaming GeForce GTX 1660 Super (`10de:21c4`) | NVIDIA, Nouveau | :green_circle: |                -                |
+|   GIGABYTE    | GeForce RTX 3070 Ti GAMING OC 8G (`10de:2482`)  |     NVIDIA      | :green_circle: |        Wayland работает         |
+|     Palit     |   GeForce RTX 4080 GameRock OC (`10de:2702`)    | NVIDIA, Nouveau | :green_circle: |    NVIDIA 565.77 by lakostis    |
 
 #### Intel
 

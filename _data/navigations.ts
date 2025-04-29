@@ -24,7 +24,6 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
           { text: 'Быстрый старт', link: '/quick-start' },
           {
             text: 'GNOME в Альте',
-            link: '/distributions',
             items: [
               { text: 'ALT Regular Gnome', link: '/alt-regular-gnome' },
               { text: 'ALT Starterkit Gnome', link: '/alt-starterkit-gnome' },

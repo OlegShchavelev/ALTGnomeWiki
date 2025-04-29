@@ -23,6 +23,16 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
         items: [
           { text: 'Быстрый старт', link: '/quick-start' },
           {
+            text: 'GNOME в Альте',
+            link: '/distributions',
+            items: [
+              { text: 'ALT Regular Gnome', link: '/alt-regular-gnome' },
+              { text: 'ALT Starterkit Gnome', link: '/alt-starterkit-gnome' },
+              { text: 'Альт Рабочая станция', link: '/alt-workstation' }
+            ],
+            collapsed: true
+          },
+          {
             text: 'Установка',
             link: '/download',
             items: [
@@ -33,11 +43,10 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
             ],
             collapsed: true
           },
-	  {
+          {
             text: 'Безопасность',
-            link: '/security',
+            link: '/security'
           },
-
           {
             text: 'Установка и обновление программ',
             items: [

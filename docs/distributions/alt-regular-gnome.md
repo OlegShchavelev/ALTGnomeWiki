@@ -1,0 +1,3 @@
+# ALT Regular Gnome
+
+<!--@include: @/.parts/warns/constructing.md-->

@@ -48,16 +48,3 @@ WPS Office включает следующие приложения:
 
 <!--@include: @apps/.parts/install/content-flatpak.md-->
 <!--@include: @apps/.parts/install/content-epm-play.md-->
-
-::: warning
-На данный момент обнаружена проблема c работой системы скинов после установки epm play.
-
-Для исправления можно воспользоваться командой:
-```shell
-su -
-rm /opt/kingsoft/wps-office/office6/libstdc++.so*
-```
-После обновления epm в ближайшее время ошибка будет исправлена. (Исправлено в версии 3.64.0)
-
-Подробнее: [[[Github [Etersoft/EEPM #266]](https://github.com/Etersoft/eepm/issues/266)]]
-:::

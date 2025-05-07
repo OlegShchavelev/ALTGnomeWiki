@@ -61,7 +61,7 @@ h2 {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1060px) {
   .item.grid-4 {
     width: calc(100% / 4);
   }

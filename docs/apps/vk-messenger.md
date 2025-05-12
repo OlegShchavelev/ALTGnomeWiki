@@ -7,7 +7,7 @@ aggregation:
 appstream:
   name: VK Мессенджер
   icon: /vk-messenger/vk-messenger-logo.svg
-  summary: Редактор меню для GNOME, использующий спецификацию меню freedesktop.org.
+  summary: Бесплатный мессенджер от компании VK.
   keywords:
     - proprietary
   developer:

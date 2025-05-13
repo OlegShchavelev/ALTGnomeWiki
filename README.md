@@ -43,7 +43,7 @@ git clone https://github.com/{user}/ALTGnomeWiki.git
 git clone git@github.com:{user}/ALTGnomeWiki.git
 ```
 
-Теперь на вашем компьютере в папке `ALTMobileWiki`, находится полная копия репозитория.
+Теперь на вашем компьютере в папке `ALTGnomeWiki`, находится полная копия репозитория.
 
 > [!NOTE]
 > Замените `{user}` на ваше имя пользователя на GitHub. Проще всего его найти в cервисе GitHub в самом верху страницы репозитория.

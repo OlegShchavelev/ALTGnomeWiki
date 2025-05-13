@@ -2,8 +2,33 @@
 import { homepage } from '../../../package.json'
 
 const { href, title } = defineProps<{ href: string; title: string }>()
-
+const hostname = (new URL(href)).hostname
 const isExternal = /https?:\/\//.test(href)
+const haveSubdomain = hostname.split('.').length > 2
+const faviconHost = 'https://favicon.yandex.net/favicon/'
+
+function checkFavicon(hostname){
+  const img = new Image()
+  img.src = faviconHost+hostname
+  return img.width > 1 ? true : false
+}
+
+function findFavicon(hostname){
+  if (!isExternal) {
+    return "/favicon.png"
+  } else if (checkFavicon(hostname)) {
+    return `${faviconHost}${hostname}` 
+  } else if (!checkFavicon(hostname) & haveSubdomain) {
+    if (checkFavicon(`${hostname.split('.')[1]}.${hostname.split('.')[2]}`)) {
+      return `${faviconHost}${hostname.split('.')[1]}.${hostname.split('.')[2]}`
+    } else {
+      return "/external-link.svg"
+    }
+  } else {
+    return "/external-link.svg"
+  }
+}
+
 </script>
 
 <template>
@@ -20,11 +45,7 @@ const isExternal = /https?:\/\//.test(href)
           <div class="link">
             <img
               class="icon"
-              :src="
-                isExternal
-                  ? `https://s2.googleusercontent.com/s2/favicons?domain_url=${href}&sz=96`
-                  : `/favicon.png`
-              "
+              :src="findFavicon(hostname)"
             />
             <div class="domain">
               {{ decodeURI((isExternal ? '' : homepage.slice(0, -1)) + href) }}
@@ -83,5 +104,6 @@ a:active {
 
 .icon {
   height: 24px;
+  border-radius: 0px !important;
 }
 </style>

@@ -88,6 +88,41 @@ gallery:
 ---
 ```
 
+::: tip :sunrise_over_mountains: Так же можно сформировать несколько галерей :art:
+
+Подробнее об этом в блоке [`Галерея и похожие приложения`](#_3-галерея-и-похожие-приложения)
+
+::: details **Пример для mindustry**
+```markdown
+---
+gallery:
+  - title: Галерея
+    type: slider
+    items:
+      - src: /mindustry/mindustry-menu.png
+      - src: /mindustry/mindustry-serpulo-1.png
+      - src: /mindustry/mindustry-serpulo-2.png
+      - src: /mindustry/mindustry-serpulo-3.png
+      - src: /mindustry/mindustry-erekir-1.png
+      - src: /mindustry/mindustry-erekir-2.png
+      - src: /mindustry/mindustry-erekir-3.png
+  - type: slider
+    items:
+      - src: /mindustry/mindustry-gier-1.png
+      - src: /mindustry/mindustry-gier-2.png
+  - type: slider
+    items:
+      - src: /mindustry/mindustry-notva-1.png
+      - src: /mindustry/mindustry-notva-2.png
+  - type: slider
+    items:
+      - src: /mindustry/mindustry-verilus-1.png
+      - src: /mindustry/mindustry-verilus-2.png
+---
+```
+:::
+
+
 ### Список похожих приложений
 
 Можно использовать как внешние (https://alt-gnome.wiki/amberol), так и внутренние ссылки (/amberol)
@@ -123,12 +158,37 @@ NAME — ...
 ```markdown-vue
 Amberol воспроизводит музыку, и ничего больше.
 
-<AGWAnalogues /> <!-- [!code focus] -->
+<AGWAnalogues /> <!--[!code focus]-->
 
-<AGWGallery /> <!-- [!code focus] -->
+<AGWGallery />   <!--[!code focus]-->
 
 <!--{{`@include: @apps/.parts/install/content-repo.md`}}-->
 ```
+
+::: tip :pushpin: Использование нескольких галерей :pencil2:
+
+Если у вас создано несколько галерей - то для вызова нужно добавить ключ `id` к вызову с указанием номера галереи.
+
+<mark>**(Отсчет идет с нуля, для нулевого можно не указывать)**</mark>
+
+```markdown-vue
+Mindustry — Песочница в жанре tower-defense. Создавайте сложные цепочки поставок из конвейеров, чтобы загружать...
+
+<AGWGallery />   <!--[!code focus]-->
+
+### Gier
+Первые астероиды.
+Для включения, введите в консоль игры следующую команду:
+
+\`\`\`
+Planets.gier.alwaysUnlocked = true
+\`\`\`
+
+<AGWGallery id=1 /> <!--[!code focus]-->
+
+```
+
+:::
 
 ## 5. Установка
 

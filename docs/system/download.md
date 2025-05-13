@@ -7,7 +7,7 @@
 - **tested** — образ обновляется после проверки сопровождающим проекта, обновление образа зависит от объёма изменений и других факторов;
 - **current** — обновляется без проверки сопровождающим проекта, автоматически инструментами Сизифа, обновление образа еженедельно (каждую среду);
 
-[ALT Regular Gnome <Badge type="info" text="tested"  /><Badge type="tip" text="x86_64"  /><Badge type="tip" text="Рекомендуемый" />](https://nightly.altlinux.org/sisyphus/tesпted/regular-gnome-latest-x86_64.iso)
+[ALT Regular Gnome <Badge type="info" text="tested"  /><Badge type="tip" text="x86_64"  /><Badge type="tip" text="Рекомендуемый" />](https://nightly.altlinux.org/sisyphus/tested/regular-gnome-latest-x86_64.iso)
 
 [ALT Regular Gnome <Badge type="info" text="tested"  /><Badge type="tip" text="aarch64" /><Badge type="tip" text="Рекомендуемый" />](https://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso)
 

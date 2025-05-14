@@ -3,9 +3,9 @@
  * @module markdown-it-custom-container
  */
 import type { PluginWithOptions } from 'markdown-it'
-import type { RenderRule, Token } from 'markdown-it/lib'
+import type { RenderRule } from 'markdown-it/lib/renderer.mjs'
 import container from 'markdown-it-container'
-import { blue, cyan, dim, green, yellow } from 'colorette'
+import { cyan, dim, green } from 'colorette'
 
 /**
  * Конфигурация отдельного контейнера
@@ -35,16 +35,15 @@ interface PluginOptions {
   debug?: boolean
 }
 
+// Жирный вывод для того чтобы было похоже на логер VP, хз почему этого нет в colorette
+const bold = (text: string) => `\x1b[1m${text}\x1b[22m`
+
 /**
  * Создает и возвращает плагин для markdown-it
  * @param {import('markdown-it')} md - Экземпляр markdown-it
  * @param {PluginOptions} [options={}] - Настройки плагина
  * @returns {PluginWithOptions} Сконфигурированный плагин
  */
-
-// Жирный вывод для того чтобы было похоже на логер VP, хз почему этого нет в colorette
-const bold = (text: string) => `\x1b[1m${text}\x1b[22m`
-
 export default function createContainerPlugin(md: any, options: PluginOptions = {}): PluginWithOptions {
   const { containers = [], debug = false } = options
   const allowedTypes = new Set(containers.map((c) => c.type))

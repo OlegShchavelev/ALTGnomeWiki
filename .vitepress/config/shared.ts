@@ -11,7 +11,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import { visualizer } from "rollup-plugin-visualizer"
 
 /* Markdown */
-import { default as createContainer } from '../theme/composables/customContainers'
+import createContainerPlugin from '../theme/composables/customContainers';
 import VitepressMarkdownTimeline from 'vitepress-markdown-timeline'
 import markdownItKbd from 'markdown-it-kbd'
 import markdownItTaskLists from 'markdown-it-task-lists'
@@ -33,6 +33,7 @@ import {
   PageProperties,
   PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
+
 import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions } from './plugins'
 
 export const shared = defineConfig({
@@ -136,9 +137,9 @@ export const shared = defineConfig({
       detailsLabel: 'Подробнее'
     },
     config: (md) => {
-      for (const [name, opts] of alignmentContainers) {
-        md.use(...createContainer(name, opts, md))
-      }
+      md.use(createContainerPlugin, {
+        containers: alignmentContainers
+      })
       md.use(markdownItKbd)
       md.use(markdownItTaskLists)
       md.use(VitepressMarkdownTimeline)

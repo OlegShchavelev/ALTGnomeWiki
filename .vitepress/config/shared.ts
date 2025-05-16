@@ -11,7 +11,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import { visualizer } from "rollup-plugin-visualizer"
 
 /* Markdown */
-import createContainerPlugin from '../theme/composables/customContainers';
+import { createContainerPlugin } from '@alt-gnome/markdown-it-custom-containers';
 import VitepressMarkdownTimeline from 'vitepress-markdown-timeline'
 import markdownItKbd from 'markdown-it-kbd'
 import markdownItTaskLists from 'markdown-it-task-lists'

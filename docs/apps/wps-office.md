@@ -47,4 +47,16 @@ WPS Office включает следующие приложения:
 <AGWGallery />
 
 <!--@include: @apps/.parts/install/content-flatpak.md-->
+
 <!--@include: @apps/.parts/install/content-epm-play.md-->
+
+::: tip Если хотите версию свежее - доступна китайская версия
+
+Глобально доступна только 11 версия, но через eepm можно установить китайскую.
+
+(Доступна с выпуска `EPM` 3.64.28)
+
+```shell
+epm play wpsoffice-cn
+```
+:::

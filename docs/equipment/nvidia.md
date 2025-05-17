@@ -135,7 +135,7 @@ apt-get install gcc kernel-headers-modules-$kflavor dkms libglvnd-devel # где
 reboot
 ```
 
-::: alert
+::: danger
 
 Нужно перезагрузиться ещё раз, чтобы DKMS начал работать.
 

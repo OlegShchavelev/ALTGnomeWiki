@@ -118,3 +118,7 @@ mkdir - p ~/.local/share/fonts/ttf/CascadiaCode/ && cp *.ttf ~/.local/share/font
 ```shell
 fc-list
 ```
+### Обновить кеш установленных шрифтов в системе
+```shell
+fc-cache -f -v
+```

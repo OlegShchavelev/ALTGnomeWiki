@@ -157,6 +157,11 @@ gnome-extensions caffeine@patapon.info
 gnome-extensions uninstall caffeine@patapon.info
 ```
 
+Сброс настроек расширения:
+```shell
+dconf reset -f /org/gnome/shell/extensions/caffeine
+```
+
 ## Локальная установка расширений с использованием исходников релиза сайта GNOME Extensions или GitHub
 
 Иногда может возникнуть необходимость поставить расширение вручную без коннектора и менеджера расширений (например, если версия GNOME значительно отстает от upstream) или потребовалось установить расширение с GitHub.

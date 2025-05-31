@@ -32,9 +32,9 @@ gallery:
 
 <!--@include: @apps/.parts/install/content-repo.md-->
 
-# Доступные плагины
+## Доступные плагины
 
-## Tweaks
+### Tweaks
 
 ```shell 
 su - 
@@ -42,7 +42,7 @@ apt-get update
 apt-get install tuner-tweaks
 ```
 
-## TunerPanel
+### Panel
 
 ```shell 
 su - 

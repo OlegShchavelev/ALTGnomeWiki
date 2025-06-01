@@ -31,11 +31,18 @@
 
 ### Коврики
 
-| Производитель |          Модель           |   Состояние    | Примечание |
-| :-----------: | :-----------------------: | :------------: | :--------: |
-| Дарк Проджект |           MD3a            | :green_circle: |     -      |
-|  CustomMade   | CM x Fispeckt Katana Dark | :green_circle: | Размер XXL |
-|   Logitech    |         Desk Mat          | :green_circle: |     -      |
+| Производитель |              Модель               |   Состояние    | Примечание |
+| :-----------: | :-------------------------------: | :------------: | :--------: |
+| Дарк Проджект |               MD3a                | :green_circle: |     -      |
+|  ARDOR GAMING | GM-XXL Asia Tiger Black and White | :green_circle: | Размер XXL |
+|  CustomMade   |     CM x Fispeckt Katana Dark     | :green_circle: | Размер XXL |
+|   Logitech    |             Desk Mat              | :green_circle: |     -      |
+
+### Компьютерные столы
+
+| Производитель |  Модель  | Регулировка высоты |   Состояние    | Примечание |
+| :-----------: | :------: | :----------------: | :------------: | :--------: |
+|     RITMIX    | TBL-120a |   :green_circle:   | :green_circle: |   DC 24V   |
 
 ### Геймпады / Джойстики
 
@@ -64,6 +71,7 @@
 |    FIFINE     |   K670   |       USB       |   :green_circle:    |  -  |     -      |
 |    FIFINE     |   K688   |       USB       |   :green_circle:    |  -  |     -      |
 |    FIFINE     |   K688   |       XLR       | :large_blue_circle: |  -  |     -      |
+|    FIFINE     |   K780   |       USB       |   :green_circle:    |  -  |     -      |
 |     Trust     | 20378-02 |       USB       |   :green_circle:    |  -  |     -      |
 
 ### Колонки
@@ -79,6 +87,7 @@
 | :-----------: | :-----------------: | :------------------: | :------------: | :-: | :---------------: |
 |     COMMO     |         One         | mini-jack, Bluetooth | :green_circle: |  -  |         -         |
 |    FIFINE     |         H8          |      mini-jack       | :green_circle: |  -  |         -         |
+|      JBL      |      Tune 500       |      mini-jack       | :green_circle: |  -  |         -         |
 |    Pioneer    |     SE-MS7BT-S      | mini-jack, Bluetooth | :green_circle: |  -  |         -         |
 |  Sennheiser   |       HD458BT       |      Bluetooth       | :green_circle: |  -  |         -         |
 |     Apple     |    AirPods Pro 1    |      Bluetooth       | :green_circle: |  -  | HandsFree/Headset |
@@ -252,6 +261,7 @@
 | Производитель |                                    Модель                                    | Драйвер |   Состояние    | Примечание |
 | :-----------: | :--------------------------------------------------------------------------: | :-----: | :------------: | :--------: |
 |   GIGABYTE    |     B550 Aorus Elite AX 500 Series Chipset SATA Controller (`1022:43eb`)     |  SATA   | :green_circle: |     -      |
+|      AMD      |                       FCH SATA Controller (`1022:7901`)                      |  SATA   | :green_circle: |     -      |
 |   GIGABYTE    | B550 Aorus Elite AX 500 Series Chipset USB 3.1 XHCI Controller (`1022:43ee`) |   USB   | :green_circle: |     -      |
 |    Realtek    |                  RTS5762 NVMe SSD Controller (`10ec:5762`)                   |  NVMe   | :green_circle: |     -      |
 
@@ -260,6 +270,7 @@
 | Производитель |                Модель                 |   Тип подключения   |   Состояние    | Примечание |
 | :-----------: | :-----------------------------------: | :-----------------: | :------------: | :--------: |
 |     ADATA     | LEGEND 960 PCIe M.2 SSD (`1cc1:622a`) | NVMe (PCIe Gen4 x4) | :green_circle: |     -      |
+|    Samsung    |    PM9A1/PM9A3/980PRO (`144d:a80a`)   | NVMe (PCIe Gen4 x4) | :green_circle: |     -      |
 |   Kingston    |              NV2 (SNV2S)              | NVMe (PCIe Gen4 x4) | :green_circle: |     -      |
 
 ## Правила добавления/оформления данных в таблицах

@@ -25,11 +25,6 @@
 
 [ALT Workstation 11.0 <Badge type="tip" text="aarch64" />](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/aarch64/alt-workstation-11.0-aarch64.iso)
 
-
-[ALT Workstation Gnome<Badge type="tip" text="x86_64"  />](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/x86_64/alt-workstation-11.0-x86_64.iso)
-
-[ALT Workstation Gnome<Badge type="tip" text="aarch64" />](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/aarch64/alt-workstation-11.0-aarch64.iso)
-
 ## Скачать «Стартовый набор» с рабочим окружением GNOME (ветка `p11`)
 
 [ALT Starterkit Gnome <Badge type="tip" text="x86_64"  />](https://nightly.altlinux.org/p11/release/alt-p11-gnome-20250312-x86_64.iso)

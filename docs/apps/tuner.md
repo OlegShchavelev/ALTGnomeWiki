@@ -5,7 +5,7 @@ appstream:
   id: org.altlinux.Tuner
   name: Tuner
   icon: /tuner/color.svg
-  summary: «Оттюним» рабочее окружение GNOME прокаченными настройки на Libadwaita для систем семейства «Альт» и не только
+  summary: Расширяемый центр управления
   keywords:
     - adaptive
   metadata_license:

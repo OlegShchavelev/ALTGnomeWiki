@@ -159,6 +159,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Toolbox', link: '/toolbox' },
               { text: 'Totem', link: '/totem' },
               { text: 'Transmission', link: '/transmission' },
+              { text: 'Tuner', link: '/tuner' },
               { text: 'Turtle', link: '/turtle' },
               { text: 'Ungoogled-chromium', link: '/ungoogled-chromium' },
               { text: 'Vesktop', link: '/vesktop' },

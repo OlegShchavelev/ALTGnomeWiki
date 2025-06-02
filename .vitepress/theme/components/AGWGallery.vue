@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { type Ref, computed, onMounted } from 'vue'
-import { DefaultTheme, useData, useRoute } from 'vitepress'
+import { useData } from 'vitepress'
 
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 

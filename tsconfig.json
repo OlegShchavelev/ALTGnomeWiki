@@ -1,17 +1,51 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "types": ["node", "vite/client"],
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./*"],
-      "@vitepress/theme/*": ["node_modules/vitepress/dist/client/theme-default/*"]
-    }
-  },
-  "include": ["**/*.d.ts", "**/*.ts"],
-  "exclude": ["node_modules"]
+      "baseUrl": "./",
+      "target": "ESNext",
+      "jsx": "preserve",
+      "lib": [
+        "DOM",
+        "ESNext"
+      ],
+      "module": "ESNext",
+      "moduleResolution": "Bundler",
+      "paths": {
+        "@vitepress/theme/*": ["node_modules/vitepress/dist/client/theme-default/*"],
+        "@theme/components/*": [".vitepress/theme/components/*"],
+      },
+      "resolveJsonModule": true,
+      "types": [
+        "node",
+        "vite/client"
+      ],
+      "strict": true,
+      "strictNullChecks": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "allowImportingTsExtensions": true,
+      "noEmit": true,
+      "removeComments": false,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": true,
+      "verbatimModuleSyntax": true,
+      "skipLibCheck": true
+    },
+  "include": [
+    "**/*.d.ts",
+    "**/*.ts",
+    "**/*.mts",
+    "**/*.vue",
+    ".vitepress/**/*.d.ts",
+    ".vitepress/**/*.ts",
+    ".vitepress/**/*.mts",
+    ".vitepress/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vitepress/dist",
+  ]
 }

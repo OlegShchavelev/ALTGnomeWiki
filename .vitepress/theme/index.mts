@@ -15,15 +15,15 @@ import {
 } from '../config/plugins/index.ts'
 
 /* AGW */
-import AGWTeamPage from './components/AGWTeamPage.vue'
-import AGWHomeTeam from './components/AGWHomeTeam.vue'
-import AGWHomeSponsors from './components/AGWHomeSponsors.vue'
-import AGWDocsAsideMeta from './components/AGWDocsAsideMeta.vue'
-import AGWCategories from './components/AGWDocsCategories.vue'
-import AGWGallery from './components/AGWGallery.vue'
-import AGWLinkBlock from './components/AGWLinkBlock.vue'
-import AGWAnalogues from './components/AGWAnalogues.vue'
-import AGWGnomeAppsList from './components/AGWGnomeApps/AGWGnomeAppsList.vue'
+import AGWTeamPage from '@theme/components/AGWTeamPage.vue'
+import AGWHomeTeam from '@theme/components/AGWHomeTeam.vue'
+import AGWHomeSponsors from '@theme/components/AGWHomeSponsors.vue'
+import AGWDocsAsideMeta from '@theme/components/AGWDocsAsideMeta.vue'
+import AGWCategories from '@theme/components/AGWDocsCategories.vue'
+import AGWGallery from '@theme/components/AGWGallery.vue'
+import AGWLinkBlock from '@theme/components/AGWLinkBlock.vue'
+import AGWAnalogues from '@theme/components/AGWAnalogues.vue'
+import AGWGnomeAppsList from '@theme/components/AGWGnomeApps/AGWGnomeAppsList.vue'
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'

@@ -41,6 +41,9 @@ export const shared = defineConfig({
   base: '',
   srcDir: './docs',
   cleanUrls: true,
+  rewrites: {
+    'ru/:rest*': ':rest*'
+  },
   sitemap: {
     hostname: 'https://alt-gnome.wiki/'
   },

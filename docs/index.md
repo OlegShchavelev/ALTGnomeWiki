@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Скачать
-      link: /download
+      link: /download/
     - theme: alt
       text: Документация
-      link: /wiki
+      link: /wiki/
 
 features:
   - icon:

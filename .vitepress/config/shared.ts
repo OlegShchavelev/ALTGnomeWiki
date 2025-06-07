@@ -2,16 +2,15 @@
 import { defineConfig } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
 import { telegram, vk } from '../support/icons'
-import { rewrites } from '../support/paths'
 import { normalize } from '../support/utils'
 
 /* Tools */
 
 import vueDevTools from 'vite-plugin-vue-devtools'
-import { visualizer } from "rollup-plugin-visualizer"
+import { visualizer } from 'rollup-plugin-visualizer'
 
 /* Markdown */
-import { createContainerPlugin } from '@alt-gnome/markdown-it-custom-containers';
+import { createContainerPlugin } from '@alt-gnome/markdown-it-custom-containers'
 import VitepressMarkdownTimeline from 'vitepress-markdown-timeline'
 import markdownItKbd from 'markdown-it-kbd'
 import markdownItTaskLists from 'markdown-it-task-lists'
@@ -41,6 +40,7 @@ export const shared = defineConfig({
   titleTemplate: ':title — ALT Gnome Wiki',
   base: '',
   srcDir: './docs',
+  cleanUrls: true,
   sitemap: {
     hostname: 'https://alt-gnome.wiki/'
   },
@@ -59,7 +59,7 @@ export const shared = defineConfig({
       visualizer({
         gzipSize: true,
         brotliSize: true,
-        filename: "./.tools/chunk_analyse/stats.html",
+        filename: './.tools/chunk_analyse/stats.html'
       }) as PluginOption,
       UnoCSS(),
       GitChangelog(nolebaseGitChangelogOptions.plugin),
@@ -126,7 +126,6 @@ export const shared = defineConfig({
       level: [2, 3]
     }
   },
-  rewrites: rewrites,
   markdown: {
     languages,
     container: {

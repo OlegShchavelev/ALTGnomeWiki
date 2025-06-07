@@ -20,9 +20,6 @@ import markdownItConditionalRender from 'markdown-it-conditional-render'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import linkBlock from '../theme/composables/linkBlock'
 
-/* Syntaxises */
-import languages from '../theme/syntaxes'
-
 /* GitLog */
 import UnoCSS from 'unocss/vite'
 import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
@@ -130,7 +127,6 @@ export const shared = defineConfig({
     }
   },
   markdown: {
-    languages,
     container: {
       tipLabel: 'Подсказка',
       warningLabel: 'Внимание',

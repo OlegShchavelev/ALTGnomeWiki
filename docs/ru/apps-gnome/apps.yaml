@@ -1,0 +1,32 @@
+- name: Календарь
+  thumb: https://apps.gnome.org/icons/scalable/org.gnome.Calendar.svg
+  summary: 'Вычисления: арифметические, научные и финансовые'
+  group: core
+- name: Калькулятор
+  summary: 'Снимайте фото и видео'
+  thumb: https://apps.gnome.org/icons/scalable/org.gnome.Calculator.svg
+  group: core
+- name: Камера
+  summary: Снимайте фото и видео
+  thumb: https://apps.gnome.org/icons/scalable/org.gnome.Snapshot.svg
+  group: core
+- name: Контакты
+  summary: Управление контактами
+  thumb: https://apps.gnome.org/icons/scalable/org.gnome.Contacts.svg
+  group: core
+- name: Апостроф
+  summary: Редактировать в стиле Markdown
+  thumb: https://apps.gnome.org/icons/scalable/org.gnome.gitlab.somas.Apostrophe.svg
+  group: circle
+- name: Аутентификатор
+  thumb: https://apps.gnome.org/icons/scalable/com.belmoussaoui.Authenticator.svg
+  summary: Создание двухфакторных кодов
+  group: circle
+- name: Видеотриммер
+  summary: Быстрая обрезка видео-файлов
+  thumb: https://apps.gnome.org/icons/scalable/org.gnome.gitlab.YaLTeR.VideoTrimmer.svg
+  group: circle
+- name: Генератор набора веб-шрифтов
+  summary: Легко создавайте наборы @font-face
+  thumb: https://apps.gnome.org/icons/scalable/com.rafaelmardojai.WebfontKitGenerator.svg
+  group: circle

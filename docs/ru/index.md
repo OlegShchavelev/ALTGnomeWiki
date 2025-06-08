@@ -2,6 +2,7 @@
 layout: home
 title: Главная
 titleTemplate: ALT Gnome Wiki
+gitChangelog: false
 
 hero:
   name: 'ALT Gnome Wiki'

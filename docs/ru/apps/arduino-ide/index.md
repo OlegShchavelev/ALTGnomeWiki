@@ -28,13 +28,13 @@ Arduino IDE — интегрированная среда разработки �
 
 ![Arduino IDE](/arduino-ide/arduino-ide-1.png)
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 ## Настройка корректной работы с платой по USB
 
 ```shell
-su - 
+su -
 usermod -aG dialout,tty,uucp $USER
 ```
 

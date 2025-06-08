@@ -33,4 +33,4 @@ Linux Sound Plugins — коллекция плагинов для обрабо�
 
 
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->

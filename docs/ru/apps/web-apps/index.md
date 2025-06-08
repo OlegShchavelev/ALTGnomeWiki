@@ -23,5 +23,5 @@ Web Apps — приложение с открытым исходным кодо�
 
 ![Интерфейс Web Apps](/web-apps/preview.png)
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

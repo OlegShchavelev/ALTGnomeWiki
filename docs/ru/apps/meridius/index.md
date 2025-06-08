@@ -51,9 +51,9 @@ Meridius — это абсолютно бесплатное приложение
 - Подключайте свои приложения к Meridius, используя встроенный сервер
 - И многое другое!
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 :::info
 При использовании EPM Play возможна проблема в получении кода смс при двухфакторной авторизации

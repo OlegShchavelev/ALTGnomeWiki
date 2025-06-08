@@ -20,7 +20,7 @@ appstream:
 
 Fish — Умная и удобная оболочка для операционных систем на базе ядра Linux
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
 
 ## Установка Fish оболочкой по умолчанию для вашего пользователя
 

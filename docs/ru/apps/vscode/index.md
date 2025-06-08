@@ -29,8 +29,8 @@ appstream:
 
 Visual Studio Code — инструмент, который сочетает в себе простоту редактора кода с тем, что нужно разработчикам для основного цикла: редактирования, сборки и отладки. Приложение выпускается с настройками, специфичными для Microsoft, выпущенный по традиционной [лицензии Microsoft на продукт](https://code.visualstudio.com/License/).
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ## Использование Node.js в изолированной среде в приложении VS Code
 

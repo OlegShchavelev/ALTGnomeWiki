@@ -22,4 +22,4 @@ Ungoogled Chromium — [Chromium](/chromium) без привязки веб-се
 
 ![Интерфейс Ungoogled Chromium](/ungoogled-chromium/preview.png)
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

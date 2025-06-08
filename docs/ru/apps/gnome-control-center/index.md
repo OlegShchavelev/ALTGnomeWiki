@@ -35,4 +35,4 @@ gallery:
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->

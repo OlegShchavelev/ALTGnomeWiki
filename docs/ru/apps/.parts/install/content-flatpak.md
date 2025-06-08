@@ -10,4 +10,4 @@ search: false
 flatpak install flathub {{ $frontmatter?.aggregation?.flatpak?.id ?? $frontmatter?.aggregation?.flatpak }}
 ```
 
-<!--@include: @apps/.parts/install/software-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/software-flatpak.md-->

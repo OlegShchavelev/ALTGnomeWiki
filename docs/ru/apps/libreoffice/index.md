@@ -78,7 +78,7 @@ epm -i LibreOffice
 Если у вас возникает ошибка `The user inteface language cannot be determined`, установите пакет локализации по инструкции в разделе [Локализация](#локализация)
 :::
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 ## Локализация
 

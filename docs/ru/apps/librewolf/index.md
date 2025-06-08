@@ -22,4 +22,4 @@ LibreWolf — независимая версия [Firefox](/firefox), кото�
 
 ![Интерфейс LibreWolf](/librewolf/librewolf-preview.png)
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

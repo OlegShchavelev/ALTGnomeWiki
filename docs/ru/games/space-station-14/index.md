@@ -42,4 +42,4 @@ SS14 — ремейк культовой классики [Space Station 13](htt
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

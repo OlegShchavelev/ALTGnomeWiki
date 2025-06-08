@@ -46,10 +46,10 @@ Beta — промежуточный канал между Nightly и Release
 
 Developer Edition (ранее — Aurora) — по сути, ничем не отличается от Beta, кроме названия и флагов сборки.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/warns/unprivileged-spaces.md-->
-<!--@include: @apps/.parts/install/content-snap.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @ru/apps/.parts/install/content-snap.md-->
 
 ## Firefox GNOME theme
 

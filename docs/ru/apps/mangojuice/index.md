@@ -34,7 +34,7 @@ MangoJuice - приложение для удобного редактирова
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/software-repo.md-->
+<!--@include: @ru/apps/.parts/install/software-repo.md-->
 
 #### Установка через терминал
 

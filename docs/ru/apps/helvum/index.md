@@ -23,5 +23,5 @@ appstream:
 
 Helvum — графический клиент управления PipeWire. Приложение позволяет создавать и удалять соединения между приложениями или устройствами, чтобы перенаправлять поток аудио, видео и MIDI-данных туда, где это необходимо.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

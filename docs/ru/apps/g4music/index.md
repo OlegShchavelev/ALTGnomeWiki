@@ -28,6 +28,6 @@ G4Music — это быстрый и лёгкий музыкальный про�
 
 ![g4music](/g4music/g4music-1.png)
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/install/content-snap.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-snap.md-->

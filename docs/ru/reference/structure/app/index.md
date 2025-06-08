@@ -162,7 +162,7 @@ Amberol воспроизводит музыку, и ничего больше.
 
 <AGWGallery />   <!--[!code focus]-->
 
-<!--{{`@include: @apps/.parts/install/content-repo.md`}}-->
+<!--{{`@include: @ru/apps/.parts/install/content-repo.md`}}-->
 ```
 
 ::: tip :pushpin: Использование нескольких галерей :pencil2:
@@ -198,25 +198,25 @@ Planets.gier.alwaysUnlocked = true
 == Репозиторий
 
 ```markdown-vue
-<!--{{`@include: @apps/.parts/install/content-repo.md`}}-->
+<!--{{`@include: @ru/apps/.parts/install/content-repo.md`}}-->
 ```
 
 == Flatpak
 
 ```markdown-vue
-<!--{{`@include: @apps/.parts/install/content-flatpak.md`}}-->
+<!--{{`@include: @ru/apps/.parts/install/content-flatpak.md`}}-->
 ```
 
 == Snap
 
 ```markdown-vue
-<!--{{`@include: @apps/.parts/install/content-snap.md`}}-->
+<!--{{`@include: @ru/apps/.parts/install/content-snap.md`}}-->
 ```
 
 == EPM Play
 
 ```markdown-vue
-<!--{{`@include: @apps/.parts/install/content-epm-play.md`}}-->
+<!--{{`@include: @ru/apps/.parts/install/content-epm-play.md`}}-->
 ```
 
 :::

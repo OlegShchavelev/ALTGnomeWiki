@@ -27,8 +27,8 @@ MPV — свободный легковесный кроссплатформен
 
 ![Draw attention to the window](/mpv/mpv.png)
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 ## Проблемы с замедлением видео
 

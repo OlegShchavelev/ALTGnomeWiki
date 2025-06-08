@@ -35,8 +35,8 @@ gallery:
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @en/apps/.parts/install/content-repo.md-->
+<!--@include: @en/apps/.parts/install/content-flatpak.md-->
 
 ## Nightly-версия
 

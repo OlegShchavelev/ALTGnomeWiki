@@ -34,7 +34,7 @@ Eclipse IDE for Java Developers — необходимые инструмент�
 
 Eclipse IDE for Web and JavaScript Developers — необходимые инструменты для любого разработчика JavaScript, включая поддержку языка JavaScript, Git-клиент, Mylyn и редакторы для JavaScript, HTML, CSS и XML.
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 Таким же способом можно установить Eclipse IDE for Web and JavaScript Developers
 

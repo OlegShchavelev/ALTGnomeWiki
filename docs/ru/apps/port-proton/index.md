@@ -52,5 +52,5 @@ epm -i portproton i586-{libvulkan1,libd3d,libGL,libgio,libnm,libnsl1,libnss,glib
 Мы рекомендуем перед установкой PortProton обновить операционную систему и ядро до актуального состояния.
 :::
 
-<!--@include: @apps/.parts/install/content-epm-play.md -->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md -->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

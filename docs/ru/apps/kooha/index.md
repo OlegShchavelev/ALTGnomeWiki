@@ -24,5 +24,5 @@ appstream:
 
 Kooha — простой экранный рекордер с минимальным интерфейсом. Вы можете просто нажать кнопку записи без множества дополнительных настроек.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -18,7 +18,7 @@ appstream:
 
 Taskwarrior - приложение для управления задачами с широкими возможностями по кастомизации, с текстовым интерфейсом.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
 
 ## Создание задач
 

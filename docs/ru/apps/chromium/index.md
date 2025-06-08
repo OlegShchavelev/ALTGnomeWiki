@@ -30,9 +30,9 @@ Chromium — проект браузера с открытым исходным 
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/warns/unprivileged-spaces.md-->
 
 ## Отображение Emoji-шрифта при просмотре веб-страниц в браузере Chromium
 

@@ -32,5 +32,5 @@ gallery:
 GNOME Text Editor - это простой текстовый редактор, нацеленный на положительный опыт использования.
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

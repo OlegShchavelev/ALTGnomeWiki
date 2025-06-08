@@ -46,9 +46,9 @@ WPS Office включает следующие приложения:
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ::: tip Если хотите версию свежее - доступна китайская версия
 

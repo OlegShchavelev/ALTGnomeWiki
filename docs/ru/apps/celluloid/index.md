@@ -24,5 +24,5 @@ Celluloid (ранее GNOME MPV) — простой графический ин�
 
 ![celluloid1.png](/celluloid/celluloid-1.png)
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -31,9 +31,9 @@ AnyDesk — программа удалённого доступа, котора
 
 ![AnyDesk](/anydesk/anydesk-1.png)
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 Включить сервис AnyDesk можно следующей командой:
 

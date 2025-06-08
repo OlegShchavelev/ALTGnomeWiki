@@ -22,8 +22,8 @@ appstream:
 
 qBittorrent — свободный кроссплатформенный клиент файлообменной сети BitTorrent. Клиент написан на языке C++, основан на библиотеке libtorrent-rasterbar, графический интерфейс написан на Qt.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 ## Изменение периода сохранения данных
 

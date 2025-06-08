@@ -28,5 +28,5 @@ appstream:
 
 Zoom — платформа для проведения видеоконференций, вебинаров и других онлайн-мероприятий. С его помощью можно общаться с другими пользователями в режиме реального времени, обмениваться файлами и документами, а также использовать различные инструменты для взаимодействия, такие как демонстрация экрана, опросы и виртуальные фоны.
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->

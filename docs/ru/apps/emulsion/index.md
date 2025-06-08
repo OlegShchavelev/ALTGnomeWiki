@@ -32,4 +32,4 @@ Emulsion — приложение для хранения и редактиро�
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

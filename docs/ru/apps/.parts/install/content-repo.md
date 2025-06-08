@@ -6,7 +6,7 @@ search: false
 
 **{{ $frontmatter?.appstream?.name }}** можно установить любым привычным и удобным способом:
 
-<!--@include: @apps/.parts/install/software-repo.md-->
+<!--@include: @ru/apps/.parts/install/software-repo.md-->
 
 **Установка через терминал**
 

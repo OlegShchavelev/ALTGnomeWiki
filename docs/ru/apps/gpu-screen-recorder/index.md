@@ -23,5 +23,5 @@ GPU Screen Recorder — программа для записи экрана. П�
 
 ![GPU Screen Recorder](/gpu-screen-recorder/gpu-screen-recorder-1.png)
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

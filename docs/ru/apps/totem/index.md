@@ -28,5 +28,5 @@ appstream:
 
 Приложение Видео включает в себя дополнительную функциональность: загрузчик субтитров, возможность замедления или ускорения проигрывания, создание галереи снимков экрана и запись DVD.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

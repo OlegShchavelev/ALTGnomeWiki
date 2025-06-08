@@ -19,4 +19,4 @@ appstream:
 
 OpenRazer — набор драйверов для устройств Razer, включающий драйверы ядра, службы DBus и привязки Python для работы с интерфейсом DBus.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->

@@ -42,5 +42,5 @@ gallery:
 Режим программирования поддерживает преобразования между распространёнными системами счисления (двоичной, восьмеричной, десятичной и шестнадцатеричной), булеву алгебру, обратный и дополнительный код числа, преобразование кодов символов и другие возможности.
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

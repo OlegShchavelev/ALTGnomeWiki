@@ -23,7 +23,7 @@ Sonic 3 A.I.R — кроссплатформенный порт игры Sonic 3
 
 ![Геймплей Sonic 3 A.I.R](/sonic3-a.i.r/sonic3-a.i.r-1.png)
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 ## Установка модов
 

@@ -24,7 +24,7 @@ Timeshift — инструмент для автоматического соз�
 
 ![Timeshift](/timeshift/timeshift.png)
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
 
 ## Восстановление из терминала
 

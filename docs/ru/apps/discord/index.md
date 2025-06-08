@@ -15,7 +15,7 @@ appstream:
     link: https://choosealicense.com/licenses/cc0-1.0/
   keywords:
     - proprietary
-    - restrictions  
+    - restrictions
   developer:
     name: Discord Inc.
   url:
@@ -40,5 +40,5 @@ Discord — платформа для голосового общения и о�
 
 ![Discord](/discord/discord-1.png)
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->

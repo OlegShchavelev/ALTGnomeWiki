@@ -25,5 +25,5 @@ appstream:
 
 Resources — простой, но мощный монитор ваших системных ресурсов и процессов, написанный на Rust и использующий GTK 4 и libadwaita в качестве графического интерфейса. Он способен отображать использование и подробную информацию о вашем процессоре, памяти, графических процессорах, сетевых интерфейсах и блочных устройствах. Отображает список запущенных графических приложений и процессов.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

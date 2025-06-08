@@ -27,9 +27,9 @@ appstream:
 
 Opera — быстрый, безопасный и удобный браузер, в котором есть всё необходимое для конфиденциальной и безопасной работы в Интернете.
 
-<!--@include: @apps/.parts/warns/unprivileged-spaces.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ## Выбор предпочитаемого языка (русификация браузера Opera)
 

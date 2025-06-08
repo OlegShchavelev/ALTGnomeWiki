@@ -30,5 +30,5 @@ appstream:
 
 Глаз GNOME также позволяет просматривать изображения в полноэкранном слайд-шоу или установить изображение в качестве фона рабочего стола. Приложение считывает теги камеры для автоматического поворота изображений в правильную портретную или альбомную ориентацию.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

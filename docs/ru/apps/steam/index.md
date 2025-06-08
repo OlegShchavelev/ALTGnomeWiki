@@ -35,9 +35,9 @@ Steam — онлайн-сервис цифрового распростране�
 Для корректной работы Steam рекомендуется использовать установку с помощью epm play
 :::
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ## Как поменять язык в Steam
 

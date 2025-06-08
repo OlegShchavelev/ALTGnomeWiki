@@ -37,5 +37,5 @@ AniLibrix — десктопный аниме-кинотеатр Анилибр�
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-snap.md-->
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-snap.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->

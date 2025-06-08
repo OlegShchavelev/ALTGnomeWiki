@@ -3,7 +3,7 @@ aggregation:
   flatpak:
     id: io.github.Figma_Linux.figma_linux
     build: unofficial
-  snap: 
+  snap:
      id: figma-linux
      build: unofficial
   epm:
@@ -31,10 +31,10 @@ Figma — неофициальная версия Figma для Linux, постр
 
 ![Figma](/figma/figma-1.png)
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
-<!--@include: @apps/.parts/warns/unprivileged-spaces.md-->
-<!--@include: @apps/.parts/install/content-snap.md-->
-<!--@include: @apps/.parts/install/content-epm-play.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @ru/apps/.parts/install/content-snap.md-->
+<!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ### Установка из репозитория GitHub
 

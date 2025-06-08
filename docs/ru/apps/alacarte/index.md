@@ -25,4 +25,4 @@ Alacarte — редактор меню для GNOME, использующий с
 
 ![Alacarte](/alacarte/alacarte-1.png)
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->

@@ -58,7 +58,7 @@ epm -i turtle-nautilus
 nautilus -q
 ```
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 Чтобы начать работу с дополнением, вам нужно перезагрузить «Файлы». Для этого в терминале введите:
 ```shell

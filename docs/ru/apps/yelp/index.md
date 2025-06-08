@@ -35,4 +35,4 @@ Yelp — приложение для просмотра справки GNOME. Э
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->

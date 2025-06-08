@@ -22,5 +22,5 @@ appstream:
 
 Mission Center — приложение для мониторинга использования системных ресурсов. Контроль использования ресурсов центрального и графического процессоров, памяти, диска и сети.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

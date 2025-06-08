@@ -35,4 +35,4 @@ gallery:
 Управляемая экскурсия и приветствие для GNOME.
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->

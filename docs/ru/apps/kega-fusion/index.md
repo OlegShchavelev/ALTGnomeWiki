@@ -18,4 +18,4 @@ appstream:
 
 Kega Fusion — эмулятор консолей Sega с закрытым исходным кодом.
 
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

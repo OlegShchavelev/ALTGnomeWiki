@@ -30,22 +30,22 @@ gallery:
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
 
 ## Доступные плагины
 
 ### Tweaks
 
-```shell 
-su - 
+```shell
+su -
 apt-get update
 apt-get install tuner-tweaks
 ```
 
 ### Panel
 
-```shell 
-su - 
+```shell
+su -
 apt-get update
 apt-get install tuner-panel
 ```

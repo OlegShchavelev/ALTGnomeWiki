@@ -1,18 +1,15 @@
 // https://vitepress.dev/guide/custom-theme
 
 /* System */
-import { h } from 'vue'
+import { h, watch } from 'vue'
 import { useRoute } from 'vitepress'
-import type { Theme } from 'vitepress'
+import { useData, type Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import imageViewer from 'vitepress-plugin-image-viewer'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 /* Plugins options */
-import {
-  nolebasePageProperties,
-  yandexMetrikaOptions
-} from '../config/plugins/index.ts'
+import { nolebasePageProperties, yandexMetrikaOptions } from '../config/plugins/index.ts'
 
 /* AGW */
 import AGWTeamPage from '@theme/components/AGWTeamPage.vue'
@@ -50,6 +47,8 @@ import type { Options as NEROptions } from '@nolebase/vitepress-plugin-enhanced-
 
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 
+import { useI18n } from './plugins/i18n'
+
 /* Stylesheets */
 import 'uno.css'
 import './styles/style.css'
@@ -83,12 +82,21 @@ export default {
     ctx.app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
     ctx.app.use(NolebaseGitChangelogPlugin)
+    ctx.app.use(useI18n)
 
     enhanceAppWithTabs(ctx.app)
   },
   setup() {
     // Get route
     const route = useRoute()
+    const { lang } = useData()
+    watch(
+      lang,
+      (val) => {
+        useI18n.global.locale.value = val
+      },
+      { immediate: true }
+    )
     // Using
     imageViewer(route, '.vp-doc img:not(.gallery, .VPImage)', {
       title: true,

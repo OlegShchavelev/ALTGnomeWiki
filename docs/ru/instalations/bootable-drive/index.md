@@ -44,7 +44,7 @@ epm -i altmediawriter
 
 ![Окно ALT Media Writer](/bootable-drive/bootable-drive-alt-media-writer-1.png)
 
-2. Откройте AMW и выберите пункт `Другой образ`:
+2. Откройте AGW и выберите пункт `Другой образ`:
 
 ![ALT Media Writer с выбранным образом](/bootable-drive/bootable-drive-alt-media-writer-2.png)
 

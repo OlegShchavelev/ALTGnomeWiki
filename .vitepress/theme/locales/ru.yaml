@@ -1,0 +1,23 @@
+meta:
+  bagdes:
+    core: 'GNOME Core'
+    circle: 'GNOME Circle'
+    adaptive: 'Адаптивный'
+    proprietary: 'Проприетарное'
+    restrictions: 'Региональные ограничения'
+    oobe: 'Предустановлено'
+    dontthemes: 'Please don’t theme'
+  developer:
+    caption: Разработчик
+  lists:
+    homepage: Сайт проекта
+    contact: Связь с нами
+    help: Справка
+    translate: Участие в переводах
+    bugtracker: Сообщить о проблеме
+    vcs-browser: Посмотреть исходный код
+    contribute: Внести вклад в развитие приложения
+  actions:
+    sisyphus: Сизиф
+    flatpak: Flapak
+    snap: Snap

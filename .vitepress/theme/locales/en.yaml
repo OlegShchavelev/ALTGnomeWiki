@@ -1,0 +1,23 @@
+meta:
+  bagdes:
+    core: GNOME Core
+    circle: GNOME Circle
+    adaptive: Adaptive
+    proprietary: Proprietary
+    restrictions: Regional restrictions
+    oobe: OOBELOCAL
+    dontthemes: Please don’t theme
+  developer:
+    caption: Developer
+  lists:
+    homepage: Project Website
+    contact: Contact
+    help: Help
+    translate: Contribute Translations
+    bugtracker: Report an Issue
+    vcs-browser: Browse the source code
+    contribute: Contribute to the App
+  actions:
+    sisyphus: Sisyphus
+    flatpak: Flapak
+    snap: Snap

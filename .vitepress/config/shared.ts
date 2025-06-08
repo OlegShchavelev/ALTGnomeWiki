@@ -32,6 +32,9 @@ import {
 
 import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions } from './plugins'
 
+import vueI18n from '@intlify/unplugin-vue-i18n/vite'
+import Yaml from '@rollup/plugin-yaml'
+
 export const shared = defineConfig({
   title: 'ALT Gnome Wiki',
   titleTemplate: ':title — ALT Gnome Wiki',
@@ -62,6 +65,7 @@ export const shared = defineConfig({
         filename: './.tools/chunk_analyse/stats.html'
       }) as PluginOption,
       UnoCSS(),
+      Yaml(),
       GitChangelog(nolebaseGitChangelogOptions.plugin),
       GitChangelogMarkdownSection(nolebaseGitChangelogOptions.pluginSections),
       PageProperties(),
@@ -73,6 +77,9 @@ export const shared = defineConfig({
           }
           return false
         }
+      }),
+      vueI18n({
+        ssr: true
       })
     ],
     optimizeDeps: {
@@ -124,6 +131,38 @@ export const shared = defineConfig({
     },
     outline: {
       level: [2, 3]
+    },
+    meta: {
+      keywords: {
+        core: 'info',
+        circle: 'success',
+        adaptive: 'tip',
+        proprietary: 'danger',
+        restrictions: 'danger',
+        oobe: 'warning',
+        dontthemes: 'success-1'
+      },
+      actions: {
+        sisyphus: {
+          theme: 'sisyphus',
+          target: '_blank',
+          baseUrl: '//packages.altlinux.org/ru/sisyphus/srpms/'
+        },
+        flatpak: {
+          theme: 'flatpak',
+          target: '_blank',
+          baseUrl: '//flathub.org/ru/apps/'
+        },
+        snap: {
+          theme: 'snap',
+          target: '_blank',
+          baseUrl: '//snapcraft.io/'
+        },
+        more: {
+          theme: 'more',
+          target: '_blank'
+        }
+      }
     }
   },
   markdown: {

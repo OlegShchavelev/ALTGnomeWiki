@@ -1,137 +1,62 @@
 <script setup lang="ts">
-import { type Ref, computed } from 'vue'
-import { useData } from 'vitepress'
-
-import AGWAsideMetaList from './AGWAsideMetaList.vue'
-import AGWAsideMetaLink from './AGWAsideMetaLink.vue'
-import AGWAsideMetaKeyword from './AGWAsideMetaKeyword.vue'
-import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
-
-import { getLists, getLinks, getKeywords, getLicence, getDonation } from '../composables/asidemeta'
+import { computed } from 'vue'
+import { useData } from '../composables/data'
+import AGWAsideMeta from './AGWAsideMeta.vue'
 
 const { frontmatter, theme } = useData()
 
-const props = computed(() => {
-  if (!frontmatter.value.appstream) return
+const fm = computed(() => {
+  const appstream = frontmatter.value.appstream ?? {}
+  const { icon, name, summary, developer } = appstream
+  const aggregation = frontmatter.value.aggregation
+  const meta = theme.value.meta
 
-  const { icon, name, summary, metadata_license, developer, keywords, url } = frontmatter.value.appstream
-  const links = frontmatter.value.aggregation
-  const config = theme.value.asideMeta
+  const keywords = appstream.keywords?.map((keyword: string, key: number) => {
+    const types = meta.keywords
+    return {
+      name: keyword,
+      type: types[keyword] ?? 'tip'
+    }
+  })
+
+  const lists = Object.entries(appstream.url ?? {})?.map(([key, value]: [string, string]) => ({
+    caption: key,
+    link: value
+  }))
+
+  const actions = Object.entries(aggregation ?? {})?.map(([key, value]: [string, string]) => ({
+    id: value,
+    text: key,
+    ...meta.actions[key]
+  }))
+
+  const showAsideMeta = Object.keys(appstream).length
 
   return {
-    thumb: icon,
-    name: name,
-    title: summary,
-    keywords: getKeywords(keywords, config.keywords),
-    developer: developer,
-    lists: getLists(
-      { ...getLicence(frontmatter.value?.appstream?.metadata_license), ...url },
-      config.lists.labels
-    ),
-    links: getLinks({ ...getDonation(url.donation), ...links }, config.links)
+    showAsideMeta: showAsideMeta,
+    appstream: {
+      icon: icon,
+      name: name,
+      summary: summary,
+      developer: developer,
+      keywords: keywords,
+      lists: lists,
+      actions: actions
+    }
   }
 })
 </script>
 
 <template>
-  <article v-if="props" class="AKWDocsAsideMeta">
-    <figure class="figure" v-if="props.thumb">
-      <VPImage :image="props.thumb" :alt="props.thumb.alt ?? props.name" />
-    </figure>
-    <div class="body">
-      <div v-if="props.title" class="title">{{ props.title }}</div>
-      <AGWAsideMetaKeyword :keywords="props.keywords" />
-      <div v-if="props.developer" class="developers">
-        <figure v-if="props.developer?.avatar" class="avatar">
-          <VPImage :image="props.developer?.avatar" :alt="props.developer?.name" />
-        </figure>
-        <div>
-          <div class="caption">Разработчик</div>
-          <div class="name">
-            {{ props.developer?.name }}
-            <span class="nickname">
-              {{ props.developer?.nickname }}
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <AGWAsideMetaList :lists="props.lists" />
-    <AGWAsideMetaLink :links="props.links" />
-  </article>
+  <AGWAsideMeta
+    class="AGWDocsAsideMeta"
+    v-if="fm.showAsideMeta"
+    :icon="fm.appstream.icon"
+    :name="fm.appstream.name"
+    :summary="fm.appstream.summary"
+    :developer="fm.appstream.developer"
+    :keywords="fm.appstream.keywords"
+    :lists="fm.appstream.lists"
+    :actions="fm.appstream.actions"
+  />
 </template>
-
-<style scoped>
-.AKWDocsAsideMeta {
-  overflow: hidden;
-  background-color: var(--vp-c-bg-soft);
-  border-radius: 12px;
-  margin-top: 24px;
-}
-
-.AKWDocsAsideMeta:hover :deep(.VPImage) {
-  filter: grayscale(0) invert(0);
-}
-
-.body {
-  padding: 16px;
-}
-
-.title {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.title:last-child,
-.title:only-child {
-  margin-bottom: 0;
-}
-
-.figure {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 24px;
-}
-
-.figure > :deep(.VPImage) {
-  filter: grayscale(1);
-  transition: filter 0.25s;
-  width: 128px;
-  height: 128px;
-}
-
-.developers {
-  margin-top: 12px;
-  display: flex;
-  gap: 12px;
-}
-
-.avatar {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  box-shadow: var(--vp-shadow-3);
-}
-
-.caption {
-  font-size: 12px;
-  color: var(--vp-c-text-2);
-  font-weight: 500;
-}
-
-.name {
-  line-height: 1.5;
-  font-size: 14px;
-}
-
-.nickname {
-  display: block;
-  font-size: 11px;
-  color: var(--vp-c-text-3);
-  font-weight: 500;
-}
-</style>

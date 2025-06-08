@@ -1,6 +1,7 @@
 import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { packages } from '../../package-lock.json'
 import { vitepressSearchOptions } from './plugins'
+import type { AGWTheme } from '../theme/types/index'
 
 export const nav = (): DefaultTheme.NavItem[] => [
   { text: 'Главная', link: '/' },
@@ -514,7 +515,7 @@ export const sidebarProjectGuide = (): DefaultTheme.SidebarItem[] => [
   }
 ]
 
-export const ru = defineConfigWithTheme<DefaultTheme.Config>({
+export const ru = defineConfigWithTheme<AGWTheme.Config>({
   lang: 'ru-RU',
   description: 'Свободная WIKI по операционной системе ALT Regular Gnome',
   themeConfig: {

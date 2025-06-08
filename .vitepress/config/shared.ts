@@ -1,5 +1,6 @@
 /* System */
-import { defineConfig } from 'vitepress'
+import { defineConfigWithTheme } from 'vitepress'
+import type { AGWTheme } from '../theme/types/index'
 import { fileURLToPath, URL } from 'node:url'
 import { telegram, vk } from '../support/icons'
 import { normalize } from '../support/utils'
@@ -35,7 +36,7 @@ import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions } fro
 import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Yaml from '@rollup/plugin-yaml'
 
-export const shared = defineConfig({
+export const shared = defineConfigWithTheme<AGWTheme.Config>({
   title: 'ALT Gnome Wiki',
   titleTemplate: ':title — ALT Gnome Wiki',
   base: '',

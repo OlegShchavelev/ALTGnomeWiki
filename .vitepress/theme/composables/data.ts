@@ -1,4 +1,4 @@
 import { useData as useData$ } from 'vitepress'
-import type { DefaultTheme } from 'vitepress/theme'
+import type { AGWTheme } from '../types/index'
 
-export const useData: typeof useData$<DefaultTheme.Config> = useData$
+export const useData: typeof useData$<AGWTheme.Config> = useData$

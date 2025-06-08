@@ -5,6 +5,7 @@ interface Actions {
   target: string
   theme: string
   baseUrl: string
+  [key: string]: any
 }
 
 defineProps<{

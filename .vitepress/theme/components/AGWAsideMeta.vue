@@ -4,7 +4,7 @@ import AGWMetaKeywords from './AGWMetaKeyword.vue'
 import AGWMetaDeveloper from './AGWMetaDeveloper.vue'
 import AGWMetaLists from './AGWMetaList.vue'
 import AGWMetaActions from './AGWMetaActions.vue'
-import type { AGMTheme, MetaDeveloper } from '../types/index'
+import type { AGWTheme, MetaDeveloper } from '../types/index'
 
 interface Actions {
   id: string
@@ -18,9 +18,9 @@ defineProps<{
   icon?: string
   name: string
   summary?: string
-  keywords?: AGMTheme.MetaKeywords[]
+  keywords?: AGWTheme.MetaKeywords[]
   developer?: MetaDeveloper
-  lists?: AGMTheme.MetaLists[]
+  lists?: AGWTheme.MetaLists[]
   actions?: Actions[]
 }>()
 </script>

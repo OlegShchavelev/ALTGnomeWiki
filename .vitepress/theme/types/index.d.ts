@@ -35,6 +35,10 @@ export type MetaDeveloper = {
 }
 
 export namespace AGWTheme {
+  export interface Config extends DefaultTheme.Config {
+    meta?: Meta
+  }
+
   export interface AppRows {
     name: string
     thumb?: string

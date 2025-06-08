@@ -24,11 +24,41 @@ const fm = computed(() => {
     link: value
   }))
 
-  const actions = Object.entries(aggregation ?? {})?.map(([key, value]: [string, string]) => ({
-    id: value,
-    text: key,
-    ...meta.actions[key]
-  }))
+  const actions = Object.entries(aggregation ?? {})
+    .filter(([key]) => meta.actions && key in meta.actions)
+    .map(([key, value]) => {
+      // Initialize variables for ID and additional properties
+      let id: string
+      let extraProps: Record<string, any> = {}
+
+      // Process value based on its type
+      if (typeof value === 'string') {
+        // String format: use value directly as ID
+        id = value
+      } else if (value && typeof value === 'object') {
+        // Object format: extract ID property and store other properties
+        id = value.id
+
+        // Preserve all other properties except 'id'
+        const { id: _, ...rest } = value
+        extraProps = rest
+      }
+
+      // Retrieve base action configuration from meta.actions
+      const baseActionConfig = meta.actions[key] || {}
+
+      // Merge properties with priority:
+      // 1. Core properties (id and text)
+      // 2. Base configuration from meta.actions
+      // 3. Additional properties from object format
+      // 4. Guaranteed text = key for translation
+      return {
+        id,
+        ...baseActionConfig,
+        ...extraProps,
+        text: key
+      }
+    })
 
   const showAsideMeta = Object.keys(appstream).length
 

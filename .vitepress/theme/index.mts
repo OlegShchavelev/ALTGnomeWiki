@@ -12,15 +12,16 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import { nolebasePageProperties, yandexMetrikaOptions } from '../config/plugins/index.ts'
 
 /* AGW */
-import AGWTeamPage from '@theme/components/AGWTeamPage.vue'
-import AGWHomeTeam from '@theme/components/AGWHomeTeam.vue'
+import AGWTeam from '@theme/components/AGWTeam.vue'
+import AGWTeams from '@theme/components/AGWTeams.vue'
+import AGWHomeTeams from '@theme/components/AGWHomeTeams.vue'
 import AGWHomeSponsors from '@theme/components/AGWHomeSponsors.vue'
 import AGWDocsAsideMeta from '@theme/components/AGWDocsAsideMeta.vue'
 import AGWCategories from '@theme/components/AGWDocsCategories.vue'
 import AGWGallery from '@theme/components/AGWGallery.vue'
 import AGWLinkBlock from '@theme/components/AGWLinkBlock.vue'
 import AGWAnalogues from '@theme/components/AGWAnalogues.vue'
-import AGWApp from './components/AGWApp.vue'
+import AGWApp from '@theme/components/AGWApp.vue'
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
@@ -64,19 +65,19 @@ export default {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
-      'aside-outline-after': () => h(AGWDocsAsideMeta)
+      'aside-outline-after': () => h(AGWDocsAsideMeta),
+      'home-features-after': () => h(AGWHomeTeams)
     })
   },
 
   enhanceApp(ctx) {
     yandexMetrika(ctx, yandexMetrikaOptions.metrica)
     ctx.app.component('AGWGallery', AGWGallery)
-    ctx.app.component('AGWHomeTeam', AGWHomeTeam)
-    ctx.app.component('AGWHomeSponsors', AGWHomeSponsors)
+    ctx.app.component('Teams', AGWTeams), ctx.app.component('AGWHomeSponsors', AGWHomeSponsors)
     ctx.app.component('AGWLinkBlock', AGWLinkBlock)
     ctx.app.component('AGWAnalogues', AGWAnalogues)
     ctx.app.component('AGWCategories', AGWCategories)
-    ctx.app.component('contribution', AGWTeamPage)
+    ctx.app.component('team', AGWTeam)
     ctx.app.component('app', AGWApp)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)

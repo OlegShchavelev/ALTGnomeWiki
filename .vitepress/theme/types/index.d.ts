@@ -27,6 +27,7 @@ export type MetaActions = {
 }
 
 export type MetaActionsTheme = 'sisyphus' | 'flatpak' | 'snap' | 'more'
+export type Collaborator = 'knowledge' | 'maintainer'
 
 export type MetaDeveloper = {
   avatar: string

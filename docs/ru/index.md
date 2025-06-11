@@ -35,6 +35,11 @@ features:
     title: Открытое сообщество
     details: Путеводитель в мир открытого программного обеспечения.
 
+teams:
+  title: Участники
+  moreText: Все участники
+  moreLink: project/contributions/
+
 sponsors:
   introtext: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
   donationtext: 'Поддержать проект ALT Gnome'
@@ -68,6 +73,4 @@ sponsors:
           img: ./nolebase-logo.svg
           url: https://nolebase.ayaka.io/
 ---
-
-<AGWHomeTeam/>
 <AGWHomeSponsors/>

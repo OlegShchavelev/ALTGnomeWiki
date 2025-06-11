@@ -1,0 +1,55 @@
+- avatar: https://avatars.githubusercontent.com/u/44705058?v=4
+  name:
+    ru: Политов Антон
+    en: Anton Politov
+  title: ampernic
+  collaborator:
+    - knowledge
+    - maintainer
+  links:
+    - icon: github
+      link: https://github.com/Ampernic
+
+- avatar: https://avatars.githubusercontent.com/u/57626821?v=4
+  name:
+    ru: Фомченков Семен
+    en: Semen Fomchenkov
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Armatik
+
+- avatar: https://github.com/X1Z53.png
+  name:
+    ru: Султаниязов Давид
+    en: David Sultaniiazov
+  title: x1z53
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/X1Z53
+
+- avatar: https://avatars.githubusercontent.com/u/36362599?v=4
+  name:
+    ru: Слипенко Максим
+    en: Maxim Slipenko
+  title: Maks1mS
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Maks1mS
+
+- avatar: https://github.com/OlegShchavelev.png
+  name:
+    ru: Щавелев Олег
+    en: Oleg Shchavelev
+  title: olegshchavelev
+  collaborator:
+    - knowledge
+    - maintainer
+  links:
+    - icon: github
+      link: https://github.com/OlegShchavelev

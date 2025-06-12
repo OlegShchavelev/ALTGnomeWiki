@@ -19,10 +19,22 @@ const fm = computed(() => {
     }
   })
 
-  const lists = Object.entries(appstream.url ?? {})?.map(([key, value]: [string, string]) => ({
-    caption: key,
-    link: value
-  }))
+  const lists = [
+    ...(appstream.metadata_license
+      ? [
+          {
+            caption: 'license',
+            link: appstream.metadata_license.link,
+            text: appstream.metadata_license.name
+          }
+        ]
+      : []),
+
+    ...Object.entries(appstream.url ?? {}).map(([key, value]) => ({
+      caption: key,
+      link: value
+    }))
+  ]
 
   const actions = Object.entries(aggregation ?? {})
     .filter(([key]) => meta.actions && key in meta.actions)

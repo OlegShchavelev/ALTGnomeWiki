@@ -49,6 +49,7 @@ export namespace AGWTheme {
   export interface MetaLists {
     caption: string
     link: string
+    text: string
   }
 
   export interface MetaKeywords {

@@ -17,6 +17,7 @@ meta:
     bugtracker: Сообщить о проблеме
     vcs-browser: Посмотреть исходный код
     contribute: Внести вклад в развитие приложения
+    license: Лицензия
   actions:
     sisyphus: Сизиф
     flatpak: Flapak

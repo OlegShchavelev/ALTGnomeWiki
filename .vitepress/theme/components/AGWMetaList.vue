@@ -13,7 +13,7 @@ defineProps<{
     <template v-for="list in lists">
       <dt>{{ $t('meta.lists.' + list.caption) }}</dt>
       <dd>
-        <VPLink :href="list.link">{{ extractDomain(list.link) }}</VPLink>
+        <VPLink :href="list.link">{{ list.text ?? extractDomain(list.link) }}</VPLink>
       </dd>
     </template>
   </dl>

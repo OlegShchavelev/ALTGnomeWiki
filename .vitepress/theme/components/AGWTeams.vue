@@ -7,6 +7,13 @@ import teams from '../../data/teams.data.yaml'
 
 const { site } = useData()
 const lang = computed(() => site.value.lang.replace('ru-RU', 'ru'))
+const transformedTeams = computed(() => {
+  return teams.map((team: any) => ({
+    ...team,
+    name: team.name[lang.value] ?? team.name,
+    desc: typeof team.desc === 'object' && Object.keys(team.desc).length ? team.desc[lang.value] : team.desc
+  }))
+})
 
 export interface Member {
   title: string
@@ -17,9 +24,9 @@ export interface Member {
 interface Props {
   title: string
   lead?: string
-  size: 'small' | 'medium'
-  limit: number
-  tids: Array<string> | null
+  size?: 'small' | 'medium'
+  limit?: number
+  tids?: Array<string> | null
   layout: string
   moreLink?: string
   moreText?: string
@@ -39,17 +46,7 @@ withDefaults(defineProps<Props>(), {
       <template v-if="title" #title> {{ title }} </template>
       <template v-if="lead" #lead>{{ lead }}</template>
     </VPTeamPageTitle>
-    <VPTeamMembers
-      :members="
-        teams
-          .map((team: any) => ({
-            ...team,
-            name: team.name[lang] ?? team.name,
-            desc: typeof team.desc === 'object' && Object.keys(team.desc).length ? team.desc[lang] : team.desc
-          }))
-          .slice(0, 6)
-      "
-    />
+    <VPTeamMembers :members="transformedTeams.slice(0, 6)" />
     <AGWTeamPageAction>
       <template v-if="moreLink" #action>
         <VPButton :text="moreText" class="button" size="big" :href="moreLink" />
@@ -59,14 +56,7 @@ withDefaults(defineProps<Props>(), {
   <VPTeamMembers
     v-else
     :members="
-      teams
-        .map((team: any) => ({
-          ...team,
-          name: team.name[lang] ?? team.name,
-          desc: typeof team.desc === 'object' && Object.keys(team.desc).length ? team.desc[lang] : team.desc
-        }))
-        .slice(0, limit)
-        .filter((team: Member) => (tids ? tids.includes(team.title) : true))
+      transformedTeams.filter((team: Member) => (tids ? tids.includes(team.title) : true)).slice(0, limit)
     "
     :size="size"
     :limit="limit"

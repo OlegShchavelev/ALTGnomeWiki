@@ -41,10 +41,10 @@ teams:
   moreLink: project/contributions/
 
 sponsors:
-  introtext: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
+  message: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
   donationtext: 'Поддержать проект ALT Gnome'
   donationlink: 'https://boosty.to/alt_gnome'
-  collections:
+  data:
     - tier: Организационная структура
       size: big
       items:
@@ -73,4 +73,3 @@ sponsors:
           img: ./nolebase-logo.svg
           url: https://nolebase.ayaka.io/
 ---
-<AGWHomeSponsors/>

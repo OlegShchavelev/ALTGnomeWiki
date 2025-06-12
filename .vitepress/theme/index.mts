@@ -66,14 +66,14 @@ export default {
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AGWDocsAsideMeta),
-      'home-features-after': () => h(AGWHomeTeams)
+      'home-features-after': () => [h(AGWHomeTeams), h(AGWHomeSponsors)]
     })
   },
 
   enhanceApp(ctx) {
     yandexMetrika(ctx, yandexMetrikaOptions.metrica)
     ctx.app.component('AGWGallery', AGWGallery)
-    ctx.app.component('Teams', AGWTeams), ctx.app.component('AGWHomeSponsors', AGWHomeSponsors)
+    ctx.app.component('Teams', AGWTeams)
     ctx.app.component('AGWLinkBlock', AGWLinkBlock)
     ctx.app.component('AGWAnalogues', AGWAnalogues)
     ctx.app.component('AGWCategories', AGWCategories)

@@ -9,6 +9,8 @@ aside: false
 rows:
   - title: Основные приложения
     lead: Приложения GNOME Core предназначены для выполнения обычных задач. Они обычно предустановлены в вашей системе Альт.
+    group: core
   - title: Приложения Circle
     lead: GNOME Circle содержит приложения, расширяющие задачи GNOME Core.
+    group: circle
 ---

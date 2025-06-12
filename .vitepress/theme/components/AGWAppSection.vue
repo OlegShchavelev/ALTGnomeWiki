@@ -3,9 +3,15 @@ import AGWAppPageSection from './AGWAppPageSection.vue'
 import AGWAppRows from './AGWAppRows.vue'
 import apps from '../../../docs/ru/apps-gnome/apps.yaml'
 
+const filterAppsByGroup = (group?: string) => {
+  if (!group) return apps
+  return apps.filter((app) => app.group === group)
+}
+
 export interface App {
   title: string
   lead?: string
+  group?: string
 }
 
 defineProps<{
@@ -18,7 +24,7 @@ defineProps<{
     <template #title> {{ row.title }}</template>
     <template v-if="row.lead" #lead> {{ row.lead }}</template>
     <template #rows>
-      <AGWAppRows :rows="apps" />
+      <AGWAppRows :rows="filterAppsByGroup(row.group)" />
     </template>
   </AGWAppPageSection>
 </template>

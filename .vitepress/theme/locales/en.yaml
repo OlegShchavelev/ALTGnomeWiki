@@ -21,3 +21,5 @@ meta:
     sisyphus: Sisyphus
     flatpak: Flapak
     snap: Snap
+member:
+  sponsor: Sponsor

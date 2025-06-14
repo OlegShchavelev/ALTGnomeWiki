@@ -48,7 +48,7 @@ withDefaults(defineProps<Props>(), {
     </div>
     <div v-if="member.sponsor" class="sp">
       <VPLink class="sp-link" :href="member.sponsor" no-icon>
-        <span class="vpi-heart sp-icon" /> {{ member.actionText || 'Sponsor' }}
+        <span class="vpi-heart sp-icon" /> {{ member.actionText || $t('member.sponsor') }}
       </VPLink>
     </div>
   </article>

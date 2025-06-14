@@ -93,11 +93,18 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
       ]
     },
     resolve: {
-      alias: {
-        '@vitepress/theme': fileURLToPath(
-          new URL('../node_modules/vitepress/dist/client/theme-default', import.meta.url)
-        )
-      }
+      alias: [
+        {
+          find: '@vitepress/theme',
+          replacement: fileURLToPath(
+            new URL('../node_modules/vitepress/dist/client/theme-default', import.meta.url)
+          )
+        },
+        {
+          find: /^.*\/VPTeamMembersItem\.vue$/,
+          replacement: fileURLToPath(new URL('../theme/components/AGWTeamMembersItem.vue', import.meta.url))
+        }
+      ]
     }
   },
   themeConfig: {

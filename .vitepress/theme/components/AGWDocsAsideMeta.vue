@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useData } from '../composables/data'
 import { transformKeywords, transformActions } from '../composables/useMeta'
 import AGWAsideMeta from './AGWAsideMeta.vue'
+import type { AGWTheme } from '../types/index'
 
 const { frontmatter, theme } = useData()
 
@@ -12,7 +13,7 @@ const fm = computed(() => {
   const aggregation = frontmatter.value.aggregation
   const meta = theme.value.meta
 
-  const lists = [
+  const lists: AGWTheme.MetaLists[] = [
     ...(appstream.metadata_license
       ? [
           {
@@ -25,8 +26,7 @@ const fm = computed(() => {
 
     ...Object.entries(appstream.url ?? {}).map(([key, value]) => ({
       caption: key,
-      link: value,
-      text: key
+      link: value
     }))
   ]
 

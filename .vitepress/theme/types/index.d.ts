@@ -50,8 +50,8 @@ export namespace AGWTheme {
 
   export interface MetaLists {
     caption: string
-    link: string
-    text?: string
+    link: any
+    text?: any
   }
 
   export interface MetaKeywords {

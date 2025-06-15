@@ -552,10 +552,10 @@ export const ru = defineConfigWithTheme<AGWTheme.Config>({
       linkText: 'Вернуться на главную'
     },
     footer: {
-      message: 'Содержание доступно <a href="/licence.html">по лицензии MIT</a>',
+      message:
+        'Опубликовано под лицензией GPL-3.0+. Содержание доступно по лицензии CC BY-SA 4.0, если не указано иное.',
       copyright: `
-              2023-${new Date().getFullYear()} ALT Gnome Wiki,
-              разработано на платформе <a href="//vitepress.dev/">VitePress ${packages['node_modules/vitepress'].version}</a>
+              2023-${new Date().getFullYear()} Разработано участниками ALT Gnome Wiki на платформе <a href="//vitepress.dev/">VitePress ${packages['node_modules/vitepress'].version}</a> при поддержке ALT Gnome</a>
             `
     }
   }

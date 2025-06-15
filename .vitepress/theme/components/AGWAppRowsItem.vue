@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import type { AGWTheme } from '../types/index'
+import AGWMetaKeywords from './AGWMetaKeyword.vue'
+import AGWMetaActions from './AGWMetaActions.vue'
 
 interface Props {
   size?: 'small' | 'medium'
@@ -14,8 +16,9 @@ withDefaults(defineProps<Props>(), {
 <template>
   <article class="AGWAppRowsItem" :class="[size]">
     <div class="card">
-      <figure v-if="row.thumb" class="img">
-        <img class="img" :src="row.thumb" :alt="row.name" />
+      <AGWMetaKeywords :keywords="row.keywords" />
+      <figure v-if="row.icon" class="img">
+        <img class="img" :src="row.icon" :alt="row.name" />
       </figure>
       <div class="body">
         <div class="title">
@@ -26,6 +29,7 @@ withDefaults(defineProps<Props>(), {
         </div>
       </div>
     </div>
+    <AGWMetaActions :actions="row.actions" />
   </article>
 </template>
 
@@ -40,15 +44,24 @@ withDefaults(defineProps<Props>(), {
   overflow: hidden;
 }
 
+.AGWAppRowsItem:deep(.badges) {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  margin-top: 0;
+}
+
 .card {
   flex-grow: 1;
   background-color: var(--vp-c-bg-soft);
   padding: 48px 32px;
+  position: relative;
 }
 
 .AGWAppRowsItem.medium .img {
   width: 96px;
   height: 96px;
+  margin-top: 1rem;
 }
 
 .AGWAppRowsItem.medium .body {

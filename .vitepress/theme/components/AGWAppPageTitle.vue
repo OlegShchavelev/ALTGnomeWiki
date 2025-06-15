@@ -1,8 +1,8 @@
 <template>
-  <div class="AMWAppPageTitle">
-    <h1 v-if="$slots.title" class="title">
+  <div class="AGWAppPageTitle">
+    <h2 v-if="$slots.title" class="title">
       <slot name="title" />
-    </h1>
+    </h2>
     <p v-if="$slots.lead" class="lead">
       <slot name="lead" />
     </p>
@@ -10,19 +10,19 @@
 </template>
 
 <style scoped>
-.AMWAppPageTitle {
+.AGWAppPageTitle {
   padding: 48px 32px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  .AMWAppPageTitle {
+  .AGWAppPageTitle {
     padding: 64px 48px 48px;
   }
 }
 
 @media (min-width: 960px) {
-  .AMWAppPageTitle {
+  .AGWAppPageTitle {
     padding: 80px 64px 48px;
   }
 }

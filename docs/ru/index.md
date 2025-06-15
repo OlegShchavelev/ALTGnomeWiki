@@ -40,6 +40,11 @@ teams:
   moreText: Все участники
   moreLink: project/contributions/
 
+apps:
+  title: Приложения GNOME
+  moreText: Все приложения
+  moreLink: apps-gnome/
+
 sponsors:
   message: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
   donationtext: 'Поддержать проект ALT Gnome'

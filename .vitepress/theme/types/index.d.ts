@@ -42,14 +42,16 @@ export namespace AGWTheme {
 
   export interface AppRows {
     name: string
-    thumb?: string
+    icon?: string
     summary?: string
+    keywords: MetaKeywords[]
+    actions?: MetaAction[]
   }
 
   export interface MetaLists {
     caption: string
     link: string
-    text: string
+    text?: string
   }
 
   export interface MetaKeywords {

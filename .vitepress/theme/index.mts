@@ -22,6 +22,7 @@ import AGWGallery from '@theme/components/AGWGallery.vue'
 import AGWLinkBlock from '@theme/components/AGWLinkBlock.vue'
 import AGWAnalogues from '@theme/components/AGWAnalogues.vue'
 import AGWApp from '@theme/components/AGWApp.vue'
+import AGWHomeApps from '@theme/components/AGWHomeApps.vue'
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
@@ -66,7 +67,7 @@ export default {
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AGWDocsAsideMeta),
-      'home-features-after': () => [h(AGWHomeTeams), h(AGWHomeSponsors)]
+      'home-features-after': () => [h(AGWHomeTeams), h(AGWHomeApps), h(AGWHomeSponsors)]
     })
   },
 

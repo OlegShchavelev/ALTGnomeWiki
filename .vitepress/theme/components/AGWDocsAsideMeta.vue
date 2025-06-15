@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from '../composables/data'
+import { transformKeywords, transformActions } from '../composables/useMeta'
 import AGWAsideMeta from './AGWAsideMeta.vue'
 
 const { frontmatter, theme } = useData()
@@ -10,14 +11,6 @@ const fm = computed(() => {
   const { icon, name, summary, developer } = appstream
   const aggregation = frontmatter.value.aggregation
   const meta = theme.value.meta
-
-  const keywords = appstream.keywords?.map((keyword: string, key: number) => {
-    const types = meta.keywords
-    return {
-      name: keyword,
-      type: types[keyword] ?? 'tip'
-    }
-  })
 
   const lists = [
     ...(appstream.metadata_license
@@ -32,45 +25,10 @@ const fm = computed(() => {
 
     ...Object.entries(appstream.url ?? {}).map(([key, value]) => ({
       caption: key,
-      link: value
+      link: value,
+      text: key
     }))
   ]
-
-  const actions = Object.entries(aggregation ?? {})
-    .filter(([key]) => meta.actions && key in meta.actions)
-    .map(([key, value]) => {
-      // Initialize variables for ID and additional properties
-      let id: string
-      let extraProps: Record<string, any> = {}
-
-      // Process value based on its type
-      if (typeof value === 'string') {
-        // String format: use value directly as ID
-        id = value
-      } else if (value && typeof value === 'object') {
-        // Object format: extract ID property and store other properties
-        id = value.id
-
-        // Preserve all other properties except 'id'
-        const { id: _, ...rest } = value
-        extraProps = rest
-      }
-
-      // Retrieve base action configuration from meta.actions
-      const baseActionConfig = meta.actions[key] || {}
-
-      // Merge properties with priority:
-      // 1. Core properties (id and text)
-      // 2. Base configuration from meta.actions
-      // 3. Additional properties from object format
-      // 4. Guaranteed text = key for translation
-      return {
-        id,
-        ...baseActionConfig,
-        ...extraProps,
-        text: key
-      }
-    })
 
   const showAsideMeta = Object.keys(appstream).length
 
@@ -81,9 +39,9 @@ const fm = computed(() => {
       name: name,
       summary: summary,
       developer: developer,
-      keywords: keywords,
+      keywords: transformKeywords(appstream.keywords, meta.keywords),
       lists: lists,
-      actions: actions
+      actions: transformActions(aggregation, meta.actions)
     }
   }
 })

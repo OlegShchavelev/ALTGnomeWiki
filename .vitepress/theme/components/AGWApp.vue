@@ -3,7 +3,7 @@ import { VPHomeContent } from 'vitepress/theme'
 import { useData } from '../composables/data'
 import AGWAppPage from './AGWAppPage.vue'
 import AGWAppPageTitle from './AGWAppPageTitle.vue'
-import AGWAppSection from './AGWAppSection.vue'
+import AGWAppCollections from './AGWAppCollections.vue'
 
 const { frontmatter: fm } = useData()
 </script>
@@ -14,7 +14,7 @@ const { frontmatter: fm } = useData()
       <template v-if="fm.longtitle" #title> {{ fm.longtitle }} </template>
       <template v-if="fm.introtext" #lead>{{ fm.introtext }}</template>
     </AGWAppPageTitle>
-    <AGWAppSection :rows="fm.rows" />
+    <AGWAppCollections :rows="fm.rows" />
     <VPHomeContent>
       <Content />
     </VPHomeContent>

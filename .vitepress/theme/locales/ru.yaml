@@ -6,7 +6,7 @@ meta:
     proprietary: 'Проприетарное'
     restrictions: 'Региональные ограничения'
     oobe: 'Предустановлено'
-    dontthemes: 'Please don’t theme'
+    donttheme: 'Please don’t theme'
   developer:
     caption: Разработчик
   lists:

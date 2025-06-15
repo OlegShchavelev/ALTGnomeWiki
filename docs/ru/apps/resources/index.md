@@ -9,7 +9,7 @@ appstream:
   summary: Простой, но мощный монитор ваших системных ресурсов и процессов, написанный на Rust и использующий GTK 4 и libadwaita.
   keywords:
     - adaptive
-    - dontthemes
+    - donttheme
   developer:
     name: nokyan & Community
     avatar: /resources/resources-avatar.png

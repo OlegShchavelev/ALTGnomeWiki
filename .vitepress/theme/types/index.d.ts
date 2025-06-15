@@ -15,7 +15,7 @@ export type MetaKeywordKey =
   | 'proprietary'
   | 'restrictions'
   | 'oobe'
-  | 'dontthemes'
+  | 'donttheme'
 
 export type MetaKeywordType = 'info' | 'success' | 'tip' | 'danger' | 'warning' | 'success-1'
 

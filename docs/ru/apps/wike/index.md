@@ -12,7 +12,7 @@ appstream:
   summary: Ищите и читайте статьи в Википедии
   keywords:
     - circle
-    - dontthemes
+    - donttheme
   developer:
     name: GNOME
     avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48

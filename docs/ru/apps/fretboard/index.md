@@ -13,7 +13,7 @@ appstream:
   keywords:
     - circle
     - adaptive
-    - dontthemes
+    - donttheme
   developer:
     name: Brage Fuglseth
     nickname: bragefuglseth

@@ -6,7 +6,7 @@ meta:
     proprietary: Proprietary
     restrictions: Regional restrictions
     oobe: OOBELOCAL
-    dontthemes: Please don’t theme
+    donttheme: Please don’t theme
   developer:
     caption: Developer
   lists:

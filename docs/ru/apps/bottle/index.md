@@ -13,7 +13,7 @@ appstream:
     name: GNU GPLv3
     link: https://choosealicense.com/licenses/gpl-3.0/
   keywords:
-    - dontthemes
+    - donttheme
   url:
     homepage: https://usebottles.com/
     bugtracker: https://github.com/bottlesdevs/Bottles/issues

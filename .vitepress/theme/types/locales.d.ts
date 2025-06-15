@@ -7,7 +7,7 @@ export interface Locale extends Record<string, any> {
       proprietary: string
       restrictions: string
       oobe: string
-      dontthemes: string
+      donttheme: string
     }
     developer: {
       caption: string

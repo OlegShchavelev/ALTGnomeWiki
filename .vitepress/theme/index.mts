@@ -53,8 +53,9 @@ import { useI18n } from './plugins/i18n'
 
 /* Stylesheets */
 import 'uno.css'
-import './styles/style.css'
-import './styles/custom.css'
+import './assets/styles/style.css'
+import './assets/styles/theme.css'
+import './assets/styles/custom.css'
 import './viewerjs/dist/viewer.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-page-properties/client/style.css'

@@ -1,0 +1,224 @@
+/**
+ * Customize the TPTheme appearance by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Colors
+ *
+ * Each colors have exact same color scale system with 3 levels of solid
+ * colors with different brightness, and 1 soft color.
+ *
+ * - `XXX-1`: The most solid color used mainly for colored text. It must
+ *   satisfy the contrast ratio against when used on top of `XXX-soft`.
+ *
+ * - `XXX-2`: The color used mainly for hover state of the button.
+ *
+ * - `XXX-3`: The color for solid background, such as bg color of the button.
+ *   It must satisfy the contrast ratio with pure white (#ffffff) text on
+ *   top of it.
+ *
+ * - `XXX-soft`: The color used for subtle background such as custom container
+ *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
+ *   on top of it.
+ *
+ *   The soft color must be semi transparent alpha channel. This is crucial
+ *   because it allows adding multiple "soft" colors on top of each other
+ *   to create a accent, such as when having inline code block inside
+ *   custom containers.
+ *
+ * - `default`: The color used purely for subtle indication without any
+ *   special meanings attached to it such as bg color for menu hover state.
+ *
+ * - `brand`: Used for primary brand colors, such as link text, button with
+ *   brand theme, etc.
+ *
+ * - `tip`: Used to indicate useful information. The default theme uses the
+ *   brand color for this by default.
+ *
+ * - `warning`: Used to indicate warning to the users. Used in custom
+ *   container, badges, etc.
+ *
+ * - `danger`: Used to show error, or dangerous message to the users. Used
+ *   in custom container, badges, etc.
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Gray */
+  --vp-c-gray-1: #c0bfbc; /* Light 4 */
+  --vp-c-gray-2: #deddda; /* Light 3 */
+  --vp-c-gray-3: #f6f5f4; /* Light 2 */
+  --vp-c-gray-soft: rgba(119, 118, 123, 0.14); /* Dark 1 + alpha */
+
+  /* Indigo → Blue */
+  --vp-c-indigo-1: #1a5fb4; /* Blue 5 */
+  --vp-c-indigo-2: #1c71d8; /* Blue 4 */
+  --vp-c-indigo-3: #3584e4; /* Blue 3 */
+  --vp-c-indigo-soft: rgba(153, 193, 241, 0.14); /* Blue 1 + alpha */
+
+  /* Purple */
+  --vp-c-purple-1: #9141ac; /* Purple 3 */
+  --vp-c-purple-2: #c061cb; /* Purple 2 */
+  --vp-c-purple-3: #dc8add; /* Purple 1 */
+  --vp-c-purple-soft: rgba(192, 97, 203, 0.14); /* Purple 2 + alpha */
+
+  /* Green */
+  --vp-c-green-1: #26a269; /* Green 5 */
+  --vp-c-green-2: #2ec27e; /* Green 4 */
+  --vp-c-green-3: #33d17a; /* Green 3 */
+  --vp-c-green-soft: rgba(87, 227, 137, 0.14); /* Green 2 + alpha */
+
+  /* Yellow → Orange */
+  --vp-c-yellow-1: #c64600; /* Orange 5 */
+  --vp-c-yellow-2: #e66100; /* Orange 4 */
+  --vp-c-yellow-3: #ff7800; /* Orange 3 */
+  --vp-c-yellow-soft: rgba(230, 97, 0, 0.14); /* Orange 4 + alpha */
+
+  /* Red */
+  --vp-c-red-1: #a51d2d; /* Red 5 */
+  --vp-c-red-2: #c01c28; /* Red 4 */
+  --vp-c-red-3: #e01b24; /* Red 3 */
+  --vp-c-red-soft: rgba(237, 51, 59, 0.14); /* Red 2 + alpha */
+
+  --vp-c-sponsor: #c061cb; /* Purple 2 */
+
+  --vp-c-blue-dark: #1c71d8;
+  --vp-c-blue-darker: #1a5fb4;
+  --vp-c-blue-dimm-1: rgba(53, 132, 228, 0.05);
+  --vp-c-blue-dimm-2: rgba(53, 132, 228, 0.2);
+  --vp-c-blue-dimm-3: rgba(53, 132, 228, 0.5);
+
+  --vp-c-yellow-dark: #f5c211;
+  --vp-c-yellow-darker: #e5a50a;
+  --vp-c-yellow-dimm-1: rgba(246, 211, 45, 0.05);
+  --vp-c-yellow-dimm-2: rgba(246, 211, 45, 0.2);
+  --vp-c-yellow-dimm-3: rgba(246, 211, 45, 0.5);
+
+  --vp-c-orange-dark: #e65c00;
+  --vp-c-orange-darker: #cc5200;
+  --vp-c-orange-dimm-1: rgba(255, 102, 0, 0.05);
+  --vp-c-orange-dimm-2: rgba(255, 102, 0, 0.2);
+  --vp-c-orange-dimm-3: rgba(255, 102, 0, 0.5);
+
+  --vp-c-red-dark: #c01c28;
+  --vp-c-red-darker: #a51d2d;
+  --vp-c-red-dimm-1: rgba(224, 27, 36, 0.05);
+  --vp-c-red-dimm-2: rgba(224, 27, 36, 0.2);
+  --vp-c-red-dimm-3: rgba(224, 27, 36, 0.5);
+
+  --vp-c-green-dark: #2ec27e;
+  --vp-c-green-darker: #26a269;
+  --vp-c-green-dimm-1: rgba(51, 209, 122, 0.05);
+  --vp-c-green-dimm-2: rgba(51, 209, 122, 0.2);
+  --vp-c-green-dimm-3: rgba(51, 209, 122, 0.5);
+}
+
+.dark {
+  /* Gray → Dark */
+  --vp-c-gray-1: #5e5c64; /* Dark 2 */
+  --vp-c-gray-2: #3d3846; /* Dark 3 */
+  --vp-c-gray-3: #241f31; /* Dark 4 */
+  --vp-c-gray-soft: rgba(94, 92, 100, 0.16); /* Dark 2 + alpha */
+
+  /* Indigo → Blue */
+  --vp-c-indigo-1: #99c1f1; /* Blue 1 */
+  --vp-c-indigo-2: #62a0ea; /* Blue 2 */
+  --vp-c-indigo-3: #3584e4; /* Blue 3 */
+  --vp-c-indigo-soft: rgba(98, 160, 234, 0.16); /* Blue 2 + alpha */
+
+  /* Purple */
+  --vp-c-purple-1: #dc8add; /* Purple 1 */
+  --vp-c-purple-2: #c061cb; /* Purple 2 */
+  --vp-c-purple-3: #9141ac; /* Purple 3 */
+  --vp-c-purple-soft: rgba(192, 97, 203, 0.16); /* Purple 2 + alpha */
+
+  /* Green */
+  --vp-c-green-1: #8ff0a4; /* Green 1 */
+  --vp-c-green-2: #57e389; /* Green 2 */
+  --vp-c-green-3: #33d17a; /* Green 3 */
+  --vp-c-green-soft: rgba(87, 227, 137, 0.16); /* Green 2 + alpha */
+
+  /* Yellow → Orange */
+  --vp-c-yellow-1: #ffbe6f; /* Orange 1 */
+  --vp-c-yellow-2: #ffa348; /* Orange 2 */
+  --vp-c-yellow-3: #ff7800; /* Orange 3 */
+  --vp-c-yellow-soft: rgba(255, 163, 114, 0.16); /* Orange 2 + alpha */
+
+  /* Red */
+  --vp-c-red-1: #f66151; /* Red 1 */
+  --vp-c-red-2: #ed333b; /* Red 2 */
+  --vp-c-red-3: #e01b24; /* Red 3 */
+  --vp-c-red-soft: rgba(237, 51, 59, 0.16); /* Red 2 + alpha */
+
+  --vp-c-sponsor: #c01c28; /* Red 4 */
+}
+
+:root {
+  --vp-c-brand-1: var(--vp-c-indigo-1);
+  --vp-c-brand-2: var(--vp-c-indigo-2);
+  --vp-c-brand-3: var(--vp-c-indigo-3);
+  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+}
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(135deg, #c061cb 25%, #62a0ea 75%);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #c061cb 50%, #62a0ea 50%);
+}
+
+/**
+  * Component: Logo
+  * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-nav-logo-height: 36px;
+}
+
+/**
+ * task-lists
+ * -------------------------------------------------------------------------- */
+
+.vp-doc .contains-task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/**
+ * Component:Badge
+ * -------------------------------------------------------------------------- */
+
+.VPBadge {
+  font-family: var(--vp-font-family-bages);
+  letter-spacing: 0em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.VPBadge.success {
+  border-color: transparent;
+  color: var(--vp-c-success-1);
+  background-color: var(--vp-c-success-soft);
+}
+
+.VPBadge.success-1 {
+  border-color: transparent;
+  color: var(--vp-c-white);
+  background-color: var(--vp-c-success-2);
+}
+
+/**
+ * Component: GitChangeLog
+ * -------------------------------------------------------------------------- */
+.bg-\$vp-custom-block-details-bg,
+.bg-vp-custom-block-details-bg {
+  background-color: var(--vp-c-gray-3) !important;
+}
+
+.vp-nolebase-git-changelog-contributors a {
+  text-decoration: none;
+}

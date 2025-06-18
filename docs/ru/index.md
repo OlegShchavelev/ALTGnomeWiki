@@ -5,7 +5,8 @@ titleTemplate: ALT Gnome Wiki
 gitChangelog: false
 
 hero:
-  name: 'ALT Gnome Wiki'
+  name: ALT Gnome
+  text: Знания
   tagline: 'база знаний операционных систем: ALT Regular Gnome, ALT Starterkit Gnome и Альт Рабочая станция'
   image:
     src: /alt-gnome.png

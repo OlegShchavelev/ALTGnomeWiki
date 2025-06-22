@@ -21,30 +21,32 @@ const props = defineProps({
         </div>
       </div>
       <div class="body">
-        <div v-for="image in image.downloads" :key="image.arch" class="downloads">
-          <div v-for="branch in image.branches" :key="branch.name" class="download">
-            <dl>
-              <dt>Архитектура:</dt>
-              <dd>{{ image.arch }}</dd>
-              <dt>Размер:</dt>
-              <dd>2 Gb</dd>
-              <dt>Тип выпуска:</dt>
-              <dd>{{ branch.name }}</dd>
-            </dl>
-            <div class="action">
-              <div v-if="branch.images[0].urls.length === 1">
-                <VPButton size="medium" tag="a" :href="branch.images[0].urls[0]" text="Скачать" />
-              </div>
-              <div v-else class="dropdown">
-                <VPButton size="medium" class="dropbtn" text="Скачать" />
-                <div class="dropdown-content">
-                  <a v-for="(url, index) in branch.images[0].urls" :key="index" :href="url">
-                    Cкачать (Зеркало {{ index + 1 }})
-                  </a>
+        <div class="downloads">
+          <template v-for="image in image.downloads" :key="image.arch">
+            <div v-for="branch in image.branches" :key="branch.name" class="download">
+              <dl>
+                <dt>Архитектура:</dt>
+                <dd>{{ image.arch }}</dd>
+                <dt>Размер:</dt>
+                <dd>2 Gb</dd>
+                <dt>Тип выпуска:</dt>
+                <dd>{{ branch.name }}</dd>
+              </dl>
+              <div class="action">
+                <div v-if="branch.images[0].urls.length === 1">
+                  <VPButton size="medium" tag="a" :href="branch.images[0].urls[0]" text="Скачать" />
+                </div>
+                <div v-else class="dropdown">
+                  <VPButton size="medium" class="dropbtn" text="Скачать" />
+                  <div class="dropdown-content">
+                    <a v-for="(url, index) in branch.images[0].urls" :key="index" :href="url">
+                      Cкачать (Зеркало {{ index + 1 }})
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </template>
         </div>
       </div>
     </div>

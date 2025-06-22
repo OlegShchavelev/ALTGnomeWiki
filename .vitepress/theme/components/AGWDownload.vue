@@ -12,9 +12,8 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {})
-
-console.log(fm)
 </script>
+
 <template>
   <AGWDownloadPage>
     <AGWDownloadPageTitle>

@@ -1,6 +1,13 @@
 - name: 'ALT Regular Gnome'
   branch: sisyphus
-  description: Скачать ALT Regular Gnome с рабочим окружением GNOME с самой свежей версии на борту
+  description: Скачать ALT Regular Gnome с рабочим окружением GNOME с самой свежей версией 48 на борту
+  actions:
+    - text: Примечание к выпуску
+      link: /images/alt-regular-gnome
+    - text: Инструкция по установке
+      link: /instalations/ordinary-install
+    - text: Пользовательское соглашение
+      link: https://nightly.altlinux.org/sisyphus/license.all.html
   downloads:
     - arch: x86_64
       branches:
@@ -8,37 +15,37 @@
           recommended: true
           images:
             - urls:
-                - 'https://nightly.altlinux.org/sisyphus/tested/regular-gnome-latest-x86_64.iso'
-                - 'https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso'
+                - https://nightly.altlinux.org/sisyphus/tested/regular-gnome-latest-x86_64.iso
+                - https://mirror.yandex.ru/altlinux-nightly/tested/regular-gnome-latest-x86_64.iso
 
         - name: current
           images:
             - urls:
-                - 'https://nightly.altlinux.org/sisyphus/current/regular-gnome-latest-x86_64.iso'
-                - 'https://mirror.yandex.ru/altlinux-nightly/current/regular-gnome-latest-x86_64.iso'
+                - https://nightly.altlinux.org/sisyphus/current/regular-gnome-latest-x86_64.iso
+                - https://mirror.yandex.ru/altlinux-nightly/current/regular-gnome-latest-x86_64.iso
     - arch: aarch64
       branches:
         - name: tested
           recommended: true
           images:
             - urls:
-                - 'https://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso'
+                - https://nightly.altlinux.org/sisyphus-aarch64/tested/regular-gnome-latest-aarch64.iso
 
         - name: current
           images:
             - urls:
-                - 'https://nightly.altlinux.org/sisyphus-aarch64/current/regular-gnome-latest-aarch64.iso'
+                - https://nightly.altlinux.org/sisyphus-aarch64/current/regular-gnome-latest-aarch64.iso
 
 - name: 'ALT Workstation 11.0'
   branch: p11
-  description: 'Скачать «Альт Рабочую станцию» с рабочим окружением GNOME'
+  description: Скачать «Альт Рабочую станцию» с рабочим окружением GNOME
   downloads:
     - arch: x86_64
       branches:
         - name: release
           images:
             - urls:
-                - 'https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/x86_64/alt-workstation-11.0-x86_64.iso'
+                - https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/x86_64/alt-workstation-11.0-x86_64.iso
               badges:
                 - type: tip
                   text: x86_64
@@ -48,24 +55,24 @@
         - name: release
           images:
             - urls:
-                - 'https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/aarch64/alt-workstation-11.0-aarch64.iso'
+                - https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/aarch64/alt-workstation-11.0-aarch64.iso
               badges:
                 - type: tip
                   text: aarch64
 - name: 'ALT Starterkit Gnome'
   branch: p11
-  description: 'Скачать «Стартовый набор» с рабочим окружением GNOME'
+  description: Скачать «Стартовый набор» с рабочим окружением GNOME
   downloads:
     - arch: x86_64
       branches:
         - name: release
           images:
             - urls:
-                - 'https://nightly.altlinux.org/p11/release/alt-p11-gnome-20250312-x86_64.iso'
+                - https://nightly.altlinux.org/p11/release/alt-p11-gnome-20250612-x86_64.iso
 
     - arch: aarch64
       branches:
         - name: release
           images:
             - urls:
-                - 'https://nightly.altlinux.org/p11-aarch64/release/alt-p11-gnome-20250312-aarch64.iso'
+                - https://nightly.altlinux.org/p11/release/alt-p11-gnome-20250612-x86_64.iso

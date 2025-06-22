@@ -1,5 +1,48 @@
 <script setup lang="ts">
 import { VPButton, VPLink } from 'vitepress/theme'
+import { ref, onMounted } from 'vue'
+
+const fileSizes = ref<Record<string, string>>({})
+
+async function fetchFileSize(url: string) {
+  try {
+    const proxyPrefix = url.includes('download.basealt.ru') ? '/api/proxy/basealt' : '/api/proxy/altlinux'
+
+    const path = new URL(url).pathname
+    const response = await fetch(`${proxyPrefix}${path}`, {
+      method: 'HEAD'
+    })
+    const size = response.headers.get('content-length')
+    return size ? formatSize(+size) : 'Недоступно'
+  } catch {
+    return 'Недоступно'
+  }
+}
+
+function formatSize(bytes: number) {
+  const units = ['B', 'KB', 'MB', 'GB', 'TB']
+  let size = bytes
+  let unitIndex = 0
+
+  while (size >= 1024 && unitIndex < units.length - 1) {
+    size /= 1024
+    unitIndex++
+  }
+
+  return `${size.toFixed(unitIndex === 0 ? 0 : 1)} ${units[unitIndex]}`
+}
+
+// Загрузка размеров при монтировании компонента
+onMounted(async () => {
+  const urls = props.image.downloads.flatMap((d) => d.branches.flatMap((b) => b.images[0].urls))
+
+  for (const url of urls) {
+    if (!fileSizes.value[url]) {
+      fileSizes.value[url] = await fetchFileSize(url)
+    }
+  }
+})
+
 const props = defineProps({
   image: {
     type: Object,
@@ -15,9 +58,9 @@ const props = defineProps({
         <div class="title">{{ image.name }}</div>
         <div class="text">{{ image.description }}</div>
         <div class="actions">
-          <VPLink href="#">Примечание к выпуску</VPLink>
-          <VPLink href="#">Инструкция по установке</VPLink>
-          <VPLink href="#">Пользовательское соглашение</VPLink>
+          <template v-for="action in image.actions">
+            <VPLink :href="action.link">{{ action.text }}</VPLink>
+          </template>
         </div>
       </div>
       <div class="body">
@@ -28,7 +71,9 @@ const props = defineProps({
                 <dt>Архитектура:</dt>
                 <dd>{{ image.arch }}</dd>
                 <dt>Размер:</dt>
-                <dd>2 Gb</dd>
+                <dd>
+                  {{ fileSizes[branch.images[0].urls[0]] || 'Загрузка...' }}
+                </dd>
                 <dt>Тип выпуска:</dt>
                 <dd>{{ branch.name }}</dd>
               </dl>
@@ -58,7 +103,6 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   gap: 2px;
-  border-radius: 12px;
   width: 100%;
   height: 100%;
 }
@@ -66,6 +110,7 @@ const props = defineProps({
 .card {
   flex-grow: 1;
   background-color: var(--vp-c-bg-soft);
+  border-radius: 12px;
   padding: 48px 32px;
   position: relative;
 }

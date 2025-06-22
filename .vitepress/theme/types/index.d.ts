@@ -59,3 +59,32 @@ export namespace AGWTheme {
     type: MetaAction[]
   }
 }
+
+export interface Distribution {
+  name: string
+  branch: string
+  description: string
+  note?: string
+  architectures: Architecture[]
+}
+
+export interface Architecture {
+  arch: string
+  branches: Branch[]
+}
+
+export interface Branch {
+  name: string
+  recommended?: boolean
+  images: Image[]
+}
+
+export interface Image {
+  urls: string[]
+  badges: Badge[]
+}
+
+export interface Badge {
+  type: 'info' | 'tip' | 'warning' | 'danger'
+  text: string
+}

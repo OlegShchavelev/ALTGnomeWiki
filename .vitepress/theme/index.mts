@@ -23,6 +23,7 @@ import AGWLinkBlock from '@theme/components/AGWLinkBlock.vue'
 import AGWAnalogues from '@theme/components/AGWAnalogues.vue'
 import AGWApp from '@theme/components/AGWApp.vue'
 import AGWHomeApps from '@theme/components/AGWHomeApps.vue'
+import AGWDownload from '@theme/components/AGWDownload.vue'
 
 /* Metrics */
 import { yandexMetrika } from '@hywax/vitepress-yandex-metrika'
@@ -81,6 +82,7 @@ export default {
     ctx.app.component('AGWCategories', AGWCategories)
     ctx.app.component('team', AGWTeam)
     ctx.app.component('app', AGWApp)
+    ctx.app.component('download', AGWDownload)
     ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
     ctx.app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)

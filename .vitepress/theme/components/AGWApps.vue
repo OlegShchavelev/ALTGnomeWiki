@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from '../composables/data'
-import { VPTeamPageTitle, VPButton } from 'vitepress/theme'
+import { VPButton } from 'vitepress/theme'
 import AGWAppPage from './AGWAppPage.vue'
 import AGWAppPageTitle from './AGWAppPageTitle.vue'
 import AGWAppRows from './AGWAppRows.vue'

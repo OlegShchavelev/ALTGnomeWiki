@@ -18,6 +18,9 @@ hero:
     - theme: alt
       text: Документация
       link: /wiki/
+    - theme: alt
+      text: Как опубликовать свою документацию
+      link: /reference/pages/alteration/
 
 features:
   - icon:

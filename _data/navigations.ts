@@ -46,7 +46,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
             text: 'Безопасность',
             link: '/security',
             items: [
-		{ text: 'Общие принципы', link: '/security/concepts' },
+              { text: 'Общие принципы', link: '/security/concepts' },
 		{ text: 'Некоторые вопросы безопасности', link: '/security/some_security_problems' },
 		{ text: 'Двухфакторная аутентификация', link: '/security/u2f' }
 	     ],

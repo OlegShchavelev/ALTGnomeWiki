@@ -50,7 +50,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Некоторые вопросы безопасности', link: '/security/some_security_problems' },
               { text: 'Двухфакторная аутентификация', link: '/security/u2f' }
             ],
-	     collapsed: true
+            collapsed: true
           },
           {
             text: 'Установка и обновление программ',

@@ -150,9 +150,6 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
         link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki'
       }
     ],
-    editLink: {
-      pattern: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki/edit/main/docs/:path'
-    },
     outline: {
       level: [2, 3]
     },

@@ -532,7 +532,7 @@ export const ru = defineConfigWithTheme<AGWTheme.Config>({
       }
     },
     editLink: {
-      pattern: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki/edit/main/docs/:path',
+      pattern: 'https://altlinux.space/alt-gnome/wiki/src/branch/transfer/docs/:path',
       text: 'Предложить изменения на этой странице'
     },
     lastUpdated: {

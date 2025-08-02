@@ -34,14 +34,14 @@ VitePress использует [markdown-it](https://github.com/markdown-it/mark
 **Пример:**
 
 ```markdown
-[ссылка на внутреннюю страницу](/flatpak)
+[ссылка на внутреннюю страницу](/package-manager/flatpak/)
 
 [ссылка на внешнюю страницу](https://alt-gnome.wiki)
 ```
 
 **Вывод:**
 
-[ссылка на внутреннюю страницу](/flatpak)
+[ссылка на внутреннюю страницу](/package-manager/flatpak/)
 
 [ссылка на внешнюю страницу](https://alt-gnome.wiki)
 

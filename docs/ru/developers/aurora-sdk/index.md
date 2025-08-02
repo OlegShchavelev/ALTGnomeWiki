@@ -17,7 +17,7 @@ mv ~/Загрузки/Aurora* ~/
 
 ## Установка
 
-### [Docker](docker.md)
+### [Docker](/apps/docker/)
 
 ### Aurora SDK + Docker
 

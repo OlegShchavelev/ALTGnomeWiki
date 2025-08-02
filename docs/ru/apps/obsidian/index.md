@@ -47,7 +47,7 @@ obsidian --ozone-platform-hint=auto
 :::
 
 :::warning
-При запуске [Flatpak-версии](/flatpak), убедитесь в возможности запуска с использованием графического протокола Wayland. Один из самых удобных вариантов проверки — программа [Flatseal](/flatseal)
+При запуске [Flatpak-версии](/package-manager/flatpak/), убедитесь в возможности запуска с использованием графического протокола Wayland. Один из самых удобных вариантов проверки — программа [Flatseal](/apps/flatseal/)
 
 ![Включение графического протокола Wayland](/obsidian/obsidian-1.png)
 
@@ -64,7 +64,7 @@ flatpak override --user md.obsidian.Obsidian --socket=wayland --socket=fallback-
 
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, рекомендуется установить приложение [PinApp](/pin-app), выберите приложение **Obsidian**, сделайте `Pin` и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, рекомендуется установить приложение [PinApp](/apps/pin-app/), выберите приложение **Obsidian**, сделайте `Pin` и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 
@@ -84,7 +84,7 @@ obsidian --ozone-platform-hint=auto %U // [!code ++]
 
 Чтобы избежать графических ошибок при запуске, [аппаратное ускорение нужно отключить](https://github.com/flathub/md.obsidian.Obsidian?tab=readme-ov-file#gpu-acceleration).
 
-Для [Flatpak-версии](/flatpak) нужно добавить переменная со значением `--env=OBSIDIAN_DISABLE_GPU=1:`
+Для [Flatpak-версии](/package-manager/flatpak/) нужно добавить переменная со значением `--env=OBSIDIAN_DISABLE_GPU=1:`
 
 ```shell
 flatpak override --user --env=OBSIDIAN_DISABLE_GPU=1 md.obsidian.Obsidian

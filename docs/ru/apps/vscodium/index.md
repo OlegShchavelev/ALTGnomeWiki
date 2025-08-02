@@ -48,10 +48,10 @@ codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platf
 :::
 
 :::info
-При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/pin-app)
+При авторизации пользователя в сессии Wayland и запуска приложения VSCodium Flatpak-версии c `1.87.0.24060` открывается в оконном интерфейсе Wayland. При наличии пользовательского файла `.desktop` c добавленными параметрами `--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto` открепите Pin [в приложении PinApp](/apps/pin-app/)
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/apps/pin-app/), выберите приложение **VSCodium**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 
@@ -69,7 +69,7 @@ codium --unity-launch --enable-features=UseOzonePlatform,WaylandWindowDecoration
 
 ## Использование Node.js в изолированной среде в приложении VSCodium
 
-Вы используете VSCodium установленного с помощью пакетного менеджера [Flatpak](flatpak), для использования Node.js необходимо:
+Вы используете VSCodium установленного с помощью пакетного менеджера [Flatpak](/package-manager/flatpak/), для использования Node.js необходимо:
 
 Выберите расширение SDK для этого воспользуемся поиском:
 
@@ -102,7 +102,7 @@ Node.js SDK extension        Node.js SDK extension                              
 
 :::
 
-Установите выбранную версию Node.js, [я выбрал LTS версию 20.xx](/nodejs#выпуски-node-js):
+Установите выбранную версию Node.js, [я выбрал LTS версию 20.xx](/developers/nodejs/#выпуски-node-js):
 
 ```shell
 flatpak install flathub org.freedesktop.Sdk.Extension.node20
@@ -110,7 +110,7 @@ flatpak install flathub org.freedesktop.Sdk.Extension.node20
 
 Разрешите использование Node.js приложению **VSCodium**:
 
-Для этого необходимо [установить Flatseal](flatseal), выберите **VSCodium** и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
+Для этого необходимо [установить Flatseal](/apps/flatseal/), выберите **VSCodium** и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
 
 ![codium-1](/vscodium/codium-1.png)
 

@@ -20,7 +20,7 @@ appstream:
 
 Расширение добавляет в список приложений кнопку, позволяющую в один клик показать файл `.desktop` как ярлык приложения на рабочем столе.
 
-Особенно полезно при использовании расширения [Gtk4 Desktop Icons NG](/gtk4-desktop-icons).
+Особенно полезно при использовании расширения [Gtk4 Desktop Icons NG](/extensions/gtk4-desktop-icons/).
 
 ![add-to-desktop-1](/extensions/add-to-desktop/add-to-desktop-1.png)
 

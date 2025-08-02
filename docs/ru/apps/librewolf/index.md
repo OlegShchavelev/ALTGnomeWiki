@@ -18,7 +18,7 @@ appstream:
 
 # LibreWolf
 
-LibreWolf — независимая версия [Firefox](/firefox), которая стремится быть более приватной и безопасной. По умолчанию установлены расширение uBlock Origin и поисковая система DuckDuckGo, отключена вся телеметрия из [Firefox](/firefox).
+LibreWolf — независимая версия [Firefox](/apps/firefox/), которая стремится быть более приватной и безопасной. По умолчанию установлены расширение uBlock Origin и поисковая система DuckDuckGo, отключена вся телеметрия из [Firefox](/apps/firefox/).
 
 ![Интерфейс LibreWolf](/librewolf/librewolf-preview.png)
 

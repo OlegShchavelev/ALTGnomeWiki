@@ -18,7 +18,7 @@ appstream:
 
 # EasyEffects Preset Selector
 
-Расширение позволяет вынести на верхнюю панель меню для управления пресетами [EasyEffects](/easyeffects).
+Расширение позволяет вынести на верхнюю панель меню для управления пресетами [EasyEffects](/apps/easyeffects/).
 
 ![easyeffects-preset-selector-1](/extensions/easyeffects-preset-selector/easyeffects-preset-selector-1.png)
 

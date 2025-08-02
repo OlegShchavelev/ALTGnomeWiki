@@ -4,7 +4,7 @@
 
 Для автозагрузки необходимо добавить файл `.desktop` приложения из директории `/usr/share/application/` в директорию ` ~.config/autostart/`
 
-Добавим в список автозапуска [клиент Steam](/steam), используя терминал:
+Добавим в список автозапуска [клиент Steam](/apps/steam/), используя терминал:
 
 ```shell
 cp /usr/share/applications/steam.desktop ~/.config/autostart/

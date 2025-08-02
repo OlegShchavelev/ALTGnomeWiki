@@ -41,7 +41,7 @@ PinApp позволяет закреплять изменённые прилож
 
 ## Управление классическими приложениями из Сизифа
 
-При установке **PinApp** <Badge type="tip">Flatpak</Badge> , оно открывается в изолированной среде и не имеет доступ по-умолчанию к директории `/usr/share/applications`, для настройки воспользуемся [программой Flatseal](/flatseal). Выберите приложение **PinApp** и в разделе Filesystem, включим опции `--filesystem=host-os`
+При установке **PinApp** <Badge type="tip">Flatpak</Badge> , оно открывается в изолированной среде и не имеет доступ по-умолчанию к директории `/usr/share/applications`, для настройки воспользуемся [программой Flatseal](/apps/flatseal/). Выберите приложение **PinApp** и в разделе Filesystem, включим опции `--filesystem=host-os`
 
 ![pin-app-7](/pin-app/pin-app-7.png)
 

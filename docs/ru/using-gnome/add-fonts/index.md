@@ -48,7 +48,7 @@ epm -i fonts-ttf-google-noto-emoji fonts-ttf-google-noto-emoji-color
 
 При отсутствии шрифтового набора в репозитории Сизиф, шрифтовой набор в операционную систему **ALT Regular Gnome** устанавливается локально.
 
-Для простоты установки шрифтов мы рекомендуем установить [программу Шрифты](/font-viewer), скачаем выбранные шрифты и откроем их в Файлах:
+Для простоты установки шрифтов мы рекомендуем установить [программу Шрифты](/apps/font-viewer/), скачаем выбранные шрифты и откроем их в Файлах:
 
 1. Кликнем по файлу шрифта.
 2. В предпросмотре программы Шрифты, нажмите кнопку «Установить»
@@ -96,7 +96,7 @@ mkdir - p /usr/share/fonts/ttf/CascadiaCode/ && cp *.ttf /usr/share/fonts/ttf/Ca
 ```shell[Пользовательская]
 cd ~/Загрузки/CascadiaCode-2111.01/ttf
 mkdir - p ~/.local/share/fonts/ttf/CascadiaCode/ && cp *.ttf ~/.local/share/fonts/ttf/CascadiaCode/
-``` 
+```
 
 :::
 

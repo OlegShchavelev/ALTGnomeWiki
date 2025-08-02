@@ -8,7 +8,7 @@
 
 ## Подготовка
 
-- Скачайте [образ ALT Regular Gnome](/download)
+- Скачайте [образ ALT Regular Gnome](/download/)
 
 - Убедитесь в том, что на компьютере установлено приложение для создания загрузочного диска: [ALT Media Writer](#alt-media-writer), [Ventoy](#ventoy), [dd](#dd), [Balena Etcher](#balena-etcher)
 

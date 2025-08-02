@@ -42,4 +42,4 @@ Eclipse IDE for Web and JavaScript Developers — необходимые инс�
 flatpak install flathub org.eclipse.Javascript
 ```
 
-Или через [Центр приложений](/gnome-software), перейдя по [данной ссылке](appstream://org.eclipse.Javascript)
+Или через [Центр приложений](/apps/gnome-software/), перейдя по [данной ссылке](appstream://org.eclipse.Javascript)

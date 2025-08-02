@@ -22,7 +22,7 @@ appstream:
 
 # GitHub Desktop
 
-GitHub Desktop — приложение предоставляющее графический интерфейс для управления репозиториями [Git](/git).
+GitHub Desktop — приложение предоставляющее графический интерфейс для управления репозиториями [Git](/apps/git/).
 
 ![github-desktop](/github-desktop/github-desktop-1.png)
 

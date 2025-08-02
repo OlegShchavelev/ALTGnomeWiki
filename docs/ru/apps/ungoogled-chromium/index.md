@@ -18,7 +18,7 @@ appstream:
 
 # Ungoogled Chromium
 
-Ungoogled Chromium — [Chromium](/chromium) без привязки веб-сервисов Google.
+Ungoogled Chromium — [Chromium](/apps/chromium/) без привязки веб-сервисов Google.
 
 ![Интерфейс Ungoogled Chromium](/ungoogled-chromium/preview.png)
 

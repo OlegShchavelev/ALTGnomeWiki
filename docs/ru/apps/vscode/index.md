@@ -34,7 +34,7 @@ Visual Studio Code — инструмент, который сочетает в 
 
 ## Использование Node.js в изолированной среде в приложении VS Code
 
-Вы используете VS Code установленного с помощью пакетного менеджера [Flatpak](flatpak), для использования Node.js необходимо:
+Вы используете VS Code установленного с помощью пакетного менеджера [Flatpak](/package-manager/flatpak/), для использования Node.js необходимо:
 
 Выберите расширение SDK для этого воспользуемся поиском:
 
@@ -67,7 +67,7 @@ Node.js SDK extension        Node.js SDK extension                              
 
 :::
 
-Установите выбранную версию Node.js, [я выбрал LTS версию 20.xx](/nodejs#выпуски-node-js):
+Установите выбранную версию Node.js, [я выбрал LTS версию 20.xx](/developers/nodejs/#выпуски-node-js):
 
 ```shell
 flatpak install flathub org.freedesktop.Sdk.Extension.node20
@@ -75,7 +75,7 @@ flatpak install flathub org.freedesktop.Sdk.Extension.node20
 
 Разрешите использование Node.js приложению **VS Code**:
 
-Для этого необходимо [установить Flatseal](flatseal), выберите **VS Code** и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
+Для этого необходимо [установить Flatseal](/apps/flatseal/), выберите **VS Code** и в списке переменных добавьте правило `FLATPAK_ENABLE_SDK_EXT=node20`
 
 ![vscode-1](/vscode/vscode-1.png)
 
@@ -95,7 +95,7 @@ code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platfor
 
 :::
 
-Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/pin-app), выберите приложение **VS Code**, сделайте Pin и внесите следующие параметры в поле `Exec`:
+Для запуска приложения в окружении GNOME и простоты настройки, мы рекомендуем установить приложение [PinApp](/apps/pin-app/), выберите приложение **VS Code**, сделайте Pin и внесите следующие параметры в поле `Exec`:
 
 ::: code-group
 

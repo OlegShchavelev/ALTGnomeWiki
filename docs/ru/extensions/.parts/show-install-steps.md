@@ -8,7 +8,7 @@
 Для установки расширений из браузера необходимы пакет `gnome-browser-connector` и плагин для браузера GNOME Shell integration для браузеров на базе [Chromium](https://chromewebstore.google.com/detail/gphhapmejobijbbhgpjhcjognlahblep) или [Firefox](https://addons.mozilla.org/ru/firefox/addon/gnome-shell-integration/)
 :::
 
-## Установка через [Менеджер расширений](/gnome-extension-manager)
+## Установка через [Менеджер расширений](/apps/gnome-extension-manager/)
 
 1. Перейдите по ссылке <a :href="'gnome-extensions://' + $frontmatter?.aggregation?.extension?.uuid?.replace('@', '%40')">Установить {{ $frontmatter?.appstream?.name }}</a> и подтвердите открытие Менеджера расширений
 

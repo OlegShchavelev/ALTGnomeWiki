@@ -11,9 +11,9 @@
 |    Производитель    |                                                 Модель                                                 |   Состояние    |                                  ПО                                   | Примечание |
 | :-----------------: | :----------------------------------------------------------------------------------------------------: | :------------: | :-------------------------------------------------------------------: | :--------: |
 |      Defender       |                                            Warhead GM-1780                                             | :green_circle: |                                   -                                   |     -      |
-|      Logitech       | [G102](https://www.logitechg.com/en-my/products/gaming-mice/g102-prodigy-gaming-mouse.910-004846.html) | :green_circle: |                          [`piper`](piper.md)                          |     -      |
+|      Logitech       | [G102](https://www.logitechg.com/en-my/products/gaming-mice/g102-prodigy-gaming-mouse.910-004846.html) | :green_circle: |                          [`piper`](/apps/piper/)                          |     -      |
 |      Logitech       |                                                  M705                                                  | :green_circle: |                                   -                                   |     -      |
-|      Logitech       |                                              MX Master 3                                               | :green_circle: | [`piper`](piper.md), [`Solaar`](https://pwr-solaar.github.io/Solaar/) |     -      |
+|      Logitech       |                                              MX Master 3                                               | :green_circle: | [`piper`](/apps/piper/), [`Solaar`](https://pwr-solaar.github.io/Solaar/) |     -      |
 |       Xiaomi        | [Dual Mode Wireless Mouse Silent Edition](https://www.mi.com/ru/product/mi-dual-mode-wireless-mouse/)  | :green_circle: |                                   -                                   |     -      |
 | Дарк Проджект x VXE |                                            R1 PRO Max Grey                                             | :green_circle: |                                   -                                   |     -      |
 |         VXE         |                                                 R1 SE+                                                 | :green_circle: |                                   -                                   |     -      |
@@ -22,7 +22,7 @@
 
 | Производитель | Модель  |   Состояние    |                        ПО                        |                                         Примечание                                         |
 | :-----------: | :-----: | :------------: | :----------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| Дарк Проджект |  KD98   | :green_circle: |                        -                         | [Работа клавиш Fn в функциональном режиме](/dark-project-keyboard-on-linux), Раскладка Win |
+| Дарк Проджект |  KD98   | :green_circle: |                        -                         | [Работа клавиш Fn в функциональном режиме](/tips/dark-project-keyboard-on-linux/), Раскладка Win |
 | Дарк Проджект |  KD85   | :green_circle: |                        -                         |                                       Раскладка Win                                        |
 |   Logitech    | MX Keys | :green_circle: | [`Solaar`](https://pwr-solaar.github.io/Solaar/) |                                             -                                              |
 |   Keychron    |  K3-D1  | :green_circle: |                        -                         |                               Раскладка Win, Bluetooth, USB                                |

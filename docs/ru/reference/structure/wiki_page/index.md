@@ -1,6 +1,6 @@
 # Страница Wiki
 
-На [данной](../../main/wiki) странице используются такие подблоки [Frontmatter](../pages/vitepress#frontmatter) переменных:
+На [данной](/wiki/) странице используются такие подблоки [Frontmatter](/reference/pages/vitepress/#frontmatter) переменных:
 
 ## 1. Раздел
 

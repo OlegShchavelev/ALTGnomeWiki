@@ -85,7 +85,7 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 - Создать [Issue](https://github.com/Rirusha/Cassette/issues) с проблемой или предложением по улучшению;
 - Сделать [Pull Request](https://github.com/Rirusha/Cassette/pulls) с фиксом или добавлением функционала;
 - [Поддержать рублём](https://www.tinkoff.ru/collectmoney/crowd/vaskov.vladimir19/Uhi7d15460). Просьба указывать в «Сообщении получателю» свой ник, иначе автор проекта не сможет добавить вас в соответствующий блок окна `About` (система Тинькофф, к сожалению, не указывает имя отправителя);
-- Написать отзыв в [Центре Приложений](/gnome-software) о Кассете.
+- Написать отзыв в [Центре Приложений](/apps/gnome-software/) о Кассете.
 
 ## Решение проблем
 
@@ -97,13 +97,13 @@ flatpak install cassette-nightly io.github.Rirusha.Cassette-Devel
 
 ![Пример проблемы с отображением интерфейса при авторизации](/cassette/cassette-3.png)
 
-Если у вас [Flatpak-версия](/flatpak), то выполните в терминале:
+Если у вас [Flatpak-версия](/package-manager/flatpak/), то выполните в терминале:
 
 ```shell
 WEBKIT_DISABLE_COMPOSITING_MODE=1 flatpak run io.github.Rirusha.Cassette
 ```
 
-Или создайте строчку в блоке переменных окружения через [Flatseal](/flatseal) и перезапустите приложение.
+Или создайте строчку в блоке переменных окружения через [Flatseal](/apps/flatseal/) и перезапустите приложение.
 
 При наличии версии из репозитория, выполните:
 
@@ -111,7 +111,7 @@ WEBKIT_DISABLE_COMPOSITING_MODE=1 flatpak run io.github.Rirusha.Cassette
 WEBKIT_DISABLE_COMPOSITING_MODE=1 cassette
 ```
 
-### Бесконечная загрузка при авторизации во [Flatpak-версии](/flatpak) приложения
+### Бесконечная загрузка при авторизации во [Flatpak-версии](/package-manager/flatpak/) приложения
 
 Если при авторизации появляется значок загрузки и далее ничего не происходит, а при запуске приложения через терминал, выводит следующее:
 
@@ -130,4 +130,4 @@ Try "flatpak-spawn --help" for more information.
 flatpak override --env=LC_ALL="en_US.UTF-8" --user io.github.Rirusha.Cassette
 ```
 
-Или создайте строчку в блоке переменных окружения через [Flatseal](/flatseal) и перезапустите приложение.
+Или создайте строчку в блоке переменных окружения через [Flatseal](/apps/flatseal/) и перезапустите приложение.

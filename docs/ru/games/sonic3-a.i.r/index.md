@@ -32,7 +32,7 @@ Sonic 3 A.I.R — кроссплатформенный порт игры Sonic 3
 ![Место распаковки мода](/sonic3-a.i.r/sonic3-a.i.r-2.png)
 
 ::: warning
-Для запуска игры вам потребуется ROM игры или купленная [Sonic 3 & Knuckles](https://store.steampowered.com/app/71162) в [Steam](/steam).
+Для запуска игры вам потребуется ROM игры или купленная [Sonic 3 & Knuckles](https://store.steampowered.com/app/71162) в [Steam](/apps/steam/).
 :::
 
 Запустите игру и нажмите [[Enter]]. После этого откроется меню и с помощью стрелочек выберите пункт `MODS`.

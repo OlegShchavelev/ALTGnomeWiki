@@ -36,7 +36,7 @@ git clone git@github.com:USER/ALTRegularGnomeWiki.git
 
 ## 2. Добавляем необходимую информацию и создаём commit.
 
-Перед внесением изменений ознакомьтесь с [правилами](./general-rules.md) и [возможностями VitePress](./vitepress.md).
+Перед внесением изменений ознакомьтесь с [правилами](/reference/pages/general-rules/) и [возможностями VitePress](/reference/pages/vitepress/).
 
 После того как добавили всё необходимое, выполните следующие команды:
 

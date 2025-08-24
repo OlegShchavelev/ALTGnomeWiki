@@ -21,5 +21,6 @@ meta:
     sisyphus: Sisyphus
     flatpak: Flapak
     snap: Snap
+    extension: GNOME Extensions
 member:
   sponsor: Sponsor

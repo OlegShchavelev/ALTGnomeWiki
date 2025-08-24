@@ -19,14 +19,14 @@ export type MetaKeywordKey =
 
 export type MetaKeywordType = 'info' | 'success' | 'tip' | 'danger' | 'warning' | 'success-1'
 
-export type MetaActionKey = 'sisyphus' | 'flatpak' | 'snap' | 'more'
+export type MetaActionKey = 'sisyphus' | 'flatpak' | 'snap' | 'extension' | 'more'
 export type MetaActions = {
   theme: MetaActionsTheme
   target: string
   baseUrl?: string
 }
 
-export type MetaActionsTheme = 'sisyphus' | 'flatpak' | 'snap' | 'more'
+export type MetaActionsTheme = 'sisyphus' | 'flatpak' | 'snap' | 'extension' | 'more'
 export type Collaborator = 'knowledge' | 'maintainer'
 
 export type MetaDeveloper = {

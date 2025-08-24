@@ -1,30 +1,27 @@
 <script setup>
-import { computed, watchEffect } from 'vue'
-import DefaultTheme from 'vitepress/theme'
-import { useData, useRoute } from 'vitepress'
+import { useData } from '../composables/data'
+import { computed } from 'vue'
 
-const { Layout } = DefaultTheme
-const { frontmatter } = useData()
-const route = useRoute()
+const { theme, frontmatter } = useData()
+const resolvedMessage = computed(() => {
+  const message = theme.value.footer?.docFooter?.message || ''
 
-const currentPath = computed(() => route.path)
+  if (!message) return ''
 
-const license = computed(() => frontmatter.value.license || 'CC-BY-SA-4.0')
-const originUrl = computed(() => frontmatter.value.origin_url)
-const originAuthor = computed(() => frontmatter.value.origin_author)
-const originTitle = computed(() => frontmatter.value.origin_title)
+  const licenceData = {
+    ...theme.value.footer?.licence?.content,
+    ...frontmatter.value.footer?.licence?.content
+  }
 
-const baseRepoUrl = 'https://altlinux.space/alt-gnome/wiki/src/branch/transfer/docs/ru'
-const pagePath = computed(() => route.path.replace(/\.html$/, '.md') + 'index.md')
-const sourceLink = computed(() => `${baseRepoUrl}${pagePath.value}`)
+  if (!licenceData.link && !licenceData.name) return ''
+
+  return message.replace(/:licence_link/g, licenceData.link).replace(/:licence_name/g, licenceData.name)
+})
 </script>
 
 <template>
   <div class="VPDocFooter">
-    <p class="message">
-      <a :href="`${sourceLink}`">Содержимое</a> этой страницы доступно по лицензии
-      <a :href="`https://spdx.org/licenses/CC-BY-SA-4.0.html`">CC BY-SA 4.0</a>.
-    </p>
+    <p v-if="resolvedMessage" class="message" v-html="resolvedMessage"></p>
   </div>
 </template>
 

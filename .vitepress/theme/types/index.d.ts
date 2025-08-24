@@ -35,9 +35,22 @@ export type MetaDeveloper = {
   nickname: string
 }
 
+export interface Footer extends DefaultTheme.Footer {
+  docFooter?: {
+    message: string
+  }
+  licence?: {
+    content: {
+      name: string
+      link: string
+    }
+  }
+}
+
 export namespace AGWTheme {
   export interface Config extends DefaultTheme.Config {
     meta?: Meta
+    footer?: Footer
   }
 
   export interface AppRows {

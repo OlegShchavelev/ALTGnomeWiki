@@ -556,7 +556,16 @@ export const ru = defineConfigWithTheme<AGWTheme.Config>({
         'Опубликовано под лицензией GPL-3.0+. Содержание доступно по лицензии CC BY-SA 4.0, если не указано иное.',
       copyright: `
               2023-${new Date().getFullYear()} Разработано участниками ALT Gnome Wiki на платформе <a href="//vitepress.dev/">VitePress ${packages['node_modules/vitepress'].version}</a> при поддержке ALT Gnome</a>
-            `
+            `,
+      docFooter: {
+        message: 'Содержимое этой страницы доступно по лицензии <a href=":licence_link">:licence_name</a>'
+      },
+      licence: {
+        content: {
+          name: 'CC BY-SA 4.0',
+          link: 'https://spdx.org/licenses/CC-BY-SA-4.0.html'
+        }
+      }
     }
   }
 })

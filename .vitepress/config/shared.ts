@@ -20,6 +20,7 @@ import markdownItEmbed from 'markdown-it-html5-embed'
 import markdownItConditionalRender from 'markdown-it-conditional-render'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import linkBlock from '../theme/composables/linkBlock'
+import markdownItFancybox from '../theme/plugins/markdownItFancybox'
 
 /* GitLog */
 import UnoCSS from 'unocss/vite'
@@ -217,7 +218,7 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
       })
       md.use(markdownItConditionalRender)
       md.use(tabsMarkdownPlugin)
-
+      md.use(markdownItFancybox)
       md.use(linkBlock)
     }
   },

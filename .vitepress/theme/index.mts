@@ -1,11 +1,11 @@
 // https://vitepress.dev/guide/custom-theme
 
 /* System */
-import { h, watch } from 'vue'
+import { h, watch, onMounted } from 'vue'
 import { useRoute } from 'vitepress'
 import { useData, type Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import imageViewer from 'vitepress-plugin-image-viewer'
+import { Fancybox } from '@fancyapps/ui'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 /* Plugins options */
@@ -58,10 +58,10 @@ import 'uno.css'
 import './assets/styles/style.css'
 import './assets/styles/theme.css'
 import './assets/styles/custom.css'
-import './viewerjs/dist/viewer.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 import 'vitepress-markdown-timeline/dist/theme/index.css'
+import '@fancyapps/ui/dist/fancybox/fancybox.css'
 import { CompletionInfoFlags } from 'typescript'
 
 export default {
@@ -91,10 +91,21 @@ export default {
     ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
     ctx.app.use(NolebaseGitChangelogPlugin)
     ctx.app.use(useI18n)
+    ctx.app.directive('fancybox', {
+      mounted(el, binding) {
+        Fancybox.bind(el, binding.value || {})
+      },
+      unmounted(el) {
+        Fancybox.unbind(el)
+      }
+    })
 
     enhanceAppWithTabs(ctx.app)
   },
   setup() {
+    onMounted(() => {
+      Fancybox.bind('[data-fancybox]', {})
+    })
     // Get route
     const route = useRoute()
     const { lang } = useData()
@@ -105,28 +116,5 @@ export default {
       },
       { immediate: true }
     )
-    // Using
-    imageViewer(route, '.vp-doc img:not(.gallery, .VPImage)', {
-      title: true,
-      toolbar: {
-        zoomIn: 4,
-        zoomOut: 4,
-        oneToOne: 4,
-        reset: 4,
-        prev: false,
-        next: false
-      }
-    })
-    imageViewer(route, '.galleries', {
-      title: true,
-      toolbar: {
-        zoomIn: 4,
-        zoomOut: 4,
-        oneToOne: true,
-        reset: true,
-        prev: true,
-        next: true
-      }
-    })
   }
 } satisfies Theme

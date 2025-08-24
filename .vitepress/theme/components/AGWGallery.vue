@@ -12,14 +12,15 @@ const props = defineProps({
   id: Number
 })
 
-const galleries = frontmatter.value.gallery ? props.id && frontmatter.value.gallery[props.id] ? frontmatter.value.gallery[props.id] : frontmatter.value.gallery[0] ?? frontmatter.value.gallery ?? theme.value.gallery ?? [] : undefined
-
+const galleries = frontmatter.value.gallery
+  ? props.id && frontmatter.value.gallery[props.id]
+    ? frontmatter.value.gallery[props.id]
+    : (frontmatter.value.gallery[0] ?? frontmatter.value.gallery ?? theme.value.gallery ?? [])
+  : undefined
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/grid'
-
-
 </script>
 
 <template>
@@ -29,24 +30,24 @@ import 'swiper/css/grid'
       <swiper
         :modules="[Grid]"
         :slides-per-view="galleries.col"
-        :breakpoints="{ 
+        :breakpoints="{
           767: { slidesPerView: 2 },
-          1024: { 
+          1024: {
             slidesPerView: galleries.col,
             grid: {
               fill: 'row',
               rows: galleries.row
             }
-          } 
+          }
         }"
         :space-between="20"
       >
         <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
           <figure class="figure">
-              <figure class="figure ratio ratio-1x1">
-                <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
-              </figure>
-              <figcaption>{{ file.text }}</figcaption>
+            <figure class="figure ratio ratio-1x1">
+              <VPImage :image="file.src" :alt="frontmatter.title" data-fancybox="gallery" class="gallery" />
+            </figure>
+            <figcaption>{{ file.text }}</figcaption>
           </figure>
         </swiper-slide>
       </swiper>
@@ -59,10 +60,10 @@ import 'swiper/css/grid'
       >
         <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
           <figure class="figure">
-              <figure class="figure ratio ratio-1x1">
-                <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
-              </figure>
-              <figcaption>{{ file.text }}</figcaption>
+            <figure class="figure ratio ratio-1x1">
+              <VPImage :image="file.src" :alt="frontmatter.title" data-fancybox="gallery" class="gallery" />
+            </figure>
+            <figcaption>{{ file.text }}</figcaption>
           </figure>
         </swiper-slide>
       </swiper>
@@ -71,10 +72,10 @@ import 'swiper/css/grid'
       <swiper :slides-per-view="1.05" :space-between="20">
         <swiper-slide v-for="file in galleries.items" :key="galleries.items.src" class="item">
           <figure class="figure">
-              <figure class="figure ratio ratio-16x9">
-                <VPImage :image="file.src" :alt="frontmatter.title" class="gallery" />
-              </figure>
-              <figcaption>{{ file.text }}</figcaption>
+            <figure class="figure ratio ratio-16x9">
+              <VPImage :image="file.src" :alt="frontmatter.title" data-fancybox="gallery" class="gallery" />
+            </figure>
+            <figcaption>{{ file.text }}</figcaption>
           </figure>
         </swiper-slide>
       </swiper>
@@ -83,7 +84,6 @@ import 'swiper/css/grid'
 </template>
 
 <style scoped>
-
 figcaption {
   color: var(--vp-c-text-2);
 }

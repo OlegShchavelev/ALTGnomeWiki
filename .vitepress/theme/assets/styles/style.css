@@ -128,3 +128,11 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
+
+/**
+ * Component: FancyBox
+ * -------------------------------------------------------------------------- */
+
+[data-fancybox] {
+  cursor: zoom-in;
+}

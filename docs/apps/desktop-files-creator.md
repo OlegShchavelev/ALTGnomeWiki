@@ -3,7 +3,7 @@ aggregation:
   flatpak: com.github.alexkdeveloper.desktop-files-creator
   sisyphus: desktop-files-creator
 appstream:
-  id: com.github.alexkdeveloper.desktop-files-creator.png
+  id: com.github.alexkdeveloper.desktop-files-creator
   name: Desktop Files Creator
   icon: /desktop-files-creator/desktop-files-creator-logo.png
   summary: Простое приложение для создания файлов на рабочем столе в GNU/Linux

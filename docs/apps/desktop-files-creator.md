@@ -1,6 +1,7 @@
 ---
 aggregation:
   flatpak: com.github.alexkdeveloper.desktop-files-creator
+  sisyphus: desktop-files-creator
 appstream:
   id: com.github.alexkdeveloper.desktop-files-creator.png
   name: Desktop Files Creator
@@ -19,17 +20,13 @@ appstream:
     homepage: https://github.com/alexkdeveloper/desktop-files-creator
     bugtracker: https://github.com/alexkdeveloper/desktop-files-creator/issues
     translate: https://github.com/alexkdeveloper/desktop-files-creator/tree/main/po
-gallery:
-  type: carousel
-  items:
-    - src: /desktop-files-creator/desktop-files-creator-1.png
-      text: Главная страница
 ---
 
 # Desktop Files Creator
 
 Desktop Files Creator — позволяет создавать файлы рабочего стола в дистрибутивах GNU/Linux
 
-<AGWGallery />
+![Desktop Files Creator](/desktop-files-creator/desktop-files-creator-1.png)
 
+<!--@include: @apps/.parts/install/content-repo.md-->
 <!--@include: @apps/.parts/install/content-flatpak.md-->

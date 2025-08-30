@@ -1,0 +1,19 @@
+<!-- light-mode-themes-store-icon.svg -->
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Light rounded background -->
+  <rect width="256" height="256" rx="64" fill="#f5f5f5"/>
+
+  <!-- Center highlight -->
+  <circle cx="128" cy="140" r="88" fill="#b2ebf2"/>
+
+  <!-- Palette base -->
+  <path d="M128 64c-44 0-76 30-76 64 0 18 9 34 23 46s28 14 38 10c5-2 8-3 11-1 5 3 4 9 1 14 16 0 28-5 39-13s18-21 18-35c0-34-32-64-76-64z" 
+        fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+
+  <!-- Paint spots -->
+  <circle cx="100" cy="110" r="8" fill="#ff6b6b"/>
+  <circle cx="122" cy="98" r="8" fill="#ffd166"/>
+  <circle cx="144" cy="110" r="8" fill="#06d6a0"/>
+  <circle cx="116" cy="132" r="8" fill="#4cc9f0"/>
+</svg>
+

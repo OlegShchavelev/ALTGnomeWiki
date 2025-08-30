@@ -115,6 +115,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'LibreOffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
               { text: 'Lunacy', link: '/lunacy' },
+              { text: 'Linux Theme Store', link: '/linux-theme-store' },
               { text: 'Lutris', link: '/lutris' },
               { text: 'LibreWolf', link: '/librewolf' },
               { text: 'Meridius', link: '/meridius' },

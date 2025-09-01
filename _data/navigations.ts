@@ -103,6 +103,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'GitHub Desktop', link: '/github-desktop' },
               { text: 'Google Chrome', link: '/google-chrome' },
               { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
+              { text: 'Gradia', link: '/gradia' },
               { text: 'Gimp', link: '/gimp' },
               { text: 'Hardware Probe', link: '/hw-probe' },
               { text: 'Helvum', link: '/helvum' },

@@ -1,12 +1,15 @@
 ---
 aggregation:
+  snap:
+    id: drawing
+    build: stable
   sisyphus: drawing
   flatpak: com.github.maoschanz.drawing
 appstream:
   id: com.github.maoschanz.drawing
   name: Drawing
   icon: /drawing/drawing-logo.svg
-  summary: простой редактор изображений, похожий на Microsoft Paint.
+  summary: Простой редактор изображений, похожий на Microsoft Paint.
   developer:
     name: Romain F. T.
     nickname: maoschanz
@@ -30,3 +33,4 @@ Drawing — базовый редактор изображений, которы
 
 <!--@include: @apps/.parts/install/content-repo.md-->
 <!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @apps/.parts/install/content-snap.md-->

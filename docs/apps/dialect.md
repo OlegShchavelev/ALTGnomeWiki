@@ -1,7 +1,7 @@
 ---
 aggregation:
-  sisyphus: dialect
   flatpak: app.drey.Dialect
+  sisyphus: dialect
 appstream:
   id: app.drey.Dialect
   name: Dialect

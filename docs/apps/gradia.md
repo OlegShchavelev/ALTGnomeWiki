@@ -8,7 +8,7 @@ aggregation:
 appstream:
   id: be.alexandervanhee.gradia
   name: Gradia
-  icon: /gradia/gradia.svg
+  icon: /gradia/gradia-logo.svg
   summary: Подготовьте свои скриншоты к публикации
   metadata_license:
     name: GNU GPLv3

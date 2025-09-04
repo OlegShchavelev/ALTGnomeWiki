@@ -1,7 +1,7 @@
 ---
 aggregation:
-  sisyphus: evince
   flatpak: org.gnome.Evince
+  sisyphus: evince
 appstream:
   id: org.gnome.Evince
   name: Просмотр документов

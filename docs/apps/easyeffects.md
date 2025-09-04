@@ -1,7 +1,7 @@
 ---
 aggregation:
-  sisyphus: easyeffects
   flatpak: com.github.wwmm.easyeffects
+  sisyphus: easyeffects
 appstream:
   id: com.github.wwmm.easyeffects
   name: EasyEffects

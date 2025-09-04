@@ -4,7 +4,7 @@ aggregation:
 appstream:
   id: io.github.debasish_patra_1987.linuxthemestore
   name: Linux Theme Store
-  icon: /linux-theme-store/linux-theme-store.svg
+  icon: /linux-theme-store/linux-theme-store-logo.svg
   summary: Просмотр, поиск и управление установленными темами для рабочего стола
   metadata_license:
     name: GNU GPLv3

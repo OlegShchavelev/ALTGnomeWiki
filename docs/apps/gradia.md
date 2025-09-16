@@ -1,8 +1,8 @@
 ---
 aggregation:
   snap:
-      id: gradia
-      build: stable
+    id: gradia
+    build: stable
   flatpak: be.alexandervanhee.gradia
   sisyphus: gradia
 appstream:

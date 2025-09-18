@@ -1,6 +1,7 @@
 ---
 aggregation:
   flatpak: io.github.lainsce.Emulsion
+  sisyphus: emulsion
 appstream:
   id: io.github.lainsce.Emulsion
   name: Emulsion
@@ -32,4 +33,5 @@ Emulsion — приложение для хранения и редактиро�
 
 <AGWGallery />
 
+<!--@include: @apps/.parts/install/content-repo.md-->
 <!--@include: @apps/.parts/install/content-flatpak.md-->

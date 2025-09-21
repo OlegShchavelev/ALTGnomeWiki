@@ -4,7 +4,6 @@ import { vitepressSearchOptions } from './plugins'
 import type { AGWTheme } from '../theme/types/index'
 
 export const nav = (): DefaultTheme.NavItem[] => [
-  { text: 'Главная', link: '/' },
   { text: 'Документация', link: '/wiki/' },
   { text: 'Приложения GNOME', link: '/apps-gnome/' },
   { text: 'Для авторов', link: '/reference/' },

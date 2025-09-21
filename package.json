@@ -40,7 +40,7 @@
     "docs:remark": "remark "
   },
   "devDependencies": {
-    "@hywax/vitepress-yandex-metrika": "^0.4.0",
+    "@hywax/vitepress-yandex-metrika": "^1.0.0",
     "@iconify-json/icon-park-outline": "^1.2.2",
     "@iconify-json/svg-spinners": "^1.2.2",
     "@intlify/unplugin-vue-i18n": "^6.0.8",

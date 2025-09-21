@@ -76,22 +76,21 @@ export default {
     })
   },
 
-  enhanceApp(ctx) {
-    yandexMetrika(ctx, yandexMetrikaOptions.metrica)
-    ctx.app.component('Gallery', AGWGallery)
-    ctx.app.component('Teams', AGWTeams)
-    ctx.app.component('AGWLinkBlock', AGWLinkBlock)
-    ctx.app.component('AGWAnalogues', AGWAnalogues)
-    ctx.app.component('AGWCategories', AGWCategories)
-    ctx.app.component('team', AGWTeam)
-    ctx.app.component('app', AGWApp)
-    ctx.app.component('download', AGWDownload)
-    ctx.app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
-    ctx.app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
-    ctx.app.use(NolebaseEnhancedReadabilitiesPlugin)
-    ctx.app.use(NolebaseGitChangelogPlugin)
-    ctx.app.use(useI18n)
-    ctx.app.directive('fancybox', {
+  enhanceApp({ app, router, siteData }) {
+    app.component('Gallery', AGWGallery)
+    app.component('Teams', AGWTeams)
+    app.component('AGWLinkBlock', AGWLinkBlock)
+    app.component('AGWAnalogues', AGWAnalogues)
+    app.component('AGWCategories', AGWCategories)
+    app.component('team', AGWTeam)
+    app.component('app', AGWApp)
+    app.component('download', AGWDownload)
+    app.component('NolebasePagePropertiesEditor', NolebasePagePropertiesEditor)
+    app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
+    app.use(NolebaseEnhancedReadabilitiesPlugin)
+    app.use(NolebaseGitChangelogPlugin)
+    app.use(useI18n)
+    app.directive('fancybox', {
       mounted(el, binding) {
         Fancybox.bind(el, binding.value || {})
       },
@@ -99,8 +98,8 @@ export default {
         Fancybox.unbind(el)
       }
     })
-
-    enhanceAppWithTabs(ctx.app)
+    yandexMetrika(router, yandexMetrikaOptions.metrica)
+    enhanceAppWithTabs(app)
   },
   setup() {
     onMounted(() => {

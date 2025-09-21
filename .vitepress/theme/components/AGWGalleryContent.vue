@@ -126,8 +126,16 @@ const images = computed(
   padding-top: 100%;
 }
 
+.ratio.ratio-4x3::before {
+  padding-top: 75%;
+}
+
 .ratio.ratio-16x9::before {
   padding-top: 56.25%;
+}
+
+.ratio.ratio-21x9::before {
+  padding-top: 42.8571428571%;
 }
 
 .figure > * {
@@ -149,7 +157,6 @@ const images = computed(
   left: 0;
   height: 100%;
   object-fit: cover;
-  cursor: zoom-in;
 }
 
 .figcaption {

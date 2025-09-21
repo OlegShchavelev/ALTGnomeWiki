@@ -7,7 +7,8 @@
       "./.vitepress/theme/types/yaml.d.ts",
       "./.vitepress/theme/types/shims-vue.d.ts",
       "./.vitepress/theme/types/index.d.ts",
-      "@intlify/unplugin-vue-i18n/messages"
+      "@intlify/unplugin-vue-i18n/messages",
+      "vite/client"
     ]
   },
   "include": [

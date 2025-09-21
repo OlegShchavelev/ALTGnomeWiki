@@ -90,23 +90,15 @@ export default {
     app.use(NolebaseEnhancedReadabilitiesPlugin)
     app.use(NolebaseGitChangelogPlugin)
     app.use(useI18n)
-    app.directive('fancybox', {
-      mounted(el, binding) {
-        Fancybox.bind(el, binding.value || {})
-      },
-      unmounted(el) {
-        Fancybox.unbind(el)
-      }
-    })
     yandexMetrika(router, yandexMetrikaOptions.metrica)
     enhanceAppWithTabs(app)
+    if (!import.meta.env.SSR) {
+      Fancybox.bind('[data-fancybox]', {
+        Hash: false
+      })
+    }
   },
   setup() {
-    onMounted(() => {
-      Fancybox.bind('[data-fancybox]', {})
-    })
-    // Get route
-    const route = useRoute()
     const { lang } = useData()
     watch(
       lang,

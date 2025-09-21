@@ -90,7 +90,8 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
-        '@nolebase/vitepress-plugin-page-properties'
+        '@nolebase/vitepress-plugin-page-properties',
+        '@fancyapps/ui'
       ]
     },
     resolve: {

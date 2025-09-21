@@ -51,6 +51,7 @@ export namespace AGWTheme {
   export interface Config extends DefaultTheme.Config {
     meta?: Meta
     footer?: Footer
+    gallery?: AGWGallery.Config
   }
 
   export interface AppRows {
@@ -100,4 +101,20 @@ export interface Image {
 export interface Badge {
   type: 'info' | 'tip' | 'warning' | 'danger'
   text: string
+}
+
+export namespace AGWGallery {
+  export interface Image {
+    src: string
+    alt?: string
+    caption?: string
+  }
+
+  export interface Config {
+    title?: string
+    type?: 'grid' | 'carousel' | 'slider'
+    images?: Image[]
+    gridColumns?: number
+    showCaptions?: boolean
+  }
 }

@@ -18,15 +18,44 @@ appstream:
     homepage: https://addwater.qwery.dev/
     bugtracker: https://github.com/largestgithubuseronearth/addwater/issues
 gallery:
-  title: Галерея
-  type: slider
-  items:
-    - src: /add-water/add-water-1.png
-    - src: /add-water/add-water-2.png
-    - src: /add-water/add-water-3.png
-    - src: /add-water/add-water-4.png
-    - src: /add-water/add-water-5.png
-    - src: /add-water/add-water-6.png
+    - title: Скриншоты приложения Add Water
+      type: slider
+      alias: description
+      images:
+        - src: "gallery/description/add-water-1.png"
+          alt: "Скриншот 1"
+          caption: "Описание 1"
+        - src: "gallery/description/add-water-2.png"
+          alt: "Скриншот 2"
+        - src: "gallery/description/add-water-3.png"
+          alt: "Скриншот 3"
+          caption: "Описание 3"
+        - src: "gallery/description/add-water-4.png"
+          alt: "Скриншот 4"
+          caption: "Описание 4"
+        - src: "gallery/description/add-water-5.png"
+          alt: "Скриншот 5"
+          caption: "Описание 5"
+        - src: "gallery/description/add-water-6.png"
+          alt: "Скриншот 6"
+          caption: "Описание 6"
+    - title: Скриншоты приложения Add Water 1
+      type: carousel
+      alias: description1
+      images:
+        - src: "gallery/description/add-water-1.png"
+          alt: "Скриншот 1"
+          caption: "Закат в горах, снято в августе 2023"
+        - src: "gallery/description/add-water-2.png"
+          alt: "Скриншот 2"
+          caption: "Описание 2"
+        - src: "gallery/description/add-water-3.png"
+        - src: "gallery/description/add-water-4.png"
+          alt: "Скриншот 4"
+          caption: "Современное здание в центре города"
+        - src: "gallery/description/add-water-5.png"
+        - src: "gallery/description/add-water-6.png"
+
 ---
 
 # Add Water
@@ -50,7 +79,8 @@ Add Water — позволяет легко настроить тему Libadwai
 Если вы занимаетесь распространением программного обеспечения, настоятельно рекомендуем не включать эти изменения по умолчанию для ваших пользователей. Важно, чтобы они были четко проинформированы о том, что используют модифицированную версию пользовательского интерфейса Firefox.
 :::
 
-<AGWGallery />
+<Gallery title="Скриншоты приложения Add Water" alias="description" />
+<Gallery title="Скриншоты приложения Add Water 1" alias="description1" />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -78,7 +78,7 @@ export default {
 
   enhanceApp(ctx) {
     yandexMetrika(ctx, yandexMetrikaOptions.metrica)
-    ctx.app.component('AGWGallery', AGWGallery)
+    ctx.app.component('Gallery', AGWGallery)
     ctx.app.component('Teams', AGWTeams)
     ctx.app.component('AGWLinkBlock', AGWLinkBlock)
     ctx.app.component('AGWAnalogues', AGWAnalogues)

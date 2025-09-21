@@ -36,6 +36,7 @@ defineProps<{
   height: 48px;
   flex-shrink: 0;
   border-radius: 50%;
+  overflow: hidden;
   box-shadow: var(--vp-shadow-3);
 }
 

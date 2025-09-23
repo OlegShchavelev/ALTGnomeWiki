@@ -7,6 +7,17 @@ import type { AGWTheme } from '../types/index'
 
 const { frontmatter, theme } = useData()
 
+const toMetaList = (caption: string, value: string | AGWTheme.LinkObj) => {
+  if (typeof value === 'string') {
+    return { caption, link: value }
+  }
+  return {
+    caption,
+    link: value.link,
+    text: value.name
+  }
+}
+
 const fm = computed(() => {
   const appstream = frontmatter.value.appstream ?? {}
   const { icon, name, summary, developer } = appstream
@@ -24,10 +35,7 @@ const fm = computed(() => {
         ]
       : []),
 
-    ...Object.entries(appstream.url ?? {}).map(([key, value]) => ({
-      caption: key,
-      link: value
-    }))
+    ...Object.entries(appstream.url ?? {}).map(([caption, value]) => toMetaList(caption, value as any))
   ]
 
   const showAsideMeta = Object.keys(appstream).length

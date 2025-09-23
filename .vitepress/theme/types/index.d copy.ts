@@ -72,8 +72,6 @@ export namespace AGWTheme {
     name: MetaKeyword[]
     type: MetaAction[]
   }
-
-  export type LinkObj = { name?: string; link: string }
 }
 
 export interface Distribution {

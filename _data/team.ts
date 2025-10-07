@@ -241,8 +241,6 @@ export const contributions = [
     mapByNameAliases: ['Aleksandr Shamaraev', 'Aleksand Shamaraev'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/AlexanderShad' }],
-    actionText: 'Поддержать',
-    sponsor: 'https://www.tinkoff.ru/cf/Ae2RCqqTpgR'
   },
   {
     avatar: 'https://github.com/vlad196.png',

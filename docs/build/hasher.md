@@ -38,7 +38,6 @@ USER = _локальный_ пользователь сборочницы
 Далее уже от _локального_ пользователя создаём каталоги hasher и сразу добавляем информацию в git
 
 ```
-$ mkdir ~/.hasher
 $ mkdir ~/hasher
 $ git config --global user.name 'Aleksand Shamaraev'
 $ git config --global user.email 'alexander.shad@alt-gnome.ru'
@@ -83,13 +82,13 @@ wlimit_bytes_written=3355443200
 "Устанавливаем" свой hasher, выполнив команду
 
 ```
-$ hsh --initroot-only ~/.hasher
+$ hsh --initroot-only ~/hasher
 ```
 
 Далее идём в каталог и создаём файл **config**
 
 ```
-/home/USER/.hasher/config
+/home/USER/hasher/config
 ```
 
 В данный файл пишем следующее содержимое

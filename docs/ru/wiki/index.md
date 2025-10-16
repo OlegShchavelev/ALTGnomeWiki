@@ -10,104 +10,104 @@ docs:
           light: /global-dark.svg
         apps:
           - name: Яндекс Браузер
-            link: yandex-browser
+            link: apps/yandex-browser
           - name: Firefox
-            link: firefox
+            link: apps/firefox
           - name: Chromium
-            link: chromium
+            link: apps/chromium
           - name: Opera
-            link: opera
+            link: apps/opera
           - name: Google Chrome
-            link: google-chrome
+            link: apps/google-chrome
           - name: Brave
-            link: brave
+            link: apps/brave
           - name: Vivaldi
-            link: vivaldi
+            link: apps/vivaldi
           - name: Microsoft Edge
-            link: microsoft-edge
+            link: apps/microsoft-edge
           - name: LibreWolf
-            link: librewolf
+            link: apps/librewolf
           - name: Waterfox
-            link: waterfox
+            link: apps/waterfox
       - title: Мессенджеры
         icon:
           dark: /message-light.svg
           light: /message-dark.svg
         apps:
           - name: Telegram Desktop
-            link: telegram
+            link: apps/telegram
           - name: Viber
-            link: viber
+            link: apps/viber
           - name: WhatsApp Desktop
-            link: whatsapp-desktop
+            link: apps/whatsapp-desktop
           - name: VK Мессенджер
-            link: vk-messenger
+            link: apps/vk-messenger
           - name: Discord
-            link: discord
+            link: apps/discord
           - name: Vesktop
-            link: vesktop
+            link: apps/vesktop
           - name: Skype
-            link: skype
+            link: apps/skype
       - title: Игры
         icon:
           dark: /gamepad-light.svg
           light: /gamepad-dark.svg
         apps:
           - name: Steam
-            link: steam
+            link: apps/steam
           - name: Minecraft
-            link: minecraft
+            link: apps/minecraft
           - name: PortProton
-            link: port-proton
+            link: apps/port-proton
           - name: Space Station 14
-            link: space-station-14
+            link: apps/space-station-14
           - name: Lutris
-            link: lutris
+            link: apps/lutris
           - name: Bottles
-            link: bottle
+            link: apps/bottle
           - name: Cartridges
-            link: cartridges
+            link: apps/cartridges
           - name: Grapejuice
-            link: grapejuice
+            link: apps/grapejuice
       - title: Офис
         icon:
           dark: /document-light.svg
           light: /document-dark.svg
         apps:
           - name: Мой офис
-            link: my-office
+            link: apps/my-office
           - name: Р7-Офис
-            link: r7-office
+            link: apps/r7-office
           - name: LibreOffice
-            link: libreoffice
+            link: apps/libreoffice
           - name: WPS Office
-            link: wps-office
+            link: apps/wps-office
       - title: Работа с графикой
         icon:
           dark: /designer-light.svg
           light: /designer-dark.svg
         apps:
           - name: Figma
-            link: figma
+            link: apps/figma
           - name: Lunacy
-            link: lunacy
+            link: apps/lunacy
           - name: Penpot Desktop
-            link: penpot-desktop
+            link: apps/penpot-desktop
           - name: Blender
-            link: blender
+            link: apps/blender
           - name: Drawing
-            link: drawing
+            link: apps/drawing
           - name: Krita
-            link: krita
+            link: apps/krita
       - title: Стриминговые сервисы
         icon:
           dark: /streaming-light.svg
           light: /streaming-dark.svg
         apps:
           - name: Кассета
-            link: cassette
+            link: apps/cassette
           - name: Spotify
-            link: spotify
+            link: apps/spotify
 gitChangelog: false
 ---
 

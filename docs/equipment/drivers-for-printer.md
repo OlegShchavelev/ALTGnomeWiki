@@ -170,11 +170,13 @@ epm play pantum
 
 
 ### Если в ЦУС нет раздела "Принтеры", то установить пакет:
-```shell
+::: code-group
+
+```shell[apt-get]
 apt-get install alterator-printers
 ```
-или  
-```shell
+
+```shell[epm]
 epmi alterator-printers
 ```
 :::

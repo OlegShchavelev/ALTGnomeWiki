@@ -1,15 +1,8 @@
 <script setup lang="ts">
-interface Actions {
-  id: string
-  text: string
-  target: string
-  theme: string
-  baseUrl: string
-  [key: string]: any
-}
+import type { MetaActionItem } from '../types'
 
 defineProps<{
-  actions: Actions[]
+  actions: MetaActionItem[]
 }>()
 </script>
 

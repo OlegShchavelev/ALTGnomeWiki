@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useData } from 'vitepress'
 import { VPBadge } from 'vitepress/theme'
-import type { AGWTheme } from '../types/index'
+import type { MetaKeywords } from '../types/index'
 
 const props = defineProps<{
-  keywords?: AGWTheme.MetaKeywords[]
+  keywords?: MetaKeywords[]
 }>()
 </script>
 
 <template>
   <div class="badges">
     <template v-for="keyword in keywords">
-      <VPBadge :type="keyword.type" :text="$t('meta.bagdes.' + keyword.name)" />
+      <VPBadge :type="keyword.type" :text="$t('meta.badges.' + keyword.name)" />
     </template>
   </div>
 </template>

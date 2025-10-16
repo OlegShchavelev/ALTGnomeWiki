@@ -1,5 +1,5 @@
 meta:
-  bagdes:
+  badges:
     core: 'GNOME Core'
     circle: 'GNOME Circle'
     adaptive: 'Адаптивный'
@@ -29,3 +29,4 @@ member:
 teams:
   loading: Загрузка...
   error: 'Ошибка загрузки: {{ error.message }}'
+  empty: Нет участников для отображения

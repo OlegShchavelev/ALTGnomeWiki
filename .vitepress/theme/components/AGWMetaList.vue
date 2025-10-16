@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
-import { extractDomain } from './../composables/link'
-import type { AGWTheme } from '../types/index'
+import { VPLink } from 'vitepress/theme'
+import type { MetaLists } from '../types'
+import { getHostname } from './../composables/link'
 
 defineProps<{
-  lists: AGWTheme.MetaLists[]
+  lists: MetaLists[]
 }>()
 </script>
 
@@ -13,7 +13,7 @@ defineProps<{
     <template v-for="list in lists">
       <dt>{{ $t('meta.lists.' + list.caption) }}</dt>
       <dd>
-        <VPLink :href="list.link">{{ list.text ?? extractDomain(list.link) }}</VPLink>
+        <VPLink :href="list.link">{{ list.text ?? getHostname(list.link) }}</VPLink>
       </dd>
     </template>
   </dl>

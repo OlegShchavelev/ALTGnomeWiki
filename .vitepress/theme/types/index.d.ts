@@ -4,14 +4,6 @@ import { type DefaultTheme } from 'vitepress'
 // Meta Types
 // ========================================
 
-interface Meta {
-  keywords?: MetaKeyword
-  actions?: MetaAction
-}
-
-type MetaKeyword = Record<MetaKeywordKey, MetaKeywordType>
-type MetaAction = Record<MetaActionKey, MetaActions>
-
 export type MetaKeywordKey =
   | 'core'
   | 'circle'
@@ -24,19 +16,50 @@ export type MetaKeywordKey =
 export type MetaKeywordType = 'info' | 'success' | 'tip' | 'danger' | 'warning' | 'success-1'
 
 export type MetaActionKey = 'sisyphus' | 'flatpak' | 'snap' | 'extension' | 'more'
+
+export type MetaActionsTheme = 'sisyphus' | 'flatpak' | 'snap' | 'extension' | 'more'
+
+export type MetaKeyword = Record<MetaKeywordKey, MetaKeywordType>
+
 export type MetaActions = {
   theme: MetaActionsTheme
   target: string
   baseUrl?: string
 }
 
-export type MetaActionsTheme = 'sisyphus' | 'flatpak' | 'snap' | 'extension' | 'more'
+export type MetaAction = Record<MetaActionKey, MetaActions>
 
-export type MetaDeveloper = {
-  avatar: string
+export interface MetaKeywords {
   name: string
-  nickname: string
+  type: MetaKeywordType
 }
+
+export interface MetaActionItem {
+  id: string
+  text: string
+  target: string
+  theme: MetaActionsTheme
+  baseUrl?: string
+}
+
+export interface MetaLists {
+  caption: string
+  link: string
+  text?: string
+}
+
+export interface MetaDeveloper {
+  avatar?: string
+  name: string
+  nickname?: string
+}
+
+interface Meta {
+  keywords?: MetaKeyword
+  actions?: MetaAction
+}
+
+export type LinkObj = { name?: string; link: string }
 
 // ========================================
 // Team Types
@@ -92,22 +115,9 @@ export namespace AGWTheme {
     name: string
     icon?: string
     summary?: string
-    keywords: MetaKeywords[]
-    actions?: MetaAction[]
+    keywords?: MetaKeywords[]
+    actions?: MetaActionItem[]
   }
-
-  export interface MetaLists {
-    caption: string
-    link: string
-    text?: string
-  }
-
-  export interface MetaKeywords {
-    name: MetaKeyword[]
-    type: MetaAction[]
-  }
-
-  export type LinkObj = { name?: string; link: string }
 }
 
 // ========================================

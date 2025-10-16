@@ -1,21 +1,25 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { VPImage } from 'vitepress/theme'
 import type { MetaDeveloper } from '../types/index'
-defineProps<{
-  developer: MetaDeveloper
+
+const props = defineProps<{
+  developer?: MetaDeveloper
 }>()
+
+const hasDeveloper = computed(() => props.developer && props.developer.name)
 </script>
 
 <template>
-  <div class="developers">
+  <div v-if="hasDeveloper" class="developers">
     <figure v-if="developer?.avatar" class="avatar">
-      <VPImage :image="developer?.avatar" :alt="developer.name" />
+      <VPImage :image="developer.avatar" :alt="developer.name" />
     </figure>
     <div>
       <div class="caption">{{ $t('meta.developer.caption') }}</div>
       <div class="name">
-        {{ developer.name }}
-        <span class="nickname">
+        {{ developer!.name }}
+        <span v-if="developer?.nickname" class="nickname">
           {{ developer.nickname }}
         </span>
       </div>

@@ -476,7 +476,8 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
       { text: 'Ядро', link: 'systems/kernel/' },
       { text: 'EPM', link: 'package-manager/epm/' },
       { text: 'Flatpak', link: 'package-manager/flatpak/' },
-      { text: 'Snaps', link: 'package-manager/snap/' }
+      { text: 'Snaps', link: 'package-manager/snap/' },
+      { text: 'Stepler', link: 'package-manager/stplr/' }
     ]
   }
 ]

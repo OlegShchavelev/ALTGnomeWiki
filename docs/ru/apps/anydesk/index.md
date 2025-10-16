@@ -7,6 +7,9 @@ aggregation:
     play:
       id: anydesk
       build: unofficial
+  stplr:
+    id: anydesk
+    build: unofficial
 appstream:
   id: com.anydesk.Anydesk
   name: AnyDesk
@@ -32,6 +35,8 @@ AnyDesk — программа удалённого доступа, котора
 ![AnyDesk](/anydesk/anydesk-1.png)
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+
+<!--@include: @ru/apps/.parts/install/content-stplr.md-->
 
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 

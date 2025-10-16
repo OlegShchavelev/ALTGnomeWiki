@@ -55,7 +55,6 @@
     "@types/yargs": "^17.0.33",
     "cspell": "^8.19.4",
     "markdown-it": "^14.1.0",
-    "markdown-it-conditional-render": "^0.1.0",
     "markdown-it-container": "^4.0.0",
     "markdown-it-html5-embed": "^1.0.0",
     "markdown-it-implicit-figures": "^0.12.0",

@@ -16,7 +16,6 @@ import markdownItKbd from 'markdown-it-kbd'
 import markdownItTaskLists from 'markdown-it-task-lists'
 import markdownItImplicitFigures from 'markdown-it-implicit-figures'
 import markdownItEmbed from 'markdown-it-html5-embed'
-import markdownItConditionalRender from 'markdown-it-conditional-render'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import linkBlock from '../theme/composables/linkBlock'
 import markdownItFancybox from '../theme/plugins/markdownItFancybox'
@@ -206,7 +205,6 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
           useImageSyntax: true // Enables video/audio embed with ![]() syntax (default)
         }
       })
-      md.use(markdownItConditionalRender)
       md.use(tabsMarkdownPlugin)
       md.use(markdownItFancybox)
       md.use(linkBlock)

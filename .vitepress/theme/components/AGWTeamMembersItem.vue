@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import type { DefaultTheme } from 'vitepress/theme'
-import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
-import VPSocialLinks from 'vitepress/dist/client/theme-default/components/VPSocialLinks.vue'
+import { type DefaultTheme, VPLink, VPSocialLinks } from 'vitepress/theme'
 
 interface Props {
   size?: 'small' | 'medium'

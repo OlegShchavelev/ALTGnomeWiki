@@ -4,7 +4,7 @@
 
 ## 1. Переменные
 
-Используются такие блоки метаданных [Frontmatter](/reference/pages/vitepress/#frontmatter):
+Используются такие блоки метаданных Frontmatter:
 
 <!-- prettier-ignore -->
 ```markdown

@@ -6,12 +6,12 @@ import type { AGWTheme } from '../theme/types/index'
 export const nav = (): DefaultTheme.NavItem[] => [
   { text: 'Документация', link: '/wiki/' },
   { text: 'Приложения GNOME', link: '/apps-gnome/' },
-  { text: 'Для авторов', link: '/reference/' },
   {
     text: 'О проекте',
     items: [
-      { text: 'О проекте', link: '/project/about/' },
-      { text: 'Участники', link: '/project/contributions/' }
+      { text: 'О проекте', link: '/projects/about/' },
+      { text: 'Как поучаствовать', link: '/projects/how-to-contribute/' },
+      { text: 'Участники', link: '/projects/contributions/' }
     ]
   }
 ]
@@ -482,11 +482,11 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
   }
 ]
 
-export const sidebarProjectGuide = (): DefaultTheme.SidebarItem[] => [
+export const sidebarHowToContribute = (): DefaultTheme.SidebarItem[] => [
   { text: 'Для авторов', link: '/' },
   {
     text: 'Создание страниц',
-    base: '/reference/pages/',
+    base: '/projects/how-to-contribute/pages/',
     items: [
       { text: 'Внесение изменений', link: 'alteration/' },
       { text: 'Возможности Markdown', link: 'markdown-how-to/' },
@@ -497,7 +497,7 @@ export const sidebarProjectGuide = (): DefaultTheme.SidebarItem[] => [
   },
   {
     text: 'Структура',
-    base: '/reference/structure/',
+    base: '/projects/how-to-contribute/structure/',
     items: [
       { text: 'Страница приложения', link: 'app/' },
       { text: 'Страница Wiki', link: 'wiki_page/' }
@@ -506,7 +506,7 @@ export const sidebarProjectGuide = (): DefaultTheme.SidebarItem[] => [
   },
   {
     text: 'Контроль качества',
-    base: '/reference/tests/',
+    base: '/projects/how-to-contribute/tests/',
     items: [
       { text: 'Проверка текста на ошибки', link: 'speller/' },
       { text: 'Проверка структуры статьи', link: 'remark/' }
@@ -526,9 +526,9 @@ export const ru = defineConfigWithTheme<AGWTheme.Config>({
     nav: nav(),
     sidebar: {
       '/': { base: '/', items: sidebar() },
-      '/reference/': {
-        base: '/reference/',
-        items: sidebarProjectGuide()
+      '/projects/how-to-contribute/': {
+        base: '/projects/how-to-contribute/',
+        items: sidebarHowToContribute()
       }
     },
     editLink: {

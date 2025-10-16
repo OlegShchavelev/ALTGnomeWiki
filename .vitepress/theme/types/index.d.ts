@@ -1,5 +1,9 @@
 import { type DefaultTheme } from 'vitepress'
 
+// ========================================
+// Meta Types
+// ========================================
+
 interface Meta {
   keywords?: MetaKeyword
   actions?: MetaAction
@@ -27,12 +31,31 @@ export type MetaActions = {
 }
 
 export type MetaActionsTheme = 'sisyphus' | 'flatpak' | 'snap' | 'extension' | 'more'
-export type Collaborator = 'knowledge' | 'maintainer'
 
 export type MetaDeveloper = {
   avatar: string
   name: string
   nickname: string
+}
+
+// ========================================
+// Team Types
+// ========================================
+
+export type Collaborator = 'knowledge' | 'maintainer'
+
+export interface Member {
+  title: string
+  lead?: string
+  tids?: string[] | null
+  layout?: 'home' | 'doc'
+  moreLink?: string
+  moreText?: string
+  limit?: number
+  homeLimit?: number
+  name: string | object
+  size?: 'small' | 'medium'
+  collaborator: Collaborator
 }
 
 export interface Footer extends DefaultTheme.Footer {
@@ -47,11 +70,22 @@ export interface Footer extends DefaultTheme.Footer {
   }
 }
 
+// ========================================
+// Theme Config
+// ========================================
+
 export namespace AGWTheme {
   export interface Config extends DefaultTheme.Config {
     meta?: Meta
     footer?: Footer
     gallery?: AGWGallery.Config
+    teams?: {
+      path: string
+    }
+  }
+
+  export interface TeamMember extends DefaultTheme.TeamMember {
+    collaborator: Collaborator
   }
 
   export interface AppRows {
@@ -75,6 +109,10 @@ export namespace AGWTheme {
 
   export type LinkObj = { name?: string; link: string }
 }
+
+// ========================================
+// Distribution Types
+// ========================================
 
 export interface Distribution {
   name: string
@@ -104,6 +142,10 @@ export interface Badge {
   type: 'info' | 'tip' | 'warning' | 'danger'
   text: string
 }
+
+// ========================================
+// Gallery Types
+// ========================================
 
 export namespace AGWGallery {
   export interface Image {

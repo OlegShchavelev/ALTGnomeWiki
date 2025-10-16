@@ -17,4 +17,9 @@ export interface Locale extends Record<string, any> {
       bugtracker: string
     }
   }
+  teams?: {
+    loading: string
+    error: string
+    empty: string
+  }
 }

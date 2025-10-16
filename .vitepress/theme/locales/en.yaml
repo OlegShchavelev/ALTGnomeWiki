@@ -24,3 +24,8 @@ meta:
     extension: GNOME Extensions
 member:
   sponsor: Sponsor
+
+teams:
+  loading: Loading...
+  error: 'Error loading: {{ error.message }}'
+  empty: No members to display

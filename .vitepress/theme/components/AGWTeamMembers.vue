@@ -1,46 +1,37 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useData } from '../composables/data'
 import { VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
-import type { Collaborator } from '../types/index'
-import teams from '../../data/teams.data.yaml'
+import type { Member } from '../types'
+import { useTeams } from '../composables/useTeams'
 
-const { site } = useData()
-const lang = computed(() => site.value.lang.replace('ru-RU', 'ru'))
+const { filterTeamsByCollaborator } = useTeams()
 
-export interface Member {
-  title: string
-  lead?: string
-  collaborator: Collaborator
-  name: string | object
-  size?: 'small' | 'medium'
-}
-
-defineProps<{
+const props = defineProps<{
   members: Member[]
 }>()
+
+const validMembers = computed(() => props.members?.filter((m) => m.title) || [])
+
+const key = (member: Member, index: number) =>
+  `${member.collaborator || 'unknown'}-${member.title || 'untitled'}-${index}`
 </script>
 
 <template>
-  <VPTeamPageSection v-for="member in members">
-    <template #title> {{ member.title }}</template>
-    <template v-if="member.lead" #lead> {{ member.lead }}</template>
-    <template #members>
-      <VPTeamMembers
-        :size="member.size"
-        :members="
-          teams
-            .map((team: any) => ({
-              ...team,
-              name: team.name[lang] ?? team.name,
-              desc:
-                typeof team.desc === 'object' && Object.keys(team.desc).length ? team.desc[lang] : team.desc
-            }))
-            .filter((team: any) => team.collaborator.includes(member.collaborator))
-        "
-      />
-    </template>
-  </VPTeamPageSection>
+  <template v-if="validMembers.length">
+    <VPTeamPageSection v-for="(member, index) in validMembers" :key="key(member, index)">
+      <template #title>{{ member.title }}</template>
+      <template v-if="member.lead" #lead>{{ member.lead }}</template>
+      <template #members>
+        <VPTeamMembers
+          :size="member.size || 'medium'"
+          :members="filterTeamsByCollaborator(member.collaborator)"
+        />
+      </template>
+    </VPTeamPageSection>
+  </template>
+  <div v-else class="no-members">
+    <p>{{ $t('teams.empty') }}</p>
+  </div>
 </template>
 
 <style scoped>
@@ -52,5 +43,11 @@ defineProps<{
   .VPTeamPageSection + .VPTeamPageSection {
     margin-top: 96px;
   }
+}
+
+.no-members {
+  padding: 48px;
+  text-align: center;
+  color: var(--vp-c-text-2);
 }
 </style>

@@ -70,15 +70,6 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
       GitChangelog(nolebaseGitChangelogOptions.plugin),
       GitChangelogMarkdownSection(nolebaseGitChangelogOptions.pluginSections),
       PageProperties(),
-      PagePropertiesMarkdownSection({
-        excludes: [],
-        exclude: (_, { helpers }): boolean => {
-          for (let page of ['index.md', 'wiki.md', 'contributions.md', 'about.md', 'games.md']) {
-            if (helpers.idEndsWith(page)) return true
-          }
-          return false
-        }
-      }),
       vueI18n({
         ssr: true
       })

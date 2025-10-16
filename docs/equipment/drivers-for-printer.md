@@ -167,4 +167,16 @@ epm play pantum
 После этих манипуляций, принтер заработает:
 
 ![drivers-for-printer](/drivers-for-printer/drivers-for-printer4.png)
+
+
+### Если в ЦУС нет раздела "Принтеры", то установить пакет:
+::: code-group
+
+```shell[apt-get]
+apt-get install alterator-printers
+```
+
+```shell[epm]
+epmi alterator-printers
+```
 :::

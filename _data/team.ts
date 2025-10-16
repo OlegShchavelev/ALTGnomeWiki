@@ -1,7 +1,3 @@
-import { telegram, gitflic, gitverse, gitlab, vk } from '../.vitepress/support/icons.js'
-
-/* Параметры страницы участников */
-
 const homeSorting = 'month, commits'
 const teamSorting = 'role, commits, month'
 const leader = 'Олег Щавелев'
@@ -26,15 +22,7 @@ export const contributions = [
     name: 'Олег Щавелев',
     mapByNameAliases: ['OlegShchavelev', 'Oleg Shchavelev', 'Олег Щавелев'],
     title: 'Разработчик, Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/OlegShchavelev' },
-      {
-        icon: {
-          svg: gitflic
-        },
-        link: 'https://gitflic.ru/user/olegshchavelev'
-      }
-    ],
+    links: [{ icon: 'github', link: 'https://github.com/OlegShchavelev' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.tinkoff.ru/cf/1uEC4uodPuV'
   },
@@ -59,10 +47,7 @@ export const contributions = [
     name: 'Давид Султаниязов',
     mapByNameAliases: ['X1Z53', 'x1z53', 'Sultaniiazov David'],
     title: 'Разработчик, Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/X1Z53' },
-      { icon: { svg: gitverse }, link: 'https://gitverse.ru/x1z53' }
-    ],
+    links: [{ icon: 'github', link: 'https://github.com/X1Z53' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.tinkoff.ru/cf/IpsmO1P5PJ'
   },
@@ -71,31 +56,20 @@ export const contributions = [
     name: 'Семён Фомченков',
     mapByNameAliases: ['Semen Fomchenkov', 'Armatik', 'armatik', 'Семен Васильевич Фомченков'],
     title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/Armatik' },
-      {
-        icon: {
-          svg: gitflic
-        },
-        link: 'https://gitflic.ru/user/armatik'
-      }
-    ],
+    links: [{ icon: 'github', link: 'https://github.com/Armatik' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.tinkoff.ru/cf/2MA0Bm6ax63'
   },
   {
-    mapByNameAliases: [
-        "Labaman",
-        "Mikhail Velichko"
-    ],
-    name: "Михаил Величко",
-    title: "Участник",
-    avatar: "https://github.com/Labaman.png",
+    mapByNameAliases: ['Labaman', 'Mikhail Velichko'],
+    name: 'Михаил Величко',
+    title: 'Участник',
+    avatar: 'https://github.com/Labaman.png',
     links: [
-        {
-            icon: "github",
-            link: "https://github.com/Labaman"
-        }
+      {
+        icon: 'github',
+        link: 'https://github.com/Labaman'
+      }
     ],
     actionText: 'Поддержать',
     sponsor: 'https://www.tbank.ru/cf/1Erc241qRhw'
@@ -105,15 +79,7 @@ export const contributions = [
     name: 'Anton Palgunov',
     mapByNameAliases: ['Anton Palgunov', 'Toxblh'],
     title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/Toxblh' },
-      {
-        icon: {
-          svg: gitflic
-        },
-        link: 'https://gitflic.ru/user/toxblh'
-      }
-    ],
+    links: [{ icon: 'github', link: 'https://github.com/Toxblh' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.donationalerts.com/r/toxblh'
   },
@@ -122,15 +88,7 @@ export const contributions = [
     name: 'iQQator',
     mapByNameAliases: ['Субач Павел', 'iQQator', 'iDevPro'],
     title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/iDevPro' },
-      {
-        icon: {
-          svg: gitflic
-        },
-        link: 'https://gitflic.ru/user/powertux'
-      }
-    ],
+    links: [{ icon: 'github', link: 'https://github.com/iDevPro' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/subach.pavel2/I4eLp8903'
   },
@@ -146,45 +104,21 @@ export const contributions = [
     name: 'Дмитрий Бондарев',
     mapByNameAliases: ['pokedim13', 'h3try'],
     title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/pokedim13' },
-      {
-        icon: {
-          svg: gitflic
-        },
-        link: 'https://gitflic.ru/user/h3try'
-      }
-    ]
+    links: [{ icon: 'github', link: 'https://github.com/pokedim13' }]
   },
   {
     avatar: 'https://github.com/ilyazheprog.png',
     name: 'Илья Женецкий',
     mapByNameAliases: ['ilyazheprog', 'Ilya Zhenetskij'],
     title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/ilyazheprog' },
-      {
-        icon: {
-          svg: gitflic
-        },
-        link: 'https://gitflic.ru/user/ilyazheprog'
-      }
-    ]
+    links: [{ icon: 'github', link: 'https://github.com/ilyazheprog' }]
   },
   {
     avatar: 'https://github.com/Luckenty.png',
     name: 'Дмитрий Орлов',
     mapByNameAliases: ['Dmitry', 'Luckenty'],
     title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/Luckenty' },
-      {
-        icon: {
-          svg: gitflic
-        },
-        link: 'https://gitflic.ru/user/luckenty'
-      }
-    ],
+    links: [{ icon: 'github', link: 'https://github.com/Luckenty' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.tinkoff.ru/cf/9o0c3eIAJ2D'
   },
@@ -193,15 +127,7 @@ export const contributions = [
     name: 'Кирилл Уницаев',
     mapByNameAliases: ['fiersik', 'Fiersik Kouji'],
     title: 'Участник',
-    links: [
-      { icon: 'github', link: 'https://github.com/fiersik' },
-      {
-        icon: {
-          svg: gitflic
-        },
-        link: 'https://gitflic.ru/user/fiersik'
-      }
-    ],
+    links: [{ icon: 'github', link: 'https://github.com/fiersik' }],
     actionText: 'Поддержать',
     sponsor: 'https://www.tinkoff.ru/cf/4p7xYDHEH2y'
   },
@@ -340,6 +266,7 @@ export const contributions = [
     avatar: 'https://github.com/radiolamp.png',
     links: [{ icon: 'github', link: 'https://github.com/radiolamp' }],
     actionText: 'Поддержать',
-    sponsor: 'https://www.tinkoff.ru/collectmoney/crowd/osipov.anton16/uMOHe45333/?short_link=1J1DvYNesgD&referer=https%3A%2F%2Fgithub.com%2F&httpMethod=GET'
+    sponsor:
+      'https://www.tinkoff.ru/collectmoney/crowd/osipov.anton16/uMOHe45333/?short_link=1J1DvYNesgD&referer=https%3A%2F%2Fgithub.com%2F&httpMethod=GET'
   }
 ]

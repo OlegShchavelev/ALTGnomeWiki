@@ -2,7 +2,6 @@
 import { defineConfigWithTheme } from 'vitepress'
 import type { AGWTheme } from '../theme/types/index'
 import { fileURLToPath, URL } from 'node:url'
-import { telegram, vk } from '../support/icons'
 import { normalize } from '../support/utils'
 
 /* Tools */
@@ -132,9 +131,7 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
     logo: { src: '/logo.png', width: 36, height: 36, alt: 'ALT Gnome Wiki' },
     socialLinks: [
       {
-        icon: {
-          svg: telegram
-        },
+        icon: 'telegram',
         link: 'https://t.me/alt_gnome'
       },
       {
@@ -142,14 +139,12 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
         link: 'https://mastodon.ml/@alt_gnome/'
       },
       {
-        icon: {
-          svg: vk
-        },
+        icon: 'vk',
         link: 'https://vk.com/alt_gnome'
       },
       {
-        icon: 'github',
-        link: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki'
+        icon: 'altlinux-space',
+        link: 'https://altlinux.space/alt-gnome/wiki'
       }
     ],
     outline: {

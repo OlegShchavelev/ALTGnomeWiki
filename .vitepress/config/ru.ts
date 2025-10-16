@@ -477,7 +477,7 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
       { text: 'EPM', link: 'package-manager/epm/' },
       { text: 'Flatpak', link: 'package-manager/flatpak/' },
       { text: 'Snaps', link: 'package-manager/snap/' },
-      { text: 'Stepler', link: 'package-manager/stplr/' }
+      { text: 'Stapler', link: 'package-manager/stplr/' }
     ]
   }
 ]

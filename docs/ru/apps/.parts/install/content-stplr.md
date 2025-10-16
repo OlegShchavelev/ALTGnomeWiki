@@ -2,9 +2,9 @@
 search: false
 ---
 
-## Установка c помощью stplr <Badge v-if="$frontmatter?.aggregation?.stplr?.build === 'unofficial'" type="danger" text="Неофициальная сборка" />
+## Установка c помощью Stapler <Badge v-if="$frontmatter?.aggregation?.stplr?.build === 'unofficial'" type="danger" text="Неофициальная сборка" />
 
-При наличии пакета [stprl](/package-manager/stplr/), можно установить **{{ $frontmatter?.appstream?.name }}** одной командой:
+При наличии пакета [stplr](/package-manager/stplr/), можно установить **{{ $frontmatter?.appstream?.name }}** одной командой:
 
 ```shell-vue
 stplr in {{ $frontmatter?.aggregation?.stplr?.id }}

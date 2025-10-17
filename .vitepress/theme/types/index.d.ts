@@ -102,9 +102,6 @@ export namespace AGWTheme {
     meta?: Meta
     footer?: Footer
     gallery?: AGWGallery.Config
-    teams?: {
-      path: string
-    }
   }
 
   export interface TeamMember extends DefaultTheme.TeamMember {

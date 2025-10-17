@@ -176,9 +176,6 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
           target: '_blank'
         }
       }
-    },
-    teams: {
-      path: '../../data/teams.data.yaml'
     }
   },
   markdown: {

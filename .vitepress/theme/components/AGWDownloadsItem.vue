@@ -1,38 +1,35 @@
 <script setup lang="ts">
 import { VPButton, VPLink } from 'vitepress/theme'
 import { ref, onMounted } from 'vue'
+import { useFileSize } from '../composables/useFileSize'
 
 const fileSizes = ref<Record<string, string>>({})
+const { getSize, formatBytes } = useFileSize()
 
-async function fetchFileSize(url: string) {
+async function fetchFileSize(url: string): Promise<string> {
   try {
-    const proxyPrefix = url.includes('download.basealt.ru') ? '/api/proxy/basealt' : '/api/proxy/altlinux'
+    let proxyPrefix = '/api/proxy/altlinux'
 
-    const path = new URL(url).pathname
-    const response = await fetch(`${proxyPrefix}${path}`, {
-      method: 'HEAD'
-    })
-    const size = response.headers.get('content-length')
-    return size ? formatSize(+size) : 'Недоступно'
+    if (url.includes('download.basealt.ru')) {
+      proxyPrefix = '/api/proxy/basealt'
+    } else if (url.includes('nightly.altlinux.org')) {
+      proxyPrefix = '/api/proxy/altlinux'
+    }
+
+    const size = await getSize(url, proxyPrefix)
+    return size ? formatBytes(size) : 'Недоступно'
   } catch {
     return 'Недоступно'
   }
 }
 
-function formatSize(bytes: number) {
-  const units = ['B', 'KB', 'MB', 'GB', 'TB']
-  let size = bytes
-  let unitIndex = 0
-
-  while (size >= 1024 && unitIndex < units.length - 1) {
-    size /= 1024
-    unitIndex++
+const props = defineProps({
+  image: {
+    type: Object,
+    required: true
   }
+})
 
-  return `${size.toFixed(unitIndex === 0 ? 0 : 1)} ${units[unitIndex]}`
-}
-
-// Загрузка размеров при монтировании компонента
 onMounted(async () => {
   const urls = props.image.downloads.flatMap((d) => d.branches.flatMap((b) => b.images[0].urls))
 
@@ -40,13 +37,6 @@ onMounted(async () => {
     if (!fileSizes.value[url]) {
       fileSizes.value[url] = await fetchFileSize(url)
     }
-  }
-})
-
-const props = defineProps({
-  image: {
-    type: Object,
-    required: true
   }
 })
 </script>
@@ -189,10 +179,10 @@ const props = defineProps({
   border-radius: 8px;
   z-index: 1;
   overflow: hidden;
-  top: 100%; /* Меняем с calc(100% + 8px) на 100% */
+  top: 100%;
   right: 0;
-  padding-top: 8px; /* Внутренний отступ вместо внешнего */
-  margin-top: 0; /* Убираем внешний отступ */
+  padding-top: 8px;
+  margin-top: 0;
 }
 
 .dropdown-content::before {

@@ -23,15 +23,10 @@ const members = computed(() => {
 
   return filterTeamsByLimit(rowTeams ?? [], limit)
 })
-
-const { loading, error } = useTeams()
 </script>
 
 <template>
-  <div v-if="loading" class="loading">{{ $t('teams.loading') }}</div>
-  <div v-else-if="error" class="error">{{ $t('teams.error', { error }) }}</div>
-
-  <VPTeamPage v-else-if="layout === 'home'">
+  <VPTeamPage v-if="layout === 'home'">
     <VPTeamPageTitle>
       <template v-if="title" #title>{{ title }}</template>
       <template v-if="lead" #lead>{{ lead }}</template>
@@ -46,15 +41,3 @@ const { loading, error } = useTeams()
 
   <VPTeamMembers v-else :members="members" :size="size" />
 </template>
-
-<style scoped>
-.loading,
-.error {
-  padding: 48px;
-  text-align: center;
-}
-
-.error {
-  color: var(--vp-c-danger-1);
-}
-</style>

@@ -1,3 +1,3 @@
 # ALT Starterkit Gnome
 
-<!--@include: @/.parts/warns/constructing.md-->
+<!--@include: @ru/.parts/blocks/help-wanted-write.md-->

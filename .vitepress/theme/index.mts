@@ -24,6 +24,7 @@ import AGWAnalogues from '@theme/components/AGWAnalogues.vue'
 import AGWApp from '@theme/components/AGWApp.vue'
 import AGWHomeApps from '@theme/components/AGWHomeApps.vue'
 import AGWDownload from '@theme/components/AGWDownload.vue'
+import AGWHomeDownloads from '@theme/components/AGWHomeDownloads.vue'
 import AGWDocsFooterBefore from '@theme/components/AGWDocFooterBefore.vue'
 
 /* Metrics */
@@ -72,7 +73,7 @@ export default {
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AGWDocsAsideMeta),
-      'home-features-after': () => [h(AGWHomeTeams), h(AGWHomeApps), h(AGWHomeSponsors)],
+      'home-features-after': () => [h(AGWHomeTeams), h(AGWHomeApps), h(AGWHomeDownloads), h(AGWHomeSponsors)],
       'doc-footer-before': () => h(AGWDocsFooterBefore)
     })
   },

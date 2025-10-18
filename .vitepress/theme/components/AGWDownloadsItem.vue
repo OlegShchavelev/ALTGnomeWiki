@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { VPButton, VPLink } from 'vitepress/theme'
+import { VPLink } from 'vitepress/theme'
 import { ref, onMounted } from 'vue'
 import { useFileSize } from '../composables/useFileSize'
+import AGWDownloadButton from './AGWDownloadButton.vue'
 
 const fileSizes = ref<Record<string, string>>({})
 const { getSize, formatBytes } = useFileSize()
@@ -68,17 +69,7 @@ onMounted(async () => {
                 <dd>{{ branch.name }}</dd>
               </dl>
               <div class="action">
-                <div v-if="branch.images[0].urls.length === 1">
-                  <VPButton size="medium" tag="a" :href="branch.images[0].urls[0]" text="Скачать" />
-                </div>
-                <div v-else class="dropdown">
-                  <VPButton size="medium" class="dropbtn" text="Скачать" />
-                  <div class="dropdown-content">
-                    <a v-for="(url, index) in branch.images[0].urls" :key="index" :href="url">
-                      Cкачать (Зеркало {{ index + 1 }})
-                    </a>
-                  </div>
-                </div>
+                <AGWDownloadButton :urls="branch.images[0].urls" />
               </div>
             </div>
           </template>
@@ -146,6 +137,10 @@ onMounted(async () => {
   color: var(--vp-c-brand-1);
 }
 
+.action :deep(.VPFlyout:hover .VPButton) {
+  background-color: var(--vp-button-brand-bg);
+}
+
 .body + .body {
   margin-top: 32px;
 }
@@ -163,59 +158,6 @@ onMounted(async () => {
   padding: 12px;
   background-color: var(--vp-c-bg);
   border-radius: 12px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--vp-c-bg);
-  min-width: 180px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  z-index: 1;
-  overflow: hidden;
-  top: 100%;
-  right: 0;
-  padding-top: 8px;
-  margin-top: 0;
-}
-
-.dropdown-content::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background: transparent;
-}
-
-.dropdown-content a {
-  color: var(--vp-c-text-1);
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 14px;
-  transition: background-color 0.2s;
-  border-bottom: 1px solid var(--vp-c-divider-light);
-}
-
-.dropdown-content a:last-child {
-  border-bottom: none;
-}
-
-.dropdown-content a:hover {
-  background-color: var(--vp-c-bg-soft);
-  color: var(--vp-c-brand-1);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 dl {

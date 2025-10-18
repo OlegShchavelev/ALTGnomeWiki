@@ -49,6 +49,10 @@ apps:
   moreText: Все приложения
   moreLink: apps-gnome/
 
+downloads:
+  title: Скачать ALT Linux
+  lead: Выберите подходящий дистрибутив для вашей системы
+
 sponsors:
   message: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
   donationtext: 'Поддержать проект ALT Gnome'

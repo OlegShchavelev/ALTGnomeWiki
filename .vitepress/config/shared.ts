@@ -102,25 +102,6 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
         '/api/proxy/altlinux': {
           target: 'https://nightly.altlinux.org',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/proxy\/altlinux/, ''),
-          configure: (proxy, options) => {
-            proxy.on('proxyReq', (proxyReq, req, res) => {
-              console.log('Proxying:', req.url)
-            })
-          }
-        },
-        '/api/proxy/basealt': {
-          target: 'https://download.basealt.ru',
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/proxy\/basealt/, '')
-        }
-      }
-    },
-    preview: {
-      proxy: {
-        '/api/proxy/altlinux': {
-          target: 'https://nightly.altlinux.org',
-          changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api\/proxy\/altlinux/, '')
         },
         '/api/proxy/basealt': {

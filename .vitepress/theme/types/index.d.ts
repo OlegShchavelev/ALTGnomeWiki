@@ -76,9 +76,7 @@ export interface Member {
   moreText?: string
   limit?: number
   homeLimit?: number
-  name: string | object
   size?: 'small' | 'medium'
-  collaborator: Collaborator
 }
 
 export interface Footer extends DefaultTheme.Footer {

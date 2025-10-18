@@ -1,24 +1,29 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
-import type { Member } from '../types'
+import type { AGWTheme } from '../types'
 import { useTeams } from '../composables/useTeams'
 
 const { filterTeamsByCollaborator } = useTeams()
 
+type Members = AGWTheme.TeamMember & {
+  lead?: string
+  size?: 'small' | 'medium'
+}
+
 const props = defineProps<{
-  members: Member[]
+  members: Members[]
 }>()
 
-const validMembers = computed(() => props.members?.filter((m) => m.title) || [])
+const members = computed(() => props.members?.filter((m) => m.title) || [])
 
-const key = (member: Member, index: number) =>
+const key = (member: AGWTheme.TeamMember, index: number) =>
   `${member.collaborator || 'unknown'}-${member.title || 'untitled'}-${index}`
 </script>
 
 <template>
-  <template v-if="validMembers.length">
-    <VPTeamPageSection v-for="(member, index) in validMembers" :key="key(member, index)">
+  <template v-if="members.length">
+    <VPTeamPageSection v-for="(member, index) in members" :key="key(member, index)">
       <template #title>{{ member.title }}</template>
       <template v-if="member.lead" #lead>{{ member.lead }}</template>
       <template #members>

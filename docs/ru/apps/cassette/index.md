@@ -13,7 +13,7 @@ appstream:
   keywords:
     - donttheme
   developer:
-    name: Владимир Васьков
+    name: Владимир Романов
     nickname: Rirusha
     avatar: https://avatars.githubusercontent.com/u/95986183?v=4
   url:

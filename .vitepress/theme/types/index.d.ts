@@ -105,14 +105,48 @@ export namespace AGWTheme {
   export interface TeamMember extends DefaultTheme.TeamMember {
     collaborator: Collaborator
   }
+}
 
-  export interface AppRows {
+// ========================================
+// Apps Types
+// ========================================
+
+export interface App {
+  appstream: {
     name: string
-    icon?: string
-    summary?: string
-    keywords?: MetaKeywords[]
-    actions?: MetaActionItem[]
+    icon: string
+    summary: string
+    keywords?: string[]
   }
+  aggregation?: Record<string, any>
+  group?: string
+}
+
+export interface Apps {
+  name: string
+  icon?: string
+  summary?: string
+  keywords?: MetaKeywords[]
+  actions?: MetaActionItem[]
+  group?: string
+}
+
+export interface AppData {
+  apps: App[]
+  locale: string
+  loadedAt: string
+}
+
+export interface AppRows {
+  title: string
+  lead?: string
+  group?: string
+  size?: 'small' | 'medium'
+  limit?: number
+  layout: string
+  moreLink?: string
+  moreText?: string
+  homeLimit?: number
 }
 
 // ========================================
@@ -165,5 +199,11 @@ export namespace AGWGallery {
     images?: Image[]
     gridColumns?: number
     showCaptions?: boolean
+  }
+}
+
+declare module 'vitepress' {
+  interface UserConfig {
+    apps?: App[]
   }
 }

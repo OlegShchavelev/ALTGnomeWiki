@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { AGWTheme } from '../types/index'
+import type { Apps } from '../types'
 import { computed } from 'vue'
 import AGWAppRowsItem from './AGWAppRowsItem.vue'
 
 interface Props {
   size?: 'small' | 'medium'
-  rows: AGWTheme.AppRows[]
+  rows: Apps[]
 }
 
 const props = withDefaults(defineProps<Props>(), {

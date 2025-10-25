@@ -33,6 +33,7 @@ gallery:
 # Экскурсия
 
 Управляемая экскурсия и приветствие для GNOME.
+
 <AGWGallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->

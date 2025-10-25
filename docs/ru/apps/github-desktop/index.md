@@ -5,7 +5,7 @@ aggregation:
     build: unofficial
 appstream:
   id: io.github.shiftey.Desktop
-  name: Github Desktop
+  name: GitHub Desktop
   icon: /github-desktop/github-desktop-logo.svg
   summary: Приложение для удобной работы с GitHub
   metadata_license:
@@ -22,7 +22,7 @@ appstream:
 
 # GitHub Desktop
 
-GitHub Desktop — приложение предоставляющее графический интерфейс для управления репозиториями [Git](/apps/git/).
+GitHub Desktop — приложение предоставляющее графический интерфейс для управления репозиториями [Git](/apps/git/) с GitHub.
 
 ![github-desktop](/github-desktop/github-desktop-1.png)
 

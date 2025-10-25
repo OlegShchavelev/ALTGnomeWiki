@@ -9,9 +9,9 @@ export const nav = (): DefaultTheme.NavItem[] => [
   {
     text: 'О проекте',
     items: [
-      { text: 'О проекте', link: '/projects/about/' },
-      { text: 'Как поучаствовать', link: '/projects/how-to-contribute/' },
-      { text: 'Участники', link: '/projects/contributions/' }
+      { text: 'О проекте', link: '/project/about/' },
+      { text: 'Как поучаствовать', link: '/project/how-to-contribute/' },
+      { text: 'Участники', link: '/project/contributions/' }
     ]
   }
 ]
@@ -489,7 +489,7 @@ export const sidebarHowToContribute = (): DefaultTheme.SidebarItem[] => [
   { text: 'Для авторов', link: '/' },
   {
     text: 'Создание страниц',
-    base: '/projects/how-to-contribute/pages/',
+    base: '/project/how-to-contribute/pages/',
     items: [
       { text: 'Внесение изменений', link: 'alteration/' },
       { text: 'Возможности Markdown', link: 'markdown-how-to/' },
@@ -500,7 +500,7 @@ export const sidebarHowToContribute = (): DefaultTheme.SidebarItem[] => [
   },
   {
     text: 'Структура',
-    base: '/projects/how-to-contribute/structure/',
+    base: '/project/how-to-contribute/structure/',
     items: [
       { text: 'Страница приложения', link: 'app/' },
       { text: 'Страница Wiki', link: 'wiki_page/' }
@@ -509,7 +509,7 @@ export const sidebarHowToContribute = (): DefaultTheme.SidebarItem[] => [
   },
   {
     text: 'Контроль качества',
-    base: '/projects/how-to-contribute/tests/',
+    base: '/project/how-to-contribute/tests/',
     items: [
       { text: 'Проверка текста на ошибки', link: 'speller/' },
       { text: 'Проверка структуры статьи', link: 'remark/' }
@@ -529,8 +529,8 @@ export const ru = defineConfigWithTheme<AGWTheme.Config>({
     nav: nav(),
     sidebar: {
       '/': { base: '/', items: sidebar() },
-      '/projects/how-to-contribute/': {
-        base: '/projects/how-to-contribute/',
+      '/project/how-to-contribute/': {
+        base: '/project/how-to-contribute/',
         items: sidebarHowToContribute()
       }
     },

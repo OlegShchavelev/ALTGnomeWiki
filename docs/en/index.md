@@ -20,7 +20,7 @@ hero:
       link: /wiki/
     - theme: alt
       text: How to publish your article
-      link: /projects/how-to-contribute/pages/alteration/
+      link: /project/how-to-contribute/pages/alteration/
 
 features:
   - icon:
@@ -42,7 +42,7 @@ features:
 teams:
   title: Contributors
   moreText: All members
-  moreLink: /projects/contributions/
+  moreLink: /project/contributions/
 
 apps:
   title: GNOME Apps

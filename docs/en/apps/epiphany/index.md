@@ -17,7 +17,7 @@ appstream:
     name: GNU GPLv3
     link: https://choosealicense.com/licenses/gpl-3.0/
   url:
-    homepage: https://apps.gnome.org/ru/Epiphany/
+    homepage: https://apps.gnome.org/en/Epiphany/
     bugtracker: https://gitlab.gnome.org/GNOME/epiphany/-/issues
 gallery:
   title: Gallery

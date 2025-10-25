@@ -22,7 +22,7 @@ appstream:
     name: AnyDesk Software GmbH
   metadata_license:
     name: Own
-    link: https://anydesk.com/ru/terms
+    link: https://anydesk.com/en/terms
   url:
     homepage: https://anydesk.com/
     bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues

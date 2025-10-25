@@ -17,7 +17,7 @@ appstream:
     name: GNOME
     avatar: https://gitlab.gnome.org/uploads/-/system/group/avatar/8/gnomelogo.png?width=48
   url:
-    homepage: https://apps.gnome.org/ru/List/
+    homepage: https://apps.gnome.org/en/List/
     translate: https://github.com/mrvladus/Errands/blob/main/TRANSLATIONS.md
     bugtracker: https://github.com/mrvladus/Errands/issues
 gallery:

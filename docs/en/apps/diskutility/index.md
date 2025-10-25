@@ -17,7 +17,7 @@ appstream:
     name: GNU LGPLv2+
     link: https://packages.altlinux.org/license/LGPL-2.0+
   url:
-    homepage: https://apps.gnome.org/ru/DiskUtility/
+    homepage: https://apps.gnome.org/en/DiskUtility/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-disk-utility/-/issues
 gallery:
   title: Gallery DiskUtility

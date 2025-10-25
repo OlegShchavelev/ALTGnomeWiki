@@ -19,7 +19,7 @@ appstream:
     name: GPLv2+
     link: https://packages.altlinux.org/license/GPL-2.0-or-later
   url:
-    homepage: https://apps.gnome.org/ru/Extensions/
+    homepage: https://apps.gnome.org/en/Extensions/
     bugtracker: https://gitlab.gnome.org/GNOME/gnome-shell-extensions/-/issues
 gallery:
   title: Gallery GNOME Extensions

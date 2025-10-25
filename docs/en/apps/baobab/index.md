@@ -16,7 +16,7 @@ appstream:
     name: GNU GPLv3
     link: https://choosealicense.com/licenses/gpl-3.0/
   url:
-    homepage: https://apps.gnome.org/ru/Baobab/
+    homepage: https://apps.gnome.org/en/Baobab/
     bugtracker: https://gitlab.gnome.org/GNOME/baobab/-/issues
 gallery:
   title: Gallery

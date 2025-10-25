@@ -63,10 +63,10 @@ sponsors:
       items:
         - name: ALT Linux Team
           img: ./alt-linux-team.png
-          url: https://packages.altlinux.org/ru/sisyphus
+          url: https://packages.altlinux.org/en/sisyphus
         - name: BaseALT
           img: ./basealt.png
-          url: https://www.basealt.ru
+          url: https://www.basealt.ru/en
     - tier: Technical partners
       size: big
       items:

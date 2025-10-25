@@ -6,7 +6,7 @@ appstream:
   id: io.github.mrvladus.List
   name: Errands
   icon: /errands/errands-logo.svg
-  summary: Управляйте своими задачами
+  summary: Manage your tasks
   keywords:
     - circle
     - adaptive

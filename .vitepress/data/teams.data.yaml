@@ -1,39 +1,63 @@
-- avatar: https://avatars.githubusercontent.com/u/44705058?v=4
+- avatar: https://github.com/Ampernic.png
   name:
-    ru: Политов Антон
+    ru: Антон Политов
     en: Anton Politov
   title: ampernic
+  mapByNameAliases:
+    - Ampernic
   collaborator:
     - knowledge
     - maintainer
   links:
     - icon: github
       link: https://github.com/Ampernic
+  sponsor: https://www.tinkoff.ru/cf/vg9TWtByVW
 
-- avatar: https://avatars.githubusercontent.com/u/57626821?v=4
+- avatar: https://github.com/Armatik.png
   name:
-    ru: Фомченков Семен
+    ru: Семен Фомченков
     en: Semen Fomchenkov
+  mapByNameAliases:
+    - Armatik
+    - armatik
+    - Семен Васильевич Фомченков
   collaborator:
     - knowledge
   links:
     - icon: github
       link: https://github.com/Armatik
+    - icon: gitflic
+      link: https://gitflic.ru/user/armatik
+  sponsor: https://www.tinkoff.ru/cf/2MA0Bm6ax63
 
-- avatar: https://github.com/X1Z53.png
+- avatar: https://github.com/x1z53.png
   name:
-    ru: Султаниязов Давид
+    ru: Давид Султаниязов
     en: David Sultaniiazov
   title: x1z53
+  mapByNameAliases:
+    - X1Z53
+    - x1z53
+    - Sultaniiazov David
   collaborator:
     - knowledge
+    - maintainer
   links:
+    - icon: altlinux-space
+      link: https://altlinux.space/x1z53
+    - icon: gitverse
+      link: https://gitverse.ru/x1z53
     - icon: github
-      link: https://github.com/X1Z53
+      link: https://github.com/x1z53
+    - icon: gitlab
+      link: https://gitlab.com/x1z53
+    - icon: gitflic
+      link: https://gitflic.ru/user/x1z53
+  sponsor: https://www.tinkoff.ru/cf/IpsmO1P5PJ
 
-- avatar: https://avatars.githubusercontent.com/u/36362599?v=4
+- avatar: https://github.com/Maks1mS.png
   name:
-    ru: Слипенко Максим
+    ru: Максим Слипенко
     en: Maxim Slipenko
   title: Maks1mS
   collaborator:
@@ -44,13 +68,11 @@
 
 - avatar: https://github.com/OlegShchavelev.png
   name:
-    ru: Щавелев Олег
+    ru: Олег Щавелев
     en: Oleg Shchavelev
   title: olegshchavelev
   mapByNameAliases:
     - OlegShchavelev
-    - Oleg Shchavelev
-    - Олег Щавелев
   collaborator:
     - knowledge
     - maintainer
@@ -59,4 +81,330 @@
       link: https://github.com/OlegShchavelev
     - icon: altlinux-space
       link: https://altlinux.space/oleg
+    - icon: gitflic
+      link: https://gitflic.ru/user/olegshchavelev
   sponsor: https://www.tinkoff.ru/cf/1uEC4uodPuV
+
+- avatar: https://github.com/trashb1t.png
+  name:
+    ru: Владислав Темнов
+    en: Vladislav Temnov
+  mapByNameAliases:
+    - trashb1t
+  collaborator:
+    - knowledge
+    - maintainer
+  links:
+    - icon: github
+      link: https://github.com/trashb1t
+
+- avatar: https://github.com/Labaman.png
+  name:
+    ru: Михаил Величко
+    en: Mikhail Velichko
+  mapByNameAliases:
+    - Labaman
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Labaman
+  sponsor: https://www.tbank.ru/cf/1Erc241qRhw
+
+- avatar: https://github.com/Toxblh.png
+  name:
+    ru: Антон Пальгунов
+    en: Anton Palgunov
+  mapByNameAliases:
+    - Toxblh
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Toxblh
+    - icon: gitflic
+      link: https://gitflic.ru/user/toxblh
+  sponsor: https://www.donationalerts.com/r/toxblh
+
+- avatar: https://github.com/iDevPro.png
+  name:
+    ru: Павел Субач
+    en: Pavel Subach
+  mapByNameAliases:
+    - Субач Павел
+    - iQQator
+    - iDevPro
+  collaborator:
+    - knowledge
+  title: iQQator
+  links:
+    - icon: github
+      link: https://github.com/iDevPro
+    - icon: gitflic
+      link: https://gitflic.ru/user/powertux
+  sponsor: https://www.tinkoff.ru/collectmoney/crowd/subach.pavel2/I4eLp8903
+
+- avatar: https://github.com/Keleth.png
+  name: Keleth
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Keleth
+
+# FIX: links is 404
+- avatar: https://avatars.githubusercontent.com/u/72319244?v=4
+  name:
+    ru: Дмитрий Бондарев
+    en: Dmitry Bondarev
+  mapByNameAliases:
+    - pokedim13
+    - h3try
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/pokedim13
+    - icon: gitflic
+      link: https://gitflic.ru/user/h3try
+
+- avatar: https://github.com/ilyazheprog.png
+  name:
+    ru: Илья Женецкий
+    en: Ilya Zhenetskij
+  mapByNameAliases:
+    - ilyazheprog
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/ilyazheprog
+    - icon: gitflic
+      link: https://gitflic.ru/user/ilyazheprog
+
+- avatar: https://github.com/Luckenty.png
+  name:
+    ru: Дмитрий Орлов
+    en: Dmitry Orlov
+  mapByNameAliases:
+    - Dmitry
+    - Luckenty
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Luckenty
+    - icon: gitflic
+      link: https://gitflic.ru/user/luckenty
+  sponsor: https://www.tinkoff.ru/cf/9o0c3eIAJ2D
+
+- avatar: https://github.com/fiersik.png
+  name:
+    ru: Кирилл Уницаев
+    en: Kirill Unitsaev
+  mapByNameAliases:
+    - fiersik
+    - Fiersik Kouji
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/fiersik
+    - icon: gitflic
+      link: https://gitflic.ru/user/fiersik
+  sponsor: https://www.tinkoff.ru/cf/4p7xYDHEH2y
+
+- avatar: https://github.com/konoos56.png
+  name: konoos56
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/konoos56
+
+- avatar: https://github.com/ImCatCatcher.png
+  name:
+    ru: Арсений Засыпкин
+    en: Arseniy Zasypkin
+  mapByNameAliases:
+    - ImCatCatcher
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/ImCatCatcher
+  sponsor: https://www.tinkoff.ru/cf/53rijgvIPem
+
+- avatar: https://github.com/otetswoo.png
+  name: otetswoo
+  mapByNameAliases:
+    - vldmr_true
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/otetswoo
+
+- avatar: https://github.com/AnameVi.png
+  name: AnameVi
+  mapByNameAliases:
+    - AnameV1S
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/AnameVi
+
+- avatar: https://github.com/AlexanderShad.png
+  name:
+    ru: Александр Шамараев
+    en: Aleksandr Shamaraev
+  mapByNameAliases:
+    - Aleksand Shamaraev
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/AlexanderShad
+
+- avatar: https://github.com/vlad196.png
+  name:
+    ru: Владислав Бабенко
+    en: Vladislav Babenko
+  mapByNameAliases:
+    - vlad196
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/vlad196
+  sponsor: https://www.tinkoff.ru/cf/9cI2R0kzzxM
+
+- avatar: https://github.com/Katze-942.png
+  name:
+    ru: Жора Змейкин
+    en: Zhora Zmeykin
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Katze-942
+  sponsor: https://www.tinkoff.ru/cf/1qXUImsZFTN
+
+- avatar: https://github.com/linecodesx.png
+  name:
+    ru: Хачатур Тоникян
+    en: Khachatur Tonikyan
+  mapByNameAliases:
+    - Feytell228
+    - feyte11
+    - linecodesx
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/linecodesx
+  sponsor: https://www.tinkoff.ru/collectmoney/crowd/tonikyan.khachatur1/4ijqV39898/?short_link=93LEZqrEeY7&httpMethod=GET
+
+- avatar: https://github.com/Belovmv.png
+  name: Belovmv
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Belovmv
+
+- avatar: https://github.com/Rirusha.png
+  name:
+    ru: Владимир Романов
+    en: Vladimir Romanov
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Rirusha
+
+- avatar: https://github.com/Boria138.png
+  name:
+    ru: Борис Юманкулов
+    en: Boris Yumankulov
+  mapByNameAliases:
+    - Boria138
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Boria138
+
+- avatar: https://github.com/a1ex-ak.png
+  name:
+    ru: Алексей Камаев
+    en: Alexey Kamaev
+  mapByNameAliases:
+    - a1ex-ak
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/a1ex-ak
+
+- avatar: https://github.com/alexkdeveloper.png
+  name:
+    ru: Алекс Крючков
+    en: Alex Kryuchkov
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/alexkdeveloper
+
+- avatar: https://github.com/alchere.png
+  name: alchere
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/alchere
+
+- avatar: https://github.com/Krator3.png
+  name:
+    ru: Максим Остапенко
+    en: Maxim Ostapenko
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Krator3
+  sponsor: https://www.tinkoff.ru/cf/5Jo6TxAo9Un
+
+- avatar: https://github.com/Cron-X.png
+  name: "[Cron:X]"
+  mapByNameAliases:
+    - Cyber-X
+    - Cyber-X-Code
+    - Cron-X
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/Cyber-X-Code
+
+- avatar: https://github.com/cryals.png
+  name: AL-S?
+  mapByNameAliases:
+    - cryals'
+  collaborator:
+    - knowledge
+  links:
+    - icon: github
+      link: https://github.com/cryals
+  sponsor: https://yoomoney.ru/to/4100118730672586
+
+- avatar: https://github.com/radiolamp.png
+  name: Radiolamp
+  mapByNameAliases:
+    - radiolamp
+  links:
+    - icon: github
+      link: https://github.com/radiolamp
+  sponsor: https://www.tinkoff.ru/collectmoney/crowd/osipov.anton16/uMOHe45333/?short_link=1J1DvYNesgD&referer=https%3A%2F%2Fgithub.com%2F&httpMethod=GET

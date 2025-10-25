@@ -26,7 +26,7 @@ appstream:
 
 Foliate — стильное приложение для чтения электронных книг.
 
-![wfL](https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.Foliate-stable/1248x702/com.github.johnfactotum.Foliate-7ff807e57358053b92037e50c60f32a3.png)
+![Интерфейс](/foliate/foliate-screenshot.png)
 
 Foliate имеет следующие функции:
 

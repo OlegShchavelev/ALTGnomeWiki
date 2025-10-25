@@ -5,9 +5,9 @@ aggregation:
     build: unofficial
 appstream:
   id: io.github.shiftey.Desktop
-  name: Github Desktop
+  name: GitHub Desktop
   icon: /github-desktop/github-desktop-logo.svg
-  summary: Приложение для удобной работы с GitHub
+  summary: An application for convenient work with GitHub
   metadata_license:
     name: MIT
     link: https://mit-license.org/
@@ -22,8 +22,8 @@ appstream:
 
 # GitHub Desktop
 
-GitHub Desktop — приложение предоставляющее графический интерфейс для управления репозиториями [Git](/apps/git/).
+GitHub Desktop is a GUI application for managing [Git](/en/apps/git/) repositories from GitHub.
 
 ![github-desktop](/github-desktop/github-desktop-1.png)
 
-<!--@include: @en/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

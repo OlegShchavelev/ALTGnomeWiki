@@ -1,7 +1,7 @@
 ---
 aggregation:
   flatpak: org.gnome.Contacts
-  sisyphus: gnome-Contacts
+  sisyphus: gnome-contacts
 appstream:
   id: org.gnome.Contacts
   name: Контакты

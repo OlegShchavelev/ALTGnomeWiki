@@ -26,7 +26,7 @@ gallery:
 
 # Folio
 
-Folio - приложение для создания Markdown-заметок в GNOME
+Folio — приложение для создания Markdown-заметок в GNOME
 
 <AGWGallery />
 

@@ -5,7 +5,7 @@ aggregation:
   sisyphus: gimp
 appstream:
   id: org.gimp.GIMP
-  name: Gimp
+  name: GIMP
   icon: /gimp/gimp-logo.svg
   summary: Растровый графический редактор
   developer:
@@ -18,7 +18,7 @@ appstream:
     bugtracker: https://gitlab.gnome.org/GNOME/gimp/-/issues
 ---
 
-# Gimp
+# GIMP
 
 GIMP — Растровый графический редактор с открытым исходным кодом. Распространяется под лицензией GNU GPLv3.
 

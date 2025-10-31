@@ -1,43 +1,11 @@
 <script setup lang="ts">
 import { VPLink } from 'vitepress/theme'
-import { ref, onMounted } from 'vue'
-import { useFileSize } from '../composables/useFileSize'
 import AGWDownloadButton from './AGWDownloadButton.vue'
 
-const fileSizes = ref<Record<string, string>>({})
-const { getSize, formatBytes } = useFileSize()
-
-async function fetchFileSize(url: string): Promise<string> {
-  try {
-    let proxyPrefix = '/api/proxy/altlinux'
-
-    if (url.includes('download.basealt.ru')) {
-      proxyPrefix = '/api/proxy/basealt'
-    } else if (url.includes('nightly.altlinux.org')) {
-      proxyPrefix = '/api/proxy/altlinux'
-    }
-
-    const size = await getSize(url, proxyPrefix)
-    return size ? formatBytes(size) : 'Недоступно'
-  } catch {
-    return 'Недоступно'
-  }
-}
-
-const props = defineProps({
+defineProps({
   image: {
     type: Object,
     required: true
-  }
-})
-
-onMounted(async () => {
-  const urls = props.image.downloads.flatMap((d) => d.branches.flatMap((b) => b.images[0].urls))
-
-  for (const url of urls) {
-    if (!fileSizes.value[url]) {
-      fileSizes.value[url] = await fetchFileSize(url)
-    }
   }
 })
 </script>
@@ -61,10 +29,6 @@ onMounted(async () => {
               <dl>
                 <dt>Архитектура:</dt>
                 <dd>{{ image.arch }}</dd>
-                <dt>Размер:</dt>
-                <dd>
-                  {{ fileSizes[branch.images[0].urls[0]] || 'Загрузка...' }}
-                </dd>
                 <dt>Тип выпуска:</dt>
                 <dd>{{ branch.name }}</dd>
               </dl>

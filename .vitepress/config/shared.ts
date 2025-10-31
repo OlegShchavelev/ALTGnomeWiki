@@ -96,20 +96,6 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
           replacement: fileURLToPath(new URL('../theme/components/AGWTeamMembersItem.vue', import.meta.url))
         }
       ]
-    },
-    server: {
-      proxy: {
-        '/api/proxy/altlinux': {
-          target: 'https://nightly.altlinux.org',
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/proxy\/altlinux/, '')
-        },
-        '/api/proxy/basealt': {
-          target: 'https://download.basealt.ru',
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/proxy\/basealt/, '')
-        }
-      }
     }
   },
   themeConfig: {

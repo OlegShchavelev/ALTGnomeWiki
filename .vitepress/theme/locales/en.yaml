@@ -17,6 +17,7 @@ meta:
     bugtracker: Report an Issue
     vcs-browser: Browse the source code
     contribute: Contribute to the App
+    donation: Support the Author
   actions:
     sisyphus: Sisyphus
     flatpak: Flapak

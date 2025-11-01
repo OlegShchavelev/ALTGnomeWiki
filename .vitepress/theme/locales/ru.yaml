@@ -18,6 +18,7 @@ meta:
     vcs-browser: Посмотреть исходный код
     contribute: Внести вклад в развитие приложения
     license: Лицензия
+    donation: Поддержать автора
   actions:
     sisyphus: Сизиф
     flatpak: Flapak

@@ -31,3 +31,14 @@ teams:
   loading: Loading...
   error: 'Error loading: {{ error.message }}'
   empty: No members to display
+
+images:
+  architecture: Architecture
+  type_of_release: Type of release
+  button:
+    label: Download
+  dropdown:
+    main_source:
+      label: Main
+    mirror_source:
+      label: Mirror

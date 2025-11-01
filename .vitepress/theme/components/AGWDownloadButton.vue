@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { VPButton } from 'vitepress/theme'
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 interface Props {
   urls: string[]
@@ -52,18 +55,30 @@ function formatDomain(url: string): { line1: string; line2: string } {
 
 function getLabel(index: number): string {
   if (index === 0) {
-    return 'Основной'
+    return t('images.dropdown.main_source.label')
   }
-  return `Зеркало ${index}`
+  return t('images.dropdown.mirror_source.label') + ` ${index}`
 }
 </script>
 
 <template>
   <div class="AGWDownloadButton">
-    <VPButton v-if="urls.length === 1" size="medium" tag="a" :href="urls[0]" text="Скачать" />
+    <VPButton
+      v-if="urls.length === 1"
+      size="medium"
+      tag="a"
+      :href="urls[0]"
+      :text="$t('images.button.label')"
+    />
 
     <div v-else class="VPFlyout" @mouseenter="open = true" @mouseleave="close">
-      <VPButton size="medium" class="button" text="Скачать" aria-haspopup="true" :aria-expanded="open" />
+      <VPButton
+        size="medium"
+        class="button"
+        :text="$t('images.button.label')"
+        aria-haspopup="true"
+        :aria-expanded="open"
+      />
 
       <div class="menu" :class="{ open }">
         <a v-for="(url, index) in urls" :key="index" :href="url" class="item" @click="close">

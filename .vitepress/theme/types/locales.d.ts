@@ -22,4 +22,13 @@ export interface Locale extends Record<string, any> {
     error: string
     empty: string
   }
+  images?: {
+    button?: {
+      label?: string
+    }
+    dropdown?: {
+      main_source: string
+      mirror_source: string
+    }
+  }
 }

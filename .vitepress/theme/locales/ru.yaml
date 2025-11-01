@@ -32,3 +32,14 @@ teams:
   loading: Загрузка...
   error: 'Ошибка загрузки: {{ error.message }}'
   empty: Нет участников для отображения
+
+images:
+  architecture: Архитектура
+  type_of_release: Тип выпуска
+  button:
+    label: Скачать
+  dropdown:
+    main_source:
+      label: Основной
+    mirror_source:
+      label: Зеркало

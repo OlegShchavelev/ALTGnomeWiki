@@ -27,9 +27,9 @@ defineProps({
           <template v-for="image in image.downloads" :key="image.arch">
             <div v-for="branch in image.branches" :key="branch.name" class="download">
               <dl>
-                <dt>Архитектура:</dt>
+                <dt>{{ $t('images.architecture') }}:</dt>
                 <dd>{{ image.arch }}</dd>
-                <dt>Тип выпуска:</dt>
+                <dt>{{ $t('images.type_of_release') }}:</dt>
                 <dd>{{ branch.name }}</dd>
               </dl>
               <AGWDownloadButton :urls="branch.images[0].urls" />

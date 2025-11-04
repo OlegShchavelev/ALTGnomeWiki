@@ -16,7 +16,7 @@ defineProps({
       <div class="body">
         <div class="title">{{ image.name }}</div>
         <div class="text">{{ image.description }}</div>
-        <div class="actions">
+        <div class="actions" v-if="image.actions">
           <template v-for="action in image.actions">
             <VPLink :href="action.link">{{ action.text }}</VPLink>
           </template>
@@ -29,8 +29,8 @@ defineProps({
               <dl>
                 <dt>{{ $t('images.architecture') }}:</dt>
                 <dd>{{ image.arch }}</dd>
-                <dt>{{ $t('images.type_of_release') }}:</dt>
-                <dd>{{ branch.name }}</dd>
+                <dt v-if="branch.name">{{ $t('images.type_of_release') }}:</dt>
+                <dd v-if="branch.name">{{ branch.name }}</dd>
               </dl>
               <AGWDownloadButton :urls="branch.images[0].urls" />
             </div>
@@ -85,7 +85,7 @@ defineProps({
 .actions {
   display: inline-flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .actions .link {
@@ -112,7 +112,7 @@ defineProps({
   margin-top: 8px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .download {

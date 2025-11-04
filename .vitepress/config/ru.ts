@@ -37,7 +37,7 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
           { text: 'Установка на Mac', link: 'macbook/' },
           { text: 'Создание загрузочного диска ALT Regular Gnome', link: 'bootable-drive/' },
           { text: 'Руководство по установке', link: 'ordinary-install/' },
-          { text: 'Установка рядом с MacOS', link: 'install-on-macbook-with-opencore-parallel/' }
+          { text: 'Установка рядом с macOS', link: 'install-on-macbook-with-opencore-parallel/' }
         ],
         collapsed: true
       },
@@ -227,7 +227,7 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
           { text: 'Файлы', link: 'nautilus/' },
           { text: 'Часы', link: 'gnome-clocks/' },
           { text: 'Центр мониторинга системы', link: 'system-monitoring-center/' },
-          { text: 'Центр Приложений', link: 'gnome-software/' },
+          { text: 'Центр приложений', link: 'gnome-software/' },
           { text: 'Экскурсия', link: 'gnome-tour/' },
           { text: 'Яндекс Браузер', link: 'yandex-browser/' },
           { text: 'Яндекс Диск', link: 'yandex-disk/' }
@@ -236,19 +236,19 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
       },
       {
         text: 'Использование рабочего окружения GNOME',
-        base: '/using-gnome',
+        base: '/using-gnome/',
         items: [
           {
             text: 'Рабочие пространства',
             base: '/using-gnome/workspaces/',
             items: [
               { text: 'Запуск приложений', link: 'launching-applications/' },
-              { text: 'Закрепить приложение в панели приложений', link: 'pin-apps-to-dash/' },
-              { text: 'Открытие окон по центру экрана', link: 'center-new-windows/' },
+              { text: 'Прикрепить приложение к панели приложений', link: 'pin-apps-to-dash/' },
+              { text: 'Центрировать новые окна', link: 'center-new-windows/' },
               { text: 'Автоматический запуск приложений', link: 'startup-applications/' },
               { text: 'Быстрое переключение между окнами', link: 'switching-apps/' },
               { text: 'Уведомления и список уведомлений', link: 'notifications/' },
-              { text: 'Удаленный рабочий стол', link: 'gnome-remote-desktop/' },
+              { text: 'Удалённый рабочий стол', link: 'gnome-remote-desktop/' },
               {
                 text: 'Создание пустого файла в файловом менеджере',
                 link: 'add-empty-file-to-nautilus/'

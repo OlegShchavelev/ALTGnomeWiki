@@ -35,6 +35,7 @@ for dir in */; do
                 subdir_basename=$(basename "$subdir_name")
 
                 echo "/$subdir_basename /$subdir_name/ 301" >> "$output_file"
+                echo "/$subdir_basename.html /$subdir_name/ 301" >> "$output_file"
             fi
         done
     fi

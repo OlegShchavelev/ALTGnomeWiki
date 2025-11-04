@@ -1,8 +1,8 @@
 - name: 'ALT Regular Gnome'
   branch: sisyphus
-  description: Скачать ALT Regular Gnome с рабочим окружением GNOME с самой свежей версией 48 на борту
+  description: Регулярно обновляемый образ, основанный на нестабильной ветке sisyphus (current — еженедельная сборка, tested — вручную проверяемая сборка). Содержит минимальный программный набор
   actions:
-    - text: Примечание к выпуску
+    - text: Примечания к выпуску
       link: /images/alt-regular-gnome
     - text: Инструкция по установке
       link: /instalations/ordinary-install
@@ -23,6 +23,7 @@
             - urls:
                 - https://nightly.altlinux.org/sisyphus/current/regular-gnome-latest-x86_64.iso
                 - https://mirror.yandex.ru/altlinux-nightly/current/regular-gnome-latest-x86_64.iso
+
     - arch: aarch64
       branches:
         - name: tested
@@ -36,14 +37,20 @@
             - urls:
                 - https://nightly.altlinux.org/sisyphus-aarch64/current/regular-gnome-latest-aarch64.iso
 
-- name: 'ALT Workstation 11.0'
+- name: 'ALT Workstation'
   branch: p11
-  description: Скачать «Альт Рабочую станцию» с рабочим окружением GNOME
+  description: Дистрибутив семейства ОС «Альт», разрабатываемый и поддерживаемый Базальт СПО. Основан на стабильной ветке p11, содержит большое количество программ и при установке позволяет выбрать список устанавливаемого ПО
+  actions:
+    - text: Примечания к выпуску
+      link: /images/alt-workstation
+    - text: Инструкция по установке
+      link: /instalations/ordinary-install
+    - text: Пользовательское соглашение
+      link: https://nightly.altlinux.org/p11/license.all.html
   downloads:
     - arch: x86_64
       branches:
-        - name: release
-          images:
+        - images:
             - urls:
                 - https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/x86_64/alt-workstation-11.0-x86_64.iso
               badges:
@@ -52,27 +59,32 @@
 
     - arch: aarch64
       branches:
-        - name: release
-          images:
+        - images:
             - urls:
                 - https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/aarch64/alt-workstation-11.0-aarch64.iso
               badges:
                 - type: tip
                   text: aarch64
+
 - name: 'ALT Starterkit Gnome'
   branch: p11
-  description: Скачать «Стартовый набор» с рабочим окружением GNOME
+  description: Регулярно обновляемый образ, основанный на стабильной ветке p11 (обновляется ежеквартально). Содержит минимальный программный набор
+  actions:
+    - text: Примечания к выпуску
+      link: /images/alt-workstation
+    - text: Инструкция по установке
+      link: /instalations/ordinary-install
+    - text: Пользовательское соглашение
+      link: https://nightly.altlinux.org/p11/license.all.html
   downloads:
     - arch: x86_64
       branches:
-        - name: release
-          images:
+        - images:
             - urls:
                 - https://nightly.altlinux.org/p11/release/alt-p11-gnome-20250912-x86_64.iso
 
     - arch: aarch64
       branches:
-        - name: release
-          images:
+        - images:
             - urls:
                 - https://nightly.altlinux.org/p11-aarch64/release/alt-p11-gnome-20250912-aarch64.iso

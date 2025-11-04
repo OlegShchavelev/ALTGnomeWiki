@@ -14,6 +14,7 @@ custom_redirects=(
     "/add-apps-panel-tasks/ /pin-apps-to-dash/ 301"
     "/windows-in-the-center/ /center-new-windows/ 301"
     "/terminal_ch/ /terminal-setting-up/ 301"
+    "/licence/ /license/ 301"
 )
 
 > "$output_file"

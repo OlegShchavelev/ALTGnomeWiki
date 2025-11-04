@@ -130,4 +130,4 @@ epm -i fonts-ttf-ms
 
 :::
 
-If LibreOffice doesn't have the font you're using, [install an additional font](/en/using-gnome/add-fonts/) and it will appear in the list.
+If LibreOffice doesn't have the font you're using, [install an additional font](/en/using-gnome/settings/add-fonts/) and it will appear in the list.

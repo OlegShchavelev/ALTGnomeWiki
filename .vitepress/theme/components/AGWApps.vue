@@ -8,7 +8,7 @@ import AGWAppPageAction from './AGWAppPageAction.vue'
 import { useApps } from '../composables/useApps'
 import { AppRows } from '../types'
 
-const { transformedApps, filterAppsByLimit } = useApps('yaml')
+const { transformedApps, filterAppsByLimit } = useApps()
 
 const props = withDefaults(defineProps<AppRows>(), {
   limit: 6,

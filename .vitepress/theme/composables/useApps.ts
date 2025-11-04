@@ -1,47 +1,28 @@
 import { computed } from 'vue'
 import { useData } from './data'
-import { data as yamlAppsData } from '../../data/apps.data'
+import { data as appsData } from '../../data/apps.data'
 import { data as docsAppsData } from '../../data/docs-apps.data'
 import { transformKeywords, transformActions } from './useMeta'
 import type { App, Apps, MetaKeywords, MetaActionItem } from '../types'
 
-export function useApps(source: 'all' | 'yaml' | 'docs' = 'all') {
+export function useApps() {
   const { theme } = useData()
 
   const apps = computed<App[]>(() => {
-    const yamlApps: App[] = yamlAppsData?.apps || []
+    const yamlApps: App[] = appsData?.apps || []
     const docsApps: App[] = docsAppsData || []
+    const docsAppsMap = new Map(docsApps.map((docApp) => [docApp.appstream.name, docApp]))
+    const enrichedApps = yamlApps.map((yamlApp) => {
+      const docsApp = docsAppsMap.get(yamlApp.appstream.name)
 
-    console.log(`📊 YAML apps: ${yamlApps.length}, Docs apps: ${docsApps.length}`)
-
-    if (source === 'yaml') {
-      console.log(`✅ Using only YAML apps: ${yamlApps.length}`)
-      return yamlApps
-    }
-
-    if (source === 'docs') {
-      console.log(`✅ Using only Docs apps: ${docsApps.length}`)
-      return docsApps
-    }
-
-    const mergedApps = [...docsApps]
-
-    yamlApps.forEach((yamlApp) => {
-      const existingIndex = mergedApps.findIndex((docApp) => docApp.appstream.name === yamlApp.appstream.name)
-
-      if (existingIndex === -1) {
-        mergedApps.push(yamlApp)
-      } else {
-        const existingApp = mergedApps[existingIndex]
-        mergedApps[existingIndex] = {
-          ...yamlApp,
-          more: existingApp.more
+      if (docsApp) {
+        return {
+          ...yamlApp
         }
       }
+      return yamlApp
     })
-
-    console.log(`✅ Total merged apps: ${mergedApps.length}`)
-    return mergedApps
+    return enrichedApps
   })
 
   const transformApp = (app: App): Apps => {
@@ -60,8 +41,7 @@ export function useApps(source: 'all' | 'yaml' | 'docs' = 'all') {
       summary: app.appstream.summary,
       keywords: transformKeywords(app.appstream.keywords, meta?.keywords) as MetaKeywords[],
       actions: actions,
-      group: app.group,
-      more: app.more
+      group: app.group
     }
   }
 

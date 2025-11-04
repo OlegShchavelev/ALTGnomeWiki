@@ -36,7 +36,7 @@ jobs:
           npm run docs:build
       - name: Generate redirects file
         run: |
-          sh scripts/generate_redirects.sh .vitepress/dist/_redirects
+          bash scripts/generate_redirects.sh .vitepress/dist/_redirects
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:

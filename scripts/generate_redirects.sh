@@ -1,12 +1,14 @@
 #!/bin/bash
 
+set -euo pipefail
+
 if [ $# -eq 0 ]; then
     echo "Ошибка: Не указан выходной файл"
     echo "Использование: $0 <выходной_файл>"
     exit 1
 fi
 
-output_file="$(pwd)/$1"
+output_file="$PWD/$1"
 
 custom_redirects=(
     "/Synching/ /syncthing/ 301"

@@ -1,6 +1,7 @@
 ---
 aggregation:
   sisyphus: tuner
+  flatpak: org.altlinux.Tuner
 appstream:
   id: org.altlinux.Tuner
   name: Tuner
@@ -12,8 +13,8 @@ appstream:
     name: GNU GPLv3
     link: https://choosealicense.com/licenses/gpl-3.0/
   developer:
-    name:     ALT Gnome
-    avatar:   /tuner/alt-gnome.png
+    name:     ALT Linux Team
+    avatar:   /tuner/alt-linux-team.svg
   url:
     homepage:   https://altlinux.space/alt-gnome/Tuner
     bugtracker: https://altlinux.space/alt-gnome/Tuner/issues
@@ -49,3 +50,13 @@ su -
 apt-get update
 apt-get install tuner-panel
 ```
+
+### GDM
+
+```shell
+su -
+apt-get update
+apt-get install tuner-gdm
+```
+
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

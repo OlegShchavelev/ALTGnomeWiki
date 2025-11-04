@@ -9,12 +9,12 @@ fi
 output_file="$PWD/$1"
 
 custom_redirects=(
-    "/Synching/ /syncthing/ 301"
-    "/bottle/ /bottles/ 301"
-    "/add-apps-panel-tasks/ /pin-apps-to-dash/ 301"
-    "/windows-in-the-center/ /center-new-windows/ 301"
-    "/terminal_ch/ /terminal-setting-up/ 301"
-    "/licence/ /license/ 301"
+    "/Synching /syncthing/ 301"
+    "/bottle /bottles/ 301"
+    "/add-apps-panel-tasks /pin-apps-to-dash/ 301"
+    "/windows-in-the-center /center-new-windows/ 301"
+    "/terminal_ch /terminal-setting-up/ 301"
+    "/licence /license/ 301"
 )
 
 > "$output_file"
@@ -34,7 +34,7 @@ for dir in */; do
                 subdir_name="${subdir%/}"
                 subdir_basename=$(basename "$subdir_name")
 
-                echo "/$subdir_basename/ /$subdir_name/ 301" >> "$output_file"
+                echo "/$subdir_basename /$subdir_name/ 301" >> "$output_file"
             fi
         done
     fi

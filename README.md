@@ -96,7 +96,11 @@ npm run docs:dev
 
 ## Благодарность
 
-Спасибо [команде разработки Nólëbase](https://github.com/nolebase) за создание и поддержку набора плагинов [Nólëbase Integrations](https://github.com/nolebase/integrations) и активное взаимодействие.
+- Спасибо [команде разработки Nólëbase](https://github.com/nolebase) за создание и поддержку набора плагинов [Nólëbase Integrations](https://github.com/nolebase/integrations) и активное взаимодействие.
+
+- [alt-linux-space-design](https://altlinux.space/altlinux-space/design) - сreating an icon for ALT Linux Space by Viktoriya Zubacheva and Semen Fomchenkov ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))
+
+- [Tuner](https://altlinux.space/alt-gnome/Tuner) - creating an icon for Tuner by Viktoriya Zubacheva ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))
 
 ## Лицензия
 

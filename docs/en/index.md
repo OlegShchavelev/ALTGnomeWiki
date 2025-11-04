@@ -62,27 +62,42 @@ sponsors:
       size: big
       items:
         - name: ALT Linux Team
-          img: ./alt-linux-team.png
+          img: /alt-linux-team.png
           url: https://packages.altlinux.org/en/sisyphus
         - name: BaseALT
-          img: ./basealt.png
+          img: /basealt.png
           url: https://www.basealt.ru/en
     - tier: Technical partners
       size: big
       items:
         - name: Beget
-          img: ./beget.png
+          img: /beget.png
           url: https://beget.com
+        - name: ALT Linux Space
+          img: /als-logo.svg
+          url: //altlinux.space/
     - tier: Projects on VitePress
       size: big
       items:
         - name: MODX Pro
-          img: ./modx.svg
+          img: /modx.svg
           url: https://docs.modx.pro/
         - name: IT WIKI
-          img: ./logo_for_friends_horizontal.svg
+          img: /logo_for_friends_horizontal.svg
           url: https://it-wiki.com.ru/
         - name: Nólëbase
-          img: ./nolebase-logo.svg
+          img: /nolebase-logo.svg
           url: https://nolebase.ayaka.io/
+        - name: Tuner
+          img: /tuner/color.svg
+          url: //tuner.altlinux.org/
+    - tier: Ideas born in the ALT Gnome developer community
+      size: big
+      items:
+        - name: Stapler
+          img: /stplr/stplr-logo.svg
+          url: //stplr.dev
+        - name: ALT Atomic
+          img: /alt-atomic-logo.svg
+          url: //atomic.alt-gnome.ru
 ---

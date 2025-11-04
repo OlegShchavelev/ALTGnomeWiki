@@ -236,24 +236,24 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
       },
       {
         text: 'Использование рабочего окружения GNOME',
-        base: 'using-gnome',
+        base: '/using-gnome',
         items: [
           {
-            text: 'Рабочий стол',
-            base: '/using-gnome/workplaces/',
+            text: 'Рабочие пространства',
+            base: '/using-gnome/workspaces/',
             items: [
               { text: 'Запуск приложений', link: 'launching-applications/' },
-              { text: 'Закрепить приложение в панели приложений', link: 'add-apps-panel-tasks/' },
-              { text: 'Открытие окон по центру экрана', link: 'windows-in-the-center/' },
+              { text: 'Закрепить приложение в панели приложений', link: 'pin-apps-to-dash/' },
+              { text: 'Открытие окон по центру экрана', link: 'center-new-windows/' },
               { text: 'Автоматический запуск приложений', link: 'startup-applications/' },
               { text: 'Быстрое переключение между окнами', link: 'switching-apps/' },
               { text: 'Уведомления и список уведомлений', link: 'notifications/' },
               { text: 'Удаленный рабочий стол', link: 'gnome-remote-desktop/' },
               {
                 text: 'Создание пустого файла в файловом менеджере',
-                link: '/add-empty-file-to-nautilus'
+                link: 'add-empty-file-to-nautilus/'
               },
-              { text: 'Экран блокировки', link: '/lock-screen' }
+              { text: 'Экран блокировки', link: 'lock-screen/' }
             ],
             collapsed: true
           },
@@ -268,7 +268,7 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
                   { text: 'Нужна ли мне антивирусная программа', link: 'net-antivirus/' },
                   {
                     text: 'Нужно ли сканировать свою электронную почту на наличие вирусов',
-                    link: '/net-email-virus'
+                    link: 'net-email-virus/'
                   }
                 ],
                 collapsed: true
@@ -319,7 +319,7 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
                 ],
                 collapsed: true
               },
-              { text: 'Настройка терминала', link: 'terminal_ch/' },
+              { text: 'Настройка терминала', link: 'terminal-setting-up/' },
               { text: 'Установка шрифтов', link: 'add-fonts/' }
             ],
             collapsed: true

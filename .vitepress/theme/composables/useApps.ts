@@ -5,7 +5,7 @@ import { data as docsAppsData } from '../../data/docs-apps.data'
 import { transformKeywords, transformActions } from './useMeta'
 import type { App, Apps, MetaKeywords, MetaActionItem } from '../types'
 
-export function useApps() {
+export function useApps(source: 'all' | 'yaml' | 'docs' = 'all') {
   const { theme } = useData()
 
   const apps = computed<App[]>(() => {
@@ -13,6 +13,16 @@ export function useApps() {
     const docsApps: App[] = docsAppsData || []
 
     console.log(`📊 YAML apps: ${yamlApps.length}, Docs apps: ${docsApps.length}`)
+
+    if (source === 'yaml') {
+      console.log(`✅ Using only YAML apps: ${yamlApps.length}`)
+      return yamlApps
+    }
+
+    if (source === 'docs') {
+      console.log(`✅ Using only Docs apps: ${docsApps.length}`)
+      return docsApps
+    }
 
     const mergedApps = [...docsApps]
 

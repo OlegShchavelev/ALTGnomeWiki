@@ -16,7 +16,7 @@ defineProps({
       <div class="body">
         <div class="title">{{ image.name }}</div>
         <div class="text">{{ image.description }}</div>
-        <div class="actions">
+        <div class="actions" v-if="image.actions">
           <template v-for="action in image.actions">
             <VPLink :href="action.link">{{ action.text }}</VPLink>
           </template>

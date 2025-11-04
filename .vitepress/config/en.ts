@@ -61,7 +61,7 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
           { text: 'Ayugram', link: 'ayugram-desktop/' },
           { text: 'Binary', link: 'binary/' },
           { text: 'Blender', link: 'blender/' },
-          { text: 'Bottles', link: 'bottle/' },
+          { text: 'Bottles', link: 'bottles/' },
           { text: 'Boxes', link: 'boxes/' },
           { text: 'Boxy SVG', link: 'boxy-svg/' },
           { text: 'Brave Browser', link: 'brave/' },

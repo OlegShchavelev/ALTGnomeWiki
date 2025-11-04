@@ -8,7 +8,20 @@ fi
 
 output_file="$(pwd)/$1"
 
+custom_redirects=(
+    "/Synching/ /syncthing/ 301"
+    "/bottle/ /bottles/ 301"
+    "/add-apps-panel-tasks/ /pin-apps-to-dash/ 301"
+    "/windows-in-the-center/ /center-new-windows/ 301"
+    "/terminal_ch/ /terminal-setting-up/ 301"
+    "/licence/ /license/ 301"
+)
+
 > "$output_file"
+
+for redirect in "${custom_redirects[@]}"; do
+    echo "$redirect" >> "$output_file"
+done
 
 cd docs/ru
 

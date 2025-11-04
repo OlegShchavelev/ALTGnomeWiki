@@ -150,7 +150,6 @@ export interface AppRows {
   layout: string
   moreLink?: string
   moreText?: string
-  homeLimit?: number
 }
 
 // ========================================

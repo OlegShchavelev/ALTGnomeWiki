@@ -13,14 +13,11 @@ const { transformedApps, filterAppsByLimit } = useApps()
 const props = withDefaults(defineProps<AppRows>(), {
   limit: 6,
   size: 'medium',
-  layout: 'doc',
-  homeLimit: 6
+  layout: 'doc'
 })
 
 const apps = computed(() => {
-  const isHome = props.layout === 'home'
-  const limit = isHome ? props.homeLimit : props.limit
-  return filterAppsByLimit(transformedApps.value, limit)
+  return filterAppsByLimit(transformedApps.value, props.limit)
 })
 </script>
 

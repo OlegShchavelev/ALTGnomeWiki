@@ -18,7 +18,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /enter-tex/enter-tex-1.png
     - src: /enter-tex/enter-tex-2.png
     - src: /enter-tex/enter-tex-3.png
@@ -42,7 +42,7 @@ Enter-TeX - это приложение для составления докум
 - Настройка и вызов внешнего приложения для просмотра PDF (встроенная функция просмотра PDF отсутствует);
 - Вызов основных команд и окружений LaTeX из меню.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 

@@ -23,9 +23,9 @@ appstream:
     homepage: https://github.com/pavloniym/anilibrix
     bugtracker: https://github.com/pavloniym/anilibrix/issues
 gallery:
-  title: Gallery
+  title: AniLibrix app screenshots
   type: slider
-  items:
+  images:
     - src: /anilibrix/anilibrix-1.png
     - src: /anilibrix/anilibrix-2.png
     - src: /anilibrix/anilibrix-3.png
@@ -35,7 +35,7 @@ gallery:
 
 AniLibrix is a desktop anime cinema of Anilibria for any of your computers. Anilibria - that's what anime sounds like!
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-snap.md-->
 <!--@include: @en/apps/.parts/install/content-epm-play.md-->

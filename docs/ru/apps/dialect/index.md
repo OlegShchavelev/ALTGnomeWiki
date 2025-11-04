@@ -26,7 +26,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /dialect/dialect-1.png
     - src: /dialect/dialect-3.png
     - src: /dialect/dialect-2.png
@@ -36,7 +36,7 @@ gallery:
 
 Dialect — простое приложение для перевода с использованием веб-сервисов, предоставляя некоторые дополнительные возможности: выбор провайдера перевода, возможно прослушать перевод.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

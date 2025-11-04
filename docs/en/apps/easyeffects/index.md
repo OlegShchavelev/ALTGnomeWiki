@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /easyeffects/easyeffects-1.png
     - src: /easyeffects/easyeffects-2.png
 ---
@@ -31,7 +31,7 @@ gallery:
 
 EasyEffects is an application for customizing sound effects when using the PipeWire server. There is both the possibility of manual configuration and import/export of ready-made presets.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

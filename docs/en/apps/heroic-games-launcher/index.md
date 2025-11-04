@@ -18,9 +18,9 @@ appstream:
     bugtracker: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues
     donation: https://heroicgameslauncher.com/donate
 gallery:
-  title: Галерея
+  title: Gallery
   type: slider
-  items:
+  images:
     - src: /heroic/heroic1.png
     - src: /heroic/heroic2.png
     - src: /heroic/heroic3.png
@@ -33,7 +33,7 @@ gallery:
 
 Heroic is an open source game launcher. Right now it supports running games from the Epic Games Store using Legendary, GOG Games using our custom implementation using `gogdl`, and Amazon Games using `Nile`.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->
 <!--@include: @en/apps/.parts/install/content-snap.md-->

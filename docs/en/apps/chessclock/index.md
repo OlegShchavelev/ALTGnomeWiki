@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /chessclock/sc-1.png
     - src: /chessclock/sc-2.png
     - src: /chessclock/sc-3.png
@@ -31,6 +31,6 @@ gallery:
 
 Chess Clock is a simple application for monitoring the time in chess games at the board. Designed for mobile use, players select the time control settings needed for their game, then the black player presses their watch to start the white player's timer. After each turn, the player clicks on the clock to start the opponent's timer, and so on until the game is over or until one of the clocks reaches zero.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

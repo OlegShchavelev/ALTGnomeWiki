@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /biblioteca/sc-1.png
 ---
 
@@ -37,7 +37,7 @@ Biblioteca allows you to view and read GNOME documentation. Among other things, 
 - Fuzzy search
 - Mobile/responsive
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

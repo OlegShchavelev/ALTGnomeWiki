@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /clairvoyant/sc-1.png
     - src: /clairvoyant/sc-2.png
     - src: /clairvoyant/sc-3.png
@@ -37,6 +37,6 @@ Does he love you? Should you order pizza for dinner? Is there such a thing as a 
 - Not satisfied? Ask the question again, then click “Ask Again.”
 - Do whatever you want with the answers - just don't shoot the messenger!
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

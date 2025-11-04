@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /firefox/firefox-1.png
     - src: /firefox/firefox-2.png
     - src: /firefox/firefox-3.png
@@ -32,7 +32,7 @@ gallery:
 
 Firefox — популярный графический веб-браузер с открытым исходным кодом, разрабатываемый Mozilla.
 
-<AGWGallery />
+<Gallery />
 
 ## Издания и каналы обновления Firefox
 

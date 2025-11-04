@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /evince/evince-1.png
     - src: /evince/evince-2.png
 ---
@@ -32,7 +32,7 @@ gallery:
 
 Просмотр документов (Evince) — официальная утилита для рабочего окружения GNOME, которая поддерживает документы в следующих форматах: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (с SyncTeX) и Comic Book Archive (CBR, CBT, CBZ, CB7).
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

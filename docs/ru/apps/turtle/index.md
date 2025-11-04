@@ -17,7 +17,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /turtle/turtle-1.png
     - src: /turtle/turtle-2.png
     - src: /turtle/turtle-3.png

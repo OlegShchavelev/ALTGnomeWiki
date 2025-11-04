@@ -23,7 +23,7 @@ appstream:
     bugtracker: https://github.com/telegramdesktop/tdesktop/issues
 gallery:
   type: slider
-  items:
+  images:
     - src: /telegram/telegram-6.png
     - src: /telegram/telegram-7.png
     - src: /telegram/telegram-8.png
@@ -62,7 +62,7 @@ Telegram — кроссплатформенная система мгновен�
 - Настройки -> Продвинутые настройки
 - Снимите флажок «Рамка окна QT»
 
-<AGWGallery />
+<Gallery />
 
 Оформление системной рамки зависит от оконного интерфейса приложения `X11` или `Wayland`.
 

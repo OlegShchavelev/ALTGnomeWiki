@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /lenspect/sc-1.png
     - src: /lenspect/sc-2.png
 ---
@@ -31,6 +31,6 @@ gallery:
 
 Легковесный сканер угроз безопасности, призванный сделать обнаружение вредоносного ПО более доступным и эффективным.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

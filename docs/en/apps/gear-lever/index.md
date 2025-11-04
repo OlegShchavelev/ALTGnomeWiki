@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gear-lever/gear-lever-1.png
     - src: /gear-lever/gear-lever-2.png
     - src: /gear-lever/gear-lever-3.png
@@ -42,7 +42,7 @@ Some features of Gear Lever:
 - Gear Lever provides a friendly and intuitive control interface;
 - Controlled using Drag and Drop. Simply drag and drop your AppImages into the program window.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /cartridges/cartridges-1.png
     - src: /cartridges/cartridges-2.png
 ---
@@ -33,7 +33,7 @@ gallery:
 
 Картриджи (Cartridges) — простое приложение для запуска ваших игр. Оно поддерживает импорт игр из [Steam](/apps/steam/), [Lutris](/apps/lutris/), [Heroic](/apps/heroic-games-launcher/) и других игровых платформ без необходимости входа в систему. Вы можете сортировать и скрывать игры или загружать обложки из SteamGridDB.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

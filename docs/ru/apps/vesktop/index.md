@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /vesktop/vesktop-1.png
     - src: /vesktop/vesktop-2.png
     - src: /vesktop/vesktop-3.png
@@ -37,7 +37,7 @@ Vesktop — альтернативный клиент Discord c множеств
 
 И множество как встроенных, так и устанавливаемых аддонов.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->

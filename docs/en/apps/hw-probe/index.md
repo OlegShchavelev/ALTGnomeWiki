@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /hw-probe/hw-probe1.png
     - src: /hw-probe/hw-probe2.png
     - src: /hw-probe/hw-probe3.png
@@ -32,7 +32,7 @@ to investigate hardware problems
 
 Probe is a snapshot of your computer's hardware status and logs. The tool checks the health of devices by analyzing logs and returns a persistent URL in the public database [Linux Hardware](https://linux-hardware.org/) to view the computer scan.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

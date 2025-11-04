@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /metadatacleaner/sc-1.png
     - src: /metadatacleaner/sc-2.png
     - src: /metadatacleaner/sc-3.png
@@ -34,6 +34,6 @@ Metadata in a file can tell you a lot about you. Cameras record data about when 
 
 This tool allows you to view metadata in files and get rid of it if possible.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

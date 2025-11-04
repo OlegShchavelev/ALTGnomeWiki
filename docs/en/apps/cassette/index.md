@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /cassette/cassette-1.png
     - src: /cassette/cassette-2.png
 ---
@@ -33,7 +33,7 @@ gallery:
 
 Cassette is an unofficial client of the Yandex Music service.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

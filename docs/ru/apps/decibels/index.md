@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /decibels/sc-1.png
     - src: /decibels/sc-2.png
     - src: /decibels/sc-3.png
@@ -41,7 +41,7 @@ gallery:
 - Лёгкое управление перемоткой
 - Интуитивный интерфейс
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

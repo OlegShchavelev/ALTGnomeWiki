@@ -25,7 +25,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /fretboard/fretboard-1.png
     - src: /fretboard/fretboard-2.png
 ---
@@ -34,7 +34,7 @@ gallery:
 
 Fretboard — позволяет находить гитарные аккорды, вводя их названия или набирая их на интерактивном грифе гитары. Можно поэкспериментировать с изменением аккорда, посмотреть другие способы его воспроизведения или добавить его в закладки. Fretboard можно использовать, чтобы практиковаться, изучать и осваивать свои любимые композиции.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

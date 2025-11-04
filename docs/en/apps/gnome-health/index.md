@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-health/sc-1.png
     - src: /gnome-health/sc-2.png
     - src: /gnome-health/sc-3.png
@@ -32,7 +32,7 @@ gallery:
 
 Health can visualize the number of steps you take daily, your weight trend over time, and your daily activity.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

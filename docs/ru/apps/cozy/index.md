@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /cozy/cozy-1.png
     - src: /cozy/cozy-2.png
     - src: /cozy/cozy-3.png
@@ -44,7 +44,7 @@ Cozy — это проигрыватель аудиокниг. Вот некот
 - Управляется с помощью Drag and Drop. Просто перетаскивайте аудиокниги в окно программы;
 - Сортирует аудиокниги по имени, автору или диктору.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

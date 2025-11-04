@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /webfont-kit-generator/sc-1.png
     - src: /webfont-kit-generator/sc-2.png
     - src: /webfont-kit-generator/sc-3.png
@@ -36,7 +36,7 @@ Webfont Kit Generator - это простая утилита, которая п�
 
 Webfont Kit Generator также входит инструмент для загрузки шрифтов из Google Fonts для собственного хостинга.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

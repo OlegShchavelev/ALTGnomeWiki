@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея GNOME System Monitor
   type: slider
-  items:
+  images:
     - src: /gnome-system-monitor/sc-1.png
     - src: /gnome-system-monitor/sc-2.png
     - src: /gnome-system-monitor/sc-3.png
@@ -35,6 +35,6 @@ gallery:
 
 Функция отображения графика ресурсов предоставляет краткий обзор того, что происходит с компьютером, показывая использования сети, памяти и процессора.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->

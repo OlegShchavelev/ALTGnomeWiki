@@ -26,7 +26,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /dialect/dialect-1.png
     - src: /dialect/dialect-3.png
     - src: /dialect/dialect-2.png
@@ -36,7 +36,7 @@ gallery:
 
 Dialect is a simple application for translation using web services, providing some additional features: choosing a translation provider, it is possible to listen to the translation.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

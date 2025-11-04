@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery DiskUtility
   type: slider
-  items:
+  images:
     - src: /diskutility/sc-1.png
     - src: /diskutility/sc-2.png
     - src: /diskutility/sc-3.png
@@ -34,6 +34,6 @@ The Disks app provides an easy way to check, format, partition, and configure di
 
 Using the Disks application, you can view SMART data, manage devices, evaluate the performance of physical disks, and burn images to USB media.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->

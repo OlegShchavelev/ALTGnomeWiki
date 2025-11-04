@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-clocks/sc-1.png
     - src: /gnome-clocks/sc-2.png
     - src: /gnome-clocks/sc-3.png
@@ -39,7 +39,7 @@ A simple and elegant clock application. It includes world clocks, alarms, a stop
 - Measure elapsed time with an accurate stopwatch
 - Set timers to properly cook your food
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

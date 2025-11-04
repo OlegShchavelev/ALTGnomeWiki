@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея Настроек
   type: slider
-  items:
+  images:
     - src: /gnome-control-center/sc-1.png
     - src: /gnome-control-center/sc-2.png
     - src: /gnome-control-center/sc-3.png
@@ -33,6 +33,6 @@ gallery:
 
 Настройки — основной интерфейс для настройки вашей системы.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->

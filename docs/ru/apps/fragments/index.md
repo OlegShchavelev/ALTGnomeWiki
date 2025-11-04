@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /fragments/fragments-1.png
     - src: /fragments/fragments-2.png
 ---
@@ -33,7 +33,7 @@ gallery:
 
 Fragments — простой в использовании BitTorrent-клиент. Он может использоваться для передачи файлов по протоколу BitTorrent, таких как видео, музыка или установочные образы для дистрибутивов Linux.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

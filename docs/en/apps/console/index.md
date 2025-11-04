@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /console/console-1.png
     - src: /console/console-2.png
 ---
@@ -33,7 +33,7 @@ gallery:
 
 Console (GNOME Terminal) is a simple and convenient terminal emulator for the GNOME desktop.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

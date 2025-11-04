@@ -21,7 +21,7 @@ appstream:
     translate: https://github.com/alexkdeveloper/desktop-files-creator/tree/main/po
 gallery:
   type: carousel
-  items:
+  images:
     - src: /desktop-files-creator/desktop-files-creator-1.png
       text: Главная страница
 ---
@@ -30,6 +30,6 @@ gallery:
 
 Desktop Files Creator - allows you to create desktop files in GNU/Linux distributions
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

@@ -17,7 +17,7 @@ appstream:
 gallery:
   type: slider
   title: Основные возможности расширения ddterm
-  items:
+  images:
     - src: /ddterm/ddterm-1.png
     - src: /extensions/extensions-2.png
     - src: /extensions/extensions-3.png
@@ -28,7 +28,7 @@ gallery:
 
 ddterm — удобное расширение для терминала в GNOME Shell с вкладками. Расширение изначально поддерживает cессию Wayland.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @extensions/.parts/show-install-steps.md-->
 

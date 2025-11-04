@@ -18,7 +18,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /folio/folio-1.png
     - src: /folio/folio-2.png
     - src: /folio/folio-3.png
@@ -28,6 +28,6 @@ gallery:
 
 Folio is a Markdown note-taking app for GNOME
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

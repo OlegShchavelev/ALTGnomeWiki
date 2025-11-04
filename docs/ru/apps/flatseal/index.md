@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /flatseal/flatseal-1.png
     - src: /flatseal/flatseal-2.png
 ---
@@ -29,7 +29,7 @@ gallery:
 
 Flatseal — графическая утилита для просмотра и управления вашими [Flatpak-приложениями](/package-manager/flatpak/).
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

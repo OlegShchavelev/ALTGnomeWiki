@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gear-lever/gear-lever-1.png
     - src: /gear-lever/gear-lever-2.png
     - src: /gear-lever/gear-lever-3.png
@@ -42,7 +42,7 @@ gallery:
 - Gear Lever предоставляет дружественный и понятный интерфейс управления;
 - Управляется с помощью Drag and Drop. Просто перетаскивайте ваши образы AppImage в окно программы.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

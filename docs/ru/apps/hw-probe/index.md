@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /hw-probe/hw-probe1.png
     - src: /hw-probe/hw-probe2.png
     - src: /hw-probe/hw-probe3.png
@@ -32,7 +32,7 @@ Hardware Probe (hw-probe) — инструмент для проверки ра�
 
 Probe — это моментальный снимок состояния оборудования вашего компьютера и журналов. Инструмент проверяет работоспособность устройств путём анализа журналов и возвращает постоянный URL-адрес в публичной базе [Linux Hardware](https://linux-hardware.org/) для просмотра проверки компьютера.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

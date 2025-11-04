@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Characters Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-characters/sc-1.webp
     - src: /gnome-characters/sc-2.webp
     - src: /gnome-characters/sc-3.webp
@@ -35,7 +35,7 @@ Symbols is a simple application for finding and inserting unusual symbols. It al
 
 You can also view characters by category, such as punctuation, pictures, and more.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

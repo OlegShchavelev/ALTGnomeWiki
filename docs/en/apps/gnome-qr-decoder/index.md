@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-qr-decoder/sc-1.png
     - src: /gnome-qr-decoder/sc-2.png
     - src: /gnome-qr-decoder/sc-3.png
@@ -41,7 +41,7 @@ Functions:
 - Scan from screenshot
 - Parse and display QR code content when possible
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

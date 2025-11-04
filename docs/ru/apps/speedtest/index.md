@@ -34,6 +34,6 @@ gallery:
 
 Тест скорости — Клиент для измерение скорости интернета с использованием технологий GTK4+libadwaita. Основанный на библиотеки `librespeed`
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /nautilus/sc-1.png
     - src: /nautilus/sc-2.png
     - src: /nautilus/sc-3.png
@@ -34,7 +34,7 @@ Files is the default file manager for the GNOME desktop, also known as the "Naut
 
 Nautilus supports all the basic functions of file managers. With Nautilus, you can manage files and folders, search for files and folders both locally and across a network, read and write data to removable devices, run scripts, and run applications. Nautilus offers three viewing modes: icon grid, icon list, and tree view. Nautilus functionality can be extended using modules and scripts.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 

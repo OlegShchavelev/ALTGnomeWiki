@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /logs/sc-1.png
     - src: /logs/sc-2.png
     - src: /logs/sc-3.png
@@ -34,7 +34,7 @@ gallery:
 
 С помощью приложения «Журналы» вы можете выполнять поиск по журналам и просматривать подробную информацию о событиях.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

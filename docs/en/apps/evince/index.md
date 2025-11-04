@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /evince/evince-1.png
     - src: /evince/evince-2.png
 ---
@@ -32,7 +32,7 @@ gallery:
 
 Evince is the official utility for the GNOME desktop environment, which supports documents in the following formats: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (with SyncTeX) and Comic Book Archive (CBR, CBT, CBZ, CB7).
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

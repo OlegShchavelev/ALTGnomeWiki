@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /binary/sc-1.png
     - src: /binary/sc-2.png
     - src: /binary/sc-3.png
@@ -33,7 +33,7 @@ gallery:
 
 A small and simple application for converting various hexadecimal and binary numbers.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

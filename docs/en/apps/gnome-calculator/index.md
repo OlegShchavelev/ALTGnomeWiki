@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-calculator/sc-1.webp
     - src: /gnome-calculator/sc-2.webp
     - src: /gnome-calculator/sc-3.webp
@@ -41,7 +41,7 @@ Financial mode supports several calculations, including periodic interest rate, 
 
 The programming mode supports conversions between common number systems (binary, octal, decimal and hexadecimal), Boolean algebra, reciprocal and complement codes, character code conversion and other features.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

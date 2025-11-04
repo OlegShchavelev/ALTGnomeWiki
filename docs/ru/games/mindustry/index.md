@@ -26,7 +26,8 @@ appstream:
 gallery:
   - title: Галерея
     type: slider
-    items:
+    alias: mindustry
+    images:
       - src: /mindustry/mindustry-menu.png
       - src: /mindustry/mindustry-serpulo-1.png
       - src: /mindustry/mindustry-serpulo-2.png
@@ -35,15 +36,18 @@ gallery:
       - src: /mindustry/mindustry-erekir-2.png
       - src: /mindustry/mindustry-erekir-3.png
   - type: slider
-    items:
+    alias: gier
+    images:
       - src: /mindustry/mindustry-gier-1.png
       - src: /mindustry/mindustry-gier-2.png
   - type: slider
-    items:
+    alias: notva
+    images:
       - src: /mindustry/mindustry-notva-1.png
       - src: /mindustry/mindustry-notva-2.png
   - type: slider
-    items:
+    alias: verilus
+    images:
       - src: /mindustry/mindustry-verilus-1.png
       - src: /mindustry/mindustry-verilus-2.png
 ---
@@ -52,7 +56,7 @@ gallery:
 
 Mindustry — Песочница в жанре tower-defense. Создавайте сложные цепочки поставок из конвейеров, чтобы загружать боеприпасы в свои турели, производить материалы для строительства и защищать свои сооружения от волн врагов. Играйте со своими друзьями в кроссплатформенные многопользовательские кооперативные игры или бросайте им вызов в командных PvP-матчах.
 
-<AGWGallery />
+<Gallery alias="mindustry" />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 <!--@include: @ru/apps/.parts/install/content-snap.md-->
@@ -101,7 +105,7 @@ Planets.tantros.alwaysUnlocked = true
 Planets.gier.alwaysUnlocked = true
 ```
 
-<AGWGallery id=1 />
+<Gallery alias="gier" />
 
 ### Notva
 
@@ -113,7 +117,7 @@ Planets.gier.alwaysUnlocked = true
 Planets.notva.alwaysUnlocked = true
 ```
 
-<AGWGallery id=2 />
+<Gallery alias="notva" />
 
 ### Verilus
 
@@ -125,4 +129,4 @@ Planets.notva.alwaysUnlocked = true
 Planets.verilus.alwaysUnlocked = true
 ```
 
-<AGWGallery id=3 />
+<Gallery alias="verilus" />

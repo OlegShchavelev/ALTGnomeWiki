@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /identity/sc-1.png
     - src: /identity/sc-2.png
     - src: /identity/sc-3.png
@@ -32,7 +32,7 @@ gallery:
 
 Приложение для сравнения нескольких версий изображения или видео.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /podcasts/sc-1.png
     - src: /podcasts/sc-2.png
     - src: /podcasts/sc-3.png
@@ -32,6 +32,6 @@ gallery:
 
 Воспроизводите, обновляйте и управляйте своими подкастами с помощью легкого интерфейса, который легко интегрируется в GNOME. Подкасты могут воспроизводить различные аудиоформаты и запоминать, где вы остановили прослушивание. Вы можете подписаться на шоу через ссылки RSS/Atom, iTunes и SoundCloud. Подписки из других приложений могут быть импортированы через файлы OPML.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

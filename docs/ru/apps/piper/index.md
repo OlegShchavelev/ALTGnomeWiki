@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /piper/piper-1.png
     - src: /piper/piper-2.png
     - src: /piper/piper-3.png
@@ -31,7 +31,7 @@ gallery:
 
 Piper — приложение GTK + для настройки игровых мышей. Piper — графический интерфейс к демону DBus ratbagd, список поддерживаемых устройств зависит от libratbag. Список всех известных устройств смотрите [в файлах устройств libratbag](https://github.com/libratbag/libratbag/tree/master/data/devices)
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

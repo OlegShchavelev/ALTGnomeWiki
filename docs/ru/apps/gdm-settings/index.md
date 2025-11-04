@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gdm-settings/gdm-settings-1.png
     - src: /gdm-settings/gdm-settings-2.png
 ---
@@ -31,7 +31,7 @@ gallery:
 
 GDM Settings — приложение настроек для рабочего окружения GNOME, экран входа / блокировки экрана. Написано на Python и использует LibAdwaita для графического интерфейса.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

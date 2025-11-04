@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /space-station-14/sc-1.png
     - src: /space-station-14/sc-2.png
     - src: /space-station-14/sc-3.png
@@ -40,6 +40,6 @@ Space Station 14 рассказывает историю обычной смен
 
 SS14 — ремейк культовой классики [Space Station 13](https://spacestation13.com/). Игра находится в стадии активной разработки и имеет полностью открытый исходный код . Внести свой вклад может любой, даже вы!
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

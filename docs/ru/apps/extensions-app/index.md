@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Галерея GNOME Extensions
   type: slider
-  items:
+  images:
     - src: /gnome-shell-extensions/sc-1.webp
     - src: /gnome-shell-extensions/sc-2.webp
     - src: /gnome-shell-extensions/sc-3.webp
@@ -34,7 +34,7 @@ gallery:
 
 GNOME Extensions занимается обновлением расширений, настройкой параметров расширений и удалением или отключением нежелательных расширений.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

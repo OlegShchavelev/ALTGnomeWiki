@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /cartridges/cartridges-1.png
     - src: /cartridges/cartridges-2.png
 ---
@@ -33,7 +33,7 @@ gallery:
 
 Cartridges is a simple application for launching your games. It supports importing games from [Steam](/en/apps/steam/), [Lutris](/en/apps/lutris/), [Heroic](/en/apps/heroic-games-launcher/) and other gaming platforms without the need to log in. You can sort and hide games or download artwork from SteamGridDB.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

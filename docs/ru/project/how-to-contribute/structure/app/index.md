@@ -81,7 +81,7 @@ keywords:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /amberol/amberol-1.png
     - src: /amberol/amberol-2.png
     - src: /amberol/amberol-3.png
@@ -98,7 +98,7 @@ gallery:
 gallery:
   - title: Галерея
     type: slider
-    items:
+    images:
       - src: /mindustry/mindustry-menu.png
       - src: /mindustry/mindustry-serpulo-1.png
       - src: /mindustry/mindustry-serpulo-2.png
@@ -107,15 +107,15 @@ gallery:
       - src: /mindustry/mindustry-erekir-2.png
       - src: /mindustry/mindustry-erekir-3.png
   - type: slider
-    items:
+    images:
       - src: /mindustry/mindustry-gier-1.png
       - src: /mindustry/mindustry-gier-2.png
   - type: slider
-    items:
+    images:
       - src: /mindustry/mindustry-notva-1.png
       - src: /mindustry/mindustry-notva-2.png
   - type: slider
-    items:
+    images:
       - src: /mindustry/mindustry-verilus-1.png
       - src: /mindustry/mindustry-verilus-2.png
 ---
@@ -160,7 +160,7 @@ Amberol воспроизводит музыку, и ничего больше.
 
 <AGWAnalogues /> <!--[!code focus]-->
 
-<AGWGallery />   <!--[!code focus]-->
+<Gallery />   <!--[!code focus]-->
 
 <!--{{`@include: @ru/apps/.parts/install/content-repo.md`}}-->
 ```
@@ -174,7 +174,7 @@ Amberol воспроизводит музыку, и ничего больше.
 ```markdown-vue
 Mindustry — Песочница в жанре tower-defense. Создавайте сложные цепочки поставок из конвейеров, чтобы загружать...
 
-<AGWGallery />   <!--[!code focus]-->
+<Gallery />   <!--[!code focus]-->
 
 ### Gier
 Первые астероиды.

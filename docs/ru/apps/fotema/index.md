@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /fotema/fotema-1.png
     - src: /fotema/fotema-2.png
     - src: /fotema/fotema-3.png
@@ -30,7 +30,7 @@ gallery:
 
 Fotema — галерея для всех, кто хочет, чтобы их фотографии и видео сохранялись локально на их устройствах. Поддерживает множество форматов, включая живые фотографии iOS.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

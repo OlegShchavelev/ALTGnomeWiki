@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /console/console-1.png
     - src: /console/console-2.png
 ---
@@ -33,7 +33,7 @@ gallery:
 
 Консоль (GNOME Terminal) — простой и удобный эмулятор терминала для рабочего стола GNOME.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

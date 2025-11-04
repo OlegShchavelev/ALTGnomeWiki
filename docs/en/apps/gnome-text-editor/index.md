@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-text-editor/sc-1.png
     - src: /gnome-text-editor/sc-2.png
 ---
@@ -31,7 +31,7 @@ gallery:
 
 GNOME Text Editor is a simple text editor aimed at providing a positive user experience.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

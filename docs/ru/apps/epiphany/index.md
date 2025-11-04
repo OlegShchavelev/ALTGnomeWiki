@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /epiphany/epiphany-1.png
     - src: /epiphany/epiphany-2.png
     - src: /epiphany/epiphany-3.png
@@ -37,7 +37,7 @@ gallery:
 
 Веб-браузер для рабочего стола GNOME, обеспечивающий тесную интеграцию с рабочим столом, имеющий простой и интуитивно-понятный интерфейс, который позволяет вам сосредоточиться на веб-страницах. Если вы ищете простой, лёгкий и красивый веб-браузер, то вы его нашли.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

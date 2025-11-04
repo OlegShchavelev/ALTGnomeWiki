@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /blanket/sc-1.png
 ---
 
@@ -54,6 +54,6 @@ gallery:
     - Белый шум
     - Ветер
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

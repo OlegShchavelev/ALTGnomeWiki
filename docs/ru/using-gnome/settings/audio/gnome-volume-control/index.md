@@ -3,7 +3,7 @@ title: Управление громкостью
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gnome-volume-control/gnome-volume-control-1.png
     - src: /gnome-volume-control/gnome-volume-control-2.png
 ---
@@ -17,7 +17,7 @@ gallery:
 - Изменить положение ползунка в системном меню или в приложении Настройка -> Звук рабочего окружения GNOME
 - Использовать функциональные клавиши как правило это [[fn]] + [[F1]] или [[fn]] + [[f2]], но может отличаться в зависимости от типа устройства ввода.
 
-<AGWGallery />
+<Gallery />
 
 ### Установка уровня громкости с помощью `AlsaMixer`
 

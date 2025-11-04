@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /citations/sc-1.png
 ---
 
@@ -29,6 +29,6 @@ gallery:
 
 Управляйте своими библиографиями, используя формат BibTeX.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /pin-app/pin-app-3.png
     - src: /pin-app/pin-app-4.png
     - src: /pin-app/pin-app-5.png
@@ -35,7 +35,7 @@ PinApp позволяет закреплять изменённые прилож
 - Создавайте пользовательские ярлыки на веб-сайты
 - Скрывайте приложения, которые вы не хотите видеть
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 

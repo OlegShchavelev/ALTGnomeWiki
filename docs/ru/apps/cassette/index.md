@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /cassette/cassette-1.png
     - src: /cassette/cassette-2.png
 ---
@@ -33,7 +33,7 @@ gallery:
 
 Кассета — неофициальный клиент сервиса Яндекс.Музыка.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

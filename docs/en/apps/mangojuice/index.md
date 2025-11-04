@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /mangojuice/mj-window-1.png
     - src: /mangojuice/mj-window-2.png
     - src: /mangojuice/mj-window-3.png
@@ -37,7 +37,7 @@ This application was created for convenient editing of MangoHud and vkBasalt set
 
 Written in Vala, GTK4 and Libadwaita.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 

@@ -18,7 +18,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /footage/footage-1.png
     - src: /footage/footage-2.png
     - src: /footage/footage-3.png
@@ -28,7 +28,7 @@ gallery:
 
 Footage — обрезайте, переворачивайте, кадрируйте отдельные клипы. Полезный инструмент для быстрого редактирования коротких видеороликов и скринкастов. Он способен экспортировать любое видео в формат по вашему выбору.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

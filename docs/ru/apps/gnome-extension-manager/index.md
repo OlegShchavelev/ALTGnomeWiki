@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gnome-extension-manager/gnome-extension-manager-1.gif
 ---
 
@@ -35,7 +35,7 @@ gallery:
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
-<AGWGallery />
+<Gallery />
 
 ## Использование
 

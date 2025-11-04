@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Settings Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-control-center/sc-1.png
     - src: /gnome-control-center/sc-2.png
     - src: /gnome-control-center/sc-3.png
@@ -33,6 +33,6 @@ gallery:
 
 Settings is the main interface for configuring your system.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->

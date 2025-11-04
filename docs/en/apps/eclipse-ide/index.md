@@ -17,7 +17,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /eclipse-ide/eclipse-ide-1.png
     - src: /eclipse-ide/eclipse-ide-2.png
 ---
@@ -26,7 +26,7 @@ gallery:
 
 The Eclipse IDE is an integrated development environment (IDE) that contains a basic workspace and an extensible system of plug-ins for customizing the environment. Eclipse is written in Java and is used to develop applications in the same language, but it can also be used to develop in other programming languages ​​using plug-ins.
 
-<AGWGallery />
+<Gallery />
 
 ## Eclipse IDE Editions
 

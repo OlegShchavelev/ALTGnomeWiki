@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: dosage/dosage-1.png
     - src: dosage/dosage-2.png
     - src: dosage/dosage-3.png
@@ -40,7 +40,7 @@ Application Features:
 - Stock Tracking: Track stock and receive reminders when medications run out.
 - Duration: determining the start and end dates of taking medications.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

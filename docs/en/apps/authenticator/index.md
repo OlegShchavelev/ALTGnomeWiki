@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /authenticator/sc-1.png
     - src: /authenticator/sc-2.png
     - src: /authenticator/sc-3.png
@@ -44,7 +44,7 @@ Possibilities:
 - GNOME Shell Search Provider
 - Backup/Restore from/to famous apps like FreeOTP+, Aegis (encrypted/plain text), andOTP, Google Authenticator
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

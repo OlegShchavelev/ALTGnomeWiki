@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /deja-dup/sc-1.png
     - src: /deja-dup/sc-2.png
     - src: /deja-dup/sc-3.png
@@ -41,7 +41,7 @@ Déjà Dup — это простое средство резервного ко�
 
 Déjà Dup сфокусирована на простоте использования восстановления персональных данных, в случае их потери. Если вам требуется полноценное резервное копирование системы или программа архивации, рассмотрите другие варианты программ резервного копирования.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

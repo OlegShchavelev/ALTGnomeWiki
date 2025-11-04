@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея Символов
   type: slider
-  items:
+  images:
     - src: /gnome-characters/sc-1.webp
     - src: /gnome-characters/sc-2.webp
     - src: /gnome-characters/sc-3.webp
@@ -35,7 +35,7 @@ gallery:
 
 Также можно просматривать символы по категориям, таким как знаки пунктуации, картинки и т.д.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

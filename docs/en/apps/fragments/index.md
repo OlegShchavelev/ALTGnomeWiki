@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /fragments/fragments-1.png
     - src: /fragments/fragments-2.png
 ---
@@ -33,7 +33,7 @@ gallery:
 
 Fragments is an easy to use BitTorrent client. It can be used to transfer files using the BitTorrent protocol, such as videos, music, or installation images for Linux distributions.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

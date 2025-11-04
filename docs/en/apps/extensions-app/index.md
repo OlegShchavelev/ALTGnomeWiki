@@ -24,7 +24,7 @@ appstream:
 gallery:
   title: Gallery GNOME Extensions
   type: slider
-  items:
+  images:
     - src: /gnome-shell-extensions/sc-1.webp
     - src: /gnome-shell-extensions/sc-2.webp
     - src: /gnome-shell-extensions/sc-3.webp
@@ -34,7 +34,7 @@ gallery:
 
 GNOME Extensions handles updating extensions, configuring extension settings, and removing or disabling unwanted extensions.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

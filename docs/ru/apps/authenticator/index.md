@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /authenticator/sc-1.png
     - src: /authenticator/sc-2.png
     - src: /authenticator/sc-3.png
@@ -44,7 +44,7 @@ gallery:
 - Провайдер поиска GNOME Shell
 - Резервное копирование/восстановление из/в известные приложения, такие как FreeOTP+, Aegis (зашифрованный/простой текст), andOTP, Google Authenticator
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

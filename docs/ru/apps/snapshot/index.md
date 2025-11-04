@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /snapshot/sc-1.webp
     - src: /snapshot/sc-2.webp
 ---
@@ -32,7 +32,7 @@ gallery:
 
 Снимайте фото и видео на компьютер, планшет или телефон.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

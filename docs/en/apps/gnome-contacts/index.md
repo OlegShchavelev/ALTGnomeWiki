@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-contacts/sc-1.webp
     - src: /gnome-contacts/sc-2.webp
     - src: /gnome-contacts/sc-3.webp
@@ -37,7 +37,7 @@ The Contacts app helps you manage contact information. You can create, edit, del
 
 The Contacts app will also integrate with your online address book and automatically link contacts from various online sources.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

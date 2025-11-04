@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /boxes/boxes-1.png
     - src: /boxes/boxes-2.png
 ---
@@ -31,7 +31,7 @@ gallery:
 
 Boxes is the official utility for the GNOME desktop environment, which allows you to easily create virtual machines from operating system images.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

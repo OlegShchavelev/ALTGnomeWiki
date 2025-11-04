@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /baobab/baobab-1.png
     - src: /baobab/baobab-2.png
     - src: /baobab/baobab-3.png
@@ -31,7 +31,7 @@ gallery:
 
 Disk Usage Analyzer is a utility that can scan individual folders, storage devices, and network accounts. Provides a graphical tree view showing the size of each folder, making it easy to locate large files.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

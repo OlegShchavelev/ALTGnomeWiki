@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /brave/brave-1.png
     - src: /brave/brave-2.png
 ---
@@ -30,7 +30,7 @@ gallery:
 
 Brave is an open source web browser based on the [Chromium](/apps/chromium/) web browser and the Blink engine.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->
 <!--@include: @en/apps/.parts/warns/unprivileged-spaces.md-->

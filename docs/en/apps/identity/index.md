@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /identity/sc-1.png
     - src: /identity/sc-2.png
     - src: /identity/sc-3.png
@@ -32,7 +32,7 @@ gallery:
 
 An application for comparing multiple versions of an image or video.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

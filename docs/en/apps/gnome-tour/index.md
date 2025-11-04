@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-tour/gnome-tour-1.png
     - src: /gnome-tour/gnome-tour-2.png
     - src: /gnome-tour/gnome-tour-3.png
@@ -34,6 +34,6 @@ gallery:
 
 Guided tour and welcome to GNOME.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->

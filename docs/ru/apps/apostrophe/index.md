@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /apostrophe/sc-1.png
     - src: /apostrophe/sc-2.png
     - src: /apostrophe/sc-3.png
@@ -42,7 +42,7 @@ gallery:
 - Предварительный просмотр написанного в режиме реального времени
 - Экспорт во всевозможные форматы: PDF, Word/Libreoffice, LaTeX или даже слайд-шоу HTML
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

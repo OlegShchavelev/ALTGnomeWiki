@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gnome-calculator/sc-1.webp
     - src: /gnome-calculator/sc-2.webp
     - src: /gnome-calculator/sc-3.webp
@@ -41,7 +41,7 @@ gallery:
 
 Режим программирования поддерживает преобразования между распространёнными системами счисления (двоичной, восьмеричной, десятичной и шестнадцатеричной), булеву алгебру, обратный и дополнительный код числа, преобразование кодов символов и другие возможности.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

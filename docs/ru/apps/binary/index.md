@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /binary/sc-1.png
     - src: /binary/sc-2.png
     - src: /binary/sc-3.png
@@ -33,7 +33,7 @@ gallery:
 
 Небольшое и простое приложение для преобразования различных шестнадцатеричных и двоичных чисел.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

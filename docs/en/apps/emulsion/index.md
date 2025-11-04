@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /emulsion/emulsion-1.png
     - src: /emulsion/emulsion-2.png
     - src: /emulsion/emulsion-3.png
@@ -30,6 +30,6 @@ gallery:
 
 Emulsion is an application for storing and editing palettes in a convenient way.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

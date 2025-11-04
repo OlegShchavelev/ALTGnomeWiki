@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /emblem/sc-1.png
 ---
 
@@ -29,7 +29,7 @@ gallery:
 
 Создавайте аватары проектов для своих комнат Matrix и git forge из символического значка.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

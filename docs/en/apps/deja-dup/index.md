@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /deja-dup/sc-1.png
     - src: /deja-dup/sc-2.png
     - src: /deja-dup/sc-3.png
@@ -41,7 +41,7 @@ Déjà Dup is a simple backup tool. It hides the complexity of doing backups cor
 
 Déjà Dup focuses on the ease of use of recovering personal data in the event of loss. If you require a full system backup or archiving program, consider other backup program options.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /pin-app/pin-app-3.png
     - src: /pin-app/pin-app-4.png
     - src: /pin-app/pin-app-5.png
@@ -35,7 +35,7 @@ PinApp allows you to pin modified applications, features:
 - Create custom shortcuts to websites
 - Hide apps you don't want to see
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->
 

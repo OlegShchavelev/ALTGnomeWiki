@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: GNOME System Monitor Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-system-monitor/sc-1.png
     - src: /gnome-system-monitor/sc-2.png
     - src: /gnome-system-monitor/sc-3.png
@@ -35,6 +35,6 @@ System Monitor can help you determine which applications are using your computer
 
 The resource graph display feature provides a quick overview of what's going on with your computer, showing network, memory, and processor usage.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->

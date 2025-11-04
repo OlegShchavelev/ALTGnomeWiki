@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея Погоды
   type: slider
-  items:
+  images:
     - src: /gnome-weather/sc-1.webp
     - src: /gnome-weather/sc-2.webp
 ---
@@ -35,7 +35,7 @@ gallery:
 
 Приложение также опционально интегрируется с GNOME Shell, позволяя вам видеть текущие условия в городах, в которых недавно проводился поиск, просто набрав название города в Обзорном режиме.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

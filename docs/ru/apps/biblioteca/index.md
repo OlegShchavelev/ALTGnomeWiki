@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /biblioteca/sc-1.png
 ---
 
@@ -36,7 +36,7 @@ Biblioteca позволяет просматривать и читать док�
 - Поддержка темного режима
 - Нечеткий поиск
 - Мобильный/адаптивный
-  <AGWGallery />
+  <Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

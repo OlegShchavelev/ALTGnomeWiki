@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gnome-qr-decoder/sc-1.png
     - src: /gnome-qr-decoder/sc-2.png
     - src: /gnome-qr-decoder/sc-3.png
@@ -41,7 +41,7 @@ gallery:
 - Сканирование со снимка экрана
 - Разбор и отображение содержимого QR-кода, когда это возможно
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

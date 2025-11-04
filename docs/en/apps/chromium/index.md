@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /chromium/chromium-1.png
     - src: /chromium/chromium-2.png
 ---
@@ -28,7 +28,7 @@ gallery:
 
 Chromium is an open source browser project that aims to create a safer, faster, and more stable web experience for all users.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

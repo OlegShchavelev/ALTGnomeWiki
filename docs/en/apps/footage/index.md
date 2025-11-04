@@ -18,7 +18,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /footage/footage-1.png
     - src: /footage/footage-2.png
     - src: /footage/footage-3.png
@@ -28,7 +28,7 @@ gallery:
 
 Use Footage to trim, flip, crop individual clips. A useful tool for quickly editing short videos and screencasts. It is capable of exporting any video to the format of your choice.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

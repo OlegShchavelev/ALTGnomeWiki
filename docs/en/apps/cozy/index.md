@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /cozy/cozy-1.png
     - src: /cozy/cozy-2.png
     - src: /cozy/cozy-3.png
@@ -44,7 +44,7 @@ Cozy is an audiobook player. Here are some features:
 - Controlled using Drag and Drop. Just drag and drop audiobooks into the program window;
 - Sorts audiobooks by name, author or speaker.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

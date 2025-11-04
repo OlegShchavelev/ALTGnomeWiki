@@ -17,7 +17,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /kumir/kumir-1.png
     - src: /kumir/kumir-2.png
     - src: /kumir/kumir-3.png
@@ -29,6 +29,6 @@ KuMir (Комплект Учебных МИРов - Set of Educational Worlds) i
 
 The KuMir system uses a school algorithmic language with Russian vocabulary and built-in executors Robot and Draftsman. When entering a program, KuMir carries out constant full control of its correctness, reporting in the fields of the program about all detected errors. When executing a program in step-by-step mode, KuMir displays the results of assignment operations and the values ​​of logical expressions in the fields. This allows you to speed up the process of mastering the basics of programming. KuMir runs on Windows and Linux operating systems.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->

@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: carousel
-  items:
+  images:
     - src: /radio/radio-1.png
     - src: /radio/radio-2.png
     - src: /radio/radio-3.png
@@ -35,6 +35,6 @@ gallery:
 
 Простой и удобный клиент для прослушивания радио с понятным интерфейсом. Приложение позволяет слушать радиостанции, доступные на веб-сайте [radio-browser.info](https://radio-browser.info/). В приложении есть функция поиска станций, возможность добавить понравившиеся станции в избранное и записать их в формате MP3.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

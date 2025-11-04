@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /mts-link/mts-link-1.png
     - src: /mts-link/mts-link-2.png
     - src: /mts-link/mts-link-3.png
@@ -31,7 +31,7 @@ gallery:
 
 МТС Линк — экосистема сервисов для бизнес‑коммуникаций и совместной работы.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 

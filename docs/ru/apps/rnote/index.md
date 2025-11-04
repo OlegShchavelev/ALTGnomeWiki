@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /rnote/rnote-1.png
     - src: /rnote/rnote-2.png
     - src: /rnote/rnote-3.png
@@ -51,7 +51,7 @@ Rnote - это приложение для векторной графики с 
 - Возможно использование вкладок, для удобства работы с несколькими документами в одном окне;
 - Автоматическое сохранение и печать.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

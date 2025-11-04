@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /metadatacleaner/sc-1.png
     - src: /metadatacleaner/sc-2.png
     - src: /metadatacleaner/sc-3.png
@@ -34,6 +34,6 @@ gallery:
 
 Этот инструмент позволяет просматривать метаданные в файлах и по возможности избавляться от них.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

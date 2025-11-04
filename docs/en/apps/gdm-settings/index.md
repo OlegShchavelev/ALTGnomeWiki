@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gdm-settings/gdm-settings-1.png
     - src: /gdm-settings/gdm-settings-2.png
 ---
@@ -31,7 +31,7 @@ gallery:
 
 GDM Settings is a settings application for the GNOME desktop environment, login/lock screen. Written in Python and uses LibAdwaita for the GUI.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

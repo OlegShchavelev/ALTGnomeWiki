@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /audiosharing/sc-1.png
 ---
 
@@ -32,7 +32,7 @@ With Audio Sharing, you can share an audio stream on your computer as an RTSP st
 
 By transmitting audio as a network stream, you can also use ordinary devices that are not intended to be used as audio consumers (for example, smartphones) to receive it. There are audio interfaces that are not compatible with desktop computers (for example, because the computer does not have Bluetooth installed). With this application, audio from your computer can be played on your smartphone, which is then connected to a Bluetooth accessory.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

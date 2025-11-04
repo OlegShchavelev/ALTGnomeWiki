@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: dosage/dosage-1.png
     - src: dosage/dosage-2.png
     - src: dosage/dosage-3.png
@@ -40,7 +40,7 @@ Dosage — это приложение для управления курсам�
 - Отслеживание запасов: отслеживание запаса и получение напоминаний, когда лекарства заканчиваются.
 - Продолжительность: определение даты начала и окончания приёма лекарств.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

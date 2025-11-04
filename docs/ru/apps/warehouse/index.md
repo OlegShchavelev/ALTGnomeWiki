@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Галерея
   type: carousel
-  items:
+  images:
     - src: /warehouse/warehouse-1.png
     - src: /warehouse/warehouse-2.png
     - src: /warehouse/warehouse-3.png
@@ -39,6 +39,6 @@ Warehouse — приложение управляет установленным
 - Управление репозиториями Flatpak
 - Понижение версии Flatpak-приложения
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

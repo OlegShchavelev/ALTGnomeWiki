@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Weather Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-weather/sc-1.webp
     - src: /gnome-weather/sc-2.webp
 ---
@@ -35,7 +35,7 @@ It also provides access to detailed weather forecasts (up to 7 days) from variou
 
 The app also optionally integrates with GNOME Shell, allowing you to see current conditions in cities that have recently been searched by simply typing the city name in Browse mode.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /errands/errands-1.png
     - src: /errands/errands-2.png
 ---
@@ -42,7 +42,7 @@ gallery:
 - Поддержка Drag and Drop
 - Импорт .ics файлов
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

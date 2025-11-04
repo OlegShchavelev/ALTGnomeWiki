@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-extension-manager/gnome-extension-manager-1.gif
 ---
 
@@ -35,7 +35,7 @@ Unlike its official counterpart for the GNOME shell, the [Extensions](/en/apps/e
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->
 
-<AGWGallery />
+<Gallery />
 
 ## Usage
 

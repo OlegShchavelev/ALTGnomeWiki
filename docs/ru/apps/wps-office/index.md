@@ -26,7 +26,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /wps-office/wps-office-1.png
     - src: /wps-office/wps-office-2.png
     - src: /wps-office/wps-office-3.png
@@ -44,7 +44,7 @@ WPS Office включает следующие приложения:
 - Presentation
 - PDF
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 

@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /share-preview/sc-1.png
     - src: /share-preview/sc-2.png
     - src: /share-preview/sc-3.png
@@ -31,7 +31,7 @@ gallery:
 
 Предварительный просмотр и отладка тегов метаданных веб-сайтов для публикации в социальных сетях.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

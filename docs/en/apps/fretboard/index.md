@@ -25,7 +25,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /fretboard/fretboard-1.png
     - src: /fretboard/fretboard-2.png
 ---
@@ -34,7 +34,7 @@ gallery:
 
 Fretboard - allows you to find guitar chords by entering their names or typing them on the interactive guitar fretboard. You can experiment with changing the chord, see other ways to play it, or bookmark it. Fretboard can be used to practice, study and master your favorite songs.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

@@ -16,7 +16,7 @@ appstream:
     bugtracker: https://gitlab.gnome.org/jrahmatzadeh/just-perfection/issues
 gallery:
   type: carousel
-  items:
+  images:
     - src: /extensions/just-perfection/just-perfection-1.png
     - src: /extensions/just-perfection/just-perfection-2.png
 ---

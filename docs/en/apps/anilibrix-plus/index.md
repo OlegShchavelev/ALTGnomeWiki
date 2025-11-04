@@ -19,9 +19,9 @@ appstream:
     homepage: https://github.com/AnimeHaze/anilibrix-plus
     bugtracker: https://github.com/AnimeHaze/anilibrix-plus/issues
 gallery:
-  title: Галерея
+  title: Gallery
   type: slider
-  items:
+  images:
     - src: /anilibrix/anilibrix-1.png
     - src: /anilibrix/anilibrix-2.png
     - src: /anilibrix/anilibrix-3.png
@@ -31,7 +31,7 @@ gallery:
 
 AniLibrix Plus is a modified fork from AniLibrix, the Anilibria desktop anime movie theater for any of your computers.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-snap.md-->
 

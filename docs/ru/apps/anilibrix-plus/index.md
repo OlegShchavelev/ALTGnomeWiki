@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /anilibrix/anilibrix-1.png
     - src: /anilibrix/anilibrix-2.png
     - src: /anilibrix/anilibrix-3.png
@@ -31,7 +31,7 @@ gallery:
 
 AniLibrix Plus — доработанный форк от AniLibrix, десктопного аниме-кинотеатра Анилибрии для любого вашего компьютера.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-snap.md-->
 

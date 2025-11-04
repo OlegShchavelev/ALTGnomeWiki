@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /brave/brave-1.png
     - src: /brave/brave-2.png
 ---
@@ -30,7 +30,7 @@ gallery:
 
 Brave — веб-браузер с открытым исходным кодом на основе веб-браузера [Chromium](/apps/chromium/) и движке Blink.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 <!--@include: @ru/apps/.parts/warns/unprivileged-spaces.md-->

@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /boxy-svg/boxy-svg-1.png
     - src: /boxy-svg/boxy-svg-2.png
     - src: /boxy-svg/boxy-svg-3.png
@@ -33,6 +33,6 @@ Boxy SVG is a simple vector image editor in SVG format.
 
 The goal of the Boxy SVG project is to create the best SVG editing tool for both beginners and professional designers and developers, on any device and operating system.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

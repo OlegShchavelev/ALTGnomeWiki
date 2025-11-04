@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /epiphany/epiphany-1.png
     - src: /epiphany/epiphany-2.png
     - src: /epiphany/epiphany-3.png
@@ -37,7 +37,7 @@ gallery:
 
 A web browser for the GNOME desktop that provides tight desktop integration with a simple and intuitive interface that lets you focus on your web pages. If you're looking for a simple, lightweight, and beautiful web browser, you've found it.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

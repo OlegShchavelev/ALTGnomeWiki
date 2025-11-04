@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Connections Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-connections/sc-1.webp
     - src: /gnome-connections/sc-2.webp
     - src: /gnome-connections/sc-3.webp
@@ -37,7 +37,7 @@ You can connect to a variety of operating systems, including Linux and Windows d
 
 The connection uses the widely supported VNC and RDP protocols, and one of them must be enabled on the desktop you want to connect to.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

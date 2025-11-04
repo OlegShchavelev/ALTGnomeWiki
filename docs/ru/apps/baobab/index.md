@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /baobab/baobab-1.png
     - src: /baobab/baobab-2.png
     - src: /baobab/baobab-3.png
@@ -31,7 +31,7 @@ gallery:
 
 Анализатор использования дисков — утилита, которая может сканировать отдельные папки, устройства хранения и сетевые учётные записи. Обеспечивает графическое представление в виде дерева, показывающее размер каждой папки, что позволяет легко определить расположение больших файлов.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

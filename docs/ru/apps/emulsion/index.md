@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /emulsion/emulsion-1.png
     - src: /emulsion/emulsion-2.png
     - src: /emulsion/emulsion-3.png
@@ -31,7 +31,7 @@ gallery:
 
 Emulsion — приложение для хранения и редактирования палитр удобным способом.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @apps/.parts/install/content-repo.md-->
 <!--@include: @apps/.parts/install/content-flatpak.md-->

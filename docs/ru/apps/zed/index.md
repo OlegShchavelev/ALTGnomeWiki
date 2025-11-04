@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Галерея Zed
   type: slider
-  items:
+  images:
     - src: /zed/zed-1.png
     - src: /zed/zed-2.png
     - src: /zed/zed-3.png
@@ -34,7 +34,7 @@ gallery:
 
 Продуктивное программирование начинается с инструмента, который не будет отвлекать вас от работы. Zed объединяет в себе возможности интегрированной среды разработки (IDE) и скорость лёгкого редактора, чтобы вы могли ощутить повышение производительности в процессе работы.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

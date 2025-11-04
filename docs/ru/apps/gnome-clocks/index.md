@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gnome-clocks/sc-1.png
     - src: /gnome-clocks/sc-2.png
     - src: /gnome-clocks/sc-3.png
@@ -39,7 +39,7 @@ gallery:
 - Замерять время с помощью точного секундомера
 - Устанавливать таймеры для приготовления еды
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /mts-link/mts-link-1.png
     - src: /mts-link/mts-link-2.png
     - src: /mts-link/mts-link-3.png
@@ -31,7 +31,7 @@ gallery:
 
 MTS Link is an ecosystem of services for business communications and collaboration.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-epm-play.md-->
 

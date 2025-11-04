@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /errands/errands-1.png
     - src: /errands/errands-2.png
 ---
@@ -42,7 +42,7 @@ Main functions:
 - Drag and Drop support
 - Import .ics files
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

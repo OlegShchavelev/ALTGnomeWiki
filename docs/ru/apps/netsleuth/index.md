@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /netsleuth/sc-1.png
     - src: /netsleuth/sc-2.png
 ---
@@ -32,7 +32,7 @@ gallery:
 
 Простая утилита для расчёта и анализа значений IP-подсетей, позволяющая упростить задачи конфигурирования сети.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

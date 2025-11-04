@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /firefox/firefox-1.png
     - src: /firefox/firefox-2.png
     - src: /firefox/firefox-3.png
@@ -32,7 +32,7 @@ gallery:
 
 Firefox is a popular open source graphical web browser developed by Mozilla.
 
-<AGWGallery />
+<Gallery />
 
 ## Firefox editions and update channels
 

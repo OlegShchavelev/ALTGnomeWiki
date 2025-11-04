@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-video-trimmer/sc-1.png
 ---
 
@@ -29,7 +29,7 @@ gallery:
 
 Video Trimmer trims part of the video based on the start and end timestamp. The video is not re-encoded, so the whole procedure is very fast and does not lead to loss of video quality.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

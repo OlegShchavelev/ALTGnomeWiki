@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /decibels/sc-1.png
     - src: /decibels/sc-2.png
     - src: /decibels/sc-3.png
@@ -41,7 +41,7 @@ Possibilities:
 - Easy rewind control
 - Intuitive interface
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

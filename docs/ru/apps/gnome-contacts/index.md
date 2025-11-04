@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gnome-contacts/sc-1.webp
     - src: /gnome-contacts/sc-2.webp
     - src: /gnome-contacts/sc-3.webp
@@ -37,7 +37,7 @@ gallery:
 
 Приложение «Контакты» также выполнит интеграцию с сетевой адресной книгой и автоматически свяжет контакты из различных сетевых источников.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

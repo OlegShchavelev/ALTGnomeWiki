@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /boxy-svg/boxy-svg-1.png
     - src: /boxy-svg/boxy-svg-2.png
     - src: /boxy-svg/boxy-svg-3.png
@@ -33,6 +33,6 @@ Boxy SVG — простой редактор векторных изображе
 
 Цель проекта Boxy SVG — создать лучший инструмент для редактирования SVG-файлов, как для начинающих, так и для профессиональных дизайнеров и разработчиков, на любом устройстве и в любой операционной системе.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

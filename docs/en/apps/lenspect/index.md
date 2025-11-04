@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /lenspect/sc-1.png
     - src: /lenspect/sc-2.png
 ---
@@ -31,6 +31,6 @@ gallery:
 
 A lightweight security threat scanner designed to make malware detection more accessible and efficient.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

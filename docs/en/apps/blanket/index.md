@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /blanket/sc-1.png
 ---
 
@@ -52,6 +52,6 @@ Sounds included in the app:
 - White noise
 - Wind
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

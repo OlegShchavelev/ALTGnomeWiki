@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /boxes/boxes-1.png
     - src: /boxes/boxes-2.png
 ---
@@ -31,7 +31,7 @@ gallery:
 
 Boxes — официальная утилита для рабочего окружения GNOME, которая позволяет легко создавать виртуальные машины из образов операционной системы.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

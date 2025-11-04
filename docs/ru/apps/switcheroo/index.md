@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /switcheroo/switcheroo-1.png
     - src: /switcheroo/switcheroo-2.png
 ---
@@ -31,7 +31,7 @@ gallery:
 
 Switcheroo — легко конвертируйте файлы изображений разных типов и изменяйте их размер.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

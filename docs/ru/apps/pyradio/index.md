@@ -2,7 +2,7 @@
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /pyradio/pyradio1.png
     - src: /pyradio/pyradio2.png
 ---
@@ -11,7 +11,7 @@ gallery:
 
 pyRadio — интернет-радиоплеер с интерфейсом командной строки.
 
-<AGWGallery />
+<Gallery />
 
 ## Установка из репозитория
 

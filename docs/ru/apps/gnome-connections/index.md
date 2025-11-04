@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея Подключения
   type: slider
-  items:
+  images:
     - src: /gnome-connections/sc-1.webp
     - src: /gnome-connections/sc-2.webp
     - src: /gnome-connections/sc-3.webp
@@ -37,7 +37,7 @@ gallery:
 
 Подключения использует широко поддерживаемые протоколы VNC и RDP, и один из них должен быть включен на рабочем столе, к которому вы хотите подключиться.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /logs/sc-1.png
     - src: /logs/sc-2.png
     - src: /logs/sc-3.png
@@ -34,7 +34,7 @@ The Logs app shows events from the systemd log and organizes them into categorie
 
 With the Logs app, you can search logs and view detailed information about events.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /maps/sc-1.webp
     - src: /maps/sc-2.webp
     - src: /maps/sc-3.webp
@@ -35,7 +35,7 @@ The Maps app lets you quickly access maps around the world, find places in citie
 
 The maps use the OpenStreetMap database, created by hundreds of thousands of people around the world.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

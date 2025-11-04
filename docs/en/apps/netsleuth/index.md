@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /netsleuth/sc-1.png
     - src: /netsleuth/sc-2.png
 ---
@@ -32,7 +32,7 @@ gallery:
 
 A simple utility for calculating and analyzing IP subnet values, allowing you to simplify network configuration tasks.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

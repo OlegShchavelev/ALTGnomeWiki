@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gnome-video-trimmer/sc-1.png
 ---
 
@@ -29,7 +29,7 @@ gallery:
 
 Видеотриммер вырезает часть видео по начальной и конечной временной метке. Видео не перекодируется, поэтому вся процедура очень быстрая и не приводит к потере качества видео.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

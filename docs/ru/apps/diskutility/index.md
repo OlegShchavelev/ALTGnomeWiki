@@ -22,7 +22,7 @@ appstream:
 gallery:
   title: Галерея DiskUtility
   type: slider
-  items:
+  images:
     - src: /diskutility/sc-1.png
     - src: /diskutility/sc-2.png
     - src: /diskutility/sc-3.png
@@ -34,6 +34,6 @@ gallery:
 
 Используя приложение Диски, можно просматривать данные SMART, управлять устройствами, оценивать производительность физических дисков, и записывать образы на USB носители.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->

@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /clairvoyant/sc-1.png
     - src: /clairvoyant/sc-2.png
     - src: /clairvoyant/sc-3.png
@@ -37,6 +37,6 @@ gallery:
 - Не удовлетворены? Задайте вопрос ещё раз, затем нажмите «Спросить ещё раз».
 - Делайте с ответами всё, что хотите — только не стреляйте в посланника!
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

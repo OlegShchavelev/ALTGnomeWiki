@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /heroic/heroic1.png
     - src: /heroic/heroic2.png
     - src: /heroic/heroic3.png
@@ -33,7 +33,7 @@ gallery:
 
 Heroic — игровой лаунчер с открытым исходным кодом. Прямо сейчас он поддерживает запуск игр из Epic Games Store с использованием Legendary, GOG Games с использованием нашей пользовательской реализации с помощью `gogdl` и Amazon Games с использованием `Nile`.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 <!--@include: @ru/apps/.parts/install/content-snap.md-->

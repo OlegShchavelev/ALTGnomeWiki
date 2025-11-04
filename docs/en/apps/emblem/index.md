@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /emblem/sc-1.png
 ---
 
@@ -29,7 +29,7 @@ gallery:
 
 Create project avatars for your Matrix and git forge rooms from a symbolic icon.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /maps/sc-1.webp
     - src: /maps/sc-2.webp
     - src: /maps/sc-3.webp
@@ -35,7 +35,7 @@ gallery:
 
 Карты используют базу данных OpenStreetMap, созданную сотнями тысяч людей по всеми миру.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

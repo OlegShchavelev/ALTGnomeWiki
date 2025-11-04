@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея Справки GNOME
   type: slider
-  items:
+  images:
     - src: /yelp/sc-1.png
 ---
 
@@ -33,6 +33,6 @@ Yelp — приложение для просмотра справки GNOME. Э
 
 Также имеет режим редактора, который показывает редакционные комментарии и статусы ревизий при редактировании документов Mallard.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->

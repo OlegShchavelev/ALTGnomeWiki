@@ -21,7 +21,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /gnome-health/sc-1.png
     - src: /gnome-health/sc-2.png
     - src: /gnome-health/sc-3.png
@@ -32,7 +32,7 @@ gallery:
 
 Здоровье может визуализировать количество шагов, которые вы делаете ежедневно, динамику вашего веса с течением времени и вашу ежедневную активность.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->

@@ -19,7 +19,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /mangojuice/mj-window-1.png
     - src: /mangojuice/mj-window-2.png
     - src: /mangojuice/mj-window-3.png
@@ -37,7 +37,7 @@ gallery:
 
 Написано на Vala, GTK4 и Libadwaita.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 

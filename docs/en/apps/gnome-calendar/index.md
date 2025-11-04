@@ -23,7 +23,7 @@ appstream:
 gallery:
   title: Gallery
   type: slider
-  items:
+  images:
     - src: /gnome-calendar/sc-1.webp
     - src: /gnome-calendar/sc-2.webp
     - src: /gnome-calendar/sc-3.webp
@@ -37,7 +37,7 @@ Easily create and manage an unlimited number of calendars and events using GNOME
 
 Integrating the latest GNOME technologies and best design practices, GNOME Calendar is built on top of the mature Evolution data server to manage a large number of events and integrate with other applications. You can add calendars from various online schedulers (such as NextCloud, Google Calendar and CalDAV/WebDAV servers), allowing you to sync events across devices and platforms. GNOME Calendar also supports local and offline calendaring, allowing you to use it anywhere and anytime while traveling (or after the collapse of civilization)
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

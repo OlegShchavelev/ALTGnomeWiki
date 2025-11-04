@@ -20,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  items:
+  images:
     - src: /terminal/terminal-1.png
     - src: /terminal/terminal-2.png
     - src: /terminal/terminal-3.png
@@ -32,7 +32,7 @@ gallery:
 
 Терминал поддерживает несколько профилей и вкладок, а также реализует различные сочетания клавиш, что делает удобным для использования.
 
-<AGWGallery />
+<Gallery />
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
 
 ## Дополнение для Файлов (Nautilus)

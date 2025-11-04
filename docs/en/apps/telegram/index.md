@@ -23,7 +23,7 @@ appstream:
     bugtracker: https://github.com/telegramdesktop/tdesktop/issues
 gallery:
   type: slider
-  items:
+  images:
     - src: /telegram/telegram-6.png
     - src: /telegram/telegram-7.png
     - src: /telegram/telegram-8.png
@@ -62,7 +62,7 @@ Enable the system frame as follows:
 - Settings -> Advanced settings
 - Uncheck "QT Window Frame"
 
-<AGWGallery />
+<Gallery />
 
 The design of the system frame depends on the application window interface `X11` or `Wayland`.
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useData } from '../../support/data'
+import { useData } from '../composables/data'
 import AGWCatigories from './AGWCatigories.vue'
 
 const { frontmatter: fm } = useData()

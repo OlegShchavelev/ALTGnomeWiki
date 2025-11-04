@@ -50,18 +50,20 @@
   downloads:
     - arch: x86_64
       branches:
-        - images:
+        - name: release
+          images:
             - urls:
-                - https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/x86_64/alt-workstation-11.0-x86_64.iso
+                - https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/x86_64/alt-workstation-11.1-x86_64.iso
               badges:
                 - type: tip
                   text: x86_64
 
     - arch: aarch64
       branches:
-        - images:
+        - name: release
+          images:
             - urls:
-                - https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/aarch64/alt-workstation-11.0-aarch64.iso
+                - https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/workstation/aarch64/alt-workstation-11.1-aarch64.iso
               badges:
                 - type: tip
                   text: aarch64

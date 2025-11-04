@@ -6,7 +6,7 @@ gitChangelog: false
 
 hero:
   name: ALT Gnome
-  text: Wiki
+  text: Knowledge
   tagline: 'operating system knowledge base: ALT Regular Gnome, ALT Starterkit Gnome and ALT Workstation'
   image:
     src: /alt-gnome.png
@@ -14,13 +14,10 @@ hero:
   actions:
     - theme: brand
       text: Download
-      link: /download/
+      link: ./download/
     - theme: alt
-      text: Wiki
-      link: /wiki/
-    - theme: alt
-      text: How to publish your article
-      link: /project/how-to-contribute/pages/alteration/
+      text: Documentation
+      link: ./wiki/
 
 features:
   - icon:
@@ -41,13 +38,9 @@ features:
 
 teams:
   title: Contributors
-  moreText: All members
-  moreLink: /project/contributions/
 
 apps:
   title: GNOME Apps
-  moreText: All applications
-  moreLink: apps-gnome/
 
 downloads:
   title: Download ALT Linux
@@ -72,7 +65,7 @@ sponsors:
       items:
         - name: Beget
           img: /beget.png
-          url: https://beget.com
+          url: //beget.com
         - name: ALT Linux Space
           img: /als-logo.svg
           url: //altlinux.space/
@@ -81,13 +74,13 @@ sponsors:
       items:
         - name: MODX Pro
           img: /modx.svg
-          url: https://docs.modx.pro/
+          url: //docs.modx.pro/
         - name: IT WIKI
           img: /logo_for_friends_horizontal.svg
-          url: https://it-wiki.com.ru/
+          url: //it-wiki.com.ru/
         - name: Nólëbase
           img: /nolebase-logo.svg
-          url: https://nolebase.ayaka.io/
+          url: //nolebase.ayaka.io/
         - name: Tuner
           img: /tuner/color.svg
           url: //tuner.altlinux.org/

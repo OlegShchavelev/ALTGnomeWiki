@@ -1,0 +1,11 @@
+diff --git a/.vitepress/theme/components/AGWDocsCategories.vue b/.vitepress/theme/components/AGWDocsCategories.vue
+index 4ce9a62b..32570064 100644
+--- a/.vitepress/theme/components/AGWDocsCategories.vue
++++ b/.vitepress/theme/components/AGWDocsCategories.vue
+@@ -1,5 +1,5 @@
+ <script setup lang="ts">
+-import { useData } from '../../support/data'
++import { useData } from '../composables/data'
+ import AGWCatigories from './AGWCatigories.vue'
+
+ const { frontmatter: fm } = useData()

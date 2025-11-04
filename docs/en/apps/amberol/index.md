@@ -22,9 +22,9 @@ appstream:
     homepage: https://gitlab.gnome.org/World/amberol/
     bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
 gallery:
-  title: Gallery
+  title: Amberol app screenshots
   type: slider
-  items:
+  images:
     - src: /amberol/amberol-1.png
     - src: /amberol/amberol-2.png
     - src: /amberol/amberol-3.png
@@ -42,7 +42,7 @@ Amberol Philosophy:
 
 Amberol plays music and nothing else.
 
-<AGWGallery />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

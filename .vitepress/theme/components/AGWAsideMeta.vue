@@ -53,6 +53,10 @@ defineProps<{
   margin-top: 24px;
 }
 
+.AGWDocsAsideMeta:hover :deep(.VPImage) {
+  filter: grayscale(0) invert(0);
+}
+
 .card {
   padding-top: 32px;
   background-color: var(--vp-c-bg-soft);

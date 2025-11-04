@@ -5,7 +5,7 @@ aggregation:
 appstream:
   id: dev.qwery.AddWater
   name: Add Water
-  icon: images/amberol-logo.svg
+  icon: /add-water/dev.qwery.AddWater.svg
   summary: Keep Firefox trendy
   developer:
     name: Claire (qwery)
@@ -22,39 +22,12 @@ gallery:
       type: slider
       alias: description
       images:
-        - src: "gallery/description/add-water-1.png"
-          alt: "Screenshot 1"
-          caption: "Description 1"
-        - src: "gallery/description/add-water-2.png"
-          alt: "Screenshot 2"
-        - src: "gallery/description/add-water-3.png"
-          alt: "Screenshot 3"
-          caption: "Description 3"
-        - src: "gallery/description/add-water-4.png"
-          alt: "Screenshot 4"
-          caption: "Description 4"
-        - src: "gallery/description/add-water-5.png"
-          alt: "Screenshot 5"
-          caption: "Description 5"
-        - src: "gallery/description/add-water-6.png"
-          alt: "Screenshot 6"
-          caption: "Description 6"
-    - title: Add Water app screenshots 1
-      type: carousel
-      alias: description1
-      images:
-        - src: "gallery/description/add-water-1.png"
-          alt: "Screenshot 1"
-          caption: "Закат в горах, снято в августе 2023"
-        - src: "gallery/description/add-water-2.png"
-          alt: "Screenshot 2"
-          caption: "Description 2"
-        - src: "gallery/description/add-water-3.png"
-        - src: "gallery/description/add-water-4.png"
-          alt: "Screenshot 4"
-          caption: "Современное здание в центре города"
-        - src: "gallery/description/add-water-5.png"
-        - src: "gallery/description/add-water-6.png"
+        - src: "/add-water/add-water-1.png"
+        - src: "/add-water/add-water-2.png"
+        - src: "/add-water/add-water-3.png"
+        - src: "/add-water/add-water-4.png"
+        - src: "/add-water/add-water-5.png"
+        - src: "/add-water/add-water-6.png"
 
 ---
 
@@ -79,8 +52,7 @@ Please note that this theme may contain features that are not supported by the m
 If you distribute software, we strongly recommend that you do not enable these changes by default for your users. It is important that they are clearly informed that they are using a modified version of the Firefox user interface.
 :::
 
-<Gallery title="Add Water app screenshots" alias="description" />
-<Gallery title="Add Water app screenshots 1" alias="description1" />
+<Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->

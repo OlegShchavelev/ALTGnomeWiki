@@ -5,7 +5,7 @@ aggregation:
 appstream:
   id: dev.qwery.AddWater
   name: Add Water
-  icon: images/amberol-logo.svg
+  icon: /add-water/dev.qwery.AddWater.svg
   summary: Держите Firefox «в моде»
   developer:
     name: Claire (qwery)

@@ -34,6 +34,9 @@ jobs:
         env: *tokens-override
         run: |
           npm run docs:build
+      - name: Generate redirects file
+        run: |
+          sh scripts/generate_redirects.sh .vitepress/dist/_redirects
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
@@ -47,7 +50,7 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v3
-    
+
       - name: Deploy to pages
         uses: actions/deploy-pages@v1
         with:

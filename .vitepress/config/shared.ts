@@ -10,7 +10,6 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 /* Markdown */
-import { createContainerPlugin } from '@alt-gnome/markdown-it-custom-containers'
 import VitepressMarkdownTimeline from 'vitepress-markdown-timeline'
 import markdownItKbd from 'markdown-it-kbd'
 import markdownItTaskLists from 'markdown-it-task-lists'
@@ -20,22 +19,15 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import linkBlock from '../theme/composables/linkBlock'
 import markdownItFancybox from '../theme/plugins/markdownItFancybox'
 
-/* GitLog */
 import UnoCSS from 'unocss/vite'
-import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 /* PagePropierties */
-import {
-  PageProperties,
-  PagePropertiesMarkdownSection
-} from '@nolebase/vitepress-plugin-page-properties/vite'
+import { PageProperties } from '@nolebase/vitepress-plugin-page-properties/vite'
 
-import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions } from './plugins'
+import { alignmentContainers, headTransformer } from './plugins'
 
 import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Yaml from '@rollup/plugin-yaml'
-
-import { contributorsPlugin } from '@alt-gnome/vitepress-plugin-contributors'
 
 export const shared = defineConfigWithTheme<AGWTheme.Config>({
   title: 'ALT Gnome Wiki',
@@ -68,40 +60,19 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
       }) as PluginOption,
       UnoCSS(),
       Yaml(),
-      GitChangelog(nolebaseGitChangelogOptions.plugin),
-      GitChangelogMarkdownSection(nolebaseGitChangelogOptions.pluginSections),
       PageProperties(),
       vueI18n({
         ssr: true
-      }),
-      contributorsPlugin({
-        mode: 'fast',
-        map: '.vitepress/data/teams.data.yaml',
-        forgejo: {
-          token: process.env.FORGEJO_TOKEN,
-          baseUrl: 'https://altlinux.space',
-          repoOwner: 'alt-gnome',
-          repoName: 'wiki'
-        },
-        github: {
-          token: process.env.GITHUB_TOKEN,
-          repoOwner: 'OlegShchavelev',
-          repoName: 'ALTGnomeWiki'
-        }
       })
     ],
     optimizeDeps: {
-      exclude: [
-        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
-        '@alt-gnome/vitepress-plugin-contributors'
-      ]
+      exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']
     },
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
         '@nolebase/vitepress-plugin-page-properties',
-        '@fancyapps/ui',
-        '@alt-gnome/vitepress-plugin-contributors'
+        '@fancyapps/ui'
       ]
     },
     resolve: {
@@ -197,9 +168,6 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
       detailsLabel: 'Подробнее'
     },
     config: (md) => {
-      md.use(createContainerPlugin, {
-        containers: alignmentContainers
-      })
       md.use(markdownItKbd)
       md.use(markdownItTaskLists)
       md.use(VitepressMarkdownTimeline)

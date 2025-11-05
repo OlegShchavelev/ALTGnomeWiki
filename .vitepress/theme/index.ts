@@ -1,8 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
 
 /* System */
-import { h, watch, onMounted } from 'vue'
-import { useRoute } from 'vitepress'
+import { h, watch } from 'vue'
 import { useData, type Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { Fancybox } from '@fancyapps/ui'
@@ -12,7 +11,9 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import { nolebasePageProperties, yandexMetrikaOptions } from '../config/plugins/index'
 
 /* AGW */
-import { AGWTeams, AGWTeam, AGWHomeTeams } from '@alt-gnome/vitepress-plugin-contributors/client'
+import AGWTeam from '@theme/components/AGWTeam.vue'
+import AGWTeams from '@theme/components/AGWTeams.vue'
+import AGWHomeTeams from '@theme/components/AGWHomeTeams.vue'
 import AGWHomeSponsors from '@theme/components/AGWHomeSponsors.vue'
 import AGWDocsAsideMeta from '@theme/components/AGWDocsAsideMeta.vue'
 import AGWCategories from '@theme/components/AGWDocsCategories.vue'
@@ -46,10 +47,6 @@ import {
 } from '@nolebase/vitepress-plugin-page-properties/client'
 import type { Options as NEROptions } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
-/* Nolebase Gitlog */
-
-import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
-
 import { useI18n } from './plugins/i18n'
 
 /* Stylesheets */
@@ -63,11 +60,6 @@ import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 import 'vitepress-markdown-timeline/dist/theme/index.css'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
 import AGWDownloads from './components/AGWDownloads.vue'
-
-
-// Добавьте отладку
-import contributorsData from 'virtual:contributors-data';
-console.log('Contributors data:', contributorsData);
 
 export default {
   extends: DefaultTheme,
@@ -94,7 +86,6 @@ export default {
     app.component('Downloads', AGWDownloads)
     app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
     app.use(NolebaseEnhancedReadabilitiesPlugin)
-    app.use(NolebaseGitChangelogPlugin)
     app.use(useI18n)
     yandexMetrika(router, yandexMetrikaOptions.metrica)
     enhanceAppWithTabs(app)

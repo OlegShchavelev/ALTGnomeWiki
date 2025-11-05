@@ -5,8 +5,6 @@ import { fileURLToPath, URL } from 'node:url'
 import { normalize } from '../support/utils'
 
 /* Tools */
-
-import vueDevTools from 'vite-plugin-vue-devtools'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 /* Markdown */
@@ -20,17 +18,12 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import linkBlock from '../theme/composables/linkBlock'
 import markdownItFancybox from '../theme/plugins/markdownItFancybox'
 
-/* GitLog */
 import UnoCSS from 'unocss/vite'
-import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 /* PagePropierties */
-import {
-  PageProperties,
-  PagePropertiesMarkdownSection
-} from '@nolebase/vitepress-plugin-page-properties/vite'
+import { PageProperties } from '@nolebase/vitepress-plugin-page-properties/vite'
 
-import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions } from './plugins'
+import { alignmentContainers, headTransformer } from './plugins'
 
 import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Yaml from '@rollup/plugin-yaml'
@@ -54,11 +47,7 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
     ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }]
   ],
   vite: {
-    build: {
-      chunkSizeWarningLimit: 1600
-    },
     plugins: [
-      //vueDevTools(),
       visualizer({
         gzipSize: true,
         brotliSize: true,
@@ -66,8 +55,6 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
       }) as PluginOption,
       UnoCSS(),
       Yaml(),
-      GitChangelog(nolebaseGitChangelogOptions.plugin),
-      GitChangelogMarkdownSection(nolebaseGitChangelogOptions.pluginSections),
       PageProperties(),
       vueI18n({
         ssr: true
@@ -80,6 +67,7 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
         '@nolebase/vitepress-plugin-page-properties',
+        '@nolebase/ui',
         '@fancyapps/ui'
       ]
     },

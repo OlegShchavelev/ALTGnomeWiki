@@ -1,15 +1,14 @@
 // https://vitepress.dev/guide/custom-theme
 
 /* System */
-import { h, watch, onMounted } from 'vue'
-import { useRoute } from 'vitepress'
+import { h, watch } from 'vue'
 import { useData, type Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { Fancybox } from '@fancyapps/ui'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 /* Plugins options */
-import { nolebasePageProperties, yandexMetrikaOptions } from '../config/plugins/index.ts'
+import { nolebasePageProperties, yandexMetrikaOptions } from '../config/plugins/index'
 
 /* AGW */
 import AGWTeam from '@theme/components/AGWTeam.vue'
@@ -48,10 +47,6 @@ import {
 } from '@nolebase/vitepress-plugin-page-properties/client'
 import type { Options as NEROptions } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
-/* Nolebase Gitlog */
-
-import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
-
 import { useI18n } from './plugins/i18n'
 
 /* Stylesheets */
@@ -64,7 +59,6 @@ import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 import 'vitepress-markdown-timeline/dist/theme/index.css'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
-import { CompletionInfoFlags } from 'typescript'
 import AGWDownloads from './components/AGWDownloads.vue'
 
 export default {
@@ -92,7 +86,6 @@ export default {
     app.component('Downloads', AGWDownloads)
     app.provide(NolebasePagePropertiesInjectionKey, nolebasePageProperties as NEROptions)
     app.use(NolebaseEnhancedReadabilitiesPlugin)
-    app.use(NolebaseGitChangelogPlugin)
     app.use(useI18n)
     yandexMetrika(router, yandexMetrikaOptions.metrica)
     enhanceAppWithTabs(app)

@@ -35,6 +35,8 @@ import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions } fro
 import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Yaml from '@rollup/plugin-yaml'
 
+import { contributorsPlugin } from '@alt-gnome/vitepress-plugin-contributors'
+
 export const shared = defineConfigWithTheme<AGWTheme.Config>({
   title: 'ALT Gnome Wiki',
   titleTemplate: ':title — ALT Gnome Wiki',
@@ -71,16 +73,35 @@ export const shared = defineConfigWithTheme<AGWTheme.Config>({
       PageProperties(),
       vueI18n({
         ssr: true
+      }),
+      contributorsPlugin({
+        mode: 'fast',
+        map: '.vitepress/data/teams.data.yaml',
+        forgejo: {
+          token: process.env.FORGEJO_TOKEN,
+          baseUrl: 'https://altlinux.space',
+          repoOwner: 'alt-gnome',
+          repoName: 'wiki'
+        },
+        github: {
+          token: process.env.GITHUB_TOKEN,
+          repoOwner: 'OlegShchavelev',
+          repoName: 'ALTGnomeWiki'
+        }
       })
     ],
     optimizeDeps: {
-      exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']
+      exclude: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+        '@alt-gnome/vitepress-plugin-contributors'
+      ]
     },
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
         '@nolebase/vitepress-plugin-page-properties',
-        '@fancyapps/ui'
+        '@fancyapps/ui',
+        '@alt-gnome/vitepress-plugin-contributors'
       ]
     },
     resolve: {

@@ -9,12 +9,10 @@ import { Fancybox } from '@fancyapps/ui'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 /* Plugins options */
-import { nolebasePageProperties, yandexMetrikaOptions } from '../config/plugins/index.ts'
+import { nolebasePageProperties, yandexMetrikaOptions } from '../config/plugins/index'
 
 /* AGW */
-import AGWTeam from '@theme/components/AGWTeam.vue'
-import AGWTeams from '@theme/components/AGWTeams.vue'
-import AGWHomeTeams from '@theme/components/AGWHomeTeams.vue'
+import { AGWTeams, AGWTeam, AGWHomeTeams } from '@alt-gnome/vitepress-plugin-contributors/client'
 import AGWHomeSponsors from '@theme/components/AGWHomeSponsors.vue'
 import AGWDocsAsideMeta from '@theme/components/AGWDocsAsideMeta.vue'
 import AGWCategories from '@theme/components/AGWDocsCategories.vue'
@@ -64,8 +62,12 @@ import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 import 'vitepress-markdown-timeline/dist/theme/index.css'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
-import { CompletionInfoFlags } from 'typescript'
 import AGWDownloads from './components/AGWDownloads.vue'
+
+
+// Добавьте отладку
+import contributorsData from 'virtual:contributors-data';
+console.log('Contributors data:', contributorsData);
 
 export default {
   extends: DefaultTheme,

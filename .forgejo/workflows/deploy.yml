@@ -2,7 +2,7 @@ name: Deploy ALT Gnome Wiki to Pages
 
 on:
   push:
-    branches: [transfer]
+    branches: [main]
 
   workflow_dispatch:
 
@@ -45,7 +45,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: alt-latest
     name: Deploy
     steps:
       - name: Download artifact

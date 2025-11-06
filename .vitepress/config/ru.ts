@@ -32,7 +32,7 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
       },
       {
         text: 'Установка',
-        base: '/instalations/',
+        base: '/installations/',
         items: [
           { text: 'Установка на Mac', link: 'macbook/' },
           { text: 'Создание загрузочного диска ALT Regular Gnome', link: 'bootable-drive/' },

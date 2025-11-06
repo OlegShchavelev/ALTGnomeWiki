@@ -7,6 +7,9 @@ aggregation:
     play:
       id: lunacy
       build: unofficial
+  aides:
+    id: lunacy
+    build: unofficial
 appstream:
   id: com.icons8.Lunacy
   name: Lunacy
@@ -37,4 +40,5 @@ Lunacy — программа для векторной графики ново�
 :::
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-aides.md-->
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->

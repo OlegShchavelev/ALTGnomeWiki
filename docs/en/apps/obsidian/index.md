@@ -5,6 +5,9 @@ aggregation:
     play:
       id: obsidian
       build: unofficial
+  aides:
+    id: obsidian
+    build: unofficial
 appstream:
   id: md.obsidian.Obsidian
   name: Obsidian
@@ -28,6 +31,7 @@ appstream:
 Obsidian is a personal knowledge base and note-taking program that works with Markdown files. Users can create internal links to notes and visualize these relationships as a graph. Obsidian is designed to help the user organize and structure thoughts and knowledge in a flexible, non-linear way. Obsidian supports CommonMark and GitHub Flavored Markdown (GFM), as well as other useful features: tags, LaTeX math expressions, mermaid diagrams, footnotes, internal links, and embedding notes or external files. Obsidian has a system of plugins to expand functionality.
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->
+<!--@include: @en/apps/.parts/install/content-aides.md-->
 <!--@include: @en/apps/.parts/install/content-epm-play.md-->
 
 ## Running Obsidian in a Wayland windowed interface

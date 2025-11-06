@@ -1,0 +1,29 @@
+---
+aggregation:
+  flatpak: org.audacityteam.Audacity
+  sisyphus: audacity
+appstream:
+  id: org.audacityteam.Audacity
+  name: Audacity
+  icon: /audacity/audacity-logo.svg
+  summary: Записывайте и редактируйте аудиофайлы с Audacity
+  developer:
+    name: Muse Group
+  metadata_license:
+    name: GNU GPLv3
+    link: https://choosealicense.com/licenses/gpl-3.0/
+  url:
+    homepage: http://www.audacityteam.org/
+    bugtracker: https://github.com/audacity/audacity/issues/
+    help: https://support.audacityteam.org/
+    translate: https://support.audacityteam.org/community/contributing/translating/
+---
+
+# Audacity
+
+Audacity — свободный кроссплатформенный аудиоредактор, ориентированный на работу с несколькими дорожками.
+
+![Audacity](/audacity/audacity-1.png)
+
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->

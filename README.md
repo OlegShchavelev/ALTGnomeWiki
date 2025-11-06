@@ -58,9 +58,9 @@ npm run docs:dev
 
 ### :pencil: Внесение изменений
 
-Для вашего удобства, все инструкции по созданию и редактированию статей собраны в разделе [«Для авторов»](https://alt-gnome.wiki/reference).
+Для вашего удобства, все инструкции по созданию и редактированию статей собраны в разделе [«Для авторов»](/reference/).
 
-Участники проекта разработали материалы, которые вы можете найти на странице [«Общие правила»](https://alt-gnome.wiki/reference/pages/general-rules.html). Они помогут вам лучше понять, как работает проект, и позволят вам эффективно и просто работать с ALT Gnome Wiki в роли участника.
+Участники проекта разработали материалы, которые вы можете найти на странице [«Общие правила»](/reference/pages/general-rules/). Они помогут вам лучше понять, как работает проект, и позволят вам эффективно и просто работать с ALT Gnome Wiki в роли участника.
 
 Настоятельно рекомендуется проверить ваши коммиты на орфографические и критические ошибки до отправке PR в основную ветку проекта. Для этого ознакомьтесь со страницей [Проверка текста на ошибки](https://alt-gnome.wiki/reference/tests/speller.html)
 
@@ -96,10 +96,14 @@ npm run docs:dev
 
 ## Благодарность
 
-Спасибо [команде разработки Nólëbase](https://github.com/nolebase) за создание и поддержку набора плагинов [Nólëbase Integrations](https://github.com/nolebase/integrations) и активное взаимодействие.
+- Спасибо [команде разработки Nólëbase](https://github.com/nolebase) за создание и поддержку набора плагинов [Nólëbase Integrations](https://github.com/nolebase/integrations) и активное взаимодействие.
+
+- [alt-linux-space-design](https://altlinux.space/altlinux-space/design) - сreating an icon for ALT Linux Space by Viktoriya Zubacheva and Semen Fomchenkov ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))
+
+- [Tuner](https://altlinux.space/alt-gnome/Tuner) - creating an icon for Tuner by Viktoriya Zubacheva ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))
 
 ## Лицензия
 
-[MIT](https://github.com/OlegShchavelev/ALTRegularGnomeWiki/blob/main/LICENSE)
+[GPL-3.0+](https://altlinux.space/alt-gnome/wiki/src/branch/transfer/docs/ru/licence/index.md)
 
 Copyright © 2023-present <OLEG SHCHAVELEV>

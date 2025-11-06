@@ -7,6 +7,9 @@ aggregation:
     play:
       id: chrome
       build: unofficial
+  aides:
+    id: google-chrome-stable
+    build: unofficial
 appstream:
   id: com.google.Chrome
   name: Google Chrome
@@ -31,7 +34,7 @@ Google Chrome is a browser developed by Google based on the free browser [Chromi
 ![google-chrome](/google-chrome/google-chrome-1.png)
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->
-<!--@include: @en/apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @en/apps/.parts/install/content-aides.md-->
 <!--@include: @en/apps/.parts/install/content-epm-play.md-->
 
 ## Running Google Chrome in Wayland window interface

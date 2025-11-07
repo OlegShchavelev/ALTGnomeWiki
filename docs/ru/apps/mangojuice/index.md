@@ -1,6 +1,7 @@
 ---
 aggregation:
   sisyphus: mangojuice
+  flatpak: io.github.radiolamp.mangojuice
 appstream:
   id: io.github.radiolamp.mangojuice
   name: MangoJuice
@@ -39,23 +40,8 @@ gallery:
 
 <AGWGallery />
 
-<!--@include: @apps/.parts/install/software-repo.md-->
-
-#### Установка через терминал
-
-::: code-group
-
-```shell[apt-get]
-su -
-apt-get update
-apt-get install mangojuice
-```
-
-```shell[epm]
-epm -i mangojuice
-```
-
-:::
+<!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 ## Комбинации клавиш
 

@@ -5,6 +5,9 @@ aggregation:
     play:
       id: obsidian
       build: unofficial
+  aides:
+    id: obsidian
+    build: unofficial
 appstream:
   id: md.obsidian.Obsidian
   name: Obsidian
@@ -28,6 +31,7 @@ appstream:
 Obsidian — персональная база знаний и программа для создания заметок, работающая с Markdown-файлами. Пользователи могут создавать внутренние ссылки на заметки и визуализировать эти связи в виде графа. Obsidian спроектирован так, чтобы помочь пользователю организовать и структурировать мысли и знания в гибком, нелинейном виде. Obsidian поддерживает CommonMark и GitHub Flavored Markdown (GFM), а также другие полезные функции: теги, математические выражения LaTeX, диаграммы mermaid, сноски, внутренние ссылки и встраивание заметок или внешних файлов. Obsidian имеет систему плагинов для расширения функционала.
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-aides.md-->
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ## Запуск Obsidian в оконном интерфейсе Wayland

@@ -1,6 +1,7 @@
 ---
 aggregation:
   sisyphus: mangojuice
+  flatpak: io.github.radiolamp.mangojuice
 appstream:
   id: io.github.radiolamp.mangojuice
   name: MangoJuice
@@ -40,6 +41,7 @@ Written in Vala, GTK4 and Libadwaita.
 <Gallery />
 
 <!--@include: @en/apps/.parts/install/content-repo.md-->
+<!--@include: @en/apps/.parts/install/content-flatpak.md-->
 
 ## Shortcuts
 

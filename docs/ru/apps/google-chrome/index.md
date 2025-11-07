@@ -7,6 +7,9 @@ aggregation:
     play:
       id: chrome
       build: unofficial
+  aides:
+    id: google-chrome-stable
+    build: unofficial
 appstream:
   id: com.google.Chrome
   name: Google Chrome
@@ -31,7 +34,7 @@ Google Chrome — браузер, разрабатываемый компани�
 ![google-chrome](/google-chrome/google-chrome-1.png)
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
-<!--@include: @ru/apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @ru/apps/.parts/install/content-aides.md-->
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ## Запуск Google Chrome в оконном интерфейсе Wayland

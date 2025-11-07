@@ -7,6 +7,9 @@ aggregation:
     play:
       id: code
       build: unofficial
+  aides:
+    id: visual-studio-code
+    build: unofficial
 appstream:
   id: com.visualstudio.code
   name: VS Code
@@ -30,6 +33,7 @@ appstream:
 Visual Studio Code — инструмент, который сочетает в себе простоту редактора кода с тем, что нужно разработчикам для основного цикла: редактирования, сборки и отладки. Приложение выпускается с настройками, специфичными для Microsoft, выпущенный по традиционной [лицензии Microsoft на продукт](https://code.visualstudio.com/License/).
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
+<!--@include: @ru/apps/.parts/install/content-aides.md-->
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ## Использование Node.js в изолированной среде в приложении VS Code

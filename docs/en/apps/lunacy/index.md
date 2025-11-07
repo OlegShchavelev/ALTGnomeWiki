@@ -7,6 +7,9 @@ aggregation:
     play:
       id: lunacy
       build: unofficial
+  aides:
+    id: lunacy
+    build: unofficial
 appstream:
   id: com.icons8.Lunacy
   name: Lunacy
@@ -37,4 +40,5 @@ This skin is not reviewed, affiliated with, or supported by Icons8 LLC.
 :::
 
 <!--@include: @en/apps/.parts/install/content-flatpak.md-->
+<!--@include: @en/apps/.parts/install/content-aides.md-->
 <!--@include: @en/apps/.parts/install/content-epm-play.md-->

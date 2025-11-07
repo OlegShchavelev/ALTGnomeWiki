@@ -4,6 +4,9 @@ aggregation:
     play:
       id: vk-messenger
       build: unofficial
+  aides:
+    id: vk-messenger
+    build: unofficial
 appstream:
   name: VK Мессенджер
   icon: /vk-messenger/vk-messenger-logo.svg
@@ -24,6 +27,7 @@ appstream:
 
 VK Мессенджер — бесплатное и быстрое приложение для общения. Будьте на связи с друзьями и знакомыми в чатах и звонка.
 
+<!--@include: @ru/apps/.parts/install/content-aides.md-->
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 :::info

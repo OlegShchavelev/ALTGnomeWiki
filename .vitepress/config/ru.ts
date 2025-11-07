@@ -32,7 +32,7 @@ export const sidebar = (): DefaultTheme.SidebarItem[] => [
       },
       {
         text: 'Установка',
-        base: '/instalations/',
+        base: '/installations/',
         items: [
           { text: 'Установка на Mac', link: 'macbook/' },
           { text: 'Создание загрузочного диска ALT Regular Gnome', link: 'bootable-drive/' },
@@ -558,7 +558,9 @@ export const ru = defineConfigWithTheme<AGWTheme.Config>({
       message:
         'Опубликовано под лицензией GPL-3.0+. Содержание доступно по лицензии CC BY-SA 4.0, если не указано иное.',
       copyright: `
-              2023-${new Date().getFullYear()} Разработано участниками ALT Gnome Wiki на платформе <a href="//vitepress.dev/">VitePress ${packages['node_modules/vitepress'].version}</a> при поддержке ALT Gnome</a>
+              2023-${new Date().getFullYear()} Разработано участниками ALT Gnome Wiki на платформе <a href="//vitepress.dev/">VitePress ${
+        packages['node_modules/vitepress'].version
+      }</a> при поддержке ALT Gnome</a>
             `,
       docFooter: {
         message: 'Содержимое этой страницы доступно по лицензии <a href=":licence_link">:licence_name</a>'

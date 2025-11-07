@@ -8,6 +8,9 @@ aggregation:
     play:
       id: yandex-browser
       build: unofficial
+  aides:
+    id: yandex-browser-stable
+    build: unofficial
 appstream:
   id: yandex-browser.desktop
   name: Яндекс Браузер
@@ -45,7 +48,7 @@ C версии `23.5.1.753`, устанавливается **Яндекс Бр�
 :::
 
 <!--@include: @ru/apps/.parts/install/content-flatpak.md-->
-<!--@include: @ru/apps/.parts/warns/unprivileged-spaces.md-->
+<!--@include: @ru/apps/.parts/install/content-aides.md-->
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ## Полезные советы и дополнения

@@ -1,6 +1,7 @@
 ---
 aggregation:
   sisyphus: mangojuice
+  flatpak: io.github.radiolamp.mangojuice
 appstream:
   id: io.github.radiolamp.mangojuice
   name: MangoJuice
@@ -19,7 +20,7 @@ appstream:
 gallery:
   title: Галерея
   type: slider
-  images:
+  items:
     - src: /mangojuice/mj-window-1.png
     - src: /mangojuice/mj-window-2.png
     - src: /mangojuice/mj-window-3.png
@@ -37,13 +38,14 @@ gallery:
 
 Написано на Vala, GTK4 и Libadwaita.
 
-<Gallery />
+<AGWGallery />
 
 <!--@include: @ru/apps/.parts/install/content-repo.md-->
+<!--@include: @ru/apps/.parts/install/content-flatpak.md-->
 
 ## Комбинации клавиш
 
-| Комбинация клавиш | Описание      |
+| Комбинация клавиш |   Описание    |
 | ----------------- | ------------- |
 | [[Ctrl + T]]      | Тест          |
 | [[Ctrl + S]]      | Сохранить     |

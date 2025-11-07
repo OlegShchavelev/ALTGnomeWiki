@@ -1,5 +1,7 @@
 User-agent: *
-Disallow: /
 
-Sitemap: https://alt-gnome.wiki/sitemap.xml
+Disallow: /apps/.parts/*
+Disallow: /tests/*
+
 Host: https://alt-gnome.wiki
+Sitemap: https://alt-gnome.wiki/sitemap.xml

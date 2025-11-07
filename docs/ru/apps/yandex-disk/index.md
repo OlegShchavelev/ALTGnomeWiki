@@ -4,6 +4,9 @@ aggregation:
     play:
       id: yandex-disk
       build: unofficial
+  aides:
+    id: yandex-disk
+    build: unofficial
 appstream:
   name: Яндекс Диск
   icon: /yandex-disk/yandex-disk-logo.png
@@ -24,6 +27,7 @@ appstream:
 
 Яндекс Диск — облачный сервис компании Яндекс, позволяющий пользователям хранить свои данные на серверах в «облаке» и передавать их другим пользователям в Интернете.
 
+<!--@include: @ru/apps/.parts/install/content-aides.md-->
 <!--@include: @ru/apps/.parts/install/content-epm-play.md-->
 
 ## Настройка Яндекс Диск
